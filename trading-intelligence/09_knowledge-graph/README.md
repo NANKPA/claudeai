@@ -6,7 +6,8 @@ god nodes, surprising connections, report, HTML, wiki).
 
 | File | Use |
 |---|---|
-| `graph.html` | Interactive map. Open it in any browser (vis-network, no server). |
+| `explorer.html` | **Trading Intelligence Map**: the 9-layer stack, graph explorer with search, inspector, lineage tracing, partitions, idea chains (built by `tools/build_explorer.py`) |
+| `graph.html` | graphify's own interactive view. Open it in any browser (vis-network, no server). |
 | `GRAPH_REPORT.md` | Plain-language report: communities, god nodes, surprising links, suggested questions |
 | `graph.json` | Full graph (nodes, edges, communities). GraphRAG-ready; `graphify query` reads it. |
 | `extraction.json` | The graphify extraction input (for audit / re-runs) |

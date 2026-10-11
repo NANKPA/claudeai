@@ -27,7 +27,8 @@ Claude (Projects, Claude Code, or the API) and mapped with
 
 1. `08_synthesis/unified-framework.md`: the whole system on one page.
 2. `00_framework/ontology.md`: how everything is organised.
-3. `09_knowledge-graph/graph.html`: open in a browser to explore the map.
+3. `09_knowledge-graph/explorer.html`: the interactive Trading Intelligence Map (stack, graph,
+   lineage tracing). Hosted copy: https://claude.ai/artifact/87RR4yVQKDBFdQ9GpwheF3
 4. `00_framework/learning-path.md`: what to study in what order.
 
 ## Using it with Claude

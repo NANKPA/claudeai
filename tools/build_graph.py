@@ -17,11 +17,11 @@ import argparse
 import json
 import shutil
 import sys
-from collections import Counter, defaultdict
+from collections import Counter
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from ti_lib import FILE_TYPE_BY_KIND, KB_ROOT, load_kb  # noqa: E402
+from ti_lib import FILE_TYPE_BY_KIND, KB_ROOT, lineage_chains, load_kb  # noqa: E402
 
 OUT_DIR = KB_ROOT / "09_knowledge-graph"
 
@@ -136,29 +136,9 @@ def build_report(kb, G, communities, labels, gods) -> str:
         nid = g.get("id") or g.get("node")
         if nid in G:
             lines.append(f"| {G.nodes[nid].get('label', nid)} | {G.nodes[nid].get('kind')} | {G.degree(nid)} |")
-    # Lineage: longest derived_from / influenced_by chains
-    parents = defaultdict(list)
-    for e in kb.edges:
-        if e.relation in ("derived_from", "influenced_by"):
-            parents[e.source].append(e.target)
-
-    def depth(n, seen=()):
-        if n in seen or not parents.get(n):
-            return [n]
-        best = max((depth(p, seen + (n,)) for p in parents[n]), key=len)
-        return [n] + best
-
-    chains = sorted((depth(n) for n in parents), key=len, reverse=True)
-    lines += ["\n## Deepest idea-lineage chains\n"]
-    shown = set()
-    for ch in chains:
-        key = ch[-1], len(ch)
-        if key in shown or len(ch) < 3:
-            continue
-        shown.add(key)
-        lines.append("- " + " → ".join(kb.nodes[c].label.split(" (")[0].split(" — ")[0] for c in ch))
-        if len(shown) >= 15:
-            break
+    lines += ["\n## Deepest idea-lineage chains (oldest idea first)\n"]
+    for ch in lineage_chains(kb, limit=15):
+        lines.append("- " + " → ".join(kb.nodes[c].label.split(" (")[0].split(" — ")[0] for c in reversed(ch)))
     if kb.errors:
         lines += ["\n## Dangling references\n"] + [f"- {e}" for e in kb.errors]
     return "\n".join(lines) + "\n"

@@ -1,0 +1,563 @@
+<title>Trading Intelligence Map</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+/* Layout: an order-book ladder. The 9-layer stack runs across the top like a price ladder;
+   the graph floor sits below it with an inspector "tape" on the right; partitions and lineage close the page. */
+:root {
+  --bg: #f2f3f5;
+  --surface: #fbfbfc;
+  --surface-2: #e9ebef;
+  --ink: #0e1116;
+  --ink-2: #4a515d;
+  --muted: #767d8a;
+  --line: #d9dce2;
+  --line-strong: #b4bac4;
+  --idea: #2a78d6;
+  --person: #eb6834;
+  --source: #1baf7a;
+  --edge: rgba(74, 81, 93, 0.20);
+  --edge-hi: rgba(14, 17, 22, 0.72);
+  --good: #0ca30c;
+  --warning: #fab219;
+  --good-ink: #006300;
+  --warn-ink: #7a5200;
+  --font-display: "Archivo", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-body: "Archivo", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --radius: 6px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1014; --surface: #15171c; --surface-2: #1d2027; --ink: #eceef2; --ink-2: #b3b9c5;
+    --muted: #868d9a; --line: #282c34; --line-strong: #3b404a; --idea: #3987e5; --person: #d95926;
+    --source: #199e70; --edge: rgba(179, 185, 197, 0.15); --edge-hi: rgba(236, 238, 242, 0.78);
+    --good-ink: #0ca30c; --warn-ink: #fab219; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1014; --surface: #15171c; --surface-2: #1d2027; --ink: #eceef2; --ink-2: #b3b9c5;
+  --muted: #868d9a; --line: #282c34; --line-strong: #3b404a; --idea: #3987e5; --person: #d95926;
+  --source: #199e70; --edge: rgba(179, 185, 197, 0.15); --edge-hi: rgba(236, 238, 242, 0.78);
+  --good-ink: #0ca30c; --warn-ink: #fab219; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 15px; line-height: 1.5; }
+.page { max-width: 1440px; margin: 0 auto; padding-inline: 24px; padding-block: 28px 48px; display: grid; gap: 28px; }
+@media (max-width: 640px) { .page { padding-inline: 16px; padding-block: 20px 36px; gap: 22px; } }
+.mono { font-family: var(--font-mono); }
+h1, h2, h3 { text-wrap: balance; margin: 0; }
+button { font: inherit; color: inherit; }
+button:focus-visible, input:focus-visible, a:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+a { color: inherit; text-underline-offset: 3px; }
+
+/* ── masthead ── */
+.masthead { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 18px 40px; align-items: end; }
+@media (max-width: 900px) { .masthead { grid-template-columns: minmax(0, 1fr); } }
+.eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.06em; color: var(--muted); text-transform: uppercase; }
+h1 { font-family: var(--font-display); font-stretch: 112%; font-weight: 780; font-size: clamp(30px, 4.6vw, 54px); line-height: 1.02; letter-spacing: -0.015em; margin-top: 8px; }
+.lede { color: var(--ink-2); max-width: 64ch; margin: 12px 0 0; }
+.stats { display: grid; grid-template-columns: repeat(3, auto); gap: 10px 28px; margin: 0; }
+.stats div { display: grid; gap: 0; }
+.stats dt { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); order: 2; }
+.stats dd { margin: 0; font-family: var(--font-display); font-stretch: 90%; font-weight: 700; font-size: 26px; line-height: 1.1; }
+
+/* ── the stack (ladder) ── */
+.stack { display: grid; gap: 10px; }
+.stack-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; align-items: baseline; }
+.stack-head h2 { font-family: var(--font-display); font-stretch: 100%; font-weight: 700; font-size: 18px; }
+.stack-head p { margin: 0; color: var(--muted); font-size: 13px; }
+.ladder { display: grid; grid-template-columns: repeat(9, minmax(0, 1fr)); gap: 0; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); overflow: hidden; }
+.phase { grid-row: 1; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); padding: 7px 12px; border-bottom: 1px solid var(--line); background: var(--surface-2); }
+.phase.analysis { grid-column: 1 / 5; }
+.phase.execution { grid-column: 5 / 10; border-left: 1px solid var(--line-strong); }
+.rung { grid-row: 2; display: grid; gap: 4px; align-content: start; text-align: left; padding: 12px 12px 14px; border: 0; border-left: 1px solid var(--line); background: transparent; cursor: pointer; min-width: 0; }
+.rung:first-of-type { border-left: 0; }
+.rung[data-code="L4"] { border-left-color: var(--line-strong); }
+.rung:hover { background: var(--surface-2); }
+.rung[aria-pressed="true"] { background: var(--ink); color: var(--surface); }
+.rung[aria-pressed="true"] .rung-q, .rung[aria-pressed="true"] .rung-n { color: var(--surface); opacity: 0.8; }
+.rung-code { font-family: var(--font-mono); font-weight: 600; font-size: 13px; display: flex; justify-content: space-between; gap: 6px; }
+.rung-n { font-weight: 400; color: var(--muted); font-variant-numeric: tabular-nums; }
+.rung-name { font-family: var(--font-display); font-stretch: 88%; font-weight: 700; font-size: 16px; line-height: 1.15; }
+.rung-q { font-size: 12.5px; color: var(--ink-2); line-height: 1.35; }
+@media (max-width: 860px) {
+  .ladder { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .phase { display: none; }
+  .rung { grid-row: auto; border-top: 1px solid var(--line); }
+  .rung:nth-of-type(3n + 1) { border-left: 0; }
+  .rung:nth-of-type(-n + 3) { border-top: 0; }
+}
+@media (max-width: 420px) { .rung-q { display: none; } }
+
+/* ── workspace ── */
+.workspace { display: grid; grid-template-columns: minmax(0, 1fr) 380px; gap: 16px; align-items: start; }
+@media (max-width: 1000px) { .workspace { grid-template-columns: minmax(0, 1fr); } }
+.graph-panel { display: grid; gap: 0; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); min-width: 0; overflow: hidden; }
+.toolbar { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+.search { position: relative; flex: 1 1 220px; min-width: 0; }
+.search input { width: 100%; padding: 8px 10px 8px 32px; border: 1px solid var(--line-strong); border-radius: var(--radius); background: var(--bg); color: var(--ink); font: inherit; font-size: 14px; }
+.search svg { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); width: 14px; height: 14px; color: var(--muted); }
+.results { position: absolute; z-index: 5; left: 0; right: 0; top: calc(100% + 4px); margin: 0; padding: 4px; list-style: none; background: var(--surface); border: 1px solid var(--line-strong); border-radius: var(--radius); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); max-height: 320px; overflow-y: auto; }
+.results button { width: 100%; display: flex; justify-content: space-between; gap: 10px; text-align: left; padding: 7px 8px; border: 0; background: transparent; border-radius: 4px; cursor: pointer; }
+.results button:hover, .results button.active { background: var(--surface-2); }
+.results .kind { font-family: var(--font-mono); font-size: 11px; color: var(--muted); white-space: nowrap; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px; }
+.toggle { display: inline-flex; align-items: center; gap: 7px; padding: 5px 10px; border: 1px solid var(--line-strong); border-radius: 999px; background: transparent; cursor: pointer; font-size: 13px; }
+.toggle[aria-pressed="false"] { opacity: 0.5; }
+.toggle[aria-pressed="false"] .sw { background: transparent !important; }
+.toggle .count { font-family: var(--font-mono); font-size: 11.5px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.sw { width: 10px; height: 10px; border-radius: 50%; border: 2px solid currentColor; flex: none; }
+.ghost { padding: 6px 10px; border: 1px solid var(--line-strong); border-radius: var(--radius); background: transparent; cursor: pointer; font-size: 13px; }
+.ghost:hover { background: var(--surface-2); }
+#graph { height: clamp(440px, 68vh, 780px); background: var(--surface); }
+.shapes { display: flex; flex-wrap: wrap; gap: 4px 16px; padding: 8px 12px; border-top: 1px solid var(--line); font-size: 12px; color: var(--muted); }
+.shapes span { display: inline-flex; align-items: center; gap: 6px; }
+.shapes svg { width: 12px; height: 12px; fill: var(--muted); }
+.communities { display: flex; flex-wrap: wrap; gap: 6px; padding: 10px 12px 12px; border-top: 1px solid var(--line); }
+.communities .label { width: 100%; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+.chip { display: inline-flex; align-items: baseline; gap: 6px; padding: 4px 9px; border: 1px solid var(--line); border-radius: 4px; background: var(--bg); cursor: pointer; font-size: 13px; line-height: 1.3; text-align: left; max-width: 100%; }
+.chip:hover { border-color: var(--line-strong); background: var(--surface-2); }
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--surface); border-color: var(--ink); }
+.chip .n { font-family: var(--font-mono); font-size: 11px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.chip[aria-pressed="true"] .n { color: var(--surface); opacity: 0.75; }
+.chip .dot { width: 8px; height: 8px; border-radius: 50%; flex: none; align-self: center; }
+
+/* ── inspector ── */
+.inspector { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); display: grid; gap: 14px; padding: 16px; min-width: 0; max-height: calc(68vh + 160px); overflow-y: auto; }
+@media (max-width: 1000px) { .inspector { max-height: none; } }
+.insp-tags { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-family: var(--font-mono); font-size: 11.5px; color: var(--ink-2); }
+.tag { padding: 2px 7px; border: 1px solid var(--line-strong); border-radius: 3px; display: inline-flex; gap: 6px; align-items: center; }
+.inspector h2 { font-family: var(--font-display); font-stretch: 95%; font-weight: 720; font-size: 22px; line-height: 1.15; }
+.summary { margin: 0; color: var(--ink-2); font-size: 14px; }
+.meta { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 4px 12px; margin: 0; font-size: 13px; }
+.meta dt { color: var(--muted); font-family: var(--font-mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.04em; padding-top: 2px; }
+.meta dd { margin: 0; overflow-wrap: anywhere; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.group { display: grid; gap: 6px; }
+.group h3 { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); font-weight: 500; }
+.group .chips { display: flex; flex-wrap: wrap; gap: 5px; }
+.lineage { margin: 0; padding: 0; list-style: none; display: grid; gap: 4px; font-size: 13px; }
+.lineage li { display: flex; gap: 8px; align-items: baseline; }
+.lineage .depth { font-family: var(--font-mono); font-size: 11px; color: var(--muted); width: 2.5em; flex: none; font-variant-numeric: tabular-nums; }
+
+/* ── lower ── */
+.lower { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 16px; align-items: start; }
+@media (max-width: 1000px) { .lower { grid-template-columns: minmax(0, 1fr); } }
+.card { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); padding: 16px; display: grid; gap: 12px; min-width: 0; }
+.card h2 { font-family: var(--font-display); font-weight: 700; font-size: 18px; }
+.card > p { margin: 0; color: var(--ink-2); font-size: 13.5px; max-width: 70ch; }
+.table-wrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 13.5px; min-width: 520px; }
+th { text-align: left; font-family: var(--font-mono); font-weight: 500; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); padding: 6px 10px 6px 0; border-bottom: 1px solid var(--line-strong); }
+td { padding: 9px 10px 9px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+td.num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; text-align: right; }
+th.num { text-align: right; }
+.dir { font-family: var(--font-mono); font-size: 12.5px; white-space: nowrap; }
+.pill { display: inline-flex; align-items: center; gap: 5px; white-space: nowrap; font-size: 12px; font-weight: 600; }
+.pill svg { width: 13px; height: 13px; flex: none; }
+.pill.complete { color: var(--good-ink); }
+.pill.seed { color: var(--warn-ink); }
+.chains { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+.chains li { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
+.chains .arrow { color: var(--muted); font-family: var(--font-mono); font-size: 12px; }
+footer { color: var(--muted); font-size: 12.5px; display: flex; flex-wrap: wrap; gap: 6px 24px; border-top: 1px solid var(--line); padding-top: 14px; }
+footer code { font-family: var(--font-mono); font-size: 12px; color: var(--ink-2); }
+.vis-tooltip { font-family: var(--font-body) !important; font-size: 13px !important; color: var(--ink) !important; background: var(--surface) !important; border: 1px solid var(--line-strong) !important; border-radius: 4px !important; padding: 5px 8px !important; box-shadow: 0 6px 18px rgba(0,0,0,0.12) !important; max-width: 280px; white-space: normal !important; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
+</style>
+
+<div class="page">
+  <header class="masthead">
+    <div>
+      <div class="eyebrow">Knowledge graph · trading-intelligence/</div>
+      <h1>Trading Intelligence Map</h1>
+      <p class="lede">How markets work and how trades are analysed and executed, mapped from Chart Fanatics, BabyPips, trading podcasts, the top-100 books, the legends and the mathematics. Pick a layer of the stack or click any node to see where an idea comes from and what builds on it.</p>
+    </div>
+    <dl class="stats" id="stats"></dl>
+  </header>
+
+  <section class="stack" aria-labelledby="stack-title">
+    <div class="stack-head">
+      <h2 id="stack-title">The stack, from analysis to execution</h2>
+      <p>Select a layer to light up every note filed on it. Select it again to clear.</p>
+    </div>
+    <div class="ladder" id="ladder">
+      <div class="phase analysis">Analysis · L0–L3</div>
+      <div class="phase execution">Execution · L4–L8</div>
+    </div>
+  </section>
+
+  <section class="workspace">
+    <div class="graph-panel">
+      <div class="toolbar">
+        <div class="search">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M6.5 1a5.5 5.5 0 0 1 4.38 8.82l3.65 3.65-1.06 1.06-3.65-3.65A5.5 5.5 0 1 1 6.5 1Zm0 1.5a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z"/></svg>
+          <input id="q" type="search" placeholder="Search concepts, traders, books…" autocomplete="off" aria-label="Search the graph" aria-controls="results">
+          <ul class="results" id="results" role="listbox" hidden></ul>
+        </div>
+        <div class="legend" id="legend" aria-label="Node families"></div>
+        <button class="ghost" id="fit" type="button">Show all</button>
+      </div>
+      <div id="graph" role="img" aria-label="Knowledge graph of trading concepts, strategies, people and sources, grouped into communities"></div>
+      <div class="shapes" aria-label="Shape key">
+        <span><svg viewBox="0 0 12 12"><circle cx="6" cy="6" r="5"/></svg>Concept · person</span>
+        <span><svg viewBox="0 0 12 12"><path d="M6 0.5 11.5 6 6 11.5 0.5 6Z"/></svg>Strategy</span>
+        <span><svg viewBox="0 0 12 12"><path d="M3 1h6l3 5-3 5H3L0 6Z"/></svg>Framework · synthesis</span>
+        <span><svg viewBox="0 0 12 12"><rect x="1" y="1" width="10" height="10"/></svg>Book · course</span>
+        <span><svg viewBox="0 0 12 12"><path d="M6 0.5 11.5 11H0.5Z"/></svg>Video · episode</span>
+        <span><svg viewBox="0 0 12 12"><path d="M6 0.5l1.6 3.5 3.9.4-2.9 2.6.8 3.8L6 8.9 2.6 10.8l.8-3.8L.5 4.4l3.9-.4Z"/></svg>Podcast · channel</span>
+        <span>Dashed link: inferred lineage</span>
+      </div>
+      <div class="communities" id="communities"><span class="label">Communities (Leiden clustering)</span></div>
+    </div>
+    <aside class="inspector" id="inspector" aria-live="polite"></aside>
+  </section>
+
+  <section class="lower">
+    <div class="card">
+      <h2>Partitions</h2>
+      <p>Each folder is one partition of the knowledge base. Seed partitions hold verified research and structure. Their scraped full text (transcripts, lessons, episode notes) lands in <span class="mono">raw/</span> once the scrapers run on a machine that can reach YouTube, BabyPips and podcast hosts.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Folder</th><th>Contents</th><th class="num">Nodes</th><th>Status</th></tr></thead>
+          <tbody id="partitions"></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Where ideas come from</h2>
+      <p>The deepest lineage chains in the graph, oldest idea first. Most of what today's YouTube traders teach descends from a handful of roots that are 50 to 120 years old.</p>
+      <ol class="chains" id="chains"></ol>
+    </div>
+  </section>
+
+  <footer>
+    <span>Every note carries a source tier, from T1 (primary or audited) to T5 (synthesized). Win-rate and P&amp;L claims are treated as marketing until tested.</span>
+    <span>Rebuild: <code>python3 tools/build_graph.py &amp;&amp; python3 tools/build_explorer.py</code></span>
+  </footer>
+</div>
+
+<script src="https://unpkg.com/vis-network@9.1.6/standalone/umd/vis-network.min.js"></script>
+<script id="ti-data" type="application/json">__TI_DATA__</script>
+<script>
+(function () {
+  const D = JSON.parse(document.getElementById('ti-data').textContent);
+  const N = D.nodes, E = D.edges, R = D.rels;
+  const byId = new Map(N.map((n, i) => [n.id, i]));
+  const KIND = { concept: 'Concept', strategy: 'Strategy', person: 'Person', book: 'Book', mathbook: 'Math book', paper: 'Paper',
+    media: 'Video / episode', podcast: 'Podcast', channel: 'Channel', course: 'Course', track: 'Study track',
+    framework: 'Framework', synthesis: 'Synthesis', formula: 'Formula sheet' };
+  const FAMILIES = [
+    { key: 'idea', label: 'Ideas', token: '--idea' },
+    { key: 'person', label: 'People', token: '--person' },
+    { key: 'source', label: 'Sources', token: '--source' },
+  ];
+  const OUT = { related: 'Related', derived_from: 'Derived from', influenced_by: 'Influenced by', uses: 'Uses', covers: 'Covers',
+    teaches: 'Teaches', taught_by: 'Taught by', featured_in: 'Featured in', hosted_by: 'Hosted by', founded_by: 'Founded by',
+    part_of: 'Part of', contrasts_with: 'Contrasts with', validates: 'Validates', challenges: 'Challenges',
+    authored_by: 'Written by', features: 'Features', features_speaker: 'Speakers', same_as: 'Same as' };
+  const IN = { related: 'Related', derived_from: 'Gave rise to', influenced_by: 'Influenced', uses: 'Used by', covers: 'Covered by',
+    teaches: 'Taught by', taught_by: 'Teaches strategy', featured_in: 'Features', hosted_by: 'Hosts', founded_by: 'Founded',
+    part_of: 'Contains', contrasts_with: 'Contrasts with', validates: 'Validated by', challenges: 'Challenged by',
+    authored_by: 'Wrote', features: 'Featured in book', features_speaker: 'Appears in', same_as: 'Same as' };
+  const ORDER = ['Derived from', 'Influenced by', 'Gave rise to', 'Influenced', 'Uses', 'Used by', 'Teaches', 'Teaches strategy',
+    'Taught by', 'Written by', 'Wrote', 'Speakers', 'Appears in', 'Covers', 'Covered by', 'Part of', 'Contains', 'Featured in',
+    'Features', 'Featured in book', 'Hosted by', 'Hosts', 'Founded by', 'Founded', 'Contrasts with', 'Validates', 'Validated by',
+    'Challenges', 'Challenged by', 'Same as', 'Related'];
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const anim = reduceMotion ? false : { duration: 450, easingFunction: 'easeInOutQuad' };
+
+  // adjacency
+  const adj = N.map(() => []);
+  E.forEach(([s, t, r, inf], k) => { adj[s].push([t, k, 'out']); adj[t].push([s, k, 'in']); });
+
+  const state = { families: { idea: true, person: true, source: true }, authors: false, focus: null, selected: null, layer: null };
+
+  // ── tokens ──
+  let T = {};
+  const css = (v) => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+  function readTokens() {
+    T = { idea: css('--idea'), person: css('--person'), source: css('--source'), surface: css('--surface'),
+      ink: css('--ink'), muted: css('--muted'), edge: css('--edge'), edgeHi: css('--edge-hi') };
+  }
+  function alpha(hex, a) {
+    const m = /^#?([0-9a-f]{6})$/i.exec(hex);
+    if (!m) return hex;
+    const v = parseInt(m[1], 16);
+    return `rgba(${v >> 16 & 255},${v >> 8 & 255},${v & 255},${a})`;
+  }
+
+  // ── masthead stats ──
+  const stats = [['Nodes', D.meta.nodes], ['Typed links', D.meta.edges], ['Communities', D.meta.communities],
+    ['Concepts', D.meta.concepts], ['Strategies', D.meta.strategies], ['Books', D.meta.books]];
+  document.getElementById('stats').innerHTML = stats.map(([k, v]) => `<div><dt>${k}</dt><dd>${v.toLocaleString()}</dd></div>`).join('');
+
+  // ── ladder ──
+  const ladder = document.getElementById('ladder');
+  D.layers.forEach((L) => {
+    const b = document.createElement('button');
+    b.type = 'button'; b.className = 'rung'; b.dataset.code = L.code; b.setAttribute('aria-pressed', 'false');
+    b.innerHTML = `<span class="rung-code">${L.code}<span class="rung-n">${L.n} notes</span></span><span class="rung-name">${L.name}</span><span class="rung-q">${L.q}</span>`;
+    b.addEventListener('click', () => setLayer(state.layer === L.code ? null : L.code));
+    ladder.appendChild(b);
+  });
+
+  // ── legend toggles ──
+  const legend = document.getElementById('legend');
+  const famCount = (f) => N.filter((n) => n.f === f && !n.a).length;
+  FAMILIES.forEach((F) => {
+    const b = document.createElement('button');
+    b.type = 'button'; b.className = 'toggle'; b.setAttribute('aria-pressed', 'true');
+    b.innerHTML = `<span class="sw" style="color:var(${F.token});background:var(${F.token})"></span>${F.label}<span class="count">${famCount(F.key)}</span>`;
+    b.addEventListener('click', () => { state.families[F.key] = !state.families[F.key]; b.setAttribute('aria-pressed', String(state.families[F.key])); restyle(); });
+    legend.appendChild(b);
+  });
+  const authorsBtn = document.createElement('button');
+  authorsBtn.type = 'button'; authorsBtn.className = 'toggle'; authorsBtn.setAttribute('aria-pressed', 'false');
+  authorsBtn.innerHTML = `<span class="sw" style="color:var(--person)"></span>Co-authors<span class="count">${N.filter((n) => n.a).length}</span>`;
+  authorsBtn.addEventListener('click', () => { state.authors = !state.authors; authorsBtn.setAttribute('aria-pressed', String(state.authors)); restyle(); });
+  legend.appendChild(authorsBtn);
+
+  // ── communities ──
+  const commBox = document.getElementById('communities');
+  const commColor = (c) => { const counts = {}; N.forEach((n) => { if (n.c === c) counts[n.f] = (counts[n.f] || 0) + 1; }); return Object.entries(counts).sort((a, b) => b[1] - a[1])[0][0]; };
+  D.communities.forEach((C) => {
+    const b = document.createElement('button');
+    b.type = 'button'; b.className = 'chip'; b.setAttribute('aria-pressed', 'false');
+    b.innerHTML = `${C.name}<span class="n">${C.size}</span>`;
+    b.addEventListener('click', () => focusCommunity(C.id, b));
+    commBox.appendChild(b);
+  });
+
+  // ── vis network ──
+  readTokens();
+  const size = (n) => Math.min(26, 4 + 2.2 * Math.sqrt(n.d));
+  const labelled = (n) => n.d >= 16 || (n.k === 'strategy' && n.d >= 6) || n.k === 'channel';
+  const visible = (n) => state.families[n.f] && (!n.a || state.authors);
+  function nodeStyle(n, i) {
+    const base = T[n.f];
+    const inFocus = !state.focus || state.focus.has(i);
+    const dim = state.focus && !inFocus;
+    const sel = state.selected === i;
+    const fill = dim ? alpha(base, 0.26) : base;
+    return {
+      id: i, x: n.x, y: n.y, shape: n.sh, size: size(n) * (sel ? 1.25 : 1), hidden: !visible(n),
+      label: (state.focus ? (inFocus && (sel || n.d >= 12 || (state.lineage && state.focus.size <= 24) || state.focus.size <= 12)) : labelled(n)) ? n.l.split(' (')[0].split(' — ')[0] : undefined,
+      color: { background: fill, border: sel ? T.ink : T.surface, highlight: { background: base, border: T.ink }, hover: { background: base, border: T.ink } },
+      borderWidth: sel ? 3 : 2,
+      font: { color: dim ? alpha(T.muted, 0) : T.ink, strokeColor: T.surface },
+      title: `${n.l} · ${KIND[n.k] || n.k}`,
+    };
+  }
+  function edgeStyle(e, k) {
+    const [s, t, r, inf] = e;
+    const on = state.focus ? (state.focus.has(s) && state.focus.has(t) && (state.selected === null || s === state.selected || t === state.selected || state.layer !== null || state.lineage)) : true;
+    return { id: k, from: s, to: t, dashes: inf ? [4, 4] : false, width: state.focus && on ? 1.4 : 1,
+      color: { color: state.focus ? (on ? T.edgeHi : 'rgba(0,0,0,0)') : T.edge, highlight: T.edgeHi, hover: T.edgeHi, inherit: false } };
+  }
+  const nodes = new vis.DataSet(N.map(nodeStyle));
+  const edges = new vis.DataSet(E.map(edgeStyle));
+  const network = new vis.Network(document.getElementById('graph'), { nodes, edges }, {
+    physics: false,
+    layout: { improvedLayout: false },
+    interaction: { hover: true, tooltipDelay: 120, hideEdgesOnDrag: true, selectConnectedEdges: false, zoomSpeed: 0.6 },
+    nodes: { borderWidth: 2, font: { face: 'Archivo, system-ui, sans-serif', size: 24, strokeWidth: 6, vadjust: -3 }, scaling: { label: { drawThreshold: 7 } } },
+    edges: { smooth: false, width: 1, selectionWidth: 0, hoverWidth: 0.5 },
+  });
+  network.on('afterDrawing', (ctx) => {
+    ctx.save();
+    ctx.font = '650 26px Archivo, system-ui, sans-serif';
+    ctx.textAlign = 'center';
+    ctx.fillStyle = state.focus ? alpha(T.muted, 0.55) : T.muted;
+    if ('letterSpacing' in ctx) ctx.letterSpacing = '0.04em';
+    D.communities.forEach((C) => ctx.fillText(C.name.toUpperCase(), C.x, C.top));
+    ctx.restore();
+  });
+  network.on('click', (p) => { if (p.nodes.length) select(p.nodes[0], false); });
+
+  function restyle() {
+    nodes.update(N.map(nodeStyle));
+    edges.update(E.map(edgeStyle));
+  }
+
+  // ── selection & highlighting ──
+  function neighbourhood(i) { const s = new Set([i]); adj[i].forEach(([j]) => { if (visible(N[j])) s.add(j); }); return s; }
+  function clearPressed() {
+    document.querySelectorAll('.rung[aria-pressed="true"], .communities .chip[aria-pressed="true"]').forEach((b) => b.setAttribute('aria-pressed', 'false'));
+  }
+  function select(i, zoom) {
+    state.selected = i; state.layer = null; state.lineage = false;
+    clearPressed();
+    state.focus = neighbourhood(i);
+    restyle();
+    renderInspector(i);
+    if (zoom) network.focus(i, { scale: 0.75, animation: anim });
+  }
+  function setLayer(code) {
+    clearPressed();
+    state.layer = code; state.selected = null; state.lineage = false;
+    if (code) {
+      document.querySelector(`.rung[data-code="${code}"]`).setAttribute('aria-pressed', 'true');
+      state.focus = new Set(N.map((n, i) => (n.ly === code ? i : -1)).filter((i) => i >= 0));
+    } else state.focus = null;
+    restyle();
+    if (code) renderLayer(code); else renderInspector(byId.get(D.start));
+  }
+  function focusCommunity(cid, btn) {
+    const was = btn.getAttribute('aria-pressed') === 'true';
+    clearPressed();
+    state.selected = null; state.layer = null; state.lineage = false;
+    if (was) { state.focus = null; restyle(); network.fit({ animation: anim }); return; }
+    btn.setAttribute('aria-pressed', 'true');
+    const ids = N.map((n, i) => (n.c === cid ? i : -1)).filter((i) => i >= 0 && visible(N[i]));
+    state.focus = new Set(ids);
+    restyle();
+    network.fit({ nodes: ids, animation: anim });
+    renderCommunity(cid, ids);
+  }
+  function traceLineage(i) {
+    const seen = new Map([[i, 0]]); const queue = [i];
+    while (queue.length) {
+      const cur = queue.shift();
+      adj[cur].forEach(([j, k, dir]) => {
+        const rel = R[E[k][2]];
+        if (dir === 'out' && (rel === 'derived_from' || rel === 'influenced_by') && !seen.has(j)) { seen.set(j, seen.get(cur) + 1); queue.push(j); }
+      });
+    }
+    state.focus = new Set(seen.keys()); state.lineage = true; state.selected = i;
+    restyle();
+    network.fit({ nodes: [...seen.keys()], animation: anim });
+    return seen;
+  }
+
+  // ── inspector ──
+  const insp = document.getElementById('inspector');
+  const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const nodeChip = (j) => `<button type="button" class="chip" data-node="${j}"><span class="dot" style="background:var(--${N[j].f})"></span>${esc(N[j].l.split(' (')[0])}</button>`;
+  function bindChips(root) { root.querySelectorAll('[data-node]').forEach((b) => b.addEventListener('click', () => select(+b.dataset.node, true))); }
+  function renderInspector(i) {
+    const n = N[i];
+    const groups = {};
+    adj[i].forEach(([j, k, dir]) => {
+      const rel = R[E[k][2]];
+      const name = (dir === 'out' ? OUT : IN)[rel] || rel;
+      (groups[name] = groups[name] || new Set()).add(j);
+    });
+    const names = Object.keys(groups).sort((a, b) => ORDER.indexOf(a) - ORDER.indexOf(b));
+    const comm = D.communities.find((c) => c.id === n.c);
+    const tags = [`<span class="tag"><span class="sw" style="color:var(--${n.f});background:var(--${n.f})"></span>${KIND[n.k] || n.k}</span>`];
+    if (n.ly) tags.push(`<span class="tag">${n.ly}</span>`);
+    if (comm) tags.push(`<span class="tag">${esc(comm.name)}</span>`);
+    const meta = [['Folder', `<span class="mono">${esc(n.p)}</span>`]];
+    if (!n.a) meta.push(['Note', `<a href="${D.meta.github}${esc(n.sf)}" target="_blank" rel="noopener">${esc(n.sf.split('/').pop())}</a>`]);
+    if (n.st) meta.push(['Status', esc(n.st)]);
+    if (n.u) meta.push(['Source', `<a href="${esc(n.u)}" target="_blank" rel="noopener">${esc(n.u.replace(/^https?:\/\/(www\.)?/, '').slice(0, 48))}</a>`]);
+    meta.push(['Links', `${adj[i].length}`]);
+    const hasLineage = adj[i].some(([j, k, dir]) => dir === 'out' && ['derived_from', 'influenced_by'].includes(R[E[k][2]]));
+    insp.innerHTML = `
+      <div class="insp-tags">${tags.join('')}</div>
+      <h2>${esc(n.l)}</h2>
+      ${n.s ? `<p class="summary">${esc(n.s)}</p>` : ''}
+      <dl class="meta">${meta.map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join('')}</dl>
+      <div class="actions">
+        ${hasLineage ? '<button type="button" class="ghost" id="trace">Trace lineage</button>' : ''}
+        <button type="button" class="ghost" id="zoom">Zoom to node</button>
+      </div>
+      <div id="lineage-out"></div>
+      ${names.map((name) => {
+        const list = [...groups[name]].sort((a, b) => N[b].d - N[a].d);
+        const shown = list.slice(0, 16);
+        return `<div class="group"><h3>${name} · ${list.length}</h3><div class="chips">${shown.map(nodeChip).join('')}${list.length > shown.length ? `<button type="button" class="chip more" data-more="${name}">+${list.length - shown.length} more</button>` : ''}</div></div>`;
+      }).join('')}`;
+    bindChips(insp);
+    insp.querySelectorAll('[data-more]').forEach((b) => b.addEventListener('click', () => {
+      const list = [...groups[b.dataset.more]].sort((a, c) => N[c].d - N[a].d).slice(16);
+      const wrap = b.parentElement; b.remove();
+      wrap.insertAdjacentHTML('beforeend', list.map(nodeChip).join('')); bindChips(wrap);
+    }));
+    insp.querySelector('#zoom').addEventListener('click', () => network.focus(i, { scale: 1, animation: anim }));
+    const tr = insp.querySelector('#trace');
+    if (tr) tr.addEventListener('click', () => {
+      const seen = traceLineage(i);
+      const rows = [...seen.entries()].sort((a, b) => a[1] - b[1]);
+      const out = insp.querySelector('#lineage-out');
+      out.innerHTML = `<div class="group"><h3>Lineage · ${rows.length - 1} ancestors</h3><ol class="lineage">${rows.map(([j, d]) => `<li><span class="depth">${d === 0 ? 'here' : '−' + d}</span>${nodeChip(j)}</li>`).join('')}</ol></div>`;
+      bindChips(out);
+    });
+    insp.scrollTop = 0;
+  }
+  function renderList(title, sub, ids) {
+    const list = ids.slice().sort((a, b) => N[b].d - N[a].d);
+    insp.innerHTML = `<div class="insp-tags"><span class="tag">${esc(sub)}</span></div><h2>${esc(title)}</h2>
+      <div class="group"><h3>Notes · ${list.length}</h3><div class="chips">${list.map(nodeChip).join('')}</div></div>`;
+    bindChips(insp);
+  }
+  function renderLayer(code) {
+    const L = D.layers.find((l) => l.code === code);
+    renderList(`${L.code} · ${L.name}`, L.q, N.map((n, i) => (n.ly === code ? i : -1)).filter((i) => i >= 0));
+  }
+  function renderCommunity(cid, ids) {
+    const C = D.communities.find((c) => c.id === cid);
+    renderList(C.name, `Community ${cid} · ${C.size} nodes`, ids);
+  }
+
+  // ── search ──
+  const q = document.getElementById('q'), results = document.getElementById('results');
+  let hits = [], active = 0;
+  function runSearch() {
+    const s = q.value.trim().toLowerCase();
+    if (s.length < 2) { results.hidden = true; return; }
+    hits = N.map((n, i) => {
+      const l = n.l.toLowerCase();
+      const score = l.startsWith(s) ? 3 : l.includes(' ' + s) ? 2 : l.includes(s) ? 1 : 0;
+      return [i, score];
+    }).filter((h) => h[1] > 0).sort((a, b) => b[1] - a[1] || N[b[0]].d - N[a[0]].d).slice(0, 10).map((h) => h[0]);
+    active = 0;
+    results.innerHTML = hits.length ? hits.map((i, k) => `<li role="option"><button type="button" data-i="${i}" class="${k === 0 ? 'active' : ''}"><span>${esc(N[i].l)}</span><span class="kind">${KIND[N[i].k] || N[i].k}</span></button></li>`).join('')
+      : '<li><span class="kind" style="padding:7px 8px;display:block">No match</span></li>';
+    results.hidden = false;
+    results.querySelectorAll('button').forEach((b) => b.addEventListener('click', () => choose(+b.dataset.i)));
+  }
+  function choose(i) {
+    results.hidden = true; q.value = N[i].l;
+    if (!visible(N[i])) { if (N[i].a) { state.authors = true; authorsBtn.setAttribute('aria-pressed', 'true'); } state.families[N[i].f] = true; legend.querySelectorAll('.toggle').forEach((b, k) => { if (k < 3) b.setAttribute('aria-pressed', String(state.families[FAMILIES[k].key])); }); }
+    select(i, true);
+  }
+  q.addEventListener('input', runSearch);
+  q.addEventListener('keydown', (ev) => {
+    if (results.hidden || !hits.length) return;
+    if (ev.key === 'ArrowDown' || ev.key === 'ArrowUp') {
+      ev.preventDefault(); active = (active + (ev.key === 'ArrowDown' ? 1 : hits.length - 1)) % hits.length;
+      results.querySelectorAll('button').forEach((b, k) => b.classList.toggle('active', k === active));
+    } else if (ev.key === 'Enter') { ev.preventDefault(); choose(hits[active]); }
+    else if (ev.key === 'Escape') results.hidden = true;
+  });
+  document.addEventListener('click', (ev) => { if (!ev.target.closest('.search')) results.hidden = true; });
+  document.getElementById('fit').addEventListener('click', () => {
+    clearPressed(); state.focus = null; state.selected = null; state.layer = null; state.lineage = false; restyle(); network.fit({ animation: anim });
+  });
+
+  // ── partitions & chains ──
+  const ICON_OK = '<svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M6.2 11.6 2.6 8l1.1-1.1 2.5 2.5 6.1-6.1 1.1 1.1Z"/></svg>';
+  const ICON_WAIT = '<svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 1.5a6.5 6.5 0 1 1 0 13 6.5 6.5 0 0 1 0-13Zm0 1.5a5 5 0 1 0 0 10A5 5 0 0 0 8 3Zm.75 1.75v3.4l2.3 1.4-.8 1.3-3-1.85V4.75Z"/></svg>';
+  document.getElementById('partitions').innerHTML = D.partitions.map((p) => `<tr>
+      <td class="dir">${esc(p.dir)}</td><td>${esc(p.note)}</td><td class="num">${p.n}</td>
+      <td>${p.status === 'complete' ? `<span class="pill complete">${ICON_OK}Complete</span>` : `<span class="pill seed">${ICON_WAIT}Seed · scrape pending</span>`}</td></tr>`).join('');
+  const chains = document.getElementById('chains');
+  chains.innerHTML = D.chains.map((ch) => `<li>${ch.slice().reverse().map(nodeChip).join('<span class="arrow" aria-hidden="true">→</span>')}</li>`).join('');
+  bindChips(chains);
+
+  // ── theme changes ──
+  const retheme = () => { readTokens(); restyle(); network.redraw(); };
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', retheme);
+  new MutationObserver(retheme).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+
+  // ── opening state: whole map visible, one worked example in the inspector ──
+  const start = byId.get(D.start);
+  network.once('afterDrawing', () => network.fit({ animation: false }));
+  state.selected = start; state.focus = neighbourhood(start);
+  restyle(); renderInspector(start);
+})();
+</script>

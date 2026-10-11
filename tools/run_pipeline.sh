@@ -20,5 +20,6 @@ fi
 
 python3 tools/render_registries.py
 python3 tools/build_graph.py
+python3 tools/build_explorer.py
 python3 tools/bundle_for_claude.py ${INCLUDE_RAW:+--include-raw}
-echo "Done. Open trading-intelligence/09_knowledge-graph/graph.html"
+echo "Done. Open trading-intelligence/09_knowledge-graph/explorer.html (or graph.html)"

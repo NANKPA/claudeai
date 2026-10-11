@@ -104,20 +104,20 @@
 | Probabilistic Thinking (thinking in bets) | concept | 29 |
 | Correlation & Portfolio Risk | concept | 28 |
 
-## Deepest idea-lineage chains
+## Deepest idea-lineage chains (oldest idea first)
 
-- Marco Trades → Liquidity Sweep Reversal → Liquidity → Market Microstructure → Jean-Philippe Bouchaud → Benoit Mandelbrot → Louis Bachelier
-- Andrea Cimitan → Auction Market Theory → Market Microstructure → Jean-Philippe Bouchaud → Benoit Mandelbrot → Louis Bachelier
-- Marci Silfrain → Classical Chart Patterns → Peter L. Brandt → Robert D. Edwards → Richard W. Schabacker → Charles H. Dow
-- Pradeep Bonde → Growth-Stock Momentum → Trend Following → Michael W. Covel → Richard Dennis → Richard Donchian
-- Candace Lau → Smart Money Concepts / ICT → Wyckoff Method → Dow Theory → Charles H. Dow
-- Auction Market Theory → Market Microstructure → Jean-Philippe Bouchaud → Benoit Mandelbrot → Louis Bachelier
-- Growth-Stock Momentum → Trend Following → Michael W. Covel → Richard Dennis → Richard Donchian
-- AMD / Power of Three → Wyckoff Method → Dow Theory → Charles H. Dow
-- Expectancy → Edward O. Thorp → John L. Kelly Jr. → Claude Shannon
-- Fundamental & Macro Analysis → Stanley Druckenmiller → George Soros → Karl Popper
-- Market Microstructure → Jean-Philippe Bouchaud → Benoit Mandelbrot → Louis Bachelier
-- Market Sentiment & Positioning → Humphrey B. Neill → Richard D. Wyckoff → Jesse Livermore
-- Trend Following → Michael W. Covel → Richard Dennis → Richard Donchian
-- Think & Trade Like a Champion → Trade Like a Stock Market Wizard → How to Make Money in Stocks → How to Trade in Stocks
-- Japanese Candlestick Patterns → Steve Nison → Munehisa Homma
+- Dow Theory → Wyckoff Method → Liquidity → Liquidity Sweep Reversal → Marco Trades
+- Dow Theory → Wyckoff Method → Smart Money Concepts / ICT → Candace Lau
+- Dow Theory → Trend Following → Growth-Stock Momentum → Pradeep Bonde
+- Dow Theory → Wyckoff Method → AMD / Power of Three → Tanja Trades
+- Jesse Livermore → William J. O'Neil → Mark Minervini → Oliver Kell
+- Charles H. Dow → Richard W. Schabacker → Robert D. Edwards → Peter L. Brandt
+- Richard Donchian → Ed Seykota → Michael Marcus → Bruce Kovner
+- Louis Bachelier → Benoit Mandelbrot → Eugene Fama → Burton Malkiel
+- Jesse Livermore → Richard D. Wyckoff → Michael J. Huddleston → TG Capital
+- How to Trade in Stocks → How to Make Money in Stocks → Trade Like a Stock Market Wizard → Think & Trade Like a Champion
+- Market Microstructure → Auction Market Theory → Andrea Cimitan
+- Market Microstructure → Auction Market Theory → Fabio Valentini
+- Market Microstructure → Auction Market Theory → Forrest Knight
+- Market Microstructure → Auction Market Theory → JJ Simon
+- Dow Theory → Wyckoff Method → Marci Silfrain

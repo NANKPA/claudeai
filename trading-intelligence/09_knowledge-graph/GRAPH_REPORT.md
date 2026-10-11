@@ -1,7 +1,7 @@
 # Graph Report - trading-intelligence  (2026-10-11)
 
 ## Corpus Check
-- 188 files · ~254,329 words
+- 189 files · ~267,948 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 3 file(s) not represented in the graph (top: (none) 3)
 

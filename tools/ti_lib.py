@@ -266,3 +266,31 @@ def load_kb(root: Path = KB_ROOT, include_raw: bool = True) -> KnowledgeBase:
                 entity["id"] = alias
             b.add_entity(entity, rel)
     return b.finalize()
+
+
+def lineage_chains(kb: KnowledgeBase, limit: int = 10, min_len: int = 3) -> list[list[str]]:
+    """Deepest idea-lineage chains (descendant first). Follows `derived_from` edges and
+    person-to-person `influenced_by` edges; a concept's `influenced_by` person credits a
+    contributor rather than an ancestor idea, so it is not followed here. One chain per root path."""
+    parents: dict[str, list[str]] = {}
+    for e in kb.edges:
+        src_kind = kb.nodes[e.source].kind
+        if e.relation == "derived_from" or (e.relation == "influenced_by" and src_kind == "person"):
+            parents.setdefault(e.source, []).append(e.target)
+
+    def deepest(n: str, seen: tuple = ()) -> list[str]:
+        if n in seen or not parents.get(n):
+            return [n]
+        return [n] + max((deepest(p, seen + (n,)) for p in parents[n]), key=len)
+
+    out: list[list[str]] = []
+    roots_seen: set[tuple[str, ...]] = set()
+    for chain in sorted((deepest(n) for n in parents), key=len, reverse=True):
+        key = tuple(chain[-3:])
+        if len(chain) < min_len or key in roots_seen:
+            continue
+        roots_seen.add(key)
+        out.append(chain)
+        if len(out) >= limit:
+            break
+    return out
