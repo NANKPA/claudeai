@@ -1,0 +1,12 @@
+# Knowledge-graph build
+graphifyy>=0.9.85
+pyyaml>=6.0
+networkx>=3.4
+# Scrapers
+yt-dlp>=2026.8.19
+youtube-transcript-api>=1.2
+trafilatura>=2.0
+feedparser>=6.0
+requests>=2.31
+# Optional: local podcast transcription (podcasts_rss.py --transcribe)
+# faster-whisper>=1.0

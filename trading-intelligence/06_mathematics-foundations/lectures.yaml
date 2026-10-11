@@ -1,0 +1,170 @@
+# Mathematics-of-trading lectures, courses, talks & podcast episodes ("top 100 videos on the
+# math foundation"). Curated seed + discovery queries; see landmark-media.yaml header for the
+# verification legend. The scraper ranks query results by views and writes lectures.scraped.yaml.
+
+media:
+  - id: media_mit_18s096_2013
+    title: "MIT 18.S096 Topics in Mathematics with Applications in Finance (Fall 2013) — full lecture series"
+    speaker_ids: [person_peter_kempthorne]
+    year: 2013
+    format: university course (video lectures + notes)
+    url: https://ocw.mit.edu/courses/18-s096-topics-in-mathematics-with-applications-in-finance-fall-2013/
+    covers: [concept_stochastic_processes, concept_time_series_statistics, concept_options_greeks, concept_correlation_portfolio_risk, concept_volatility]
+    key_takeaways: "Linear algebra, probability, statistics, stochastic processes, numerical methods, each paired with an industry finance lecture (VaR, yield curves, Black–Scholes, PCA)."
+    verification: verified
+    sources:
+      - {title: "MIT OCW 18.S096 syllabus", url: "https://ocw.mit.edu/courses/18-s096-topics-in-mathematics-with-applications-in-finance-fall-2013/pages/syllabus", tier: T1}
+  - id: media_mit_18642_2024
+    title: "MIT 18.642 Topics in Mathematics with Applications in Finance (Fall 2024) — successor course with recordings"
+    year: 2024
+    format: university course
+    covers: [concept_stochastic_processes, concept_time_series_statistics]
+    verification: verified
+    sources:
+      - {title: "MIT OCW 18.S096 syllabus (points to 18.642)", url: "https://ocw.mit.edu/courses/18-s096-topics-in-mathematics-with-applications-in-finance-fall-2013/pages/syllabus", tier: T1}
+  - id: media_harvard_stat110
+    title: "Harvard Stat 110: Probability — Joe Blitzstein"
+    speaker_ids: [person_joe_blitzstein]
+    format: university course
+    covers: [concept_probability_fat_tails, concept_expectancy, concept_probabilistic_thinking]
+    verification: known
+  - id: media_mit_6041_probability
+    title: "MIT 6.041 Probabilistic Systems Analysis / RES.6-012 Introduction to Probability — John Tsitsiklis"
+    speaker_ids: [person_john_tsitsiklis]
+    format: university course
+    covers: [concept_probability_fat_tails, concept_stochastic_processes]
+    verification: known
+  - id: media_mit_18650_statistics
+    title: "MIT 18.650 Statistics for Applications (Fall 2016) — Philippe Rigollet"
+    speaker_ids: [person_philippe_rigollet]
+    year: 2016
+    format: university course
+    covers: [concept_overfitting_validation, concept_backtesting]
+    verification: known
+  - id: media_mit_1806_linear_algebra
+    title: "MIT 18.06 Linear Algebra — Gilbert Strang"
+    speaker_ids: [person_gilbert_strang]
+    format: university course
+    covers: [concept_correlation_portfolio_risk, concept_machine_learning_finance]
+    verification: known
+  - id: media_yale_econ252_shiller
+    title: "Yale ECON 252 Financial Markets — Robert Shiller (Open Yale Courses)"
+    speaker_ids: [person_robert_shiller]
+    format: university course
+    covers: [concept_random_walk_efficient_markets, concept_market_sentiment, concept_correlation_portfolio_risk]
+    verification: known
+  - id: media_mit_15401_lo
+    title: "MIT 15.401 Finance Theory I — Andrew Lo (Fall 2008)"
+    speaker_ids: [person_andrew_lo]
+    year: 2008
+    format: university course
+    covers: [concept_random_walk_efficient_markets, concept_correlation_portfolio_risk, concept_options_greeks]
+    verification: known
+  - id: media_columbia_fe_risk_mgmt
+    title: "Financial Engineering and Risk Management (Columbia, Coursera) — Martin Haugh & Garud Iyengar"
+    speaker_ids: [person_martin_haugh, person_garud_iyengar]
+    format: online course
+    covers: [concept_options_greeks, concept_stochastic_processes, concept_correlation_portfolio_risk]
+    verification: known
+  - id: media_mit_15s50_poker
+    title: "MIT 15.S50 Poker Theory and Analytics (decision-making under uncertainty)"
+    format: university course
+    covers: [concept_probabilistic_thinking, concept_kelly_criterion_optimal_f, concept_expectancy]
+    verification: known
+  - id: media_simons_mit_2010
+    title: "Jim Simons — Mathematics, Common Sense, and Good Luck: My Life and Careers (MIT, 2010)"
+    speaker_ids: [person_jim_simons]
+    year: 2010
+    format: talk
+    covers: [concept_edge, concept_machine_learning_finance]
+    key_takeaways: "Five guiding principles: do something new, collaborate with the smartest people, follow beauty, don't give up easily, hope for good luck."
+    verification: verified
+    sources:
+      - {title: "Simons Foundation remembrance", url: "https://simonsfoundation.org/2024/05/10/remembering-the-life-and-careers-of-jim-simons", tier: T2}
+      - {title: "QuantNet thread", url: "https://quantnet.com/threads/video-james-simons-mathematics-common-sense-and-good-luck-my-life-and-careers.5419", tier: T3}
+  - id: media_simons_numberphile
+    title: "Jim Simons — Numberphile interview ('Billionaire Mathematician', full and short versions)"
+    speaker_ids: [person_jim_simons]
+    year: 2015
+    format: interview
+    covers: [concept_machine_learning_finance, concept_edge]
+    verification: verified
+  - id: media_simons_ted_2015
+    title: "Jim Simons — The mathematician who cracked Wall Street (TED 2015)"
+    speaker_ids: [person_jim_simons]
+    year: 2015
+    format: talk
+    covers: [concept_machine_learning_finance, concept_edge]
+    verification: known
+  - id: media_veritasium_trillion_dollar_equation
+    title: "Veritasium — The Trillion Dollar Equation (Black–Scholes, Bachelier, Thorp, Simons)"
+    speaker_ids: [person_derek_muller]
+    year: 2024
+    format: explainer
+    covers: [concept_options_greeks, concept_stochastic_processes, concept_random_walk_efficient_markets]
+    verification: known
+  - id: media_3b1b_bayes
+    title: "3Blue1Brown — Bayes theorem, the geometry of changing beliefs"
+    speaker_ids: [person_grant_sanderson]
+    format: explainer
+    covers: [concept_probabilistic_thinking, concept_probability_fat_tails]
+    verification: known
+  - id: media_3b1b_clt
+    title: "3Blue1Brown — But what is the Central Limit Theorem?"
+    speaker_ids: [person_grant_sanderson]
+    year: 2023
+    format: explainer
+    covers: [concept_probability_fat_tails]
+    verification: known
+  - id: media_lopez_de_prado_7_reasons
+    title: "Marcos López de Prado — The 7 Reasons Most Machine Learning Funds Fail (QuantCon)"
+    speaker_ids: [person_marcos_lopez_de_prado]
+    format: talk
+    covers: [concept_machine_learning_finance, concept_overfitting_validation, concept_backtesting]
+    verification: known
+  - id: media_cwt_ep109_thorp
+    title: "Chat With Traders EP 109 — Edward Thorp (edge, Kelly)"
+    verification: verified
+    ref: "02_podcasts-interviews/landmark-media.yaml"
+  - id: media_tip128_thorp
+    title: "TIP128 — Edward Thorp (Kelly criterion position sizing)"
+    verification: verified
+    ref: "02_podcasts-interviews/landmark-media.yaml"
+  - id: media_econtalk_taleb
+    title: "EconTalk — Nassim Taleb episodes (Black Swan, fat tails, skin in the game)"
+    speaker_ids: [person_nassim_taleb, person_russ_roberts]
+    featured_in: [podcast_econtalk]
+    format: podcast series
+    covers: [concept_probability_fat_tails, concept_risk_of_ruin_drawdown]
+    verification: known
+
+discovery_queries:
+  probability_statistics:
+    - "Kelly criterion explained"
+    - "risk of ruin trading explained"
+    - "expected value trading math"
+    - "law of large numbers trading edge"
+    - "fat tails Taleb lecture"
+    - "Bayesian probability lecture"
+  stochastic_derivatives:
+    - "stochastic calculus for finance lecture"
+    - "Ito's lemma explained"
+    - "Black Scholes derivation lecture"
+    - "Brownian motion finance lecture"
+    - "volatility surface lecture Gatheral"
+  time_series:
+    - "GARCH volatility model lecture"
+    - "cointegration pairs trading lecture"
+    - "time series analysis finance lecture"
+  microstructure_execution:
+    - "Almgren Chriss optimal execution lecture"
+    - "market microstructure lecture limit order book"
+    - "square root law market impact Bouchaud"
+    - "high frequency trading market making lecture Cartea Jaimungal"
+    - "VWAP TWAP execution algorithms explained"
+  quant_validation:
+    - "backtest overfitting deflated Sharpe ratio"
+    - "Marcos Lopez de Prado lecture"
+    - "Ernest Chan quantitative trading interview"
+    - "Robert Carver systematic trading"
+    - "quantitative trading podcast"

@@ -1,0 +1,783 @@
+# People registry — traders, authors, researchers, hosts.
+# Relation lists accept a trailing "?" on an id to mark an INFERRED (plausible,
+# not explicitly documented) link, e.g. influenced_by: ["person_richard_donchian?"]
+# Facts below are from established literature (T1/T2) unless a `sources` entry
+# says otherwise. Book authorship lives in books.yaml (`authors:`), not here.
+
+people:
+  # ───────────────────────── Classic speculators & market technicians ─────────────────────────
+  - id: person_jesse_livermore
+    name: Jesse Livermore
+    role: Speculator
+    era: 1877–1940
+    known_for: "The 'Boy Plunger'; famous short sales in the 1907 panic and 1929 crash; pivotal points, line of least resistance, pyramiding into winners; subject of Reminiscences of a Stock Operator."
+    teaches: [concept_trend_following, concept_growth_momentum_canslim, concept_trade_management, concept_market_structure]
+  - id: person_richard_wyckoff
+    name: Richard D. Wyckoff
+    role: Market technician, educator
+    era: 1873–1934
+    known_for: "Codified the methods of the great operators: accumulation/distribution, springs and upthrusts, the composite operator, effort vs result; Studies in Tape Reading (1910, as Rollo Tape)."
+    teaches: [concept_wyckoff_method, concept_order_flow, concept_liquidity]
+    influenced_by: [person_jesse_livermore]
+  - id: person_charles_dow
+    name: Charles H. Dow
+    role: Journalist, co-founder of Dow Jones & Co. and The Wall Street Journal
+    era: 1851–1902
+    known_for: "Dow Theory: three trends, three phases, confirmation between averages, trends persist until reversal."
+    teaches: [concept_dow_theory, concept_market_structure]
+  - id: person_robert_rhea
+    name: Robert Rhea
+    role: Dow theorist
+    era: 1896–1939
+    known_for: "Formalised Dow Theory (The Dow Theory, 1932)."
+    influenced_by: [person_charles_dow]
+    teaches: [concept_dow_theory]
+  - id: person_ralph_elliott
+    name: Ralph Nelson Elliott
+    role: Accountant, market theorist
+    era: 1871–1948
+    known_for: "The Wave Principle (1938): 5-wave impulses, 3-wave corrections, Fibonacci proportions."
+    teaches: [concept_elliott_wave, concept_fibonacci]
+    influenced_by: ["person_charles_dow?"]
+  - id: person_robert_prechter
+    name: Robert Prechter
+    role: Elliott Wave International founder
+    era: b. 1949
+    known_for: "Elliott Wave Principle (1978, with A.J. Frost); socionomics."
+    teaches: [concept_elliott_wave, concept_market_sentiment]
+    influenced_by: [person_ralph_elliott]
+  - id: person_humphrey_neill
+    name: Humphrey B. Neill
+    role: Author, contrarian
+    era: 1895–1977
+    known_for: "Tape Reading and Market Tactics (1931); The Art of Contrary Thinking (1954)."
+    teaches: [concept_order_flow, concept_market_sentiment]
+    influenced_by: ["person_richard_wyckoff?"]
+  - id: person_gerald_loeb
+    name: Gerald M. Loeb
+    role: Stockbroker, author
+    era: 1899–1974
+    known_for: "The Battle for Investment Survival (1935): concentration, cutting losses, market timing."
+    teaches: [concept_trade_management, concept_trading_psychology]
+  - id: person_nicolas_darvas
+    name: Nicolas Darvas
+    role: Dancer turned stock trader
+    era: 1920–1977
+    known_for: "Box theory: technical breakouts from 'boxes' combined with earnings growth; How I Made $2,000,000 in the Stock Market (1960)."
+    teaches: [concept_breakout_trading, concept_growth_momentum_canslim]
+    influenced_by: [person_gerald_loeb]
+  - id: person_william_oneil
+    name: William J. O'Neil
+    role: Founder of Investor's Business Daily and William O'Neil + Co.
+    era: 1933–2023
+    known_for: "CANSLIM; cup-with-handle bases; cut losses at 7–8%; How to Make Money in Stocks (1988)."
+    teaches: [concept_growth_momentum_canslim, concept_breakout_trading]
+    influenced_by: [person_jesse_livermore, person_gerald_loeb]
+  - id: person_stan_weinstein
+    name: Stan Weinstein
+    role: Technical analyst, newsletter publisher
+    known_for: "Stage analysis (Stages 1–4) with the 30-week MA; Secrets for Profiting in Bull and Bear Markets (1988)."
+    teaches: [concept_growth_momentum_canslim, concept_moving_averages, concept_market_regimes]
+  - id: person_mark_minervini
+    name: Mark Minervini
+    role: Stock trader, US Investing Champion
+    known_for: "SEPA, Trend Template, Volatility Contraction Pattern (VCP); US Investing Championship winner; featured in Stock Market Wizards."
+    teaches: [concept_growth_momentum_canslim, concept_position_sizing, concept_trade_management]
+    influenced_by: [person_william_oneil, person_jesse_livermore]
+  - id: person_oliver_kell
+    name: Oliver Kell
+    role: Growth-stock swing trader
+    known_for: "US Investing Championship winner (2020); 'cycle of price action' framework built on O'Neil-style growth trading."
+    teaches: [concept_growth_momentum_canslim, concept_moving_averages]
+    influenced_by: [person_william_oneil, "person_mark_minervini?"]
+  - id: person_munehisa_homma
+    name: Munehisa Homma
+    role: Rice merchant (Sakata, Japan)
+    era: 1724–1803
+    known_for: "Traditionally credited as the father of candlestick charting and market-psychology analysis."
+    teaches: [concept_candlestick_patterns]
+  - id: person_steve_nison
+    name: Steve Nison
+    role: Technical analyst
+    known_for: "Introduced Japanese candlesticks to the West: Japanese Candlestick Charting Techniques (1991)."
+    teaches: [concept_candlestick_patterns, concept_price_action]
+    influenced_by: [person_munehisa_homma]
+  - id: person_robert_d_edwards
+    name: Robert D. Edwards
+    role: Technical analyst
+    known_for: "Co-author of Technical Analysis of Stock Trends (1948), the classical chart-pattern bible."
+    teaches: [concept_chart_patterns, concept_support_resistance]
+    influenced_by: [person_richard_schabacker]
+  - id: person_john_magee
+    name: John Magee
+    role: Technical analyst
+    known_for: "Co-author of Technical Analysis of Stock Trends (1948)."
+    teaches: [concept_chart_patterns, concept_trendlines]
+    influenced_by: [person_richard_schabacker]
+  - id: person_richard_schabacker
+    name: Richard W. Schabacker
+    role: Financial editor of Forbes
+    era: 1899–1938
+    known_for: "Early systematic chart-pattern work (1930s) that Edwards & Magee built upon."
+    teaches: [concept_chart_patterns]
+    influenced_by: ["person_charles_dow?"]
+  - id: person_thomas_bulkowski
+    name: Thomas Bulkowski
+    role: Pattern researcher
+    known_for: "Encyclopedia of Chart Patterns: statistical performance of chart and candlestick patterns."
+    teaches: [concept_chart_patterns, concept_candlestick_patterns, concept_backtesting]
+  - id: person_peter_brandt
+    name: Peter L. Brandt
+    role: Commodity trader (Factor LLC)
+    known_for: "Classical charting run as a business; Diary of a Professional Commodity Trader (2011); 'failed signals are among the most reliable'."
+    teaches: [concept_chart_patterns, concept_risk_reward_r_multiples, concept_trade_management]
+    influenced_by: [person_robert_d_edwards, person_john_magee]
+  - id: person_john_murphy
+    name: John J. Murphy
+    role: Technical analyst
+    known_for: "Technical Analysis of the Financial Markets; Intermarket Analysis."
+    teaches: [concept_intermarket_analysis, concept_chart_patterns, concept_moving_averages]
+    influenced_by: ["person_charles_dow?"]
+  - id: person_welles_wilder
+    name: J. Welles Wilder Jr.
+    role: Technical analyst
+    era: 1935–2021
+    known_for: "New Concepts in Technical Trading Systems (1978): RSI, ATR, ADX/DMI, Parabolic SAR."
+    teaches: [concept_oscillators_momentum, concept_volatility]
+  - id: person_gerald_appel
+    name: Gerald Appel
+    role: Technical analyst
+    known_for: "Created MACD (late 1970s)."
+    teaches: [concept_oscillators_momentum, concept_moving_averages]
+  - id: person_george_lane
+    name: George Lane
+    role: Technical analyst
+    era: 1921–2004
+    known_for: "Popularised the stochastic oscillator (1950s)."
+    teaches: [concept_oscillators_momentum]
+  - id: person_john_bollinger
+    name: John Bollinger
+    role: Technical analyst
+    known_for: "Bollinger Bands (1980s); Bollinger on Bollinger Bands (2001)."
+    teaches: [concept_bollinger_bands, concept_volatility]
+  - id: person_alexander_elder
+    name: Dr. Alexander Elder
+    role: Psychiatrist, trader, author
+    known_for: "Trading for a Living (1993); Triple Screen trading system (1986); force index."
+    teaches: [concept_multi_timeframe_analysis, concept_trading_psychology]
+  - id: person_al_brooks
+    name: Al Brooks
+    role: Price-action day trader
+    known_for: "Reading Price Charts Bar by Bar (2009); bar-by-bar price action, two-legged pullbacks, trading-range logic."
+    teaches: [concept_price_action, concept_breakout_trading, concept_market_regimes]
+  - id: person_toby_crabel
+    name: Toby Crabel
+    role: Trader, CTA (Crabel Capital)
+    known_for: "Day Trading with Short Term Price Patterns and Opening Range Breakout (1990); volatility contraction (NR4/NR7)."
+    teaches: [concept_breakout_trading, concept_trading_sessions_killzones, concept_volatility]
+  - id: person_larry_williams
+    name: Larry Williams
+    role: Futures trader, author
+    known_for: "Won the 1987 Robbins World Cup Championship (11,376%); Williams %R; Long-Term Secrets to Short-Term Trading (1999); time-of-day/day-of-week studies."
+    teaches: [concept_trading_sessions_killzones, concept_oscillators_momentum, concept_volatility]
+  - id: person_linda_raschke
+    name: Linda Bradford Raschke
+    role: Futures trader, CTA
+    known_for: "Street Smarts (1995, with Larry Connors): Turtle Soup, Holy Grail, 80-20s; featured in The New Market Wizards; Trading Sardines (2019)."
+    teaches: [concept_liquidity_sweep_reversal, concept_breakout_trading, concept_trading_sessions_killzones]
+  - id: person_larry_connors
+    name: Larry Connors
+    role: Trader, researcher
+    known_for: "Street Smarts (with Raschke); short-term mean-reversion research (RSI(2))."
+    teaches: [concept_mean_reversion, concept_liquidity_sweep_reversal]
+
+  # ───────────────────────── Trend followers & the Turtles ─────────────────────────
+  - id: person_richard_donchian
+    name: Richard Donchian
+    role: Fund manager; "father of trend following"
+    era: 1905–1993
+    known_for: "Channel-breakout and moving-average systems; one of the first public managed-futures funds (1949)."
+    teaches: [concept_trend_following, concept_moving_averages, concept_breakout_trading]
+  - id: person_richard_dennis
+    name: Richard Dennis
+    role: Commodity trader ("Prince of the Pit")
+    known_for: "Ran the Turtle Trader experiment (1983–84) with William Eckhardt to prove trading could be taught."
+    teaches: [concept_trend_following, concept_position_sizing, concept_breakout_trading]
+    influenced_by: ["person_richard_donchian?"]
+  - id: person_william_eckhardt
+    name: William Eckhardt
+    role: Mathematician, trader (Eckhardt Trading)
+    known_for: "Dennis's partner in the Turtle experiment; featured in The New Market Wizards; statistical approach to trend following."
+    teaches: [concept_trend_following, concept_probabilistic_thinking]
+  - id: person_jerry_parker
+    name: Jerry Parker
+    role: Original Turtle; founder of Chesapeake Capital
+    known_for: "Among the most successful Turtles; long-term trend following CTA."
+    teaches: [concept_trend_following]
+    influenced_by: [person_richard_dennis, person_william_eckhardt]
+  - id: person_curtis_faith
+    name: Curtis Faith
+    role: Original Turtle; author
+    known_for: "Way of the Turtle (2007): the Turtle rules and the psychology behind them."
+    teaches: [concept_trend_following, concept_position_sizing]
+    influenced_by: [person_richard_dennis]
+  - id: person_ed_seykota
+    name: Ed Seykota
+    role: Systematic trend follower
+    known_for: "Pioneered computerised trend following in the early 1970s; MIT EE (1969); Market Wizards ('Everybody gets what they want out of the market'); Trading Tribe."
+    teaches: [concept_trend_following, concept_trading_psychology]
+    influenced_by: ["person_richard_donchian?"]
+  - id: person_tom_basso
+    name: Tom Basso
+    role: Trendstat founder
+    known_for: "'Mr. Serenity' in The New Market Wizards; volatility-based position sizing and diversification."
+    teaches: [concept_trend_following, concept_position_sizing, concept_trading_psychology]
+  - id: person_larry_hite
+    name: Larry Hite
+    role: Co-founder of Mint Investment Management
+    known_for: "Market Wizards; risk-first systematic trading ('never risk more than 1% on a trade')."
+    teaches: [concept_trend_following, concept_position_sizing]
+  - id: person_michael_covel
+    name: Michael W. Covel
+    role: Author, podcaster
+    known_for: "Trend Following (2004); The Complete TurtleTrader (2007); Trend Following podcast (1,000+ episodes)."
+    teaches: [concept_trend_following]
+    influenced_by: ["person_richard_dennis?", "person_ed_seykota?"]
+  - id: person_robert_carver
+    name: Robert Carver
+    role: Systematic trader (ex-AHL), author
+    known_for: "Systematic Trading (2015); volatility targeting; co-host on Top Traders Unplugged's Systematic Investor series."
+    teaches: [concept_trend_following, concept_position_sizing, concept_overfitting_validation]
+  - id: person_andreas_clenow
+    name: Andreas Clenow
+    role: Hedge fund manager, author
+    known_for: "Following the Trend (2012); Stocks on the Move (2015)."
+    teaches: [concept_trend_following, concept_growth_momentum_canslim]
+
+  # ───────────────────────── Macro & discretionary legends ─────────────────────────
+  - id: person_eli_tullis
+    name: Eli Tullis
+    role: Cotton trader (New Orleans)
+    known_for: "Early mentor of Paul Tudor Jones (documented in Market Wizards)."
+  - id: person_paul_tudor_jones
+    name: Paul Tudor Jones II
+    role: Founder of Tudor Investment Corp. (1980)
+    known_for: "Profited from the October 1987 crash (PBS documentary 'Trader', 1987); 'defense, defense, defense'; the 200-day moving average rule; Robin Hood Foundation."
+    teaches: [concept_fundamental_macro_analysis, concept_trade_management, concept_risk_of_ruin_drawdown, concept_moving_averages]
+    influenced_by: [person_eli_tullis]
+  - id: person_george_soros
+    name: George Soros
+    role: Founder of Soros Fund Management / Quantum Fund
+    known_for: "Reflexivity (The Alchemy of Finance, 1987); 'broke the Bank of England' on Black Wednesday 1992."
+    teaches: [concept_reflexivity, concept_fundamental_macro_analysis, concept_position_sizing]
+    influenced_by: [person_karl_popper]
+  - id: person_stanley_druckenmiller
+    name: Stanley Druckenmiller
+    role: Founder of Duquesne Capital; Quantum Fund lead PM (1988–2000)
+    known_for: "Decades without a losing year; liquidity/central-bank focus; concentration when conviction is high; Lost Tree Club speech (2015)."
+    teaches: [concept_fundamental_macro_analysis, concept_position_sizing, concept_reflexivity]
+    influenced_by: [person_george_soros]
+    sources:
+      - {title: "Stanley Druckenmiller at the Lost Tree Club (Mauldin Economics)", url: "https://www.mauldineconomics.com/overmyshoulder/article/stanley-druckenmiller-at-the-lost-tree-club", tier: T2}
+  - id: person_bruce_kovner
+    name: Bruce Kovner
+    role: Founder of Caxton Associates
+    known_for: "Global macro trader; Market Wizards."
+    teaches: [concept_fundamental_macro_analysis, concept_risk_of_ruin_drawdown]
+    influenced_by: [person_michael_marcus]
+  - id: person_michael_marcus
+    name: Michael Marcus
+    role: Commodity trader
+    known_for: "Market Wizards; reportedly turned $30K into $80M; mentored Bruce Kovner."
+    teaches: [concept_trend_following, concept_trading_psychology]
+    influenced_by: [person_ed_seykota]
+  - id: person_andy_krieger
+    name: Andrew (Andy) Krieger
+    role: Currency trader (Bankers Trust, 1987)
+    known_for: "Shorted the New Zealand dollar after the 1987 crash with leveraged options; Bankers Trust reportedly made ~$300M; Chart Fanatics guest ('The $300 Million Trade')."
+    teaches: [concept_fundamental_macro_analysis, concept_options_greeks, concept_position_sizing]
+    featured_in: [channel_chart_fanatics]
+    sources:
+      - {title: "Complete Trader's Edge — Andrew Krieger: The Kiwi Trade", url: "https://completetradersedge.com/andrew-krieger-kiwi-trade-bankers-trust/", tier: T3}
+  - id: person_ray_dalio
+    name: Ray Dalio
+    role: Founder of Bridgewater Associates (1975)
+    known_for: "Principles; How the Economic Machine Works; All Weather / risk parity; the 'Holy Grail' of 15+ uncorrelated return streams."
+    teaches: [concept_fundamental_macro_analysis, concept_correlation_portfolio_risk]
+    influenced_by: ["person_harry_markowitz?"]
+  - id: person_jack_schwager
+    name: Jack D. Schwager
+    role: Author, interviewer
+    known_for: "Market Wizards series (1989–2020): interviews with hundreds of top traders."
+    teaches: [concept_edge, concept_trading_psychology]
+  - id: person_victor_sperandeo
+    name: Victor Sperandeo
+    role: Trader ("Trader Vic")
+    known_for: "Trader Vic: Methods of a Wall Street Master (1991); 1-2-3 trend reversal; The New Market Wizards."
+    teaches: [concept_market_structure, concept_dow_theory]
+    influenced_by: [person_charles_dow]
+  - id: person_martin_schwartz
+    name: Martin "Buzzy" Schwartz
+    role: Trader
+    known_for: "Pit Bull (1998); US Trading Championship winner; Market Wizards."
+    teaches: [concept_moving_averages, concept_trading_psychology]
+  - id: person_howard_marks
+    name: Howard Marks
+    role: Co-founder of Oaktree Capital
+    known_for: "The Most Important Thing (2011); Mastering the Market Cycle (2018); memos on risk and cycles."
+    teaches: [concept_market_regimes, concept_market_sentiment]
+
+  # ───────────────────────── Quants & mathematicians ─────────────────────────
+  - id: person_claude_shannon
+    name: Claude Shannon
+    role: Mathematician (Bell Labs, MIT)
+    era: 1916–2001
+    known_for: "Information theory (1948); worked with Ed Thorp on a wearable roulette computer."
+  - id: person_john_kelly
+    name: John L. Kelly Jr.
+    role: Scientist (Bell Labs)
+    era: 1923–1965
+    known_for: "A New Interpretation of Information Rate (1956): the Kelly criterion."
+    teaches: [concept_kelly_criterion_optimal_f]
+    influenced_by: [person_claude_shannon]
+  - id: person_ed_thorp
+    name: Edward O. Thorp
+    role: Mathematician, hedge-fund pioneer
+    known_for: "Beat the Dealer (1962) card counting; applied Kelly sizing to markets; Princeton Newport Partners (1969); convertible/warrant arbitrage; A Man for All Markets (2017)."
+    teaches: [concept_kelly_criterion_optimal_f, concept_edge, concept_options_greeks, concept_probabilistic_thinking]
+    influenced_by: [person_john_kelly, person_claude_shannon]
+  - id: person_ralph_vince
+    name: Ralph Vince
+    role: Money-management researcher
+    known_for: "Optimal f; leverage space trading model; The Mathematics of Money Management (1992)."
+    teaches: [concept_kelly_criterion_optimal_f, concept_position_sizing]
+    influenced_by: ["person_john_kelly?"]
+  - id: person_van_tharp
+    name: Van K. Tharp
+    role: Trading coach, psychologist
+    era: 1945–2022
+    known_for: "R-multiples, expectancy, SQN; Trade Your Way to Financial Freedom (1998); appears in Market Wizards."
+    teaches: [concept_position_sizing, concept_expectancy, concept_risk_reward_r_multiples, concept_trading_psychology]
+  - id: person_jim_simons
+    name: Jim Simons
+    role: Mathematician; founder of Renaissance Technologies
+    era: 1938–2024
+    known_for: "Chern–Simons theory; Medallion Fund; MIT talk 'Mathematics, Common Sense, and Good Luck' (2010); hire scientists, not finance people."
+    teaches: [concept_machine_learning_finance, concept_time_series_statistics, concept_edge]
+  - id: person_louis_bachelier
+    name: Louis Bachelier
+    role: Mathematician
+    era: 1870–1946
+    known_for: "Théorie de la spéculation (1900): first mathematical model of Brownian motion applied to prices."
+    teaches: [concept_random_walk_efficient_markets, concept_stochastic_processes]
+  - id: person_kiyosi_ito
+    name: Kiyosi Itô
+    role: Mathematician
+    era: 1915–2008
+    known_for: "Itô calculus and Itô's lemma: the foundation of continuous-time finance."
+    teaches: [concept_stochastic_processes]
+  - id: person_fischer_black
+    name: Fischer Black
+    role: Economist
+    era: 1938–1995
+    known_for: "Black–Scholes(-Merton) option pricing model (1973)."
+    teaches: [concept_options_greeks]
+  - id: person_benoit_mandelbrot
+    name: Benoit Mandelbrot
+    role: Mathematician
+    era: 1924–2010
+    known_for: "Fractals; fat-tailed cotton prices (1963); The (Mis)Behavior of Markets (2004)."
+    teaches: [concept_probability_fat_tails]
+    influenced_by: ["person_louis_bachelier?"]
+  - id: person_eugene_fama
+    name: Eugene Fama
+    role: Economist (Chicago); Nobel 2013
+    known_for: "Efficient Market Hypothesis (1970 review); documented fat tails in stock returns (1965)."
+    teaches: [concept_random_walk_efficient_markets]
+    influenced_by: [person_benoit_mandelbrot]
+  - id: person_burton_malkiel
+    name: Burton Malkiel
+    role: Economist (Princeton)
+    known_for: "A Random Walk Down Wall Street (1973)."
+    teaches: [concept_random_walk_efficient_markets]
+    influenced_by: ["person_eugene_fama?"]
+  - id: person_andrew_lo
+    name: Andrew W. Lo
+    role: Professor (MIT Sloan)
+    known_for: "Adaptive Markets Hypothesis; A Non-Random Walk Down Wall Street (with MacKinlay); variance-ratio tests."
+    teaches: [concept_random_walk_efficient_markets, concept_time_series_statistics]
+  - id: person_robert_engle
+    name: Robert Engle
+    role: Econometrician; Nobel 2003
+    known_for: "ARCH models (1982); cointegration (Engle–Granger)."
+    teaches: [concept_time_series_statistics, concept_volatility]
+  - id: person_ruey_tsay
+    name: Ruey S. Tsay
+    role: Professor (Chicago Booth)
+    known_for: "Analysis of Financial Time Series."
+    teaches: [concept_time_series_statistics]
+  - id: person_steven_shreve
+    name: Steven E. Shreve
+    role: Professor (Carnegie Mellon)
+    known_for: "Stochastic Calculus for Finance I & II."
+    teaches: [concept_stochastic_processes, concept_options_greeks]
+    influenced_by: [person_kiyosi_ito]
+  - id: person_sheldon_natenberg
+    name: Sheldon Natenberg
+    role: Options educator
+    known_for: "Option Volatility & Pricing (1988)."
+    teaches: [concept_options_greeks, concept_volatility]
+  - id: person_nassim_taleb
+    name: Nassim Nicholas Taleb
+    role: Former options trader, author, researcher
+    known_for: "Dynamic Hedging (1997); Fooled by Randomness; The Black Swan; Antifragile; Statistical Consequences of Fat Tails (2020)."
+    teaches: [concept_probability_fat_tails, concept_options_greeks, concept_risk_of_ruin_drawdown]
+    influenced_by: [person_benoit_mandelbrot, person_karl_popper]
+  - id: person_karl_popper
+    name: Karl Popper
+    role: Philosopher of science
+    era: 1902–1994
+    known_for: "Falsifiability and fallibilism; deeply influenced Soros and Taleb."
+  - id: person_et_jaynes
+    name: E. T. Jaynes
+    role: Physicist
+    era: 1922–1998
+    known_for: "Probability Theory: The Logic of Science (2003): Bayesian probability as extended logic."
+    teaches: [concept_probability_fat_tails, concept_probabilistic_thinking]
+  - id: person_harry_markowitz
+    name: Harry Markowitz
+    role: Economist; Nobel 1990
+    era: 1927–2023
+    known_for: "Portfolio Selection (1952): mean-variance optimisation, diversification."
+    teaches: [concept_correlation_portfolio_risk]
+  - id: person_william_sharpe
+    name: William F. Sharpe
+    role: Economist; Nobel 1990
+    known_for: "CAPM; the Sharpe ratio."
+    teaches: [concept_performance_metrics]
+    influenced_by: [person_harry_markowitz]
+  - id: person_marcos_lopez_de_prado
+    name: Marcos López de Prado
+    role: Quant researcher, author
+    known_for: "Advances in Financial Machine Learning (2018); deflated Sharpe ratio; PBO; meta-labeling; triple-barrier method."
+    teaches: [concept_machine_learning_finance, concept_overfitting_validation, concept_backtesting]
+  - id: person_david_aronson
+    name: David Aronson
+    role: Researcher, author
+    known_for: "Evidence-Based Technical Analysis (2006): applying the scientific method and data-snooping corrections to TA."
+    teaches: [concept_overfitting_validation, concept_backtesting]
+  - id: person_ernest_chan
+    name: Ernest P. Chan
+    role: Quant trader, author
+    known_for: "Quantitative Trading (2008); Algorithmic Trading (2013); mean-reversion and momentum strategies for retail quants."
+    teaches: [concept_mean_reversion, concept_backtesting, concept_time_series_statistics]
+  - id: person_cliff_asness
+    name: Cliff Asness
+    role: Co-founder of AQR Capital
+    known_for: "Value and momentum factor research; time-series momentum."
+    teaches: [concept_trend_following, concept_random_walk_efficient_markets]
+
+  # ───────────────────────── Microstructure & execution ─────────────────────────
+  - id: person_albert_kyle
+    name: Albert "Pete" Kyle
+    role: Economist (Maryland)
+    known_for: "Kyle (1985) model of informed trading and price impact (Kyle's lambda)."
+    teaches: [concept_market_microstructure, concept_optimal_execution_market_impact]
+  - id: person_maureen_ohara
+    name: Maureen O'Hara
+    role: Professor (Cornell)
+    known_for: "Market Microstructure Theory (1995); flow toxicity (VPIN)."
+    teaches: [concept_market_microstructure]
+  - id: person_larry_harris
+    name: Larry Harris
+    role: Professor (USC); former SEC chief economist
+    known_for: "Trading and Exchanges: Market Microstructure for Practitioners (2003)."
+    teaches: [concept_market_microstructure, concept_trade_execution]
+  - id: person_robert_almgren
+    name: Robert Almgren
+    role: Quant researcher; co-founder of Quantitative Brokers
+    known_for: "Almgren–Chriss optimal execution (2000)."
+    teaches: [concept_optimal_execution_market_impact]
+  - id: person_jean_philippe_bouchaud
+    name: Jean-Philippe Bouchaud
+    role: Physicist; chairman of CFM
+    known_for: "Square-root impact law; Trades, Quotes and Prices (2018); econophysics."
+    teaches: [concept_optimal_execution_market_impact, concept_market_microstructure, concept_probability_fat_tails]
+    influenced_by: ["person_benoit_mandelbrot?"]
+
+  # ───────────────────────── Auction market theory ─────────────────────────
+  - id: person_peter_steidlmayer
+    name: J. Peter Steidlmayer
+    role: CBOT trader
+    known_for: "Created Market Profile at the Chicago Board of Trade (1980s); auction market theory."
+    teaches: [concept_auction_market_theory, concept_volume_profile]
+  - id: person_james_dalton
+    name: James F. Dalton
+    role: Trader, author
+    known_for: "Mind Over Markets (1990); Markets in Profile (2007): applied Market Profile/AMT."
+    teaches: [concept_auction_market_theory, concept_volume_profile]
+    influenced_by: [person_peter_steidlmayer]
+  - id: person_brian_shannon
+    name: Brian Shannon
+    role: Trader, educator (Alphatrends)
+    known_for: "Technical Analysis Using Multiple Timeframes; anchored VWAP for swing traders."
+    teaches: [concept_vwap, concept_multi_timeframe_analysis]
+  - id: person_david_weis
+    name: David H. Weis
+    role: Wyckoff practitioner
+    known_for: "Trades About to Happen (2013): modern Wyckoff method; Weis wave."
+    teaches: [concept_wyckoff_method]
+    influenced_by: [person_richard_wyckoff]
+
+  # ───────────────────────── Psychology ─────────────────────────
+  - id: person_mark_douglas
+    name: Mark Douglas
+    role: Trading psychologist
+    era: 1948–2015
+    known_for: "The Disciplined Trader (1990); Trading in the Zone (2000); the five fundamental truths."
+    teaches: [concept_probabilistic_thinking, concept_trading_psychology, concept_edge]
+  - id: person_brett_steenbarger
+    name: Brett N. Steenbarger
+    role: Psychologist, trading coach
+    known_for: "The Psychology of Trading (2003); The Daily Trading Coach (2009); solution-focused self-coaching."
+    teaches: [concept_trading_psychology, concept_trading_journal_review]
+  - id: person_tom_hougaard
+    name: Tom Hougaard
+    role: Index futures trader (DAX/FTSE), author
+    known_for: "Best Loser Wins (2022): losing well, adding to winners, behavioural training."
+    teaches: [concept_trading_psychology, concept_trade_management]
+    influenced_by: ["person_mark_douglas?"]
+  - id: person_jared_tendler
+    name: Jared Tendler
+    role: Mental-game coach
+    known_for: "The Mental Game of Trading (2021)."
+    teaches: [concept_trading_psychology]
+  - id: person_daniel_kahneman
+    name: Daniel Kahneman
+    role: Psychologist; Nobel 2002
+    era: 1934–2024
+    known_for: "Prospect theory with Amos Tversky (1979); Thinking, Fast and Slow (2011)."
+    teaches: [concept_trading_psychology, concept_probabilistic_thinking]
+  - id: person_annie_duke
+    name: Annie Duke
+    role: Former poker professional, decision strategist
+    known_for: "Thinking in Bets (2018): resulting, process over outcome."
+    teaches: [concept_probabilistic_thinking]
+    influenced_by: ["person_daniel_kahneman?"]
+  - id: person_charles_mackay
+    name: Charles Mackay
+    role: Journalist
+    era: 1814–1889
+    known_for: "Extraordinary Popular Delusions and the Madness of Crowds (1841)."
+    teaches: [concept_market_sentiment]
+
+  # ───────────────────────── Modern educators ─────────────────────────
+  - id: person_michael_huddleston
+    name: Michael J. Huddleston (ICT)
+    role: Educator, "The Inner Circle Trader"
+    known_for: "Smart Money / ICT concepts: liquidity, FVG, order blocks, OTE, Power of Three, kill zones, SMT; free YouTube mentorships (e.g., 2022 ICT Mentorship)."
+    teaches: [concept_smart_money_concepts, concept_fair_value_gap, concept_order_blocks_breakers, concept_premium_discount_ote, concept_amd_power_of_three, concept_smt_divergence, concept_trading_sessions_killzones, concept_liquidity]
+    influenced_by: ["person_richard_wyckoff?", "person_larry_williams?"]
+  - id: person_kathy_lien
+    name: Kathy Lien
+    role: FX strategist
+    known_for: "Day Trading and Swing Trading the Currency Market."
+    teaches: [concept_fundamental_macro_analysis, concept_trading_sessions_killzones, concept_carry_trade]
+  - id: person_john_carter
+    name: John F. Carter
+    role: Trader, educator (Simpler Trading)
+    known_for: "Mastering the Trade (2005): the TTM Squeeze and intraday setups."
+    teaches: [concept_bollinger_bands, concept_breakout_trading]
+  - id: person_adam_grimes
+    name: Adam Grimes
+    role: Trader, author
+    known_for: "The Art and Science of Technical Analysis (2012): statistically grounded TA."
+    teaches: [concept_price_action, concept_backtesting, concept_market_structure]
+  - id: person_perry_kaufman
+    name: Perry J. Kaufman
+    role: Systematic trading author
+    known_for: "Trading Systems and Methods; Kaufman efficiency ratio / adaptive moving average."
+    teaches: [concept_trend_following, concept_market_regimes, concept_backtesting]
+
+  # ───────────────────────── Podcast & media hosts ─────────────────────────
+  - id: person_riz_iqbal
+    name: Riz Iqbal
+    role: Host of Chart Fanatics and the Words of Rizdom trading podcast
+    known_for: "Built one of the largest trading interview channels; policy of interviewing only verified traders."
+    featured_in: [channel_chart_fanatics, podcast_words_of_rizdom]
+    sources:
+      - {title: "Riz Iqbal on X", url: "https://x.com/Wordsof_Rizdom/status/1925902141010452612", tier: T4}
+      - {title: "Audible — Building the World's Largest Trading Podcast with Riz Iqbal", url: "https://www.audible.co.uk/podcast/14-Words-of-Rizdom-Building-the-Worlds-Largest-Trading-Podcast-with-Riz-Iqbal/B0GWC6474Y", tier: T3}
+  - id: person_aaron_fifield
+    name: Aaron Fifield
+    role: Founder and original host of Chat With Traders (2015–2022)
+  - id: person_tessa_dao
+    name: Tessa Dao
+    role: Co-host of Chat With Traders
+  - id: person_ian_cox
+    name: Ian Cox
+    role: Co-host of Chat With Traders
+  - id: person_niels_kaastrup_larsen
+    name: Niels Kaastrup-Larsen
+    role: Host of Top Traders Unplugged
+  - id: person_corey_hoffstein
+    name: Corey Hoffstein
+    role: Newfound Research; host of Flirting with Models
+  - id: person_erik_townsend
+    name: Erik Townsend
+    role: Host of MacroVoices
+  - id: person_joe_weisenthal
+    name: Joe Weisenthal
+    role: Co-host of Bloomberg's Odd Lots
+  - id: person_tracy_alloway
+    name: Tracy Alloway
+    role: Co-host of Bloomberg's Odd Lots
+  - id: person_patrick_oshaughnessy
+    name: Patrick O'Shaughnessy
+    role: Host of Invest Like the Best
+  - id: person_russ_roberts
+    name: Russ Roberts
+    role: Host of EconTalk
+
+  # ───────────────────────── Chart Fanatics guests ─────────────────────────
+  - id: person_fabio_valentini
+    name: Fabio Valentini
+    role: Futures scalper (NQ); co-founder of Deep Charts; Chart Academy instructor
+    known_for: "Top-3 Robbins World Cup futures (scalping) division; auction market theory + order flow; Direction-Location-Aggression."
+    teaches: [concept_auction_market_theory, concept_order_flow, concept_volume_profile, concept_scalping]
+    featured_in: [channel_chart_fanatics, channel_chart_academy]
+    influenced_by: ["person_james_dalton?", "person_peter_steidlmayer?"]
+  - id: person_carmine_rosato
+    name: Carmine Rosato
+    role: Order-flow trader
+    featured_in: [channel_chart_fanatics]
+    teaches: [concept_order_flow]
+  - id: person_marci_silfrain
+    name: Marci Silfrain
+    role: Futures trader ("World #2" futures trading champion)
+    known_for: "Measured Move Trend Strategy ('Little RZY'); heavy backtesting and sim practice; 'plan to lose the next 20 in a row'."
+    teaches: [concept_trendlines, concept_trend_following, concept_backtesting, concept_trading_psychology]
+    featured_in: [channel_chart_fanatics, podcast_words_of_rizdom]
+  - id: person_tg_capital
+    name: TG Capital
+    role: FX/London-session trader
+    known_for: "London kill-zone 'Trident' strategy: FVG + EMA stack + daily targets."
+    teaches: [concept_fair_value_gap, concept_trading_sessions_killzones, concept_moving_averages]
+    featured_in: [channel_chart_fanatics]
+    influenced_by: ["person_michael_huddleston?"]
+  - id: person_marco_trades
+    name: Marco Trades
+    role: Futures day trader
+    known_for: "Liquidity-grab reversal playbook; live NY sessions on Chart Fanatics Live."
+    teaches: [concept_liquidity_sweep_reversal]
+    featured_in: [channel_chart_fanatics, channel_chart_fanatics_live]
+    influenced_by: ["person_michael_huddleston?"]
+  - id: person_candace_lau
+    name: Candace Lau
+    role: NQ scalper
+    known_for: "NQ Liquidity Sweep & Reversal Scalping Strategy."
+    teaches: [concept_liquidity_sweep_reversal, concept_fair_value_gap]
+    featured_in: [channel_chart_fanatics]
+    influenced_by: ["person_michael_huddleston?"]
+  - id: person_jj_simon
+    name: JJ Simon
+    role: NQ futures prop trader
+    known_for: "Fair Pricing Theory: NY-open fair price, reversion + continuation, A+/A/B grading."
+    teaches: [concept_mean_reversion, concept_news_trading]
+    featured_in: [channel_chart_fanatics]
+  - id: person_tanja_trades
+    name: Tanja Trades
+    role: Futures day trader
+    known_for: "AMD futures model: trade only after sweeps + displacement, around major news."
+    teaches: [concept_amd_power_of_three]
+    featured_in: [channel_chart_fanatics]
+    influenced_by: ["person_michael_huddleston?"]
+  - id: person_trader_mayne
+    name: Trader Mayne
+    role: Swing trader (FX, futures, crypto)
+    known_for: "Structure + OTE playbook with order blocks and breakers."
+    teaches: [concept_order_blocks_breakers, concept_premium_discount_ote]
+    featured_in: [channel_chart_fanatics]
+    influenced_by: ["person_michael_huddleston?"]
+  - id: person_umar_ashraf
+    name: Umar Ashraf
+    role: Day trader; founder of Stock Market Lab
+    known_for: "5-Stage Trader Development Framework."
+    teaches: [concept_trading_plan, concept_trading_psychology]
+    featured_in: [channel_chart_fanatics, podcast_words_of_rizdom]
+  - id: person_tori_trades
+    name: Tori Trades
+    role: Swing trader
+    known_for: "4-hour trendline playbook with no indicators."
+    teaches: [concept_trendlines]
+    featured_in: [channel_chart_fanatics]
+  - id: person_brando_elite
+    name: Brando Elite
+    role: Options swing trader
+    known_for: "Options swing trading on HTF levels + news catalysts."
+    teaches: [concept_options_greeks, concept_support_resistance]
+    featured_in: [channel_chart_fanatics]
+  - id: person_trader_yush
+    name: Trader Yush
+    role: Futures order-flow scalper
+    known_for: "Trapped buyers/sellers, absorption, large-lot detection (75+ NQ / 200+ ES)."
+    teaches: [concept_order_flow]
+    featured_in: [channel_chart_fanatics]
+  - id: person_forrest_knight
+    name: Forrest Knight
+    role: Futures trader
+    known_for: "Volume-profile edge-to-edge strategy at auction levels."
+    teaches: [concept_volume_profile]
+    featured_in: [channel_chart_fanatics]
+  - id: person_trader_kane
+    name: Trader Kane
+    role: NQ futures day trader; co-founder of The Lab
+    known_for: "'The Lab Model': SMT vs ES, IFVG, 10 AM 4H anchor, aggressive breakeven."
+    teaches: [concept_smt_divergence, concept_fair_value_gap]
+    featured_in: [channel_chart_fanatics]
+    influenced_by: ["person_michael_huddleston?"]
+  - id: person_pradeep_bonde
+    name: Pradeep Bonde (Stockbee)
+    role: Stock trader, educator
+    known_for: "Episodic Pivots; momentum bursts; Stockbee community."
+    teaches: [concept_episodic_pivot, concept_growth_momentum_canslim]
+    featured_in: [channel_chart_fanatics, podcast_words_of_rizdom]
+  - id: person_andrea_cimitan
+    name: Andrea Cimitan
+    role: Futures trader
+    teaches: [concept_auction_market_theory]
+    featured_in: [channel_chart_fanatics]
+  - id: person_rajan_dhall
+    name: Rajan Dhall
+    role: Professional trader
+    teaches: [concept_auction_market_theory]
+    featured_in: [channel_chart_fanatics]
+  - id: person_gianluca_bruni
+    name: Gianluca Bruni
+    role: Trader (billed as "2x World Trading Champion"; unverified)
+    teaches: [concept_backtesting, concept_position_sizing]
+    featured_in: [channel_chart_fanatics]
+  - id: person_ted_zhang
+    name: Ted Zhang
+    role: "Trader/manager (episode: managing $25M at a young age)"
+    featured_in: [channel_chart_fanatics, podcast_words_of_rizdom]
+  - id: person_clement_ang
+    name: Clement Ang
+    role: Growth-stock swing/position trader (SilverCape)
+    known_for: "Top performer in the 2025 US Investing Championship million-dollar division; +522% across 2024–25 (TraderLion Q&A)."
+    teaches: [concept_growth_momentum_canslim, concept_market_regimes]
+    featured_in: [channel_chart_fanatics]
+    sources:
+      - {title: "TraderLion — Clement Ang Q&A", url: "https://traderlion.com/?p=431637", tier: T3}
+  - id: person_matteo_conti
+    name: Matteo Conti
+    role: Trader
+    featured_in: [channel_chart_fanatics]
+  - id: person_fredy_sarmiento
+    name: Fredy Sarmiento
+    role: Options-flow trader
+    featured_in: [channel_chart_fanatics]
+  - id: person_pavel
+    name: Pavel (Trading First Principles)
+    role: Trader
+    featured_in: [channel_chart_fanatics]

@@ -1,0 +1,13 @@
+# Scraped third-party full text (transcripts, lessons, show notes) stays local by default.
+# Delete these lines if you want to commit your scraped corpus to a private repo.
+trading-intelligence/*/raw/**
+!trading-intelligence/*/raw/.gitkeep
+
+# Build output (regenerate with tools/bundle_for_claude.py)
+dist/
+
+# Python / graphify caches
+__pycache__/
+*.pyc
+graphify-out/
+.graphify*

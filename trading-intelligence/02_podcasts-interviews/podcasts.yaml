@@ -1,0 +1,125 @@
+# Podcast directory. `itunes_search_term` lets tools/scrapers/podcasts_rss.py discover the
+# RSS feed via the iTunes Search API (no hard-coded feed URLs that may rot).
+# rank_signal: where independent directories place the show (see sources).
+
+podcasts:
+  - id: podcast_chat_with_traders
+    title: Chat With Traders
+    hosts: [person_tessa_dao, person_ian_cox]
+    founded_by: [person_aaron_fifield]
+    focus: "Weekly interviews with active traders: day traders, prop, systematic, discretionary. War stories over theory."
+    url: https://chatwithtraders.com
+    itunes_search_term: "Chat With Traders"
+    rank_signal: "FeedSpot 2026: top-2 trading podcast; MillionPodcasts: #4 day-trading podcast"
+    covers: [concept_trading_psychology, concept_scalping, concept_edge]
+    sources:
+      - {title: "FeedSpot — 100 Best Trading Podcasts 2026", url: "https://podcast.feedspot.com/trading_podcasts/", tier: T3}
+      - {title: "MillionPodcasts — Best Day Trading Podcasts", url: "https://www.millionpodcasts.com/day-trading-podcasts/", tier: T3}
+  - id: podcast_top_traders_unplugged
+    title: Top Traders Unplugged
+    hosts: [person_niels_kaastrup_larsen]
+    focus: "Trend following, CTAs, and systematic macro; the Systematic Investor roundtable series (with Robert Carver and others)."
+    url: https://www.toptradersunplugged.com
+    itunes_search_term: "Top Traders Unplugged"
+    rank_signal: "FeedSpot 2026: top-2 trading podcast; MillionPodcasts: #10 trading podcast"
+    covers: [concept_trend_following, concept_position_sizing, concept_correlation_portfolio_risk]
+    sources:
+      - {title: "FeedSpot — 100 Best Trading Podcasts 2026", url: "https://podcast.feedspot.com/trading_podcasts/", tier: T3}
+  - id: podcast_words_of_rizdom
+    title: Words of Rizdom
+    hosts: [person_riz_iqbal]
+    focus: "Long-form interviews with verified profitable traders; sister show to Chart Fanatics."
+    itunes_search_term: "Words of Rizdom"
+    rank_signal: "~191 episodes since Nov 2022 (aggregator); grew without famous guests"
+    related: [channel_chart_fanatics]
+    covers: [concept_trading_psychology, concept_prop_firm_risk_rules]
+    sources:
+      - {title: "Pod Engine — Words of Rizdom", url: "https://www.podengine.ai/podcasts/words-of-rizdom-1780241706", tier: T3}
+      - {title: "Listen Notes — Words of Rizdom", url: "https://www.listennotes.com/podcasts/words-of-rizdom-trading-podcast-riz-iqbal-SOIUJces2DG/", tier: T3}
+  - id: podcast_trend_following_covel
+    title: Trend Following with Michael Covel
+    hosts: [person_michael_covel]
+    focus: "1,000+ episodes on trend following; guests include Ed Seykota, Larry Hite, Jerry Parker, Tom Basso, Ewan Kirk, Campbell Harvey, Lasse Pedersen."
+    url: https://www.trendfollowing.com/trend-following-legends-podcast/
+    itunes_search_term: "Michael Covel Trend Following"
+    covers: [concept_trend_following]
+    sources:
+      - {title: "Trend Following Legends podcast page", url: "https://www.trendfollowing.com/trend-following-legends-podcast/", tier: T2}
+  - id: podcast_flirting_with_models
+    title: Flirting with Models
+    hosts: [person_corey_hoffstein]
+    focus: "Quant practitioners on research, design, and management of systematic strategies (Cliff Asness, Adam Butler, ...)."
+    itunes_search_term: "Flirting with Models"
+    covers: [concept_trend_following, concept_overfitting_validation, concept_machine_learning_finance]
+    sources:
+      - {title: "QuantT — best quant finance podcasts 2026", url: "https://www.quantt.co.uk/resources/best-quant-finance-podcasts-2026", tier: T3}
+  - id: podcast_better_system_trader
+    title: Better System Trader
+    focus: "Systematic and algorithmic trading interviews; system development and validation."
+    itunes_search_term: "Better System Trader"
+    covers: [concept_backtesting, concept_overfitting_validation]
+  - id: podcast_macro_voices
+    title: MacroVoices
+    hosts: [person_erik_townsend]
+    focus: "Global macro: rates, commodities, energy, central banks."
+    itunes_search_term: "MacroVoices"
+    covers: [concept_fundamental_macro_analysis, concept_intermarket_analysis]
+    sources:
+      - {title: "The Robust Trader — Top Trading Podcasts", url: "https://therobusttrader.com/trading-podcasts/", tier: T3}
+  - id: podcast_odd_lots
+    title: Odd Lots (Bloomberg)
+    hosts: [person_joe_weisenthal, person_tracy_alloway]
+    focus: "Markets and economics deep dives, frequently on market plumbing and microstructure."
+    itunes_search_term: "Odd Lots Bloomberg"
+    covers: [concept_market_microstructure, concept_fundamental_macro_analysis]
+    sources:
+      - {title: "CastFox — Best Investing Podcasts (Odd Lots #10)", url: "https://www.castfox.net/best-podcasts/investing", tier: T3}
+  - id: podcast_desire_to_trade
+    title: Desire To Trade
+    focus: "Trader interviews and strategy breakdowns, with YouTube video versions."
+    itunes_search_term: "Desire To Trade"
+    covers: [concept_scalping, concept_trading_plan]
+  - id: podcast_steadytrade
+    title: SteadyTrade
+    focus: "Day-trading education; small-cap momentum."
+    itunes_search_term: "SteadyTrade podcast"
+    covers: [concept_episodic_pivot, concept_scalping]
+  - id: podcast_day_trading_show
+    title: The Day Trading Show
+    focus: "Day-trading interviews with companion videos."
+    itunes_search_term: "The Day Trading Show Austin Silver"
+    covers: [concept_scalping]
+  - id: podcast_invest_like_the_best
+    title: Invest Like the Best
+    hosts: [person_patrick_oshaughnessy]
+    focus: "Long-form interviews with investors and traders (e.g., Paul Tudor Jones on his 50-year career)."
+    itunes_search_term: "Invest Like the Best"
+    covers: [concept_fundamental_macro_analysis]
+  - id: podcast_the_investors_podcast
+    title: We Study Billionaires (The Investor's Podcast)
+    focus: "Investor interviews and book studies (e.g., TIP128 with Edward Thorp on Kelly sizing)."
+    itunes_search_term: "We Study Billionaires Investor's Podcast"
+    covers: [concept_kelly_criterion_optimal_f]
+  - id: podcast_econtalk
+    title: EconTalk
+    hosts: [person_russ_roberts]
+    focus: "Economics conversations; many episodes with Nassim Taleb on risk and uncertainty."
+    itunes_search_term: "EconTalk"
+    covers: [concept_probability_fat_tails, concept_random_walk_efficient_markets]
+  - id: podcast_real_vision
+    title: Real Vision
+    focus: "Macro and markets interviews with institutional investors and traders."
+    itunes_search_term: "Real Vision Podcast"
+    covers: [concept_fundamental_macro_analysis, concept_market_regimes]
+  - id: podcast_traderlion
+    title: TraderLion Podcast
+    focus: "US growth-stock traders and Investing Championship winners (CANSLIM lineage)."
+    itunes_search_term: "TraderLion"
+    covers: [concept_growth_momentum_canslim, concept_episodic_pivot]
+
+channels:
+  - id: channel_ict_youtube
+    type: channel
+    title: The Inner Circle Trader (YouTube)
+    hosted_by: [person_michael_huddleston]
+    covers: [concept_smart_money_concepts]

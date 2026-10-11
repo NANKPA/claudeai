@@ -1,0 +1,173 @@
+# Landmark trading interviews, talks, documentaries & podcast episodes ("top podcast videos").
+# This is a CURATED SEED, not a view-count ranking: the container that built it could not
+# reach YouTube. tools/scrapers/youtube_top_search.py runs `discovery_queries` through
+# yt-dlp, ranks by views x relevance, and writes landmark-media.scraped.yaml (top 100).
+#
+# verification:
+#   verified  — existence + title confirmed by a web source during research (see sources)
+#   known     — well-documented public item; URL to be resolved by the scraper
+#   query     — a slot defined by a search query (scraper picks the top result)
+
+media:
+  - id: media_trader_1987_documentary
+    title: "Trader (1987 PBS documentary) — Paul Tudor Jones"
+    speaker_ids: [person_paul_tudor_jones]
+    year: 1987
+    format: documentary
+    covers: [concept_trade_management, concept_fundamental_macro_analysis, concept_trading_psychology]
+    key_takeaways: "Studies 1929 vs 1987 analogs; discipline and risk over prediction; reportedly pulled from circulation at Jones's request."
+    verification: verified
+    sources:
+      - {title: "Market Folly — PTJ 1987 PBS film", url: "https://www.marketfolly.com/2009/07/paul-tudor-jones-1987-pbs-film-trader.html", tier: T3}
+  - id: media_druckenmiller_lost_tree_2015
+    title: "Stanley Druckenmiller — Lost Tree Club speech (Jan 2015)"
+    speaker_ids: [person_stanley_druckenmiller]
+    year: 2015
+    format: speech (transcript)
+    covers: [concept_position_sizing, concept_fundamental_macro_analysis, concept_reflexivity, concept_trading_psychology]
+    key_takeaways: "'I was a pig': concentration over diversification; Soros doubled the 1992 GBP short to 200%; zero rates distort behaviour; the risk/reward of moving early."
+    verification: verified
+    sources:
+      - {title: "Mauldin Economics", url: "https://www.mauldineconomics.com/overmyshoulder/article/stanley-druckenmiller-at-the-lost-tree-club", tier: T2}
+      - {title: "Transcript (GitHub gist)", url: "https://gist.github.com/timhwang21/e6a2b24e064182dd9099ad00e4f4f9a6", tier: T3}
+  - id: media_ptj_invest_like_the_best
+    title: "Paul Tudor Jones on Invest Like the Best — 50-year career and philosophy"
+    speaker_ids: [person_paul_tudor_jones, person_patrick_oshaughnessy]
+    featured_in: [podcast_invest_like_the_best]
+    format: podcast
+    covers: [concept_fundamental_macro_analysis, concept_trade_management]
+    verification: verified
+  - id: media_dalio_economic_machine
+    title: "How the Economic Machine Works — Ray Dalio"
+    speaker_ids: [person_ray_dalio]
+    year: 2013
+    format: animated explainer (~30 min)
+    covers: [concept_fundamental_macro_analysis, concept_market_regimes]
+    key_takeaways: "Productivity + short-term debt cycle + long-term debt cycle; credit drives spending."
+    verification: known
+  - id: media_dalio_changing_world_order
+    title: "Principles for Dealing with the Changing World Order — Ray Dalio"
+    speaker_ids: [person_ray_dalio]
+    year: 2022
+    format: animated explainer
+    covers: [concept_fundamental_macro_analysis]
+    verification: known
+  - id: media_seykota_whipsaw_song
+    title: "The Whipsaw Song — Ed Seykota"
+    speaker_ids: [person_ed_seykota]
+    format: music video
+    covers: [concept_trend_following, concept_trading_psychology]
+    key_takeaways: "Trend followers must accept whipsaws as the cost of catching big trends."
+    verification: known
+  - id: media_covel_ep1000_jerry_parker
+    title: "Trend Following Radio Ep. 1000 — Jerry Parker interview"
+    speaker_ids: [person_jerry_parker, person_michael_covel]
+    featured_in: [podcast_trend_following_covel]
+    format: podcast
+    covers: [concept_trend_following]
+    verification: verified
+    sources:
+      - {title: "Metacast listing", url: "https://metacast.app/podcast/michael-covel-s-trend-following/BLF1Y5UM/ep-1000-jerry-parker-interview-with-michael-covel-on-trend-following-radio/faSwKSbs", tier: T3}
+  - id: media_cwt_ep109_thorp
+    title: "Chat With Traders EP 109 — The man who beat the dealer, and later, beat the market (Edward Thorp)"
+    speaker_ids: [person_ed_thorp]
+    featured_in: [podcast_chat_with_traders]
+    format: podcast
+    covers: [concept_edge, concept_kelly_criterion_optimal_f]
+    verification: verified
+    sources:
+      - {title: "chatwithtraders.com", url: "https://chatwithtraders.com/?p=1508", tier: T2}
+  - id: media_cwt_best_of_day_trading
+    title: "Chat With Traders — Best of Day Trading (Parts 1–2)"
+    featured_in: [podcast_chat_with_traders]
+    format: compilation
+    covers: [concept_scalping, concept_trading_psychology]
+    verification: verified
+    sources:
+      - {title: "chatwithtraders.com", url: "https://chatwithtraders.com/video/best-of-day-trading-part-1", tier: T2}
+  - id: media_ict_2022_mentorship
+    title: "ICT 2022 Mentorship (YouTube series) — Michael J. Huddleston"
+    speaker_ids: [person_michael_huddleston]
+    featured_in: [channel_ict_youtube]
+    year: 2022
+    format: video series
+    covers: [concept_smart_money_concepts, concept_fair_value_gap, concept_liquidity, concept_trading_sessions_killzones, concept_market_structure]
+    verification: known
+  - id: media_fwm_cliff_asness
+    title: "Flirting with Models — Cliff Asness (AQR)"
+    speaker_ids: [person_cliff_asness, person_corey_hoffstein]
+    featured_in: [podcast_flirting_with_models]
+    format: podcast
+    covers: [concept_trend_following, concept_random_walk_efficient_markets]
+    verification: verified
+  - id: media_desire_to_trade_six_traders
+    title: "Desire To Trade — six traders share day trading strategies"
+    featured_in: [podcast_desire_to_trade]
+    format: podcast/video
+    covers: [concept_scalping, concept_trade_execution]
+    verification: verified
+  - id: media_ttu_nick_radge
+    title: "Top Traders Unplugged — Nick Radge interview"
+    featured_in: [podcast_top_traders_unplugged]
+    format: podcast
+    covers: [concept_trend_following, concept_growth_momentum_canslim]
+    verification: verified
+  - id: media_tip128_thorp
+    title: "TIP128 — Edward Thorp: A Man for All Markets (The Investor's Podcast)"
+    speaker_ids: [person_ed_thorp]
+    featured_in: [podcast_the_investors_podcast]
+    format: podcast
+    covers: [concept_kelly_criterion_optimal_f, concept_position_sizing]
+    verification: verified
+    sources:
+      - {title: "theinvestorspodcast.com", url: "https://www.theinvestorspodcast.com/episodes/edward-thorp-a-man-for-all-markets/", tier: T2}
+  - id: media_soros_ceu_lectures
+    title: "The Soros Lectures at Central European University (2009) — reflexivity, financial markets"
+    speaker_ids: [person_george_soros]
+    year: 2009
+    format: lecture series
+    covers: [concept_reflexivity, concept_fundamental_macro_analysis]
+    verification: known
+  # Chart Fanatics / Words of Rizdom headliners (detail in 01_chart-fanatics/catalog.yaml)
+  - {id: media_cf_fabio_live_scalper, title: "Trading LIVE with the #1 Scalper in the WORLD (EXTREME Accuracy) — Chart Fanatics", verification: verified, ref: "01_chart-fanatics/catalog.yaml"}
+  - {id: media_cf_liquidity_trap, title: "STEAL This EASY Liquidity TRAP Trading Strategy — Chart Fanatics", verification: verified, ref: "01_chart-fanatics/catalog.yaml"}
+  - {id: media_cf_marci_silfrain, title: "Marci Silfrain — Chart Fanatics", verification: verified, ref: "01_chart-fanatics/catalog.yaml"}
+  - {id: media_wor_marci_world_2, title: "The World's #2 Trader — Marci Silfrain (Words of Rizdom)", verification: verified, ref: "01_chart-fanatics/catalog.yaml"}
+
+discovery_queries:
+  # Each query fills ranked slots; the scraper keeps channel/title/views/date and dedupes.
+  legends:
+    - "Paul Tudor Jones interview trading"
+    - "Stanley Druckenmiller interview investing philosophy"
+    - "George Soros interview reflexivity"
+    - "Jim Simons interview Renaissance"
+    - "Ed Seykota interview trend following"
+    - "Ray Dalio interview markets debt cycle"
+    - "Larry Williams interview trading championship"
+    - "Linda Raschke interview trading"
+    - "Peter Brandt interview classical charting"
+    - "Mark Minervini interview SEPA VCP"
+    - "William O'Neil interview CANSLIM"
+    - "Jack Schwager Market Wizards interview lessons"
+    - "Tom Hougaard Best Loser Wins interview"
+    - "Al Brooks price action interview"
+    - "Bruce Kovner interview"
+  podcasts_episodes:
+    - "Chat With Traders podcast episode"
+    - "Top Traders Unplugged episode trend following"
+    - "Words of Rizdom trading podcast"
+    - "Chart Fanatics trading strategy"
+    - "Chart Fanatics Live trading"
+    - "Flirting with Models podcast"
+    - "MacroVoices podcast"
+    - "Odd Lots market structure"
+    - "Desire To Trade interview"
+    - "TraderLion podcast US Investing Championship"
+    - "Real Vision trader interview"
+  methods:
+    - "auction market theory volume profile trading explained"
+    - "order flow footprint trading explained"
+    - "ICT mentorship liquidity fair value gap"
+    - "Wyckoff method accumulation distribution explained"
+    - "prop firm futures trader interview payouts"
+    - "trading psychology Mark Douglas trading in the zone"
