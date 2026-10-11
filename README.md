@@ -11,7 +11,7 @@ A partitioned, graph-linked trading knowledge base built for Claude.
   - `build_graph.py`: notes + registries → graphify (Leiden communities, report, HTML, wiki)
   - `build_explorer.py`: the interactive Trading Intelligence Map (`explorer.html`)
   - `bundle_for_claude.py`: one-file bundle + per-partition bundles for Claude Projects (`dist/`)
-  - `scrapers/`: Chart Fanatics channel + transcripts, top-100 video search, podcast RSS,
+  - `scrapers/`: Chart Fanatics channel + transcripts + written playbooks, top-100 video search, podcast RSS,
     BabyPips course crawler, Open Library book QA
   - `run_pipeline.sh [--scrape]`: run everything end to end
 

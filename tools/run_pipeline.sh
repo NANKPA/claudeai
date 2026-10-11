@@ -12,6 +12,7 @@ if [[ "${1:-}" == "--scrape" ]]; then
   python3 tools/scrapers/youtube_channel.py                                   # Chart Fanatics: every video + transcript
   python3 tools/scrapers/youtube_channel.py --channel https://www.youtube.com/@chartfanaticslive \
           --channel-node channel_chart_fanatics_live --id-prefix media_cfl_ --tabs streams videos
+  python3 tools/scrapers/chartfanatics_playbooks.py                          # written strategy playbooks (T2 rules)
   python3 tools/scrapers/youtube_top_search.py --transcripts                  # top-100 trading + top-100 math videos
   python3 tools/scrapers/podcasts_rss.py                                      # podcast episode catalogs
   python3 tools/scrapers/babypips_course.py ${BABYPIPS_COOKIES:+--cookies "$BABYPIPS_COOKIES"}
