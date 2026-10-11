@@ -2,18 +2,18 @@
 
 # Knowledge Base Manifest
 
-- Nodes: **551** · Edges: **2332**
+- Nodes: **6272** · Edges: **16236**
 - Inferred (lower-confidence) edges: 26
 - Dangling references: 0
 
 | Kind | Count |
 |---|---|
-| person | 222 |
+| media | 5716 |
+| person | 244 |
 | book | 100 |
 | concept | 69 |
-| media | 48 |
-| mathbook | 39 |
-| strategy | 21 |
+| strategy | 47 |
+| mathbook | 44 |
 | podcast | 16 |
 | course | 11 |
 | track | 6 |
@@ -26,11 +26,11 @@
 | Partition | Nodes defined |
 |---|---|
 | 00_framework | 4 |
-| 01_chart-fanatics | 40 |
-| 02_podcasts-interviews | 32 |
-| 03_legends-authorities | 136 |
+| 01_chart-fanatics | 1095 |
+| 02_podcasts-interviews | 4592 |
+| 03_legends-authorities | 158 |
 | 04_babypips-school-of-pipsology | 11 |
-| 05_books-top-100 | 100 |
-| 06_mathematics-foundations | 69 |
+| 05_books-top-100 | 138 |
+| 06_mathematics-foundations | 115 |
 | 07_concepts | 69 |
 | 08_synthesis | 4 |

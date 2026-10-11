@@ -200,6 +200,7 @@ books:
      key_idea: "A champion trader's process for developing, validating, and monitoring systems.",
      covers: [concept_backtesting, concept_overfitting_validation]}
   - {rank: 64, id: book_trading_systems_and_methods, title: "Trading Systems and Methods", authors: [person_perry_kaufman], author: "Perry J. Kaufman", year: 1978, category: quant_algorithmic,
+     edition_note: "First published 1978 as Commodity Trading Systems and Methods; current title since the 1998 3rd edition.",
      key_idea: "Encyclopedic reference of trading systems, indicators, and testing methods.",
      covers: [concept_trend_following, concept_backtesting, concept_market_regimes]}
   - {rank: 65, id: book_expected_returns, title: "Expected Returns", authors: [person_antti_ilmanen], author: "Antti Ilmanen", year: 2011, category: quant_algorithmic,
@@ -217,7 +218,8 @@ books:
   - {rank: 69, id: book_options_futures_derivatives, title: "Options, Futures, and Other Derivatives", authors: [person_john_hull], author: "John C. Hull", year: 1989, category: options_volatility,
      key_idea: "Standard textbook on derivatives pricing and hedging.",
      covers: [concept_options_greeks, concept_stochastic_processes]}
-  - {rank: 70, id: book_day_swing_trading_currency, title: "Day Trading and Swing Trading the Currency Market", authors: [person_kathy_lien], author: "Kathy Lien", year: 2005, category: forex,
+  - {rank: 70, id: book_day_swing_trading_currency, title: "Day Trading and Swing Trading the Currency Market", authors: [person_kathy_lien], author: "Kathy Lien", year: 2008, category: forex,
+     edition_note: "First published 2005 as Day Trading the Currency Market; retitled for the 2008 2nd edition.",
      key_idea: "FX-specific technical and fundamental strategies; session behaviour and macro drivers.",
      covers: [concept_fundamental_macro_analysis, concept_trading_sessions_killzones, concept_carry_trade, concept_news_trading]}
   - {rank: 71, id: book_inside_house_of_money, title: "Inside the House of Money", authors: [person_steven_drobny], author: "Steven Drobny", year: 2006, category: macro,

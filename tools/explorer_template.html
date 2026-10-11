@@ -218,7 +218,7 @@ footer code { font-family: var(--font-mono); font-size: 12px; color: var(--ink-2
   <section class="lower">
     <div class="card">
       <h2>Partitions</h2>
-      <p>Each folder is one partition of the knowledge base. Seed partitions hold verified research and structure. Their scraped full text (transcripts, lessons, episode notes) lands in <span class="mono">raw/</span> once the scrapers run on a machine that can reach YouTube, BabyPips and podcast hosts.</p>
+      <p>Each folder is one partition of the knowledge base. Scraped partitions include first-party text captured on 2026-10-11: Chart Fanatics playbooks, the channel catalog, podcast episode catalogs and the view-ranked video lists. YouTube transcripts and BabyPips lessons are blocked from cloud servers and need a run on a home machine.</p>
       <div class="table-wrap">
         <table>
           <thead><tr><th>Folder</th><th>Contents</th><th class="num">Nodes</th><th>Status</th></tr></thead>
@@ -544,7 +544,7 @@ footer code { font-family: var(--font-mono); font-size: 12px; color: var(--ink-2
   const ICON_WAIT = '<svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 1.5a6.5 6.5 0 1 1 0 13 6.5 6.5 0 0 1 0-13Zm0 1.5a5 5 0 1 0 0 10A5 5 0 0 0 8 3Zm.75 1.75v3.4l2.3 1.4-.8 1.3-3-1.85V4.75Z"/></svg>';
   document.getElementById('partitions').innerHTML = D.partitions.map((p) => `<tr>
       <td class="dir">${esc(p.dir)}</td><td>${esc(p.note)}</td><td class="num">${p.n}</td>
-      <td>${p.status === 'complete' ? `<span class="pill complete">${ICON_OK}Complete</span>` : `<span class="pill seed">${ICON_WAIT}Seed · scrape pending</span>`}</td></tr>`).join('');
+      <td>${p.status === 'complete' ? `<span class="pill complete">${ICON_OK}Complete</span>` : p.status === 'captured' ? `<span class="pill complete">${ICON_OK}Scraped</span>` : `<span class="pill seed">${ICON_WAIT}Structure only · site blocks bots</span>`}</td></tr>`).join('');
   const chains = document.getElementById('chains');
   chains.innerHTML = D.chains.map((ch) => `<li>${ch.slice().reverse().map(nodeChip).join('<span class="arrow" aria-hidden="true">→</span>')}</li>`).join('');
   bindChips(chains);

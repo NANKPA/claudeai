@@ -1,0 +1,2253 @@
+enrichment:
+- id: book_reminiscences_stock_operator
+  ol_key: /works/OL3472215W
+  ol_title: Reminiscences of a stock operator
+  ol_authors:
+  - Edwin Lefèvre
+  - Price Tim
+  - Roger Lowenstein
+  - Richard Richard Wyckoff
+  - Richard D. Wyckoff
+  - Richard D. Wyckoff
+  first_publish_year: 1923
+  isbn_sample:
+  - '9781945934889'
+  - '9781463512064'
+  - '1697125271'
+  subjects:
+  - New York Stock Exchange
+  - Speculation
+  - Stockbrokers
+  - Livermore, jesse
+  - Brokers
+  - Investments
+  - Business
+  - Fiction, general
+  cover: https://covers.openlibrary.org/b/id/300533-M.jpg
+- id: book_market_wizards
+  ol_key: /works/OL21480807W
+  ol_title: Market Wizards
+  ol_authors:
+  - Jack D. Schwager
+  first_publish_year: 2012
+  isbn_sample:
+  - '9781118616024'
+  - '9781283432436'
+  - '9781118286357'
+  subjects:
+  - Brokers
+  - Financial futures
+  - Futures
+  cover: https://covers.openlibrary.org/b/id/15091089-M.jpg
+- id: book_trading_in_the_zone
+  ol_key: /works/OL4461578W
+  ol_title: Trading in the zone
+  ol_authors:
+  - Mark Douglas
+  first_publish_year: 2001
+  isbn_sample:
+  - '0735201447'
+  - '9781429514859'
+  - '1429522208'
+  subjects:
+  - Business
+  - Nonfiction
+  - Speculation
+  - Stocks
+  - Stock exchanges
+  - Securities industry
+  - Investments
+  cover: https://covers.openlibrary.org/b/id/460625-M.jpg
+- id: book_ta_financial_markets
+  ol_key: /works/OL1957750W
+  ol_title: Technical Analysis of the Financial Markets
+  ol_authors:
+  - John J. Murphy
+  first_publish_year: 1999
+  isbn_sample:
+  - 059333244X
+  - '9780593332443'
+  - '9780735200661'
+  subjects:
+  - Futures market
+  - Commodity exchanges
+  - Investments
+  cover: https://covers.openlibrary.org/b/id/460585-M.jpg
+- id: book_new_market_wizards
+  ol_key: /works/OL1900673W
+  ol_title: The new market wizards
+  ol_authors:
+  - Jack D. Schwager
+  first_publish_year: 1992
+  isbn_sample:
+  - '9780061433986'
+  - '9780471132363'
+  - '0061750271'
+  subjects:
+  - Finance
+  - Business
+  - Interviews
+  - Stockbrokers
+  - Marchés à terme d'instruments financiers
+  - Investment advisors
+  - Financial futures
+  - Nonfiction
+  cover: https://covers.openlibrary.org/b/id/684191-M.jpg
+- id: book_how_to_make_money_in_stocks
+  ol_key: /works/OL3498124W
+  ol_title: How to Make Money in Stocks
+  ol_authors:
+  - William J. O'Neil
+  first_publish_year: 1988
+  isbn_sample:
+  - 0070480176
+  - '9579453373'
+  - 0972446249
+  subjects:
+  - Stocks
+  - Investments
+  - Business
+  - Nonfiction
+  - Finance
+  - Investments.
+  - Investments & Securities
+  - BUSINESS & ECONOMICS
+  cover: https://covers.openlibrary.org/b/id/5934897-M.jpg
+- id: book_trade_like_stock_market_wizard
+  ol_key: /works/OL17513152W
+  ol_title: Trade Like a Stock Market Wizard
+  ol_authors:
+  - Mark Minervini
+  first_publish_year: 2013
+  isbn_sample:
+  - '9780071807227'
+  - 0071807225
+  subjects:
+  - Speculation
+  - Investments
+  - Stocks
+  - Portfolio management
+  - Investment analysis
+  - Risk management
+  cover: https://covers.openlibrary.org/b/id/7728025-M.jpg
+- id: book_ta_stock_trends
+  ol_key: /works/OL13594364W
+  ol_title: Technical analysis of stock trends
+  ol_authors:
+  - Robert D. Edwards
+  first_publish_year: 1992
+  isbn_sample:
+  - 0139043438
+  - '9781281244192'
+  - '1351631446'
+  subjects:
+  - Investment analysis
+  - Stock exchanges
+  - Securities
+  - Analyse financière
+  - BUSINESS & ECONOMICS
+  - Finance
+  cover: https://covers.openlibrary.org/b/id/9233711-M.jpg
+- id: book_trade_your_way_financial_freedom
+  ol_key: /works/OL1876664W
+  ol_title: Trade Your Way to Financial Freedom
+  ol_authors:
+  - Van K. Tharp
+  first_publish_year: 1999
+  isbn_sample:
+  - '9788387014438'
+  - 0071658130
+  - '9780071658133'
+  subjects:
+  - Finance, Personal
+  - Personal Finance
+  - Stocks
+  - Monetary unions
+  - European union countries, economic policy
+  - Euro
+  cover: https://covers.openlibrary.org/b/id/55717-M.jpg
+- id: book_fooled_by_randomness
+  ol_key: /works/OL3295029W
+  ol_title: Fooled by randomness
+  ol_authors:
+  - Nassim Nicholas Taleb
+  first_publish_year: 2001
+  isbn_sample:
+  - '9781587991844'
+  - '9780141031484'
+  - 158799190X
+  subjects:
+  - Random variables
+  - Business
+  - Chance
+  - Nonfiction
+  - Investments
+  - Finance
+  - Probabilities
+  - Induction (Mathematics)
+  cover: https://covers.openlibrary.org/b/id/855791-M.jpg
+- id: book_alchemy_of_finance
+  ol_key: /works/OL1993774W
+  ol_title: The alchemy of finance
+  ol_authors:
+  - George Soros
+  first_publish_year: 1987
+  isbn_sample:
+  - '9780671662387'
+  - '1560150483'
+  - '9780671634551'
+  subjects:
+  - Investments
+  - Finance, personal
+  - Financial analysis, investments
+  cover: https://covers.openlibrary.org/b/id/4115861-M.jpg
+- id: book_trend_following_covel
+  ol_key: /works/OL278386W
+  ol_title: Trend Following
+  ol_authors:
+  - Michael W. Covel
+  first_publish_year: 2004
+  isbn_sample:
+  - '1119371902'
+  - 0768670438
+  - '9781119371908'
+  subjects:
+  - Business
+  - Nonfiction
+  - Securities
+  - Stock exchanges
+  - Investments
+  - Stocks
+  cover: https://covers.openlibrary.org/b/id/87320-M.jpg
+- id: book_way_of_the_turtle
+  ol_key: /works/OL282698W
+  ol_title: Way of the Turtle
+  ol_authors:
+  - Curtis Faith
+  first_publish_year: 2007
+  isbn_sample:
+  - '1933309687'
+  - '9780071509466'
+  - '9780071486644'
+  subjects:
+  - Futures
+  - Portfolio management
+  - Business
+  - Nonfiction
+  - Stocks
+  - Securities
+  cover: https://covers.openlibrary.org/b/id/1081602-M.jpg
+- id: book_japanese_candlestick_charting
+  ol_key: /works/OL3459605W
+  ol_title: Japanese candlestick charting techniques
+  ol_authors:
+  - Steve Nison
+  first_publish_year: 1991
+  isbn_sample:
+  - '9789578457126'
+  - '9780139316500'
+  - 957845712X
+  subjects:
+  - Investment analysis
+  - Stocks
+  - Charts, diagrams, etc
+  - Charts, diagrams
+  - Candle-stick-Chart
+  - Chart-Analyse
+  cover: https://covers.openlibrary.org/b/id/92666-M.jpg
+- id: book_mind_over_markets
+  ol_key: /works/OL19971528W
+  ol_title: Mind over markets
+  ol_authors:
+  - James F. Dalton
+  first_publish_year: 2013
+  isbn_sample:
+  - '9781118659786'
+  - '9781118659762'
+  - '9781118659724'
+  subjects:
+  - Futures
+  - Markets
+  cover: null
+- id: book_how_to_trade_in_stocks
+  ol_key: /works/OL7913587W
+  ol_title: How to Trade In Stocks
+  ol_authors:
+  - Jesse Livermore
+  first_publish_year: 2006
+  isbn_sample:
+  - '1638232989'
+  - '1638232997'
+  - 194696302X
+  subjects:
+  - Investment analysis
+  - Speculation
+  - Stocks
+  - Stock exchanges
+  - Stock exchanges -- United States
+  - United States
+  cover: https://covers.openlibrary.org/b/id/60758-M.jpg
+- id: book_disciplined_trader
+  ol_key: /works/OL4461572W
+  ol_title: The disciplined trader
+  ol_authors:
+  - Mark Douglas
+  first_publish_year: 1990
+  isbn_sample:
+  - '1450773788'
+  - 0132157578
+  - '9780132157575'
+  subjects:
+  - Attitudes
+  - Stock exchanges
+  - Stockbrokers
+  - Stockbrokers -- Attitudes
+  cover: https://covers.openlibrary.org/b/id/89353-M.jpg
+- id: book_best_loser_wins
+  ol_key: /works/OL27938101W
+  ol_title: Best Loser Wins
+  ol_authors:
+  - Tom Hougaard
+  first_publish_year: 2022
+  isbn_sample:
+  - '9780857198228'
+  - 085719822X
+  subjects: []
+  cover: https://covers.openlibrary.org/b/id/15225630-M.jpg
+- id: book_man_for_all_markets
+  ol_key: /works/OL20050810W
+  ol_title: A Man for All Markets
+  ol_authors:
+  - Edward O. Thorp
+  first_publish_year: 2017
+  isbn_sample:
+  - '1786070294'
+  - '9780812979909'
+  - '1400067960'
+  subjects:
+  - Investment advisors
+  - Mathematicians
+  - Finance
+  - Mathematical models
+  - Gambling systems
+  - Investments
+  - Biography
+  - Mathematicians, biography
+  cover: https://covers.openlibrary.org/b/id/8822906-M.jpg
+- id: book_principles_dalio
+  ol_key: /works/OL21718768W
+  ol_title: Principles for Navigating Big Debt Crises
+  ol_authors:
+  - Ray Dalio
+  first_publish_year: 2018
+  isbn_sample:
+  - '1732689822'
+  - 139852090X
+  - '1668009307'
+  subjects:
+  - Financial crises
+  - Debt
+  - Economic policy
+  - Business
+  - Economics
+  cover: https://covers.openlibrary.org/b/id/11980955-M.jpg
+- id: book_reading_price_charts_bar_by_bar
+  ol_key: /works/OL13620512W
+  ol_title: Reading price charts bar by bar
+  ol_authors:
+  - Al Brooks
+  first_publish_year: 2009
+  isbn_sample:
+  - '1119203112'
+  - '1394378122'
+  - '0470464232'
+  subjects:
+  - Business
+  - Charts, diagrams
+  - Charts, diagrams, etc
+  - Financial futures
+  - Investment analysis
+  - Nonfiction
+  - Prices
+  - Stocks
+  cover: https://covers.openlibrary.org/b/id/9627810-M.jpg
+- id: book_option_volatility_pricing
+  ol_key: /works/OL4774036W
+  ol_title: Option volatility & pricing
+  ol_authors:
+  - Sheldon Natenberg
+  first_publish_year: 1994
+  isbn_sample:
+  - '9780071819053'
+  - '9780071818773'
+  - 0071819053
+  subjects:
+  - Options (Finance)
+  cover: https://covers.openlibrary.org/b/id/780118-M.jpg
+- id: book_trading_and_exchanges
+  ol_key: /works/OL7034157W
+  ol_title: Trading and Exchanges
+  ol_authors:
+  - Larry Harris
+  first_publish_year: 2002
+  isbn_sample:
+  - '9780195144703'
+  - 0198090544
+  - '9780198090540'
+  subjects:
+  - Commerce
+  - Markets
+  - Exchange
+  cover: https://covers.openlibrary.org/b/id/125428-M.jpg
+- id: book_evidence_based_ta
+  ol_key: /works/OL21434351W
+  ol_title: Evidence-Based Technical Analysis
+  ol_authors:
+  - David Aronson
+  first_publish_year: 2007
+  isbn_sample:
+  - '9780470079768'
+  - '9781118160589'
+  - '1118268318'
+  subjects:
+  - Investment analysis
+  cover: null
+- id: book_man_who_solved_the_market
+  ol_key: /works/OL20542025W
+  ol_title: The man who solved the market
+  ol_authors:
+  - Gregory Zuckerman
+  first_publish_year: 2019
+  isbn_sample:
+  - 073521798X
+  - '9780593086315'
+  - 0241422159
+  subjects:
+  - BUSINESS & ECONOMICS / Corporate & Business History
+  - BIOGRAPHY & AUTOBIOGRAPHY / Business
+  - BUSINESS & ECONOMICS / Finance
+  - Capitalists and financiers
+  - Investments
+  - Quantitative analysts
+  - Investments, mathematical models
+  - Investment analysis
+  cover: https://covers.openlibrary.org/b/id/9261176-M.jpg
+- id: book_stock_market_wizards
+  ol_key: /works/OL1900674W
+  ol_title: Stock Market Wizards
+  ol_authors:
+  - Jack D. Schwager
+  first_publish_year: 2001
+  isbn_sample:
+  - 0471485551
+  - '9780066620596'
+  - '9780061441363'
+  subjects:
+  - Interviews
+  - Investment advisors
+  - Financial futures
+  - Stockbrokers
+  - Futures market
+  - Floor traders (Finance)
+  - Finance
+  - Nonfiction
+  cover: https://covers.openlibrary.org/b/id/53073-M.jpg
+- id: book_hedge_fund_market_wizards
+  ol_key: /works/OL20330569W
+  ol_title: Hedge Fund Market Wizards
+  ol_authors:
+  - Jack D. Schwager
+  first_publish_year: 2012
+  isbn_sample:
+  - '1118283619'
+  - '9781280592546'
+  - '9781118287309'
+  subjects:
+  - Hedge funds
+  cover: https://covers.openlibrary.org/b/id/8993404-M.jpg
+- id: book_unknown_market_wizards
+  ol_key: /works/OL22600365W
+  ol_title: Unknown Market Wizards
+  ol_authors:
+  - Jack D. Schwager
+  first_publish_year: 2020
+  isbn_sample:
+  - 0857198696
+  - 0857198718
+  - '9780857198716'
+  subjects:
+  - Finance
+  cover: https://covers.openlibrary.org/b/id/10481194-M.jpg
+- id: book_diary_professional_commodity_trader
+  ol_key: /works/OL21456381W
+  ol_title: Diary of a Professional Commodity Trader
+  ol_authors:
+  - Peter L. Brandt
+  first_publish_year: 2011
+  isbn_sample:
+  - 0470947241
+  - '9780470947265'
+  - '9781283025775'
+  subjects:
+  - Commodity exchanges
+  - Commodity futures
+  cover: null
+- id: book_secrets_bull_bear_markets
+  ol_key: /works/OL5092573W
+  ol_title: Stan Weinstein's Secrets for profiting in bull and bear markets
+  ol_authors:
+  - Stan Weinstein
+  first_publish_year: 1988
+  isbn_sample:
+  - '9781556230790'
+  - '1556230796'
+  - '1556236832'
+  subjects:
+  - Investment analysis
+  - Securities
+  - Stock exchanges
+  - Investments
+  - Stocks
+  cover: https://covers.openlibrary.org/b/id/777023-M.jpg
+- id: book_how_i_made_2000000
+  ol_key: /works/OL6662939W
+  ol_title: How I Made $2,000,000 In The Stock Market
+  ol_authors:
+  - Nicolas Darvas
+  first_publish_year: 1960
+  isbn_sample:
+  - '9562914526'
+  - '9781952438820'
+  - '9781515430742'
+  subjects:
+  - Speculation
+  - Stocks
+  - Stock exchanges
+  cover: https://covers.openlibrary.org/b/id/2292467-M.jpg
+- id: book_psychology_of_trading_steenbarger
+  ol_key: /works/OL8204596W
+  ol_title: The Psychology of Trading
+  ol_authors:
+  - Brett N. Steenbarger
+  first_publish_year: 2002
+  isbn_sample:
+  - '9780471420231'
+  - '9780471267614'
+  - '9780470250433'
+  subjects:
+  - Psychological aspects
+  - Stocks
+  - Speculation
+  - Psychological aspects of Investments
+  - Psychological aspects of Speculation
+  - Investments
+  - Psychological aspects of Stocks
+  - Business
+  cover: https://covers.openlibrary.org/b/id/302759-M.jpg
+- id: book_mathematics_of_money_management
+  ol_key: /works/OL3503409W
+  ol_title: The mathematics of money management
+  ol_authors:
+  - Ralph Vince
+  first_publish_year: 1992
+  isbn_sample:
+  - 0471547387
+  - '9780471547389'
+  subjects:
+  - Mathematics
+  - Investment analysis
+  - Program trading (Securities)
+  - Risk management
+  cover: https://covers.openlibrary.org/b/id/1248509-M.jpg
+- id: book_long_term_secrets_short_term_trading
+  ol_key: /works/OL21466432W
+  ol_title: Long-Term Secrets to Short-Term Trading
+  ol_authors:
+  - Larry Williams
+  first_publish_year: 2008
+  isbn_sample:
+  - '9781119200789'
+  - '9781118184684'
+  - '9781118184691'
+  subjects:
+  - Investments
+  cover: null
+- id: book_markets_in_profile
+  ol_key: /works/OL16933471W
+  ol_title: Markets in profile
+  ol_authors:
+  - James F. Dalton
+  - Robert Bevan Dalton
+  - Eric Thomas Jones
+  first_publish_year: 2007
+  isbn_sample:
+  - '9781119196709'
+  - '1119196701'
+  - 0470039094
+  subjects:
+  - Risk management
+  - Investments
+  - Auctions
+  cover: https://covers.openlibrary.org/b/id/1238535-M.jpg
+- id: book_trades_about_to_happen
+  ol_key: /works/OL21471768W
+  ol_title: Trades about to Happen
+  ol_authors:
+  - David H. Weis
+  - Alexander Elder
+  first_publish_year: 2013
+  isbn_sample:
+  - '9781118233627'
+  - '9781299533868'
+  - '1299533868'
+  subjects:
+  - Investments
+  - Commerce
+  cover: null
+- id: book_tape_reading_market_tactics
+  ol_key: /works/OL6356600W
+  ol_title: Tape reading and market tactics
+  ol_authors:
+  - Humphrey B. Neill
+  first_publish_year: 1931
+  isbn_sample:
+  - '9789650060411'
+  - '9650060413'
+  subjects:
+  - Speculation
+  - Stock exchanges
+  - Stocks
+  cover: null
+- id: book_black_swan
+  ol_key: /works/OL3295030W
+  ol_title: The Black Swan
+  ol_authors:
+  - Nassim Nicholas Taleb
+  - David Chandler
+  first_publish_year: 2005
+  isbn_sample:
+  - '1400063515'
+  - '9780141889238'
+  - 0713999950
+  subjects:
+  - Ereignis
+  - nyt:paperback_nonfiction=2010-05-09
+  - Prévision
+  - New York Times bestseller
+  - Business
+  - Social aspects
+  - Philosophy
+  - Informationstheorie
+  cover: https://covers.openlibrary.org/b/id/5721840-M.jpg
+- id: book_misbehavior_of_markets
+  ol_key: /works/OL1808391W
+  ol_title: The fractal geometry of nature
+  ol_authors:
+  - Benoît B. Mandelbrot
+  - Josep Maria Llosa
+  - Josep Maria Llosa
+  first_publish_year: 1982
+  isbn_sample:
+  - '9780716711865'
+  - '1648370411'
+  - '9788483105498'
+  subjects:
+  - Geometry
+  - Mathematical models
+  - Fractals
+  - Stochastic processes
+  - Probability
+  - Mathematics
+  - Nature
+  - Mathematical Physics and Mathematics
+  cover: https://covers.openlibrary.org/b/id/455549-M.jpg
+- id: book_thinking_fast_slow
+  ol_key: /works/OL15992072W
+  ol_title: Thinking, fast and slow
+  ol_authors:
+  - Daniel Kahneman
+  first_publish_year: 2011
+  isbn_sample:
+  - '9781804220375'
+  - 180422037X
+  - '9780385676519'
+  subjects:
+  - Intuition
+  - Thought and thinking
+  - Reasoning
+  - Decision making
+  - New York Times bestseller
+  - Long Now Manual for Civilization
+  - Thinking
+  - Kognition
+  cover: https://covers.openlibrary.org/b/id/13290711-M.jpg
+- id: book_thinking_in_bets
+  ol_key: /works/OL19736287W
+  ol_title: Thinking in Bets
+  ol_authors:
+  - Annie Duke
+  first_publish_year: 2018
+  isbn_sample:
+  - '9786052314142'
+  - '6052314141'
+  - '9780735216358'
+  subjects:
+  - Management games
+  - Decision making
+  - Jeux d'entreprise
+  - Prise de décision
+  - BUSINESS & ECONOMICS
+  - Decision-Making & Problem Solving
+  - PSYCHOLOGY
+  - Cognitive Psychology
+  cover: https://covers.openlibrary.org/b/id/8792782-M.jpg
+- id: book_mental_game_of_trading
+  ol_key: /works/OL24521967W
+  ol_title: The Mental Game of Trading
+  ol_authors:
+  - Jared Tendler
+  first_publish_year: 2021
+  isbn_sample:
+  - '1734030917'
+  - '9781734030914'
+  - '9781734030969'
+  subjects: []
+  cover: https://covers.openlibrary.org/b/id/11152376-M.jpg
+- id: book_daily_trading_coach
+  ol_key: /works/OL8204593W
+  ol_title: The daily trading coach
+  ol_authors:
+  - Brett N. Steenbarger
+  first_publish_year: 2009
+  isbn_sample:
+  - '9781119197669'
+  - 0470398566
+  - '9780470398562'
+  subjects:
+  - Psychological aspects
+  - Psychological aspects of Investments
+  - Personal coaching
+  - Psychological aspects of Speculation
+  - Psychological aspects of Stocks
+  - Self-help techiques
+  - Speculation
+  - Stocks
+  cover: https://covers.openlibrary.org/b/id/6394296-M.jpg
+- id: book_encyclopedia_chart_patterns
+  ol_key: /works/OL8227699W
+  ol_title: Encyclopedia of Chart Patterns
+  ol_authors:
+  - Thomas N. Bulkowski
+  first_publish_year: 2000
+  isbn_sample:
+  - '9780471668268'
+  - '9781119739722'
+  - 0470239050
+  subjects:
+  - Business
+  - Nonfiction
+  - Investment analysis
+  - Commodity futures
+  - Stocks
+  - Charts, diagrams
+  - Commercial products
+  - Investments
+  cover: https://covers.openlibrary.org/b/id/306219-M.jpg
+- id: book_elliott_wave_principle
+  ol_key: /works/OL2017557W
+  ol_title: Elliott wave principle
+  ol_authors:
+  - A. J. Frost
+  - Robert R. Prechter
+  - Robert R. Prechter Jr.
+  - Robert Rougelot Prechter
+  first_publish_year: 1978
+  isbn_sample:
+  - '1616041366'
+  - '9781616041373'
+  - '9781616041366'
+  subjects:
+  - Speculation
+  - Stocks
+  - Investments & Securities - Stocks
+  - Business / Economics / Finance
+  - Economic forecasting
+  - Stocks & shares
+  - Financial Markets
+  - Business & Economics
+  cover: https://covers.openlibrary.org/b/id/711994-M.jpg
+- id: book_bollinger_on_bollinger_bands
+  ol_key: /works/OL282159W
+  ol_title: Bollinger on Bollinger Bands
+  ol_authors:
+  - John Bollinger
+  first_publish_year: 2001
+  isbn_sample:
+  - 0071386734
+  - '9780071373685'
+  - 0071373683
+  subjects:
+  - Business
+  - Nonfiction
+  - Securities
+  - Trading bands (Securities)
+  - Stock price forecasting
+  - Charts, diagrams
+  - Investment analysis
+  - Prices
+  cover: https://covers.openlibrary.org/b/id/57444-M.jpg
+- id: book_intermarket_analysis
+  ol_key: /works/OL16672275W
+  ol_title: Trading with intermarket analysis
+  ol_authors:
+  - John J. Murphy
+  first_publish_year: 2012
+  isbn_sample:
+  - '9781118421581'
+  - '1119210011'
+  - '1118419960'
+  subjects:
+  - Investment analysis
+  - BUSINESS & ECONOMICS / Finance
+  - Stocks
+  - Exchange traded funds
+  - Psychic ability
+  - Immortality
+  - Death
+  - Love
+  cover: https://covers.openlibrary.org/b/id/13807687-M.jpg
+- id: book_technical_analysis_explained
+  ol_key: /works/OL2644184W
+  ol_title: Technical analysis explained
+  ol_authors:
+  - Martin J. Pring
+  first_publish_year: 1980
+  isbn_sample:
+  - '9780070508859'
+  - '9780071396127'
+  - 0070508852
+  subjects:
+  - Investment analysis
+  - Business enterprises
+  - Finance
+  - Corporations
+  - Analyse financière
+  - BUSINESS & ECONOMICS
+  - Investments & Securities
+  - Stocks
+  cover: https://covers.openlibrary.org/b/id/55110-M.jpg
+- id: book_art_science_technical_analysis
+  ol_key: /works/OL16474648W
+  ol_title: The art and science of technical analysis
+  ol_authors:
+  - Adam Grimes
+  first_publish_year: 2012
+  isbn_sample:
+  - '1118115120'
+  - '9781118115121'
+  subjects:
+  - Investment analysis
+  - BUSINESS & ECONOMICS / Finance
+  - Methode
+  - Anlageverhalten
+  - Wertpapieranalyse
+  - Investments
+  - Analyse financière
+  - Investissements
+  cover: https://covers.openlibrary.org/b/id/8619639-M.jpg
+- id: book_mastering_the_trade
+  ol_key: /works/OL16308525W
+  ol_title: Mastering the trade
+  ol_authors:
+  - Carter, John F.
+  first_publish_year: 2012
+  isbn_sample:
+  - '0071775145'
+  - '9780071775144'
+  subjects:
+  - Investment analysis
+  - Electronic trading of securities
+  - Day trading (Securities)
+  - Portfolio management
+  cover: https://covers.openlibrary.org/b/id/13204431-M.jpg
+- id: book_think_trade_like_champion
+  ol_key: /works/OL22170236W
+  ol_title: Think & Trade Like a Champion
+  ol_authors:
+  - Mark Minervini
+  first_publish_year: 2017
+  isbn_sample:
+  - '9780996307932'
+  - 0996307931
+  subjects: []
+  cover: https://covers.openlibrary.org/b/id/10448603-M.jpg
+- id: book_complete_turtletrader
+  ol_key: /works/OL278385W
+  ol_title: The Complete TurtleTrader
+  ol_authors:
+  - Michael W. Covel
+  first_publish_year: 2007
+  isbn_sample:
+  - '9780061539817'
+  - 0061539805
+  - 0061539783
+  subjects:
+  - Business
+  - Finance
+  - Nonfiction
+  - Investment analysis
+  - Speculation
+  - Commodity trading advisors
+  - Commodity exchanges
+  cover: https://covers.openlibrary.org/b/id/4942320-M.jpg
+- id: book_following_the_trend
+  ol_key: /works/OL21494107W
+  ol_title: Following the Trend
+  ol_authors:
+  - Andreas F. Clenow
+  first_publish_year: 2012
+  isbn_sample:
+  - '9781118410837'
+  - '9781118410820'
+  - '1118410823'
+  subjects: []
+  cover: null
+- id: book_systematic_trading
+  ol_key: /works/OL21715813W
+  ol_title: Systematic Trading
+  ol_authors:
+  - Robert Carver
+  first_publish_year: 2015
+  isbn_sample:
+  - 085719500X
+  - '9780857194459'
+  - 0857194453
+  subjects:
+  - Investments
+  cover: https://covers.openlibrary.org/b/id/13223090-M.jpg
+- id: book_quantitative_trading_chan
+  ol_key: /works/OL25274055W
+  ol_title: Quantitative Trading
+  ol_authors:
+  - Ernest P. Chan
+  first_publish_year: 2021
+  isbn_sample:
+  - '9781119800088'
+  - '9781394428229'
+  - '1394428227'
+  subjects: []
+  cover: null
+- id: book_advances_financial_ml
+  ol_key: /works/OL20583340W
+  ol_title: Advances in Financial Machine Learning
+  ol_authors:
+  - Marcos Lopez de Prado
+  first_publish_year: 2018
+  isbn_sample:
+  - '1119482100'
+  - '1119482119'
+  - '9781119482109'
+  subjects: []
+  cover: https://covers.openlibrary.org/b/id/9224592-M.jpg
+- id: book_inside_the_black_box
+  ol_key: /works/OL29011553W
+  ol_title: Inside the Black Box
+  ol_authors:
+  - Rishi K. Narang
+  first_publish_year: 2009
+  isbn_sample:
+  - '9781119931911'
+  - '1119931916'
+  - '1118267737'
+  subjects: []
+  cover: https://covers.openlibrary.org/b/id/14726715-M.jpg
+- id: book_building_winning_algo_systems
+  ol_key: /works/OL21547069W
+  ol_title: Building Winning Algorithmic Trading Systems
+  ol_authors:
+  - Kevin J. Davey
+  first_publish_year: 2014
+  isbn_sample:
+  - '9781118778913'
+  - 111877888X
+  - '9781118778883'
+  subjects:
+  - Futures
+  - Portfolio management
+  - Investment analysis
+  - Monte carlo method
+  - Electronic trading of securities
+  cover: null
+- id: book_trading_systems_and_methods
+  ol_key: /works/OL1904515W
+  ol_title: New Trading Systems and Methods
+  ol_authors:
+  - Perry J. Kaufman
+  first_publish_year: 1998
+  isbn_sample:
+  - '9781118260920'
+  - '9780471268475'
+  - 047126847X
+  subjects:
+  - Commodity exchanges
+  - Statistical methods
+  - Methode
+  - Rohstoffhandel
+  - Bourses de marchandises
+  - Méthodes statistiques
+  - Statistik
+  - Investment analysis
+  cover: https://covers.openlibrary.org/b/id/302768-M.jpg
+- id: book_expected_returns
+  ol_key: /works/OL21464589W
+  ol_title: Expected Returns
+  ol_authors:
+  - Antti Ilmanen
+  - Clifford Asness
+  first_publish_year: 2011
+  isbn_sample:
+  - '1119991749'
+  - '9781283405393'
+  - '1283405393'
+  subjects:
+  - Capital investments
+  cover: null
+- id: book_efficiently_inefficient
+  ol_key: /works/OL20015617W
+  ol_title: Efficiently inefficient
+  ol_authors:
+  - Lasse Heje Pedersen
+  first_publish_year: 2015
+  isbn_sample:
+  - '1400865735'
+  - '9780691166193'
+  - '9781336206076'
+  subjects:
+  - Securities
+  - Prices
+  - Capital market
+  - Liquidity (Economics)
+  - Investment analysis
+  - Portfolio management
+  - Investments
+  - Corporations
+  cover: null
+- id: book_options_strategic_investment
+  ol_key: /works/OL266290W
+  ol_title: Options as a Strategic Investment
+  ol_authors:
+  - Lawrence G. McMillan
+  first_publish_year: 1980
+  isbn_sample:
+  - '9780735201972'
+  - '0136360025'
+  - '9780735204652'
+  subjects:
+  - Options (Finance)
+  - Put and call transactions
+  - Stock options
+  - Commodity exchanges
+  cover: https://covers.openlibrary.org/b/id/91315-M.jpg
+- id: book_dynamic_hedging
+  ol_key: /works/OL3295027W
+  ol_title: Dynamic hedging
+  ol_authors:
+  - Nassim Nicholas Taleb
+  first_publish_year: 1997
+  isbn_sample:
+  - 0471152803
+  - '9780471152804'
+  subjects:
+  - Options (Finance)
+  - Hedging (Finance)
+  - Derivative securities
+  - Exotic options (Finance)
+  - Risk assessment
+  cover: https://covers.openlibrary.org/b/id/301286-M.jpg
+- id: book_options_futures_derivatives
+  ol_key: /works/OL19892676W
+  ol_title: Options, Futures, and Other Derivatives
+  ol_authors:
+  - John C. Hull
+  first_publish_year: 1989
+  isbn_sample:
+  - '9780130090560'
+  - '9780130224446'
+  - 0135009944
+  subjects:
+  - Derivative securities
+  - Futures
+  - Stock options
+  - Options (finance)
+  - Problems, exercises
+  - Marchés à terme
+  - Guides, manuels
+  - Options d'achat d'actions
+  cover: https://covers.openlibrary.org/b/id/8702910-M.jpg
+- id: book_day_swing_trading_currency
+  ol_key: /works/OL21105137W
+  ol_title: Day Trading and Swing Trading the Currency Market
+  ol_authors:
+  - Kathy Lien
+  first_publish_year: 2008
+  isbn_sample:
+  - '9781119220091'
+  - '1119220092'
+  - '9781281939005'
+  subjects:
+  - Foreign exchange
+  - Speculation
+  - Foreign exchange futures
+  - BUSINESS & ECONOMICS / Investments & Securities
+  - Foreign exchange market
+  cover: https://covers.openlibrary.org/b/id/13293709-M.jpg
+- id: book_inside_house_of_money
+  ol_key: /works/OL13753927W
+  ol_title: Inside the House of Money
+  ol_authors:
+  - Niall Ferguson
+  - Steven Drobny
+  first_publish_year: 2006
+  isbn_sample:
+  - '9780470379097'
+  - '1280448431'
+  - '1511331208'
+  subjects:
+  - Hedge funds
+  - Investment advisors
+  - Mutual funds
+  - Portfolio management
+  - Investments
+  cover: https://covers.openlibrary.org/b/id/9042119-M.jpg
+- id: book_more_money_than_god
+  ol_key: /works/OL15598621W
+  ol_title: More money than God
+  ol_authors:
+  - Sebastian Mallaby
+  first_publish_year: 2010
+  isbn_sample:
+  - '1408809753'
+  - '9780143119418'
+  - '9781408816813'
+  subjects:
+  - Hedge funds
+  - Investment advisors
+  - New York Times reviewed
+  - Memorial bookplates
+  - Class of 1955
+  - Whitman College
+  cover: https://covers.openlibrary.org/b/id/7608213-M.jpg
+- id: book_when_genius_failed
+  ol_key: /works/OL3268118W
+  ol_title: When Genius Failed
+  ol_authors:
+  - Roger Lowenstein
+  first_publish_year: 2000
+  isbn_sample:
+  - 0007375794
+  - 037550317X
+  - '9780375758256'
+  subjects:
+  - Hedge funds
+  - Long Term Capital Management (Firm)
+  - Long-term Capital Management (Firm)
+  - Financie le crises
+  - Kapitaalinvesteringen
+  - Kapitaalmarkt
+  - Portfolio-analyse
+  - Fonds spe culatifs
+  cover: https://covers.openlibrary.org/b/id/885122-M.jpg
+- id: book_big_debt_crises
+  ol_key: /works/OL21718768W
+  ol_title: Principles for Navigating Big Debt Crises
+  ol_authors:
+  - Ray Dalio
+  first_publish_year: 2018
+  isbn_sample:
+  - '1732689822'
+  - 139852090X
+  - '1668009307'
+  subjects:
+  - Financial crises
+  - Debt
+  - Economic policy
+  - Business
+  - Economics
+  cover: https://covers.openlibrary.org/b/id/11980955-M.jpg
+- id: book_most_important_thing
+  ol_key: /works/OL16001857W
+  ol_title: The most important thing
+  ol_authors:
+  - Howard Marks
+  first_publish_year: 2011
+  isbn_sample:
+  - '9780231153683'
+  - '9780231527095'
+  - 0231153686
+  subjects:
+  - Investment analysis
+  - Risk management
+  - Investments
+  - Portfolio management
+  - New York Times bestseller
+  - nyt:hardcover_business_books=2011-07-30
+  cover: https://covers.openlibrary.org/b/id/10001222-M.jpg
+- id: book_mastering_market_cycle
+  ol_key: /works/OL20891114W
+  ol_title: Mastering The Market Cycle
+  ol_authors:
+  - Howard Marks
+  first_publish_year: 2018
+  isbn_sample:
+  - '1473680379'
+  - '9781473695689'
+  - '1721373063'
+  subjects:
+  - Finance, personal
+  - Investments
+  cover: https://covers.openlibrary.org/b/id/10221762-M.jpg
+- id: book_pit_bull
+  ol_key: /works/OL5117789W
+  ol_title: Pit Bull
+  ol_authors:
+  - Martin Schwartz
+  first_publish_year: 1998
+  isbn_sample:
+  - '9780061493966'
+  - 0061493953
+  - '9780786174683'
+  subjects:
+  - Biography & Autobiography
+  - Nonfiction
+  - Business
+  - Brokers
+  cover: https://covers.openlibrary.org/b/id/684331-M.jpg
+- id: book_trader_vic
+  ol_key: /works/OL18181019W
+  ol_title: Trader Vic-- methods of a Wall Street master
+  ol_authors:
+  - Victor Sperandeo
+  - T. Sullivan Brown
+  first_publish_year: 1993
+  isbn_sample:
+  - 0470468769
+  - 0471304972
+  - '9780470468760'
+  subjects:
+  - Investment analysis
+  - Speculation
+  - Stocks
+  - Investments & Securities
+  - BUSINESS & ECONOMICS
+  - Electronic books
+  - Stock exchanges
+  cover: https://covers.openlibrary.org/b/id/303161-M.jpg
+- id: book_battle_for_investment_survival
+  ol_key: /works/OL2987338W
+  ol_title: The battle for investment survival
+  ol_authors:
+  - Gerald M. Loeb
+  first_publish_year: 1911
+  isbn_sample:
+  - 0471132977
+  - '9780671213039'
+  - '0470110031'
+  subjects:
+  - Speculation
+  - Investments
+  - Investment advisors
+  cover: https://covers.openlibrary.org/b/id/301000-M.jpg
+- id: book_extraordinary_popular_delusions
+  ol_key: /works/OL20159667W
+  ol_title: Extraordinary Popular Delusions and the Madness of Crowds
+  ol_authors:
+  - Charles MacKay
+  first_publish_year: 2003
+  isbn_sample:
+  - '9781773230092'
+  - '1515435733'
+  - '9781387890392'
+  subjects:
+  - Delusions
+  - Impostors and imposture
+  - Occultism
+  - Social psychology
+  - Swindlers and swindling
+  - Common fallacies
+  - Early works to 1900
+  - Investments
+  cover: https://covers.openlibrary.org/b/id/8804986-M.jpg
+- id: book_art_of_contrary_thinking
+  ol_key: /works/OL6356603W
+  ol_title: The art of contrary thinking
+  ol_authors:
+  - Humphrey B. Neill
+  first_publish_year: 1954
+  isbn_sample:
+  - 087004110X
+  - '9780870041105'
+  subjects:
+  - Public opinion
+  - Thought and thinking
+  cover: https://covers.openlibrary.org/b/id/14873077-M.jpg
+- id: book_dow_theory_rhea
+  ol_key: /works/OL4807221W
+  ol_title: The Dow theory
+  ol_authors:
+  - Robert Rhea
+  first_publish_year: 1932
+  isbn_sample:
+  - '1558888071'
+  - '1638231273'
+  - '9780870341106'
+  subjects:
+  - Speculation
+  - Stock exchanges
+  - Stock price indexes
+  cover: https://covers.openlibrary.org/b/id/659350-M.jpg
+- id: book_beat_the_dealer
+  ol_key: /works/OL4912871W
+  ol_title: Beat the Dealer
+  ol_authors:
+  - Edward O. Thorp
+  first_publish_year: 1966
+  isbn_sample:
+  - 0394416333
+  - 0394703103
+  - '9780394416335'
+  subjects:
+  - Blackjack (Game)
+  - Gv1295.b55 t5 1966
+  - '795.42'
+  cover: https://covers.openlibrary.org/b/id/254043-M.jpg
+- id: book_fortunes_formula
+  ol_key: /works/OL118144W
+  ol_title: Fortune's Formula
+  ol_authors:
+  - William Poundstone
+  first_publish_year: 2005
+  isbn_sample:
+  - 0374707081
+  - '9780809045990'
+  - 0809045990
+  subjects:
+  - gaming
+  - investing
+  - casinos
+  - gambling
+  - hedge funds
+  - trade sizing
+  - bet sizing
+  - History
+  cover: https://covers.openlibrary.org/b/id/592381-M.jpg
+- id: book_against_the_gods
+  ol_key: /works/OL3294011W
+  ol_title: Against the gods
+  ol_authors:
+  - Peter L. Bernstein
+  first_publish_year: 1996
+  isbn_sample:
+  - '0671576461'
+  - '9780471295631'
+  - 0471295639
+  subjects:
+  - risk management
+  - decision making
+  - abacus
+  - algebra
+  - algorithm
+  - gambling
+  - numbering system
+  - Bell curve
+  cover: https://covers.openlibrary.org/b/id/300823-M.jpg
+- id: book_random_walk_down_wall_street
+  ol_key: /works/OL2000283W
+  ol_title: A Random Walk Down Wall Street
+  ol_authors:
+  - Burton Gordon Malkiel
+  first_publish_year: 1973
+  isbn_sample:
+  - 0393057828
+  - '9780393047813'
+  - 0393047814
+  subjects:
+  - Stocks
+  - Investments
+  - Random walks (Mathematics)
+  - Gestion financière
+  - Actions de sociétés
+  - Valores
+  - Actions (Titres de société)
+  - Trayectoria aleatoria (Matemáticas)
+  cover: https://covers.openlibrary.org/b/id/246978-M.jpg
+- id: book_non_random_walk
+  ol_key: /works/OL1931319W
+  ol_title: A non-random walk down Wall Street
+  ol_authors:
+  - Andrew W. Lo
+  first_publish_year: 1999
+  isbn_sample:
+  - 0691057745
+  - '9780691057743'
+  - 0691092567
+  subjects:
+  - Prices
+  - Mathematical models
+  - Random walks (Mathematics)
+  - Stocks
+  - Investments, mathematical models
+  - Stocks, prices
+  cover: https://covers.openlibrary.org/b/id/441750-M.jpg
+- id: book_adaptive_markets
+  ol_key: /works/OL20054738W
+  ol_title: Adaptive markets
+  ol_authors:
+  - Andrew W. Lo
+  first_publish_year: 2017
+  isbn_sample:
+  - '9780691135144'
+  - '9781541465299'
+  - 0691191360
+  subjects:
+  - Economics
+  - Finance
+  - Stock exchanges
+  - Investments
+  - Securities
+  cover: https://covers.openlibrary.org/b/id/8801577-M.jpg
+- id: book_crabel_opening_range
+  ol_key: /works/OL4182598W
+  ol_title: Day trading with short term price patterns and opening range breakout
+  ol_authors:
+  - Toby Crabel
+  first_publish_year: 1990
+  isbn_sample:
+  - 0934380171
+  - '9780934380171'
+  subjects:
+  - Commodity futures
+  - Day trading (Securities)
+  - Investment analysis
+  cover: https://covers.openlibrary.org/b/id/8635928-M.jpg
+- id: book_ta_multiple_timeframes
+  ol_key: /works/OL19905807W
+  ol_title: Technical analysis using multiple timeframes
+  ol_authors:
+  - Brian Shannon
+  first_publish_year: 2008
+  isbn_sample:
+  - '9781598795806'
+  - '1598795805'
+  - '9798986868059'
+  subjects:
+  - Investment analysis
+  - Prices
+  - Stocks
+  - Charts, diagrams
+  - Stock price forecasting
+  cover: https://covers.openlibrary.org/b/id/8725951-M.jpg
+- id: book_zurich_axioms
+  ol_key: /works/OL5095238W
+  ol_title: The Zurich Axioms
+  ol_authors:
+  - Max Gunther
+  first_publish_year: 1989
+  isbn_sample:
+  - '9789684033139'
+  - 190665994X
+  - '9781906659943'
+  subjects:
+  - Finance
+  - Investments
+  - Nonfiction
+  - Speculation
+  - Risk management
+  cover: https://covers.openlibrary.org/b/id/155998-M.jpg
+- id: book_customers_yachts
+  ol_key: /works/OL3516563W
+  ol_title: Where Are the Customer's Yachts?
+  ol_authors:
+  - Fred Schwed Jr.
+  first_publish_year: 1940
+  isbn_sample:
+  - '9780471770893'
+  - 0471119792
+  - 0471770892
+  subjects:
+  - Investments
+  - Speculation
+  - Humor
+  - Stocks
+  - Caricatures and cartoons
+  - Wall street
+  - American wit and humor, business, professions, etc.
+  - Humor, general
+  cover: https://covers.openlibrary.org/b/id/13703721-M.jpg
+- id: book_markets_and_market_logic
+  ol_key: /works/OL3367422W
+  ol_title: Markets and market logic
+  ol_authors:
+  - J. Peter Steidlmayer
+  first_publish_year: 1986
+  isbn_sample:
+  - '9780941275002'
+  - 0941275000
+  subjects:
+  - Financial futures
+  - Commodity exchanges
+  cover: https://covers.openlibrary.org/b/id/9587073-M.jpg
+- id: book_one_up_on_wall_street
+  ol_key: /works/OL2841891W
+  ol_title: One Up On Wall Street
+  ol_authors:
+  - Peter Lynch
+  - John Rothchild
+  first_publish_year: 1989
+  isbn_sample:
+  - '9789577921154'
+  - '9786043010114'
+  - '9780671700027'
+  subjects:
+  - Speculation
+  - Stocks
+  - Investments
+  - Investissements
+  - Actions de sociétés
+  - Spéculation
+  - Tou zi
+  - Investimentos
+  cover: https://covers.openlibrary.org/b/id/6241104-M.jpg
+- id: book_antifragile
+  ol_key: /works/OL16726829W
+  ol_title: Antifragile
+  ol_authors:
+  - Nassim Nicholas Taleb
+  - Genís Sánchez Barberán
+  - Albino Santos Mosquera
+  first_publish_year: 2012
+  isbn_sample:
+  - '8449328640'
+  - '9781846141577'
+  - 0812979680
+  subjects:
+  - Resilience (Personality trait)
+  - PSYCHOLOGY / General
+  - BUSINESS & ECONOMICS / General
+  - Long Now Manual for Civilization
+  - Social aspects
+  - Uncertainty (Information theory)
+  - Forecasting
+  - Complexity (Philosophy)
+  cover: https://covers.openlibrary.org/b/id/9180157-M.jpg
+- id: book_hour_between_dog_wolf
+  ol_key: /works/OL16532101W
+  ol_title: The hour between dog and wolf
+  ol_authors:
+  - Coates, John
+  - John Coates
+  first_publish_year: 2012
+  isbn_sample:
+  - '1455157031'
+  - '0007413521'
+  - '9781594203381'
+  subjects:
+  - Financial risk
+  - Risk-taking (Psychology)
+  - Pscyhological aspects
+  - Finance
+  - Psychological aspects
+  - Speculation
+  - Decision making
+  - Physiological aspects
+  cover: https://covers.openlibrary.org/b/id/9035767-M.jpg
+- id: book_flash_boys
+  ol_key: /works/OL16816775W
+  ol_title: Flash Boys
+  ol_authors:
+  - Michael Lewis
+  first_publish_year: 2014
+  isbn_sample:
+  - '9780393244663'
+  - '9780141978147'
+  - '9789048821679'
+  subjects:
+  - Stockbrokers
+  - Finance
+  - History
+  - "Bo\x98rsenmakler"
+  - Finansiella marknader
+  - Wall Street (New York, N.Y.)
+  - "Bo\x98rsva\x98sen"
+  - Wertpapierhandelssystem
+  cover: https://covers.openlibrary.org/b/id/8260825-M.jpg
+- id: mathbook_blitzstein_intro_probability
+  ol_key: /works/OL22320351W
+  ol_title: Introduction to Probability
+  ol_authors:
+  - Joseph K. Blitzstein
+  - Jessica Hwang
+  first_publish_year: 2014
+  isbn_sample:
+  - '9781466575578'
+  - 0429102100
+  - '1466575638'
+  subjects:
+  - Probabilities
+  - Textbooks
+  cover: https://covers.openlibrary.org/b/id/10453053-M.jpg
+- id: mathbook_feller_probability
+  ol_key: /works/OL146759W
+  ol_title: An introduction to probability theory and its applications
+  ol_authors:
+  - William Feller
+  - William Feller
+  first_publish_year: 1950
+  isbn_sample:
+  - '9789994311071'
+  - '9994311069'
+  - '9789994311064'
+  subjects:
+  - Probabilities
+  - Probability
+  - Operations Research
+  - Probabilités
+  cover: https://covers.openlibrary.org/b/id/302683-M.jpg
+- id: mathbook_jaynes_probability_logic
+  ol_key: /works/OL5911565W
+  ol_title: Probability Theory
+  ol_authors:
+  - E. T. Jaynes
+  first_publish_year: 2003
+  isbn_sample:
+  - '9780511068027'
+  - '9781280417221'
+  - '9787115195364'
+  subjects:
+  - Bayesian
+  - Probability
+  - Inference
+  - Probabilities
+  - Probabilités
+  - Waarschijnlijkheidstheorie
+  - Grondslagen
+  - Probabilidade
+  cover: https://covers.openlibrary.org/b/id/348336-M.jpg
+- id: mathbook_all_of_statistics
+  ol_key: /works/OL8055600W
+  ol_title: All of Statistics
+  ol_authors:
+  - Larry Wasserman
+  first_publish_year: 2004
+  isbn_sample:
+  - '1441923225'
+  - '9780387217369'
+  - '9781468495522'
+  subjects:
+  - Mathematical statistics
+  - Statistics
+  - Computer science
+  - Probability and Statistics in Computer Science
+  - Statistical Theory and Methods
+  - Statistics for Engineering, Physics, Computer Science, Chemistry and Earth Sciences
+  - Statistics as Topic
+  - Statistiek
+  cover: https://covers.openlibrary.org/b/id/245123-M.jpg
+- id: mathbook_casella_berger
+  ol_key: /works/OL4791041W
+  ol_title: Statistical inference
+  ol_authors:
+  - George Casella
+  first_publish_year: 1990
+  isbn_sample:
+  - '9788131503942'
+  - '1032593032'
+  - '9780534119584'
+  subjects:
+  - Mathematical statistics
+  - Probabilities
+  - open_syllabus_project
+  - Probability
+  - Mathematics
+  - Statistics
+  cover: https://covers.openlibrary.org/b/id/363515-M.jpg
+- id: mathbook_statistical_consequences_fat_tails
+  ol_key: /works/OL20706529W
+  ol_title: Statistical Consequences of Fat Tails
+  ol_authors:
+  - Nassim Nicholas Taleb
+  first_publish_year: 2020
+  isbn_sample:
+  - '9781544508054'
+  - '1544508050'
+  subjects: []
+  cover: https://covers.openlibrary.org/b/id/9384011-M.jpg
+- id: mathbook_quant_interviews_zhou
+  ol_key: /works/OL16985487W
+  ol_title: A practical guide to quantitative finance interviews
+  ol_authors:
+  - Xinfeng Zhou
+  first_publish_year: 2008
+  isbn_sample:
+  - '9781435715752'
+  - '1435715756'
+  subjects:
+  - Statistical methods
+  - Employment interviewing
+  - Finance
+  - Investment analysis
+  - Econometrics
+  - Handbooks, manuals
+  - Vocational guidance
+  - Computer scientists
+  cover: https://covers.openlibrary.org/b/id/9981212-M.jpg
+- id: mathbook_heard_on_the_street
+  ol_key: /works/OL20006096W
+  ol_title: Heard on the street
+  ol_authors:
+  - Timothy Falcon Crack
+  first_publish_year: 2009
+  isbn_sample:
+  - '9780994118257'
+  - 0995117381
+  - 0994103867
+  subjects:
+  - Options (Finance)
+  - Problems, exercises
+  - Finance
+  - Stock exchanges
+  - Vocational guidance
+  - Employment interviewing
+  - Securities industry
+  - Commerce
+  cover: https://covers.openlibrary.org/b/id/11050412-M.jpg
+- id: mathbook_wilmott_introduces
+  ol_key: /works/OL682708W
+  ol_title: Paul Wilmott Introduces Quantitative Finance
+  ol_authors:
+  - Paul Wilmott
+  first_publish_year: 2001
+  isbn_sample:
+  - '9780470319581'
+  - 0471498629
+  - 0470512865
+  subjects:
+  - Mathematical models
+  - Options (Finance)
+  - Prices
+  - Finance
+  - Business
+  - Nonfiction
+  - Finance, mathematical models
+  - Futures
+  cover: https://covers.openlibrary.org/b/id/1240214-M.jpg
+- id: mathbook_hull_options
+  ol_key: /works/OL19892676W
+  ol_title: Options, Futures, and Other Derivatives
+  ol_authors:
+  - John C. Hull
+  first_publish_year: 1989
+  isbn_sample:
+  - '9780130090560'
+  - '9780130224446'
+  - 0135009944
+  subjects:
+  - Derivative securities
+  - Futures
+  - Stock options
+  - Options (finance)
+  - Problems, exercises
+  - Marchés à terme
+  - Guides, manuels
+  - Options d'achat d'actions
+  cover: https://covers.openlibrary.org/b/id/8702910-M.jpg
+- id: mathbook_bjork_arbitrage_theory
+  ol_key: /works/OL17431432W
+  ol_title: Arbitrage Theory In Continuous Time
+  ol_authors:
+  - Tomas Bjork
+  first_publish_year: 2009
+  isbn_sample:
+  - 019957474X
+  - 0198851618
+  - '9780198851615'
+  subjects:
+  - Prices
+  - Mathematical models
+  - Arbitrage
+  - Derivative securities
+  - Mathematics
+  - Business mathematics
+  - Finance
+  - Derivatives - general & miscellaneous
+  cover: https://covers.openlibrary.org/b/id/7565194-M.jpg
+- id: mathbook_gatheral_volatility_surface
+  ol_key: /works/OL9254959W
+  ol_title: The Volatility Surface
+  ol_authors:
+  - Jim Gatheral
+  first_publish_year: 2006
+  isbn_sample:
+  - '9781280649226'
+  - 0471792519
+  - '9780470345566'
+  subjects:
+  - Business
+  - Finance
+  - Nonfiction
+  - Options (Finance)
+  - Prices
+  - Stocks
+  - Mathematical models
+  cover: https://covers.openlibrary.org/b/id/1251022-M.jpg
+- id: mathbook_karatzas_shreve
+  ol_key: /works/OL1858792W
+  ol_title: Brownian motion and stochastic calculus
+  ol_authors:
+  - Ioannis Karatzas
+  - Steven E. Shreve
+  first_publish_year: 1988
+  isbn_sample:
+  - '9781468403039'
+  - '9780387976556'
+  - 0387976558
+  subjects:
+  - Brownian motion processes
+  - Stochastic analysis
+  - Brownsche Bewegung
+  - Processus stochastique
+  - Équation différentielle stochastique
+  - Processus de Mouvement brownien
+  - Mouvement brownien
+  - Stochastik
+  cover: https://covers.openlibrary.org/b/id/3966979-M.jpg
+- id: mathbook_ruppert_statistics_fin_eng
+  ol_key: /works/OL20693706W
+  ol_title: Statistics and Data Analysis for Financial Engineering
+  ol_authors:
+  - David Ruppert
+  - David S. Matteson
+  first_publish_year: 2010
+  isbn_sample:
+  - '1461427495'
+  - '1493926144'
+  - '9781461427490'
+  subjects:
+  - Financial engineering
+  - Finance, statistical methods
+  - Statistics
+  - Economics
+  - Statistics for Business/Economics/Mathematical Finance/Insurance
+  - Finance
+  - Mathematical statistics
+  - Economics--statistics
+  cover: https://covers.openlibrary.org/b/id/9368529-M.jpg
+- id: mathbook_tsay_financial_time_series
+  ol_key: /works/OL8229030W
+  ol_title: Analysis of Financial Time Series
+  ol_authors:
+  - Ruey S. Tsay
+  first_publish_year: 2001
+  isbn_sample:
+  - '1280278226'
+  - '9780470231869'
+  - '9781118017098'
+  subjects:
+  - Risk management
+  - Time-series analysis
+  - Econometrics
+  cover: https://covers.openlibrary.org/b/id/304546-M.jpg
+- id: mathbook_hamilton_time_series
+  ol_key: /works/OL3906201W
+  ol_title: Time Series Analysis
+  ol_authors:
+  - James D. Hamilton
+  first_publish_year: 1994
+  isbn_sample:
+  - '9780691042893'
+  - 0691042896
+  subjects:
+  - Time-series analysis
+  - Statistical analysis
+  - Qa280 .h264 1994
+  - Qa 280
+  - 519.5/5
+  cover: https://covers.openlibrary.org/b/id/441241-M.jpg
+- id: mathbook_campbell_lo_mackinlay
+  ol_key: /works/OL3283693W
+  ol_title: The econometrics of financial markets
+  ol_authors:
+  - John Y. Campbell
+  first_publish_year: 1997
+  isbn_sample:
+  - '9780691043012'
+  - 0691043019
+  subjects:
+  - Econometric models
+  - Capital market
+  - Finance, mathematical models
+  - Capital market--econometric models
+  - Hg4523 .c27 1997
+  - 332/.09414
+  cover: https://covers.openlibrary.org/b/id/441244-M.jpg
+- id: mathbook_harris_trading_exchanges
+  ol_key: /works/OL7034157W
+  ol_title: Trading and Exchanges
+  ol_authors:
+  - Larry Harris
+  first_publish_year: 2002
+  isbn_sample:
+  - '9780195144703'
+  - 0198090544
+  - '9780198090540'
+  subjects:
+  - Commerce
+  - Markets
+  - Exchange
+  cover: https://covers.openlibrary.org/b/id/125428-M.jpg
+- id: mathbook_ohara_microstructure_theory
+  ol_key: /works/OL3497863W
+  ol_title: Market Microstructure Theory
+  ol_authors:
+  - Maureen O'Hara
+  first_publish_year: 1995
+  isbn_sample:
+  - '1557864438'
+  - 0631207619
+  - '9781557864437'
+  subjects:
+  - Mathematical models
+  - Securities
+  - Stock exchanges
+  - Mathematisches Modell
+  - Bo rse
+  - Marktstruktur
+  - Wertpapiermarkt
+  - Investments, mathematical models
+  cover: https://covers.openlibrary.org/b/id/396323-M.jpg
+- id: mathbook_hasbrouck_empirical_microstructure
+  ol_key: /works/OL3608782W
+  ol_title: Empirical Market Microstructure
+  ol_authors:
+  - Joel Hasbrouck
+  first_publish_year: 2006
+  isbn_sample:
+  - 0198041306
+  - '1280907932'
+  - '9780198041306'
+  subjects:
+  - Securities
+  - Prices
+  - Mathematical models
+  - Investments
+  - Stock exchanges
+  - Investments, mathematical models
+  cover: https://covers.openlibrary.org/b/id/1128592-M.jpg
+- id: mathbook_bouchaud_trades_quotes_prices
+  ol_key: /works/OL22538958W
+  ol_title: Trades, Quotes and Prices
+  ol_authors:
+  - Jean-Philippe Bouchaud
+  - Julius Bonart
+  - Jonathan Donier
+  - Martin Gould
+  first_publish_year: 2018
+  isbn_sample:
+  - '9781107156050'
+  - 110715605X
+  - '9781316659335'
+  subjects:
+  - Financial institutions
+  - Capital market
+  - Finance
+  - Commerce
+  cover: null
+- id: mathbook_cartea_algorithmic_hft
+  ol_key: /works/OL25047296W
+  ol_title: Algorithmic and High-Frequency Trading
+  ol_authors:
+  - Álvaro Cartea
+  - Sebastian Jaimungal
+  - José Penalva
+  first_publish_year: 2015
+  isbn_sample:
+  - '1316455572'
+  - '1107091144'
+  - '9781316455579'
+  subjects:
+  - Electronic trading of securities
+  - Finance, mathematical models
+  - Speculation
+  - Mathematical models
+  - Finance
+  - Mathématiques financières
+  - Spéculation
+  - Modèles mathématiques
+  cover: null
+- id: mathbook_kissell_optimal_trading
+  ol_key: /works/OL23791217W
+  ol_title: Optimal trading strategies
+  ol_authors:
+  - Robert Kissell
+  - Morton Glantz
+  first_publish_year: 2003
+  isbn_sample:
+  - '9780814407240'
+  - 0814407242
+  subjects:
+  - Stocks
+  - Investments
+  cover: https://covers.openlibrary.org/b/id/610642-M.jpg
+- id: mathbook_vince_mathematics_money_management
+  ol_key: /works/OL3503409W
+  ol_title: The mathematics of money management
+  ol_authors:
+  - Ralph Vince
+  first_publish_year: 1992
+  isbn_sample:
+  - 0471547387
+  - '9780471547389'
+  subjects:
+  - Mathematics
+  - Investment analysis
+  - Program trading (Securities)
+  - Risk management
+  cover: https://covers.openlibrary.org/b/id/1248509-M.jpg
+- id: mathbook_cover_thomas_information_theory
+  ol_key: /works/OL21500808W
+  ol_title: Elements of Information Theory
+  ol_authors:
+  - Thomas M. Cover
+  - Joy A. Thomas
+  first_publish_year: 2006
+  isbn_sample:
+  - '1280517492'
+  - 047174882X
+  - '9781280517495'
+  subjects:
+  - Information theory
+  cover: null
+- id: mathbook_markowitz_portfolio_selection
+  ol_key: /works/OL4479604W
+  ol_title: Portfolio selection
+  ol_authors:
+  - Harry Max Markowitz
+  first_publish_year: 1959
+  isbn_sample:
+  - '9781557861085'
+  - '1557861080'
+  subjects:
+  - Finance
+  - History
+  - Investment analysis
+  - Investments
+  - Portfolio management
+  - Stocks
+  cover: https://covers.openlibrary.org/b/id/781530-M.jpg
+- id: mathbook_grinold_kahn_active_pm
+  ol_key: /works/OL11989070W
+  ol_title: Active portfolio management
+  ol_authors:
+  - Richard C Grinold
+  - Richard C. Grinold
+  - Ronald N. Kahn
+  first_publish_year: 1999
+  isbn_sample:
+  - '9780070248823'
+  - '9780071376952'
+  - 0070248826
+  subjects:
+  - Mathematical models
+  - Portfolio management
+  - Business
+  - Finance
+  - Nonfiction
+  - Gestion de portefeuille
+  - Modèles mathématiques
+  - BUSINESS & ECONOMICS
+  cover: https://covers.openlibrary.org/b/id/54093-M.jpg
+- id: mathbook_jorion_value_at_risk
+  ol_key: /works/OL2952926W
+  ol_title: Value at Risk
+  ol_authors:
+  - Philippe Jorion
+  first_publish_year: 1996
+  isbn_sample:
+  - '9780786308484'
+  - 0071464956
+  - '0071355022'
+  subjects:
+  - Risk management
+  - Financial futures
+  - Derivative securities
+  - Marchés à terme d'instruments financiers
+  - Gestion du risque
+  - Kreditmarkt
+  - Risikomanagement
+  - Risikokapital
+  cover: https://covers.openlibrary.org/b/id/541526-M.jpg
+- id: mathbook_mcneil_quantitative_risk
+  ol_key: /works/OL5848105W
+  ol_title: Quantitative risk management
+  ol_authors:
+  - Alexander J. McNeil
+  first_publish_year: 2005
+  isbn_sample:
+  - '9780691166278'
+  - 0691122555
+  - 0691166277
+  subjects:
+  - Finance
+  - Insurance
+  - Mathematical models
+  - Mathematical statistics
+  - Risk management
+  - Finance, mathematical models
+  - Insurance, mathematics
+  - Risk management--mathematical models
+  cover: https://covers.openlibrary.org/b/id/443955-M.jpg
+- id: mathbook_mandelbrot_fractals_scaling
+  ol_key: /works/OL1808387W
+  ol_title: Fractals and scaling in finance
+  ol_authors:
+  - Benoît B. Mandelbrot
+  - Richard L. Hudson
+  first_publish_year: 1997
+  isbn_sample:
+  - '9781475727630'
+  - '8483104857'
+  - '9781441931191'
+  subjects:
+  - Statistical methods
+  - Fractals
+  - Finance
+  - Scaling (Social sciences)
+  - Finance, statistical methods
+  - Social sciences
+  - Mathematics
+  - Quantitative Finance
+  cover: https://covers.openlibrary.org/b/id/246096-M.jpg
+- id: mathbook_boyd_convex_optimization
+  ol_key: /works/OL25692727W
+  ol_title: Convex Optimization
+  ol_authors:
+  - Stephen Boyd
+  - Lieven Vandenberghe
+  first_publish_year: 2004
+  isbn_sample:
+  - '9781316179512'
+  - '1316179516'
+  - 051180444X
+  subjects: []
+  cover: null
+- id: mathbook_isl
+  ol_key: /works/OL19859252W
+  ol_title: An Introduction to Statistical Learning
+  ol_authors:
+  - Gareth James
+  first_publish_year: 2013
+  isbn_sample:
+  - '9783031387470'
+  - '9781461471394'
+  - '1071614185'
+  subjects:
+  - Mathematical statistics
+  - Statistics
+  - Statistics, general
+  - Statistics and Computing/Statistics Programs
+  - Mathematical and Computational Physics Theoretical
+  - Statistical Theory and Methods
+  - General
+  - Mathematical & statistical software
+  cover: https://covers.openlibrary.org/b/id/8665540-M.jpg
+- id: mathbook_esl
+  ol_key: /works/OL4147338W
+  ol_title: The Elements of Statistical Learning
+  ol_authors:
+  - Trevor Hastie
+  - Robert Tibshirani
+  - Jerome Friedman
+  first_publish_year: 2001
+  isbn_sample:
+  - 0387848584
+  - '9780387848846'
+  - 0387216065
+  subjects:
+  - Supervised learning (Machine learning)
+  - Database management
+  - Artificial Intelligence (incl. Robotics)
+  - Statistics
+  - Artificial intelligence
+  - Biology
+  - Data processing
+  - Computer science
+  cover: https://covers.openlibrary.org/b/id/8643962-M.jpg
+- id: mathbook_lopez_de_prado_afml
+  ol_key: /works/OL20583340W
+  ol_title: Advances in Financial Machine Learning
+  ol_authors:
+  - Marcos Lopez de Prado
+  first_publish_year: 2018
+  isbn_sample:
+  - '1119482100'
+  - '1119482119'
+  - '9781119482109'
+  subjects: []
+  cover: https://covers.openlibrary.org/b/id/9224592-M.jpg
+- id: mathbook_ml_asset_managers
+  ol_key: /works/OL21675645W
+  ol_title: Machine Learning for Asset Managers
+  ol_authors:
+  - Marcos Lopez de Prado
+  first_publish_year: 2020
+  isbn_sample:
+  - '9781108792899'
+  - '1108792898'
+  subjects:
+  - Finance
+  cover: null
+- id: mathbook_jansen_ml_algo_trading
+  ol_key: /works/OL25188681W
+  ol_title: Machine Learning for Algorithmic Trading
+  ol_authors:
+  - Stefan Jansen
+  first_publish_year: 2020
+  isbn_sample:
+  - '9781839216787'
+  - '1839217715'
+  - '9781839217715'
+  subjects:
+  - Finance
+  cover: https://covers.openlibrary.org/b/id/11979900-M.jpg
+- id: mathbook_hilpisch_python_finance
+  ol_key: /works/OL19547348W
+  ol_title: 'Python for Finance: Analyze Big Financial Data'
+  ol_authors:
+  - Yves Hilpisch
+  first_publish_year: 2014
+  isbn_sample:
+  - '9781491945391'
+  - '1492024317'
+  - '1491945397'
+  subjects:
+  - Statistical methods
+  - Python (Computer program language)
+  - Finance
+  - Financial engineering
+  - Data processing
+  - Programming languages (Electronic computers)
+  - Finance, data processing
+  - Computer programs
+  cover: https://covers.openlibrary.org/b/id/8513533-M.jpg
+- id: mathbook_aronson_ebta
+  ol_key: /works/OL21434351W
+  ol_title: Evidence-Based Technical Analysis
+  ol_authors:
+  - David Aronson
+  first_publish_year: 2007
+  isbn_sample:
+  - '9780470079768'
+  - '9781118160589'
+  - '1118268318'
+  subjects:
+  - Investment analysis
+  cover: null

@@ -30,8 +30,8 @@ media:
     speaker_ids: [person_fabio_valentini]
     featured_in: [channel_chart_fanatics]
     covers: [strategy_fabio_valentini_amt_order_flow, concept_auction_market_theory, concept_order_flow, concept_scalping]
-    views_approx: 3700000
-    verification: third-party
+    views_approx: 4700000
+    verification: confirmed
     sources:
       - {title: "videohighlight summary", url: "https://videohighlight.com/v/tvERE-Beu2U", tier: T3}
   - id: media_cf_liquidity_trap
@@ -41,24 +41,28 @@ media:
     url: https://www.youtube.com/watch?v=DAnXM7C16h0
     featured_in: [channel_chart_fanatics]
     covers: [concept_liquidity, concept_liquidity_sweep_reversal, concept_multi_timeframe_analysis]
-    views_approx: 1100000
-    verification: third-party
+    views_approx: 1300000
+    verification: confirmed
     sources:
       - {title: "InfoCaptor transcript summary", url: "https://my.infocaptor.com/hub/summaries/chart-fanatics/steal-this-easy-liquidity-trap-trading-strategy-$500k+-perfect-sniper-entries-DAnXM7C16h0", tier: T3}
       - {title: "GitHub — youtube-liquidity-trap-analysis", url: "https://github.com/zitiao236-dev/youtube-liquidity-trap-analysis", tier: T3}
   - id: media_cf_marci_silfrain
     type: media
     title: "Marci Silfrain — Chart Fanatics strategy episode (World #2 futures trader)"
+    youtube_id: AVVM-FyewLg
+    url: https://www.youtube.com/watch?v=AVVM-FyewLg
     speaker_ids: [person_marci_silfrain]
     featured_in: [channel_chart_fanatics]
     covers: [strategy_marci_silfrain_measured_move]
-    views_approx: 772000
-    verification: third-party
+    views_approx: 1100000
+    verification: confirmed
     sources:
       - {title: "OutlierKit outlier videos", url: "https://outlierkit.com/channel/chart-fanatics", tier: T3}
   - id: media_cf_tg_capital
     type: media
     title: "STEAL This INSANE Simple 90% Win Rate Trading Strategy (1:20+ RR) - TG Capital"
+    youtube_id: ADnslyKOwFE
+    url: https://www.youtube.com/watch?v=ADnslyKOwFE
     speaker_ids: [person_tg_capital]
     featured_in: [channel_chart_fanatics]
     covers: [strategy_tg_capital_trident]
@@ -157,33 +161,3 @@ media:
     verification: confirmed
     sources:
       - {title: "Spotify for Creators", url: "https://creators.spotify.com/pod/profile/wordsofrizdom/episodes/Trading-Psychologist-Heres-How-I-MAKE-Traders-Profitable-Long-Term-e2vb2bq", tier: T2}
-
-# Playbooks listed on chartfanatics.com/strategies (per search snippet) with no detail yet.
-strategies_listed:
-  - id: strategy_matteo_conti_institutional
-    type: strategy
-    title: Matteo Conti — Institutional Framework
-    taught_by: [person_matteo_conti]
-    featured_in: [channel_chart_fanatics]
-    status: pending-scrape
-  - id: strategy_fredy_sarmiento_options_flow
-    type: strategy
-    title: Fredy Sarmiento — Options Flow Strategy
-    taught_by: [person_fredy_sarmiento]
-    featured_in: [channel_chart_fanatics]
-    uses: [concept_options_greeks, concept_market_sentiment]
-    status: pending-scrape
-  - id: strategy_clement_ang_price_cycle
-    type: strategy
-    title: Clement Ang — Price Cycle Strategy
-    taught_by: [person_clement_ang]
-    featured_in: [channel_chart_fanatics]
-    uses: [concept_growth_momentum_canslim, concept_market_regimes]
-    status: pending-scrape
-  - id: strategy_pavel_first_principles
-    type: strategy
-    title: Pavel — Trading First Principles Framework
-    taught_by: [person_pavel]
-    featured_in: [channel_chart_fanatics]
-    uses: [concept_edge, concept_trading_plan]
-    status: pending-scrape

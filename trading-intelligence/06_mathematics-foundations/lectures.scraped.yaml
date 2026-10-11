@@ -1,0 +1,1591 @@
+scraped_media:
+- id: media_yt_ca66fn3op1u
+  type: media
+  rank: 1
+  title: Option Greeks Explained - Theta Delta Gamma Vega RHO | Stock Market Trading Knowledge | Share Market
+  url: https://www.youtube.com/watch?v=Ca66fN3oP1U
+  youtube_id: Ca66fN3oP1U
+  channel: 'Pushkar Raj Thakur: Stock Market Educator 📈'
+  views: 3927626
+  duration_s: 2071
+  query: options greeks explained delta gamma
+  query_group: foundations_more
+  covers:
+  - concept_options_greeks
+  - concept_order_flow
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_u5kidtmjgc8
+  type: media
+  rank: 2
+  title: The mathematician who cracked Wall Street | Jim Simons
+  url: https://www.youtube.com/watch?v=U5kIdtMJGc8
+  youtube_id: U5kIdtMJGc8
+  channel: TED
+  views: 2900075
+  duration_s: 1388
+  query: Jim Simons lecture mathematics
+  query_group: foundations_more
+  covers: []
+  speaker_ids:
+  - person_jim_simons
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_kbb0fjpg0mw
+  type: media
+  rank: 3
+  title: 'Lecture 1: Probability and Counting | Statistics 110'
+  url: https://www.youtube.com/watch?v=KbB0FjPg0mw
+  youtube_id: KbB0FjPg0mw
+  channel: Harvard University
+  views: 1775418
+  duration_s: 2789
+  query: probability theory lecture
+  query_group: foundations_more
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_qnznd9hmeh0
+  type: media
+  rank: 4
+  title: Jim Simons (full length interview) - Numberphile
+  url: https://www.youtube.com/watch?v=QNznD9hMEh0
+  youtube_id: QNznD9hMEh0
+  channel: Numberphile2
+  views: 1358228
+  duration_s: 3643
+  query: Jim Simons lecture mathematics
+  query_group: foundations_more
+  covers: []
+  speaker_ids:
+  - person_jim_simons
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_p9yndmeojn0
+  type: media
+  rank: 5
+  title: Stock Market Order Types (Market Order, Limit Order, Stop Loss, Stop Limit)
+  url: https://www.youtube.com/watch?v=p9YndmEoJn0
+  youtube_id: p9YndmEoJn0
+  channel: Arvabelle
+  views: 1269319
+  duration_s: 545
+  query: limit order book explained
+  query_group: foundations_more
+  covers:
+  - concept_trade_execution
+  - concept_trade_management
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_tfhjctykpho
+  type: media
+  rank: 6
+  title: Option Greeks Delta, Gamma, Theta, Vega Explained | Learn Share Market Trading
+  url: https://www.youtube.com/watch?v=TfHjCtyKPHo
+  youtube_id: TfHjCtyKPHo
+  channel: 'Pushkar Raj Thakur: Stock Market Educator 📈'
+  views: 1174457
+  duration_s: 1728
+  query: options greeks explained delta gamma
+  query_group: foundations_more
+  covers:
+  - concept_options_greeks
+  - concept_order_flow
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_pr_u4lcfyey
+  type: media
+  rank: 7
+  title: Introduction to the Black-Scholes formula | Finance & Capital Markets | Khan Academy
+  url: https://www.youtube.com/watch?v=pr-u4LCFYEY
+  youtube_id: pr-u4LCFYEY
+  channel: Khan Academy
+  views: 1158247
+  duration_s: 624
+  query: Black Scholes derivation lecture
+  query_group: stochastic_derivatives
+  covers:
+  - concept_options_greeks
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_ctqcli6spx8
+  type: media
+  rank: 8
+  title: 'Jim Simons: A Short Story of My Life and Mathematics (2022)'
+  url: https://www.youtube.com/watch?v=CTQcLi6SpX8
+  youtube_id: CTQcLi6SpX8
+  channel: The Abel Prize
+  views: 803322
+  duration_s: 967
+  query: Jim Simons lecture mathematics
+  query_group: foundations_more
+  covers: []
+  speaker_ids:
+  - person_jim_simons
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_9hd6xo2io1g
+  type: media
+  rank: 9
+  title: The Sharpe Ratio Explained (by a quant trader)
+  url: https://www.youtube.com/watch?v=9HD6xo2iO1g
+  youtube_id: 9HD6xo2iO1g
+  channel: Wall Street Quants
+  views: 789950
+  duration_s: 950
+  query: Sharpe ratio explained
+  query_group: foundations_more
+  covers:
+  - concept_performance_metrics
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_xe7fklfzzba
+  type: media
+  rank: 10
+  title: La formule qui a radicalement transformé la finance mondiale [Black-Scholes]
+  url: https://www.youtube.com/watch?v=XE7FKLfZzBA
+  youtube_id: XE7FKLfZzBA
+  channel: ScienceEtonnante
+  views: 729603
+  duration_s: 1568
+  query: Black Scholes model explained
+  query_group: foundations_more
+  covers:
+  - concept_options_greeks
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_ga0egjzcrb0
+  type: media
+  rank: 11
+  title: Jim Simons Trading Secrets 1.1 MARKOV Process
+  url: https://www.youtube.com/watch?v=gA0egjZcRB0
+  youtube_id: gA0egjZcRB0
+  channel: QuantProgram
+  views: 711674
+  duration_s: 1213
+  query: Jim Simons lecture mathematics
+  query_group: foundations_more
+  covers: []
+  speaker_ids:
+  - person_jim_simons
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt__epxhupnak0
+  type: media
+  rank: 12
+  title: 'Statistics Lecture 4.2: Introduction to Probability'
+  url: https://www.youtube.com/watch?v=_EpXHuPnaK0
+  youtube_id: _EpXHuPnaK0
+  channel: Professor Leonard
+  views: 639655
+  duration_s: 6131
+  query: probability theory lecture
+  query_group: foundations_more
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_ay8omosf6aq
+  type: media
+  rank: 13
+  title: 'Benoit Mandelbrot: Fractals and the art of roughness'
+  url: https://www.youtube.com/watch?v=ay8OMOsf6AQ
+  youtube_id: ay8OMOsf6AQ
+  channel: TED
+  views: 492889
+  duration_s: 1279
+  query: Mandelbrot fractals markets
+  query_group: foundations_more
+  covers: []
+  speaker_ids:
+  - person_benoit_mandelbrot
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_f9xfm8ylccg
+  type: media
+  rank: 14
+  title: 3. Probability Theory
+  url: https://www.youtube.com/watch?v=f9XFM8YLccg
+  youtube_id: f9XFM8YLccg
+  channel: MIT OpenCourseWare
+  views: 470817
+  duration_s: 4705
+  query: probability theory lecture
+  query_group: foundations_more
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_ubem1fuk4ps
+  type: media
+  rank: 15
+  title: 8. Time Series Analysis I
+  url: https://www.youtube.com/watch?v=uBeM1FUk4Ps
+  youtube_id: uBeM1FUk4Ps
+  channel: MIT OpenCourseWare
+  views: 463073
+  duration_s: 4579
+  query: time series analysis finance lecture
+  query_group: time_series
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_i0sgads8zti
+  type: media
+  rank: 16
+  title: Black-Scholes Option Pricing Model -- Intro and Call Example
+  url: https://www.youtube.com/watch?v=i0sGAds8ztI
+  youtube_id: i0sGAds8ztI
+  channel: Kevin Bracker
+  views: 441784
+  duration_s: 819
+  query: Black Scholes model explained
+  query_group: foundations_more
+  covers:
+  - concept_options_greeks
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_bafrvpkixz4
+  type: media
+  rank: 17
+  title: The Math of Winning in Trading
+  url: https://www.youtube.com/watch?v=BAfRVpKIxZ4
+  youtube_id: BAfRVpKIxZ4
+  channel: Mulham Trading
+  views: 424767
+  duration_s: 855
+  query: expected value trading math
+  query_group: probability_statistics
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_vyk8hqockie
+  type: media
+  rank: 18
+  title: The Expected Value and Variance of Discrete Random Variables
+  url: https://www.youtube.com/watch?v=Vyk8HQOckIE
+  youtube_id: Vyk8HQOckIE
+  channel: jbstatistics
+  views: 415904
+  duration_s: 680
+  query: expected value explained
+  query_group: foundations_more
+  covers:
+  - concept_expectancy
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_g_qvfjvyqcs
+  type: media
+  rank: 19
+  title: '"Basic Statistical Arbitrage: Understanding the Math Behind Pairs Trading" by Max Margenot'
+  url: https://www.youtube.com/watch?v=g-qvFjvyqcs
+  youtube_id: g-qvFjvyqcs
+  channel: Quantopian
+  views: 405115
+  duration_s: 3291
+  query: cointegration pairs trading lecture
+  query_group: time_series
+  covers:
+  - concept_mean_reversion
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_hiwxdhldsfs
+  type: media
+  rank: 20
+  title: TIME SERIES ANALYSIS THE BEST EXAMPLE
+  url: https://www.youtube.com/watch?v=HIWXdHlDSFs
+  youtube_id: HIWXdHlDSFs
+  channel: Adhir Hurjunlal
+  views: 399631
+  duration_s: 1565
+  query: time series analysis finance lecture
+  query_group: time_series
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_fpm6it4v8my
+  type: media
+  rank: 21
+  title: Time Series Analysis | Time Series Forecasting | Time Series Analysis in R | Ph.D. (Stanford)
+  url: https://www.youtube.com/watch?v=FPM6it4v8MY
+  youtube_id: FPM6it4v8MY
+  channel: Great Learning
+  views: 375457
+  duration_s: 17182
+  query: time series analysis finance lecture
+  query_group: time_series
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_0x_pc_z3wu4
+  type: media
+  rank: 22
+  title: How to Trade with the Black-Scholes Model
+  url: https://www.youtube.com/watch?v=0x-Pc-Z3wu4
+  youtube_id: 0x-Pc-Z3wu4
+  channel: Roman Paolucci
+  views: 366207
+  duration_s: 1009
+  query: Black Scholes model explained
+  query_group: foundations_more
+  covers:
+  - concept_options_greeks
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_prpu_u5tkke
+  type: media
+  rank: 23
+  title: Lecture 13   Time Series Analysis
+  url: https://www.youtube.com/watch?v=Prpu_U5tKkE
+  youtube_id: Prpu_U5tKkE
+  channel: Jordan Kern
+  views: 350854
+  duration_s: 2574
+  query: time series analysis finance lecture
+  query_group: time_series
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_bpfemunshwi
+  type: media
+  rank: 24
+  title: '[#1] Theory of Probability || Quantitative Techniques calicut university in Malayalam'
+  url: https://www.youtube.com/watch?v=BPFemUnsHwI
+  youtube_id: BPFemUnsHwI
+  channel: 'Zydemic Education '
+  views: 345097
+  duration_s: 1610
+  query: probability theory lecture
+  query_group: foundations_more
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_stgyw6m5o4k
+  type: media
+  rank: 25
+  title: What is a Random Walk? | Infinite Series
+  url: https://www.youtube.com/watch?v=stgYW6M5o4k
+  youtube_id: stgYW6M5o4k
+  channel: PBS Infinite Series
+  views: 304621
+  duration_s: 755
+  query: random walk hypothesis explained
+  query_group: foundations_more
+  covers:
+  - concept_support_resistance
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_tns8ki_kujc
+  type: media
+  rank: 26
+  title: 19. Black-Scholes Formula, Risk-neutral Valuation
+  url: https://www.youtube.com/watch?v=TnS8kI_KuJc
+  youtube_id: TnS8kI_KuJc
+  channel: MIT OpenCourseWare
+  views: 288523
+  duration_s: 2992
+  query: Black Scholes derivation lecture
+  query_group: stochastic_derivatives
+  covers:
+  - concept_options_greeks
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt__x9u9oyvgyk
+  type: media
+  rank: 27
+  title: Mathematics of Maximizing Profit in Gambling/Investing | Kelly Criterion
+  url: https://www.youtube.com/watch?v=-X9u9oYvGYk
+  youtube_id: -X9u9oYvGYk
+  channel: EpsilonDelta
+  views: 285027
+  duration_s: 2066
+  query: Kelly criterion explained
+  query_group: probability_statistics
+  covers:
+  - concept_kelly_criterion_optimal_f
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_p7ne4wf8j_q
+  type: media
+  rank: 28
+  title: 'Lecture 4: Conditional Probability | Statistics 110'
+  url: https://www.youtube.com/watch?v=P7NE4WF8j-Q
+  youtube_id: P7NE4WF8j-Q
+  channel: Harvard University
+  views: 282614
+  duration_s: 2985
+  query: Bayesian probability lecture
+  query_group: probability_statistics
+  covers:
+  - concept_trading_plan
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_h4x_4e7fpgi
+  type: media
+  rank: 29
+  title: 'Warren Buffett: Black-Scholes Formula Is Total Nonsense'
+  url: https://www.youtube.com/watch?v=H4X-4e7fPgI
+  youtube_id: H4X-4e7fPgI
+  channel: The Long-Term Investor
+  views: 240152
+  duration_s: 954
+  query: Black Scholes derivation lecture
+  query_group: stochastic_derivatives
+  covers:
+  - concept_options_greeks
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_6_dhdmdiywq
+  type: media
+  rank: 30
+  title: Monte Carlo Simulation of a Stock Portfolio with Python
+  url: https://www.youtube.com/watch?v=6-dhdMDiYWQ
+  youtube_id: 6-dhdMDiYWQ
+  channel: QuantPy
+  views: 217955
+  duration_s: 1103
+  query: Monte Carlo simulation trading
+  query_group: foundations_more
+  covers:
+  - concept_backtesting
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_usfxr4jt230
+  type: media
+  rank: 31
+  title: ICT Market Maker Model - Explained In-depth!
+  url: https://www.youtube.com/watch?v=uSFxr4jT230
+  youtube_id: uSFxr4jT230
+  channel: DanDowdTrading
+  views: 210310
+  duration_s: 1784
+  query: market making explained
+  query_group: foundations_more
+  covers:
+  - concept_market_microstructure
+  - concept_smart_money_concepts
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_inobpq1uen4
+  type: media
+  rank: 32
+  title: 'GARCH Model : Time Series Talk'
+  url: https://www.youtube.com/watch?v=inoBpq1UEn4
+  youtube_id: inoBpq1UEn4
+  channel: ritvikmath
+  views: 207086
+  duration_s: 625
+  query: GARCH volatility model lecture
+  query_group: time_series
+  covers:
+  - concept_time_series_statistics
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_ydtrf4d9kve
+  type: media
+  rank: 33
+  title: Option Greeks (Telugu)  Explained  Delta, Gamma, Theta, Vega , Rho
+  url: https://www.youtube.com/watch?v=YdTRF4d9KvE
+  youtube_id: YdTRF4d9KvE
+  channel: DAY TRADER తెలుగు
+  views: 202534
+  duration_s: 1022
+  query: options greeks explained delta gamma
+  query_group: foundations_more
+  covers:
+  - concept_options_greeks
+  - concept_order_flow
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_ghpl5ucgrki
+  type: media
+  rank: 34
+  title: Getting data from expected value | Probability and Statistics | Khan Academy
+  url: https://www.youtube.com/watch?v=gHpl5UcgRkI
+  youtube_id: gHpl5UcgRkI
+  channel: Khan Academy
+  views: 196480
+  duration_s: 592
+  query: expected value explained
+  query_group: foundations_more
+  covers:
+  - concept_expectancy
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_gb7nnvenbjg
+  type: media
+  rank: 35
+  title: 15 Years of Trading Risk Management in 20 Minutes
+  url: https://www.youtube.com/watch?v=gb7nNveNBjg
+  youtube_id: gb7nNveNBjg
+  channel: TheOneLanceB
+  views: 189279
+  duration_s: 1227
+  query: risk of ruin trading explained
+  query_group: probability_statistics
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_ujsc2sk7vvg
+  type: media
+  rank: 36
+  title: How Does Leverage Affect Trading Returns? The Kelly Criterion | Coffeezilla Follow-up
+  url: https://www.youtube.com/watch?v=UjsC2sk7vVg
+  youtube_id: UjsC2sk7vVg
+  channel: Patrick Boyle
+  views: 188511
+  duration_s: 1205
+  query: Kelly criterion explained
+  query_group: probability_statistics
+  covers:
+  - concept_kelly_criterion_optimal_f
+  - concept_leverage_margin
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_thylv5_0vm8
+  type: media
+  rank: 37
+  title: KELLY CRITERION | Ed Thorp | Optimal Position Sizing For Stock Trading
+  url: https://www.youtube.com/watch?v=THYLv5_0Vm8
+  youtube_id: THYLv5_0Vm8
+  channel: Financial Wisdom
+  views: 185306
+  duration_s: 494
+  query: Kelly criterion explained
+  query_group: probability_statistics
+  covers:
+  - concept_position_sizing
+  - concept_kelly_criterion_optimal_f
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_jb6odrq6ala
+  type: media
+  rank: 38
+  title: How Markets Actually Work — Retail vs Institutions vs Market Makers Explained (Video 1)
+  url: https://www.youtube.com/watch?v=jb6Odrq6alA
+  youtube_id: jb6Odrq6alA
+  channel: Smart Money Decode X
+  views: 184713
+  duration_s: 991
+  query: market making explained
+  query_group: foundations_more
+  covers:
+  - concept_market_microstructure
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_uthvfi9awbk
+  type: media
+  rank: 39
+  title: Efficient Market Hypothesis - EMH Explained Simply
+  url: https://www.youtube.com/watch?v=UTHvfI9awBk
+  youtube_id: UTHvfI9awBk
+  channel: Learn to Invest - Investors Grow
+  views: 171557
+  duration_s: 541
+  query: random walk hypothesis explained
+  query_group: foundations_more
+  covers:
+  - concept_random_walk_efficient_markets
+  speaker_ids:
+  - person_eugene_fama
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt__9jm9sucihs
+  type: media
+  rank: 40
+  title: The Kelly Criterion
+  url: https://www.youtube.com/watch?v=-9JM9suCIHs
+  youtube_id: -9JM9suCIHs
+  channel: Mutual Information
+  views: 162831
+  duration_s: 541
+  query: Kelly criterion explained
+  query_group: probability_statistics
+  covers:
+  - concept_kelly_criterion_optimal_f
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_bvyveapojy4
+  type: media
+  rank: 41
+  title: Brownian Motion (Wiener process)
+  url: https://www.youtube.com/watch?v=BVYVeaPojY4
+  youtube_id: BVYVeaPojY4
+  channel: profbillbyrne
+  views: 159615
+  duration_s: 2349
+  query: Brownian motion finance lecture
+  query_group: stochastic_derivatives
+  covers:
+  - concept_stochastic_processes
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_7tcvob6vorg
+  type: media
+  rank: 42
+  title: A RANDOM WALK DOWN WALL STREET SUMMARY (BY BURTON MALKIEL)
+  url: https://www.youtube.com/watch?v=7TCVoB6Vorg
+  youtube_id: 7TCVoB6Vorg
+  channel: The Swedish Investor
+  views: 153404
+  duration_s: 900
+  query: random walk hypothesis explained
+  query_group: foundations_more
+  covers:
+  - concept_support_resistance
+  speaker_ids:
+  - person_burton_malkiel
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_u5svtxckxek
+  type: media
+  rank: 43
+  title: 'Statistics 101: What is Expected Value?'
+  url: https://www.youtube.com/watch?v=u5svtXcKXEk
+  youtube_id: u5svtXcKXEk
+  channel: Brandon Foltz
+  views: 147030
+  duration_s: 1278
+  query: expected value explained
+  query_group: foundations_more
+  covers:
+  - concept_expectancy
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_brulsm4gdq4
+  type: media
+  rank: 44
+  title: The 7 Reasons Most Machine Learning Funds Fail Marcos Lopez de Prado from QuantCon 2018
+  url: https://www.youtube.com/watch?v=BRUlSm4gdQ4
+  youtube_id: BRUlSm4gdQ4
+  channel: Quantopian
+  views: 143249
+  duration_s: 4416
+  query: Marcos Lopez de Prado lecture
+  query_group: quant_validation
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_qs0jnuthnvc
+  type: media
+  rank: 45
+  title: 'Calculating Options Greeks That Matter: Delta, Gamma, Theta - Raj Malhotra'
+  url: https://www.youtube.com/watch?v=Qs0jNUtHnVc
+  youtube_id: Qs0jNUtHnVc
+  channel: InstituteofTrading
+  views: 138860
+  duration_s: 2365
+  query: options greeks explained delta gamma
+  query_group: foundations_more
+  covers:
+  - concept_options_greeks
+  - concept_order_flow
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_uogluzpnoum
+  type: media
+  rank: 46
+  title: QUANT FINANCE 1 - Why We Never Use the Black Scholes Equation, 1
+  url: https://www.youtube.com/watch?v=UoGlUZPNouM
+  youtube_id: UoGlUZPNouM
+  channel: 'N N Taleb''s Probability Questions '
+  views: 132960
+  duration_s: 972
+  query: Black Scholes derivation lecture
+  query_group: stochastic_derivatives
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_4_tas6uw_oq
+  type: media
+  rank: 47
+  title: Brownian Motion-I
+  url: https://www.youtube.com/watch?v=4-Tas6Uw_OQ
+  youtube_id: 4-Tas6Uw_OQ
+  channel: Probability and Stochastics for finance
+  views: 125164
+  duration_s: 1894
+  query: Brownian motion finance lecture
+  query_group: stochastic_derivatives
+  covers:
+  - concept_stochastic_processes
+  - concept_oscillators_momentum
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_devm4elehgc
+  type: media
+  rank: 48
+  title: Stochastic Calculus for Quants | Understanding Geometric Brownian Motion using Itô Calculus
+  url: https://www.youtube.com/watch?v=Devm4ElEhGc
+  youtube_id: Devm4ElEhGc
+  channel: QuantPy
+  views: 123730
+  duration_s: 1340
+  query: stochastic calculus for finance lecture
+  query_group: stochastic_derivatives
+  covers:
+  - concept_stochastic_processes
+  - concept_oscillators_momentum
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_cvqudesbuca
+  type: media
+  rank: 49
+  title: Volatility Skew Explained | Options Trading Concepts
+  url: https://www.youtube.com/watch?v=cVQudesBUcA
+  youtube_id: cVQudesBUcA
+  channel: tastylive
+  views: 115342
+  duration_s: 643
+  query: volatility smile explained
+  query_group: foundations_more
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_7uy6yg53r2q
+  type: media
+  rank: 50
+  title: A 20-Year Veteran Reveals the World of Options Market Making
+  url: https://www.youtube.com/watch?v=7UY6Yg53R2Q
+  youtube_id: 7UY6Yg53R2Q
+  channel: QuantPy
+  views: 111393
+  duration_s: 3149
+  query: market making explained
+  query_group: foundations_more
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_f73itmwo4z8
+  type: media
+  rank: 51
+  title: 'Quant Strategy: Pairs Trading Algorithm (Mean Reversion)'
+  url: https://www.youtube.com/watch?v=f73ItMWO4z8
+  youtube_id: f73ItMWO4z8
+  channel: Spencer Pao
+  views: 103751
+  duration_s: 900
+  query: cointegration pairs trading lecture
+  query_group: time_series
+  covers:
+  - concept_mean_reversion
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_o7azudogxsw
+  type: media
+  rank: 52
+  title: 'SQL Execution Plans (Visually Explained) | SQL Hints | #SQL Course 40'
+  url: https://www.youtube.com/watch?v=O7AzUDogXsw
+  youtube_id: O7AzUDogXsw
+  channel: Data with Baraa
+  views: 103411
+  duration_s: 1936
+  query: optimal execution explained
+  query_group: foundations_more
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_gutdrfycw2q
+  type: media
+  rank: 53
+  title: Statistical Rethinking 2022 Lecture 02 - Bayesian Inference
+  url: https://www.youtube.com/watch?v=guTdrfycW2Q
+  youtube_id: guTdrfycW2Q
+  channel: Richard McElreath
+  views: 93825
+  duration_s: 4366
+  query: Bayesian probability lecture
+  query_group: probability_statistics
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_jtucmrymoyy
+  type: media
+  rank: 54
+  title: Introduction to Pairs Trading
+  url: https://www.youtube.com/watch?v=JTucMRYMOyY
+  youtube_id: JTucMRYMOyY
+  channel: Quantopian
+  views: 93396
+  duration_s: 2853
+  query: cointegration pairs trading lecture
+  query_group: time_series
+  covers:
+  - concept_mean_reversion
+  - concept_time_series_statistics
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_sfwys_l_ade
+  type: media
+  rank: 55
+  title: 'Must-Watch: Dr. Ernest Chan’s Ultimate Guide to Mean Reversion Trading!'
+  url: https://www.youtube.com/watch?v=sFwyS-L-aDE
+  youtube_id: sFwyS-L-aDE
+  channel: QuantInsti Quantitative Learning
+  views: 92306
+  duration_s: 2924
+  query: Ernest Chan quantitative trading interview
+  query_group: quant_validation
+  covers:
+  - concept_mean_reversion
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_klwnw3isrum
+  type: media
+  rank: 56
+  title: Simplicity in Systematic Trading | Robert Carver
+  url: https://www.youtube.com/watch?v=klwnw3iSRuM
+  youtube_id: klwnw3iSRuM
+  channel: Top Traders Unplugged
+  views: 89343
+  duration_s: 4636
+  query: Robert Carver systematic trading
+  query_group: quant_validation
+  covers: []
+  speaker_ids:
+  - person_robert_carver
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_9njqujk5v5g
+  type: media
+  rank: 57
+  title: Sharpe Ratio, Treynor Ratio and Jensen's Alpha (Calculations for CFA® and FRM® Exams)
+  url: https://www.youtube.com/watch?v=9NJqujK5v5g
+  youtube_id: 9NJqujK5v5g
+  channel: AnalystPrep
+  views: 81310
+  duration_s: 1188
+  query: Sharpe ratio explained
+  query_group: foundations_more
+  covers:
+  - concept_edge
+  - concept_performance_metrics
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_lhv3wipv6ok
+  type: media
+  rank: 58
+  title: How To Calculate Expected Move for Stocks | Trading Tutorials
+  url: https://www.youtube.com/watch?v=Lhv3wiPv6Ok
+  youtube_id: Lhv3wiPv6Ok
+  channel: Trade Brigade
+  views: 80817
+  duration_s: 1154
+  query: expected value trading math
+  query_group: probability_statistics
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_a9vctvabqfs
+  type: media
+  rank: 59
+  title: 'Discrete Random Variables (1 of 3: Expected value & median)'
+  url: https://www.youtube.com/watch?v=a9vcTvaBqfs
+  youtube_id: a9vcTvaBqfs
+  channel: Eddie Woo
+  views: 80410
+  duration_s: 578
+  query: expected value explained
+  query_group: foundations_more
+  covers:
+  - concept_expectancy
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_ztbykbpdogu
+  type: media
+  rank: 60
+  title: Statistical Rethinking 2026 - Lecture A01 - Introduction to Bayesian Workflow
+  url: https://www.youtube.com/watch?v=ztbYkBPDOgU
+  youtube_id: ztbYkBPDOgU
+  channel: Richard McElreath
+  views: 71147
+  duration_s: 3649
+  query: Bayesian probability lecture
+  query_group: probability_statistics
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_f_zktufvk0e
+  type: media
+  rank: 61
+  title: The First Step in Every Winning Trade (How to Find Expected Value)
+  url: https://www.youtube.com/watch?v=F-ZktuFvk0E
+  youtube_id: F-ZktuFvk0E
+  channel: TheOneLanceB
+  views: 67846
+  duration_s: 678
+  query: expected value trading math
+  query_group: probability_statistics
+  covers:
+  - concept_expectancy
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_nkbun2jmqle
+  type: media
+  rank: 62
+  title: Expected Value Explained Intuitively
+  url: https://www.youtube.com/watch?v=nKBun2JmqlE
+  youtube_id: nKBun2JmqlE
+  channel: Galak Breaks It Down
+  views: 66603
+  duration_s: 548
+  query: expected value trading math
+  query_group: probability_statistics
+  covers:
+  - concept_expectancy
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_iqefmb1aknu
+  type: media
+  rank: 63
+  title: '⁠Greed Makes Markets: Market Making From First Principles With an HFT Quant'
+  url: https://www.youtube.com/watch?v=iqEFMb1aKNU
+  youtube_id: iqEFMb1aKNU
+  channel: Odds on Open
+  views: 60118
+  duration_s: 2698
+  query: market making explained
+  query_group: foundations_more
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_ocnhbnl_dbc
+  type: media
+  rank: 64
+  title: Stochastic Process, Filtration | Part 1 Stochastic Calculus for Quantitative Finance
+  url: https://www.youtube.com/watch?v=ocnhBnL-DBc
+  youtube_id: ocnhBnL-DBc
+  channel: Stochastip
+  views: 58641
+  duration_s: 646
+  query: stochastic calculus for finance lecture
+  query_group: stochastic_derivatives
+  covers:
+  - concept_oscillators_momentum
+  - concept_stochastic_processes
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_eeviio66f9i
+  type: media
+  rank: 65
+  title: Fractals and the Hidden Hierarchy in Stock prices, Forex, and other Markets - Fractals and Finance
+  url: https://www.youtube.com/watch?v=EeViIO66f9I
+  youtube_id: EeViIO66f9I
+  channel: Fractal Manhattan
+  views: 53843
+  duration_s: 803
+  query: Mandelbrot fractals markets
+  query_group: foundations_more
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_vntfgqjqlnk
+  type: media
+  rank: 66
+  title: Axioms of Brownian Motion
+  url: https://www.youtube.com/watch?v=VNTfgqJQlnk
+  youtube_id: VNTfgqJQlnk
+  channel: Maths Partner
+  views: 53255
+  duration_s: 755
+  query: Brownian motion finance lecture
+  query_group: stochastic_derivatives
+  covers:
+  - concept_stochastic_processes
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_1geqzm6apuk
+  type: media
+  rank: 67
+  title: Paul Wilmott on Quantitative Finance, Chapter 4.6, Brownian motion
+  url: https://www.youtube.com/watch?v=1GeqzM6aPuk
+  youtube_id: 1GeqzM6aPuk
+  channel: Amber Whitehead
+  views: 51292
+  duration_s: 745
+  query: Brownian motion finance lecture
+  query_group: stochastic_derivatives
+  covers:
+  - concept_stochastic_processes
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_alq2mkr9e4u
+  type: media
+  rank: 68
+  title: Derivation of Ito's Lemma
+  url: https://www.youtube.com/watch?v=aLq2MKr9E4U
+  youtube_id: aLq2MKr9E4U
+  channel: Maths Partner
+  views: 50840
+  duration_s: 1563
+  query: Ito's lemma explained
+  query_group: stochastic_derivatives
+  covers:
+  - concept_oscillators_momentum
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt__at55urji8q
+  type: media
+  rank: 69
+  title: '"Trading Strategies that are Designed, Not Fitted" by Robert Carver from QuantCon NYC 2017'
+  url: https://www.youtube.com/watch?v=-aT55uRJI8Q
+  youtube_id: -aT55uRJI8Q
+  channel: Quantopian
+  views: 50318
+  duration_s: 3637
+  query: Robert Carver systematic trading
+  query_group: quant_validation
+  covers: []
+  speaker_ids:
+  - person_robert_carver
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_wqtnvexatby
+  type: media
+  rank: 70
+  title: Fractals and the art of roughness - Benoit Mandelbrot
+  url: https://www.youtube.com/watch?v=wQTnVEXAtBY
+  youtube_id: wQTnVEXAtBY
+  channel: TED-Ed
+  views: 49562
+  duration_s: 1030
+  query: Mandelbrot fractals markets
+  query_group: foundations_more
+  covers: []
+  speaker_ids:
+  - person_benoit_mandelbrot
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_nhroxvpazqy
+  type: media
+  rank: 71
+  title: Stanford CS109 I Conditional Probability and Bayes I 2022 I Lecture 4
+  url: https://www.youtube.com/watch?v=NHRoXvPaZqY
+  youtube_id: NHRoXvPaZqY
+  channel: Stanford Online
+  views: 48618
+  duration_s: 4477
+  query: Bayesian probability lecture
+  query_group: probability_statistics
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_ock9gk_aqw4
+  type: media
+  rank: 72
+  title: Benoit B. Mandelbrot, MIT 2001 - Fractals in Science, Engineering and Finance (Roughness and Beauty)
+  url: https://www.youtube.com/watch?v=ock9Gk_aqw4
+  youtube_id: ock9Gk_aqw4
+  channel: MIT Video Productions
+  views: 45941
+  duration_s: 4844
+  query: Mandelbrot fractals markets
+  query_group: foundations_more
+  covers: []
+  speaker_ids:
+  - person_benoit_mandelbrot
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_ibw5a8byyzy
+  type: media
+  rank: 73
+  title: Brownian Motion | Part 3 Stochastic Calculus for Quantitative Finance
+  url: https://www.youtube.com/watch?v=IBw5a8ByyzY
+  youtube_id: IBw5a8ByyzY
+  channel: Stochastip
+  views: 42324
+  duration_s: 860
+  query: stochastic calculus for finance lecture
+  query_group: stochastic_derivatives
+  covers:
+  - concept_oscillators_momentum
+  - concept_stochastic_processes
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_rufwfukpbqk
+  type: media
+  rank: 74
+  title: The Volatility Smile - Options Trading Lessons
+  url: https://www.youtube.com/watch?v=ruFWFUkpbQk
+  youtube_id: ruFWFUkpbQk
+  channel: Patrick Boyle
+  views: 40367
+  duration_s: 854
+  query: volatility smile explained
+  query_group: foundations_more
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_vo8q5aqikla
+  type: media
+  rank: 75
+  title: Why Random Walks and the Efficient Market Hypothesis Fail
+  url: https://www.youtube.com/watch?v=vo8q5AqIKlA
+  youtube_id: vo8q5AqIKlA
+  channel: Fractal Manhattan
+  views: 39841
+  duration_s: 583
+  query: random walk hypothesis explained
+  query_group: foundations_more
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_pspvn0oopme
+  type: media
+  rank: 76
+  title: Lecture 15 - ARIMA & GARCH Models
+  url: https://www.youtube.com/watch?v=pspVn0OopME
+  youtube_id: pspVn0OopME
+  channel: Steven Skiena
+  views: 37414
+  duration_s: 4689
+  query: GARCH volatility model lecture
+  query_group: time_series
+  covers:
+  - concept_time_series_statistics
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_1zz91g0nr14
+  type: media
+  rank: 77
+  title: 'Pairs Trading: The Cointegration Approach and Minimum Profit Optimization'
+  url: https://www.youtube.com/watch?v=1zz91G0nR14
+  youtube_id: 1zz91G0nR14
+  channel: Hudson & Thames
+  views: 37230
+  duration_s: 1565
+  query: cointegration pairs trading lecture
+  query_group: time_series
+  covers:
+  - concept_mean_reversion
+  - concept_time_series_statistics
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt__4zyafpj_z4
+  type: media
+  rank: 78
+  title: Ito's Lemma -- Some intuitive explanations on the solution of stochastic differential equations
+  url: https://www.youtube.com/watch?v=_4zyAFpJ_Z4
+  youtube_id: _4zyAFpJ_Z4
+  channel: He Ha
+  views: 34743
+  duration_s: 1529
+  query: Ito's lemma explained
+  query_group: stochastic_derivatives
+  covers:
+  - concept_oscillators_momentum
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_lmy9n1c3tfu
+  type: media
+  rank: 79
+  title: Secrets From A Profitable Systematic Trader - Robert Carver | Trader Interview
+  url: https://www.youtube.com/watch?v=lMY9n1c3tFU
+  youtube_id: lMY9n1c3tFU
+  channel: Etienne Crete - Desire To TRADE
+  views: 34004
+  duration_s: 2516
+  query: Robert Carver systematic trading
+  query_group: quant_validation
+  covers: []
+  speaker_ids:
+  - person_robert_carver
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_m7elhjytsk0
+  type: media
+  rank: 80
+  title: 1.2 Ito's Lemma
+  url: https://www.youtube.com/watch?v=m7ElHjYTSk0
+  youtube_id: m7ElHjYTSk0
+  channel: UChicago Online
+  views: 33952
+  duration_s: 508
+  query: Ito's lemma explained
+  query_group: stochastic_derivatives
+  covers:
+  - concept_oscillators_momentum
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt__gy6zltwxpw
+  type: media
+  rank: 81
+  title: 3 PROVEN Ways To Avoid RISK OF RUIN (Risk Management Trading)
+  url: https://www.youtube.com/watch?v=_Gy6ZltWxPw
+  youtube_id: _Gy6ZltWxPw
+  channel: Trade With Trend - Raunak A
+  views: 32829
+  duration_s: 691
+  query: risk of ruin trading explained
+  query_group: probability_statistics
+  covers:
+  - concept_growth_momentum_canslim
+  - concept_risk_of_ruin_drawdown
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_iaiw5igjxbw
+  type: media
+  rank: 82
+  title: Limit Order Books
+  url: https://www.youtube.com/watch?v=Iaiw5iGjXbw
+  youtube_id: Iaiw5iGjXbw
+  channel: Richard Holowczak
+  views: 32716
+  duration_s: 1836
+  query: limit order book explained
+  query_group: foundations_more
+  covers:
+  - concept_market_microstructure
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt__4sf43sll3a
+  type: media
+  rank: 83
+  title: Why Monte Carlo Simulation Works
+  url: https://www.youtube.com/watch?v=-4sf43SLL3A
+  youtube_id: -4sf43SLL3A
+  channel: Roman Paolucci
+  views: 31249
+  duration_s: 1377
+  query: Monte Carlo simulation trading
+  query_group: foundations_more
+  covers:
+  - concept_backtesting
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_iimtlbrccza
+  type: media
+  rank: 84
+  title: Master Volatility with ARCH & GARCH Models
+  url: https://www.youtube.com/watch?v=iImtlBRcczA
+  youtube_id: iImtlBRcczA
+  channel: Roman Paolucci
+  views: 30425
+  duration_s: 2885
+  query: GARCH volatility model lecture
+  query_group: time_series
+  covers:
+  - concept_time_series_statistics
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_72aedjwgmr8
+  type: media
+  rank: 85
+  title: Machine Learning for Quantitative Trading Webinar with Dr. Ernie Chan
+  url: https://www.youtube.com/watch?v=72aEDjwGMr8
+  youtube_id: 72aEDjwGMr8
+  channel: Quantiacs
+  views: 29421
+  duration_s: 3408
+  query: Ernest Chan quantitative trading interview
+  query_group: quant_validation
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_xobjqqmmkom
+  type: media
+  rank: 86
+  title: Stochastic Market Microstructure Models of Limit Order Books
+  url: https://www.youtube.com/watch?v=XoBjQqMmKoM
+  youtube_id: XoBjQqMmKoM
+  channel: INFORMS
+  views: 28376
+  duration_s: 5302
+  query: market microstructure lecture limit order book
+  query_group: microstructure_execution
+  covers:
+  - concept_market_microstructure
+  - concept_oscillators_momentum
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_5cruqmif6l0
+  type: media
+  rank: 87
+  title: 'Lecture 24: Stochastic Calculus'
+  url: https://www.youtube.com/watch?v=5cruqmIF6l0
+  youtube_id: 5cruqmIF6l0
+  channel: MIT OpenCourseWare
+  views: 24597
+  duration_s: 4970
+  query: stochastic calculus for finance lecture
+  query_group: stochastic_derivatives
+  covers:
+  - concept_oscillators_momentum
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_jghk_usrtii
+  type: media
+  rank: 88
+  title: 'How To: Monte Carlo Simulation'
+  url: https://www.youtube.com/watch?v=jGhk-uSrtII
+  youtube_id: jGhk-uSrtII
+  channel: DeltaTrend Trading
+  views: 24527
+  duration_s: 859
+  query: Monte Carlo simulation trading
+  query_group: foundations_more
+  covers:
+  - concept_backtesting
+  - concept_oscillators_momentum
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_6ao6ugact3w
+  type: media
+  rank: 89
+  title: Ito Calculus-I
+  url: https://www.youtube.com/watch?v=6Ao6uGACt3w
+  youtube_id: 6Ao6uGACt3w
+  channel: Probability and Stochastics for finance
+  views: 24037
+  duration_s: 1625
+  query: Ito calculus lecture
+  query_group: foundations_more
+  covers:
+  - concept_stochastic_processes
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_n2gxy4jwgnq
+  type: media
+  rank: 90
+  title: 'Lecture 6: Modelling Volatility and Economic Forecasting'
+  url: https://www.youtube.com/watch?v=n2GXY4JWgNQ
+  youtube_id: n2GXY4JWgNQ
+  channel: Hanomics
+  views: 23873
+  duration_s: 5703
+  query: GARCH volatility model lecture
+  query_group: time_series
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_tdadfms9r5g
+  type: media
+  rank: 91
+  title: Systematic Trading – Build Your First Strategy!
+  url: https://www.youtube.com/watch?v=TDadFMS9R5g
+  youtube_id: TDadFMS9R5g
+  channel: Peak Trading Research
+  views: 23658
+  duration_s: 685
+  query: Robert Carver systematic trading
+  query_group: quant_validation
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_3gxx0qbuzni
+  type: media
+  rank: 92
+  title: External Data Conference | Ten Financial Applications of Machine Learning | Marcos Lopez de Prado
+  url: https://www.youtube.com/watch?v=3gxx0QBuznI
+  youtube_id: 3gxx0QBuznI
+  channel: External Data Conference
+  views: 21670
+  duration_s: 1915
+  query: Marcos Lopez de Prado lecture
+  query_group: quant_validation
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_fzsavprjusa
+  type: media
+  rank: 93
+  title: 'Risk Management: Risk to Reward Ratio, Expectancy and Risk of Ruin'
+  url: https://www.youtube.com/watch?v=fZSAvprJusA
+  youtube_id: fZSAvprJusA
+  channel: Koroush AK
+  views: 21250
+  duration_s: 1013
+  query: risk of ruin trading explained
+  query_group: probability_statistics
+  covers:
+  - concept_expectancy
+  - concept_risk_of_ruin_drawdown
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_plsljhwpiiq
+  type: media
+  rank: 94
+  title: AI For Trading Forex (What You Can & Can't Do!) - Ernest Chan
+  url: https://www.youtube.com/watch?v=pLslJHWpIiQ
+  youtube_id: pLslJHWpIiQ
+  channel: Etienne Crete - Desire To TRADE
+  views: 21132
+  duration_s: 2393
+  query: Ernest Chan quantitative trading interview
+  query_group: quant_validation
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_gw073tnx7ce
+  type: media
+  rank: 95
+  title: 'Rough volatility: An overview by Jim Gatheral'
+  url: https://www.youtube.com/watch?v=gW073Tnx7CE
+  youtube_id: gW073Tnx7CE
+  channel: LSE Statistics
+  views: 20863
+  duration_s: 3601
+  query: volatility surface lecture Gatheral
+  query_group: stochastic_derivatives
+  covers:
+  - concept_oscillators_momentum
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_c6j45b26b34
+  type: media
+  rank: 96
+  title: 'Basic Statistical Arbitrage: Understanding the Math Behind Pairs Trading'
+  url: https://www.youtube.com/watch?v=C6j45b26b34
+  youtube_id: C6j45b26b34
+  channel: Quantopian
+  views: 20688
+  duration_s: 3956
+  query: statistical arbitrage explained
+  query_group: foundations_more
+  covers:
+  - concept_mean_reversion
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_nmyx6tqxtss
+  type: media
+  rank: 97
+  title: Design A Limit Order Book | Google SWE Teaches Low Level Design Episode 5
+  url: https://www.youtube.com/watch?v=nmYx6tQxtSs
+  youtube_id: nmYx6tQxtSs
+  channel: Jordan has no life
+  views: 19969
+  duration_s: 1338
+  query: limit order book explained
+  query_group: foundations_more
+  covers:
+  - concept_market_microstructure
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_tgbzqdn24fo
+  type: media
+  rank: 98
+  title: Ito's Lemma Clearly and Visually Explained
+  url: https://www.youtube.com/watch?v=TgBzqdN24fo
+  youtube_id: TgBzqdN24fo
+  channel: Roman Paolucci
+  views: 19800
+  duration_s: 1293
+  query: Ito's lemma explained
+  query_group: stochastic_derivatives
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_todxajdztow
+  type: media
+  rank: 99
+  title: Machine Learning for Asset Managers with Marcos Lopez de Prado
+  url: https://www.youtube.com/watch?v=tODXAJDZtow
+  youtube_id: tODXAJDZtow
+  channel: NorQuant Kapitalforvaltning
+  views: 19767
+  duration_s: 5487
+  query: Marcos Lopez de Prado lecture
+  query_group: quant_validation
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_g7gf_oxptxe
+  type: media
+  rank: 100
+  title: Volatility Surface & Volatility Smile Explained
+  url: https://www.youtube.com/watch?v=G7gf-oXptxE
+  youtube_id: G7gf-oXptxE
+  channel: Outlier Trading
+  views: 18842
+  duration_s: 764
+  query: volatility smile explained
+  query_group: foundations_more
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'

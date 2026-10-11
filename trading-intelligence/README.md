@@ -13,12 +13,12 @@ Claude (Projects, Claude Code, or the API) and mapped with
 | # | Partition | What's inside | Status |
 |---|---|---|---|
 | 00 | [`00_framework/`](00_framework/) | Ontology (9-layer stack), note schema, source-quality tiers, learning path | complete |
-| 01 | [`01_chart-fanatics/`](01_chart-fanatics/) | Channel profile, ecosystem, 21 guest strategies, video catalog seed | synthesized from search; **transcripts pending scrape** |
-| 02 | [`02_podcasts-interviews/`](02_podcasts-interviews/) | 16 podcasts, landmark interviews/talks seed + discovery queries for a top-100 | seed; **ranking pending scrape** |
-| 03 | [`03_legends-authorities/`](03_legends-authorities/) | ~135 curated people with influence lineage (plus auto-linked authors) | complete (v1) |
-| 04 | [`04_babypips-school-of-pipsology/`](04_babypips-school-of-pipsology/) | 11-course map + concept summaries per course | structure confirmed; **lesson text pending scrape** |
-| 05 | [`05_books-top-100/`](05_books-top-100/) | Ranked top-100 trading books, lineage links, 13 deep summaries | complete (v1) |
-| 06 | [`06_mathematics-foundations/`](06_mathematics-foundations/) | ~45 math books/papers in 6 tracks, lectures seed, formula sheet | complete (v1) |
+| 01 | [`01_chart-fanatics/`](01_chart-fanatics/) | Channel profile, **47 strategy notes rebuilt from the first-party playbooks (T2)**, cross-playbook synthesis, full catalog (1,029 uploads: 50 long-form, 979 shorts) | scraped 2026-10-11; video transcripts need a home machine |
+| 02 | [`02_podcasts-interviews/`](02_podcasts-interviews/) | 16 podcasts, 4,460 episodes (270 linked to known guests), curated landmark interviews + **view-ranked top 100** | scraped 2026-10-11 |
+| 03 | [`03_legends-authorities/`](03_legends-authorities/) | ~158 curated people with influence lineage (plus auto-linked authors), incl. 22 playbook authors added from Chart Fanatics | complete (v2) |
+| 04 | [`04_babypips-school-of-pipsology/`](04_babypips-school-of-pipsology/) | 11-course map + concept summaries per course | structure confirmed; lesson text blocked by Cloudflare from cloud servers (run at home) |
+| 05 | [`05_books-top-100/`](05_books-top-100/) | Ranked top-100 trading books, lineage links, 13 deep summaries, Open Library fact-check | complete (v2) |
+| 06 | [`06_mathematics-foundations/`](06_mathematics-foundations/) | ~45 math books/papers in 6 tracks, formula sheet, curated lectures + **view-ranked top 100 math videos** | complete (v2) |
 | 07 | [`07_concepts/`](07_concepts/) | 69 atomic concept notes across layers L0–L8: the graph's backbone | complete (v1) |
 | 08 | [`08_synthesis/`](08_synthesis/) | Unified analysis→execution framework, idea-lineage map, consensus & conflicts, pre-trade checklist | complete (v1) |
 | 09 | [`09_knowledge-graph/`](09_knowledge-graph/) | graphify output: `graph.html`, `graph.json`, `GRAPH_REPORT.md`, wiki | generated |
@@ -45,7 +45,9 @@ Claude (Projects, Claude Code, or the API) and mapped with
 ## Honesty about sources
 
 Every note carries a source tier (T1 primary → T5 synthesized; see
-`00_framework/source-tiers.md`). The build environment could not reach
-YouTube, BabyPips, or podcast hosts, so the scraped layers (`raw/`) are
-empty until the scrapers run on a machine with access. Nothing in `raw/` has
-been fabricated.
+`00_framework/source-tiers.md`). On 2026-10-11 the scrapers captured the 47
+Chart Fanatics playbooks, the channel's full upload catalog, 4,460 podcast
+episodes and the view-ranked video lists. Two things could not be captured
+from a cloud server and need a run on a home machine:
+**YouTube transcripts** (YouTube's bot check) and **BabyPips lessons**
+(Cloudflare bot protection). Nothing in `raw/` has been fabricated.

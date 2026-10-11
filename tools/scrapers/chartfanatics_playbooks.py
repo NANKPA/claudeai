@@ -14,10 +14,13 @@ Example
 from __future__ import annotations
 
 import argparse
+import html
 import re
 import sys
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
+
+import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import KB_ROOT, PoliteSession, preflight, slug, write_markdown, write_yaml  # noqa: E402
@@ -71,16 +74,21 @@ def main() -> None:
             continue
         text = trafilatura.extract(resp.text, output_format="markdown", include_tables=True) or ""
         title_m = re.search(r"<title>(.*?)</title>", resp.text, re.S | re.I)
-        title = (title_m.group(1).strip() if title_m else url).split("|")[0].strip()
+        title = html.unescape((title_m.group(1).strip() if title_m else url).split("|")[0].strip())
         path = urlparse(url).path.rstrip("/")
         page_slug = path.rsplit("/", 1)[-1]
         node_id = known.get(path) or f"strategy_cf_{slug(page_slug)}"
         tags = tag(f"{title}\n{text}")
+        dest = PART / "raw" / "playbooks" / f"{page_slug}.md"
+        if dest.exists():  # keep the canonical id/trader assigned when this page was first reconciled
+            prev = yaml.safe_load(dest.read_text(encoding="utf-8").split("---")[1]) or {}
+            node_id = prev.get("id", node_id)
+            tags["speaker_ids"] = prev.get("taught_by") or tags["speaker_ids"]
         fm = {"id": node_id, "type": "strategy", "title": title, "partition": "01_chart-fanatics",
               "source_url": url, "featured_in": ["channel_chart_fanatics"], "uses": tags["covers"],
               "taught_by": tags["speaker_ids"], "status": "scraped",
               "sources": [{"title": f"Chart Fanatics — {title}", "url": url, "tier": "T2"}]}
-        write_markdown(PART / "raw" / "playbooks" / f"{page_slug}.md", fm, f"# {title}\n\n{text}")
+        write_markdown(dest, fm, f"# {title}\n\n{text}")
         catalog.append({"id": node_id, "title": title, "url": url, "matched_existing": path in known})
         print(f"  {'merged ' if path in known else 'new    '}{node_id}: {title[:70]}")
     write_yaml(PART / "playbooks.scraped.yaml", {"playbooks_index": catalog})

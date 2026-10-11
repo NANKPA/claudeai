@@ -32,8 +32,8 @@ def partition_files(part: Path, include_raw: bool) -> list[Path]:
         rel = p.relative_to(part).as_posix()
         if rel.startswith("raw/") and not include_raw:
             continue
-        if p.suffix == ".yaml" and p.with_suffix(".md").exists():
-            continue  # the rendered table already carries this registry
+        if p.suffix == ".yaml" and (p.with_suffix(".md").exists() or p.name.endswith(".scraped.yaml") or p.name == "books.enriched.yaml"):
+            continue  # a rendered markdown table already carries this registry
         files.append(p)
     # README first, then notes
     files.sort(key=lambda p: (p.name != "README.md", p.as_posix()))

@@ -20,7 +20,7 @@ this knowledge base *testable* (analysis) and *executable without ruin*
 |---|---|
 | `core-formulas.md` | One-page formula sheet organised by layer |
 | `math-books.yaml` | Canon of ~45 books and papers in 6 tracks (A–F), levels 1–3 |
-| `lectures.yaml` | Courses, talks, and podcast episodes on the math (seed + discovery queries to reach 100) |
+| `lectures.yaml` → `lectures.md` | Courses, talks and episodes on the math: curated seed + the **scraped view-ranked top 100** (`lectures.scraped.yaml`) |
 
 ## Six tracks and the order to study them
 

@@ -61,6 +61,38 @@ def transcribe(audio_url: str, session: PoliteSession, model_name: str) -> str:
         return "\n".join(f"[{int(s.start // 60)}:{int(s.start % 60):02d}] {s.text.strip()}" for s in segments)
 
 
+FM_RE = re.compile(r"\A---\n(.*?)\n---\n?(.*)\Z", re.S)
+
+
+def retag_show(show_dir: Path, hosts: set[str]) -> int:
+    """Re-tag one show's saved episodes, ignoring show-note boilerplate (sponsor reads,
+    book adverts, link footers: any line repeated across >= 5% of the show's episodes)
+    and the show's own hosts, so `covers`/`speaker_ids` reflect each episode's guest/topic."""
+    from collections import Counter
+    parsed = []
+    for f in sorted(show_dir.glob("*.md")):
+        m = FM_RE.match(f.read_text(encoding="utf-8"))
+        if m:
+            parsed.append((f, yaml.safe_load(m.group(1)) or {}, m.group(2)))
+
+    def notes_of(body: str) -> str:
+        m = re.search(r"## Show notes\n\n(.*?)(?:\n## Transcript|\Z)", body, re.S)
+        return m.group(1) if m else ""
+
+    freq: Counter = Counter()
+    for _, _, body in parsed:
+        freq.update({ln.strip() for ln in notes_of(body).splitlines() if len(ln.strip()) > 20})
+    boiler = {ln for ln, c in freq.items() if c >= max(5, 0.05 * len(parsed))}
+    for f, fm, body in parsed:
+        clean = "\n".join(ln for ln in notes_of(body).splitlines() if ln.strip() not in boiler)
+        transcript = body.split("## Transcript", 1)[1] if "## Transcript" in body else ""
+        t = tag(f"{fm.get('title', '')}\n{clean}\n{transcript}", min_hits=1)
+        fm["covers"] = t["covers"]
+        fm["speaker_ids"] = [x for x in t["speaker_ids"] if x not in hosts]
+        write_markdown(f, fm, body)
+    return len(boiler)
+
+
 def main() -> None:
     import feedparser
 
@@ -69,12 +101,20 @@ def main() -> None:
     ap.add_argument("--max-episodes", type=int, default=300)
     ap.add_argument("--transcribe", type=int, default=0, help="newest N episodes per show to transcribe")
     ap.add_argument("--whisper-model", default="small")
+    ap.add_argument("--retag-only", action="store_true", help="re-tag saved episodes without fetching feeds")
     args = ap.parse_args()
 
+    registry = yaml.safe_load((PART / "podcasts.yaml").read_text(encoding="utf-8"))
+    if args.retag_only:
+        for pod in registry["podcasts"]:
+            show_dir = PART / "raw" / pod["id"]
+            if show_dir.is_dir():
+                n = retag_show(show_dir, set(pod.get("hosts", []) + pod.get("founded_by", [])))
+                print(f"{pod['id']}: re-tagged ({n} boilerplate lines ignored)")
+        rebuild_index()
+        return
     preflight("https://itunes.apple.com/")
     session = PoliteSession(delay=1.0, respect_robots=False)  # documented public API
-    registry = yaml.safe_load((PART / "podcasts.yaml").read_text(encoding="utf-8"))
-    scraped = []
     for pod in registry["podcasts"]:
         if args.only and pod["id"] != args.only:
             continue
@@ -109,10 +149,22 @@ def main() -> None:
             if transcript:
                 body += f"\n\n## Transcript (faster-whisper {args.whisper_model})\n\n{transcript}"
             write_markdown(PART / "raw" / pod["id"] / f"{ep_slug}.md", fm, body)
-            scraped.append({k: fm[k] for k in ("id", "type", "title", "published", "featured_in", "covers", "speaker_ids")})
+        retag_show(PART / "raw" / pod["id"], set(pod.get("hosts", []) + pod.get("founded_by", [])))
         time.sleep(1)
-    write_yaml(PART / "podcast-episodes.scraped.yaml", {"scraped_media": scraped})
-    print(f"done: {len(scraped)} episodes; next: python3 tools/build_graph.py")
+    n = rebuild_index()
+    print(f"done: {n} episodes; next: python3 tools/build_graph.py")
+
+
+def rebuild_index() -> int:
+    """Write podcast-episodes.scraped.yaml from the saved (re-tagged) episode files."""
+    items = []
+    for f in sorted((PART / "raw").glob("podcast_*/*.md")):
+        m = FM_RE.match(f.read_text(encoding="utf-8"))
+        fm = yaml.safe_load(m.group(1)) if m else {}
+        if fm.get("id"):
+            items.append({k: fm.get(k) for k in ("id", "type", "title", "published", "featured_in", "covers", "speaker_ids")})
+    write_yaml(PART / "podcast-episodes.scraped.yaml", {"scraped_media": items})
+    return len(items)
 
 
 if __name__ == "__main__":

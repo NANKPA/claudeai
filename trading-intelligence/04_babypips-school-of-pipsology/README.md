@@ -17,13 +17,14 @@ status: partial — structure from web search; lesson text pending scrape
 
 # Partition 04 — BabyPips School of Pipsology
 
-> **Scrape status:** `babypips.com` was blocked by this container's network
-> policy. The **structure** below comes from search results of the official
-> pages; each course note is a **concept-level summary written for this
-> knowledge base** (not BabyPips' text), linked to the concept graph. Run
-> `tools/scrapers/babypips_course.py` (it respects robots.txt and rate limits)
-> to capture the full lessons into `raw/` for your personal study corpus.
-> Several upper courses are **premium** (login required).
+> **Scrape status (2026-10-11):** babypips.com sits behind Cloudflare bot
+> protection that answers every automated request (even `robots.txt`) with
+> HTTP 403 from cloud servers. The crawler deliberately does not try to get
+> around that. To capture the lessons, run `tools/scrapers/babypips_course.py`
+> on your own computer (pass `--cookies` with your own login for premium
+> lessons). The course **structure** below comes from search results of the
+> official pages, and each course note is a concept-level summary written for
+> this knowledge base, not BabyPips' text.
 
 ## Course map (current layout: 11 courses)
 

@@ -781,3 +781,93 @@ people:
     name: Pavel (Trading First Principles)
     role: Trader
     featured_in: [channel_chart_fanatics]
+
+  # ───────────────────────── Chart Fanatics playbook authors (from chartfanatics.com/strategies) ─────────────────────────
+  - id: person_jadecap
+    name: "JadeCap"
+    role: "Trader; Chart Fanatics playbook author"
+    featured_in: [channel_chart_fanatics]
+  - id: person_okala
+    name: "Okala"
+    role: "Trader; Chart Fanatics playbook author"
+    featured_in: [channel_chart_fanatics]
+  - id: person_naoufel_taief
+    name: "Naoufel Taief"
+    role: "Trader; Chart Fanatics playbook author"
+    featured_in: [channel_chart_fanatics]
+  - id: person_vincent_desiano
+    name: "Vincent Desiano"
+    role: "Trader; Chart Fanatics playbook author"
+    featured_in: [channel_chart_fanatics]
+  - id: person_alex_temiz
+    name: "Alex Temiz"
+    role: "Trader; Chart Fanatics playbook author"
+    featured_in: [channel_chart_fanatics]
+  - id: person_kyle_williams
+    name: "Kyle Williams"
+    role: "Trader; Chart Fanatics playbook author"
+    featured_in: [channel_chart_fanatics]
+  - id: person_anthony_crudele
+    name: "Anthony Crudele"
+    role: "Trader; Chart Fanatics playbook author"
+    featured_in: [channel_chart_fanatics]
+  - id: person_dhesi
+    name: "Dhesi"
+    role: "Trader; Chart Fanatics playbook author"
+    featured_in: [channel_chart_fanatics]
+  - id: person_jay_awtani
+    name: "Jay Awtani"
+    role: "Trader; Chart Fanatics playbook author"
+    featured_in: [channel_chart_fanatics]
+  - id: person_lance_breitstein
+    name: "Lance Breitstein"
+    role: "Trader; Chart Fanatics playbook author"
+    featured_in: [channel_chart_fanatics]
+  - id: person_jeff_holden
+    name: "Jeff Holden"
+    role: "Trader; Chart Fanatics playbook author"
+    featured_in: [channel_chart_fanatics]
+  - id: person_abraham_perez
+    name: "Abraham Perez"
+    role: "Trader; Chart Fanatics playbook author"
+    featured_in: [channel_chart_fanatics]
+  - id: person_usman_ashraf
+    name: "Usman Ashraf"
+    role: "Trader; Chart Fanatics playbook author"
+    featured_in: [channel_chart_fanatics]
+  - id: person_marios_stamatoudis
+    name: "Marios Stamatoudis"
+    role: "Trader; Chart Fanatics playbook author"
+    featured_in: [channel_chart_fanatics]
+  - id: person_nbb_trader
+    name: "NBB Trader"
+    role: "Trader; Chart Fanatics playbook author"
+    featured_in: [channel_chart_fanatics]
+  - id: person_gala_trades
+    name: "Gala Trades"
+    role: "Trader; Chart Fanatics playbook author"
+    featured_in: [channel_chart_fanatics]
+  - id: person_ariel_hernandez
+    name: "Ariel Hernandez"
+    role: "Trader; Chart Fanatics playbook author"
+    featured_in: [channel_chart_fanatics]
+  - id: person_kris_verma
+    name: "Kris Verma"
+    role: "Trader; Chart Fanatics playbook author"
+    featured_in: [channel_chart_fanatics]
+  - id: person_steven_dux
+    name: "Steven Dux"
+    role: "Trader; Chart Fanatics playbook author"
+    featured_in: [channel_chart_fanatics]
+  - id: person_dylan_oneil
+    name: "Dylan O’Neil"
+    role: "Trader; Chart Fanatics playbook author"
+    featured_in: [channel_chart_fanatics]
+  - id: person_ali_crooks
+    name: "Ali Crooks"
+    role: "Trader; Chart Fanatics playbook author"
+    featured_in: [channel_chart_fanatics]
+  - id: person_traveling_trader
+    name: "Traveling Trader"
+    role: "Trader; Chart Fanatics playbook author"
+    featured_in: [channel_chart_fanatics]

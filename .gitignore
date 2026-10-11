@@ -11,3 +11,6 @@ __pycache__/
 *.pyc
 graphify-out/
 .graphify*
+
+# Local search-result caches used to re-rank the top-100 lists
+*.candidates.json

@@ -6,45 +6,61 @@ How many Chart Fanatics strategy notes `uses:` each concept. This is a proxy for
 
 | Concept | # strategies | Strategies |
 |---|---|---|
-| Market Structure (swings, BOS, CHoCH / MSS) (`concept_market_structure`) | 7 | Candace Lau, JJ Simon, Marci Silfrain, Marco Trades, Tanja Trades, Tori Trades, Trader Mayne |
-| Multi-Timeframe Analysis (top-down) (`concept_multi_timeframe_analysis`) | 5 | Brando Elite, Candace Lau, Forrest Knight, TG Capital, Trader Mayne |
-| Auction Market Theory (balance, imbalance, value) (`concept_auction_market_theory`) | 4 | Andrea Cimitan, Fabio Valentini, Forrest Knight, Rajan Dhall |
-| Volume Profile (POC, value area, HVN/LVN) (`concept_volume_profile`) | 4 | Andrea Cimitan, Fabio Valentini, Forrest Knight, Rajan Dhall |
-| Support & Resistance (`concept_support_resistance`) | 4 | Brando Elite, Forrest Knight, Tori Trades, Trader Yush |
-| News & Event Trading (`concept_news_trading`) | 4 | Brando Elite, JJ Simon, Pradeep Bonde (Stockbee), Tanja Trades |
-| Liquidity (resting orders, stop pools, sweeps) (`concept_liquidity`) | 4 | Candace Lau, Marco Trades, Tanja Trades, Trader Mayne |
-| Scalping (`concept_scalping`) | 4 | Candace Lau, Fabio Valentini, JJ Simon, Trader Yush |
-| Trade Execution (triggers, order types, confirmation) (`concept_trade_execution`) | 4 | Fabio Valentini, Forrest Knight, Marco Trades, Trader Yush |
-| Liquidity Sweep Reversal (stop-hunt reversal) (`concept_liquidity_sweep_reversal`) | 3 | Candace Lau, Marco Trades, Tanja Trades |
-| Premium / Discount & Optimal Trade Entry (OTE) (`concept_premium_discount_ote`) | 3 | Candace Lau, Trader Kane, Trader Mayne |
-| Fair Value Gap (FVG), Inversion FVG, Imbalance (`concept_fair_value_gap`) | 3 | Candace Lau, TG Capital, Trader Kane |
-| Market Regimes (trend vs range, high vs low volatility) (`concept_market_regimes`) | 3 | Clement Ang, Fabio Valentini, TG Capital |
-| Trend Following (`concept_trend_following`) | 3 | Fabio Valentini, Marci Silfrain, Trader Mayne |
-| Trading Sessions & Kill Zones (time-of-day edge) (`concept_trading_sessions_killzones`) | 3 | JJ Simon, TG Capital, Trader Kane |
-| Options & the Greeks (`concept_options_greeks`) | 2 | Brando Elite, Fredy Sarmiento |
-| Risk:Reward & R-Multiples (`concept_risk_reward_r_multiples`) | 2 | Candace Lau, TG Capital |
-| Growth-Stock Momentum (CANSLIM, SEPA, VCP) (`concept_growth_momentum_canslim`) | 2 | Clement Ang, Pradeep Bonde (Stockbee) |
-| VWAP (volume-weighted average price) & anchored VWAP (`concept_vwap`) | 2 | Fabio Valentini, JJ Simon |
-| Order Flow (footprint, delta, CVD, absorption, trapped traders) (`concept_order_flow`) | 2 | Fabio Valentini, Trader Yush |
-| Mean Reversion (`concept_mean_reversion`) | 2 | Fabio Valentini, JJ Simon |
-| Price Action Trading (naked charts) (`concept_price_action`) | 2 | Forrest Knight, Tori Trades |
-| Risk of Ruin & Drawdown Math (`concept_risk_of_ruin_drawdown`) | 2 | JJ Simon, Marci Silfrain |
-| Prop-Firm Evaluations & Risk Rules (`concept_prop_firm_risk_rules`) | 2 | JJ Simon, Umar Ashraf |
-| Trendlines & Channels (`concept_trendlines`) | 2 | Marci Silfrain, Tori Trades |
-| Backtesting (manual & systematic) (`concept_backtesting`) | 2 | Marci Silfrain, Umar Ashraf |
-| Trading Psychology & Discipline (`concept_trading_psychology`) | 2 | Marci Silfrain, Umar Ashraf |
-| Trading Plan (rules written before the trade) (`concept_trading_plan`) | 2 | Pavel, Umar Ashraf |
-| Trade Management (stops, targets, breakeven, scaling, trailing) (`concept_trade_management`) | 2 | TG Capital, Trader Kane |
-| Market Sentiment & Positioning (COT, contrarian signals) (`concept_market_sentiment`) | 1 | Fredy Sarmiento |
-| Bollinger Bands & Volatility Squeezes (`concept_bollinger_bands`) | 1 | Marci Silfrain |
-| Edge (positive expectancy, repeatable) (`concept_edge`) | 1 | Pavel |
-| Episodic Pivot (EP) (`concept_episodic_pivot`) | 1 | Pradeep Bonde (Stockbee) |
-| Breakout Trading (and fakeouts) (`concept_breakout_trading`) | 1 | Pradeep Bonde (Stockbee) |
-| Moving Averages (SMA, EMA, stacks, crossovers) (`concept_moving_averages`) | 1 | TG Capital |
-| Japanese Candlestick Patterns (`concept_candlestick_patterns`) | 1 | TG Capital |
-| AMD / Power of Three (accumulation, manipulation, distribution) (`concept_amd_power_of_three`) | 1 | Tanja Trades |
-| SMT Divergence (correlated-market non-confirmation) (`concept_smt_divergence`) | 1 | Trader Kane |
-| Smart Money Concepts / ICT (umbrella) (`concept_smart_money_concepts`) | 1 | Trader Kane |
-| Order Blocks, Breaker Blocks & Mitigation (`concept_order_blocks_breakers`) | 1 | Trader Mayne |
-| Position Sizing (`concept_position_sizing`) | 1 | Trader Yush |
-| Trading Journal & Performance Review (`concept_trading_journal_review`) | 1 | Umar Ashraf |
+| Trading Plan (rules written before the trade) (`concept_trading_plan`) | 35 | Abraham Perez playbook, Alex Temiz playbook, Ali Crooks playbook, Anthony Crudele playbook, Brando Elite playbook, Carmine Rosato playbook, Dhesi playbook, Dylan O’Neil playbook, Fabio Valentini playbook, Fredy Sarmiento playbook, Gala Trades playbook, JJ Simon playbook, Jared Tendler playbook, Jay Awtani playbook, Jeff Holden playbook, Kris Verma playbook, Kyle Williams playbook, Marci Silfrain playbook, Marco Trades playbook, Matteo Conti playbook, NBB Trader playbook, Naoufel Taief playbook, Okala playbook, Pavel playbook, Rajan Dhall playbook, Steven Dux playbook, TG Capital playbook, Tanja Trades playbook, Ted Zhang playbook, Tori Trades playbook, Trader Kane playbook, Trader Mayne playbook, Traveling Trader playbook, Umar Ashraf playbook, Vincent Desiano playbook |
+| Support & Resistance (`concept_support_resistance`) | 31 | Abraham Perez playbook, Alex Temiz playbook, Ali Crooks playbook, Ariel Hernandez playbook, Brando Elite playbook, Candace Lau playbook, Carmine Rosato playbook, Carmine Rosato playbook, Clement Ang playbook, Dhesi playbook, Dylan O’Neil playbook, Forrest Knight playbook, Fredy Sarmiento playbook, Gala Trades playbook, JJ Simon playbook, JadeCap playbook, Jay Awtani playbook, Jeff Holden playbook, Kris Verma playbook, Marci Silfrain playbook, Marios Stamatoudis playbook, NBB Trader playbook, Okala playbook, Pavel playbook, Pradeep Bonde playbook, Steven Dux playbook, Ted Zhang playbook, Tori Trades playbook, Trader Yush playbook, Traveling Trader playbook, Vincent Desiano playbook |
+| Dow Theory (`concept_dow_theory`) | 30 | Abraham Perez playbook, Alex Temiz playbook, Ali Crooks playbook, Andrea Cimitan playbook, Anthony Crudele playbook, Ariel Hernandez playbook, Brando Elite playbook, Candace Lau playbook, Carmine Rosato playbook, Dhesi playbook, Dylan O’Neil playbook, Fabio Valentini playbook, Fredy Sarmiento playbook, Gala Trades playbook, JJ Simon playbook, JadeCap playbook, Jay Awtani playbook, Kris Verma playbook, Kyle Williams playbook, Lance Breitstein playbook, Marco Trades playbook, Marios Stamatoudis playbook, NBB Trader playbook, Pradeep Bonde playbook, Steven Dux playbook, TG Capital playbook, Trader Kane playbook, Trader Mayne playbook, Trader Yush playbook, Vincent Desiano playbook |
+| Trade Management (stops, targets, breakeven, scaling, trailing) (`concept_trade_management`) | 24 | Alex Temiz playbook, Ariel Hernandez playbook, Candace Lau playbook, Dhesi playbook, Gala Trades playbook, JJ Simon playbook, Jay Awtani playbook, Jeff Holden playbook, Kris Verma playbook, Lance Breitstein playbook, Marci Silfrain playbook, Marco Trades playbook, Marios Stamatoudis playbook, NBB Trader playbook, Okala playbook, Pradeep Bonde playbook, Rajan Dhall playbook, TG Capital playbook, Tanja Trades playbook, Tori Trades playbook, Trader Kane playbook, Trader Yush playbook, Umar Ashraf playbook, Vincent Desiano playbook |
+| Scalping (`concept_scalping`) | 23 | Abraham Perez playbook, Ariel Hernandez playbook, Candace Lau playbook, Carmine Rosato playbook, Clement Ang playbook, Fabio Valentini playbook, Forrest Knight playbook, Fredy Sarmiento playbook, JJ Simon playbook, JadeCap playbook, Jay Awtani playbook, Jeff Holden playbook, Kris Verma playbook, Kyle Williams playbook, Lance Breitstein playbook, NBB Trader playbook, Pradeep Bonde playbook, Rajan Dhall playbook, Steven Dux playbook, Trader Kane playbook, Trader Yush playbook, Traveling Trader playbook, Vincent Desiano playbook |
+| Trading Psychology & Discipline (`concept_trading_psychology`) | 22 | Alex Temiz playbook, Ali Crooks playbook, Ariel Hernandez playbook, Brando Elite playbook, Carmine Rosato playbook, Clement Ang playbook, Dhesi playbook, Fabio Valentini playbook, Jared Tendler playbook, Jay Awtani playbook, Jeff Holden playbook, Marci Silfrain playbook, Marco Trades playbook, Rajan Dhall playbook, TG Capital playbook, Tanja Trades playbook, Tori Trades playbook, Trader Mayne playbook, Traveling Trader playbook, Umar Ashraf playbook, Usman Ashraf playbook, Vincent Desiano playbook |
+| Breakout Trading (and fakeouts) (`concept_breakout_trading`) | 19 | Ali Crooks playbook, Andrea Cimitan playbook, Anthony Crudele playbook, Ariel Hernandez playbook, Brando Elite playbook, Clement Ang playbook, Dylan O’Neil playbook, Fabio Valentini playbook, Gala Trades playbook, JadeCap playbook, Kyle Williams playbook, Matteo Conti playbook, Naoufel Taief playbook, Pavel playbook, Pradeep Bonde playbook, Steven Dux playbook, Ted Zhang playbook, Trader Yush playbook, Vincent Desiano playbook |
+| Fair Value Gap (FVG), Inversion FVG, Imbalance (`concept_fair_value_gap`) | 17 | Abraham Perez playbook, Andrea Cimitan playbook, Candace Lau playbook, Dhesi playbook, Dylan O’Neil playbook, Fabio Valentini playbook, JadeCap playbook, Matteo Conti playbook, NBB Trader playbook, Pavel playbook, Steven Dux playbook, TG Capital playbook, Tanja Trades playbook, Trader Kane playbook, Trader Mayne playbook, Trader Yush playbook, Traveling Trader playbook |
+| Position Sizing (`concept_position_sizing`) | 16 | Alex Temiz playbook, Anthony Crudele playbook, Ariel Hernandez playbook, Candace Lau playbook, Carmine Rosato playbook, Gala Trades playbook, JJ Simon playbook, Jeff Holden playbook, Kris Verma playbook, Lance Breitstein playbook, Matteo Conti playbook, Naoufel Taief playbook, Pradeep Bonde playbook, Trader Yush playbook, Usman Ashraf playbook, Vincent Desiano playbook |
+| Order Flow (footprint, delta, CVD, absorption, trapped traders) (`concept_order_flow`) | 14 | Abraham Perez playbook, Andrea Cimitan playbook, Carmine Rosato playbook, Carmine Rosato playbook, Dylan O’Neil playbook, Fabio Valentini playbook, Fredy Sarmiento playbook, Gala Trades playbook, Jay Awtani playbook, Matteo Conti playbook, Steven Dux playbook, Trader Kane playbook, Trader Yush playbook, Usman Ashraf playbook |
+| Market Regimes (trend vs range, high vs low volatility) (`concept_market_regimes`) | 13 | Andrea Cimitan playbook, Carmine Rosato playbook, Dylan O’Neil playbook, Fabio Valentini playbook, JJ Simon playbook, Jared Tendler playbook, Matteo Conti playbook, Naoufel Taief playbook, Rajan Dhall playbook, Steven Dux playbook, TG Capital playbook, Trader Kane playbook, Trader Yush playbook |
+| Liquidity (resting orders, stop pools, sweeps) (`concept_liquidity`) | 12 | Abraham Perez playbook, Candace Lau playbook, Carmine Rosato playbook, Carmine Rosato playbook, Dhesi playbook, JadeCap playbook, Marco Trades playbook, Pavel playbook, Tanja Trades playbook, Trader Kane playbook, Trader Mayne playbook, Traveling Trader playbook |
+| Market Structure (swings, BOS, CHoCH / MSS) (`concept_market_structure`) | 12 | Abraham Perez playbook, Candace Lau playbook, Gala Trades playbook, JJ Simon playbook, JadeCap playbook, Lance Breitstein playbook, Marci Silfrain playbook, Marco Trades playbook, Tanja Trades playbook, Tori Trades playbook, Trader Mayne playbook, Traveling Trader playbook |
+| Trading Sessions & Kill Zones (time-of-day edge) (`concept_trading_sessions_killzones`) | 11 | Abraham Perez playbook, Andrea Cimitan playbook, Candace Lau playbook, Fabio Valentini playbook, JJ Simon playbook, JadeCap playbook, Marco Trades playbook, Matteo Conti playbook, NBB Trader playbook, TG Capital playbook, Trader Kane playbook |
+| Moving Averages (SMA, EMA, stacks, crossovers) (`concept_moving_averages`) | 11 | Ali Crooks playbook, Anthony Crudele playbook, Ariel Hernandez playbook, Clement Ang playbook, Jeff Holden playbook, Lance Breitstein playbook, Pavel playbook, Rajan Dhall playbook, TG Capital playbook, Ted Zhang playbook, Traveling Trader playbook |
+| Mean Reversion (`concept_mean_reversion`) | 11 | Anthony Crudele playbook, Carmine Rosato playbook, Clement Ang playbook, Fabio Valentini playbook, JJ Simon playbook, Kris Verma playbook, Lance Breitstein playbook, Pavel playbook, Pradeep Bonde playbook, Steven Dux playbook, Ted Zhang playbook |
+| Classical Chart Patterns (`concept_chart_patterns`) | 10 | Alex Temiz playbook, Ariel Hernandez playbook, Clement Ang playbook, Dhesi playbook, Dylan O’Neil playbook, Kris Verma playbook, Marios Stamatoudis playbook, Pradeep Bonde playbook, Steven Dux playbook, Tanja Trades playbook |
+| Price Action Trading (naked charts) (`concept_price_action`) | 10 | Ali Crooks playbook, Candace Lau playbook, Clement Ang playbook, Forrest Knight playbook, Fredy Sarmiento playbook, Gala Trades playbook, Lance Breitstein playbook, Marco Trades playbook, Tori Trades playbook, Vincent Desiano playbook |
+| News & Event Trading (`concept_news_trading`) | 9 | Ariel Hernandez playbook, Brando Elite playbook, Clement Ang playbook, JJ Simon playbook, Jay Awtani playbook, Matteo Conti playbook, Pradeep Bonde playbook, Tanja Trades playbook, Ted Zhang playbook |
+| Volume Profile (POC, value area, HVN/LVN) (`concept_volume_profile`) | 8 | Abraham Perez playbook, Andrea Cimitan playbook, Carmine Rosato playbook, Carmine Rosato playbook, Fabio Valentini playbook, Forrest Knight playbook, Rajan Dhall playbook, Trader Yush playbook |
+| Liquidity Sweep Reversal (stop-hunt reversal) (`concept_liquidity_sweep_reversal`) | 8 | Abraham Perez playbook, Candace Lau playbook, Carmine Rosato playbook, Clement Ang playbook, JadeCap playbook, Marco Trades playbook, Tanja Trades playbook, Ted Zhang playbook |
+| Multi-Timeframe Analysis (top-down) (`concept_multi_timeframe_analysis`) | 8 | Abraham Perez playbook, Brando Elite playbook, Candace Lau playbook, Forrest Knight playbook, JJ Simon playbook, Lance Breitstein playbook, TG Capital playbook, Trader Mayne playbook |
+| VWAP (volume-weighted average price) & anchored VWAP (`concept_vwap`) | 7 | Abraham Perez playbook, Anthony Crudele playbook, Fabio Valentini playbook, Jeff Holden playbook, Kyle Williams playbook, Marios Stamatoudis playbook, Matteo Conti playbook |
+| Volatility (realized, implied, ATR, regimes) (`concept_volatility`) | 7 | Dylan O’Neil playbook, Fredy Sarmiento playbook, Gala Trades playbook, Lance Breitstein playbook, Naoufel Taief playbook, Pavel playbook, Usman Ashraf playbook |
+| Backtesting (manual & systematic) (`concept_backtesting`) | 7 | JJ Simon playbook, Marci Silfrain playbook, Matteo Conti playbook, Naoufel Taief playbook, Pavel playbook, TG Capital playbook, Umar Ashraf playbook |
+| Market Sentiment & Positioning (COT, contrarian signals) (`concept_market_sentiment`) | 6 | Ali Crooks playbook, Brando Elite playbook, Fredy Sarmiento playbook, Lance Breitstein playbook, Rajan Dhall playbook, Ted Zhang playbook |
+| Performance Metrics (Sharpe, Sortino, MAR, profit factor) (`concept_performance_metrics`) | 6 | Ali Crooks playbook, Kris Verma playbook, Kyle Williams playbook, Naoufel Taief playbook, Pavel playbook, Steven Dux playbook |
+| Premium / Discount & Optimal Trade Entry (OTE) (`concept_premium_discount_ote`) | 6 | Anthony Crudele playbook, Candace Lau playbook, Lance Breitstein playbook, Trader Kane playbook, Trader Mayne playbook, Usman Ashraf playbook |
+| Growth-Stock Momentum (CANSLIM, SEPA, VCP) (`concept_growth_momentum_canslim`) | 6 | Ariel Hernandez playbook, Clement Ang playbook, Dylan O’Neil playbook, Gala Trades playbook, Pradeep Bonde playbook, Ted Zhang playbook |
+| Options & the Greeks (`concept_options_greeks`) | 6 | Brando Elite playbook, Carmine Rosato playbook, Carmine Rosato playbook, Fredy Sarmiento playbook, Trader Yush playbook, Usman Ashraf playbook |
+| Trade Execution (triggers, order types, confirmation) (`concept_trade_execution`) | 6 | Fabio Valentini playbook, Forrest Knight playbook, Lance Breitstein playbook, Marco Trades playbook, Trader Mayne playbook, Trader Yush playbook |
+| Smart Money Concepts / ICT (umbrella) (`concept_smart_money_concepts`) | 5 | Abraham Perez playbook, Dhesi playbook, NBB Trader playbook, Trader Kane playbook, Trader Mayne playbook |
+| Risk:Reward & R-Multiples (`concept_risk_reward_r_multiples`) | 5 | Abraham Perez playbook, Candace Lau playbook, Carmine Rosato playbook, JJ Simon playbook, TG Capital playbook |
+| Trendlines & Channels (`concept_trendlines`) | 5 | Ali Crooks playbook, Dhesi playbook, Marci Silfrain playbook, Tori Trades playbook, Traveling Trader playbook |
+| Auction Market Theory (balance, imbalance, value) (`concept_auction_market_theory`) | 5 | Andrea Cimitan playbook, Carmine Rosato playbook, Fabio Valentini playbook, Forrest Knight playbook, Rajan Dhall playbook |
+| Market Microstructure (order book, bid/ask, order types) (`concept_market_microstructure`) | 5 | Andrea Cimitan playbook, Carmine Rosato playbook, Fredy Sarmiento playbook, NBB Trader playbook, Pavel playbook |
+| Bollinger Bands & Volatility Squeezes (`concept_bollinger_bands`) | 5 | Anthony Crudele playbook, Dylan O’Neil playbook, Lance Breitstein playbook, Marci Silfrain playbook, Steven Dux playbook |
+| Fundamental & Macro Analysis (rates, central banks, growth, inflation) (`concept_fundamental_macro_analysis`) | 5 | Brando Elite playbook, JJ Simon playbook, Jay Awtani playbook, Tanja Trades playbook, Traveling Trader playbook |
+| AMD / Power of Three (accumulation, manipulation, distribution) (`concept_amd_power_of_three`) | 5 | Candace Lau playbook, JadeCap playbook, NBB Trader playbook, Tanja Trades playbook, Trader Kane playbook |
+| Risk of Ruin & Drawdown Math (`concept_risk_of_ruin_drawdown`) | 5 | JJ Simon playbook, Marci Silfrain playbook, Matteo Conti playbook, Naoufel Taief playbook, Umar Ashraf playbook |
+| Prop-Firm Evaluations & Risk Rules (`concept_prop_firm_risk_rules`) | 4 | Candace Lau playbook, JJ Simon playbook, Naoufel Taief playbook, Umar Ashraf playbook |
+| Order Blocks, Breaker Blocks & Mitigation (`concept_order_blocks_breakers`) | 4 | Dhesi playbook, JadeCap playbook, NBB Trader playbook, Trader Mayne playbook |
+| Trend Following (`concept_trend_following`) | 4 | Fabio Valentini playbook, Marci Silfrain playbook, Pavel playbook, Trader Mayne playbook |
+| Leverage, Margin, Pips & Lots (`concept_leverage_margin`) | 4 | Jay Awtani playbook, Trader Kane playbook, Trader Yush playbook, Usman Ashraf playbook |
+| Fibonacci Retracements & Extensions (`concept_fibonacci`) | 4 | Kris Verma playbook, Kyle Williams playbook, Marci Silfrain playbook, NBB Trader playbook |
+| Oscillators & Momentum Indicators (RSI, MACD, Stochastic, ADX) (`concept_oscillators_momentum`) | 3 | Ali Crooks playbook, Clement Ang playbook, Pavel playbook |
+| Expectancy (expected value per trade) (`concept_expectancy`) | 3 | Lance Breitstein playbook, Naoufel Taief playbook, Pavel playbook |
+| Episodic Pivot (EP) (`concept_episodic_pivot`) | 2 | Ariel Hernandez playbook, Pradeep Bonde playbook |
+| Divergence (regular & hidden) (`concept_divergence`) | 2 | Candace Lau playbook, Trader Kane playbook |
+| SMT Divergence (correlated-market non-confirmation) (`concept_smt_divergence`) | 2 | Candace Lau playbook, Trader Kane playbook |
+| Trading Journal & Performance Review (`concept_trading_journal_review`) | 2 | Jeff Holden playbook, Umar Ashraf playbook |
+| Overfitting & Edge Validation (multiple testing, deflated Sharpe) (`concept_overfitting_validation`) | 2 | Matteo Conti playbook, Naoufel Taief playbook |
+| Correlation & Portfolio Risk (`concept_correlation_portfolio_risk`) | 2 | Naoufel Taief playbook, Pavel playbook |
+| Time-Series Statistics (stationarity, autocorrelation, cointegration) (`concept_time_series_statistics`) | 1 | Andrea Cimitan playbook |
+| Intermarket Analysis & Correlations (`concept_intermarket_analysis`) | 1 | Jared Tendler playbook |
+| Edge (positive expectancy, repeatable) (`concept_edge`) | 1 | Pavel playbook |
+| Random Walk & Efficient Market Hypothesis (`concept_random_walk_efficient_markets`) | 1 | Pavel playbook |
+| Japanese Candlestick Patterns (`concept_candlestick_patterns`) | 1 | TG Capital playbook |

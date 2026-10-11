@@ -127,6 +127,8 @@ def main() -> None:
     ap.add_argument("--sleep", type=float, default=2.0, help="seconds between videos")
     ap.add_argument("--refresh", action="store_true", help="re-scrape videos already on disk")
     ap.add_argument("--no-transcripts", action="store_true")
+    ap.add_argument("--catalog-only", action="store_true",
+                    help="list videos from the channel tabs only (no per-video requests); works where YouTube bot-checks video pages")
     ap.add_argument("--cookies-from-browser", default=None)
     ap.add_argument("--cookies", default=None, help="Netscape cookies.txt")
     args = ap.parse_args()
@@ -138,11 +140,31 @@ def main() -> None:
     print(f"{len(videos)} videos found on {args.channel}")
     if args.limit:
         videos = videos[: args.limit]
+    curated_path = part / "catalog.yaml"
+    curated = {}
+    if curated_path.exists():  # reuse hand-curated node ids so curated and scraped entries merge
+        import yaml
+        for m in (yaml.safe_load(curated_path.read_text(encoding="utf-8")) or {}).get("media", []):
+            if m.get("youtube_id"):
+                curated[m["youtube_id"]] = m["id"]
+    if args.catalog_only:
+        items = []
+        for v in videos:
+            vid = v["id"]
+            tags = tag(v.get("title") or "", min_hits=1)
+            items.append({"id": curated.get(vid) or args.id_prefix + re.sub(r"[^a-z0-9_]", "_", vid.lower()), "type": "media",
+                          "title": v.get("title"), "youtube_id": vid, "url": f"https://www.youtube.com/watch?v={vid}",
+                          "view_count": v.get("view_count"), "duration_s": v.get("duration"), "tab": v.get("_tab"),
+                          "featured_in": [args.channel_node], "covers": tags["covers"], "speaker_ids": tags["speaker_ids"],
+                          "status": "catalog-only"})
+        write_yaml(part / "catalog.scraped.yaml", {"scraped_media": items})
+        print(f"catalog-only: {len(items)} videos -> {args.partition}/catalog.scraped.yaml")
+        return
 
     catalog = []
     for i, v in enumerate(videos, 1):
         vid = v["id"]
-        node_id = args.id_prefix + re.sub(r"[^a-z0-9_]", "_", vid.lower())
+        node_id = curated.get(vid) or args.id_prefix + re.sub(r"[^a-z0-9_]", "_", vid.lower())
         path = raw_dir / f"{vid}.md"
         if path.exists() and not args.refresh:
             print(f"[{i}/{len(videos)}] {vid} cached")

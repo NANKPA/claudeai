@@ -60,9 +60,25 @@ ANCHOR_LABELS: list[tuple[str, str]] = [
 ]
 
 
-def to_extraction(kb) -> dict:
+def graph_view_exclusions(kb) -> dict[str, set[str]]:
+    """Nodes kept in the knowledge base but left out of the visual graph, so the map stays
+    readable: YouTube shorts, and podcast episodes that feature no known person (the
+    remaining episodes link legends to their interviews)."""
+    out = {}
+    speakers = {e.source for e in kb.edges if e.relation == "features_speaker"}
+    podcast_eps = {e.source for e in kb.edges if e.relation == "featured_in" and e.target.startswith("podcast_")}
+    out["youtube shorts"] = {n.id for n in kb.nodes.values() if n.kind == "media" and n.attrs.get("tab") == "shorts"}
+    out["podcast episodes without a known guest"] = {
+        nid for nid in podcast_eps
+        if nid in kb.nodes and kb.nodes[nid].attrs.get("status") == "scraped" and nid not in speakers}
+    return out
+
+
+def to_extraction(kb, exclude: set[str] = frozenset()) -> dict:
     nodes = []
     for n in kb.nodes.values():
+        if n.id in exclude:
+            continue
         a = n.attrs
         nodes.append({
             "id": n.id,
@@ -83,6 +99,8 @@ def to_extraction(kb) -> dict:
         })
     edges = []
     for e in kb.edges:
+        if e.source in exclude or e.target in exclude:
+            continue
         edges.append({
             "source": e.source,
             "target": e.target,
@@ -160,7 +178,9 @@ def main() -> None:
     kb = load_kb()
     if kb.errors:
         print(f"warning: {len(kb.errors)} dangling references (see BUILD_REPORT.md)", file=sys.stderr)
-    extraction = to_extraction(kb)
+    exclusions = graph_view_exclusions(kb)
+    excluded = set().union(*exclusions.values())
+    extraction = to_extraction(kb, excluded)
     problems = validate_extraction(extraction)
     if problems:
         raise SystemExit("extraction invalid:\n" + "\n".join(problems[:20]))
@@ -193,7 +213,10 @@ def main() -> None:
             shutil.rmtree(wiki_dir)
         n = to_wiki(G, communities, str(wiki_dir), community_labels=labels, cohesion=cohesion, god_nodes_data=gods)
         print(f"wiki: {n} articles")
-    (OUT_DIR / "BUILD_REPORT.md").write_text(build_report(kb, G, communities, labels, gods), encoding="utf-8")
+    report_md = build_report(kb, G, communities, labels, gods)
+    report_md += "\n## Graph view exclusions\n\nKept in the knowledge base files (and the Claude bundle tables) but left out of the visual graph:\n\n"
+    report_md += "\n".join(f"- {name}: {len(ids):,}" for name, ids in exclusions.items()) + "\n"
+    (OUT_DIR / "BUILD_REPORT.md").write_text(report_md, encoding="utf-8")
     print(f"graph: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges, {len(communities)} communities")
     for cid in sorted(communities, key=lambda c: -len(communities[c])):
         print(f"  [{cid:>2}] {labels[cid]} ({len(communities[cid])})")

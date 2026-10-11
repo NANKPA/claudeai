@@ -1,0 +1,283 @@
+playbooks_index:
+- id: strategy_umar_ashraf_5_stage
+  title: Umar Ashraf playbook
+  url: https://www.chartfanatics.com/strategies/5-stage-trading-framework
+  taught_by:
+  - person_umar_ashraf
+  raw_file: 01_chart-fanatics/raw/playbooks/5-stage-trading-framework.md
+- id: strategy_tanja_amd_futures
+  title: Tanja Trades playbook
+  url: https://www.chartfanatics.com/strategies/amd-model
+  taught_by:
+  - person_tanja_trades
+  raw_file: 01_chart-fanatics/raw/playbooks/amd-model.md
+- id: strategy_fabio_valentini_amt_order_flow
+  title: Fabio Valentini playbook
+  url: https://www.chartfanatics.com/strategies/auction-market-strategy
+  taught_by:
+  - person_fabio_valentini
+  raw_file: 01_chart-fanatics/raw/playbooks/auction-market-strategy.md
+- id: strategy_andrea_cimitan_amt
+  title: Andrea Cimitan playbook
+  url: https://www.chartfanatics.com/strategies/auction-market-theory-strategy
+  taught_by:
+  - person_andrea_cimitan
+  raw_file: 01_chart-fanatics/raw/playbooks/auction-market-theory-strategy.md
+- id: strategy_pradeep_bonde_episodic_pivot
+  title: Pradeep Bonde playbook
+  url: https://www.chartfanatics.com/strategies/episodic-pivot-strategy
+  taught_by:
+  - person_pradeep_bonde
+  raw_file: 01_chart-fanatics/raw/playbooks/episodic-pivot-strategy.md
+- id: strategy_jj_simon_fair_pricing
+  title: JJ Simon playbook
+  url: https://www.chartfanatics.com/strategies/fair-pricing-theory-strategy
+  taught_by:
+  - person_jj_simon
+  raw_file: 01_chart-fanatics/raw/playbooks/fair-pricing-theory-strategy.md
+- id: strategy_fredy_sarmiento_options_flow
+  title: Fredy Sarmiento playbook
+  url: https://www.chartfanatics.com/strategies/institutional-options-flow-gamma-reversal-strategy
+  taught_by:
+  - person_fredy_sarmiento
+  raw_file: 01_chart-fanatics/raw/playbooks/institutional-options-flow-gamma-reversal-strategy.md
+- id: strategy_matteo_conti_institutional
+  title: Matteo Conti playbook
+  url: https://www.chartfanatics.com/strategies/institutional-strategy-development-framework
+  taught_by:
+  - person_matteo_conti
+  raw_file: 01_chart-fanatics/raw/playbooks/institutional-strategy-development-framework.md
+- id: strategy_marco_trades_liquidity_grab
+  title: Marco Trades playbook
+  url: https://www.chartfanatics.com/strategies/liquidity-strategy
+  taught_by:
+  - person_marco_trades
+  raw_file: 01_chart-fanatics/raw/playbooks/liquidity-strategy.md
+- id: strategy_carmine_rosato_lvn
+  title: Carmine Rosato playbook
+  url: https://www.chartfanatics.com/strategies/low-volume-node
+  taught_by:
+  - person_carmine_rosato
+  raw_file: 01_chart-fanatics/raw/playbooks/low-volume-node.md
+- id: strategy_carmine_rosato_orderflow_masterclass
+  title: Carmine Rosato playbook
+  url: https://www.chartfanatics.com/strategies/orderflow-trading-masterclass
+  taught_by:
+  - person_carmine_rosato
+  raw_file: 01_chart-fanatics/raw/playbooks/orderflow-trading-masterclass.md
+- id: strategy_rajan_dhall_auction
+  title: Rajan Dhall playbook
+  url: https://www.chartfanatics.com/strategies/market-auction-theory
+  taught_by:
+  - person_rajan_dhall
+  raw_file: 01_chart-fanatics/raw/playbooks/market-auction-theory.md
+- id: strategy_marci_silfrain_measured_move
+  title: Marci Silfrain playbook
+  url: https://www.chartfanatics.com/strategies/measured-move-trend-strategy
+  taught_by:
+  - person_marci_silfrain
+  raw_file: 01_chart-fanatics/raw/playbooks/measured-move-trend-strategy.md
+- id: strategy_candace_lau_nq_sweep_reversal
+  title: Candace Lau playbook
+  url: https://www.chartfanatics.com/strategies/nq-liquidity-sweep-reversal-scalping-strategy
+  taught_by:
+  - person_candace_lau
+  raw_file: 01_chart-fanatics/raw/playbooks/nq-liquidity-sweep-reversal-scalping-strategy.md
+- id: strategy_yush_order_flow
+  title: Trader Yush playbook
+  url: https://www.chartfanatics.com/strategies/order-flow-strategy
+  taught_by:
+  - person_trader_yush
+  raw_file: 01_chart-fanatics/raw/playbooks/order-flow-strategy.md
+- id: strategy_clement_ang_price_cycle
+  title: Clement Ang playbook
+  url: https://www.chartfanatics.com/strategies/price-cycle-continuation-failed-base-strategy
+  taught_by:
+  - person_clement_ang
+  raw_file: 01_chart-fanatics/raw/playbooks/price-cycle-continuation-failed-base-strategy.md
+- id: strategy_trader_kane_lab_model
+  title: Trader Kane playbook
+  url: https://www.chartfanatics.com/strategies/smt-divergence-po3
+  taught_by:
+  - person_trader_kane
+  raw_file: 01_chart-fanatics/raw/playbooks/smt-divergence-po3.md
+- id: strategy_trader_mayne_structure_ote
+  title: Trader Mayne playbook
+  url: https://www.chartfanatics.com/strategies/structure-ote
+  taught_by:
+  - person_trader_mayne
+  raw_file: 01_chart-fanatics/raw/playbooks/structure-ote.md
+- id: strategy_brando_options_swing
+  title: Brando Elite playbook
+  url: https://www.chartfanatics.com/strategies/support-and-resistance
+  taught_by:
+  - person_brando_elite
+  raw_file: 01_chart-fanatics/raw/playbooks/support-and-resistance.md
+- id: strategy_pavel_first_principles
+  title: Pavel playbook
+  url: https://www.chartfanatics.com/strategies/trading-first-principles-framework
+  taught_by:
+  - person_pavel
+  raw_file: 01_chart-fanatics/raw/playbooks/trading-first-principles-framework.md
+- id: strategy_tori_trendline_4h
+  title: Tori Trades playbook
+  url: https://www.chartfanatics.com/strategies/trendline-strategy
+  taught_by:
+  - person_tori_trades
+  raw_file: 01_chart-fanatics/raw/playbooks/trendline-strategy.md
+- id: strategy_tg_capital_trident
+  title: TG Capital playbook
+  url: https://www.chartfanatics.com/strategies/unique-high-rr
+  taught_by:
+  - person_tg_capital
+  raw_file: 01_chart-fanatics/raw/playbooks/unique-high-rr.md
+- id: strategy_forrest_knight_volume_profile
+  title: Forrest Knight playbook
+  url: https://www.chartfanatics.com/strategies/volume-profile-strategy
+  taught_by:
+  - person_forrest_knight
+  raw_file: 01_chart-fanatics/raw/playbooks/volume-profile-strategy.md
+- id: strategy_ted_zhang_stage_analysis
+  title: Ted Zhang playbook
+  url: https://www.chartfanatics.com/strategies/stage-analysis-strategy
+  taught_by:
+  - person_ted_zhang
+  raw_file: 01_chart-fanatics/raw/playbooks/stage-analysis-strategy.md
+- id: strategy_jadecap_liquidity_volatility
+  title: JadeCap playbook
+  url: https://www.chartfanatics.com/strategies/intraday-liquidity-volatility-model
+  taught_by:
+  - person_jadecap
+  raw_file: 01_chart-fanatics/raw/playbooks/intraday-liquidity-volatility-model.md
+- id: strategy_okala_80_20_nasdaq
+  title: Okala playbook
+  url: https://www.chartfanatics.com/strategies/80-20-nasdaq-strategy
+  taught_by:
+  - person_okala
+  raw_file: 01_chart-fanatics/raw/playbooks/80-20-nasdaq-strategy.md
+- id: strategy_naoufel_taief_algorithmic
+  title: Naoufel Taief playbook
+  url: https://www.chartfanatics.com/strategies/algorithmic-strategy
+  taught_by:
+  - person_naoufel_taief
+  raw_file: 01_chart-fanatics/raw/playbooks/algorithmic-strategy.md
+- id: strategy_vincent_desiano_break_retest
+  title: Vincent Desiano playbook
+  url: https://www.chartfanatics.com/strategies/break-retest
+  taught_by:
+  - person_vincent_desiano
+  raw_file: 01_chart-fanatics/raw/playbooks/break-retest.md
+- id: strategy_alex_temiz_first_red_day
+  title: Alex Temiz playbook
+  url: https://www.chartfanatics.com/strategies/first-red-day
+  taught_by:
+  - person_alex_temiz
+  raw_file: 01_chart-fanatics/raw/playbooks/first-red-day.md
+- id: strategy_kyle_williams_first_red_day
+  title: Kyle Williams playbook
+  url: https://www.chartfanatics.com/strategies/first-red-day-strategy
+  taught_by:
+  - person_kyle_williams
+  raw_file: 01_chart-fanatics/raw/playbooks/first-red-day-strategy.md
+- id: strategy_jared_tendler_psychology
+  title: Jared Tendler playbook
+  url: https://www.chartfanatics.com/strategies/full-psychology-masterclass
+  taught_by:
+  - person_jared_tendler
+  raw_file: 01_chart-fanatics/raw/playbooks/full-psychology-masterclass.md
+- id: strategy_anthony_crudele_futures_trend
+  title: Anthony Crudele playbook
+  url: https://www.chartfanatics.com/strategies/futures-trading-strategy
+  taught_by:
+  - person_anthony_crudele
+  raw_file: 01_chart-fanatics/raw/playbooks/futures-trading-strategy.md
+- id: strategy_dhesi_liquidity_inversion
+  title: Dhesi playbook
+  url: https://www.chartfanatics.com/strategies/liquidity-inversion-model
+  taught_by:
+  - person_dhesi
+  raw_file: 01_chart-fanatics/raw/playbooks/liquidity-inversion-model.md
+- id: strategy_jay_awtani_market_dna
+  title: Jay Awtani playbook
+  url: https://www.chartfanatics.com/strategies/market-dna-strategy
+  taught_by:
+  - person_jay_awtani
+  raw_file: 01_chart-fanatics/raw/playbooks/market-dna-strategy.md
+- id: strategy_lance_breitstein_mean_reversion
+  title: Lance Breitstein playbook
+  url: https://www.chartfanatics.com/strategies/mean-reversion-strategy
+  taught_by:
+  - person_lance_breitstein
+  raw_file: 01_chart-fanatics/raw/playbooks/mean-reversion-strategy.md
+- id: strategy_jeff_holden_momentum_model
+  title: Jeff Holden playbook
+  url: https://www.chartfanatics.com/strategies/momentum-model-performance-development
+  taught_by:
+  - person_jeff_holden
+  raw_file: 01_chart-fanatics/raw/playbooks/momentum-model-performance-development.md
+- id: strategy_abraham_perez_ict_orderflow
+  title: Abraham Perez playbook
+  url: https://www.chartfanatics.com/strategies/nasdaq-ict-and-order-flow-scalping-strategy
+  taught_by:
+  - person_abraham_perez
+  raw_file: 01_chart-fanatics/raw/playbooks/nasdaq-ict-and-order-flow-scalping-strategy.md
+- id: strategy_usman_ashraf_options
+  title: Usman Ashraf playbook
+  url: https://www.chartfanatics.com/strategies/options-trading-masterclass
+  taught_by:
+  - person_usman_ashraf
+  raw_file: 01_chart-fanatics/raw/playbooks/options-trading-masterclass.md
+- id: strategy_marios_stamatoudis_parabolic_short
+  title: Marios Stamatoudis playbook
+  url: https://www.chartfanatics.com/strategies/parabolic-short-strategy
+  taught_by:
+  - person_marios_stamatoudis
+  raw_file: 01_chart-fanatics/raw/playbooks/parabolic-short-strategy.md
+- id: strategy_nbb_trader_po3_ote_adr
+  title: NBB Trader playbook
+  url: https://www.chartfanatics.com/strategies/po3-ote-adr
+  taught_by:
+  - person_nbb_trader
+  raw_file: 01_chart-fanatics/raw/playbooks/po3-ote-adr.md
+- id: strategy_gala_trades_price_action
+  title: Gala Trades playbook
+  url: https://www.chartfanatics.com/strategies/price-action-strategy
+  taught_by:
+  - person_gala_trades
+  raw_file: 01_chart-fanatics/raw/playbooks/price-action-strategy.md
+- id: strategy_ariel_hernandez_real_simple
+  title: Ariel Hernandez playbook
+  url: https://www.chartfanatics.com/strategies/real-simple-strategy
+  taught_by:
+  - person_ariel_hernandez
+  raw_file: 01_chart-fanatics/raw/playbooks/real-simple-strategy.md
+- id: strategy_kris_verma_shorting
+  title: Kris Verma playbook
+  url: https://www.chartfanatics.com/strategies/shorting-strategy
+  taught_by:
+  - person_kris_verma
+  raw_file: 01_chart-fanatics/raw/playbooks/shorting-strategy.md
+- id: strategy_steven_dux_small_cap_short
+  title: Steven Dux playbook
+  url: https://www.chartfanatics.com/strategies/small-cap-short-statistics
+  taught_by:
+  - person_steven_dux
+  raw_file: 01_chart-fanatics/raw/playbooks/small-cap-short-statistics.md
+- id: strategy_dylan_oneil_vix_futures
+  title: Dylan O’Neil playbook
+  url: https://www.chartfanatics.com/strategies/the-vix-futures-strategy
+  taught_by:
+  - person_dylan_oneil
+  raw_file: 01_chart-fanatics/raw/playbooks/the-vix-futures-strategy.md
+- id: strategy_ali_crooks_trendline_pocket
+  title: Ali Crooks playbook
+  url: https://www.chartfanatics.com/strategies/trendline-break-pocket-strategy
+  taught_by:
+  - person_ali_crooks
+  raw_file: 01_chart-fanatics/raw/playbooks/trendline-break-pocket-strategy.md
+- id: strategy_traveling_trader_universal
+  title: Traveling Trader playbook
+  url: https://www.chartfanatics.com/strategies/universal-strategy
+  taught_by:
+  - person_traveling_trader
+  raw_file: 01_chart-fanatics/raw/playbooks/universal-strategy.md

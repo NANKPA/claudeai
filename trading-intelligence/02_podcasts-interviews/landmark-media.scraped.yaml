@@ -1,0 +1,1625 @@
+scraped_media:
+- id: media_yt_tvere_beu2u
+  type: media
+  rank: 1
+  title: Trading LIVE with a World TOP Ranked Scalper (EXTREME Accuracy)
+  url: https://www.youtube.com/watch?v=tvERE-Beu2U
+  youtube_id: tvERE-Beu2U
+  channel: Chart Fanatics
+  views: 4737832
+  duration_s: 12850
+  query: Chart Fanatics Live trading
+  query_group: podcasts_episodes
+  covers:
+  - concept_scalping
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_topa3lkgolw
+  type: media
+  rank: 2
+  title: 'Billionaire investor Ray Dalio is worried about ''something worse than recession’: Full interview'
+  url: https://www.youtube.com/watch?v=Topa3LKgolw
+  youtube_id: Topa3LKgolw
+  channel: NBC News
+  views: 3376321
+  duration_s: 558
+  query: Ray Dalio interview markets debt cycle
+  query_group: legends
+  covers: []
+  speaker_ids:
+  - person_ray_dalio
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_u5kidtmjgc8
+  type: media
+  rank: 3
+  title: The mathematician who cracked Wall Street | Jim Simons
+  url: https://www.youtube.com/watch?v=U5kIdtMJGc8
+  youtube_id: U5kIdtMJGc8
+  channel: TED
+  views: 2900075
+  duration_s: 1388
+  query: Jim Simons interview Renaissance
+  query_group: legends
+  covers: []
+  speaker_ids:
+  - person_jim_simons
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_dys79eb92ug
+  type: media
+  rank: 4
+  title: Trading LIVE with the World TOP Ranked Scalper (PERFECT Accuracy)
+  url: https://www.youtube.com/watch?v=DyS79Eb92Ug
+  youtube_id: DyS79Eb92Ug
+  channel: Words of Rizdom and Fabervaale ENG
+  views: 1700003
+  duration_s: 8500
+  query: Chart Fanatics Live trading
+  query_group: podcasts_episodes
+  covers:
+  - concept_scalping
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_qnznd9hmeh0
+  type: media
+  rank: 5
+  title: Jim Simons (full length interview) - Numberphile
+  url: https://www.youtube.com/watch?v=QNznD9hMEh0
+  youtube_id: QNznD9hMEh0
+  channel: Numberphile2
+  views: 1358228
+  duration_s: 3643
+  query: Jim Simons interview Renaissance
+  query_group: legends
+  covers: []
+  speaker_ids:
+  - person_jim_simons
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_danxm7c16h0
+  type: media
+  rank: 6
+  title: STEAL This EASY Liquidity TRAP Trading Strategy - $500K+ (PERFECT Sniper Entries)
+  url: https://www.youtube.com/watch?v=DAnXM7C16h0
+  youtube_id: DAnXM7C16h0
+  channel: Chart Fanatics
+  views: 1338722
+  duration_s: 6577
+  query: Chart Fanatics trading strategy
+  query_group: podcasts_episodes
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_avvm_fyewlg
+  type: media
+  rank: 7
+  title: 'STEAL This SIMPLE Trading Strategy from The WORLD''s #2 Futures Trader - Marci Silfrain'
+  url: https://www.youtube.com/watch?v=AVVM-FyewLg
+  youtube_id: AVVM-FyewLg
+  channel: Chart Fanatics
+  views: 1119861
+  duration_s: 5010
+  query: Chart Fanatics trading strategy
+  query_group: podcasts_episodes
+  covers: []
+  speaker_ids:
+  - person_marci_silfrain
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_7gwixr5fv9w
+  type: media
+  rank: 8
+  title: Ray Dalio on the US Debt Crisis, Interest Rates, AI, Risk in Europe, US vs. China
+  url: https://www.youtube.com/watch?v=7gwIxR5FV9w
+  youtube_id: 7gwIxR5FV9w
+  channel: Bloomberg Television
+  views: 858347
+  duration_s: 1547
+  query: Ray Dalio interview markets debt cycle
+  query_group: legends
+  covers:
+  - concept_fundamental_macro_analysis
+  speaker_ids:
+  - person_ray_dalio
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_ygdynoy3b68
+  type: media
+  rank: 9
+  title: 'Brooks Price Action: Trading Opening Breakouts & Reversals'
+  url: https://www.youtube.com/watch?v=yGDYNoY3b68
+  youtube_id: yGDYNoY3b68
+  channel: Brooks Trading Course
+  views: 835021
+  duration_s: 4201
+  query: Al Brooks price action interview
+  query_group: legends
+  covers:
+  - concept_breakout_trading
+  - concept_price_action
+  speaker_ids:
+  - person_al_brooks
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_6ac38lzxj3a
+  type: media
+  rank: 10
+  title: Master ORDER FLOW TRADING in Less than ONE HOUR!
+  url: https://www.youtube.com/watch?v=6Ac38LzXj3A
+  youtube_id: 6Ac38LzXj3A
+  channel: Fractal Flow - Pro Trading Strategies
+  views: 816572
+  duration_s: 3061
+  query: order flow footprint trading explained
+  query_group: methods
+  covers:
+  - concept_order_flow
+  - concept_price_action
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_ctqcli6spx8
+  type: media
+  rank: 11
+  title: 'Jim Simons: A Short Story of My Life and Mathematics (2022)'
+  url: https://www.youtube.com/watch?v=CTQcLi6SpX8
+  youtube_id: CTQcLi6SpX8
+  channel: The Abel Prize
+  views: 803322
+  duration_s: 967
+  query: Jim Simons interview Renaissance
+  query_group: legends
+  covers: []
+  speaker_ids:
+  - person_jim_simons
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_sg4yzrhilfe
+  type: media
+  rank: 12
+  title: Mark Douglas Discussed Trading Psychology, Risk and much more
+  url: https://www.youtube.com/watch?v=sg4YzRhILFE
+  youtube_id: sg4YzRhILFE
+  channel: R.E.M
+  views: 780782
+  duration_s: 7091
+  query: trading psychology Mark Douglas trading in the zone
+  query_group: methods
+  covers:
+  - concept_trading_psychology
+  speaker_ids:
+  - person_mark_douglas
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_ovz_b5ngzjw
+  type: media
+  rank: 13
+  title: How to Master Order Flow Trading (ULTIMATE In-Depth Guide)
+  url: https://www.youtube.com/watch?v=Ovz-b5nGzJw
+  youtube_id: Ovz-b5nGzJw
+  channel: Brad Goh (The Trading Geek)
+  views: 776667
+  duration_s: 2276
+  query: order flow footprint trading explained
+  query_group: methods
+  covers:
+  - concept_order_flow
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_adnslykowfe
+  type: media
+  rank: 14
+  title: STEAL This INSANE Simple 90% Win Rate Trading Strategy (1:20+ RR) - TG Capital
+  url: https://www.youtube.com/watch?v=ADnslyKOwFE
+  youtube_id: ADnslyKOwFE
+  channel: Chart Fanatics
+  views: 735599
+  duration_s: 2896
+  query: Chart Fanatics trading strategy
+  query_group: podcasts_episodes
+  covers:
+  - concept_performance_metrics
+  speaker_ids:
+  - person_tg_capital
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_hnurp9z1bms
+  type: media
+  rank: 15
+  title: Worlds BEST NQ Scalper Reveals His A+ Trading Strategy
+  url: https://www.youtube.com/watch?v=HNuRp9Z1bMs
+  youtube_id: HNuRp9Z1bMs
+  channel: Chart Fanatics
+  views: 715645
+  duration_s: 4484
+  query: Chart Fanatics trading strategy
+  query_group: podcasts_episodes
+  covers:
+  - concept_scalping
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_zvudpcyvxfq
+  type: media
+  rank: 16
+  title: Understanding Fair Value Gaps (FVG) - ICT Concepts
+  url: https://www.youtube.com/watch?v=ZVUDpCyvxfQ
+  youtube_id: ZVUDpCyvxfQ
+  channel: TTrades
+  views: 625293
+  duration_s: 596
+  query: ICT mentorship liquidity fair value gap
+  query_group: methods
+  covers:
+  - concept_fair_value_gap
+  - concept_chart_patterns
+  - concept_smart_money_concepts
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_ocacrwzfpyy
+  type: media
+  rank: 17
+  title: 'George Soros Lecture Series: General Theory of Reflexivity'
+  url: https://www.youtube.com/watch?v=oCaCrWzFPYY
+  youtube_id: oCaCrWzFPYY
+  channel: Open Society Foundations
+  views: 587021
+  duration_s: 3120
+  query: George Soros interview reflexivity
+  query_group: legends
+  covers:
+  - concept_reflexivity
+  speaker_ids:
+  - person_george_soros
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_azlvqjujyiq
+  type: media
+  rank: 18
+  title: Inside the World of a Billionaire Speculator - Paul Tudor Jones Documentary
+  url: https://www.youtube.com/watch?v=azLvQJUJyIQ
+  youtube_id: azLvQJUJyIQ
+  channel: FINAiUS
+  views: 562980
+  duration_s: 1228
+  query: Paul Tudor Jones interview trading
+  query_group: legends
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_rhseejdkjho
+  type: media
+  rank: 19
+  title: 'George Soros Lecture Series: Financial Markets'
+  url: https://www.youtube.com/watch?v=RHSEEJDKJho
+  youtube_id: RHSEEJDKJho
+  channel: Open Society Foundations
+  views: 559242
+  duration_s: 2640
+  query: George Soros interview reflexivity
+  query_group: legends
+  covers: []
+  speaker_ids:
+  - person_george_soros
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_fgacysn9qeo
+  type: media
+  rank: 20
+  title: ICT Mentorship Core Content - Month 04 - ICT Fair Value Gaps FVG
+  url: https://www.youtube.com/watch?v=FgacYSN9QEo
+  youtube_id: FgacYSN9QEo
+  channel: The Inner Circle Trader
+  views: 553668
+  duration_s: 1077
+  query: ICT mentorship liquidity fair value gap
+  query_group: methods
+  covers:
+  - concept_fair_value_gap
+  - concept_smart_money_concepts
+  - concept_chart_patterns
+  - concept_premium_discount_ote
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt__hbsptbnzkq
+  type: media
+  rank: 21
+  title: 33,554% Return in 5 years | Trade Like a Stock Market Wizard | Interview with Mark Minervini
+  url: https://www.youtube.com/watch?v=-hBsPtBnZKQ
+  youtube_id: -hBsPtBnZKQ
+  channel: Richard Moglen
+  views: 525617
+  duration_s: 3641
+  query: Mark Minervini interview SEPA VCP
+  query_group: legends
+  covers: []
+  speaker_ids:
+  - person_mark_minervini
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_qswlc_i_dua
+  type: media
+  rank: 22
+  title: The Only Fair Value Gap Video You Need.
+  url: https://www.youtube.com/watch?v=qswlc-I-DuA
+  youtube_id: qswlc-I-DuA
+  channel: TJR
+  views: 506343
+  duration_s: 903
+  query: ICT mentorship liquidity fair value gap
+  query_group: methods
+  covers:
+  - concept_fair_value_gap
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_uhkrrqo1gqm
+  type: media
+  rank: 23
+  title: LIVE TRADING - How He Made $40,000+ Trading using OrderFlow (Full Masterclass)
+  url: https://www.youtube.com/watch?v=UhkRRqO1gQM
+  youtube_id: UhkRRqO1gQM
+  channel: Chart Fanatics
+  views: 486058
+  duration_s: 13340
+  query: Chart Fanatics Live trading
+  query_group: podcasts_episodes
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_udji2abyycs
+  type: media
+  rank: 24
+  title: Inversion Fair Value Gaps (IFVG) - ICT Concepts
+  url: https://www.youtube.com/watch?v=uDJI2AbyyCs
+  youtube_id: uDJI2AbyyCs
+  channel: TTrades
+  views: 456152
+  duration_s: 615
+  query: ICT mentorship liquidity fair value gap
+  query_group: methods
+  covers:
+  - concept_fair_value_gap
+  - concept_chart_patterns
+  - concept_smart_money_concepts
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_tvoqr6objnu
+  type: media
+  rank: 25
+  title: Trading LIVE with One of the World's BEST Scalpers (PERFECT Sniper Entries)
+  url: https://www.youtube.com/watch?v=TvoQr6ObjnU
+  youtube_id: TvoQr6ObjnU
+  channel: Chart Fanatics and Andrea Cimi
+  views: 448871
+  duration_s: 20475
+  query: Chart Fanatics Live trading
+  query_group: podcasts_episodes
+  covers:
+  - concept_scalping
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_u8g9uqbn2xc
+  type: media
+  rank: 26
+  title: 12/02/18 - Weekend Mind Prep  - Trading in the Zone - Mark Douglas
+  url: https://www.youtube.com/watch?v=U8g9uqbn2Xc
+  youtube_id: U8g9uqbn2Xc
+  channel: Afurakan Emporium
+  views: 436818
+  duration_s: 28797
+  query: trading psychology Mark Douglas trading in the zone
+  query_group: methods
+  covers: []
+  speaker_ids:
+  - person_mark_douglas
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_rovrilgowiu
+  type: media
+  rank: 27
+  title: 'Paul Tudor Jones: Investing in a More “JUST” World'
+  url: https://www.youtube.com/watch?v=rOVrIlgOwIU
+  youtube_id: rOVrIlgOwIU
+  channel: Goldman Sachs
+  views: 431902
+  duration_s: 2685
+  query: Paul Tudor Jones interview trading
+  query_group: legends
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_iez__wmesxe
+  type: media
+  rank: 28
+  title: How to Use Order Flow in Trading? || Masterclass
+  url: https://www.youtube.com/watch?v=ieZ--wMeSxE
+  youtube_id: ieZ--wMeSxE
+  channel: Booming Bulls
+  views: 418928
+  duration_s: 1582
+  query: order flow footprint trading explained
+  query_group: methods
+  covers:
+  - concept_order_flow
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_s31j5acsoqu
+  type: media
+  rank: 29
+  title: Legendary Trader Paul Tudor Jones on AI Risk, Bubbles and Buffett
+  url: https://www.youtube.com/watch?v=S31J5ACsOqU
+  youtube_id: S31J5ACsOqU
+  channel: Invest Like The Best
+  views: 413042
+  duration_s: 4276
+  query: Paul Tudor Jones interview trading
+  query_group: legends
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt__kgvl93xfye
+  type: media
+  rank: 30
+  title: 'Trading LIVE With The World’s #1 Prop Firm Scalper ($2.5M+ Payouts)'
+  url: https://www.youtube.com/watch?v=-kGVL93XfyE
+  youtube_id: -kGVL93XfyE
+  channel: Chart Fanatics and Tipsy Trader
+  views: 400277
+  duration_s: 7440
+  query: prop firm futures trader interview payouts
+  query_group: methods
+  covers:
+  - concept_prop_firm_risk_rules
+  - concept_scalping
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_k_0yfmf6t2k
+  type: media
+  rank: 31
+  title: '"Anyone Can Trade For A Living" - Ray Barros | Trader Interview'
+  url: https://www.youtube.com/watch?v=k_0yfMF6t2k
+  youtube_id: k_0yfMF6t2k
+  channel: Etienne Crete - Desire To TRADE
+  views: 394122
+  duration_s: 2240
+  query: Desire To Trade interview
+  query_group: podcasts_episodes
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_rqu_aod9buo
+  type: media
+  rank: 32
+  title: MASTER Order Flow Trading in 83 Minutes (Complete OFT Course)
+  url: https://www.youtube.com/watch?v=Rqu-AoD9BUo
+  youtube_id: Rqu-AoD9BUo
+  channel: Mind Math Money
+  views: 393551
+  duration_s: 5022
+  query: order flow footprint trading explained
+  query_group: methods
+  covers:
+  - concept_order_flow
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_sirwczimftg
+  type: media
+  rank: 33
+  title: Best Loser Wins - Flip The Switch
+  url: https://www.youtube.com/watch?v=siRWczImFtg
+  youtube_id: siRWczImFtg
+  channel: Trader Tom
+  views: 360028
+  duration_s: 1155
+  query: Tom Hougaard Best Loser Wins interview
+  query_group: legends
+  covers:
+  - concept_trading_psychology
+  speaker_ids:
+  - person_tom_hougaard
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_vzh4y96fyxy
+  type: media
+  rank: 34
+  title: How to Trade Like The Banks - Wyckoff Method Explained in 8 minutes
+  url: https://www.youtube.com/watch?v=VZh4Y96FYxY
+  youtube_id: VZh4Y96FYxY
+  channel: The Moving Average
+  views: 347055
+  duration_s: 509
+  query: Wyckoff method accumulation distribution explained
+  query_group: methods
+  covers:
+  - concept_wyckoff_method
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_j2kscd2tlce
+  type: media
+  rank: 35
+  title: 'BEST Trading Podcast: From Losing To Consistent Profitable Trader Managing $50 Million'
+  url: https://www.youtube.com/watch?v=j2KsCD2tlcE
+  youtube_id: j2KsCD2tlcE
+  channel: Words of Rizdom
+  views: 331213
+  duration_s: 8489
+  query: Words of Rizdom trading podcast
+  query_group: podcasts_episodes
+  covers:
+  - concept_edge
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_zw2_bc69euu
+  type: media
+  rank: 36
+  title: Master Price Action From The Best! - Al Brooks | Trader Interview
+  url: https://www.youtube.com/watch?v=Zw2_bc69euU
+  youtube_id: Zw2_bc69euU
+  channel: Etienne Crete - Desire To TRADE
+  views: 329943
+  duration_s: 3267
+  query: Al Brooks price action interview
+  query_group: legends
+  covers:
+  - concept_price_action
+  speaker_ids:
+  - person_al_brooks
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_yccatd0hfvy
+  type: media
+  rank: 37
+  title: Scalping How to Enter - Al Brooks - Price Action Symposium
+  url: https://www.youtube.com/watch?v=yccatD0hfvY
+  youtube_id: yccatD0hfvY
+  channel: Trader Tom
+  views: 322574
+  duration_s: 2349
+  query: Al Brooks price action interview
+  query_group: legends
+  covers:
+  - concept_scalping
+  - concept_price_action
+  speaker_ids:
+  - person_al_brooks
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_9j1jttkm4s8
+  type: media
+  rank: 38
+  title: 'ICT Roundtable: NBB Trader, JadeCapFX, Ali khan ICT, Kimmel Trading | WOR Podcast EP.100'
+  url: https://www.youtube.com/watch?v=9j1jttkm4s8
+  youtube_id: 9j1jttkm4s8
+  channel: Words of Rizdom
+  views: 318219
+  duration_s: 6917
+  query: Words of Rizdom trading podcast
+  query_group: podcasts_episodes
+  covers:
+  - concept_smart_money_concepts
+  speaker_ids:
+  - person_nbb_trader
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_hnio7dbzw9a
+  type: media
+  rank: 39
+  title: Ray Dalio & Andrew Ross Sorkin on His New Book "1929" and How Debt Drives Every Crash
+  url: https://www.youtube.com/watch?v=HnIo7DbZw9A
+  youtube_id: HnIo7DbZw9A
+  channel: Principles by Ray Dalio
+  views: 294788
+  duration_s: 2657
+  query: Ray Dalio interview markets debt cycle
+  query_group: legends
+  covers: []
+  speaker_ids:
+  - person_ray_dalio
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_w42kzzb9oyy
+  type: media
+  rank: 40
+  title: Worlds Best ICT Trader BREAKS World Record Prop Firm Payout  - JadeCap
+  url: https://www.youtube.com/watch?v=w42kzZb9oYY
+  youtube_id: w42kzZb9oYY
+  channel: Words of Rizdom
+  views: 294514
+  duration_s: 5959
+  query: prop firm futures trader interview payouts
+  query_group: methods
+  covers:
+  - concept_prop_firm_risk_rules
+  - concept_edge
+  - concept_smart_money_concepts
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_acogfvl6lk8
+  type: media
+  rank: 41
+  title: The Genius Who Outsmarted The Prop Firm Game, And Made $1.5M In Payouts.
+  url: https://www.youtube.com/watch?v=aCOgfvL6lK8
+  youtube_id: aCOgfvL6lK8
+  channel: Titans Of Tomorrow
+  views: 287142
+  duration_s: 4352
+  query: prop firm futures trader interview payouts
+  query_group: methods
+  covers:
+  - concept_prop_firm_risk_rules
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_lujex56d0pe
+  type: media
+  rank: 42
+  title: 'Market Wizards: How to Become a Successful Trader with Jack Schwager | WOR Podcast - EP.121'
+  url: https://www.youtube.com/watch?v=LUJex56D0PE
+  youtube_id: LUJex56D0PE
+  channel: Words of Rizdom
+  views: 269694
+  duration_s: 6853
+  query: Jack Schwager Market Wizards interview lessons
+  query_group: legends
+  covers: []
+  speaker_ids:
+  - person_jack_schwager
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_rsaeh1qkjxo
+  type: media
+  rank: 43
+  title: Linda Raschke - She MASTERED Trading | Top 20 World Trader & Market Wizard
+  url: https://www.youtube.com/watch?v=RSAEh1qKjxo
+  youtube_id: RSAEh1qKjxo
+  channel: Words of Rizdom
+  views: 258195
+  duration_s: 5063
+  query: Linda Raschke interview trading
+  query_group: legends
+  covers:
+  - concept_edge
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_kbxnfay_bqe
+  type: media
+  rank: 44
+  title: The Best Price Action Trader In The World! - Al Brooks | Trader Interview
+  url: https://www.youtube.com/watch?v=KBXnfay-BQE
+  youtube_id: KBXnfay-BQE
+  channel: Etienne Crete - Desire To TRADE
+  views: 256271
+  duration_s: 3022
+  query: Al Brooks price action interview
+  query_group: legends
+  covers:
+  - concept_price_action
+  speaker_ids:
+  - person_al_brooks
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt__azzki13m6m
+  type: media
+  rank: 45
+  title: 'Umar Ashraf: Making $18 Million Day Trading | WOR Podcast EP.70'
+  url: https://www.youtube.com/watch?v=_aZZkI13m6M
+  youtube_id: _aZZkI13m6M
+  channel: Words of Rizdom
+  views: 255691
+  duration_s: 5554
+  query: Words of Rizdom trading podcast
+  query_group: podcasts_episodes
+  covers: []
+  speaker_ids:
+  - person_umar_ashraf
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_oofh3j3uxoe
+  type: media
+  rank: 46
+  title: The BEST Trading Advice from Tom Hougaard's "Best Loser Wins"
+  url: https://www.youtube.com/watch?v=OOFH3j3UxoE
+  youtube_id: OOFH3j3UxoE
+  channel: ImanTrading
+  views: 255039
+  duration_s: 1350
+  query: Tom Hougaard Best Loser Wins interview
+  query_group: legends
+  covers:
+  - concept_trading_psychology
+  speaker_ids:
+  - person_tom_hougaard
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_xkbdzb0upac
+  type: media
+  rank: 47
+  title: The Story of James Simons - Renaissance Technologies & Medallion Fund
+  url: https://www.youtube.com/watch?v=xkbdZb0UPac
+  youtube_id: xkbdZb0UPac
+  channel: Patrick Boyle
+  views: 247154
+  duration_s: 1339
+  query: Jim Simons interview Renaissance
+  query_group: legends
+  covers: []
+  speaker_ids:
+  - person_jim_simons
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_zzjxtufvzj4
+  type: media
+  rank: 48
+  title: MOST Paid Prop Firm Trader OkalaNQ Traded A Simple Trading Strategy to Make $5+ Million
+  url: https://www.youtube.com/watch?v=zZJXtUFVzj4
+  youtube_id: zZJXtUFVzj4
+  channel: Words of Rizdom
+  views: 240650
+  duration_s: 5593
+  query: prop firm futures trader interview payouts
+  query_group: methods
+  covers:
+  - concept_edge
+  - concept_prop_firm_risk_rules
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_rc_j7unobio
+  type: media
+  rank: 49
+  title: 'TRADING IN THE ZONE SUMMARY by Mark Douglas: Master Trading Psychology Like a Professional Trader'
+  url: https://www.youtube.com/watch?v=rc_J7UnObio
+  youtube_id: rc_J7UnObio
+  channel: Financial Market Wizards
+  views: 233534
+  duration_s: 610
+  query: trading psychology Mark Douglas trading in the zone
+  query_group: methods
+  covers:
+  - concept_trading_psychology
+  speaker_ids:
+  - person_mark_douglas
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_m_td6x0csoi
+  type: media
+  rank: 50
+  title: The Perfect VCP Trading Setup with Mark Minervini
+  url: https://www.youtube.com/watch?v=M_tD6X0CSOI
+  youtube_id: M_tD6X0CSOI
+  channel: TraderLion
+  views: 231491
+  duration_s: 2305
+  query: Mark Minervini interview SEPA VCP
+  query_group: legends
+  covers:
+  - concept_growth_momentum_canslim
+  speaker_ids:
+  - person_mark_minervini
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_3o5ryjzawwa
+  type: media
+  rank: 51
+  title: Trading Smaller Made Me Rich While Trading Big Kept Me Broke | Mark Douglas Psychology
+  url: https://www.youtube.com/watch?v=3O5ryJZaWWA
+  youtube_id: 3O5ryJZaWWA
+  channel: Mark Douglas Trading Zone
+  views: 227736
+  duration_s: 1553
+  query: trading psychology Mark Douglas trading in the zone
+  query_group: methods
+  covers: []
+  speaker_ids:
+  - person_mark_douglas
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_a0wvkebq8v0
+  type: media
+  rank: 52
+  title: George Soros interview (1995)
+  url: https://www.youtube.com/watch?v=A0WvKEbq8v0
+  youtube_id: A0WvKEbq8v0
+  channel: Manufacturing Intellect
+  views: 227155
+  duration_s: 3282
+  query: George Soros interview reflexivity
+  query_group: legends
+  covers: []
+  speaker_ids:
+  - person_george_soros
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_ht_8dx0pgha
+  type: media
+  rank: 53
+  title: Market Wizards' Jack Schwager interview | Lessons from the worlds greatest traders
+  url: https://www.youtube.com/watch?v=Ht-8dx0PGHA
+  youtube_id: Ht-8dx0PGHA
+  channel: Chat With Traders
+  views: 224813
+  duration_s: 5783
+  query: Jack Schwager Market Wizards interview lessons
+  query_group: legends
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_imeuzvztopq
+  type: media
+  rank: 54
+  title: Investing icon Stanley Druckenmiller sits down with Joe Kernen at CNBC's Delivering Alpha
+  url: https://www.youtube.com/watch?v=IMeuzvzToPQ
+  youtube_id: IMeuzvzToPQ
+  channel: CNBC Events
+  views: 219245
+  duration_s: 1540
+  query: Stanley Druckenmiller interview investing philosophy
+  query_group: legends
+  covers:
+  - concept_edge
+  speaker_ids:
+  - person_stanley_druckenmiller
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_0bdcy7wkurq
+  type: media
+  rank: 55
+  title: 'Rake Trades: Losing $50,000 Trading To Making 6 Figures A Trade | WOR Podcast EP.75'
+  url: https://www.youtube.com/watch?v=0bDCY7WKURQ
+  youtube_id: 0bDCY7WKURQ
+  channel: Words of Rizdom
+  views: 192806
+  duration_s: 9654
+  query: Words of Rizdom trading podcast
+  query_group: podcasts_episodes
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_k8m6n9lytww
+  type: media
+  rank: 56
+  title: PAUL TUDOR JONES - Billion Dollar Stock Trader (200 day moving average)
+  url: https://www.youtube.com/watch?v=k8M6N9lYTww
+  youtube_id: k8M6N9lYTww
+  channel: Financial Wisdom
+  views: 192753
+  duration_s: 606
+  query: Paul Tudor Jones interview trading
+  query_group: legends
+  covers:
+  - concept_moving_averages
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_aqcow_pja7e
+  type: media
+  rank: 57
+  title: 'Jack Schwager presents: 15 Hedge Fund Market Wizards trading secrets & insights in their own words'
+  url: https://www.youtube.com/watch?v=AqCOw-pja7E
+  youtube_id: AqCOw-pja7E
+  channel: OpalesqueTV
+  views: 192303
+  duration_s: 1568
+  query: Jack Schwager Market Wizards interview lessons
+  query_group: legends
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_4qptrcwqk5g
+  type: media
+  rank: 58
+  title: Lessons From History’s Best Traders | Jack Schwager
+  url: https://www.youtube.com/watch?v=4QpTRcWQk5g
+  youtube_id: 4QpTRcWQk5g
+  channel: Excess Returns
+  views: 186963
+  duration_s: 4522
+  query: Jack Schwager Market Wizards interview lessons
+  query_group: legends
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_qrtikfnbh4y
+  type: media
+  rank: 59
+  title: Trade Like a WILLIAM O'NEIL Disciple  (How To Make Money In Stocks)
+  url: https://www.youtube.com/watch?v=qrtikfnBH4Y
+  youtube_id: qrtikfnBH4Y
+  channel: Financial Wisdom
+  views: 186942
+  duration_s: 681
+  query: William O'Neil interview CANSLIM
+  query_group: legends
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_ghzbv1w4_ii
+  type: media
+  rank: 60
+  title: 11,300% Return in One Year | Interview with Larry Williams
+  url: https://www.youtube.com/watch?v=GHZBv1W4-II
+  youtube_id: GHZBv1W4-II
+  channel: TraderLion
+  views: 183628
+  duration_s: 3742
+  query: Larry Williams interview trading championship
+  query_group: legends
+  covers: []
+  speaker_ids:
+  - person_larry_williams
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_kovezcigaya
+  type: media
+  rank: 61
+  title: Reading Charts with William O'neil
+  url: https://www.youtube.com/watch?v=KOVEzCIGAyA
+  youtube_id: KOVEzCIGAyA
+  channel: CANSLIM Library
+  views: 182506
+  duration_s: 722
+  query: William O'Neil interview CANSLIM
+  query_group: legends
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_vp77n0p3cba
+  type: media
+  rank: 62
+  title: George Soros interview (1998)
+  url: https://www.youtube.com/watch?v=VP77N0p3cBA
+  youtube_id: VP77N0p3cBA
+  channel: Manufacturing Intellect
+  views: 181751
+  duration_s: 1216
+  query: George Soros interview reflexivity
+  query_group: legends
+  covers: []
+  speaker_ids:
+  - person_george_soros
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_zjimjwq44vc
+  type: media
+  rank: 63
+  title: 🔴 Navigating Market Cycles (w/ Howard Marks) | Real Vision Classics
+  url: https://www.youtube.com/watch?v=zjImJwQ44Vc
+  youtube_id: zjImJwQ44Vc
+  channel: Real Vision
+  views: 161443
+  duration_s: 2931
+  query: Real Vision trader interview
+  query_group: podcasts_episodes
+  covers: []
+  speaker_ids:
+  - person_howard_marks
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_re9ocqwxyw0
+  type: media
+  rank: 64
+  title: FBI Informant William O'neal’s Full Interview
+  url: https://www.youtube.com/watch?v=rE9oCQwXyW0
+  youtube_id: rE9oCQwXyW0
+  channel: Strike Force
+  views: 160410
+  duration_s: 3818
+  query: William O'Neil interview CANSLIM
+  query_group: legends
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_sdoibfukgfu
+  type: media
+  rank: 65
+  title: 🔴 Predicting The Global Economy (w/ Raoul Pal) | Macro Insiders | Real Vision™
+  url: https://www.youtube.com/watch?v=SDoIbFuKgfU
+  youtube_id: SDoIbFuKgfU
+  channel: Real Vision
+  views: 149967
+  duration_s: 2377
+  query: Real Vision trader interview
+  query_group: podcasts_episodes
+  covers:
+  - concept_fundamental_macro_analysis
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_zw96qkun9_g
+  type: media
+  rank: 66
+  title: How Clement Ang Achieved 150%+ Returns in the US Investing Championship
+  url: https://www.youtube.com/watch?v=zw96qkUn9_g
+  youtube_id: zw96qkUn9_g
+  channel: TraderLion
+  views: 115510
+  duration_s: 12418
+  query: TraderLion podcast US Investing Championship
+  query_group: podcasts_episodes
+  covers: []
+  speaker_ids:
+  - person_clement_ang
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_r1yosmhp76g
+  type: media
+  rank: 67
+  title: ED SEYKOTA Interview by Jack Schwager (Market Wizards) Best stock traders.
+  url: https://www.youtube.com/watch?v=R1YoSmHp76g
+  youtube_id: R1YoSmHp76g
+  channel: Financial Wisdom
+  views: 110190
+  duration_s: 602
+  query: Ed Seykota interview trend following
+  query_group: legends
+  covers: []
+  speaker_ids:
+  - person_ed_seykota
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_ug8czabsipm
+  type: media
+  rank: 68
+  title: He Won the US Investing Championship With Just 3 Setups (805% Return)
+  url: https://www.youtube.com/watch?v=uG8CzABsIPM
+  youtube_id: uG8CzABsIPM
+  channel: Dollar Wisdom
+  views: 99159
+  duration_s: 690
+  query: TraderLion podcast US Investing Championship
+  query_group: podcasts_episodes
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_a0nqkil5o4m
+  type: media
+  rank: 69
+  title: Futures TRADING Champion Trained by Larry Williams (253.8% Return)
+  url: https://www.youtube.com/watch?v=a0nQKIl5o4M
+  youtube_id: a0nQKIl5o4M
+  channel: Words of Rizdom
+  views: 98845
+  duration_s: 4263
+  query: Larry Williams interview trading championship
+  query_group: legends
+  covers:
+  - concept_edge
+  speaker_ids:
+  - person_larry_williams
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_0h7ueyrkbds
+  type: media
+  rank: 70
+  title: '"How To REALLY Trade Like The Banks" - Jason Sen | Trader Interview'
+  url: https://www.youtube.com/watch?v=0h7ueyRKBds
+  youtube_id: 0h7ueyRKBds
+  channel: Etienne Crete - Desire To TRADE
+  views: 97971
+  duration_s: 2291
+  query: Desire To Trade interview
+  query_group: podcasts_episodes
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_vwn6y5z3xs8
+  type: media
+  rank: 71
+  title: 'Kiril Sokoloff: Founder And Chairman Of 13D Global Strategy & Research | Interview | Real Vision™'
+  url: https://www.youtube.com/watch?v=VWN6Y5Z3xs8
+  youtube_id: VWN6Y5Z3xs8
+  channel: Real Vision
+  views: 96453
+  duration_s: 4192
+  query: Real Vision trader interview
+  query_group: podcasts_episodes
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_a4uj3rhhbfa
+  type: media
+  rank: 72
+  title: The Art of Position Sizing with Anish Sikri | US Investing Championship Top Contender
+  url: https://www.youtube.com/watch?v=a4uJ3rHhbfA
+  youtube_id: a4uJ3rHhbfA
+  channel: TraderLion
+  views: 94450
+  duration_s: 7044
+  query: TraderLion podcast US Investing Championship
+  query_group: podcasts_episodes
+  covers:
+  - concept_position_sizing
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_oshjzjc5fji
+  type: media
+  rank: 73
+  title: Ray Dalio Just Issued His Most Terrifying Debt Warning Yet.
+  url: https://www.youtube.com/watch?v=oshjZjc5FJI
+  youtube_id: oshjZjc5FJI
+  channel: Eurodollar University
+  views: 94339
+  duration_s: 1390
+  query: Ray Dalio interview markets debt cycle
+  query_group: legends
+  covers: []
+  speaker_ids:
+  - person_ray_dalio
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_wilzabesy5w
+  type: media
+  rank: 74
+  title: Linda Raschke shares trading tips from 45 years of trading and being a hedge fund trader
+  url: https://www.youtube.com/watch?v=WILZABEsY5w
+  youtube_id: WILZABEsY5w
+  channel: Edgewonk
+  views: 89494
+  duration_s: 4176
+  query: Linda Raschke interview trading
+  query_group: legends
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_xglptjtch0a
+  type: media
+  rank: 75
+  title: Auction Market Theory Explained in 20 Minutes (How Pros Read Market Context)
+  url: https://www.youtube.com/watch?v=xGlPTJTCh0A
+  youtube_id: xGlPTJTCh0A
+  channel: Trader Drysdale
+  views: 84221
+  duration_s: 1140
+  query: auction market theory volume profile trading explained
+  query_group: methods
+  covers:
+  - concept_auction_market_theory
+  - concept_vwap
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_ktqkri_j9km
+  type: media
+  rank: 76
+  title: The 5 Essential Sell Rules from a Market Wizard - Linda Bradford Raschke
+  url: https://www.youtube.com/watch?v=kTqKRi-j9kM
+  youtube_id: kTqKRi-j9kM
+  channel: TraderLion
+  views: 82171
+  duration_s: 5238
+  query: Linda Raschke interview trading
+  query_group: legends
+  covers:
+  - concept_trading_plan
+  speaker_ids:
+  - person_linda_raschke
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_iolsqwz5_fw
+  type: media
+  rank: 77
+  title: Trend following, risk management & long term survival w/ Jon Boorman (stock trader)
+  url: https://www.youtube.com/watch?v=iOlSqwz5-Fw
+  youtube_id: iOlSqwz5-Fw
+  channel: Chat With Traders
+  views: 81677
+  duration_s: 4707
+  query: Ed Seykota interview trend following
+  query_group: legends
+  covers:
+  - concept_trend_following
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_e28jp_hk5_e
+  type: media
+  rank: 78
+  title: Best Loser Wins Summary (Hindi) | Why 90% Traders Lose 😳 Trading Psychology by Tom Hougaard
+  url: https://www.youtube.com/watch?v=e28Jp-hk5_E
+  youtube_id: e28Jp-hk5_E
+  channel: ThinkIQ
+  views: 80662
+  duration_s: 2370
+  query: Tom Hougaard Best Loser Wins interview
+  query_group: legends
+  covers:
+  - concept_trading_psychology
+  speaker_ids:
+  - person_tom_hougaard
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_aq5y2egdaw8
+  type: media
+  rank: 79
+  title: 'Masterclass with Larry Williams: COT, Market Cycles & Trading Secrets Revealed'
+  url: https://www.youtube.com/watch?v=Aq5y2eGDAW8
+  youtube_id: Aq5y2eGDAW8
+  channel: Crowded Market Report
+  views: 79739
+  duration_s: 3029
+  query: Larry Williams interview trading championship
+  query_group: legends
+  covers:
+  - concept_fundamental_macro_analysis
+  speaker_ids:
+  - person_larry_williams
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_12ur7yovwto
+  type: media
+  rank: 80
+  title: '#96 Tom Hougaard: Best Loser Wins'
+  url: https://www.youtube.com/watch?v=12Ur7YovWTo
+  youtube_id: 12Ur7YovWTo
+  channel: AlphaMind
+  views: 76324
+  duration_s: 4630
+  query: Tom Hougaard Best Loser Wins interview
+  query_group: legends
+  covers:
+  - concept_trading_psychology
+  speaker_ids:
+  - person_tom_hougaard
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_p7nxhdb4fp4
+  type: media
+  rank: 81
+  title: George Soros Stanley Druckenmiller Interview Vintage 1994
+  url: https://www.youtube.com/watch?v=P7NxHdb4Fp4
+  youtube_id: P7NxHdb4Fp4
+  channel: FX Education FX Analysis
+  views: 71832
+  duration_s: 744
+  query: Stanley Druckenmiller interview investing philosophy
+  query_group: legends
+  covers: []
+  speaker_ids:
+  - person_george_soros
+  - person_stanley_druckenmiller
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_n_ybzyvgg_w
+  type: media
+  rank: 82
+  title: Market Wizard Linda Raschke Speaks @ the SuperTrader Summit
+  url: https://www.youtube.com/watch?v=n-YbzyVgG-w
+  youtube_id: n-YbzyVgG-w
+  channel: Major League Trading
+  views: 68813
+  duration_s: 4011
+  query: Linda Raschke interview trading
+  query_group: legends
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_qiewoxxcjt0
+  type: media
+  rank: 83
+  title: Investing In Overpriced Markets (w/ Howard Marks) | Interview | Real Vision™
+  url: https://www.youtube.com/watch?v=qieWOXxCJT0
+  youtube_id: qieWOXxCJT0
+  channel: Real Vision Presents
+  views: 66690
+  duration_s: 592
+  query: Real Vision trader interview
+  query_group: podcasts_episodes
+  covers: []
+  speaker_ids:
+  - person_howard_marks
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_anefv0s2kty
+  type: media
+  rank: 84
+  title: '020: Larry Williams: Tips and Insights from 50 Years of Trading [AUDIO ONLY]'
+  url: https://www.youtube.com/watch?v=AnEfV0S2KTY
+  youtube_id: AnEfV0S2KTY
+  channel: Better System Trader
+  views: 64673
+  duration_s: 4036
+  query: Larry Williams interview trading championship
+  query_group: legends
+  covers: []
+  speaker_ids:
+  - person_larry_williams
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_3db1qdnorlm
+  type: media
+  rank: 85
+  title: How Vibha Jha Won the US Investing Championship – The Strategy That Beat Everyone
+  url: https://www.youtube.com/watch?v=3Db1QDnORLM
+  youtube_id: 3Db1QDnORLM
+  channel: Financial Wisdom
+  views: 61466
+  duration_s: 841
+  query: TraderLion podcast US Investing Championship
+  query_group: podcasts_episodes
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_nufyaupamb0
+  type: media
+  rank: 86
+  title: A MasterClass in Trend Following | Jerry Parker
+  url: https://www.youtube.com/watch?v=NUfyaUPAmb0
+  youtube_id: NUfyaUPAmb0
+  channel: Excess Returns
+  views: 55513
+  duration_s: 3770
+  query: Ed Seykota interview trend following
+  query_group: legends
+  covers:
+  - concept_trend_following
+  speaker_ids:
+  - person_jerry_parker
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt__0vuccxqdwc
+  type: media
+  rank: 87
+  title: Mark Minervini :8 Keys Super performance  David Ryan VCP Pattern Risk Management Profitable Trading
+  url: https://www.youtube.com/watch?v=-0VUCCxQDWc
+  youtube_id: -0VUCCxQDWc
+  channel: Stocks & Stories 2
+  views: 55288
+  duration_s: 3415
+  query: Mark Minervini interview SEPA VCP
+  query_group: legends
+  covers:
+  - concept_growth_momentum_canslim
+  speaker_ids:
+  - person_mark_minervini
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_fa7lkhbzqfy
+  type: media
+  rank: 88
+  title: How To Trade Stocks Like a Pro | Interview with Professional Trader Matt Caruso, CFA, CMT
+  url: https://www.youtube.com/watch?v=FA7lKHBzqFY
+  youtube_id: FA7lKHBzqFY
+  channel: Richard Moglen
+  views: 47484
+  duration_s: 4104
+  query: Desire To Trade interview
+  query_group: podcasts_episodes
+  covers: []
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_yogxuyxxyxs
+  type: media
+  rank: 89
+  title: Auction Market Theory EXPLAINED (And How to Use It)
+  url: https://www.youtube.com/watch?v=YOGXuYxXyxs
+  youtube_id: YOGXuYxXyxs
+  channel: Cammy Capital
+  views: 46164
+  duration_s: 946
+  query: auction market theory volume profile trading explained
+  query_group: methods
+  covers:
+  - concept_auction_market_theory
+  - concept_premium_discount_ote
+  - concept_volume_profile
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_acttxb184pc
+  type: media
+  rank: 90
+  title: William O'Neil gives CANSLIM workshop (January 2010)
+  url: https://www.youtube.com/watch?v=acTtXB184Pc
+  youtube_id: acTtXB184Pc
+  channel: The Speculator's Library
+  views: 42766
+  duration_s: 4728
+  query: William O'Neil interview CANSLIM
+  query_group: legends
+  covers:
+  - concept_growth_momentum_canslim
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_dtv2yeqb_to
+  type: media
+  rank: 91
+  title: 'Forex trader: how Bruce Kovner went from taxi driver to billionaire!'
+  url: https://www.youtube.com/watch?v=DtV2yEQB-To
+  youtube_id: DtV2yEQB-To
+  channel: Thami Kabbaj
+  views: 41928
+  duration_s: 604
+  query: Bruce Kovner interview
+  query_group: legends
+  covers: []
+  speaker_ids:
+  - person_bruce_kovner
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_v2phnkqb4ts
+  type: media
+  rank: 92
+  title: Phương pháp giao dịch VCP & Nguyên tắc vàng giúp MARK MINERVINI đánh bại THỊ TRƯỜNG
+  url: https://www.youtube.com/watch?v=V2pHnkqb4ts
+  youtube_id: V2pHnkqb4ts
+  channel: Phạm Duy Định
+  views: 40282
+  duration_s: 3619
+  query: Mark Minervini interview SEPA VCP
+  query_group: legends
+  covers:
+  - concept_growth_momentum_canslim
+  speaker_ids:
+  - person_mark_minervini
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt__9fbzngzlza
+  type: media
+  rank: 93
+  title: Why America's Cattle Ranchers Keep Getting Squeezed feat. Bill Bullard | Odd Lots
+  url: https://www.youtube.com/watch?v=_9FBzNGZLZA
+  youtube_id: _9FBzNGZLZA
+  channel: Bloomberg Podcasts
+  views: 39848
+  duration_s: 2684
+  query: Odd Lots market structure
+  query_group: podcasts_episodes
+  covers:
+  - concept_leverage_margin
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_q5ntwbssj1a
+  type: media
+  rank: 94
+  title: Ed Seykota Interview with Michael Covel on Trend Following Radio
+  url: https://www.youtube.com/watch?v=q5NtWBSSJ1A
+  youtube_id: q5NtWBSSJ1A
+  channel: Trend Following
+  views: 38390
+  duration_s: 3383
+  query: Ed Seykota interview trend following
+  query_group: legends
+  covers:
+  - concept_trend_following
+  speaker_ids:
+  - person_ed_seykota
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_ktlnifdmphc
+  type: media
+  rank: 95
+  title: Auction market theory, volume profiling & mindfullness w/ Kam Dhadwar
+  url: https://www.youtube.com/watch?v=ktLnIfdMpHc
+  youtube_id: ktLnIfdMpHc
+  channel: Chat With Traders
+  views: 35018
+  duration_s: 3713
+  query: auction market theory volume profile trading explained
+  query_group: methods
+  covers:
+  - concept_auction_market_theory
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_tfsw4ns52c8
+  type: media
+  rank: 96
+  title: Understanding Auction Imbalances In Trading - Market & Volume Profiling | Axia Futures
+  url: https://www.youtube.com/watch?v=tfSw4nS52c8
+  youtube_id: tfSw4nS52c8
+  channel: Axia Futures
+  views: 32853
+  duration_s: 1327
+  query: auction market theory volume profile trading explained
+  query_group: methods
+  covers:
+  - concept_fair_value_gap
+  - concept_market_regimes
+  - concept_order_flow
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_atxgrz_schk
+  type: media
+  rank: 97
+  title: How AI Is Upending the World of Mathematics | Odd Lots
+  url: https://www.youtube.com/watch?v=aTXGrz-sChk
+  youtube_id: aTXGrz-sChk
+  channel: Bloomberg Podcasts
+  views: 27597
+  duration_s: 3703
+  query: Odd Lots market structure
+  query_group: podcasts_episodes
+  covers:
+  - concept_leverage_margin
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_206rkb3los0
+  type: media
+  rank: 98
+  title: 'MacroVoices #359 Lyn Alden: 2023 Macro Outlook'
+  url: https://www.youtube.com/watch?v=206rKb3LoS0
+  youtube_id: 206rKb3LoS0
+  channel: Macro Voices
+  views: 23761
+  duration_s: 4009
+  query: MacroVoices podcast
+  query_group: podcasts_episodes
+  covers:
+  - concept_fundamental_macro_analysis
+  speaker_ids:
+  - person_erik_townsend
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_7luqbxqhnn4
+  type: media
+  rank: 99
+  title: Everything in Markets Is Now Moving Incredibly Fast | Odd Lots
+  url: https://www.youtube.com/watch?v=7lUQBXqhnn4
+  youtube_id: 7lUQBXqhnn4
+  channel: Bloomberg Podcasts
+  views: 20891
+  duration_s: 2678
+  query: Odd Lots market structure
+  query_group: podcasts_episodes
+  covers:
+  - concept_leverage_margin
+  speaker_ids: []
+  verification: scraped
+  views_as_of: '2026-10-11'
+- id: media_yt_gjfaqoh1yoo
+  type: media
+  rank: 100
+  title: 'MacroVoices #551 Michael Every: Decoding The Global Geopolitical Puzzle'
+  url: https://www.youtube.com/watch?v=GjFaQOh1yOo
+  youtube_id: GjFaQOh1yOo
+  channel: Macro Voices
+  views: 17676
+  duration_s: 4303
+  query: MacroVoices podcast
+  query_group: podcasts_episodes
+  covers: []
+  speaker_ids:
+  - person_erik_townsend
+  verification: scraped
+  views_as_of: '2026-10-11'

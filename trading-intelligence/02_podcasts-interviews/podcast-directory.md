@@ -20,3 +20,103 @@
 | **Trend Following with Michael Covel** | Michael W. Covel | 1,000+ episodes on trend following; guests include Ed Seykota, Larry Hite, Jerry Parker, Tom Basso, Ewan Kirk, Campbell Harvey, Lasse Pedersen. |  | `concept_trend_following` |
 | **We Study Billionaires (The Investor's Podcast)** |  | Investor interviews and book studies (e.g., TIP128 with Edward Thorp on Kelly sizing). |  | `concept_kelly_criterion_optimal_f` |
 | **Words of Rizdom** | Riz Iqbal | Long-form interviews with verified profitable traders; sister show to Chart Fanatics. | ~191 episodes since Nov 2022 (aggregator); grew without famous guests | `concept_trading_psychology`, `concept_prop_firm_risk_rules` |
+
+## Episode catalogs (scraped from RSS)
+
+| Podcast | Episodes saved |
+|---|---|
+| Desire To Trade | 400 |
+| EconTalk | 400 |
+| Odd Lots (Bloomberg) | 400 |
+| We Study Billionaires (The Investor's Podcast) | 400 |
+| Top Traders Unplugged | 400 |
+| Trend Following with Michael Covel | 400 |
+| Real Vision | 397 |
+| Chat With Traders | 337 |
+| The Day Trading Show | 311 |
+| MacroVoices | 300 |
+| Better System Trader | 242 |
+| Words of Rizdom | 169 |
+| Flirting with Models | 127 |
+| TraderLion Podcast | 108 |
+| Invest Like the Best | 69 |
+
+## Episodes featuring people in this knowledge base
+
+Guests detected in episode titles/show notes (show hosts and repeated sponsor/advert lines excluded).
+
+| Person | Episodes | Examples |
+|---|---|---|
+| Tom Basso | 15 | 231: The Trading Panel – Episode 8 (Better System Trader); 236: How to Profit and Protect in Any Market Conditions - with Tom Basso (Better System Trader); 030: Tom Basso – The Logic of Trend Following, and How to Improve Your Trader Psychology w/ a Market Wizard (Chat With Traders) |
+| Jared Tendler | 15 | 086: Jared Tendler – What Traders Can Learn About Mental Game, From a World Champion Poker Coach (Chat With Traders); 217: Jared Tendler – Practical Solutions to Strengthen Your Mental Game (Chat With Traders); The Mental Game Of Trading With Jared Tendler \| 062 (The Day Trading Show) |
+| Jerry Parker | 14 | 017: Jerry Parker from the original Turtles trading group shares 30+ years of trading experience in trend following and systematic trading. (Better System Trader); 216: Trading Triumphs - Jerry Parker #1: Fear of Executing Trades (Better System Trader); 217: Trading Triumphs - Jerry Parker #2: Excessive Risk (Better System Trader) |
+| Ray Dalio | 14 | WHAT'S COMING NEXT... Austin & Rylee #004 (The Day Trading Show); Ray Dalio on the Coming Crisis in US Debt (Odd Lots (Bloomberg)); Ray Dalio on the Five Forces That Make This a Historical Moment (Odd Lots (Bloomberg)) |
+| Brian Shannon | 13 | 029: Brian Shannon – The Science of Technical Analysis, Versus the Art of Trading (Chat With Traders); Brian Shannon Reveals The Most Critical Error Traders Make - VWAP Deep Dive (The Day Trading Show); Exclusive VWAP Deep Dive With Brian Shannon \| 135 (The Day Trading Show) |
+| Al Brooks | 13 | 221: The Best Price Action Trader In The World - Al Brooks (Desire To Trade); 233: The True Life of a Forex Trader \| Forex Trader Motivation (Desire To Trade); 241: Behaviors & Thoughts Of Great Traders \| Forex Trader Motivation (Desire To Trade) |
+| Mark Minervini | 11 | 290 · Mark Ritchie II - Price-Action, Swing Trading Equities from the Long Side (Chat With Traders); +259% Top Trader Reveals His Super Performance Strategy (TraderLion Podcast); +291% Swing Trading in 2023 - The 3 Powerful Setups of a Top Trader (TraderLion Podcast) |
+| Howard Marks | 11 | How Oaktree's Howard Marks Spots a Market Bubble (Odd Lots (Bloomberg)); RWH051: Master of Change w/ Brad Stulberg (We Study Billionaires (The Investor's Podcast)); RWH063: Avoid Disaster w/ Howard Marks (We Study Billionaires (The Investor's Podcast)) |
+| Larry Hite | 10 | 180: Larry Hite – Reflection on Markets & Life—With a Man Who’s Had Vast Financial Success (Chat With Traders); Ep. 1063: Larry Hite Interview with Michael Covel on Trend Following Radio (Trend Following with Michael Covel); Ep. 1088: Larry Hite Interview with Michael Covel on Trend Following Radio (Trend Following with Michael Covel) |
+| Adam Grimes | 9 | 055: Adam Grimes discusses market behavior, discretionary vs quant approaches and the application of Keltner channels in trading. (Better System Trader); 106: Can meditation give traders an edge with Adam Grimes (Better System Trader); 188: "Why trading can be so challenging (and what to do about it)" – Adam Grimes (Better System Trader) |
+| Ali Crooks | 9 | 257 Trade The Process, Results Will Follow - Ali Crooks - @AliCrooks (Desire To Trade); 358:  "Professional Trader Secrets Revealed" - Ali Crooks (@AliCrooks) (Desire To Trade); 366: "Escaping The 9-5 Job For Trading" \| Forex Trader Motivation (Desire To Trade) |
+| Lance Breitstein | 8 | 228: Lance Breitstein – The Ultimate Day Trader, Pt. 1 (Chat With Traders); 229: Lance Breitstein – The Ultimate Day Trader, Pt. 2 (Chat With Traders); 236: Lance Breitstein – The Ultimate Day Trader, Pt. 3 (Chat With Traders) |
+| Annie Duke | 7 | Annie Duke on the Power of Quitting (EconTalk); RWH059: Ask Me Anything w/ William Green (We Study Billionaires (The Investor's Podcast)); RWH069: The Psychology of Investing w/ Emily Haisley (We Study Billionaires (The Investor's Podcast)) |
+| Cliff Asness | 7 | Cliff Asness - "...But Not So Open Your Mind Falls Out" (S3E13) (Flirting with Models); What would Cliff Asness ask St. Peter at the pearly gates? (Flirting with Models); Cliff Asness on How Markets Got Dumber in the Last 10 Years (Odd Lots (Bloomberg)) |
+| Larry Williams | 6 | 020: Larry Williams talks conditional trading, what drives prices, the misuse of indicators, cycles, forecasting markets PLUS 50 years of trading insights (Better System Trader); 039: Michael Cook discusses position sizing to maximise returns, using the market to determine stop levels and the role of discretion in systematic trading. (Better System Trader); 040: Larry Williams discusses algorithmic forecasting, the methods and applications of forecasting, cycles and seasonality, plus some forecasts for the markets in 2016. (Better System Trader) |
+| Ed Seykota | 6 | 034: Michael Melissinos – Launching a Fund at 26, and Trading Trends in 40 Global Futures Markets (Chat With Traders); OI19 BONUS: Living With Ed Seykota ft. David Druz (Top Traders Unplugged); OI19: The Trader Who Never Spoke...Until Now ft. David Druz (Top Traders Unplugged) |
+| Anthony Crudele | 6 | 080: Anthony Crudele – One Traders Volatile Path From (Below) Zero to Hero, and Beyond (Chat With Traders); Ex-Pit Trader Shares Secrets For Success With Anthony Crudele \| 091 (The Day Trading Show); Important Tips For Active Day Traders \| 029 (The Day Trading Show) |
+| Umar Ashraf | 6 | $30+ Million Verified Trader vs 15 Unprofitable Traders (FT Umar Ashraf) (Words of Rizdom); Raja Banks & Umar Ashraf: Building A 9 Figure Business \| WOR Podcast EP.72 (Words of Rizdom); Umar Ashraf: Making $18 Million Day Trading \| WOR Podcast EP.70 (Words of Rizdom) |
+| Richard Dennis | 5 | 067: Jerry Parker – The Turtle Traders Story, Following Major Trends and Managing Investors Money (Chat With Traders); OI10: The Untold Side of the Turtle Trading Legacy ft. Bill Eckhardt & Rob Sorrentino (Top Traders Unplugged); Running 75 Automated Systems While Traveling the World — Exclusive Interview With Laurens Bensdorp (TraderLion Podcast) |
+| Kathy Lien | 5 | The Kathy Lien Method: Refining Your Trading Mindset (The Day Trading Show); 311:Med Student Turned Full-Time Trader - Kathy Lien (Desire To Trade); 437: Day Trading High-Accuracy Fundamentals For A Living - Kathy Lien (Desire To Trade) |
+| Stan Weinstein | 5 | 414: Secrets From 30 Years Day Trading Market Structure - Brian Shannon (Desire To Trade); Interview with Stan Weinstein \| Stage Analysis Secrets \| The TraderLion Podcast \| (Episode 1) (TraderLion Podcast); Lessons from a Stock Market Wizard with Mark Ritchie II (TraderLion Podcast) |
+| Oliver Kell | 5 | 1,379% Return in 3 years \| Interview with David Ryan \| 3X US Investing Champion (Episode 3) (TraderLion Podcast); 941 % Return in 1 Year \| The Story Behind Oliver Kell's US Investing Champion Year (Episode 2) (TraderLion Podcast); How Clement Ang Achieved 150%+ Returns in the US Investing Championship (TraderLion Podcast) |
+| Trader Kane | 5 | The BEST Prop Traders in the World - The Real Secret to 17M + in Prop Payouts (Words of Rizdom); Trader Kane ($2M+) vs 16 Unprofitable Traders - BRUTAL Feedback (Words of Rizdom); Trader Kane: Record Breaking Prop Firm Payout $1,866,230 \| WOR Podcast - EP.133 (Words of Rizdom) |
+| Robert Carver | 4 | 026: Systematic trader Robert Carver discusses trading rules, what makes a good trading rule and the advantages of using continuous rather than binary rules. He also shares insights into over-fitting and the challenges of walk-forward testing that can mak (Better System Trader); 070: Risk Management with Robert Carver (Better System Trader); 393: Secrets From A Profitable Systematic Trader - Robert Carver (Desire To Trade) |
+| Jim Simons | 4 | 183: Gregory Zuckerman – Jim Simons—The Pinnacle of Trading Greatness (Chat With Traders); +382% Return in 1 Year - Why Most Traders FAIL at Shorting from a Trading Champion (TraderLion Podcast); Ep. 1216: Marsten Parker Interview with Michael Covel on Trend Following Radio (Trend Following with Michael Covel) |
+| Alex Temiz | 4 | 323 · Alex Temiz - Starbucks Barista to  8-figure Short Selling Strategy (Chat With Traders); $16+ Million Trader vs 15 Losing Traders (FT Alex Temiz) (Words of Rizdom); Millionaire Trader: The Secret To Making $10 Million Using Support and Resistance (Words of Rizdom) |
+| Tori Trades | 4 | Swing Trading, D*** Pics, & $22k In A Month With Tori Trades \| 092 (The Day Trading Show); The Best Female Trader Roundtable: Tori Trades, Sharline, Jess Ramos, Nehal \| WOR Podcast - EP.129 (Words of Rizdom); Tori Trades: Becoming A Full Time Trader Using The Easiest Concepts \| WOR Podcast EP.74 (Words of Rizdom) |
+| Rajan Dhall | 4 | 504: Lessons From a Full-Time Trader Running a Multi-Million Fund - Rajan Dhall (Desire To Trade); 563: 1 Hour of Genius Trading Advice From Top 1% Traders (Desire To Trade); 579: 7 Traders Share Their Secrets To Become Consistently Profitable (1-Hour Masterclass) (Desire To Trade) |
+| Toby Crabel | 3 | 155: Stories from the trading floor - Damon Pavlatos (Better System Trader); TTU152: Where is the Open? ft. Toby Crabel (Top Traders Unplugged); The 10 Lessons Part Time Traders NEED to Learn to be Successful - From Market Wizard Linda Rashke (TraderLion Podcast) |
+| Claude Shannon | 3 | 140: Jimmy Soni – The Life and Times of Genius Problem Solver, Claude Shannon (Chat With Traders); Can a Phone Be a Cow? (with Philip Auerswald) (EconTalk); BTC188: Claude Shannon and Information Theory with Jimmy Soni (Bitcoin Podcast) (We Study Billionaires (The Investor's Podcast)) |
+| Eugene Fama | 3 | 153: Xiao Qiao – Research Analyst Shares Practical Ways to do Better Research (Chat With Traders); Cliff Asness on How Markets Got Dumber in the Last 10 Years (Odd Lots (Bloomberg)); Eugene Fama and David Booth on the Birth of Modern Finance (Odd Lots (Bloomberg)) |
+| Traveling Trader | 3 | 202: From Electrical Degree To Trading While Traveling - Austin Semeniuk (Desire To Trade); 301: Global Prime Co-Founder Interviews Traveling Trader Etienne Crete (Desire To Trade); Traveling Trader: Why Trading Is The Hardest Thing You’ll Ever Do \| WOR Podcast EP.97 (Words of Rizdom) |
+| Nassim Nicholas Taleb | 3 | Nassim Nicholas Taleb on the Nations, States, and Scale (EconTalk); Nassim Nicholas Taleb on the Pandemic (EconTalk); Nassim Taleb on Living a Good Life in an Age of Volatility (Odd Lots (Bloomberg)) |
+| Daniel Kahneman | 3 | TIP793: Thinking Fast & Slow by Daniel Kahneman w/ Clay Finck (We Study Billionaires (The Investor's Podcast)); SI289: Kahneman, Trend Following & Cocoa ft. Mark Rzepczynski (Top Traders Unplugged); Ep. 1078: Bill Dreiss Interview with Michael Covel on Trend Following Radio (Trend Following with Michael Covel) |
+| Clement Ang | 3 | How Clement Ang Achieved 150%+ Returns in the US Investing Championship (TraderLion Podcast); How to Spot Relative Strength and Trade the Momentum Cycle \| Clement Ang (TraderLion Podcast); US Trading Champion: He Made 520% Competing Against The World’s BEST Traders - Here’s how! (Words of Rizdom) |
+| Ariel Hernandez | 3 | The 7 Puzzle Pieces to a Profitable Trading System \| Ariel Hernandez (TraderLion Podcast); Professional Trading Roundtable: “A 50% Market Crash Is Mathematically Inevitable!” (Words of Rizdom); Trading $30,000 to OVER $10 Million in Only 5 Years! (Words of Rizdom) |
+| Jack D. Schwager | 3 | The Next Generation of Market Wizards — Jack Schwager & George Coyle (TraderLion Podcast); Ep. 1174: Tom Basso Interview with Michael Covel on Trend Following Radio (Trend Following with Michael Covel); Market Wizards: How to Become a Successful Trader with Jack Schwager \| WOR Podcast - EP.121 (Words of Rizdom) |
+| Ted Zhang | 3 | Trading $30 Million at Age 25 - The Story of Ted Zhang, Momentum Portfolio Manager (TraderLion Podcast); Elite Trader: Managing $25 Million at Just 25 Years Old - Ted Zhang (Words of Rizdom); Professional Trading Roundtable: “A 50% Market Crash Is Mathematically Inevitable!” (Words of Rizdom) |
+| NBB Trader | 3 | ICT Roundtable: NBB Trader, JadeCapFX, Ali khan ICT, Kimmel Trading \| WOR Podcast EP.100 (Words of Rizdom); NBB Trader Part II: This ICT Strategy Will Change Everything! \| WOR Podcast - EP.118 (Words of Rizdom); NBB Trader: SMC The New Retail?, The Real Trading Algorithm, Thoughts on ICT \| WOR Podcast EP.45 (Words of Rizdom) |
+| Andreas Clenow | 2 | 013: Hedge fund manager Andreas Clenow discusses cash vs risk allocation, position rebalancing and why traditional trend following doesn't work in stocks. (Better System Trader); SI234: Trend Followers are minnows, not whales ft. Rob Carver (Top Traders Unplugged) |
+| Jeff Holden | 2 | 331 · Jeff Holden - How Top Prop Traders Find and Scale Their Edge (Chat With Traders); SMB Capital Roundtable - Lance Breitstein, Brett Steenbarger, Mike Bellafiore, Jeff Holden (Words of Rizdom) |
+| Tom Hougaard | 2 | Making Millions As A Short Sided Day Trader With David Capablanca (The Day Trading Show); The Best Loser Wins With Sam Daghash \| 133 (The Day Trading Show) |
+| Stanley Druckenmiller | 2 | TIP614: Investing Guardrails: Avoiding Common Mistakes w/ Kyle Grieve and Clay Finck (We Study Billionaires (The Investor's Podcast)); World’s Best Trader: The $300 Million Trade (George Soros Copied Him) (Words of Rizdom) |
+| Corey Hoffstein | 2 | OI16: Return Stacking: Form, Function & Friction ft. Corey Hoffstein and Adam Butler (Top Traders Unplugged); SI291: Trend Following...What should it mean to Investors? ft. Richard Brennan (Top Traders Unplugged) |
+| Marios Stamatoudis | 2 | +291% Swing Trading in 2023 - The 3 Powerful Setups of a Top Trader (TraderLion Podcast); US Trading Champion: How To Catch 100x Trades (While Trading Less) (Words of Rizdom) |
+| George Soros | 2 | He Made 4200% At The World’s TOP Hedge Fund (He’s SOLD EVERYTHING) - Jim Rogers (Words of Rizdom); World’s Best Trader: The $300 Million Trade (George Soros Copied Him) (Words of Rizdom) |
+| Trader Mayne | 2 | Real MILLIONAIRE Trader RESPONDS To Gary Stevenson! (Words of Rizdom); Trader Mayne: Millionaire Crypto Trader Shares Market Blueprint For 2024 \| WOR Podcast EP.104 (Words of Rizdom) |
+| Steven Dux | 2 | Steven Dux - Trading $27,000 to Over $50 MILLION (Words of Rizdom); World's BEST Traders Expose The Top Trading Lessons for Profitability in 2026 (Words of Rizdom) |
+| Trader Yush | 2 | The BEST Prop Traders in the World - The Real Secret to 17M + in Prop Payouts (Words of Rizdom); The ICT Trader Who Made $2 Million After SWITCHING To Orderflow - Yush (Words of Rizdom) |
+| Fabio Valentini | 2 | Trading LIVE with the BEST Scalper in the World (PERFECT Accuracy) (Words of Rizdom); World's BEST Traders Expose The Top Trading Lessons for Profitability in 2026 (Words of Rizdom) |
+| Ralph Vince | 1 | 011: Ralph Vince talks position sizing, the different applications of optimalf, trading horizon, diversification and his changing views over 25 years. (Better System Trader) |
+| Brett N. Steenbarger | 1 | 025: Dr Brett Steenbarger, trader and trading coach, discusses creativity, static thinking and why it's important to have unique ideas for trading success. We also cover tips to increasing our creativity, why traditional trading rules need to be updated, (Better System Trader) |
+| David Aronson | 1 | 028: David Aronson shares research into indicators that identify Bull and Bear markets, including the Golden Cross/Death Cross, RSI, ADX, ROC and many others. (Better System Trader) |
+| Larry Connors | 1 | 151: Buy the fear, sell the greed - Larry Connors (Better System Trader) |
+| Erik Townsend | 1 | 141: Erik Townsend – Software Millionaire Fooled by ‘The Dream’ and Saved by Global Macro (Chat With Traders) |
+| Peter L. Brandt | 1 | 329 · Peter Brandt - How a 50-Year Veteran Thinks About Risk Management (Chat With Traders) |
+| Steve Nison | 1 | 332 · Steve Nison - The Man Who Introduced Candlestick Charting to the West (Chat With Traders) |
+| Riz Iqbal | 1 | AstroFX, Trading Success, and Fatherhood With Riz Iqbal \| 068 (The Day Trading Show) |
+| Fischer Black | 1 | IL52: Why Staying Calm Is the Ultimate Investing Edge ft. David Booth (Top Traders Unplugged) |
+| Nicolas Darvas | 1 | How a Dancer Made $2,000,000 Trading Stocks Part Time \| The Story of Nicolas Darvas (TraderLion Podcast) |
+| Benoit Mandelbrot | 1 | Ep. 1078: Bill Dreiss Interview with Michael Covel on Trend Following Radio (Trend Following with Michael Covel) |
+| Matteo Conti | 1 | €15B Bank Trader: THIS Is How YOU Build A Trading Strategy That Actually Works (Words of Rizdom) |
+| Jesse Livermore | 1 | $2.5 Million World Record BREAKING Prop Firm Payout - JadeCap (Words of Rizdom) |
+| Carmine Rosato | 1 | Carmine Rosato: 95% of Traders Fail For This ONE Reason \| WOR Podcast EP.91 (Words of Rizdom) |
+| Andrea Cimitan | 1 | Elite Scalper: I Studied Trading Champions, THIS Is The Pattern I Found! (Words of Rizdom) |
+| Fredy Sarmiento | 1 | Ex-Market Maker: “We Manipulate Markets, Take Your Stops & Grab Liquidity....We HAVE To” (Words of Rizdom) |
+| Vincent Desiano | 1 | He Made $1M+ Trading Using a Simple Break & Retest Strategy - Vincent Desiano (Words of Rizdom) |
+| Kris Verma | 1 | Pro Trader Turned $3K Into $2.1M IGNORING Retail ADVICE (Words of Rizdom) |
+| Tanja Trades | 1 | Tanja Trades: Become More Profitable with This ONE Trading Hack \| WOR Podcast - EP.127 (Words of Rizdom) |
+| Marci Silfrain | 1 | The World's #2 Trader \| Futures Trading World Champion - Marci Silfrain (Words of Rizdom) |
+| Jay Awtani | 1 | This Trader Turned $3K Into $1,000,000.. Here’s How (Words of Rizdom) |
+| Kyle Williams | 1 | Trading $6,000 to $6.5 Million (1000X Return) - Kyle Williams (Words of Rizdom) |
+| Usman Ashraf | 1 | Usman Ashraf: From Uber Driver to 7 Figure Trader \| WOR Podcast EP.105 (Words of Rizdom) |

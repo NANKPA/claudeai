@@ -1,0 +1,38 @@
+YEAR       book_market_wizards: registry 1989 vs Open Library first_publish_year 2012
+YEAR       book_ta_stock_trends: registry 1948 vs Open Library first_publish_year 1992
+YEAR       book_mind_over_markets: registry 1990 vs Open Library first_publish_year 2013
+YEAR       book_how_to_trade_in_stocks: registry 1940 vs Open Library first_publish_year 2006
+NOT FOUND  book_trading_for_a_living: Trading for a Living
+NOT FOUND  book_street_smarts: Street Smarts
+YEAR       book_option_volatility_pricing: registry 1988 vs Open Library first_publish_year 1994
+YEAR       book_long_term_secrets_short_term_trading: registry 1999 vs Open Library first_publish_year 2008
+NOT FOUND  book_studies_in_tape_reading: Studies in Tape Reading
+YEAR       book_black_swan: registry 2007 vs Open Library first_publish_year 2005
+YEAR       book_misbehavior_of_markets: registry 2004 vs Open Library first_publish_year 1982
+NOT FOUND  book_new_concepts_technical_trading_systems: New Concepts in Technical Trading Systems
+YEAR       book_intermarket_analysis: registry 2004 vs Open Library first_publish_year 2012
+YEAR       book_mastering_the_trade: registry 2005 vs Open Library first_publish_year 2012
+YEAR       book_quantitative_trading_chan: registry 2008 vs Open Library first_publish_year 2021
+NOT FOUND  book_algorithmic_trading_chan: Algorithmic Trading: Winning Strategies and Their Rationale
+YEAR       book_trading_systems_and_methods: registry 1978 vs Open Library first_publish_year 1998
+YEAR       book_day_swing_trading_currency: registry 2005 vs Open Library first_publish_year 2008
+YEAR       book_trader_vic: registry 1991 vs Open Library first_publish_year 1993
+YEAR       book_battle_for_investment_survival: registry 1935 vs Open Library first_publish_year 1911
+YEAR       book_extraordinary_popular_delusions: registry 1841 vs Open Library first_publish_year 2003
+YEAR       book_beat_the_dealer: registry 1962 vs Open Library first_publish_year 1966
+NOT FOUND  book_definitive_guide_position_sizing: The Definitive Guide to Position Sizing
+NOT FOUND  book_trading_sardines: Trading Sardines
+YEAR       book_zurich_axioms: registry 1985 vs Open Library first_publish_year 1989
+NOT FOUND  book_market_microstructure_in_practice: Market Microstructure in Practice
+NOT FOUND  mathbook_fifty_challenging_problems: Fifty Challenging Problems in Probability with Solutions
+YEAR       mathbook_heard_on_the_street: registry 1995 vs Open Library first_publish_year 2009
+NOT FOUND  mathbook_shreve_stochastic_calculus: Stochastic Calculus for Finance I & II
+YEAR       mathbook_bjork_arbitrage_theory: registry 1998 vs Open Library first_publish_year 2009
+YEAR       mathbook_ruppert_statistics_fin_eng: registry 2015 vs Open Library first_publish_year 2010
+NOT FOUND  mathbook_gueant_market_liquidity: The Financial Mathematics of Market Liquidity
+NOT FOUND  mathbook_lehalle_microstructure_practice: Market Microstructure in Practice
+NOT FOUND  mathbook_johnson_algorithmic_dma: Algorithmic Trading and DMA
+NOT FOUND  mathbook_kelly_capital_growth: The Kelly Capital Growth Investment Criterion
+YEAR       mathbook_cover_thomas_information_theory: registry 1991 vs Open Library first_publish_year 2006
+YEAR       mathbook_grinold_kahn_active_pm: registry 1995 vs Open Library first_publish_year 1999
+NOT FOUND  mathbook_finding_alphas: Finding Alphas
