@@ -652,6 +652,7 @@ people:
     role: Order-flow trader
     featured_in: [channel_chart_fanatics]
     teaches: [concept_order_flow]
+    known_for: "Carmine Rosato teaches order flow, Level 2 walls and reversal and breakout-retest setups in free Chart Academy masterclasses. (from the Chart Fanatics playbook, T2)"
   - id: person_marci_silfrain
     name: Marci Silfrain
     role: Futures trader ("World #2" futures trading champion)
@@ -747,11 +748,13 @@ people:
     role: Futures trader
     teaches: [concept_auction_market_theory]
     featured_in: [channel_chart_fanatics]
+    known_for: "Andrea Cimitan teaches 'Liquidity Auction Theory' in a 17-lesson Order Flow Masterclass on Chart Academy, per the playbook page. (from the Chart Fanatics playbook, T2)"
   - id: person_rajan_dhall
     name: Rajan Dhall
     role: Professional trader
     teaches: [concept_auction_market_theory]
     featured_in: [channel_chart_fanatics]
+    known_for: "Rajan Dhall teaches a free 7-lesson Chart Academy masterclass on auction market theory and 21-MA multi-timeframe trend following; his Chart Fanatics episode was billed as an 'A+ Simple Trading Strategy' (T4). (from the Chart Fanatics playbook, T2)"
   - id: person_gianluca_bruni
     name: Gianluca Bruni
     role: Trader (billed as "2x World Trading Champion"; unverified)
@@ -761,6 +764,7 @@ people:
     name: Ted Zhang
     role: "Trader/manager (episode: managing $25M at a young age)"
     featured_in: [channel_chart_fanatics, podcast_words_of_rizdom]
+    known_for: "Ted Zhang uses Stan Weinstein-style stage analysis to classify assets as basing, rising, topping or falling before committing capital. (from the Chart Fanatics playbook, T2)"
   - id: person_clement_ang
     name: Clement Ang
     role: Growth-stock swing/position trader (SilverCape)
@@ -773,14 +777,17 @@ people:
     name: Matteo Conti
     role: Trader
     featured_in: [channel_chart_fanatics]
+    known_for: "The playbook presents Matteo Conti explaining how institutional traders research, code, backtest and validate a strategy before trading it live; it gives no further biography. (from the Chart Fanatics playbook, T2)"
   - id: person_fredy_sarmiento
     name: Fredy Sarmiento
     role: Options-flow trader
     featured_in: [channel_chart_fanatics]
+    known_for: "Fredy Sarmiento reads index options positioning (gamma walls, open interest, convexity) to find reaction levels for trading index futures. (from the Chart Fanatics playbook, T2)"
   - id: person_pavel
     name: Pavel (Trading First Principles)
     role: Trader
     featured_in: [channel_chart_fanatics]
+    known_for: "Chart Fanatics credits Pavel with a first-principles framework for finding where a retail trader's edge comes from; the page gives no biography. (from the Chart Fanatics playbook, T2)"
 
   # ───────────────────────── Chart Fanatics playbook authors (from chartfanatics.com/strategies) ─────────────────────────
   - id: person_jadecap
@@ -791,6 +798,7 @@ people:
     name: "Okala"
     role: "Trader; Chart Fanatics playbook author"
     featured_in: [channel_chart_fanatics]
+    known_for: "Okala day trades Nasdaq futures with a price-only model built on how NQ reacts at prices ending in 20 and 80. (from the Chart Fanatics playbook, T2)"
   - id: person_naoufel_taief
     name: "Naoufel Taief"
     role: "Trader; Chart Fanatics playbook author"
@@ -799,42 +807,52 @@ people:
     name: "Vincent Desiano"
     role: "Trader; Chart Fanatics playbook author"
     featured_in: [channel_chart_fanatics]
+    known_for: "Vincent Desiano day trades a break-and-retest model off key levels and teaches it in a five-lesson Chart Academy masterclass. (from the Chart Fanatics playbook, T2)"
   - id: person_alex_temiz
     name: "Alex Temiz"
     role: "Trader; Chart Fanatics playbook author"
     featured_in: [channel_chart_fanatics]
+    known_for: "Alex Temiz is a stock and options day trader who short-sells overextended multi-day runners on their first red day; the page links his Chart Academy instructor profile. (from the Chart Fanatics playbook, T2)"
   - id: person_kyle_williams
     name: "Kyle Williams"
     role: "Trader; Chart Fanatics playbook author"
     featured_in: [channel_chart_fanatics]
+    known_for: "Kyle Williams day trades the short side of euphoric small-cap runners, shorting 'mini bubbles' on the first red day and on intraday parabolic exhaustion. (from the Chart Fanatics playbook, T2)"
   - id: person_anthony_crudele
     name: "Anthony Crudele"
     role: "Trader; Chart Fanatics playbook author"
     featured_in: [channel_chart_fanatics]
+    known_for: "Anthony Crudele swing trades index futures, often via options on futures, after classifying each day's environment on the daily chart with 3-standard-deviation Bollinger Bands and his Beacon tool. (from the Chart Fanatics playbook, T2)"
   - id: person_dhesi
     name: "Dhesi"
     role: "Trader; Chart Fanatics playbook author"
     featured_in: [channel_chart_fanatics]
+    known_for: "Dhesi (Dhesi Trades) trades NQ and ES with an ICT-style model built on liquidity sweeps and fair value gap inversions across day and swing timeframes. (from the Chart Fanatics playbook, T2)"
   - id: person_jay_awtani
     name: "Jay Awtani"
     role: "Trader; Chart Fanatics playbook author"
     featured_in: [channel_chart_fanatics]
+    known_for: "Jay Awtani teaches a free six-lesson volume and order-flow masterclass on Chart Academy. (from the Chart Fanatics playbook, T2)"
   - id: person_lance_breitstein
     name: "Lance Breitstein"
     role: "Trader; Chart Fanatics playbook author"
     featured_in: [channel_chart_fanatics]
+    known_for: "Lance Breitstein is presented as the author of a capitulation mean-reversion day-trading method for stocks, shown via OCLR (2016) and KODK examples. (from the Chart Fanatics playbook, T2)"
   - id: person_jeff_holden
     name: "Jeff Holden"
     role: "Trader; Chart Fanatics playbook author"
     featured_in: [channel_chart_fanatics]
+    known_for: "Jeff Holden is described as SMB's development and recruiting lead. (from the Chart Fanatics playbook, T2)"
   - id: person_abraham_perez
     name: "Abraham Perez"
     role: "Trader; Chart Fanatics playbook author"
     featured_in: [channel_chart_fanatics]
+    known_for: "Abraham Perez is presented as a discretionary Nasdaq futures scalper combining ICT liquidity concepts, Dow Theory structure, volume and Bookmap order flow. (from the Chart Fanatics playbook, T2)"
   - id: person_usman_ashraf
     name: "Usman Ashraf"
     role: "Trader; Chart Fanatics playbook author"
     featured_in: [channel_chart_fanatics]
+    known_for: "Usman Ashraf teaches a free six-lesson beginner Options Masterclass on Chart Academy. (from the Chart Fanatics playbook, T2)"
   - id: person_marios_stamatoudis
     name: "Marios Stamatoudis"
     role: "Trader; Chart Fanatics playbook author"
@@ -847,27 +865,34 @@ people:
     name: "Gala Trades"
     role: "Trader; Chart Fanatics playbook author"
     featured_in: [channel_chart_fanatics]
+    known_for: "Gala day trades short-dated options on stocks like Tesla and Palantir using hourly levels and three price-action setups (breaking retest, bounce, rejection). (from the Chart Fanatics playbook, T2)"
   - id: person_ariel_hernandez
     name: "Ariel Hernandez"
     role: "Trader; Chart Fanatics playbook author"
     featured_in: [channel_chart_fanatics]
+    known_for: "Ariel Hernandez is a stock swing trader who teaches the free 'Building the Foundation' masterclass on Chart Academy. (from the Chart Fanatics playbook, T2)"
   - id: person_kris_verma
     name: "Kris Verma"
     role: "Trader; Chart Fanatics playbook author"
     featured_in: [channel_chart_fanatics]
+    known_for: "Kris Verma shorts small-cap stocks, combining a data-driven base with time-of-day rules, behaviour checks and share recycling. (from the Chart Fanatics playbook, T2)"
   - id: person_steven_dux
     name: "Steven Dux"
     role: "Trader; Chart Fanatics playbook author"
     featured_in: [channel_chart_fanatics]
+    known_for: "The playbook presents Steven Dux as a statistics-first short seller of low-float US small-cap runners, who lets the data qualify a setup before the chart pattern. (from the Chart Fanatics playbook, T2)"
   - id: person_dylan_oneil
     name: "Dylan O’Neil"
     role: "Trader; Chart Fanatics playbook author"
     featured_in: [channel_chart_fanatics]
+    known_for: "Dylan O’Neil trades futures using the VIX as a live gauge of put-driven pressure on the S&P 500, to judge whether ES and NQ moves are real. (from the Chart Fanatics playbook, T2)"
   - id: person_ali_crooks
     name: "Ali Crooks"
     role: "Trader; Chart Fanatics playbook author"
     featured_in: [channel_chart_fanatics]
+    known_for: "Ali Crooks is a discretionary forex swing trader who teaches an 11-lesson free masterclass on Chart Academy. (from the Chart Fanatics playbook, T2)"
   - id: person_traveling_trader
     name: "Traveling Trader"
     role: "Trader; Chart Fanatics playbook author"
     featured_in: [channel_chart_fanatics]
+    known_for: "The Traveling Trader is credited with this universal liquidity-catalyst playbook; the page gives no biography. (from the Chart Fanatics playbook, T2)"
