@@ -17,6 +17,7 @@
   --idea: #2a78d6;
   --person: #eb6834;
   --source: #1baf7a;
+  --philo: #0e1116;
   --edge: rgba(74, 81, 93, 0.20);
   --edge-hi: rgba(14, 17, 22, 0.72);
   --good: #0ca30c;
@@ -32,14 +33,14 @@
   :root:not([data-theme="light"]) {
     --bg: #0e1014; --surface: #15171c; --surface-2: #1d2027; --ink: #eceef2; --ink-2: #b3b9c5;
     --muted: #868d9a; --line: #282c34; --line-strong: #3b404a; --idea: #3987e5; --person: #d95926;
-    --source: #199e70; --edge: rgba(179, 185, 197, 0.15); --edge-hi: rgba(236, 238, 242, 0.78);
+    --source: #199e70; --philo: #eceef2; --edge: rgba(179, 185, 197, 0.15); --edge-hi: rgba(236, 238, 242, 0.78);
     --good-ink: #0ca30c; --warn-ink: #fab219; color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --bg: #0e1014; --surface: #15171c; --surface-2: #1d2027; --ink: #eceef2; --ink-2: #b3b9c5;
   --muted: #868d9a; --line: #282c34; --line-strong: #3b404a; --idea: #3987e5; --person: #d95926;
-  --source: #199e70; --edge: rgba(179, 185, 197, 0.15); --edge-hi: rgba(236, 238, 242, 0.78);
+  --source: #199e70; --philo: #eceef2; --edge: rgba(179, 185, 197, 0.15); --edge-hi: rgba(236, 238, 242, 0.78);
   --good-ink: #0ca30c; --warn-ink: #fab219; color-scheme: dark;
 }
 * { box-sizing: border-box; }
@@ -165,6 +166,21 @@ th.num { text-align: right; }
 footer { color: var(--muted); font-size: 12.5px; display: flex; flex-wrap: wrap; gap: 6px 24px; border-top: 1px solid var(--line); padding-top: 14px; }
 footer code { font-family: var(--font-mono); font-size: 12px; color: var(--ink-2); }
 .vis-tooltip { font-family: var(--font-body) !important; font-size: 13px !important; color: var(--ink) !important; background: var(--surface) !important; border: 1px solid var(--line-strong) !important; border-radius: 4px !important; padding: 5px 8px !important; box-shadow: 0 6px 18px rgba(0,0,0,0.12) !important; max-width: 280px; white-space: normal !important; }
+/* ── foundation ── */
+.foundation { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.4fr); gap: 16px 28px; padding: 18px 20px; border: 1px solid var(--line); border-left: 4px solid var(--philo); border-radius: var(--radius); background: var(--surface); }
+@media (max-width: 900px) { .foundation { grid-template-columns: minmax(0, 1fr); } }
+.foundation h2 { font-family: var(--font-display); font-stretch: 100%; font-weight: 740; font-size: 22px; line-height: 1.15; margin-top: 6px; }
+.foundation p { color: var(--ink-2); margin: 10px 0 0; max-width: 60ch; }
+.foundation .cent { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 12px; font-family: var(--font-mono); font-size: 12px; color: var(--ink-2); }
+.foundation .cent b { color: var(--ink); font-weight: 600; }
+.principles { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 18px; counter-reset: pr; }
+@media (max-width: 560px) { .principles { grid-template-columns: minmax(0, 1fr); } }
+.principles li { border-top: 1px solid var(--line); }
+.principles button { display: grid; grid-template-columns: 2.2em minmax(0, 1fr) auto; gap: 8px; align-items: baseline; width: 100%; padding: 7px 0; border: 0; background: transparent; text-align: left; cursor: pointer; }
+.principles button:hover .pt { text-decoration: underline; text-underline-offset: 3px; }
+.principles .pn { font-family: var(--font-mono); font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.principles .pt { font-size: 14px; line-height: 1.3; }
+.principles .pc { font-family: var(--font-mono); font-size: 11px; color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
 </style>
 
@@ -177,6 +193,19 @@ footer code { font-family: var(--font-mono); font-size: 12px; color: var(--ink-2
     </div>
     <dl class="stats" id="stats"></dl>
   </header>
+
+  <section class="foundation" aria-labelledby="found-title" id="foundation">
+    <div>
+      <div class="eyebrow">The foundation · 00_philosophy/</div>
+      <h2 id="found-title">The Philosophy of the Relationship</h2>
+      <p>The owner's own philosophy is the root of this map. Its 21 sections and 12 principles are linked to the concepts they rest on, the books and researchers that support or challenge them, and the playbooks that put them into practice. Everything below is read through it.</p>
+      <div class="cent" id="centrality"></div>
+    </div>
+    <div>
+      <div class="eyebrow">Practical doctrine · playbooks that state each principle explicitly</div>
+      <ol class="principles" id="principles"></ol>
+    </div>
+  </section>
 
   <section class="stack" aria-labelledby="stack-title">
     <div class="stack-head">
@@ -208,6 +237,7 @@ footer code { font-family: var(--font-mono); font-size: 12px; color: var(--ink-2
         <span><svg viewBox="0 0 12 12"><rect x="1" y="1" width="10" height="10"/></svg>Book · course</span>
         <span><svg viewBox="0 0 12 12"><path d="M6 0.5 11.5 11H0.5Z"/></svg>Video · episode</span>
         <span><svg viewBox="0 0 12 12"><path d="M6 0.5l1.6 3.5 3.9.4-2.9 2.6.8 3.8L6 8.9 2.6 10.8l.8-3.8L.5 4.4l3.9-.4Z"/></svg>Podcast · channel</span>
+        <span><svg viewBox="0 0 12 12" style="fill:var(--philo)"><path d="M0.5 1H11.5L6 11.5Z"/></svg>Principle (ink = the philosophy)</span>
         <span>Dashed link: inferred lineage</span>
       </div>
       <div class="communities" id="communities"><span class="label">Communities (Leiden clustering)</span></div>
@@ -248,8 +278,10 @@ footer code { font-family: var(--font-mono); font-size: 12px; color: var(--ink-2
   const byId = new Map(N.map((n, i) => [n.id, i]));
   const KIND = { concept: 'Concept', strategy: 'Strategy', person: 'Person', book: 'Book', mathbook: 'Math book', paper: 'Paper',
     media: 'Video / episode', podcast: 'Podcast', channel: 'Channel', course: 'Course', track: 'Study track',
-    framework: 'Framework', synthesis: 'Synthesis', formula: 'Formula sheet' };
+    framework: 'Framework', synthesis: 'Synthesis', formula: 'Formula sheet',
+    philosophy: 'Philosophy', principle: 'Principle', hypothesis: 'Hypothesis', question: 'Open question' };
   const FAMILIES = [
+    { key: 'philo', label: 'Philosophy', token: '--philo' },
     { key: 'idea', label: 'Ideas', token: '--idea' },
     { key: 'person', label: 'People', token: '--person' },
     { key: 'source', label: 'Sources', token: '--source' },
@@ -257,12 +289,17 @@ footer code { font-family: var(--font-mono); font-size: 12px; color: var(--ink-2
   const OUT = { related: 'Related', derived_from: 'Derived from', influenced_by: 'Influenced by', uses: 'Uses', covers: 'Covers',
     teaches: 'Teaches', taught_by: 'Taught by', featured_in: 'Featured in', hosted_by: 'Hosted by', founded_by: 'Founded by',
     part_of: 'Part of', contrasts_with: 'Contrasts with', validates: 'Validates', challenges: 'Challenges',
-    authored_by: 'Written by', features: 'Features', features_speaker: 'Speakers', same_as: 'Same as' };
+    authored_by: 'Written by', features: 'Features', features_speaker: 'Speakers', same_as: 'Same as',
+    grounded_in: 'Grounded in', supported_by: 'Supported by', challenged_by: 'Challenged by', operationalized_by: 'Put into practice by',
+    exemplified_by: 'Stated explicitly by', expresses: 'Expresses principle', tests: 'Tests', tested_by: 'Tested by', answers: 'Answers' };
   const IN = { related: 'Related', derived_from: 'Gave rise to', influenced_by: 'Influenced', uses: 'Used by', covers: 'Covered by',
     teaches: 'Taught by', taught_by: 'Teaches strategy', featured_in: 'Features', hosted_by: 'Hosts', founded_by: 'Founded',
     part_of: 'Contains', contrasts_with: 'Contrasts with', validates: 'Validated by', challenges: 'Challenged by',
-    authored_by: 'Wrote', features: 'Featured in book', features_speaker: 'Appears in', same_as: 'Same as' };
-  const ORDER = ['Derived from', 'Influenced by', 'Gave rise to', 'Influenced', 'Uses', 'Used by', 'Teaches', 'Teaches strategy',
+    authored_by: 'Wrote', features: 'Featured in book', features_speaker: 'Appears in', same_as: 'Same as',
+    grounded_in: 'Grounds', supported_by: 'Supports', challenged_by: 'Challenges', operationalized_by: 'Puts into practice',
+    exemplified_by: 'States principle', expresses: 'Expressed in', tests: 'Tested by', tested_by: 'Tests', answers: 'Answered by' };
+  const ORDER = ['Expresses principle', 'Expressed in', 'Grounded in', 'Grounds', 'Supported by', 'Supports', 'Challenged by', 'Challenges',
+    'Put into practice by', 'Puts into practice', 'Stated explicitly by', 'States principle', 'Tests', 'Tested by', 'Answers', 'Answered by', 'Derived from', 'Influenced by', 'Gave rise to', 'Influenced', 'Uses', 'Used by', 'Teaches', 'Teaches strategy',
     'Taught by', 'Written by', 'Wrote', 'Speakers', 'Appears in', 'Covers', 'Covered by', 'Part of', 'Contains', 'Featured in',
     'Features', 'Featured in book', 'Hosted by', 'Hosts', 'Founded by', 'Founded', 'Contrasts with', 'Validates', 'Validated by',
     'Challenges', 'Challenged by', 'Same as', 'Related'];
@@ -273,13 +310,13 @@ footer code { font-family: var(--font-mono); font-size: 12px; color: var(--ink-2
   const adj = N.map(() => []);
   E.forEach(([s, t, r, inf], k) => { adj[s].push([t, k, 'out']); adj[t].push([s, k, 'in']); });
 
-  const state = { families: { idea: true, person: true, source: true }, authors: false, focus: null, selected: null, layer: null };
+  const state = { families: { philo: true, idea: true, person: true, source: true }, authors: false, focus: null, selected: null, layer: null };
 
   // ── tokens ──
   let T = {};
   const css = (v) => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
   function readTokens() {
-    T = { idea: css('--idea'), person: css('--person'), source: css('--source'), surface: css('--surface'),
+    T = { philo: css('--philo'), idea: css('--idea'), person: css('--person'), source: css('--source'), surface: css('--surface'),
       ink: css('--ink'), muted: css('--muted'), edge: css('--edge'), edgeHi: css('--edge-hi') };
   }
   function alpha(hex, a) {
@@ -333,8 +370,8 @@ footer code { font-family: var(--font-mono); font-size: 12px; color: var(--ink-2
 
   // ── vis network ──
   readTokens();
-  const size = (n) => Math.min(26, 4 + 2.2 * Math.sqrt(n.d));
-  const labelled = (n) => n.d >= 16 || (n.k === 'strategy' && n.d >= 6) || n.k === 'channel';
+  const size = (n) => n.id === D.start ? 34 : n.k === 'principle' ? Math.max(12, Math.min(26, 4 + 2.2 * Math.sqrt(n.d))) : Math.min(26, 4 + 2.2 * Math.sqrt(n.d));
+  const labelled = (n) => n.d >= 16 || (n.k === 'strategy' && n.d >= 6) || n.k === 'channel' || n.k === 'principle' || n.id === D.start;
   const visible = (n) => state.families[n.f] && (!n.a || state.authors);
   function nodeStyle(n, i) {
     const base = T[n.f];
@@ -522,7 +559,7 @@ footer code { font-family: var(--font-mono); font-size: 12px; color: var(--ink-2
   }
   function choose(i) {
     results.hidden = true; q.value = N[i].l;
-    if (!visible(N[i])) { if (N[i].a) { state.authors = true; authorsBtn.setAttribute('aria-pressed', 'true'); } state.families[N[i].f] = true; legend.querySelectorAll('.toggle').forEach((b, k) => { if (k < 3) b.setAttribute('aria-pressed', String(state.families[FAMILIES[k].key])); }); }
+    if (!visible(N[i])) { if (N[i].a) { state.authors = true; authorsBtn.setAttribute('aria-pressed', 'true'); } state.families[N[i].f] = true; legend.querySelectorAll('.toggle').forEach((b, k) => { if (k < FAMILIES.length) b.setAttribute('aria-pressed', String(state.families[FAMILIES[k].key])); }); }
     select(i, true);
   }
   q.addEventListener('input', runSearch);
@@ -538,6 +575,20 @@ footer code { font-family: var(--font-mono); font-size: 12px; color: var(--ink-2
   document.getElementById('fit').addEventListener('click', () => {
     clearPressed(); state.focus = null; state.selected = null; state.layer = null; state.lineage = false; restyle(); network.fit({ animation: anim });
   });
+
+  // ── foundation band ──
+  if (D.foundation) {
+    const F = D.foundation;
+    const pl = document.getElementById('principles');
+    pl.innerHTML = F.principles.map((p) => `<li><button type="button" data-node="${p.i}"><span class="pn">P${p.n}</span><span class="pt">${esc(p.t)}</span><span class="pc">${p.x} of ${F.graded}</span></button></li>`).join('');
+    bindChips(pl);
+    const c = F.centrality;
+    document.getElementById('centrality').innerHTML = c ? [
+      `<span>Reach: <b>${c.reach2}%</b> of the graph within 2 links</span>`,
+      `<span>Communities touched: <b>${c.bridged} of ${c.communities}</b></span>`,
+      `<span>Rank as one unit (PageRank): <b>#${c.super_rank}</b></span>`,
+    ].join('') : '';
+  }
 
   // ── partitions & chains ──
   const ICON_OK = '<svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M6.2 11.6 2.6 8l1.1-1.1 2.5 2.5 6.1-6.1 1.1 1.1Z"/></svg>';

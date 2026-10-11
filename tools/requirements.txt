@@ -10,3 +10,9 @@ feedparser>=6.0
 requests>=2.31
 # Optional: local podcast transcription (podcasts_rss.py --transcribe)
 # faster-whisper>=1.0
+# Philosophy evidence lab (tools/philosophy/)
+numpy>=2.0
+pandas>=2.2
+scipy>=1.13
+matplotlib>=3.9
+pytest>=8.0

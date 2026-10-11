@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 # End-to-end refresh of the trading-intelligence knowledge base.
 #   ./tools/run_pipeline.sh            # offline steps only (render, graph, bundle)
-#   ./tools/run_pipeline.sh --scrape   # also run every scraper (needs network access to
-#                                      # youtube.com, babypips.com, itunes.apple.com, openlibrary.org)
+#   ./tools/run_pipeline.sh --scrape   # also run every scraper and the evidence lab (needs network
+#                                      # access to youtube.com, babypips.com, itunes.apple.com,
+#                                      # openlibrary.org, query1.finance.yahoo.com)
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
@@ -17,10 +18,13 @@ if [[ "${1:-}" == "--scrape" ]]; then
   python3 tools/scrapers/podcasts_rss.py                                      # podcast episode catalogs
   python3 tools/scrapers/babypips_course.py ${BABYPIPS_COOKIES:+--cookies "$BABYPIPS_COOKIES"}
   python3 tools/scrapers/books_enrich.py                                      # Open Library QA of the book registry
+  python3 tools/philosophy/studies.py                                         # evidence lab on Yahoo daily data
 fi
 
 python3 tools/render_registries.py
+python3 tools/philosophy/merge_blueprint.py                                   # philosophy links -> blueprint.yaml
 python3 tools/build_graph.py
+python3 tools/philosophy/centrality.py                                        # where the philosophy sits in the graph
 python3 tools/build_explorer.py
 python3 tools/bundle_for_claude.py ${INCLUDE_RAW:+--include-raw}
 echo "Done. Open trading-intelligence/09_knowledge-graph/explorer.html (or graph.html)"

@@ -29,6 +29,7 @@ OUT_DIR = KB_ROOT / "09_knowledge-graph"
 # after the first (highest-priority) anchor present. Otherwise it falls back to
 # the community's highest-degree concept-like nodes.
 ANCHOR_LABELS: list[tuple[str, str]] = [
+    ("philosophy_relationship", "The Philosophy of the Relationship"),
     ("concept_auction_market_theory", "Auction Market Theory & Order Flow"),
     ("concept_smart_money_concepts", "Smart Money / ICT & Liquidity"),
     ("concept_liquidity_sweep_reversal", "Liquidity Sweeps & Reversals"),
@@ -62,8 +63,8 @@ ANCHOR_LABELS: list[tuple[str, str]] = [
 
 def graph_view_exclusions(kb) -> dict[str, set[str]]:
     """Nodes kept in the knowledge base but left out of the visual graph, so the map stays
-    readable: YouTube shorts, and podcast episodes that feature no known person (the
-    remaining episodes link legends to their interviews)."""
+    readable: YouTube shorts, podcast episodes that feature no known person (the remaining
+    episodes link legends to their interviews), and nodes left with no links at all."""
     out = {}
     speakers = {e.source for e in kb.edges if e.relation == "features_speaker"}
     podcast_eps = {e.source for e in kb.edges if e.relation == "featured_in" and e.target.startswith("podcast_")}
@@ -71,6 +72,10 @@ def graph_view_exclusions(kb) -> dict[str, set[str]]:
     out["podcast episodes without a known guest"] = {
         nid for nid in podcast_eps
         if nid in kb.nodes and kb.nodes[nid].attrs.get("status") == "scraped" and nid not in speakers}
+    hidden = set().union(*out.values())
+    linked = {x for e in kb.edges if e.source not in hidden and e.target not in hidden for x in (e.source, e.target)}
+    out["nodes with no links (e.g. scraped videos no concept or person could be tagged on)"] = {
+        nid for nid in kb.nodes if nid not in hidden and nid not in linked}
     return out
 
 
@@ -112,6 +117,54 @@ def to_extraction(kb, exclude: set[str] = frozenset()) -> dict:
             "weight": 0.75 if e.inferred else 1.0,
         })
     return {"nodes": nodes, "edges": edges, "hyperedges": [], "input_tokens": 0, "output_tokens": 0}
+
+
+PHILOSOPHY_KINDS = {"philosophy", "principle", "hypothesis", "question"}
+MIN_COMMUNITY = 10
+
+
+def merge_small_communities(G, communities: dict[int, list[str]], min_size: int = MIN_COMMUNITY) -> dict[int, list[str]]:
+    """Fold communities smaller than `min_size` into the neighbouring community they share the
+    most edges with, so the map shows a readable number of groups. Ids are renumbered by size."""
+    comm = {n: cid for cid, mem in communities.items() for n in mem}
+    changed = True
+    while changed:
+        changed = False
+        sizes = Counter(comm.values())
+        for cid in sorted(sizes, key=lambda c: sizes[c]):
+            if sizes[cid] >= min_size or len(sizes) <= 1:
+                continue
+            members = [n for n, c in comm.items() if c == cid]
+            votes = Counter(comm[m] for n in members for m in G[n] if comm[m] != cid)
+            if not votes:
+                continue
+            target = votes.most_common(1)[0][0]
+            for n in members:
+                comm[n] = target
+            changed = True
+            break
+    groups: dict[int, list[str]] = {}
+    for n, c in comm.items():
+        groups.setdefault(c, []).append(n)
+    ordered = sorted(groups.values(), key=lambda m: -len(m))
+    return {i: sorted(m) for i, m in enumerate(ordered)}
+
+
+def philosophy_community(G, communities: dict[int, list[str]]) -> dict[int, list[str]]:
+    """The owner's philosophy (00_philosophy) is a declared foundation, so its nodes are drawn
+    together as one community. The rest of the graph keeps its Leiden communities (small
+    leftovers re-merged); where each philosophy node would otherwise belong is measured from its
+    neighbours by tools/philosophy/centrality.py. Sets each node's community attribute."""
+    philo = {n for n, a in G.nodes(data=True) if a.get("kind") in PHILOSOPHY_KINDS
+             or (a.get("partition") == "00_philosophy" and a.get("kind") in ("synthesis", "framework"))}
+    if philo:
+        rest = {cid: [m for m in mem if m not in philo] for cid, mem in communities.items()}
+        rest = merge_small_communities(G.subgraph([n for n in G if n not in philo]), {c: m for c, m in rest.items() if m})
+        communities = {**rest, len(rest): sorted(philo)}
+    for cid, mem in communities.items():
+        for m in mem:
+            G.nodes[m]["community"] = cid
+    return communities
 
 
 def label_communities(G, communities: dict[int, list[str]]) -> dict[int, str]:
@@ -189,7 +242,7 @@ def main() -> None:
     (OUT_DIR / "extraction.json").write_text(json.dumps(extraction, indent=1, ensure_ascii=False), encoding="utf-8")
 
     G = build_from_json(extraction, root=str(KB_ROOT), directed=False, dedup=False)
-    communities = cluster(G)
+    communities = philosophy_community(G, merge_small_communities(G, cluster(G, resolution=0.6)))
     cohesion = score_all(G, communities)
     gods = god_nodes(G, top_n=25)
     surprises = surprising_connections(G, communities)

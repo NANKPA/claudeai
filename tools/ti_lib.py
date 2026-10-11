@@ -38,6 +38,16 @@ RELATION_KEYS: dict[str, str] = {
     "authors": "authored_by",
     "features": "features",
     "speaker_ids": "features_speaker",
+    # Philosophy layer (00_philosophy): how the owner's principles connect to the rest.
+    "grounded_in": "grounded_in",
+    "supported_by": "supported_by",
+    "challenged_by": "challenged_by",
+    "operationalized_by": "operationalized_by",
+    "exemplified_by": "exemplified_by",
+    "expresses": "expresses",
+    "tests": "tests",
+    "tested_by": "tested_by",
+    "answers": "answers",
 }
 # Scalar keys that point at one id.
 SCALAR_RELATION_KEYS: dict[str, str] = {
@@ -61,6 +71,10 @@ FILE_TYPE_BY_KIND = {
     "concept": "concept",
     "strategy": "concept",
     "person": "concept",
+    "philosophy": "rationale",
+    "principle": "rationale",
+    "hypothesis": "rationale",
+    "question": "rationale",
 }
 
 ID_PREFIX_KIND = {
@@ -79,6 +93,11 @@ ID_PREFIX_KIND = {
     "synthesis_": "synthesis",
     "track_": "track",
     "lesson_": "course",
+    "philosophy_": "philosophy",
+    "philo_": "philosophy",
+    "principle_": "principle",
+    "hypothesis_": "hypothesis",
+    "question_": "question",
 }
 
 ID_RE = re.compile(r"^[a-z0-9_]+$")
@@ -189,6 +208,12 @@ class _Builder:
             existing.attrs = {**existing.attrs, **attrs}
             existing.attrs.pop("ref", None)
             existing.body = body or existing.body
+        elif existing.label == label_from_id(node_id) and (entity.get("title") or entity.get("name")):
+            # The first sighting had no title (an id-only stub): the titled entry wins.
+            existing.label, existing.kind = str(label), entity.get("type") or existing.kind
+            existing.attrs.update(attrs)
+            if body and len(body) > len(existing.body):
+                existing.body, existing.source_file = body, source_file
         else:
             # Merge: a registry entry and a summary note may describe the same node.
             # Registry label wins (it is the canonical title); the longer body wins.
@@ -254,8 +279,8 @@ def load_kb(root: Path = KB_ROOT, include_raw: bool = True) -> KnowledgeBase:
         b.add_entity(fm, rel, body)
     for path in sorted(root.rglob("*.yaml")):
         rel = path.relative_to(root).as_posix()
-        if rel.startswith(("09_knowledge-graph/", "graphify-out/")):
-            continue
+        if rel.startswith(("09_knowledge-graph/", "graphify-out/")) or rel.endswith(".enriched.yaml"):
+            continue  # enrichment files are QA metadata (Open Library lookups), not nodes
         data = yaml.safe_load(path.read_text(encoding="utf-8"))
         for entity in _registry_entries(data):
             alias = entity.get("also_in_top100")

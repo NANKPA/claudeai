@@ -43,8 +43,11 @@ FAMILY = {  # kind -> (family, shape)
     "track": ("idea", "square"), "person": ("person", "dot"),
     "book": ("source", "square"), "mathbook": ("source", "square"), "paper": ("source", "square"),
     "media": ("source", "triangle"), "podcast": ("source", "star"), "channel": ("source", "star"),
+    "philosophy": ("philo", "dot"), "principle": ("philo", "triangleDown"),
+    "hypothesis": ("philo", "diamond"), "question": ("philo", "triangle"),
 }
 PARTITION_INFO = {
+    "00_philosophy": ("The Philosophy of the Relationship", "complete"),
     "00_framework": ("Framework", "complete"),
     "01_chart-fanatics": ("Chart Fanatics", "captured"),
     "02_podcasts-interviews": ("Podcasts & interviews", "captured"),
@@ -56,6 +59,7 @@ PARTITION_INFO = {
     "08_synthesis": ("Synthesis", "complete"),
 }
 PARTITION_NOTE = {
+    "00_philosophy": "The owner's philosophy and the root of the map: 21 sections, 12 principles, their links to the graph, a real-data evidence lab, hypotheses, the decision protocol and the journal.",
     "01_chart-fanatics": "47 first-party playbooks (T2) and the full 1,029-upload catalog. Video transcripts need a home machine (YouTube bot check).",
     "02_podcasts-interviews": "4,460 episodes from 15 shows, 270 linked to known guests, plus the view-ranked top 100.",
     "04_babypips-school-of-pipsology": "11-course map and concept summaries. Lesson text is behind Cloudflare; run the crawler at home.",
@@ -66,6 +70,28 @@ PARTITION_NOTE = {
     "08_synthesis": "Unified framework, lineage map, consensus and conflicts, checklist.",
     "00_framework": "Ontology, note schema, source tiers, learning path.",
 }
+
+
+START = "philosophy_relationship"
+
+
+def foundation(kb, index: dict[str, int]) -> dict | None:
+    """The 12 principles (with how many playbooks state each one explicitly) and the
+    philosophy's centrality, for the Foundation band at the top of the page."""
+    principles = sorted((n for n in kb.nodes.values() if n.kind == "principle"), key=lambda n: n.attrs.get("number", 0))
+    if START not in index or not principles:
+        return None
+    exemplified = {p.id: sum(1 for e in kb.edges if e.source == p.id and e.relation == "exemplified_by") for p in principles}
+    graded = sum(1 for n in kb.nodes.values() if n.kind == "strategy")
+    cent_path = KB_ROOT / "00_philosophy" / "centrality.json"
+    cent = None
+    if cent_path.exists():
+        c = json.loads(cent_path.read_text(encoding="utf-8"))["super"]
+        cent = {"reach2": c["reach_pct"]["2"], "bridged": c["communities_touched"],
+                "communities": c["communities_other"], "super_rank": c["pagerank_rank"]}
+    return {"graded": graded, "centrality": cent,
+            "principles": [{"i": index[p.id], "n": p.attrs.get("number"), "t": p.label.split(": ", 1)[-1],
+                            "x": exemplified[p.id]} for p in principles if p.id in index]}
 
 
 def clean_md(text: str, labels: dict[str, str]) -> str:
@@ -97,7 +123,7 @@ def summary_for(node, labels) -> str:
         return f"{head}. {a.get('key_takeaways', '')}".strip(". ")
     if node.kind == "podcast":
         return " ".join(b for b in (a.get("focus"), a.get("rank_signal")) if b)
-    return a.get("known_for") or a.get("key_idea") or ""
+    return a.get("summary") or a.get("statement") or a.get("known_for") or a.get("key_idea") or ""
 
 
 def layout(nodes: list[str], edges: list[tuple[str, str]], community: dict[str, int]) -> dict[str, tuple[float, float]]:
@@ -184,7 +210,8 @@ def main() -> None:
         "partitions": [{"dir": d, "name": nm, "status": st, "n": part_counts.get(d, 0), "note": PARTITION_NOTE.get(d, "")}
                        for d, (nm, st) in PARTITION_INFO.items()],
         "chains": [[index[c] for c in ch if c in index] for ch in lineage_chains(kb)],
-        "start": "concept_liquidity_sweep_reversal",
+        "start": START if START in index else "concept_liquidity_sweep_reversal",
+        "foundation": foundation(kb, index),
     }
     payload = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     page = TEMPLATE.read_text(encoding="utf-8").replace("__TI_DATA__", payload)
