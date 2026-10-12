@@ -1,7 +1,9 @@
 # Trading Intelligence — partitioned knowledge base
 
 A structured, graph-linked knowledge base on **how markets work and how
-trades are analysed and executed**. It combines the Chart Fanatics YouTube
+trades are analysed and executed**, built on one foundation: the owner's own
+philosophy, **[The Philosophy of the Relationship](00_philosophy/philosophy-of-the-relationship.md)**.
+Every other partition is linked to it and read through it. It combines the Chart Fanatics YouTube
 channel, trading podcasts and landmark interviews, the legends of trading,
 the BabyPips School of Pipsology, the top-100 trading books, and the
 mathematics underneath analysis and execution. It is built to be loaded into
@@ -12,6 +14,7 @@ Claude (Projects, Claude Code, or the API) and mapped with
 
 | # | Partition | What's inside | Status |
 |---|---|---|---|
+| 00 | [`00_philosophy/`](00_philosophy/) | **The foundation.** The owner's philosophy (verbatim), its 21 sections and 12 principles linked to the graph (836 verified links), the decision protocol, the trading journal, 47 playbooks graded against the principles, a real-data evidence lab, 20 falsifiable hypotheses, a research program, and what the knowledge base adds or challenges | complete |
 | 00 | [`00_framework/`](00_framework/) | Ontology (9-layer stack), note schema, source-quality tiers, learning path | complete |
 | 01 | [`01_chart-fanatics/`](01_chart-fanatics/) | Channel profile, **47 strategy notes rebuilt from the first-party playbooks (T2)**, cross-playbook synthesis, full catalog (1,029 uploads: 50 long-form, 979 shorts) | scraped 2026-10-11; video transcripts need a home machine |
 | 02 | [`02_podcasts-interviews/`](02_podcasts-interviews/) | 16 podcasts, 4,460 episodes (270 linked to known guests), curated landmark interviews + **view-ranked top 100** | scraped 2026-10-11 |
@@ -25,6 +28,9 @@ Claude (Projects, Claude Code, or the API) and mapped with
 
 ## Start here
 
+0. `00_philosophy/philosophy-of-the-relationship.md`, then `00_philosophy/README.md`: the
+   foundation, and how it is put into practice (decision protocol, journal) and tested
+   (evidence lab, hypotheses).
 1. `08_synthesis/unified-framework.md`: the whole system on one page.
 2. `00_framework/ontology.md`: how everything is organised.
 3. `09_knowledge-graph/explorer.html`: the interactive Trading Intelligence Map (stack, graph,
@@ -33,9 +39,11 @@ Claude (Projects, Claude Code, or the API) and mapped with
 
 ## Using it with Claude
 
-- **Claude Projects (claude.ai):** upload `dist/trading-intelligence-bundle.md`
-  (built by `tools/bundle_for_claude.py`) as project knowledge, and paste
-  `CLAUDE.md` into the project instructions.
+- **Claude Projects (claude.ai):** upload `dist/trading-intelligence-core.md`
+  (about 130k tokens; built by `tools/bundle_for_claude.py`) as project knowledge,
+  add `dist/partitions/01_chart-fanatics.md` for the 47 full playbooks, and paste
+  `CLAUDE.md` into the project instructions. `dist/trading-intelligence-bundle.md`
+  has everything (about 330k tokens) for retrieval-based setups.
 - **Claude Code:** open this repo. `CLAUDE.md` tells Claude how to route
   questions through the partitions and the graph. With graphify installed,
   `/graphify query "..."` traverses `09_knowledge-graph/graph.json`.
