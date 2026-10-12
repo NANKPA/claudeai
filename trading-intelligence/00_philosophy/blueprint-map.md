@@ -317,7 +317,6 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 **Grounded in**
 - **Probabilistic Thinking** (`concept_probabilistic_thinking`) — The note's thinking-in-bets mindset, and its warning that a win rate after 30 trades has a wide confidence interval, match Section VI.
 - **Probability, Distributions & Fat Tails** (`concept_probability_fat_tails`) — The knowledge base's note on distributions treats a win rate as a posterior belief updated with evidence, not a constant.
-- **Expectancy** (`concept_expectancy`) — Section VI's aim of judging whether the evidence justifies the risk feeds the expected-value calculation of Section VII.
 - **Edge** (`concept_edge`) — An edge is a property of the distribution of outcomes under a repeatable condition, which is the quantity Section VI asks the trader to estimate.
 - **Market Regimes** (`concept_market_regimes`) — The section's example of a pattern in trending vs ranging markets is the regime filter.
 - **Backtesting** (`concept_backtesting`) — Measuring how often outcomes occurred under defined conditions is done by backtesting with realistic costs and out-of-sample tests.
@@ -923,7 +922,6 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 
 **Put into practice by**
 - **Master Pre-Trade Checklist** (`synthesis_pre_trade_checklist`) — Its ten scored lines (edge, regime, HTF bias, invalidation, size, state of mind, with fewer than 7 of 10 meaning no trade) put most of the twelve principles into one gate.
-- **The Unified Trading Intelligence Framework** (`synthesis_unified_framework`) — Its L0 to L8 stages map one-to-one onto the doctrine: edge and maths (P4, P5), context (P2), sizing (P9), discipline (P10) and review (P11).
 - **Fabio Valentini — Auction Market Theory + Order-Flow Scalping** (`strategy_fabio_valentini_amt_order_flow`) — Its rule that a trade needs market state, location and aggression in order, and that the trader stays flat if any is missing, plus 0.25 to 0.5% risk per trade, enacts Principles 2, 6 and 9.
 - **JJ Simon — Fair Pricing Theory: Continuation & Reversion** (`strategy_jj_simon_fair_pricing`) — Rule 8, the Three-Loss Rule (three failed reversions in one session stop reversions for that session), is a concrete instance of Principle 7's methodical response to changed evidence.
 - **Umar Ashraf — 5-Stage Trader Development Framework** (`strategy_umar_ashraf_5_stage`) — Rule 1's foundational principles (the goal is a repeatable process, control what you can, no single green month proves anything) and rule 8's mandatory journaling express Principles 8, 11 and 12.
@@ -1375,7 +1373,6 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 **Challenged by**
 - **Liquidity Sweep Reversal** (`concept_liquidity_sweep_reversal`) — Price often runs the stops beyond an obvious invalidation level and then reverses, so an immediate risk response can exit just before the hypothesis is vindicated.
 - **Brando Elite — Options Swing Trading on HTF Levels + News Catalysts** (`strategy_brando_options_swing`) — Its approach replaces a tight stop with a position small enough to lose entirely, deliberately holding through adverse moves rather than reacting to them.
-- **Trader Kane — 50% Reversal with SMT Divergence & PO3** (`strategy_trader_kane_lab_model`) — Its strict, early breakeven rule reacts quickly to adverse movement and the page admits it produces a high breakeven rate, showing that fast defensive responses also cost expectancy.
 
 **Put into practice by**
 - **JJ Simon — Fair Pricing Theory: Continuation & Reversion** (`strategy_jj_simon_fair_pricing`) — After three failed reversion trades in a session, reversions stop for that session, and rule 9 drops an old fair price once value has clearly moved.
@@ -1589,7 +1586,6 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 *The pull of profit must never replace checking whether a trade is justified: understanding, evidence, a tested model, probabilities, the cost of being wrong and fit with the process come first, and the money is judged only afterwards.*
 
 **Grounded in**
-- **Trading Psychology & Discipline** (`concept_trading_psychology`) — The principle targets the emotional attraction of money, which the psychology note links to over-trading, FOMO and ignoring stops.
 - **Trading Plan** (`concept_trading_plan`) — 'Does this decision follow my established process?' presupposes a written plan.
 - **Probabilistic Thinking** (`concept_probabilistic_thinking`) — Judging the process rather than a single trade's payoff is the probabilistic-thinking stance against 'resulting'.
 - **Expectancy** (`concept_expectancy`) — Money is properly evaluated as expectancy over many trades, not as what one trade might pay.
@@ -1921,7 +1917,7 @@ Ideas from [[synthesis_philosophy_extensions]] that add, sharpen or challenge pa
 
 ## Links removed by verification
 
-Independent verifier agents re-read the cited notes and refuted 27 proposed links. They are not in the graph:
+Independent verifier agents re-read the cited notes and refuted 31 proposed links. They are not in the graph:
 
 | Node | Link | Proposed as | Reason |
 |---|---|---|---|
@@ -1952,3 +1948,7 @@ Independent verifier agents re-read the cited notes and refuted 27 proposed link
 | `philo_source_of_opportunity` | Pavel — First-Principles Trading Framework (`strategy_pavel_first_principles`) | challenged_by | Pavel's rule 10 only says not to wait for price to turn before entering a mean-reversion pullback; that is about entry timing, not Section VIII's need for understanding, evidence and mathematics to agree, and the playbook's 'measurable cost in price and R:R' is not in the note (it says only that waiting 'gives up part of the edge'), so the challenge does not apply. |
 | `philo_market_system_of_rules` | Trading Intelligence Ontology (`framework_ontology`) | operationalized_by | The ontology sorts the knowledge base's notes into layers (maths, mechanics, setups, sizing, psychology, review). It is not a model of the market system and it tests nothing against the market, so the why misdescribes it and it does not put Section II's system-versus-model testing into practice. |
 | `question_repeatable_behaviors` | Idea Lineage Map — where every modern trading idea comes from (`synthesis_idea_lineage`) | operationalized_by | The lineage map traces where trading ideas came from (several of its roots, such as Kelly sizing and probability misjudgment, are not market behaviours at all) and offers no test or evidence of repeatability; equating an idea's age with a behaviour's persistence is the linker's own inference, not something the note says. |
+| `philo_conditional_probability` | Expectancy (`concept_expectancy`) | grounded_in | The why itself says Section VI feeds the expected-value calculation of Section VII. That makes expectancy something built on Section VI and treated in Section VII's 'Expected value' subsection, not a concept Section VI rests on, so the link belongs to Section VII. |
+| `philo_practical_doctrine` | The Unified Trading Intelligence Framework (`synthesis_unified_framework`) | operationalized_by | The framework has nine stages (L0-L8) and the doctrine has twelve principles, so they cannot map one-to-one: L1 mechanics, L3 lens, L4 setup and L5 trigger have no matching principle, Principles 1, 3, 6, 7, 8 and 12 have no stage, and the framework makes no claim about the doctrine at all. |
+| `principle_07_respond_methodically` | Trader Kane — 50% Reversal with SMT Divergence & PO3 (`strategy_trader_kane_lab_model`) | challenged_by | The playbook moves the stop to breakeven when the trade moves in the trader's favour and confirms, not in reaction to an adverse move. It only admits a high break-even rate, never a cost to expectancy, and the trade-management note says to measure the net effect, so this fixed, pre-set rule is a methodical response rather than a challenge to Principle 7. |
+| `principle_12_process_not_money` | Trading Psychology & Discipline (`concept_trading_psychology`) | grounded_in | The psychology note blames over-trading and ignoring stops on overconfidence, recency and confirmation bias (prospect theory), not on the pull of money, and FOMO appears only in its aliases, so the note does not make the link the why attributes to it. |

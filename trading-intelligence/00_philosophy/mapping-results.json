@@ -8804,6 +8804,34 @@
    "key": "operationalized_by",
    "reason": "The lineage map traces where trading ideas came from (several of its roots, such as Kelly sizing and probability misjudgment, are not market behaviours at all) and offers no test or evidence of repeatability; equating an idea's age with a behaviour's persistence is the linker's own inference, not something the note says.",
    "lens": "fidelity+relevance"
+  },
+  {
+   "node": "philo_conditional_probability",
+   "id": "concept_expectancy",
+   "key": "grounded_in",
+   "reason": "The why itself says Section VI feeds the expected-value calculation of Section VII. That makes expectancy something built on Section VI and treated in Section VII's 'Expected value' subsection, not a concept Section VI rests on, so the link belongs to Section VII.",
+   "lens": "fidelity+relevance"
+  },
+  {
+   "node": "philo_practical_doctrine",
+   "id": "synthesis_unified_framework",
+   "key": "operationalized_by",
+   "reason": "The framework has nine stages (L0-L8) and the doctrine has twelve principles, so they cannot map one-to-one: L1 mechanics, L3 lens, L4 setup and L5 trigger have no matching principle, Principles 1, 3, 6, 7, 8 and 12 have no stage, and the framework makes no claim about the doctrine at all.",
+   "lens": "fidelity+relevance"
+  },
+  {
+   "node": "principle_07_respond_methodically",
+   "id": "strategy_trader_kane_lab_model",
+   "key": "challenged_by",
+   "reason": "The playbook moves the stop to breakeven when the trade moves in the trader's favour and confirms, not in reaction to an adverse move. It only admits a high break-even rate, never a cost to expectancy, and the trade-management note says to measure the net effect, so this fixed, pre-set rule is a methodical response rather than a challenge to Principle 7.",
+   "lens": "fidelity+relevance"
+  },
+  {
+   "node": "principle_12_process_not_money",
+   "id": "concept_trading_psychology",
+   "key": "grounded_in",
+   "reason": "The psychology note blames over-trading and ignoring stops on overconfidence, recency and confirmation bias (prospect theory), not on the pull of money, and FOMO appears only in its aliases, so the note does not make the link the why attributes to it.",
+   "lens": "fidelity+relevance"
   }
  ],
  "regrade": {

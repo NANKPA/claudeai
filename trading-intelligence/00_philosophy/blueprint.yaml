@@ -203,7 +203,6 @@ sections:
   grounded_in:
   - concept_probabilistic_thinking?
   - concept_probability_fat_tails?
-  - concept_expectancy?
   - concept_edge?
   - concept_market_regimes?
   - concept_backtesting?
@@ -684,7 +683,6 @@ sections:
   - book_trade_your_way_financial_freedom?
   operationalized_by:
   - synthesis_pre_trade_checklist?
-  - synthesis_unified_framework?
   - strategy_fabio_valentini_amt_order_flow?
   - strategy_jj_simon_fair_pricing?
   - strategy_umar_ashraf_5_stage?
@@ -1200,7 +1198,6 @@ principles:
   challenged_by:
   - concept_liquidity_sweep_reversal?
   - strategy_brando_options_swing?
-  - strategy_trader_kane_lab_model?
   operationalized_by:
   - strategy_jj_simon_fair_pricing?
   - strategy_fredy_sarmiento_options_flow?
@@ -1424,7 +1421,6 @@ principles:
   summary: 'The pull of profit must never replace checking whether a trade is justified: understanding, evidence, a tested model, probabilities, the cost of being wrong and fit with the process come first,
     and the money is judged only afterwards.'
   grounded_in:
-  - concept_trading_psychology?
   - concept_trading_plan?
   - concept_probabilistic_thinking?
   - concept_expectancy?
