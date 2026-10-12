@@ -55,10 +55,10 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - **Master Pre-Trade Checklist** (`synthesis_pre_trade_checklist`) — Its ten scored gates (edge with at least 30 logged instances, regime match, invalidation, size, state of mind) turn Principles 1-10 into a pre-trade check.
 - **Core Formulas of Analysis & Execution** (`formula_sheet`) — It supplies the expectancy, standard-error, recovery, ruin and deflated-Sharpe formulas the philosophy asks the trader to compute.
 - **Source Quality Tiers** (`framework_source_tiers`) — Its rule that win-rate and P&L claims prove nothing until sampled and tested matches the philosophy's refusal to confuse a claim with a demonstrated fact.
-- **Matteo Conti playbook** (`strategy_matteo_conti_institutional`) — Its sequence (idea from research, a stated reason for the edge, objective rules, an 80/20 split with rules frozen before the out-of-sample test, Monte Carlo, live monitoring against simulated ranges) is Section XVII in practice.
-- **Jeff Holden playbook** (`strategy_jeff_holden_momentum_model`) — Its loop (log mistakes without judgment for a week, diagnose one with the five whys, turn the diagnosis into a measurable playbook fix) applies Sections XI and XVI and Principle 11.
+- **Matteo Conti — Institutional Strategy Development Framework** (`strategy_matteo_conti_institutional`) — Its sequence (idea from research, a stated reason for the edge, objective rules, an 80/20 split with rules frozen before the out-of-sample test, Monte Carlo, live monitoring against simulated ranges) is Section XVII in practice.
+- **Jeff Holden — Momentum Model Performance Development** (`strategy_jeff_holden_momentum_model`) — Its loop (log mistakes without judgment for a week, diagnose one with the five whys, turn the diagnosis into a measurable playbook fix) applies Sections XI and XVI and Principle 11.
 - **Trading Intelligence Ontology** (`framework_ontology`) — The nine-layer stack (edge, mechanics, context, lens, setup, execution, risk, psychology, review) gives each section of the philosophy a layer.
-- **Umar Ashraf playbook** (`strategy_umar_ashraf_5_stage`) — Its foundational rule that the goal is a repeatable process with money as a by-product, plus mandatory journaling at every stage, expresses Sections XII, XIII and XVI.
+- **Umar Ashraf — 5-Stage Trader Development Framework** (`strategy_umar_ashraf_5_stage`) — Its foundational rule that the goal is a repeatable process with money as a by-product, plus mandatory journaling at every stage, expresses Sections XII, XIII and XVI.
 
 **How it could be measured**
 - Run the evidence lab's pre-registered studies (A-C-B detours, conditional recurrence in- vs out-of-sample, sample size, ruin, overfitting, decision vs outcome, costs) and update the verdicts as the data are extended.
@@ -112,10 +112,10 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - **Stochastic Processes** (`concept_stochastic_processes`) — Much of quantitative finance (Bachelier, Black-Scholes, Almgren-Chriss) models price as a stochastic process with no reference to participants and still prices and executes well, which suggests some decisions do not need the relationship layer.
 
 **Put into practice by**
-- **Andrea Cimitan playbook** (`strategy_andrea_cimitan_amt`) — It treats the market as a continuous double auction in which urgency, not a count of buyers or sellers, moves price, and its rule 2 locates fair value with the volume profile before any setup.
-- **Carmine Rosato playbook** (`strategy_carmine_rosato_orderflow_masterclass`) — Its core idea is that price moves because one side is more aggressive than the passive liquidity it meets; it reads absorption, liquidity walls and stop runs to watch that interaction live.
-- **Jay Awtani playbook** (`strategy_jay_awtani_market_dna`) — Its premise is that only buyers and sellers move price, and rule 4 counts a setup as valid only when aggressive orders overwhelm the passive wall at a DNA zone.
-- **Fabio Valentini playbook** (`strategy_fabio_valentini_amt_order_flow`) — Its three filters (market state, location, aggression) require reading the auction's balance and the participants' aggression before any trade.
+- **Andrea Cimitan — Liquidity Auction & Order Flow Strategy** (`strategy_andrea_cimitan_amt`) — It treats the market as a continuous double auction in which urgency, not a count of buyers or sellers, moves price, and its rule 2 locates fair value with the volume profile before any setup.
+- **Carmine Rosato — Order Flow Masterclass: Absorption & Stop-Run Reclaim** (`strategy_carmine_rosato_orderflow_masterclass`) — Its core idea is that price moves because one side is more aggressive than the passive liquidity it meets; it reads absorption, liquidity walls and stop runs to watch that interaction live.
+- **Jay Awtani — Market DNA: Tape & Level II at DNA Zones** (`strategy_jay_awtani_market_dna`) — Its premise is that only buyers and sellers move price, and rule 4 counts a setup as valid only when aggressive orders overwhelm the passive wall at a DNA zone.
+- **Fabio Valentini — Auction Market Theory + Order-Flow Scalping** (`strategy_fabio_valentini_amt_order_flow`) — Its three filters (market state, location, aggression) require reading the auction's balance and the participants' aggression before any trade.
 - **The Unified Trading Intelligence Framework** (`synthesis_unified_framework`) — Its L1 stage asks how orders become prices in this instrument (central book, real volume, session liquidity) before context and setups.
 
 **How it could be measured**
@@ -157,11 +157,10 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - **The Black Swan** (`book_black_swan`) — Taleb argues that rare, high-impact events dominate outcomes and are systematically underestimated, so the part of the system no model captures may matter more than the part it does.
 
 **Put into practice by**
-- **Matteo Conti playbook** (`strategy_matteo_conti_institutional`) — Rule 2 requires a stated cause for every edge, which helps the trader notice when it stops applying, and rule 11 monitors live results against Monte Carlo ranges, testing the model against the market.
-- **Pavel playbook** (`strategy_pavel_first_principles`) — Rule 1 assesses the 'playground' (liquidity, volatility, efficiency, competition) before any setup, and rule 12 makes research continuous because edges decay as more capital trades them.
-- **Naoufel Taief playbook** (`strategy_naoufel_taief_algorithmic`) — Its incubation pool and benching rule keep every model under test on new data and retire a model when its drawdown nears the expected maximum.
+- **Matteo Conti — Institutional Strategy Development Framework** (`strategy_matteo_conti_institutional`) — Rule 2 requires a stated cause for every edge, which helps the trader notice when it stops applying, and rule 11 monitors live results against Monte Carlo ranges, testing the model against the market.
+- **Pavel — First-Principles Trading Framework** (`strategy_pavel_first_principles`) — Rule 1 assesses the 'playground' (liquidity, volatility, efficiency, competition) before any setup, and rule 12 makes research continuous because edges decay as more capital trades them.
+- **Naoufel Taief — No-Code Algorithmic Strategy Portfolio: Generate, Stress-Test & Rotate** (`strategy_naoufel_taief_algorithmic`) — Its incubation pool and benching rule keep every model under test on new data and retire a model when its drawdown nears the expected maximum.
 - **The Unified Trading Intelligence Framework** (`synthesis_unified_framework`) — Its feedback loop from L8 review back to L0 ('is the edge still real?') is the continual testing of the model against the market.
-- **Trading Intelligence Ontology** (`framework_ontology`) — The 9-layer stack is the knowledge base's explicit model of the system, laying out the interacting layers from mechanics to validation.
 
 **How it could be measured**
 - Count how often live results breach the Monte Carlo envelope of a backtested strategy (the model against the system).
@@ -202,11 +201,11 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - **Trend Following** (`concept_trend_following`) — The trend-following tradition does not interpret detours at all and exits on a mechanical trailing rule, which suggests a fixed exit can replace the judgement of 'within the structure' vs 'structure changed'.
 
 **Put into practice by**
-- **Trader Mayne playbook** (`strategy_trader_mayne_structure_ote`) — After a higher-timeframe market-structure break it expects a pullback into the POI in the discount half of the range, and it enters only on a lower-timeframe breaker with the stop beyond the swept low.
-- **Marci Silfrain playbook** (`strategy_marci_silfrain_measured_move`) — It never enters during the initial impulse, enters on the pullback (Little RZY), and voids the setup on a confirmed close beyond the trendline.
-- **Clement Ang playbook** (`strategy_clement_ang_price_cycle`) — It treats a controlled pullback to the 10 and 20 EMAs that becomes a sideways base as continuation, and on shorts a close back above the capping MA is the invalidation.
-- **Ted Zhang playbook** (`strategy_ted_zhang_stage_analysis`) — In Stage 2, pullbacks are expected to hold near rising weekly support; a bounce in Stage 4 is not a new uptrend; and losing Stage 2 structure means cut or exit.
-- **JJ Simon playbook** (`strategy_jj_simon_fair_pricing`) — Its three-loss rule stops reversion trades after three failures in a row in one session, because the market may be trending and setting a new fair value, which is evidence the structure has changed.
+- **Trader Mayne — Structure + OTE: HTF Break, POI Pullback & LTF Breaker Entry** (`strategy_trader_mayne_structure_ote`) — After a higher-timeframe market-structure break it expects a pullback into the POI in the discount half of the range, and it enters only on a lower-timeframe breaker with the stop beyond the swept low.
+- **Marci Silfrain — Measured Move Trend Strategy: Little RZY** (`strategy_marci_silfrain_measured_move`) — It never enters during the initial impulse, enters on the pullback (Little RZY), and voids the setup on a confirmed close beyond the trendline.
+- **Clement Ang — Price Cycle Strategy: Continuation Base and Late-Stage Failed Base** (`strategy_clement_ang_price_cycle`) — It treats a controlled pullback to the 10 and 20 EMAs that becomes a sideways base as continuation, and on shorts a close back above the capping MA is the invalidation.
+- **Ted Zhang — Stage Analysis Strategy** (`strategy_ted_zhang_stage_analysis`) — In Stage 2, pullbacks are expected to hold near rising weekly support; a bounce in Stage 4 is not a new uptrend; and losing Stage 2 structure means cut or exit.
+- **JJ Simon — Fair Pricing Theory: Continuation & Reversion** (`strategy_jj_simon_fair_pricing`) — Its three-loss rule stops reversion trades after three failures in a row in one session, because the market may be trending and setting a new fair value, which is evidence the structure has changed.
 
 **How it could be measured**
 - Evidence-lab S1: P(reach B | touched C_k) against the unconditional rate and a memoryless null, in and out of sample.
@@ -248,12 +247,11 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - **Studies in Tape Reading** (`book_studies_in_tape_reading`) — Wyckoff's tape reading treats inferring large operators' intentions from price and volume as a skill that can be learned. That century-old practice disputes the section's view that such inferences always go beyond what was observed.
 
 **Put into practice by**
-- **Andrea Cimitan playbook** (`strategy_andrea_cimitan_amt`) — Rule 6 tells aggression that moves price (control) apart from aggression that does not (absorption), and rule 8 treats stop runs as liquidity events, not deliberate stop hunting.
-- **Carmine Rosato playbook** (`strategy_carmine_rosato_orderflow_masterclass`) — Rule 3 reads how price responds to delta rather than the delta figure alone, so a strongly positive delta with no rise reads as absorbed buying.
-- **Candace Lau playbook** (`strategy_candace_lau_nq_sweep_reversal`) — Rule 5 says a sweep alone is never an entry because price can sweep and keep going, and rule 7 judges displacement by its speed, not by the finished candle.
-- **Ted Zhang playbook** (`strategy_ted_zhang_stage_analysis`) — Price must confirm any story: narrative, fundamentals or a catalyst add conviction only when Stage 2 structure is present.
-- **Matteo Conti playbook** (`strategy_matteo_conti_institutional`) — Rule 3 requires an entry that leaves no room for interpretation (a 1-minute candle closing above VWAP, not 'price looks strong').
-- **Dylan O’Neil playbook** (`strategy_dylan_oneil_vix_futures`) — Rule 4 treats an ES break of the prior-day low without VIX confirmation as lacking pressure, so the same price observation is checked against more evidence before continuation is inferred.
+- **Andrea Cimitan — Liquidity Auction & Order Flow Strategy** (`strategy_andrea_cimitan_amt`) — Rule 6 tells aggression that moves price (control) apart from aggression that does not (absorption), and rule 8 treats stop runs as liquidity events, not deliberate stop hunting.
+- **Carmine Rosato — Order Flow Masterclass: Absorption & Stop-Run Reclaim** (`strategy_carmine_rosato_orderflow_masterclass`) — Rule 3 reads how price responds to delta rather than the delta figure alone, so a strongly positive delta with no rise reads as absorbed buying.
+- **Candace Lau — NQ Liquidity Sweep & IFVG Reversal** (`strategy_candace_lau_nq_sweep_reversal`) — Rule 5 says a sweep alone is never an entry because price can sweep and keep going, and rule 7 judges displacement by its speed, not by the finished candle.
+- **Matteo Conti — Institutional Strategy Development Framework** (`strategy_matteo_conti_institutional`) — Rule 3 requires an entry that leaves no room for interpretation (a 1-minute candle closing above VWAP, not 'price looks strong').
+- **Dylan O’Neil — VIX Futures Strategy: VIX Pressure as Confirmation for ES and NQ** (`strategy_dylan_oneil_vix_futures`) — Rule 4 treats an ES break of the prior-day low without VIX confirmation as lacking pressure, so the same price observation is checked against more evidence before continuation is inferred.
 
 **How it could be measured**
 - Test the section's own example: after a large rise (top-decile N-day return), does the forward return distribution favour continuation, as the interpretation 'buying pressure may be increasing' implies?
@@ -293,11 +291,11 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - **Fooled by Randomness** (`book_fooled_by_randomness`) — Taleb shows that people read skill and pattern into luck and survivorship, the bias that makes storylines feel recurrent.
 
 **Put into practice by**
-- **Ted Zhang playbook** (`strategy_ted_zhang_stage_analysis`) — Rule 1 classifies the weekly stage with four questions before any trade, and a no-trade list covers stages where the storyline is unclear.
-- **Clement Ang playbook** (`strategy_clement_ang_price_cycle`) — It trades a named cycle (uptrend, pullback, wedge pop, cross back, base, breakout) and notes that many of the best bases form during market corrections, reading the storyline in context.
-- **Marci Silfrain playbook** (`strategy_marci_silfrain_measured_move`) — Rule 6 treats the first or second Little RZY of a fresh trend as the strongest and the fourth or fifth as a sign of exhaustion: the same pattern means different things at different points in the story.
-- **Andrea Cimitan playbook** (`strategy_andrea_cimitan_amt`) — Rule 1 uses order-flow autocorrelation (strong pressure in one session raises the odds of similar behaviour in the next) as a probable recurrence, not a certain one.
-- **Tanja Trades playbook** (`strategy_tanja_amd_futures`) — It reads the AMD sequence only after rule 1 has classified the day as high or low probability from the economic calendar.
+- **Ted Zhang — Stage Analysis Strategy** (`strategy_ted_zhang_stage_analysis`) — Rule 1 classifies the weekly stage with four questions before any trade, and a no-trade list covers stages where the storyline is unclear.
+- **Clement Ang — Price Cycle Strategy: Continuation Base and Late-Stage Failed Base** (`strategy_clement_ang_price_cycle`) — It trades a named cycle (uptrend, pullback, wedge pop, cross back, base, breakout) and notes that many of the best bases form during market corrections, reading the storyline in context.
+- **Marci Silfrain — Measured Move Trend Strategy: Little RZY** (`strategy_marci_silfrain_measured_move`) — Rule 6 treats the first or second Little RZY of a fresh trend as the strongest and the fourth or fifth as a sign of exhaustion: the same pattern means different things at different points in the story.
+- **Andrea Cimitan — Liquidity Auction & Order Flow Strategy** (`strategy_andrea_cimitan_amt`) — Rule 1 uses order-flow autocorrelation (strong pressure in one session raises the odds of similar behaviour in the next) as a probable recurrence, not a certain one.
+- **Tanja Trades — AMD Futures Model: Trade the Distribution Leg** (`strategy_tanja_amd_futures`) — It reads the AMD sequence only after rule 1 has classified the day as high or low probability from the economic calendar.
 
 **How it could be measured**
 - Evidence-lab S2: conditional cells (regime x volatility x pattern) found in sample, then classed out of sample as held, weakened, vanished or reversed.
@@ -343,10 +341,10 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 **Put into practice by**
 - **Core Formulas of Analysis & Execution** (`formula_sheet`) — The standard error SE(p) = sqrt(p(1-p)/n), which is about plus or minus 7% at n = 50, and the SQN t-statistic quantify how reliable an estimated win rate is.
 - **Master Pre-Trade Checklist** (`synthesis_pre_trade_checklist`) — Item 1 requires at least 30 logged instances with positive expectancy after costs, and item 2 requires the current regime to match the setup's valid regime.
-- **Matteo Conti playbook** (`strategy_matteo_conti_institutional`) — It judges rules by whether they have a positive expected return over a large sample, and uses Monte Carlo resampling to estimate the chance of a given loss or losing streak.
-- **Steven Dux playbook** (`strategy_steven_dux_small_cap_short`) — Its statistics are defined on a stated population (market cap, float under 50M, price above $3 because cheaper names distort the statistics) and reported per float band.
-- **Naoufel Taief playbook** (`strategy_naoufel_taief_algorithmic`) — Rule 7 requires in- and out-of-sample periods that include different regimes, plus cross-market tests, and rule 6 requires at least two trades a month so a sample builds up.
-- **Tori Trades playbook** (`strategy_tori_trendline_4h`) — Rule 8 logs 2-touch and 3-touch trendline breaks separately, so each condition gets its own probability estimate.
+- **Matteo Conti — Institutional Strategy Development Framework** (`strategy_matteo_conti_institutional`) — It judges rules by whether they have a positive expected return over a large sample, and uses Monte Carlo resampling to estimate the chance of a given loss or losing streak.
+- **Steven Dux — Small-Cap Short Statistics Playbook** (`strategy_steven_dux_small_cap_short`) — Its statistics are defined on a stated population (market cap, float under 50M, price above $3 because cheaper names distort the statistics) and reported per float band.
+- **Naoufel Taief — No-Code Algorithmic Strategy Portfolio: Generate, Stress-Test & Rotate** (`strategy_naoufel_taief_algorithmic`) — Rule 7 requires in- and out-of-sample periods that include different regimes, plus cross-market tests, and rule 6 requires at least two trades a month so a sample builds up.
+- **Tori Trades — Trendline Trading Playbook: Action Line and Safety Line** (`strategy_tori_trendline_4h`) — Rule 8 logs 2-touch and 3-touch trendline breaks separately, so each condition gets its own probability estimate.
 
 **How it could be measured**
 - Calibration of the probabilities journaled before each trade (Brier score, reliability curve).
@@ -394,10 +392,10 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 
 **Put into practice by**
 - **Core Formulas of Analysis & Execution** (`formula_sheet`) — It lists E[R] = p*b - q, the breakeven win rate, SQN, the per-trade cost formula and the deflated Sharpe ratio, the tools that answer the section's questions.
-- **Lance Breitstein playbook** (`strategy_lance_breitstein_mean_reversion`) — It judges every trade by EV = (win rate x reward) - (loss probability x risk), and requires a good setup to raise the odds, offer a large reward and have defined risk.
-- **Matteo Conti playbook** (`strategy_matteo_conti_institutional`) — Rule 5 reviews net profit, win rate, average trade, average winner and loser, maximum drawdown and losing streaks, and rule 6 freezes the rules after an 80/20 in-sample/out-of-sample split.
-- **Naoufel Taief playbook** (`strategy_naoufel_taief_algorithmic`) — It keeps to two or three entry rules and one exit, rejects strategies that work only at one parameter value, and ranks Monte Carlo drawdown above backtest drawdown.
-- **Pavel playbook** (`strategy_pavel_first_principles`) — Rule 2 checks the expected move per trade against costs; in the page's example about 0.4% per trade meets about 0.2% round-trip cost, so costs take half the edge.
+- **Lance Breitstein — Capitulation Mean Reversion** (`strategy_lance_breitstein_mean_reversion`) — It judges every trade by EV = (win rate x reward) - (loss probability x risk), and requires a good setup to raise the odds, offer a large reward and have defined risk.
+- **Matteo Conti — Institutional Strategy Development Framework** (`strategy_matteo_conti_institutional`) — Rule 5 reviews net profit, win rate, average trade, average winner and loser, maximum drawdown and losing streaks, and rule 6 freezes the rules after an 80/20 in-sample/out-of-sample split.
+- **Naoufel Taief — No-Code Algorithmic Strategy Portfolio: Generate, Stress-Test & Rotate** (`strategy_naoufel_taief_algorithmic`) — It keeps to two or three entry rules and one exit, rejects strategies that work only at one parameter value, and ranks Monte Carlo drawdown above backtest drawdown.
+- **Pavel — First-Principles Trading Framework** (`strategy_pavel_first_principles`) — Rule 2 checks the expected move per trade against costs; in the page's example about 0.4% per trade meets about 0.2% round-trip cost, so costs take half the edge.
 - **Consensus & Conflicts across sources** (`synthesis_consensus_conflicts`) — It settles high R:R vs high win rate with 'only expectancy after costs matters', and uses expectancy to show that a 90% win rate at 1:20 is implausible.
 
 **How it could be measured**
@@ -438,12 +436,11 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 **Challenged by**
 - **The Man Who Solved the Market** (`book_man_who_solved_the_market`) — The KB's account of Renaissance credits data and many small statistical edges at scale, suggesting evidence and mathematics can carry a decision without a human-readable explanation, so the understanding leg may be less necessary than Section VIII implies.
 - **Random Walk & Efficient Market Hypothesis** (`concept_random_walk_efficient_markets`) — If prices are close to efficient, most apparent agreements between story, evidence and maths are noise, and the adaptive-markets view adds that real edges decay, so the evidence leg can be stale by the time it is measured.
-- **Pavel playbook** (`strategy_pavel_first_principles`) — Rule 10 enters a mean-reversion pullback when the condition appears instead of waiting for the turn because waiting for confirmation gives up part of the edge, so demanding more agreement before acting has a measurable cost in price and R:R.
 
 **Put into practice by**
-- **Matteo Conti playbook** (`strategy_matteo_conti_institutional`) — Rule 2 requires explaining why the edge should exist, rule 3 defines objective entry, exit and size, and rules 5-8 backtest, freeze the rules, test out of sample and run Monte Carlo: understanding, evidence and mathematics in sequence.
-- **Lance Breitstein playbook** (`strategy_lance_breitstein_mean_reversion`) — It scores each extreme move on a checklist (size, speed, no fundamental change, forced flows, value anchor) and judges every trade on EV = win rate x reward - loss probability x risk.
-- **Traveling Trader playbook** (`strategy_traveling_trader_universal`) — A trade is valid only when the whole story is present (liquidity catalyst, displacement, retracement), and rule 4 requires confluence and forbids trading a single signal.
+- **Matteo Conti — Institutional Strategy Development Framework** (`strategy_matteo_conti_institutional`) — Rule 2 requires explaining why the edge should exist, rule 3 defines objective entry, exit and size, and rules 5-8 backtest, freeze the rules, test out of sample and run Monte Carlo: understanding, evidence and mathematics in sequence.
+- **Lance Breitstein — Capitulation Mean Reversion** (`strategy_lance_breitstein_mean_reversion`) — It scores each extreme move on a checklist (size, speed, no fundamental change, forced flows, value anchor) and judges every trade on EV = win rate x reward - loss probability x risk.
+- **Traveling Trader — Universal Trading Strategy** (`strategy_traveling_trader_universal`) — A trade is valid only when the whole story is present (liquidity catalyst, displacement, retracement), and rule 4 requires confluence and forbids trading a single signal.
 - **Master Pre-Trade Checklist** (`synthesis_pre_trade_checklist`) — Line 1 requires 30 or more logged instances with positive expectancy after costs and line 2 requires the current regime to match the setup's valid regime, scoring the evidence and mathematics legs before entry.
 - **Core Formulas of Analysis & Execution** (`formula_sheet`) — E[R] = p*b - q, the breakeven win rate and the standard error of an estimated win rate give the mathematics leg concrete tests.
 - **The Unified Trading Intelligence Framework** (`synthesis_unified_framework`) — Its L0 stage asks why the pattern should pay and who is on the other side before any setup is considered, the understanding leg stated as a gate.
@@ -474,14 +471,12 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - **Random Walk & Efficient Market Hypothesis** (`concept_random_walk_efficient_markets`) — The note's working model, that most patterns are noise and evidence must be demanded, explains why closely watched movements may have no predictive value.
 - **Overfitting & Edge Validation** (`concept_overfitting_validation`) — Inventing an explanation for each fluctuation is the discretionary form of testing many variants: with enough looks something appears meaningful by chance.
 - **Edge** (`concept_edge`) — An edge is a repeatable condition with positive expectancy; outside that condition a trade has no measured expectancy, so there is nothing to act on.
-- **Trading Sessions & Kill Zones** (`concept_trading_sessions_killzones`) — Defined liquidity windows tell the trader when not to engage at all, limiting aimless screen time.
 
 **Supported by**
 - **Fooled by Randomness** (`book_fooled_by_randomness`) — Taleb argues that looking at P&L too frequently mostly shows noise, the same mechanism as Section IX's warning that constant observation encourages over-interpretation.
 - **Thinking, Fast and Slow** (`book_thinking_fast_slow`) — Kahneman's account of fast heuristic judgement and overconfidence explains why traders see opportunities that are not there.
 - **The Mental Game of Trading** (`book_mental_game_of_trading`) — Tendler diagnoses greed, fear and tilt as the root flaws that push traders into trades their method does not justify.
 - **The Hour Between Dog and Wolf** (`book_hour_between_dog_wolf`) — Coates links hormonal cycles to risk-taking, supporting the claim that emotional involvement in a moving market distorts the decision to act.
-- **Market Wizards** (`book_market_wizards`) — The KB's synthesis records Paul Tudor Jones's defence-first stance and sizing down when trading poorly, a practitioner form of stepping back.
 
 **Challenged by**
 - **Way of the Turtle** (`book_way_of_the_turtle`) — Faith reports that most Turtles who failed did so by not taking every signal and destroying the distribution, so discretionary stepping back can remove the rare large winners an edge depends on.
@@ -489,12 +484,12 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - **The Whipsaw Song — Ed Seykota** (`media_seykota_whipsaw_song`) — Trend followers accept repeated whipsaws as the price of catching big trends, which often begin in exactly the ambiguous conditions a trader would step back from.
 
 **Put into practice by**
-- **Anthony Crudele playbook** (`strategy_anthony_crudele_futures_trend`) — After the 50% mean-reversion target is reached, rule 5 keeps 'hands in pocket' until the environment is clear again, and the no-trade rule says to stand aside whenever the environment is unclear.
-- **Tanja Trades playbook** (`strategy_tanja_amd_futures`) — Rule 3 says no clear draw on liquidity means no trade, rule 1 classifies low-probability days (bank holidays, the day before CPI, FOMC or NFP), and rule 10 says to stand aside without a clear bias or structure.
-- **Forrest Knight playbook** (`strategy_forrest_knight_volume_profile`) — Its built-in filter is to sit out when no valid edge signal appears, and rule 9 forbids trades in the low-volume middle of the profile.
-- **Fredy Sarmiento playbook** (`strategy_fredy_sarmiento_options_flow`) — Rule 3 allows no trade while price sits between meaningful levels, even for a whole day, and rule 10 says not to trade just because the market is open.
-- **Jared Tendler playbook** (`strategy_jared_tendler_psychology`) — Rule 9 has the trader weigh the emotional expected value of another trade when out of the zone and accept that the best trade may be none, and rule 8 ends the session if the reset limit is broken.
-- **Gala Trades playbook** (`strategy_gala_trades_price_action`) — Rule 1 drops a chart from the watchlist when the hourly trend is hard to read, and rule 4 forbids inventing new plans on the spot after the open.
+- **Anthony Crudele — Futures Trend Trading Strategy: Bollinger Band Environments** (`strategy_anthony_crudele_futures_trend`) — After the 50% mean-reversion target is reached, rule 5 keeps 'hands in pocket' until the environment is clear again, and the no-trade rule says to stand aside whenever the environment is unclear.
+- **Tanja Trades — AMD Futures Model: Trade the Distribution Leg** (`strategy_tanja_amd_futures`) — Rule 3 says no clear draw on liquidity means no trade, rule 1 classifies low-probability days (bank holidays, the day before CPI, FOMC or NFP), and rule 10 says to stand aside without a clear bias or structure.
+- **Forrest Knight — Volume Profile Edge-to-Edge Strategy** (`strategy_forrest_knight_volume_profile`) — Its built-in filter is to sit out when no valid edge signal appears, and rule 9 forbids trades in the low-volume middle of the profile.
+- **Fredy Sarmiento — Institutional Options Flow: Gamma Wall Reversal** (`strategy_fredy_sarmiento_options_flow`) — Rule 3 allows no trade while price sits between meaningful levels, even for a whole day, and rule 10 says not to trade just because the market is open.
+- **Jared Tendler — Trading Psychology Playbook: Emotion, Performance & the Mental Game** (`strategy_jared_tendler_psychology`) — Rule 9 has the trader weigh the emotional expected value of another trade when out of the zone and accept that the best trade may be none, and rule 8 ends the session if the reset limit is broken.
+- **Gala Trades — Price Action Strategy: Hourly Levels with Breaking Retest, Bounce & Rejection** (`strategy_gala_trades_price_action`) — Rule 1 drops a chart from the watchlist when the hourly trend is hard to read, and rule 4 forbids inventing new plans on the spot after the open.
 
 **How it could be measured**
 - Record 'stood aside' as an explicit journal decision with its reason, then track what the skipped situation did (a shadow journal) to estimate losses avoided versus opportunities missed.
@@ -538,15 +533,14 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - **Liquidity Sweep Reversal** (`concept_liquidity_sweep_reversal`) — Stops cluster beyond obvious swing levels, so price can sweep through a predefined invalidation level and then reverse, meaning a 'manage risk first' exit can fire precisely on an A->C->B detour.
 - **Probability, Distributions & Fat Tails** (`concept_probability_fat_tails`) — Gaps and fast markets mean a stop does not guarantee the planned loss, so the predefined rule may not be executable at the intended price.
 - **Statistical Consequences of Fat Tails** (`mathbook_statistical_consequences_fat_tails`) — Under fat tails sample statistics converge slowly, so asking whether a move was consistent with normal variation may not be answerable from the sample a trader has.
-- **Brando Elite playbook** (`strategy_brando_options_swing`) — It sizes the whole option position so it can go to zero instead of using a tight stop, explicitly to avoid premature exits during volatility, an alternative to exiting on changed evidence.
+- **Brando Elite — Options Swing Trading on HTF Levels + News Catalysts** (`strategy_brando_options_swing`) — It sizes the whole option position so it can go to zero instead of using a tight stop, explicitly to avoid premature exits during volatility, an alternative to exiting on changed evidence.
 
 **Put into practice by**
-- **Naoufel Taief playbook** (`strategy_naoufel_taief_algorithmic`) — Rule 12 does not pull a strategy for short-term underperformance but cuts size or moves it to simulation when drawdown nears its Monte Carlo maximum or underperformance persists, keeping benched strategies for possible return.
-- **Matteo Conti playbook** (`strategy_matteo_conti_institutional`) — Rule 11 monitors live results against Monte Carlo ranges and treats a breach as a warning to review, not automatic proof the strategy is broken.
-- **JJ Simon playbook** (`strategy_jj_simon_fair_pricing`) — The Three-Loss Rule stops reversion trades after three failed reversions in a session because the market may be trending to a new fair value, and rule 9 drops an old fair price once value has clearly moved.
-- **Fredy Sarmiento playbook** (`strategy_fredy_sarmiento_options_flow`) — Rule 9 says that if price breaks an options wall with strength and holds beyond it, the trader stops fading the level and reassesses which level now dominates.
-- **Ted Zhang playbook** (`strategy_ted_zhang_stage_analysis`) — Rule 5 sets invalidation before entry and exits when Stage 2 structure is lost, and the Moderna example shows exiting a failed breakout as the correct response.
-- **Jeff Holden playbook** (`strategy_jeff_holden_momentum_model`) — Its loop logs mistakes, diagnoses the main one with five whys, fixes risk mistakes before exit mistakes, and forbids trading a mistake that has not been diagnosed.
+- **Naoufel Taief — No-Code Algorithmic Strategy Portfolio: Generate, Stress-Test & Rotate** (`strategy_naoufel_taief_algorithmic`) — Rule 12 does not pull a strategy for short-term underperformance but cuts size or moves it to simulation when drawdown nears its Monte Carlo maximum or underperformance persists, keeping benched strategies for possible return.
+- **Matteo Conti — Institutional Strategy Development Framework** (`strategy_matteo_conti_institutional`) — Rule 11 monitors live results against Monte Carlo ranges and treats a breach as a warning to review, not automatic proof the strategy is broken.
+- **JJ Simon — Fair Pricing Theory: Continuation & Reversion** (`strategy_jj_simon_fair_pricing`) — The Three-Loss Rule stops reversion trades after three failed reversions in a session because the market may be trending to a new fair value, and rule 9 drops an old fair price once value has clearly moved.
+- **Fredy Sarmiento — Institutional Options Flow: Gamma Wall Reversal** (`strategy_fredy_sarmiento_options_flow`) — Rule 9 says that if price breaks an options wall with strength and holds beyond it, the trader stops fading the level and reassesses which level now dominates.
+- **Ted Zhang — Stage Analysis Strategy** (`strategy_ted_zhang_stage_analysis`) — Rule 5 sets invalidation before entry and exits when Stage 2 structure is lost, and the Moderna example shows exiting a failed breakout as the correct response.
 
 **How it could be measured**
 - After every invalidation exit, record whether price later reached the original target within a fixed horizon, to estimate how often exits fall on detours versus genuine failures, and compare structural with volatility-based stop placement on this measure.
@@ -589,11 +583,11 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - **Prop-Firm Evaluations & Risk Rules** (`concept_prop_firm_risk_rules`) — Trailing drawdown limits make results path-dependent, so a run of sound but losing decisions can end the account and outcomes carry consequences that decision quality does not protect against.
 
 **Put into practice by**
-- **Gala Trades playbook** (`strategy_gala_trades_price_action`) — Rule 17 journals every trade with mistakes, emotional state and a trade grade, and says to grade the process, not the P&L.
-- **Umar Ashraf playbook** (`strategy_umar_ashraf_5_stage`) — Stage 4 tracks consistency week over week by judging execution rather than outcome, and its principles warn that one green month does not mean the method is solved.
-- **Naoufel Taief playbook** (`strategy_naoufel_taief_algorithmic`) — Monte Carlo drawdown, not backtest drawdown, sets expectations, and rule 12 says short-term underperformance alone is not a reason to pull a strategy.
-- **Marci Silfrain playbook** (`strategy_marci_silfrain_measured_move`) — Its risk section (carried from earlier T3 notes) tells the trader to plan to lose on every trade and to expect the next 20 trades to lose in a row.
-- **Jeff Holden playbook** (`strategy_jeff_holden_momentum_model`) — Rule 1 logs mistakes without judgment as information, separating process errors from the P&L they produced.
+- **Gala Trades — Price Action Strategy: Hourly Levels with Breaking Retest, Bounce & Rejection** (`strategy_gala_trades_price_action`) — Rule 17 journals every trade with mistakes, emotional state and a trade grade, and says to grade the process, not the P&L.
+- **Umar Ashraf — 5-Stage Trader Development Framework** (`strategy_umar_ashraf_5_stage`) — Stage 4 tracks consistency week over week by judging execution rather than outcome, and its principles warn that one green month does not mean the method is solved.
+- **Naoufel Taief — No-Code Algorithmic Strategy Portfolio: Generate, Stress-Test & Rotate** (`strategy_naoufel_taief_algorithmic`) — Monte Carlo drawdown, not backtest drawdown, sets expectations, and rule 12 says short-term underperformance alone is not a reason to pull a strategy.
+- **Marci Silfrain — Measured Move Trend Strategy: Little RZY** (`strategy_marci_silfrain_measured_move`) — Its risk section (carried from earlier T3 notes) tells the trader to plan to lose on every trade and to expect the next 20 trades to lose in a row.
+- **Jeff Holden — Momentum Model Performance Development** (`strategy_jeff_holden_momentum_model`) — Rule 1 logs mistakes without judgment as information, separating process errors from the P&L they produced.
 - **Core Formulas of Analysis & Execution** (`formula_sheet`) — The standard error of a win rate, the SQN t-statistic and the streak-loss formula 1 - (1-f)^k quantify whether a losing run is within expected variation.
 
 **How it could be measured**
@@ -633,16 +627,16 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 
 **Challenged by**
 - **Stanley Druckenmiller — Lost Tree Club speech** (`media_druckenmiller_lost_tree_2015`) — Druckenmiller describes heavy concentration and Soros doubling the 1992 sterling short to 200%, conviction-driven sizing outside any uniform rule behind some of the largest results in the KB.
-- **Umar Ashraf playbook** (`strategy_umar_ashraf_5_stage`) — It holds that psychology is overrated early and that being overwhelmed by emotion means the size is too large, implying the fix is structural (smaller size, clearer rules) rather than resisting emotion.
+- **Umar Ashraf — 5-Stage Trader Development Framework** (`strategy_umar_ashraf_5_stage`) — It holds that psychology is overrated early and that being overwhelmed by emotion means the size is too large, implying the fix is structural (smaller size, clearer rules) rather than resisting emotion.
 - **Adaptive Markets** (`book_adaptive_markets`) — Lo's view that edges appear and decay means a tested process can stop working for reasons outside the trader, so the line between 'a few losses' and real decay is harder to draw than Section XII suggests.
 
 **Put into practice by**
-- **Jared Tendler playbook** (`strategy_jared_tendler_psychology`) — Rule 8's mid-session reset (name the emotion, move, refocus, set a limit) ends the session if the limit is broken, and rule 10 closes each day with an If-Then plan.
-- **Dhesi playbook** (`strategy_dhesi_liquidity_inversion`) — Rule 14 ends the day after two losses, and the risk section forbids moving the structural stop because the dollar amount feels uncomfortable.
-- **Clement Ang playbook** (`strategy_clement_ang_price_cycle`) — Its tilt control caps re-entries at about three attempts per ticker, after which the trader stops trading the name.
-- **Jeff Holden playbook** (`strategy_jeff_holden_momentum_model`) — Rule 8 grades a trade before sizing it (a C trade with A+ risk is 'hope with leverage'), and the no-trade rules forbid dropping the process because of friction.
-- **Naoufel Taief playbook** (`strategy_naoufel_taief_algorithmic`) — Rule 9 runs deployed strategies with no discretionary overrides, and they change only through the rule 12 bench-and-replace process tied to Monte Carlo drawdown.
-- **Gala Trades playbook** (`strategy_gala_trades_price_action`) — Rule 13 hides the running P&L and manages from the chart, and rule 15 allows one re-entry after a stop and never a third.
+- **Jared Tendler — Trading Psychology Playbook: Emotion, Performance & the Mental Game** (`strategy_jared_tendler_psychology`) — Rule 8's mid-session reset (name the emotion, move, refocus, set a limit) ends the session if the limit is broken, and rule 10 closes each day with an If-Then plan.
+- **Dhesi — Liquidity Inversion Model: Sweep, FVG Inversion & LTF Confirmation** (`strategy_dhesi_liquidity_inversion`) — Rule 14 ends the day after two losses, and the risk section forbids moving the structural stop because the dollar amount feels uncomfortable.
+- **Clement Ang — Price Cycle Strategy: Continuation Base and Late-Stage Failed Base** (`strategy_clement_ang_price_cycle`) — Its tilt control caps re-entries at about three attempts per ticker, after which the trader stops trading the name.
+- **Jeff Holden — Momentum Model Performance Development** (`strategy_jeff_holden_momentum_model`) — Rule 8 grades a trade before sizing it (a C trade with A+ risk is 'hope with leverage'), and the no-trade rules forbid dropping the process because of friction.
+- **Naoufel Taief — No-Code Algorithmic Strategy Portfolio: Generate, Stress-Test & Rotate** (`strategy_naoufel_taief_algorithmic`) — Rule 9 runs deployed strategies with no discretionary overrides, and they change only through the rule 12 bench-and-replace process tied to Monte Carlo drawdown.
+- **Gala Trades — Price Action Strategy: Hourly Levels with Breaking Retest, Bounce & Rejection** (`strategy_gala_trades_price_action`) — Rule 13 hides the running P&L and manages from the chart, and rule 15 allows one re-entry after a stop and never a third.
 
 **How it could be measured**
 - Compare the rule-adherence rate of trades taken after a loss with those taken after a win.
@@ -679,11 +673,11 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - **The Zurich Axioms** (`book_zurich_axioms`) — Gunther's axiom to always bet meaningfully argues that a speculator who keeps money out of the decision will not stake enough for good decisions to matter.
 
 **Put into practice by**
-- **Umar Ashraf playbook** (`strategy_umar_ashraf_5_stage`) — Its foundational principles state that the goal is a repeatable process, not a dollar figure, with money as a by-product.
-- **Dhesi playbook** (`strategy_dhesi_liquidity_inversion`) — Rule 11 sets targets at liquidity pools and never from dollar goals or arbitrary point counts.
-- **Gala Trades playbook** (`strategy_gala_trades_price_action`) — Rule 13 hides the running P&L during the trade and rule 17 grades the process rather than the P&L.
-- **Brando Elite playbook** (`strategy_brando_options_swing`) — Rule 1 puts mindset first: emotional stability, accepting that not every day is a trading day, and learning ahead of quick money.
-- **Jared Tendler playbook** (`strategy_jared_tendler_psychology`) — Rule 5 asks for motivation from goals, growth and mastery rather than money alone, and sets one process goal per session.
+- **Umar Ashraf — 5-Stage Trader Development Framework** (`strategy_umar_ashraf_5_stage`) — Its foundational principles state that the goal is a repeatable process, not a dollar figure, with money as a by-product.
+- **Dhesi — Liquidity Inversion Model: Sweep, FVG Inversion & LTF Confirmation** (`strategy_dhesi_liquidity_inversion`) — Rule 11 sets targets at liquidity pools and never from dollar goals or arbitrary point counts.
+- **Gala Trades — Price Action Strategy: Hourly Levels with Breaking Retest, Bounce & Rejection** (`strategy_gala_trades_price_action`) — Rule 13 hides the running P&L during the trade and rule 17 grades the process rather than the P&L.
+- **Brando Elite — Options Swing Trading on HTF Levels + News Catalysts** (`strategy_brando_options_swing`) — Rule 1 puts mindset first: emotional stability, accepting that not every day is a trading day, and learning ahead of quick money.
+- **Jared Tendler — Trading Psychology Playbook: Emotion, Performance & the Mental Game** (`strategy_jared_tendler_psychology`) — Rule 5 asks for motivation from goals, growth and mastery rather than money alone, and sets one process goal per session.
 - **Master Pre-Trade Checklist** (`synthesis_pre_trade_checklist`) — Its ten gates (edge, regime, session, bias, location, trigger, invalidation, R:R, size, state of mind) contain no money target, and size is derived from equity x risk% / stop.
 
 **How it could be measured**
@@ -728,11 +722,11 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - **Probability, Distributions & Fat Tails** (`concept_probability_fat_tails`) — Stops do not guarantee the maximum loss in gaps and limit moves, and correlations jump in crises, so per-trade risk caps understate the real risk to capital.
 
 **Put into practice by**
-- **Naoufel Taief playbook** (`strategy_naoufel_taief_algorithmic`) — Sizing is based on risk of ruin from win rate, R:R and average loss rather than confidence, with an average loss of about 0.5% of allocated capital, and the page notes that a 50% drawdown needs a 100% gain.
-- **Jeff Holden playbook** (`strategy_jeff_holden_momentum_model`) — Rule 8 caps risk by trade grade as a share of the daily stop (A+ up to 80%, A 30%, B 15%, C 5%).
-- **Dhesi playbook** (`strategy_dhesi_liquidity_inversion`) — Two losses end the day, and when volatility widens the structural stop to 40-50 NQ points the trader cuts contracts rather than moving the stop.
-- **Candace Lau playbook** (`strategy_candace_lau_nq_sweep_reversal`) — The daily limit is a maximum dollar or % loss rather than a trade count, illustrated by about $3,000 on a roughly $160,000 prop account.
-- **Steven Dux playbook** (`strategy_steven_dux_small_cap_short`) — Stop first, size second: the stop goes at real invalidation and size is reduced until the risk is acceptable, with caps of about 10% of float and 1% of volume.
+- **Naoufel Taief — No-Code Algorithmic Strategy Portfolio: Generate, Stress-Test & Rotate** (`strategy_naoufel_taief_algorithmic`) — Sizing is based on risk of ruin from win rate, R:R and average loss rather than confidence, with an average loss of about 0.5% of allocated capital, and the page notes that a 50% drawdown needs a 100% gain.
+- **Jeff Holden — Momentum Model Performance Development** (`strategy_jeff_holden_momentum_model`) — Rule 8 caps risk by trade grade as a share of the daily stop (A+ up to 80%, A 30%, B 15%, C 5%).
+- **Dhesi — Liquidity Inversion Model: Sweep, FVG Inversion & LTF Confirmation** (`strategy_dhesi_liquidity_inversion`) — Two losses end the day, and when volatility widens the structural stop to 40-50 NQ points the trader cuts contracts rather than moving the stop.
+- **Candace Lau — NQ Liquidity Sweep & IFVG Reversal** (`strategy_candace_lau_nq_sweep_reversal`) — The daily limit is a maximum dollar or % loss rather than a trade count, illustrated by about $3,000 on a roughly $160,000 prop account.
+- **Steven Dux — Small-Cap Short Statistics Playbook** (`strategy_steven_dux_small_cap_short`) — Stop first, size second: the stop goes at real invalidation and size is reduced until the risk is acceptable, with caps of about 10% of float and 1% of volume.
 - **Core Formulas of Analysis & Execution** (`formula_sheet`) — It holds the recovery formula, the streak-loss formula 1 - (1-f)^k and the ruin approximation (q/p)^U used to check survivability.
 
 **How it could be measured**
@@ -778,12 +772,12 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - **Reminiscences of a Stock Operator** (`book_reminiscences_stock_operator`) — Livermore's maxim that the market is never wrong, only opinions are, treats price as the arbiter and warns that a private value estimate invites holding losing positions.
 
 **Put into practice by**
-- **JJ Simon playbook** (`strategy_jj_simon_fair_pricing`) — Fair price is set by the event driving the market (the 9:30 ET open or the pre-news price) and dropped once value has clearly moved, and reversion is entered only after a DC or BOS confirmation.
-- **Andrea Cimitan playbook** (`strategy_andrea_cimitan_amt`) — Rule 2 locates fair value with the volume profile, setups 1-2 trade failed auctions back to fair value, and setup 3 accepts a breakout as new value only when price holds outside with participation.
-- **Lance Breitstein playbook** (`strategy_lance_breitstein_mean_reversion`) — Its scoring favours moves with no fundamental change (real news may have shifted equilibrium) and a quantifiable value anchor, and it targets only a partial retracement to the 20-period MA.
-- **Fabio Valentini playbook** (`strategy_fabio_valentini_amt_order_flow`) — It runs two models chosen by market state: trend continuation toward new balance, and mean reversion to the prior POC after a failed breakout.
-- **Pradeep Bonde playbook** (`strategy_pradeep_bonde_episodic_pivot`) — An Episodic Pivot requires months of neglect, a catalyst that changes the story and rapid repricing on a gap and volume, trading the market's re-rating of value.
-- **Matteo Conti playbook** (`strategy_matteo_conti_institutional`) — Its post-earnings drift model enters after a positive reaction plus an EPS beat and holds about 60 trading days, built on the slow absorption of earnings news into price.
+- **JJ Simon — Fair Pricing Theory: Continuation & Reversion** (`strategy_jj_simon_fair_pricing`) — Fair price is set by the event driving the market (the 9:30 ET open or the pre-news price) and dropped once value has clearly moved, and reversion is entered only after a DC or BOS confirmation.
+- **Andrea Cimitan — Liquidity Auction & Order Flow Strategy** (`strategy_andrea_cimitan_amt`) — Rule 2 locates fair value with the volume profile, setups 1-2 trade failed auctions back to fair value, and setup 3 accepts a breakout as new value only when price holds outside with participation.
+- **Lance Breitstein — Capitulation Mean Reversion** (`strategy_lance_breitstein_mean_reversion`) — Its scoring favours moves with no fundamental change (real news may have shifted equilibrium) and a quantifiable value anchor, and it targets only a partial retracement to the 20-period MA.
+- **Fabio Valentini — Auction Market Theory + Order-Flow Scalping** (`strategy_fabio_valentini_amt_order_flow`) — It runs two models chosen by market state: trend continuation toward new balance, and mean reversion to the prior POC after a failed breakout.
+- **Pradeep Bonde — Episodic Pivot** (`strategy_pradeep_bonde_episodic_pivot`) — An Episodic Pivot requires months of neglect, a catalyst that changes the story and rapid repricing on a gap and volume, trading the market's re-rating of value.
+- **Matteo Conti — Institutional Strategy Development Framework** (`strategy_matteo_conti_institutional`) — Its post-earnings drift model enters after a positive reaction plus an EPS beat and holds about 60 trading days, built on the slow absorption of earnings news into price.
 
 **How it could be measured**
 - For each value reference (POC, VWAP, session open, 20-period MA), measure the probability and speed of return after a deviation of k ATR, conditioned on regime and on whether news was present.
@@ -826,10 +820,10 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - **Fooled by Randomness** (`book_fooled_by_randomness`) — Taleb argues that looking at results too often mostly shows noise, which complicates a post-trade review of every outcome and risks reading meaning into random variation.
 
 **Put into practice by**
-- **Gala Trades playbook** (`strategy_gala_trades_price_action`) — Rule 17 journals every trade while fresh (entry, exit, stop, target, size, partials, setup type, planned or not, mistakes, emotional state, grade) and grades the process rather than the P&L.
-- **Jeff Holden playbook** (`strategy_jeff_holden_momentum_model`) — Rules 1 to 5 log every meaningful mistake in a daily report card for a week, pick one, find its root cause with five whys and turn it into a specific, measurable playbook fix.
-- **Jared Tendler playbook** (`strategy_jared_tendler_psychology`) — Rule 10 makes a post-session journal a cool-down that records what was felt, when focus slipped and an If-Then plan, and rule 3 collects warning-sign data for weeks.
-- **Umar Ashraf playbook** (`strategy_umar_ashraf_5_stage`) — Rule 8 makes journaling mandatory at every stage, and Stage 2 collects win rate, per-setup and time-of-day statistics from the journal.
+- **Gala Trades — Price Action Strategy: Hourly Levels with Breaking Retest, Bounce & Rejection** (`strategy_gala_trades_price_action`) — Rule 17 journals every trade while fresh (entry, exit, stop, target, size, partials, setup type, planned or not, mistakes, emotional state, grade) and grades the process rather than the P&L.
+- **Jeff Holden — Momentum Model Performance Development** (`strategy_jeff_holden_momentum_model`) — Rules 1 to 5 log every meaningful mistake in a daily report card for a week, pick one, find its root cause with five whys and turn it into a specific, measurable playbook fix.
+- **Jared Tendler — Trading Psychology Playbook: Emotion, Performance & the Mental Game** (`strategy_jared_tendler_psychology`) — Rule 10 makes a post-session journal a cool-down that records what was felt, when focus slipped and an If-Then plan, and rule 3 collects warning-sign data for weeks.
+- **Umar Ashraf — 5-Stage Trader Development Framework** (`strategy_umar_ashraf_5_stage`) — Rule 8 makes journaling mandatory at every stage, and Stage 2 collects win rate, per-setup and time-of-day statistics from the journal.
 - **Master Pre-Trade Checklist** (`synthesis_pre_trade_checklist`) — Its post-trade step logs setup tag, grade, regime, session, MAE/MFE, adherence and emotion, the fields needed to test beliefs against results.
 
 **How it could be measured**
@@ -877,10 +871,10 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - **Consensus & Conflicts across sources** (`synthesis_consensus_conflicts`) — It records discretionary versus systematic trading as a genuine conflict; many practitioner lenses rely on judgment that resists being defined 'clearly enough to identify it consistently in historical data'.
 
 **Put into practice by**
-- **Matteo Conti playbook** (`strategy_matteo_conti_institutional`) — Rules 3 and 6 to 8 define entry, exit and size with no room for interpretation, tune only on an 80% in-sample split, freeze the rules before testing the unseen 20%, then run Monte Carlo shuffle and resampling.
-- **Naoufel Taief playbook** (`strategy_naoufel_taief_algorithmic`) — Rule 7 tries to break each strategy with parameter-robustness, in-sample/out-of-sample periods spanning different regimes, Monte Carlo drawdown and cross-market tests, and rule 2 caps entries at two or three rules to limit curve fitting.
-- **Pavel playbook** (`strategy_pavel_first_principles`) — Rule 2 checks expected move per trade against fees, spread and slippage, and rules 4 to 7 tell the trader to research the exact thresholds and time exits for each market.
-- **JJ Simon playbook** (`strategy_jj_simon_fair_pricing`) — The playbook backtests the account model by its evaluation pass rate under the firm's real rules and suggests about 50 runs to reduce small-sample noise.
+- **Matteo Conti — Institutional Strategy Development Framework** (`strategy_matteo_conti_institutional`) — Rules 3 and 6 to 8 define entry, exit and size with no room for interpretation, tune only on an 80% in-sample split, freeze the rules before testing the unseen 20%, then run Monte Carlo shuffle and resampling.
+- **Naoufel Taief — No-Code Algorithmic Strategy Portfolio: Generate, Stress-Test & Rotate** (`strategy_naoufel_taief_algorithmic`) — Rule 7 tries to break each strategy with parameter-robustness, in-sample/out-of-sample periods spanning different regimes, Monte Carlo drawdown and cross-market tests, and rule 2 caps entries at two or three rules to limit curve fitting.
+- **Pavel — First-Principles Trading Framework** (`strategy_pavel_first_principles`) — Rule 2 checks expected move per trade against fees, spread and slippage, and rules 4 to 7 tell the trader to research the exact thresholds and time exits for each market.
+- **JJ Simon — Fair Pricing Theory: Continuation & Reversion** (`strategy_jj_simon_fair_pricing`) — The playbook backtests the account model by its evaluation pass rate under the firm's real rules and suggests about 50 runs to reduce small-sample noise.
 - **Core Formulas of Analysis & Execution** (`formula_sheet`) — Its L8 block gives the expected best Sharpe from N skill-less trials, the deflated Sharpe ratio and profit factor, the arithmetic of Section XVII's tests.
 - **The Unified Trading Intelligence Framework** (`synthesis_unified_framework`) — Its L8 stage compares live with backtest, deflates Sharpe for the number of trials and uses walk-forward testing.
 
@@ -930,9 +924,9 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 **Put into practice by**
 - **Master Pre-Trade Checklist** (`synthesis_pre_trade_checklist`) — Its ten scored lines (edge, regime, HTF bias, invalidation, size, state of mind, with fewer than 7 of 10 meaning no trade) put most of the twelve principles into one gate.
 - **The Unified Trading Intelligence Framework** (`synthesis_unified_framework`) — Its L0 to L8 stages map one-to-one onto the doctrine: edge and maths (P4, P5), context (P2), sizing (P9), discipline (P10) and review (P11).
-- **Fabio Valentini playbook** (`strategy_fabio_valentini_amt_order_flow`) — Its rule that a trade needs market state, location and aggression in order, and that the trader stays flat if any is missing, plus 0.25 to 0.5% risk per trade, enacts Principles 2, 6 and 9.
-- **JJ Simon playbook** (`strategy_jj_simon_fair_pricing`) — Rule 8, the Three-Loss Rule (three failed reversions in one session stop reversions for that session), is a concrete instance of Principle 7's methodical response to changed evidence.
-- **Umar Ashraf playbook** (`strategy_umar_ashraf_5_stage`) — Rule 1's foundational principles (the goal is a repeatable process, control what you can, no single green month proves anything) and rule 8's mandatory journaling express Principles 8, 11 and 12.
+- **Fabio Valentini — Auction Market Theory + Order-Flow Scalping** (`strategy_fabio_valentini_amt_order_flow`) — Its rule that a trade needs market state, location and aggression in order, and that the trader stays flat if any is missing, plus 0.25 to 0.5% risk per trade, enacts Principles 2, 6 and 9.
+- **JJ Simon — Fair Pricing Theory: Continuation & Reversion** (`strategy_jj_simon_fair_pricing`) — Rule 8, the Three-Loss Rule (three failed reversions in one session stop reversions for that session), is a concrete instance of Principle 7's methodical response to changed evidence.
+- **Umar Ashraf — 5-Stage Trader Development Framework** (`strategy_umar_ashraf_5_stage`) — Rule 1's foundational principles (the goal is a repeatable process, control what you can, no single green month proves anything) and rule 8's mandatory journaling express Principles 8, 11 and 12.
 
 **How it could be measured**
 - Twelve adherence flags per trade in the journal, and the R distribution of fully adherent trades versus trades with any violation.
@@ -975,8 +969,8 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - **Unknown Market Wizards** (`book_unknown_market_wizards`) — Schwager's traders with exceptional audited records show edges in many idiosyncratic forms, often developed through live practice, which suggests some real edges may not reduce to the measurable, repeatable behaviours Questions 1 and 2 look for.
 
 **Put into practice by**
-- **Matteo Conti playbook** (`strategy_matteo_conti_institutional`) — Rule 2 requires an explanation of why each edge should exist (so the trader notices when it stops applying), and rule 11 monitors live results against Monte Carlo ranges.
-- **Naoufel Taief playbook** (`strategy_naoufel_taief_algorithmic`) — Its approach of generating many strategies and trading only those that survive deliberate attempts to break them (rule 7) treats every strategy as a hypothesis that must earn its place.
+- **Matteo Conti — Institutional Strategy Development Framework** (`strategy_matteo_conti_institutional`) — Rule 2 requires an explanation of why each edge should exist (so the trader notices when it stops applying), and rule 11 monitors live results against Monte Carlo ranges.
+- **Naoufel Taief — No-Code Algorithmic Strategy Portfolio: Generate, Stress-Test & Rotate** (`strategy_naoufel_taief_algorithmic`) — Its approach of generating many strategies and trading only those that survive deliberate attempts to break them (rule 7) treats every strategy as a hypothesis that must earn its place.
 - **Source Quality Tiers** (`framework_source_tiers`) — Its rules of evidence (win-rate claims need a sample size and an R:R; backtests are hypotheses until checked out of sample) set the evidential bar the six questions require.
 - **Core Formulas of Analysis & Execution** (`formula_sheet`) — It provides the standard error of a win rate, the per-trade cost formula and the deflated Sharpe ratio, the tools for Questions 3, 4 and 1.
 - **Consensus & Conflicts across sources** (`synthesis_consensus_conflicts`) — Its table of claims that do not survive scrutiny (for example a 90% win rate at 1:20 R:R) shows the KB already applying Section XIX's scepticism to practitioner claims.
@@ -1030,7 +1024,7 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - **Partition 06 — Mathematics Foundations of Analysis & Execution** (`framework_math_foundations`) — Partition 06's tracks (probability and statistics, time series, microstructure and execution, risk and sizing, quant validation) are organised reading paths for four of Section XX's five fields.
 - **Idea Lineage Map — where every modern trading idea comes from** (`synthesis_idea_lineage`) — It traces the roots Section XX names (Kahneman and Tversky to Douglas and Duke; Kyle to Almgren-Chriss; Bachelier to Mandelbrot to Taleb; Kelly to Thorp to Tharp) to their modern descendants in the KB.
 - **Core Formulas of Analysis & Execution** (`formula_sheet`) — It collects the formulas of each field: Kyle's lambda and square-root impact (microstructure), standard error and SQN (inference), deflated Sharpe (overfitting), Kelly and ruin (risk).
-- **Matteo Conti playbook** (`strategy_matteo_conti_institutional`) — Rule 1 sources ideas from academic and industry research (for example SSRN papers) and tells the trader to take the market behaviour a paper found, not to copy its exact recipe.
+- **Matteo Conti — Institutional Strategy Development Framework** (`strategy_matteo_conti_institutional`) — Rule 1 sources ideas from academic and industry research (for example SSRN papers) and tells the trader to take the market behaviour a paper found, not to copy its exact recipe.
 
 **How it could be measured**
 - Microstructure: effective spread and slippage on one's own fills compared with quoted spread.
@@ -1075,7 +1069,7 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 **Put into practice by**
 - **The Unified Trading Intelligence Framework** (`synthesis_unified_framework`) — Its one-sentence version (a structurally motivated edge, traded only in its regime, sized to survive, executed without hesitation, audited relentlessly) is the manifesto in operational form.
 - **Master Pre-Trade Checklist** (`synthesis_pre_trade_checklist`) — It turns the manifesto's commitments (edge, context, invalidation, size, state of mind) into a scored gate with a no-trade threshold.
-- **Umar Ashraf playbook** (`strategy_umar_ashraf_5_stage`) — Its rule that there is no sudden breakthrough moment and one green month proves nothing echoes 'I will not confuse profit with proof', and staged sizing enacts patience.
+- **Umar Ashraf — 5-Stage Trader Development Framework** (`strategy_umar_ashraf_5_stage`) — Its rule that there is no sudden breakthrough moment and one green month proves nothing echoes 'I will not confuse profit with proof', and staged sizing enacts patience.
 
 **How it could be measured**
 - Each manifesto commitment as a journal flag (for example 'traded without understanding', 'risked continuation'), tracked as a violation rate over time.
@@ -1113,12 +1107,12 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - **The Man Who Solved the Market** (`book_man_who_solved_the_market`) — Renaissance is described as trading small statistical edges at scale, which raises the question whether a causal explanation is needed when the statistical evidence is strong.
 
 **Put into practice by**
-- **Vincent Desiano playbook** (`strategy_vincent_desiano_break_retest`) — It never trades the break itself, marks a no-trade zone before the open, and takes no trade if the level is not retested.
-- **Traveling Trader playbook** (`strategy_traveling_trader_universal`) — Rule 1 allows no trade while the market drifts quietly with no catalyst, and the first impulse is treated as a reaction, not an entry, until the three-part story (catalyst, displacement, retracement) is complete.
-- **Tanja Trades playbook** (`strategy_tanja_amd_futures`) — Rule 3 says no clear draw on liquidity means no trade and an unclear higher timeframe must not be forced onto a lower one; when nothing is clear, the default is no trade.
-- **Matteo Conti playbook** (`strategy_matteo_conti_institutional`) — Rule 2 requires an explanation of why the edge should exist (order imbalance, VWAP execution, slow absorption of news) before any rule is coded.
-- **Trader Yush playbook** (`strategy_yush_order_flow`) — Rule 3 forbids entering directly into strong momentum and requires price to return to an area of interest built in advance.
-- **Ted Zhang playbook** (`strategy_ted_zhang_stage_analysis`) — Its no-trade list excludes chasing an extended breakout, bullish news without Stage 2 structure, and any base too messy to define invalidation.
+- **Vincent Desiano — Break & Retest with a No-Trade Zone** (`strategy_vincent_desiano_break_retest`) — It never trades the break itself, marks a no-trade zone before the open, and takes no trade if the level is not retested.
+- **Traveling Trader — Universal Trading Strategy** (`strategy_traveling_trader_universal`) — Rule 1 allows no trade while the market drifts quietly with no catalyst, and the first impulse is treated as a reaction, not an entry, until the three-part story (catalyst, displacement, retracement) is complete.
+- **Tanja Trades — AMD Futures Model: Trade the Distribution Leg** (`strategy_tanja_amd_futures`) — Rule 3 says no clear draw on liquidity means no trade and an unclear higher timeframe must not be forced onto a lower one; when nothing is clear, the default is no trade.
+- **Matteo Conti — Institutional Strategy Development Framework** (`strategy_matteo_conti_institutional`) — Rule 2 requires an explanation of why the edge should exist (order imbalance, VWAP execution, slow absorption of news) before any rule is coded.
+- **Trader Yush — Trading Trapped Buyers & Sellers with Order Flow** (`strategy_yush_order_flow`) — Rule 3 forbids entering directly into strong momentum and requires price to return to an area of interest built in advance.
+- **Ted Zhang — Stage Analysis Strategy** (`strategy_ted_zhang_stage_analysis`) — Its no-trade list excludes chasing an extended breakout, bullish news without Stage 2 structure, and any base too messy to define invalidation.
 
 **How it could be measured**
 - Add a journal flag 'explanation written before entry (Y/N)' and compare expectancy and rule adherence between the two groups.
@@ -1152,16 +1146,15 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - **Secrets for Profiting in Bull and Bear Markets** (`book_secrets_bull_bear_markets`) — Weinstein's stages make the same pullback a buying opportunity in Stage 2 and a warning in Stage 3 or 4.
 
 **Challenged by**
-- **Liquidity Sweep Reversal** (`concept_liquidity_sweep_reversal`) — The knowledge base warns that every reversal looks like a sweep afterwards and that a pool can be run with continuation, so reading a move by its context is often reliable only in hindsight.
 - **Trend Following** (`concept_trend_following`) — Systematic trend followers do not judge whether a move is temporary; they exit on a fixed rule, which implies the distinction may be too unreliable to decide in real time.
 
 **Put into practice by**
-- **Trader Mayne playbook** (`strategy_trader_mayne_structure_ote`) — It defines the higher-timeframe trend by a clear market-structure break, buys only in the discount half of an uptrend, and enters only after a lower-timeframe breaker setup inside the POI.
-- **Rajan Dhall playbook** (`strategy_rajan_dhall_auction`) — Its no-trade conditions include the daily and 5-minute charts disagreeing.
-- **Anthony Crudele playbook** (`strategy_anthony_crudele_futures_trend`) — It reads the daily environment first, and in a bullish expansion it trades long only, with no fading of rallies.
-- **Tori Trades playbook** (`strategy_tori_trendline_4h`) — It confirms the main trend on the daily or weekly chart first, and a close through the Safety Line ends the trade at once instead of being excused as noise.
-- **JJ Simon playbook** (`strategy_jj_simon_fair_pricing`) — Rule 2 looks back 6 to 12 hours for context, and the three-loss rule treats repeated failed reversions as a sign the market may be setting a new fair value.
-- **Ted Zhang playbook** (`strategy_ted_zhang_stage_analysis`) — A bounce in Stage 4 is explicitly not a new uptrend, and a Stage 2 position is cut when price loses the key averages.
+- **Trader Mayne — Structure + OTE: HTF Break, POI Pullback & LTF Breaker Entry** (`strategy_trader_mayne_structure_ote`) — It defines the higher-timeframe trend by a clear market-structure break, buys only in the discount half of an uptrend, and enters only after a lower-timeframe breaker setup inside the POI.
+- **Rajan Dhall — Auction Market Strategy: Auction-Zone Retest with Trend** (`strategy_rajan_dhall_auction`) — Its no-trade conditions include the daily and 5-minute charts disagreeing.
+- **Anthony Crudele — Futures Trend Trading Strategy: Bollinger Band Environments** (`strategy_anthony_crudele_futures_trend`) — It reads the daily environment first, and in a bullish expansion it trades long only, with no fading of rallies.
+- **Tori Trades — Trendline Trading Playbook: Action Line and Safety Line** (`strategy_tori_trendline_4h`) — It confirms the main trend on the daily or weekly chart first, and a close through the Safety Line ends the trade at once instead of being excused as noise.
+- **JJ Simon — Fair Pricing Theory: Continuation & Reversion** (`strategy_jj_simon_fair_pricing`) — Rule 2 looks back 6 to 12 hours for context, and the three-loss rule treats repeated failed reversions as a sign the market may be setting a new fair value.
+- **Ted Zhang — Stage Analysis Strategy** (`strategy_ted_zhang_stage_analysis`) — A bounce in Stage 4 is explicitly not a new uptrend, and a Stage 2 position is cut when price loses the key averages.
 
 **How it could be measured**
 - How often a lower-timeframe CHoCH inside a higher-timeframe uptrend resolves as continuation rather than reversal.
@@ -1201,11 +1194,11 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - **Liquidity** (`concept_liquidity`) — Stops cluster just beyond obvious invalidation levels and get swept, so the 'correct' structural invalidation point is the one most likely to be hit before the hypothesis plays out.
 
 **Put into practice by**
-- **Steven Dux playbook** (`strategy_steven_dux_small_cap_short`) — Stop first, size second: the stop goes at the real invalidation point, size is cut to fit it, and a first-red-day short is never sized as if the top were guaranteed.
-- **Tori Trades playbook** (`strategy_tori_trendline_4h`) — Every trade has a Safety Line defined at entry, and a break trade without a clear opposing Safety Line must wait until one forms.
-- **Ted Zhang playbook** (`strategy_ted_zhang_stage_analysis`) — Rule 5 sets the invalidation before entry: below the base, or below the level whose loss proves the breakout failed.
-- **Traveling Trader playbook** (`strategy_traveling_trader_universal`) — Rule 6 puts the stop beyond the level that proves the story wrong and rules out wide stops chosen out of fear.
-- **Marci Silfrain playbook** (`strategy_marci_silfrain_measured_move`) — Rule 10 lists what invalidates the setup: a close beyond the trendline, an over-extended or irregular structure, or a collapse with no pullback.
+- **Steven Dux — Small-Cap Short Statistics Playbook** (`strategy_steven_dux_small_cap_short`) — Stop first, size second: the stop goes at the real invalidation point, size is cut to fit it, and a first-red-day short is never sized as if the top were guaranteed.
+- **Tori Trades — Trendline Trading Playbook: Action Line and Safety Line** (`strategy_tori_trendline_4h`) — Every trade has a Safety Line defined at entry, and a break trade without a clear opposing Safety Line must wait until one forms.
+- **Ted Zhang — Stage Analysis Strategy** (`strategy_ted_zhang_stage_analysis`) — Rule 5 sets the invalidation before entry: below the base, or below the level whose loss proves the breakout failed.
+- **Traveling Trader — Universal Trading Strategy** (`strategy_traveling_trader_universal`) — Rule 6 puts the stop beyond the level that proves the story wrong and rules out wide stops chosen out of fear.
+- **Marci Silfrain — Measured Move Trend Strategy: Little RZY** (`strategy_marci_silfrain_measured_move`) — Rule 10 lists what invalidates the setup: a close beyond the trendline, an over-extended or irregular structure, or a collapse with no pullback.
 - **Master Pre-Trade Checklist** (`synthesis_pre_trade_checklist`) — Item 7 requires the stop to sit where the idea is wrong, not at an arbitrary distance.
 
 **How it could be measured**
@@ -1248,12 +1241,12 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - **Adaptive Markets** (`book_adaptive_markets`) — Lo's adaptive markets imply that conditional tendencies appear, get crowded and decay, so a well-defined condition may not keep its probability.
 
 **Put into practice by**
-- **Fabio Valentini playbook** (`strategy_fabio_valentini_amt_order_flow`) — The market state (balance or imbalance) chooses the model, each model has its own session (New York for trend, London for mean reversion), and the trader stays flat if state, location or aggression is missing.
-- **Tanja Trades playbook** (`strategy_tanja_amd_futures`) — Rule 1 classifies each day as high or low probability from the economic calendar; the day before CPI, FOMC or NFP, for example, is low probability.
-- **Dylan O’Neil playbook** (`strategy_dylan_oneil_vix_futures`) — The same ES break of the prior-day low reads as continuation when the VIX confirms and as a likely failure when it does not, and rule 8 says a rising VIX near all-time highs is not a reliable signal on its own.
-- **Anthony Crudele playbook** (`strategy_anthony_crudele_futures_trend`) — Its Bollinger Band environments (consolidation, expansion, mean reversion) each set a different posture and a different set of allowed trades.
-- **TG Capital playbook** (`strategy_tg_capital_trident`) — If the 5/9/13/21 EMAs cross or tangle the setup is invalid, so the pattern counts only when the market is trending.
-- **Trader Yush playbook** (`strategy_yush_order_flow`) — Rule 2 classifies the market as balanced or imbalanced and uses a different model for each (fades at the value edges vs pullbacks into LVNs).
+- **Fabio Valentini — Auction Market Theory + Order-Flow Scalping** (`strategy_fabio_valentini_amt_order_flow`) — The market state (balance or imbalance) chooses the model, each model has its own session (New York for trend, London for mean reversion), and the trader stays flat if state, location or aggression is missing.
+- **Tanja Trades — AMD Futures Model: Trade the Distribution Leg** (`strategy_tanja_amd_futures`) — Rule 1 classifies each day as high or low probability from the economic calendar; the day before CPI, FOMC or NFP, for example, is low probability.
+- **Dylan O’Neil — VIX Futures Strategy: VIX Pressure as Confirmation for ES and NQ** (`strategy_dylan_oneil_vix_futures`) — The same ES break of the prior-day low reads as continuation when the VIX confirms and as a likely failure when it does not, and rule 8 says a rising VIX near all-time highs is not a reliable signal on its own.
+- **Anthony Crudele — Futures Trend Trading Strategy: Bollinger Band Environments** (`strategy_anthony_crudele_futures_trend`) — Its Bollinger Band environments (consolidation, expansion, mean reversion) each set a different posture and a different set of allowed trades.
+- **TG Capital — London Session Trident Strategy** (`strategy_tg_capital_trident`) — If the 5/9/13/21 EMAs cross or tangle the setup is invalid, so the pattern counts only when the market is trending.
+- **Trader Yush — Trading Trapped Buyers & Sellers with Order Flow** (`strategy_yush_order_flow`) — Rule 2 classifies the market as balanced or imbalanced and uses a different model for each (fades at the value edges vs pullbacks into LVNs).
 
 **How it could be measured**
 - The evidence-lab S2 design: conditional cells compared with the baseline in sample and checked out of sample.
@@ -1291,16 +1284,16 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 
 **Challenged by**
 - **Statistical Consequences of Fat Tails** (`mathbook_statistical_consequences_fat_tails`) — Taleb shows the law of large numbers works slowly under fat tails, so an expectancy 'justified' from a few hundred trades can be false precision.
-- **Brando Elite playbook** (`strategy_brando_options_swing`) — The note observes the setup appears only a few times a year, so any win rate rests on a tiny sample and rare high-conviction opportunities cannot be justified statistically before acting.
+- **Brando Elite — Options Swing Trading on HTF Levels + News Catalysts** (`strategy_brando_options_swing`) — The note observes the setup appears only a few times a year, so any win rate rests on a tiny sample and rare high-conviction opportunities cannot be justified statistically before acting.
 - **Adaptive Markets** (`book_adaptive_markets`) — If edges appear and decay with the ecology of participants, an expectancy measured on past data may not apply now, however rigorous the calculation.
 
 **Put into practice by**
 - **Core Formulas of Analysis & Execution** (`formula_sheet`) — E[R], the breakeven win rate, the standard error of a win rate, SQN and the deflated Sharpe ratio are the formulas the principle calls for.
-- **Lance Breitstein playbook** (`strategy_lance_breitstein_mean_reversion`) — Every trade is judged on EV = win rate x reward - loss probability x risk, and rule 8 scales size to setup quality.
-- **Matteo Conti playbook** (`strategy_matteo_conti_institutional`) — Rules 5-8 backtest the exact rules, develop on 80% of history, freeze, test on the unseen 20%, and run shuffle and resampling Monte Carlo.
-- **Naoufel Taief playbook** (`strategy_naoufel_taief_algorithmic`) — Rule 6's baseline filters (return-to-drawdown of at least 4, profit factor of at least 1.3-1.5, two or more trades a month) are followed by rule 7's parameter-robustness, out-of-sample, Monte Carlo and cross-market tests.
-- **Pavel playbook** (`strategy_pavel_first_principles`) — Rule 2 requires the expected move per trade to be large relative to costs, with the example of 0.2% round-trip costs taking half of a 0.4% edge.
-- **JJ Simon playbook** (`strategy_jj_simon_fair_pricing`) — Its risk section measures the prop evaluation pass rate under real rules rather than raw P&L and suggests about 50 evaluation backtests to reduce small-sample noise.
+- **Lance Breitstein — Capitulation Mean Reversion** (`strategy_lance_breitstein_mean_reversion`) — Every trade is judged on EV = win rate x reward - loss probability x risk, and rule 8 scales size to setup quality.
+- **Matteo Conti — Institutional Strategy Development Framework** (`strategy_matteo_conti_institutional`) — Rules 5-8 backtest the exact rules, develop on 80% of history, freeze, test on the unseen 20%, and run shuffle and resampling Monte Carlo.
+- **Naoufel Taief — No-Code Algorithmic Strategy Portfolio: Generate, Stress-Test & Rotate** (`strategy_naoufel_taief_algorithmic`) — Rule 6's baseline filters (return-to-drawdown of at least 4, profit factor of at least 1.3-1.5, two or more trades a month) are followed by rule 7's parameter-robustness, out-of-sample, Monte Carlo and cross-market tests.
+- **Pavel — First-Principles Trading Framework** (`strategy_pavel_first_principles`) — Rule 2 requires the expected move per trade to be large relative to costs, with the example of 0.2% round-trip costs taking half of a 0.4% edge.
+- **JJ Simon — Fair Pricing Theory: Continuation & Reversion** (`strategy_jj_simon_fair_pricing`) — Its risk section measures the prop evaluation pass rate under real rules rather than raw P&L and suggests about 50 evaluation backtests to reduce small-sample noise.
 
 **How it could be measured**
 - For each playbook, compute EV per trade in R after costs with a bootstrap confidence interval and the probability that EV > 0.
@@ -1333,19 +1326,18 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - **The Mental Game of Trading** (`book_mental_game_of_trading`) — Tendler treats greed and FOMO as fixable flaws that produce trades outside the method.
 - **Thinking, Fast and Slow** (`book_thinking_fast_slow`) — Overconfidence and fast heuristic judgement explain why traders believe weak setups are good enough.
 - **Fooled by Randomness** (`book_fooled_by_randomness`) — Taleb's noise-versus-signal argument supports waiting until the evidence is distinguishable from randomness.
-- **Market Wizards** (`book_market_wizards`) — The KB's synthesis finds the wizards share risk control and discipline across very different methods.
 
 **Challenged by**
-- **Pavel playbook** (`strategy_pavel_first_principles`) — Rule 10 argues that waiting for confirmation gives up part of the edge, so a strict wait-until-clear rule has a cost in entry price.
+- **Pavel — First-Principles Trading Framework** (`strategy_pavel_first_principles`) — Rule 10 argues that waiting for confirmation gives up part of the edge, so a strict wait-until-clear rule has a cost in entry price.
 - **Way of the Turtle** (`book_way_of_the_turtle`) — Turtles who skipped signals they found unattractive failed, so if 'unclear' is judged in the moment, not forcing can turn into selectively skipping valid signals.
 
 **Put into practice by**
-- **Fabio Valentini playbook** (`strategy_fabio_valentini_amt_order_flow`) — A trade needs market state, location and aggression in that order, the trader stays flat if any one is missing, and rule 4 says no aggression means no trade.
-- **Abraham Perez playbook** (`strategy_abraham_perez_ict_orderflow`) — Rule 9 lists no-trade conditions: timeframes disagree, balanced market, no liquidity taken, no order-flow confirmation, late entry, or risk that cannot be defined.
-- **Tanja Trades playbook** (`strategy_tanja_amd_futures`) — Rule 3 says no clear draw on liquidity means no trade, and rule 6 skips the setup and never chases if price does not retrace into the FVG.
-- **Marco Trades playbook** (`strategy_marco_trades_liquidity_grab`) — Rule 2 says no liquidity built means no trade and to stand aside, and a setup that does not form inside the session window is not taken.
-- **Okala playbook** (`strategy_okala_80_20_nasdaq`) — Rule 6 skips any setup that cannot take a clean 10-point stop, and rule 9 filters out partial setups away from a level.
-- **Ted Zhang playbook** (`strategy_ted_zhang_stage_analysis`) — Rule 8's no-trade list includes an extended breakout the trader would be chasing and any base too messy to define invalidation.
+- **Fabio Valentini — Auction Market Theory + Order-Flow Scalping** (`strategy_fabio_valentini_amt_order_flow`) — A trade needs market state, location and aggression in that order, the trader stays flat if any one is missing, and rule 4 says no aggression means no trade.
+- **Abraham Perez — Nasdaq ICT & Order Flow Scalping Strategy** (`strategy_abraham_perez_ict_orderflow`) — Rule 9 lists no-trade conditions: timeframes disagree, balanced market, no liquidity taken, no order-flow confirmation, late entry, or risk that cannot be defined.
+- **Tanja Trades — AMD Futures Model: Trade the Distribution Leg** (`strategy_tanja_amd_futures`) — Rule 3 says no clear draw on liquidity means no trade, and rule 6 skips the setup and never chases if price does not retrace into the FVG.
+- **Marco Trades — Liquidity Grab Trading Strategy** (`strategy_marco_trades_liquidity_grab`) — Rule 2 says no liquidity built means no trade and to stand aside, and a setup that does not form inside the session window is not taken.
+- **Okala — 80/20 Nasdaq Strategy: Reactions at 20 and 80 Price Endings** (`strategy_okala_80_20_nasdaq`) — Rule 6 skips any setup that cannot take a clean 10-point stop, and rule 9 filters out partial setups away from a level.
+- **Ted Zhang — Stage Analysis Strategy** (`strategy_ted_zhang_stage_analysis`) — Rule 8's no-trade list includes an extended breakout the trader would be chasing and any base too messy to define invalidation.
 
 **How it could be measured**
 - Tag trades taken with one or more plan conditions missing and compare their expectancy with fully qualified trades.
@@ -1382,16 +1374,16 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 
 **Challenged by**
 - **Liquidity Sweep Reversal** (`concept_liquidity_sweep_reversal`) — Price often runs the stops beyond an obvious invalidation level and then reverses, so an immediate risk response can exit just before the hypothesis is vindicated.
-- **Brando Elite playbook** (`strategy_brando_options_swing`) — Its approach replaces a tight stop with a position small enough to lose entirely, deliberately holding through adverse moves rather than reacting to them.
-- **Trader Kane playbook** (`strategy_trader_kane_lab_model`) — Its strict, early breakeven rule reacts quickly to adverse movement and the page admits it produces a high breakeven rate, showing that fast defensive responses also cost expectancy.
+- **Brando Elite — Options Swing Trading on HTF Levels + News Catalysts** (`strategy_brando_options_swing`) — Its approach replaces a tight stop with a position small enough to lose entirely, deliberately holding through adverse moves rather than reacting to them.
+- **Trader Kane — 50% Reversal with SMT Divergence & PO3** (`strategy_trader_kane_lab_model`) — Its strict, early breakeven rule reacts quickly to adverse movement and the page admits it produces a high breakeven rate, showing that fast defensive responses also cost expectancy.
 
 **Put into practice by**
-- **JJ Simon playbook** (`strategy_jj_simon_fair_pricing`) — After three failed reversion trades in a session, reversions stop for that session, and rule 9 drops an old fair price once value has clearly moved.
-- **Fredy Sarmiento playbook** (`strategy_fredy_sarmiento_options_flow`) — Rule 9 accepts a failed level: when price breaks a wall with strength and holds, the trader stops fading it and reassesses.
-- **Naoufel Taief playbook** (`strategy_naoufel_taief_algorithmic`) — Rule 12 benches a strategy only when drawdown nears its Monte Carlo maximum or underperformance persists, never on short-term losses alone.
-- **Matteo Conti playbook** (`strategy_matteo_conti_institutional`) — Rule 11 treats a breach of the Monte Carlo range as a trigger for review, not proof that the strategy is broken.
-- **Andrea Cimitan playbook** (`strategy_andrea_cimitan_amt`) — Rule 9 holds while the controlling side stays in control and exits when the opposite side takes over, tying the exit to the evidence for the trade.
-- **Alex Temiz playbook** (`strategy_alex_temiz_first_red_day`) — Its invalidation is a reclaim of the previous day's close that holds, with an immediate exit and no holding in hope.
+- **JJ Simon — Fair Pricing Theory: Continuation & Reversion** (`strategy_jj_simon_fair_pricing`) — After three failed reversion trades in a session, reversions stop for that session, and rule 9 drops an old fair price once value has clearly moved.
+- **Fredy Sarmiento — Institutional Options Flow: Gamma Wall Reversal** (`strategy_fredy_sarmiento_options_flow`) — Rule 9 accepts a failed level: when price breaks a wall with strength and holds, the trader stops fading it and reassesses.
+- **Naoufel Taief — No-Code Algorithmic Strategy Portfolio: Generate, Stress-Test & Rotate** (`strategy_naoufel_taief_algorithmic`) — Rule 12 benches a strategy only when drawdown nears its Monte Carlo maximum or underperformance persists, never on short-term losses alone.
+- **Matteo Conti — Institutional Strategy Development Framework** (`strategy_matteo_conti_institutional`) — Rule 11 treats a breach of the Monte Carlo range as a trigger for review, not proof that the strategy is broken.
+- **Andrea Cimitan — Liquidity Auction & Order Flow Strategy** (`strategy_andrea_cimitan_amt`) — Rule 9 holds while the controlling side stays in control and exits when the opposite side takes over, tying the exit to the evidence for the trade.
+- **Alex Temiz — First Red Day Strategy** (`strategy_alex_temiz_first_red_day`) — Its invalidation is a reclaim of the previous day's close that holds, with an immediate exit and no holding in hope.
 
 **How it could be measured**
 - Measure the delay between an invalidation trigger and the actual exit, and its cost in R.
@@ -1431,10 +1423,10 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - **Ed Seykota** (`person_ed_seykota`) — Seykota's claim that everybody gets what they want from the market treats outcome patterns as evidence about the trader's process and intentions.
 
 **Put into practice by**
-- **Gala Trades playbook** (`strategy_gala_trades_price_action`) — Rule 17 journals mistakes, emotional state and a trade grade, and grades the process, not the P&L.
-- **Umar Ashraf playbook** (`strategy_umar_ashraf_5_stage`) — Stage 4 judges consistency by execution rather than outcome, week over week.
-- **Jeff Holden playbook** (`strategy_jeff_holden_momentum_model`) — The daily report card logs process mistakes without judgment, separately from results.
-- **Kyle Williams playbook** (`strategy_kyle_williams_first_red_day`) — Its review tracks performance by setup grade, so quality and outcome are compared over a sample.
+- **Gala Trades — Price Action Strategy: Hourly Levels with Breaking Retest, Bounce & Rejection** (`strategy_gala_trades_price_action`) — Rule 17 journals mistakes, emotional state and a trade grade, and grades the process, not the P&L.
+- **Umar Ashraf — 5-Stage Trader Development Framework** (`strategy_umar_ashraf_5_stage`) — Stage 4 judges consistency by execution rather than outcome, week over week.
+- **Jeff Holden — Momentum Model Performance Development** (`strategy_jeff_holden_momentum_model`) — The daily report card logs process mistakes without judgment, separately from results.
+- **Kyle Williams — Small Cap Short Selling Playbook: First Red Day and Parabolic Short** (`strategy_kyle_williams_first_red_day`) — Its review tracks performance by setup grade, so quality and outcome are compared over a sample.
 - **Core Formulas of Analysis & Execution** (`formula_sheet`) — The standard error of an estimated win rate (about +/-7% at n = 50) shows how little a short run of outcomes proves.
 
 **How it could be measured**
@@ -1478,11 +1470,11 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - **The Zurich Axioms** (`book_zurich_axioms`) — Gunther's axiom to always bet meaningfully argues that very small fractions protect capital at the cost of never compounding it, a tension the principle does not address.
 
 **Put into practice by**
-- **Ariel Hernandez playbook** (`strategy_ariel_hernandez_real_simple`) — Rule 8 sizes each position so a stopped-out trade costs only 0.5 to 1% of total equity, and rule 13 adds exposure only as trades work and the market confirms.
-- **Fabio Valentini playbook** (`strategy_fabio_valentini_amt_order_flow`) — Both models risk 0.25 to 0.5% of the account per trade with a stop that is never widened.
-- **Naoufel Taief playbook** (`strategy_naoufel_taief_algorithmic`) — Rule 10 allocates 5 to 25% of the account per strategy with an average loss of about 0.5% of that allocation, sizes by risk of ruin, and rule 12 cuts size when drawdown nears its Monte Carlo maximum.
-- **Jeff Holden playbook** (`strategy_jeff_holden_momentum_model`) — Rule 8 grades a trade before sizing it and caps risk at 80%, 30%, 15% or 5% of the daily stop for A+, A, B and C trades.
-- **Dhesi playbook** (`strategy_dhesi_liquidity_inversion`) — Rule 14 ends the day after two losses, a hard circuit breaker on losing sequences.
+- **Ariel Hernandez — Real Simple Swing Setups: EP, HVC, Flat Base, U&R, High Tight Flag** (`strategy_ariel_hernandez_real_simple`) — Rule 8 sizes each position so a stopped-out trade costs only 0.5 to 1% of total equity, and rule 13 adds exposure only as trades work and the market confirms.
+- **Fabio Valentini — Auction Market Theory + Order-Flow Scalping** (`strategy_fabio_valentini_amt_order_flow`) — Both models risk 0.25 to 0.5% of the account per trade with a stop that is never widened.
+- **Naoufel Taief — No-Code Algorithmic Strategy Portfolio: Generate, Stress-Test & Rotate** (`strategy_naoufel_taief_algorithmic`) — Rule 10 allocates 5 to 25% of the account per strategy with an average loss of about 0.5% of that allocation, sizes by risk of ruin, and rule 12 cuts size when drawdown nears its Monte Carlo maximum.
+- **Jeff Holden — Momentum Model Performance Development** (`strategy_jeff_holden_momentum_model`) — Rule 8 grades a trade before sizing it and caps risk at 80%, 30%, 15% or 5% of the daily stop for A+, A, B and C trades.
+- **Dhesi — Liquidity Inversion Model: Sweep, FVG Inversion & LTF Confirmation** (`strategy_dhesi_liquidity_inversion`) — Rule 14 ends the day after two losses, a hard circuit breaker on losing sequences.
 - **Core Formulas of Analysis & Execution** (`formula_sheet`) — Its L6 block gives fixed-fractional size, streak damage, recovery after drawdown and the gambler's-ruin approximation.
 
 **How it could be measured**
@@ -1525,11 +1517,11 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - **Prop-Firm Evaluations & Risk Rules** (`concept_prop_firm_risk_rules`) — Profit targets, trailing drawdowns and deadlines in the prop-firm environment most KB traders use push toward over-aggression, creating the emotional pressure the principle tries to remove.
 
 **Put into practice by**
-- **Jared Tendler playbook** (`strategy_jared_tendler_psychology`) — Rule 8's mid-session reset (name the emotion, move, refocus, then at most one small trade or a 15-minute break, with the session over if that limit is broken) and rule 9's emotional expected value are direct procedures for the principle.
-- **Dhesi playbook** (`strategy_dhesi_liquidity_inversion`) — Rule 14 ends the day after two losses, which the note links to stopping revenge trading.
-- **Clement Ang playbook** (`strategy_clement_ang_price_cycle`) — Rule 27 allows about three attempts per ticker and then stops trading the name, an explicit tilt control.
-- **Gala Trades playbook** (`strategy_gala_trades_price_action`) — Rule 13 hides the running P&L and manages from the chart, and the comfort test treats a loss you would not be at ease taking as a sign of oversizing.
-- **Umar Ashraf playbook** (`strategy_umar_ashraf_5_stage`) — Its rule that emotions taking over means the size is too big turns emotional interference into a sizing signal.
+- **Jared Tendler — Trading Psychology Playbook: Emotion, Performance & the Mental Game** (`strategy_jared_tendler_psychology`) — Rule 8's mid-session reset (name the emotion, move, refocus, then at most one small trade or a 15-minute break, with the session over if that limit is broken) and rule 9's emotional expected value are direct procedures for the principle.
+- **Dhesi — Liquidity Inversion Model: Sweep, FVG Inversion & LTF Confirmation** (`strategy_dhesi_liquidity_inversion`) — Rule 14 ends the day after two losses, which the note links to stopping revenge trading.
+- **Clement Ang — Price Cycle Strategy: Continuation Base and Late-Stage Failed Base** (`strategy_clement_ang_price_cycle`) — Rule 27 allows about three attempts per ticker and then stops trading the name, an explicit tilt control.
+- **Gala Trades — Price Action Strategy: Hourly Levels with Breaking Retest, Bounce & Rejection** (`strategy_gala_trades_price_action`) — Rule 13 hides the running P&L and manages from the chart, and the comfort test treats a loss you would not be at ease taking as a sign of oversizing.
+- **Umar Ashraf — 5-Stage Trader Development Framework** (`strategy_umar_ashraf_5_stage`) — Its rule that emotions taking over means the size is too big turns emotional interference into a sizing signal.
 - **Master Pre-Trade Checklist** (`synthesis_pre_trade_checklist`) — Item 10 requires no revenge, no FOMO and no tilt, and that the trade's loss be accepted in advance.
 
 **How it could be measured**
@@ -1572,10 +1564,10 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - **Adaptive Markets** (`book_adaptive_markets`) — If edges evolve with the market's ecology, older records describe conditions that may no longer exist, so a longer record is not automatically better evidence for the next decision.
 
 **Put into practice by**
-- **Jeff Holden playbook** (`strategy_jeff_holden_momentum_model`) — Its development loop logs mistakes for a week, picks the most important one, finds the root cause with five whys, writes a measurable fix and treats friction as the next data point.
-- **Umar Ashraf playbook** (`strategy_umar_ashraf_5_stage`) — Stage 2 collects win rate, per-setup and time-of-day data with daily review, and Stage 4 uses journal data only for small refinements while tracking week-over-week consistency.
-- **Kyle Williams playbook** (`strategy_kyle_williams_first_red_day`) — Its review rule tracks performance by setup grade.
-- **Matteo Conti playbook** (`strategy_matteo_conti_institutional`) — Rule 11 monitors live results against Monte Carlo ranges and treats a breach as a reason to review, not as automatic proof the strategy is broken.
+- **Jeff Holden — Momentum Model Performance Development** (`strategy_jeff_holden_momentum_model`) — Its development loop logs mistakes for a week, picks the most important one, finds the root cause with five whys, writes a measurable fix and treats friction as the next data point.
+- **Umar Ashraf — 5-Stage Trader Development Framework** (`strategy_umar_ashraf_5_stage`) — Stage 2 collects win rate, per-setup and time-of-day data with daily review, and Stage 4 uses journal data only for small refinements while tracking week-over-week consistency.
+- **Kyle Williams — Small Cap Short Selling Playbook: First Red Day and Parabolic Short** (`strategy_kyle_williams_first_red_day`) — Its review rule tracks performance by setup grade.
+- **Matteo Conti — Institutional Strategy Development Framework** (`strategy_matteo_conti_institutional`) — Rule 11 monitors live results against Monte Carlo ranges and treats a breach as a reason to review, not as automatic proof the strategy is broken.
 - **The Unified Trading Intelligence Framework** (`synthesis_unified_framework`) — Its L8 stage journals per setup, regime and session and compares live results with the backtest.
 
 **How it could be measured**
@@ -1615,10 +1607,10 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - **Prop-Firm Evaluations & Risk Rules** (`concept_prop_firm_risk_rules`) — Prop-firm economics put money targets, payouts and consistency rules at the centre of most KB traders' environment; JJ Simon's playbook even sets stops and targets from the account model rather than chart invalidation, which makes money-first decisions structural.
 
 **Put into practice by**
-- **Umar Ashraf playbook** (`strategy_umar_ashraf_5_stage`) — Rule 1 states that the goal is not to make a dollar figure but to build a repeatable process, with money as a by-product.
-- **Gala Trades playbook** (`strategy_gala_trades_price_action`) — Rule 13 hides the running P&L and manages from the chart, and rule 17 grades the process rather than the P&L.
-- **Naoufel Taief playbook** (`strategy_naoufel_taief_algorithmic`) — Rule 9 runs strategies with no discretionary overrides and rule 12 forbids pulling a strategy for short-term underperformance, a 'process over prediction' design.
-- **Kris Verma playbook** (`strategy_kris_verma_shorting`) — Setup B states that the goal is consistency, not catching every move, and the method is judged by overall profit factor rather than single trades.
+- **Umar Ashraf — 5-Stage Trader Development Framework** (`strategy_umar_ashraf_5_stage`) — Rule 1 states that the goal is not to make a dollar figure but to build a repeatable process, with money as a by-product.
+- **Gala Trades — Price Action Strategy: Hourly Levels with Breaking Retest, Bounce & Rejection** (`strategy_gala_trades_price_action`) — Rule 13 hides the running P&L and manages from the chart, and rule 17 grades the process rather than the P&L.
+- **Naoufel Taief — No-Code Algorithmic Strategy Portfolio: Generate, Stress-Test & Rotate** (`strategy_naoufel_taief_algorithmic`) — Rule 9 runs strategies with no discretionary overrides and rule 12 forbids pulling a strategy for short-term underperformance, a 'process over prediction' design.
+- **Kris Verma — Small-Cap Shorting: Gap Fades, Backside Parabolics & Halt Exhaustion** (`strategy_kris_verma_shorting`) — Setup B states that the goal is consistency, not catching every move, and the method is judged by overall profit factor rather than single trades.
 - **Master Pre-Trade Checklist** (`synthesis_pre_trade_checklist`) — None of its ten gates concerns the profit amount; a trade proceeds only if at least seven are met.
 
 **How it could be measured**
@@ -1662,11 +1654,10 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - **Reflexivity** (`concept_reflexivity`) — If participants' beliefs and actions change the market, a behaviour's repeatability is not fixed: discovering and trading it can alter or end it.
 
 **Put into practice by**
-- **Matteo Conti playbook** (`strategy_matteo_conti_institutional`) — It treats four candidate behaviours (opening-range breakout, VWAP trend, post-earnings drift, overnight anomaly) as hypotheses tied to a stated cause and tested under the same out-of-sample protocol.
-- **Naoufel Taief playbook** (`strategy_naoufel_taief_algorithmic`) — It generates thousands of rule sets and keeps only the few that survive robustness tests across parameters, regimes, markets and timeframes.
-- **Pavel playbook** (`strategy_pavel_first_principles`) — It restricts the search to three directional behaviours (short-term momentum, mean reversion, long-term momentum) and tells the trader to research each market's thresholds.
+- **Matteo Conti — Institutional Strategy Development Framework** (`strategy_matteo_conti_institutional`) — It treats four candidate behaviours (opening-range breakout, VWAP trend, post-earnings drift, overnight anomaly) as hypotheses tied to a stated cause and tested under the same out-of-sample protocol.
+- **Naoufel Taief — No-Code Algorithmic Strategy Portfolio: Generate, Stress-Test & Rotate** (`strategy_naoufel_taief_algorithmic`) — It generates thousands of rule sets and keeps only the few that survive robustness tests across parameters, regimes, markets and timeframes.
+- **Pavel — First-Principles Trading Framework** (`strategy_pavel_first_principles`) — It restricts the search to three directional behaviours (short-term momentum, mean reversion, long-term momentum) and tells the trader to research each market's thresholds.
 - **Core Formulas of Analysis & Execution** (`formula_sheet`) — The expected best Sharpe from N skill-less trials and the Hurst exponent give quantitative tests of chance versus structure.
-- **Idea Lineage Map — where every modern trading idea comes from** (`synthesis_idea_lineage`) — It shows most 'new' strategies re-express six to eight old ideas, narrowing the candidates for repeatable behaviour to those with long histories.
 
 **How it could be measured**
 - Out-of-sample persistence of a defined behaviour's conditional frequency, tested against a null corrected for multiple testing.
@@ -1706,10 +1697,10 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - **Overfitting & Edge Validation** (`concept_overfitting_validation`) — Every extra condition splits the sample further and adds another way to overfit, so more precise conditions can make estimates less reliable, not more.
 
 **Put into practice by**
-- **TG Capital playbook** (`strategy_tg_capital_trident`) — Rule 2 requires the 5, 9, 13 (or 15) and 21 EMAs to be clearly stacked in the trade direction and marks the setup invalid if they cross or tangle, a numeric regime gate.
-- **Fabio Valentini playbook** (`strategy_fabio_valentini_amt_order_flow`) — Market state (balanced or out of balance) is the first gate and selects which of two models applies.
-- **JJ Simon playbook** (`strategy_jj_simon_fair_pricing`) — Rule 8's Three-Loss Rule uses three failed reversions in a session as an observable sign that the market is trending and setting a new fair value.
-- **Pavel playbook** (`strategy_pavel_first_principles`) — Rules 4 and 6 define 'normal' movement and 'abnormal' deviation numerically (average daily range versus a 2x expansion; usual distance from a 5-day SMA versus a much larger gap).
+- **TG Capital — London Session Trident Strategy** (`strategy_tg_capital_trident`) — Rule 2 requires the 5, 9, 13 (or 15) and 21 EMAs to be clearly stacked in the trade direction and marks the setup invalid if they cross or tangle, a numeric regime gate.
+- **Fabio Valentini — Auction Market Theory + Order-Flow Scalping** (`strategy_fabio_valentini_amt_order_flow`) — Market state (balanced or out of balance) is the first gate and selects which of two models applies.
+- **JJ Simon — Fair Pricing Theory: Continuation & Reversion** (`strategy_jj_simon_fair_pricing`) — Rule 8's Three-Loss Rule uses three failed reversions in a session as an observable sign that the market is trending and setting a new fair value.
+- **Pavel — First-Principles Trading Framework** (`strategy_pavel_first_principles`) — Rules 4 and 6 define 'normal' movement and 'abnormal' deviation numerically (average daily range versus a 2x expansion; usual distance from a 5-day SMA versus a much larger gap).
 - **Core Formulas of Analysis & Execution** (`formula_sheet`) — It gives the Hurst exponent and Wilder's ATR formula as measurable regime inputs.
 
 **How it could be measured**
@@ -1741,21 +1732,18 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 **Supported by**
 - **All of Statistics** (`mathbook_all_of_statistics`) — Wasserman covers confidence intervals and the bootstrap, the tools for stating how reliable an estimate is.
 - **Statistical Inference** (`mathbook_casella_berger`) — Casella and Berger give the theory of estimation and its uncertainty.
-- **Introduction to Probability** (`mathbook_blitzstein_intro_probability`) — Blitzstein and Hwang teach conditioning and expectation, the basis for estimating probabilities under defined conditions.
 - **Statistical Consequences of Fat Tails** (`mathbook_statistical_consequences_fat_tails`) — Taleb shows that under fat tails the law of large numbers works slowly, so historical frequencies are less reliable than standard formulas suggest.
 - **The Deflated Sharpe Ratio** (`paper_deflated_sharpe_2014`) — The deflated Sharpe ratio quantifies how selection from many trials inflates an estimate.
 - **Fooled by Randomness** (`book_fooled_by_randomness`) — Taleb's survivorship-bias argument explains why a good historical record can be a poor guide to future frequency.
 
 **Challenged by**
-- **Probability Theory: The Logic of Science** (`mathbook_jaynes_probability_logic`) — Jaynes treats probability as a degree of belief updated by evidence, which reframes the philosophy's frequency-based question ('how frequently have they occurred') as one about posterior uncertainty rather than a single success rate.
 - **Adaptive Markets** (`book_adaptive_markets`) — If the market's ecology keeps changing, there may be no stable underlying probability for a large sample to converge on, so reliability is limited by non-stationarity, not only by sample size.
 
 **Put into practice by**
 - **Core Formulas of Analysis & Execution** (`formula_sheet`) — It gives the standard error of an estimated win rate (about plus or minus 7 points at n = 50 and p = 0.5) and SQN as a t-statistic.
 - **Master Pre-Trade Checklist** (`synthesis_pre_trade_checklist`) — Item 1 requires at least 30 logged instances with positive expectancy after costs before a setup counts as an edge.
-- **JJ Simon playbook** (`strategy_jj_simon_fair_pricing`) — It suggests about 50 evaluation backtests to reduce small-sample noise in the pass-rate estimate.
-- **Matteo Conti playbook** (`strategy_matteo_conti_institutional`) — Rule 8 resamples trades with replacement to estimate the range of expected return, drawdown, longest losing streak and the chance of a given loss.
-- **Naoufel Taief playbook** (`strategy_naoufel_taief_algorithmic`) — Rule 7 makes Monte Carlo drawdown, not backtest drawdown, the basis for setting expectations.
+- **JJ Simon — Fair Pricing Theory: Continuation & Reversion** (`strategy_jj_simon_fair_pricing`) — It suggests about 50 evaluation backtests to reduce small-sample noise in the pass-rate estimate.
+- **Matteo Conti — Institutional Strategy Development Framework** (`strategy_matteo_conti_institutional`) — Rule 8 resamples trades with replacement to estimate the range of expected return, drawdown, longest losing streak and the chance of a given loss.
 
 **How it could be measured**
 - Confidence or credible intervals on win rate and expectancy per setup, and the sample needed for a target precision or power.
@@ -1796,8 +1784,8 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - **Efficiently Inefficient** (`book_efficiently_inefficient`) — Pedersen argues that inefficiencies persist because costs and limits to arbitrage deter others, so costs are not only an obstacle but the reason some edges exist, which makes the question one of relative cost advantage.
 
 **Put into practice by**
-- **Pavel playbook** (`strategy_pavel_first_principles`) — Rule 2 requires the expected move per trade to be large next to fees, spread and slippage (its example: about 0.2% round-trip costs take half of a 0.4% edge), and rule 1 avoids the most competitive high-liquidity, low-timeframe mix.
-- **Kris Verma playbook** (`strategy_kris_verma_shorting`) — Its risk section counts hard-to-borrow and locate fees as costs that eat profit and reuses located shares through recycling to reduce them.
+- **Pavel — First-Principles Trading Framework** (`strategy_pavel_first_principles`) — Rule 2 requires the expected move per trade to be large next to fees, spread and slippage (its example: about 0.2% round-trip costs take half of a 0.4% edge), and rule 1 avoids the most competitive high-liquidity, low-timeframe mix.
+- **Kris Verma — Small-Cap Shorting: Gap Fades, Backside Parabolics & Halt Exhaustion** (`strategy_kris_verma_shorting`) — Its risk section counts hard-to-borrow and locate fees as costs that eat profit and reuses located shares through recycling to reduce them.
 - **Core Formulas of Analysis & Execution** (`formula_sheet`) — It gives per-trade friction as half the spread plus commission plus slippage, and the square-root impact formula.
 - **Consensus & Conflicts across sources** (`synthesis_consensus_conflicts`) — It resolves the high-R:R versus high-win-rate conflict with the rule that only expectancy after costs matters.
 
@@ -1841,12 +1829,12 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - **The Black Swan** (`book_black_swan`) — If regime breaks are rare, high-impact events that are systematically underestimated, survival can often be judged only after the fact, which limits how far the question can be answered in advance.
 
 **Put into practice by**
-- **Naoufel Taief playbook** (`strategy_naoufel_taief_algorithmic`) — Rule 7 requires in-sample and out-of-sample periods to include different regimes (bull, bear, high and low volatility), and rules 11 to 13 keep an incubation pool, bench strategies near their expected maximum drawdown and replace them.
-- **Matteo Conti playbook** (`strategy_matteo_conti_institutional`) — Rule 2 ties each model to a cause so the trader can notice when it stops applying, and rule 11 reviews a strategy when live results leave the Monte Carlo range.
-- **JJ Simon playbook** (`strategy_jj_simon_fair_pricing`) — Rules 8 and 9 stop reversion trades after three failures in a session and drop an old fair price once value has clearly moved.
-- **Pavel playbook** (`strategy_pavel_first_principles`) — Rule 12 treats research as continuous because edges decay as more capital trades them, fastest on lower timeframes.
-- **Fabio Valentini playbook** (`strategy_fabio_valentini_amt_order_flow`) — It runs separate trend and mean-reversion models selected by market state, so a regime change switches the model instead of breaking it.
-- **Umar Ashraf playbook** (`strategy_umar_ashraf_5_stage`) — Stage 5 tracks performance across market conditions so the trader can adapt.
+- **Naoufel Taief — No-Code Algorithmic Strategy Portfolio: Generate, Stress-Test & Rotate** (`strategy_naoufel_taief_algorithmic`) — Rule 7 requires in-sample and out-of-sample periods to include different regimes (bull, bear, high and low volatility), and rules 11 to 13 keep an incubation pool, bench strategies near their expected maximum drawdown and replace them.
+- **Matteo Conti — Institutional Strategy Development Framework** (`strategy_matteo_conti_institutional`) — Rule 2 ties each model to a cause so the trader can notice when it stops applying, and rule 11 reviews a strategy when live results leave the Monte Carlo range.
+- **JJ Simon — Fair Pricing Theory: Continuation & Reversion** (`strategy_jj_simon_fair_pricing`) — Rules 8 and 9 stop reversion trades after three failures in a session and drop an old fair price once value has clearly moved.
+- **Pavel — First-Principles Trading Framework** (`strategy_pavel_first_principles`) — Rule 12 treats research as continuous because edges decay as more capital trades them, fastest on lower timeframes.
+- **Fabio Valentini — Auction Market Theory + Order-Flow Scalping** (`strategy_fabio_valentini_amt_order_flow`) — It runs separate trend and mean-reversion models selected by market state, so a regime change switches the model instead of breaking it.
+- **Umar Ashraf — 5-Stage Trader Development Framework** (`strategy_umar_ashraf_5_stage`) — Stage 5 tracks performance across market conditions so the trader can adapt.
 
 **How it could be measured**
 - Rolling-window expectancy of the strategy's R series with structural-break tests (Chow, CUSUM).
@@ -1884,15 +1872,14 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - **Market Wizards** (`book_market_wizards`) — Schwager's interviewees share discipline and risk control as the common factor behind very different methods.
 
 **Challenged by**
-- **Consensus & Conflicts across sources** (`synthesis_consensus_conflicts`) — Its discretionary-versus-systematic conflict, resolved through automation or meta-labeling, suggests consistency can be engineered by removing discretion rather than achieved by the trader's discipline.
 - **The Hour Between Dog and Wolf** (`book_hour_between_dog_wolf`) — Coates's physiology of risk-taking implies that a trader's risk appetite shifts with winning and losing streaks, so perfect consistency may be biologically limited.
 
 **Put into practice by**
-- **Naoufel Taief playbook** (`strategy_naoufel_taief_algorithmic`) — Rule 9 exports and runs each strategy automatically with no discretionary overrides.
-- **Umar Ashraf playbook** (`strategy_umar_ashraf_5_stage`) — Stage 3 cuts every trade outside the plan, even ones that work, and Stage 4 tracks consistency week over week, judging execution rather than outcome.
-- **Jeff Holden playbook** (`strategy_jeff_holden_momentum_model`) — Its loop turns each repeated mistake into a specific, measurable fix and rejects vague resolutions to be more disciplined as a fix.
-- **Jared Tendler playbook** (`strategy_jared_tendler_psychology`) — Rules 5 to 8 set a pre-session state check with one process goal, note emotional shifts during the session and use a reset with a hard session-ending limit.
-- **Okala playbook** (`strategy_okala_80_20_nasdaq`) — Rules 6 and 9 use a fixed 10-point NQ stop, skip any setup that cannot take it cleanly, and name overtrading as the main danger.
+- **Naoufel Taief — No-Code Algorithmic Strategy Portfolio: Generate, Stress-Test & Rotate** (`strategy_naoufel_taief_algorithmic`) — Rule 9 exports and runs each strategy automatically with no discretionary overrides.
+- **Umar Ashraf — 5-Stage Trader Development Framework** (`strategy_umar_ashraf_5_stage`) — Stage 3 cuts every trade outside the plan, even ones that work, and Stage 4 tracks consistency week over week, judging execution rather than outcome.
+- **Jeff Holden — Momentum Model Performance Development** (`strategy_jeff_holden_momentum_model`) — Its loop turns each repeated mistake into a specific, measurable fix and rejects vague resolutions to be more disciplined as a fix.
+- **Jared Tendler — Trading Psychology Playbook: Emotion, Performance & the Mental Game** (`strategy_jared_tendler_psychology`) — Rules 5 to 8 set a pre-session state check with one process goal, note emotional shifts during the session and use a reset with a hard session-ending limit.
+- **Okala — 80/20 Nasdaq Strategy: Reactions at 20 and 80 Price Endings** (`strategy_okala_80_20_nasdaq`) — Rules 6 and 9 use a fixed 10-point NQ stop, skip any setup that cannot take it cleanly, and name overtrading as the main danger.
 - **Master Pre-Trade Checklist** (`synthesis_pre_trade_checklist`) — A scored checklist applied before every trade standardises the decision so it is made the same way each time.
 
 **How it could be measured**
@@ -1907,23 +1894,61 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - There is no KB definition or threshold for 'consistent' execution.
 - No KB evidence compares discretionary and automated execution of the same rules.
 
+## Extension links
+
+Ideas from [[synthesis_philosophy_extensions]] that add, sharpen or challenge parts of the philosophy.
+
+| Extension | Relation | Applies to | Sources |
+|---|---|---|---|
+| Name the counterparty | sharpens | `philo_source_of_opportunity`, `philo_market_is_relationship`, `principle_01_understand_before_acting` | Edge (`concept_edge`), The Unified Trading Intelligence Framework (`synthesis_unified_framework`), Trading and Exchanges (`book_trading_and_exchanges`), Market Microstructure (`concept_market_microstructure`), Market Microstructure Theory (`mathbook_ohara_microstructure_theory`), Trade Execution (`concept_trade_execution`), Matteo Conti — Institutional Strategy Development Framework (`strategy_matteo_conti_institutional`) |
+| Shared models are part of the market, and stops are one of them | challenges | `philo_market_system_of_rules`, `philo_market_is_relationship`, `philo_evidence_changes`, `principle_03_future_is_uncertain`, `principle_07_respond_methodically` | Reflexivity (`concept_reflexivity`), The Alchemy of Finance (`book_alchemy_of_finance`), The Soros Lectures at Central European University (`media_soros_ceu_lectures`), Karl Popper (`person_karl_popper`), Liquidity (`concept_liquidity`), Market Sentiment & Positioning (`concept_market_sentiment`), Liquidity Sweep Reversal (`concept_liquidity_sweep_reversal`), Candace Lau — NQ Liquidity Sweep & IFVG Reversal (`strategy_candace_lau_nq_sweep_reversal`), Dhesi — Liquidity Inversion Model: Sweep, FVG Inversion & LTF Confirmation (`strategy_dhesi_liquidity_inversion`), Andrea Cimitan — Liquidity Auction & Order Flow Strategy (`strategy_andrea_cimitan_amt`), Consensus & Conflicts across sources (`synthesis_consensus_conflicts`) |
+| Observed interaction: a rung between price and inference | extends | `philo_price_expression`, `philo_market_is_relationship`, `principle_01_understand_before_acting` | Order Flow (`concept_order_flow`), Wyckoff Method (`concept_wyckoff_method`), Continuous Auctions and Insider Trading (`paper_kyle_1985`), Market Microstructure (`concept_market_microstructure`), Trades, Quotes and Prices (`mathbook_bouchaud_trades_quotes_prices`), Empirical Market Microstructure (`mathbook_hasbrouck_empirical_microstructure`), Andrea Cimitan — Liquidity Auction & Order Flow Strategy (`strategy_andrea_cimitan_amt`), Carmine Rosato — Order Flow Masterclass: Absorption & Stop-Run Reclaim (`strategy_carmine_rosato_orderflow_masterclass`) |
+| Value is what the auction accepts | sharpens | `philo_value_vs_price`, `philo_price_expression` | Auction Market Theory (`concept_auction_market_theory`), Mind Over Markets (`book_mind_over_markets`), Volume Profile (`concept_volume_profile`), VWAP (`concept_vwap`), JJ Simon — Fair Pricing Theory: Continuation & Reversion (`strategy_jj_simon_fair_pricing`), Lance Breitstein — Capitulation Mean Reversion (`strategy_lance_breitstein_mean_reversion`), Efficiently Inefficient (`book_efficiently_inefficient`) |
+| Every edge is perishable | extends | `philo_recurring_storyline`, `philo_conditional_probability`, `philo_manifesto`, `question_repeatable_behaviors`, `question_survives_regime_change` | Adaptive Markets (`book_adaptive_markets`), Andrew W. Lo (`person_andrew_lo`), Random Walk & Efficient Market Hypothesis (`concept_random_walk_efficient_markets`), Edge (`concept_edge`), Pavel — First-Principles Trading Framework (`strategy_pavel_first_principles`), Trading Journal & Performance Review (`concept_trading_journal_review`), Time-Series Statistics (`concept_time_series_statistics`), Consensus & Conflicts across sources (`synthesis_consensus_conflicts`) |
+| Fat tails slow the law of large numbers | challenges | `philo_conditional_probability`, `philo_mathematics_sword`, `principle_03_future_is_uncertain`, `principle_09_protect_capital`, `question_estimate_reliability` | Probability, Distributions & Fat Tails (`concept_probability_fat_tails`), Statistical Consequences of Fat Tails (`mathbook_statistical_consequences_fat_tails`), The (`book_misbehavior_of_markets`), Fractals and Scaling in Finance (`mathbook_mandelbrot_fractals_scaling`), Benoit Mandelbrot (`person_benoit_mandelbrot`), The Black Swan (`book_black_swan`), Performance Metrics (`concept_performance_metrics`), Trade Management (`concept_trade_management`), Trade Execution (`concept_trade_execution`), Master Pre-Trade Checklist (`synthesis_pre_trade_checklist`) |
+| Count every trial, then deflate the winner | sharpens | `philo_conditional_probability`, `philo_scientific_method`, `philo_research_foundations`, `principle_04_conditional_probability`, `question_repeatable_behaviors`, `question_estimate_reliability` | Overfitting & Edge Validation (`concept_overfitting_validation`), Core Formulas of Analysis & Execution (`formula_sheet`), The Deflated Sharpe Ratio (`paper_deflated_sharpe_2014`), Marcos López de Prado (`person_marcos_lopez_de_prado`), Advances in Financial Machine Learning (`book_advances_financial_ml`), Evidence-Based Technical Analysis (`book_evidence_based_ta`), All of Statistics (`mathbook_all_of_statistics`), Naoufel Taief — No-Code Algorithmic Strategy Portfolio: Generate, Stress-Test & Rotate (`strategy_naoufel_taief_algorithmic`), Matteo Conti — Institutional Strategy Development Framework (`strategy_matteo_conti_institutional`) |
+| Start from a sceptical base rate, then score your calibration | sharpens | `philo_conditional_probability`, `philo_journal`, `principle_04_conditional_probability`, `question_estimate_reliability` | Probabilistic Thinking (`concept_probabilistic_thinking`), Probability, Distributions & Fat Tails (`concept_probability_fat_tails`), Probability Theory: The Logic of Science (`mathbook_jaynes_probability_logic`), E. T. Jaynes (`person_et_jaynes`), Random Walk & Efficient Market Hypothesis (`concept_random_walk_efficient_markets`), Evidence-Based Technical Analysis (`book_evidence_based_ta`), Core Formulas of Analysis & Execution (`formula_sheet`), Thinking in Bets (`book_thinking_in_bets`) |
+| A ready vocabulary of measurable conditions | extends | `philo_recurring_storyline`, `principle_02_context_before_movement`, `principle_04_conditional_probability`, `question_define_conditions` | Market Regimes (`concept_market_regimes`), Time-Series Statistics (`concept_time_series_statistics`), Volatility (`concept_volatility`), Core Formulas of Analysis & Execution (`formula_sheet`), Auction Market Theory (`concept_auction_market_theory`), Mind Over Markets (`book_mind_over_markets`), Time Series Analysis (`mathbook_hamilton_time_series`), Anthony Crudele — Futures Trend Trading Strategy: Bollinger Band Environments (`strategy_anthony_crudele_futures_trend`), Andrea Cimitan — Liquidity Auction & Order Flow Strategy (`strategy_andrea_cimitan_amt`) |
+| Edges that need no story | challenges | `principle_01_understand_before_acting`, `philo_source_of_opportunity`, `philo_acb_principle` | Trend Following (`concept_trend_following`), Trend Following (`book_trend_following_covel`), Random Walk & Efficient Market Hypothesis (`concept_random_walk_efficient_markets`), Expected Returns (`book_expected_returns`), Efficiently Inefficient (`book_efficiently_inefficient`), Cliff Asness (`person_cliff_asness`), Flirting with Models — Cliff Asness (`media_fwm_cliff_asness`) |
+| Costs are set by the relationship, not a constant | sharpens | `philo_mathematics_sword`, `philo_source_of_opportunity`, `principle_05_mathematical_justification`, `question_survives_costs` | Optimal Execution & Market Impact (`concept_optimal_execution_market_impact`), Trades, Quotes and Prices (`mathbook_bouchaud_trades_quotes_prices`), Optimal Execution of Portfolio Transactions (`paper_almgren_chriss_2000`), Market Microstructure (`concept_market_microstructure`), Trading and Exchanges (`book_trading_and_exchanges`), Trade Execution (`concept_trade_execution`), Pavel — First-Principles Trading Framework (`strategy_pavel_first_principles`), Expectancy (`concept_expectancy`), Core Formulas of Analysis & Execution (`formula_sheet`) |
+| Expected value is not growth: size is part of the edge | sharpens | `philo_mathematics_sword`, `philo_capital_preservation`, `principle_05_mathematical_justification`, `principle_09_protect_capital` | Kelly Criterion & Optimal f (`concept_kelly_criterion_optimal_f`), A New Interpretation of Information Rate (`paper_kelly_1956`), The Kelly Capital Growth Investment Criterion (`mathbook_kelly_capital_growth`), Fortune's Formula (`book_fortunes_formula`), Stochastic Processes (`concept_stochastic_processes`), Core Formulas of Analysis & Execution (`formula_sheet`), The Mathematics of Money Management (`book_mathematics_of_money_management`), Risk of Ruin & Drawdown Math (`concept_risk_of_ruin_drawdown`), Prop-Firm Evaluations & Risk Rules (`concept_prop_firm_risk_rules`) |
+| Graded conviction instead of trade / no trade | extends | `philo_source_of_opportunity`, `philo_capital_preservation`, `principle_06_do_not_force`, `principle_09_protect_capital` | Jeff Holden — Momentum Model Performance Development (`strategy_jeff_holden_momentum_model`), Candace Lau — NQ Liquidity Sweep & IFVG Reversal (`strategy_candace_lau_nq_sweep_reversal`), Lance Breitstein — Capitulation Mean Reversion (`strategy_lance_breitstein_mean_reversion`), Naoufel Taief — No-Code Algorithmic Strategy Portfolio: Generate, Stress-Test & Rotate (`strategy_naoufel_taief_algorithmic`), Machine Learning in Finance (`concept_machine_learning_finance`), Position Sizing (`concept_position_sizing`), Kelly Criterion & Optimal f (`concept_kelly_criterion_optimal_f`), Jared Tendler — Trading Psychology Playbook: Emotion, Performance & the Mental Game (`strategy_jared_tendler_psychology`) |
+| Correlation: of positions, of strategies, of trades | extends | `philo_capital_preservation`, `philo_conditional_probability`, `principle_09_protect_capital` | Correlation & Portfolio Risk (`concept_correlation_portfolio_risk`), Portfolio Selection: Efficient Diversification of Investments (`mathbook_markowitz_portfolio_selection`), Position Sizing (`concept_position_sizing`), Active Portfolio Management (`mathbook_grinold_kahn_active_pm`), Ray Dalio (`person_ray_dalio`), Matteo Conti — Institutional Strategy Development Framework (`strategy_matteo_conti_institutional`), Pavel — First-Principles Trading Framework (`strategy_pavel_first_principles`), When Genius Failed (`book_when_genius_failed`), Way of the Turtle (`book_way_of_the_turtle`), Time-Series Statistics (`concept_time_series_statistics`) |
+| Record the trade's path, not only its verdict | extends | `philo_journal`, `philo_mathematics_sword`, `principle_05_mathematical_justification`, `principle_11_record_and_investigate` | Trade Management (`concept_trade_management`), Risk:Reward & R-Multiples (`concept_risk_reward_r_multiples`), Trading Journal & Performance Review (`concept_trading_journal_review`), Machine Learning in Finance (`concept_machine_learning_finance`), Candace Lau — NQ Liquidity Sweep & IFVG Reversal (`strategy_candace_lau_nq_sweep_reversal`), Dhesi — Liquidity Inversion Model: Sweep, FVG Inversion & LTF Confirmation (`strategy_dhesi_liquidity_inversion`), The Daily Trading Coach (`book_daily_trading_coach`), Brett N. Steenbarger (`person_brett_steenbarger`), Jeff Holden — Momentum Model Performance Development (`strategy_jeff_holden_momentum_model`) |
+| Expected-range bands: normal variance or a broken edge | extends | `philo_evidence_changes`, `philo_being_wrong`, `philo_scientific_method`, `principle_07_respond_methodically`, `principle_08_decision_quality_not_outcome`, `question_survives_regime_change` | Matteo Conti — Institutional Strategy Development Framework (`strategy_matteo_conti_institutional`), Naoufel Taief — No-Code Algorithmic Strategy Portfolio: Generate, Stress-Test & Rotate (`strategy_naoufel_taief_algorithmic`), Risk of Ruin & Drawdown Math (`concept_risk_of_ruin_drawdown`), Backtesting (`concept_backtesting`), JJ Simon — Fair Pricing Theory: Continuation & Reversion (`strategy_jj_simon_fair_pricing`), Adaptive Markets (`book_adaptive_markets`) |
+| Emotion is a state to measure, with structural stops | challenges | `philo_protect_process`, `philo_step_back`, `principle_10_emotional_independence`, `question_consistent_execution` | Jared Tendler — Trading Psychology Playbook: Emotion, Performance & the Mental Game (`strategy_jared_tendler_psychology`), The Mental Game of Trading (`book_mental_game_of_trading`), Umar Ashraf — 5-Stage Trader Development Framework (`strategy_umar_ashraf_5_stage`), Dhesi — Liquidity Inversion Model: Sweep, FVG Inversion & LTF Confirmation (`strategy_dhesi_liquidity_inversion`), Prop-Firm Evaluations & Risk Rules (`concept_prop_firm_risk_rules`), The Hour Between Dog and Wolf (`book_hour_between_dog_wolf`), Trading Psychology & Discipline (`concept_trading_psychology`) |
+| Stepping back has a cost: define it in advance and log it | challenges | `philo_step_back`, `principle_06_do_not_force`, `question_consistent_execution` | Way of the Turtle (`book_way_of_the_turtle`), Trend Following (`concept_trend_following`), Probabilistic Thinking (`concept_probabilistic_thinking`), Pavel — First-Principles Trading Framework (`strategy_pavel_first_principles`), Trade Execution (`concept_trade_execution`), Consensus & Conflicts across sources (`synthesis_consensus_conflicts`), Marco Trades — Liquidity Grab Trading Strategy (`strategy_marco_trades_liquidity_grab`), Trading Sessions & Kill Zones (`concept_trading_sessions_killzones`), Market Regimes (`concept_market_regimes`) |
+
 ## Links removed by verification
 
-Independent verifier agents re-read the cited notes and refuted 14 proposed links. They are not in the graph:
+Independent verifier agents re-read the cited notes and refuted 27 proposed links. They are not in the graph:
 
 | Node | Link | Proposed as | Reason |
 |---|---|---|---|
 | `philo_recurring_storyline` | Wyckoff Method (`concept_wyckoff_method`) | grounded_in | The why calls Wyckoff's accumulation-markup-distribution-markdown cycle the knowledge base's 'oldest' recurring storyline, but the KB says otherwise: the Wyckoff note lists derived_from: [concept_dow_theory], and the Dow Theory note (c. 1900-1902) says its three primary-trend phases 'anticipate Wyckoff and ICT's AMD'. |
-| `philo_recurring_storyline` | Steven Dux playbook (`strategy_steven_dux_small_cap_short`) | operationalized_by | The playbook breaks out only the opening push by float band (30-35% on 1-2M floats, 20-25% on 5-10M floats); the fade is a single figure (about 24-26%, average risk about 7%) with no float split, so the claim that it quantifies the 'opening push, fade' separately for each float band is not in the note. |
+| `philo_recurring_storyline` | Steven Dux — Small-Cap Short Statistics Playbook (`strategy_steven_dux_small_cap_short`) | operationalized_by | The playbook breaks out only the opening push by float band (30-35% on 1-2M floats, 20-25% on 5-10M floats); the fade is a single figure (about 24-26%, average risk about 7%) with no float split, so the claim that it quantifies the 'opening push, fade' separately for each float band is not in the note. |
 | `philo_recurring_storyline` | AMD / Power of Three (`concept_amd_power_of_three`) | grounded_in | Section V does not rest on AMD: the note models every candle and session as the same three phases with an assumed 'manipulation' intent, which is the 'every new chapter reproduces the previous one' reading Section V (and Section IV on inferring intent) warns against, and the storyline lineage is already covered by the Wyckoff link and the Tanja playbook. |
 | `philo_decisions_not_money` | Prop-Firm Evaluations & Risk Rules (`concept_prop_firm_risk_rules`) | grounded_in | Section XIII does not rest on prop-firm evaluation rules; the note gives the point only as one table row ('Profit target encourages over-aggression near deadlines'), so it is at most an illustration, and filing it as a foundation misleads. |
 | `philo_decisions_not_money` | Market Wizards (`book_market_wizards`) | supported_by | The cited finding ('methods differ wildly; risk control does not') is about trading methods, not about following decisions rather than money; it says nothing about the pursuit of money distorting judgment and could be attached equally to XII, XIV or any section. |
-| `philo_decisions_not_money` | JJ Simon playbook (`strategy_jj_simon_fair_pricing`) | challenged_by | The pass-rate and cost-per-funded-account calculation is a systematic expected-value check of whether the return justifies the risk, which Section XIII endorses, and XIII already says 'profitability remains the objective of a trading system', so the cited evidence does not challenge the section. |
-| `principle_08_decision_quality_not_outcome` | Dhesi playbook (`strategy_dhesi_liquidity_inversion`) | operationalized_by | In Dhesi's playbook, rule 12 calls a breakeven-stopped runner a success because half the position was already trimmed at the first target ('the model delivered the base hit'), so it is an outcome-accounting rule for trade management and does not separate decision quality from outcome. |
+| `philo_decisions_not_money` | JJ Simon — Fair Pricing Theory: Continuation & Reversion (`strategy_jj_simon_fair_pricing`) | challenged_by | The pass-rate and cost-per-funded-account calculation is a systematic expected-value check of whether the return justifies the risk, which Section XIII endorses, and XIII already says 'profitability remains the objective of a trading system', so the cited evidence does not challenge the section. |
+| `principle_08_decision_quality_not_outcome` | Dhesi — Liquidity Inversion Model: Sweep, FVG Inversion & LTF Confirmation (`strategy_dhesi_liquidity_inversion`) | operationalized_by | In Dhesi's playbook, rule 12 calls a breakeven-stopped runner a success because half the position was already trimmed at the first target ('the model delivered the base hit'), so it is an outcome-accounting rule for trade management and does not separate decision quality from outcome. |
 | `philo_manifesto` | Reflexivity (`concept_reflexivity`) | challenged_by | 'I will not attempt to control the market' is a commitment not to force trades, not a claim that the trader stands outside the market (the manifesto opens by calling the market a relationship between participants), so the stated tension misreads the line; the real reflexivity tension is Section II's independence claim, which the whole-philosophy node already links. |
 | `question_define_conditions` | Liquidity (`concept_liquidity`) | grounded_in | The liquidity Section XIX names is market liquidity measured by depth or volume, but concept_liquidity is about SMC/ICT stop pools and sweeps; its first lines send that 'microstructure liquidity' sense to concept_market_microstructure, so the link points to the wrong meaning. |
 | `question_survives_costs` | Liquidity (`concept_liquidity`) | grounded_in | The why relies on thin liquidity widening spreads and slippage, but this note only covers where stop orders cluster and how sweeps work, with nothing on spreads or slippage; that sense of liquidity lives in concept_market_microstructure, which is already linked here. |
 | `question_define_conditions` | Consensus & Conflicts across sources (`synthesis_consensus_conflicts`) | challenged_by | The note's discretionary-vs-systematic row is about trading style, not how to define conditions, and it resolves the conflict with a systematic filter and sizing on top of discretionary setups (meta-labeling), which supports measurable conditions rather than challenging the need for them. |
-| `question_survives_costs` | JJ Simon playbook (`strategy_jj_simon_fair_pricing`) | operationalized_by | The $100 evaluation / 25% pass rate / $400 per funded account sum is about the economics of prop-firm access, not the spreads, commissions, slippage, financing and execution costs the question asks an edge to survive, so it only loosely puts this question into practice. |
+| `question_survives_costs` | JJ Simon — Fair Pricing Theory: Continuation & Reversion (`strategy_jj_simon_fair_pricing`) | operationalized_by | The $100 evaluation / 25% pass rate / $400 per funded account sum is about the economics of prop-firm access, not the spreads, commissions, slippage, financing and execution costs the question asks an edge to survive, so it only loosely puts this question into practice. |
 | `principle_04_conditional_probability` | Backtesting (`concept_backtesting`) | grounded_in | The backtesting note says nothing about conditioning, regimes or defined situations (it covers clean data, costs, look-ahead and out-of-sample tests), and the why's 'with realistic costs' belongs to Principle 5, so here the link is generic padding that fits any testing-related part equally well. |
 | `philo_acb_principle` | Market Regimes (`concept_market_regimes`) | grounded_in | The evidence lab's S1 does not say the regime at A moved P(B) more than detour depth did: out of sample a 1-ATR detour cut P(B) by 13-17 points and a 3-ATR detour by 33-40, against a regime gap of 12 points (19 at 3 ATR), 10 of the 12 unconditional points were reproduced by the memoryless null, and the regime note itself contains no such finding. |
+| `philo_evidence_changes` | Jeff Holden — Momentum Model Performance Development (`strategy_jeff_holden_momentum_model`) | operationalized_by | Every detail in the why is in the note, but the five-whys loop diagnoses the trader's own execution errors (selling early, badly placed stops), not changes in market evidence on a live position, so it belongs with Principle 11 (record and investigate), and 'fix risk mistakes before exit mistakes' only echoes 'manage risk first' on the surface. |
+| `philo_step_back` | Trading Sessions & Kill Zones (`concept_trading_sessions_killzones`) | grounded_in | The note is about time-of-day volatility and liquidity windows used as a filter and says nothing about stepping back when understanding fails or about limiting screen time, so Section IX does not rest on it and the link is only loosely related. |
+| `philo_step_back` | Market Wizards (`book_market_wizards`) | supported_by | Paul Tudor Jones's 'defence first, size down when trading poorly' is a response to one's own drawdown and belongs to Principle 9 (protect capital), not to Section IX's rule of not trading a market one does not understand; sizing down is not stepping aside. |
+| `principle_06_do_not_force` | Market Wizards (`book_market_wizards`) | supported_by | 'The wizards share risk control and discipline across very different methods' is generic padding that could be attached to any principle, and it says nothing specific about staying out when the evidence is unclear. |
+| `principle_02_context_before_movement` | Liquidity Sweep Reversal (`concept_liquidity_sweep_reversal`) | challenged_by | The warnings the why cites (every reversal looks like a sweep afterwards, and a pool can be run with continuation) appear only in the Pitfalls section of concept_liquidity (07_concepts/liquidity.md lines 60-63); the liquidity-sweep-reversal note has no such caveat and simply sets out the setup's rules, variants and lineage. |
+| `question_consistent_execution` | Consensus & Conflicts across sources (`synthesis_consensus_conflicts`) | challenged_by | The note settles discretionary versus systematic with a hybrid: a discretionary setup plus a meta-labeled filter and sizing. It never mentions automation or execution consistency, and taking discretion out would be one way to answer whether the trader can execute consistently, not a challenge to the question. |
+| `question_estimate_reliability` | Introduction to Probability (`mathbook_blitzstein_intro_probability`) | supported_by | The why describes an introductory text on conditioning and expectation as 'the basis for estimating probabilities under defined conditions', which fits Principle 4 and the question of how to define conditions, not how reliable a historical success rate is given small samples or unrepresentative data. Here it is generic padding. |
+| `question_estimate_reliability` | Probability Theory: The Logic of Science (`mathbook_jaynes_probability_logic`) | challenged_by | The polarity is wrong. Bayesian posterior uncertainty is a way to answer 'how reliable is that estimate', not something that complicates the question, and the KB's own notes (probability-fat-tails, probabilistic-thinking) present Jaynes-style updating as the right frame for estimating edge. |
+| `question_estimate_reliability` | Naoufel Taief — No-Code Algorithmic Strategy Portfolio: Generate, Stress-Test & Rotate (`strategy_naoufel_taief_algorithmic`) | operationalized_by | Rule 7's Monte Carlo reshuffles the order of the same trade list to estimate drawdown and losing streaks, which leaves the win rate and expectancy unchanged. It therefore does not test whether a probability estimate rests on too few observations or represents future conditions. It belongs under Section XI, where the same rule is already linked. |
+| `philo_price_expression` | Ted Zhang — Stage Analysis Strategy (`strategy_ted_zhang_stage_analysis`) | operationalized_by | Zhang's rule makes price the judge of non-price stories (narrative and fundamentals count only if price confirms them), which is the reverse of Section IV's point that a price move alone cannot establish its cause and needs more evidence, so it does not put Section IV's observation-versus-inference split into practice. |
+| `philo_source_of_opportunity` | Pavel — First-Principles Trading Framework (`strategy_pavel_first_principles`) | challenged_by | Pavel's rule 10 only says not to wait for price to turn before entering a mean-reversion pullback; that is about entry timing, not Section VIII's need for understanding, evidence and mathematics to agree, and the playbook's 'measurable cost in price and R:R' is not in the note (it says only that waiting 'gives up part of the edge'), so the challenge does not apply. |
+| `philo_market_system_of_rules` | Trading Intelligence Ontology (`framework_ontology`) | operationalized_by | The ontology sorts the knowledge base's notes into layers (maths, mechanics, setups, sizing, psychology, review). It is not a model of the market system and it tests nothing against the market, so the why misdescribes it and it does not put Section II's system-versus-model testing into practice. |
+| `question_repeatable_behaviors` | Idea Lineage Map — where every modern trading idea comes from (`synthesis_idea_lineage`) | operationalized_by | The lineage map traces where trading ideas came from (several of its roots, such as Kelly sizing and probability misjudgment, are not market behaviours at all) and offers no test or evidence of repeatability; equating an idea's age with a behaviour's persistence is the linker's own inference, not something the note says. |

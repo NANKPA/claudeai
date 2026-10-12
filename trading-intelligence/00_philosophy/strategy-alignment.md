@@ -38,75 +38,94 @@ What this means for the owner: the playbooks are strongest on interpret movement
 
 | Playbook | P1 | P2 | P3 | P4 | P5 | P6 | P7 | P8 | P9 | P10 | P11 | P12 | Total /24 |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Gala Trades playbook (`strategy_gala_trades_price_action`) | 1 | 2 | 2 | 2 | 1 | 2 | 2 | 2 | 1 | 2 | 2 | 2 | **21** |
-| Jeff Holden playbook (`strategy_jeff_holden_momentum_model`) | 1 | 1 | 2 | 2 | 1 | 2 | 2 | 2 | 2 | 1 | 2 | 1 | **19** |
-| Matteo Conti playbook (`strategy_matteo_conti_institutional`) | 2 | 1 | 2 | 2 | 2 | 1 | 2 | 2 | 2 | 0 | 2 | 1 | **19** |
-| Steven Dux playbook (`strategy_steven_dux_small_cap_short`) | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 1 | 2 | 0 | 1 | 0 | **18** |
-| JJ Simon playbook (`strategy_jj_simon_fair_pricing`) | 2 | 2 | 1 | 2 | 2 | 2 | 2 | 0 | 2 | 0 | 1 | 1 | **17** |
-| Naoufel Taief playbook (`strategy_naoufel_taief_algorithmic`) | 0 | 1 | 2 | 1 | 2 | 1 | 2 | 2 | 2 | 1 | 1 | 2 | **17** |
-| Umar Ashraf playbook (`strategy_umar_ashraf_5_stage`) | 0 | 1 | 1 | 1 | 1 | 2 | 1 | 2 | 2 | 2 | 2 | 2 | **17** |
-| Dhesi playbook (`strategy_dhesi_liquidity_inversion`) | 1 | 2 | 2 | 2 | 0 | 2 | 2 | 1 | 2 | 1 | 0 | 1 | **16** |
-| Fabio Valentini playbook (`strategy_fabio_valentini_amt_order_flow`) | 2 | 2 | 2 | 2 | 1 | 2 | 2 | 1 | 2 | 0 | 0 | 0 | **16** |
-| Fredy Sarmiento playbook (`strategy_fredy_sarmiento_options_flow`) | 2 | 2 | 2 | 2 | 0 | 2 | 2 | 1 | 1 | 2 | 0 | 0 | **16** |
-| Ariel Hernandez playbook (`strategy_ariel_hernandez_real_simple`) | 1 | 2 | 2 | 2 | 0 | 2 | 2 | 1 | 2 | 1 | 0 | 0 | **15** |
-| Candace Lau playbook (`strategy_candace_lau_nq_sweep_reversal`) | 1 | 2 | 2 | 2 | 1 | 2 | 2 | 0 | 2 | 0 | 1 | 0 | **15** |
-| Clement Ang playbook (`strategy_clement_ang_price_cycle`) | 1 | 2 | 2 | 2 | 1 | 2 | 2 | 1 | 1 | 1 | 0 | 0 | **15** |
-| Kris Verma playbook (`strategy_kris_verma_shorting`) | 2 | 2 | 1 | 2 | 1 | 2 | 2 | 1 | 1 | 0 | 0 | 1 | **15** |
-| Ted Zhang playbook (`strategy_ted_zhang_stage_analysis`) | 1 | 2 | 2 | 2 | 0 | 2 | 2 | 1 | 2 | 1 | 0 | 0 | **15** |
-| Tori Trades playbook (`strategy_tori_trendline_4h`) | 0 | 2 | 2 | 2 | 0 | 2 | 2 | 2 | 1 | 0 | 2 | 0 | **15** |
-| Abraham Perez playbook (`strategy_abraham_perez_ict_orderflow`) | 2 | 2 | 2 | 2 | 1 | 2 | 2 | 0 | 1 | 0 | 0 | 0 | **14** |
-| Brando Elite playbook (`strategy_brando_options_swing`) | 1 | 2 | 0 | 2 | 1 | 2 | 0 | 1 | 1 | 2 | 0 | 2 | **14** |
-| Jay Awtani playbook (`strategy_jay_awtani_market_dna`) | 2 | 2 | 2 | 2 | 1 | 2 | 2 | 0 | 0 | 0 | 1 | 0 | **14** |
-| Kyle Williams playbook (`strategy_kyle_williams_first_red_day`) | 2 | 1 | 2 | 2 | 0 | 2 | 2 | 0 | 1 | 1 | 1 | 0 | **14** |
-| Lance Breitstein playbook (`strategy_lance_breitstein_mean_reversion`) | 2 | 2 | 2 | 2 | 1 | 2 | 2 | 0 | 1 | 0 | 0 | 0 | **14** |
-| Marios Stamatoudis playbook (`strategy_marios_stamatoudis_parabolic_short`) | 2 | 2 | 2 | 2 | 1 | 2 | 2 | 0 | 1 | 0 | 0 | 0 | **14** |
-| Traveling Trader playbook (`strategy_traveling_trader_universal`) | 2 | 2 | 2 | 2 | 0 | 2 | 2 | 0 | 0 | 2 | 0 | 0 | **14** |
-| Trader Yush playbook (`strategy_yush_order_flow`) | 2 | 2 | 2 | 2 | 0 | 2 | 2 | 1 | 1 | 0 | 0 | 0 | **14** |
-| NBB Trader playbook (`strategy_nbb_trader_po3_ote_adr`) | 1 | 2 | 2 | 2 | 1 | 2 | 2 | 0 | 1 | 0 | 0 | 0 | **13** |
-| Pavel playbook (`strategy_pavel_first_principles`) | 2 | 2 | 1 | 2 | 2 | 0 | 1 | 1 | 1 | 0 | 1 | 0 | **13** |
-| Pradeep Bonde playbook (`strategy_pradeep_bonde_episodic_pivot`) | 2 | 2 | 2 | 1 | 1 | 1 | 2 | 0 | 1 | 1 | 0 | 0 | **13** |
-| Alex Temiz playbook (`strategy_alex_temiz_first_red_day`) | 2 | 1 | 2 | 2 | 0 | 2 | 2 | 0 | 1 | 0 | 0 | 0 | **12** |
-| Andrea Cimitan playbook (`strategy_andrea_cimitan_amt`) | 2 | 2 | 2 | 2 | 0 | 2 | 2 | 0 | 0 | 0 | 0 | 0 | **12** |
-| Anthony Crudele playbook (`strategy_anthony_crudele_futures_trend`) | 1 | 2 | 2 | 2 | 0 | 2 | 2 | 0 | 1 | 0 | 0 | 0 | **12** |
-| Jared Tendler playbook (`strategy_jared_tendler_psychology`) | 1 | 0 | 0 | 0 | 1 | 2 | 1 | 1 | 0 | 2 | 2 | 2 | **12** |
-| Marco Trades playbook (`strategy_marco_trades_liquidity_grab`) | 2 | 2 | 2 | 2 | 0 | 2 | 2 | 0 | 0 | 0 | 0 | 0 | **12** |
-| Tanja Trades playbook (`strategy_tanja_amd_futures`) | 1 | 2 | 1 | 2 | 0 | 2 | 1 | 0 | 2 | 1 | 0 | 0 | **12** |
-| Vincent Desiano playbook (`strategy_vincent_desiano_break_retest`) | 1 | 2 | 2 | 2 | 0 | 2 | 2 | 0 | 1 | 0 | 0 | 0 | **12** |
-| Ali Crooks playbook (`strategy_ali_crooks_trendline_pocket`) | 1 | 2 | 1 | 2 | 1 | 2 | 0 | 0 | 1 | 0 | 1 | 0 | **11** |
-| Marci Silfrain playbook (`strategy_marci_silfrain_measured_move`) | 1 | 1 | 2 | 2 | 0 | 2 | 1 | 2 | 0 | 0 | 0 | 0 | **11** |
-| Okala playbook (`strategy_okala_80_20_nasdaq`) | 0 | 2 | 1 | 2 | 1 | 2 | 2 | 0 | 1 | 0 | 0 | 0 | **11** |
-| Rajan Dhall playbook (`strategy_rajan_dhall_auction`) | 1 | 2 | 1 | 2 | 1 | 2 | 0 | 1 | 0 | 1 | 0 | 0 | **11** |
-| TG Capital playbook (`strategy_tg_capital_trident`) | 0 | 2 | 1 | 2 | 1 | 2 | 1 | 0 | 1 | 1 | 0 | 0 | **11** |
-| Trader Mayne playbook (`strategy_trader_mayne_structure_ote`) | 1 | 2 | 2 | 2 | 1 | 2 | 0 | 0 | 1 | 0 | 0 | 0 | **11** |
-| Carmine Rosato playbook (`strategy_carmine_rosato_lvn`) | 2 | 0 | 2 | 1 | 0 | 2 | 1 | 1 | 1 | 0 | 0 | 0 | **10** |
-| Forrest Knight playbook (`strategy_forrest_knight_volume_profile`) | 2 | 2 | 2 | 2 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | **10** |
-| JadeCap playbook (`strategy_jadecap_liquidity_volatility`) | 1 | 2 | 2 | 1 | 0 | 2 | 1 | 0 | 0 | 0 | 1 | 0 | **10** |
-| Dylan O’Neil playbook (`strategy_dylan_oneil_vix_futures`) | 2 | 2 | 1 | 2 | 0 | 1 | 0 | 0 | 1 | 0 | 0 | 0 | **9** |
-| Trader Kane playbook (`strategy_trader_kane_lab_model`) | 1 | 2 | 2 | 1 | 0 | 1 | 2 | 0 | 0 | 0 | 0 | 0 | **9** |
-| Carmine Rosato playbook (`strategy_carmine_rosato_orderflow_masterclass`) | 2 | 1 | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | **6** |
-| Usman Ashraf playbook (`strategy_usman_ashraf_options`) | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | **5** |
+| Gala Trades (`strategy_gala_trades_price_action`) | 1 | 2 | 2 | 2 | 1 | 2 | 2 | 2 | 1 | 2 | 2 | 2 | **21** |
+| Jeff Holden (`strategy_jeff_holden_momentum_model`) | 1 | 1 | 2 | 2 | 1 | 2 | 2 | 2 | 2 | 1 | 2 | 1 | **19** |
+| Matteo Conti (`strategy_matteo_conti_institutional`) | 2 | 1 | 2 | 2 | 2 | 1 | 2 | 2 | 2 | 0 | 2 | 1 | **19** |
+| Steven Dux (`strategy_steven_dux_small_cap_short`) | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 1 | 2 | 0 | 1 | 0 | **18** |
+| JJ Simon (`strategy_jj_simon_fair_pricing`) | 2 | 2 | 1 | 2 | 2 | 2 | 2 | 0 | 2 | 0 | 1 | 1 | **17** |
+| Naoufel Taief (`strategy_naoufel_taief_algorithmic`) | 0 | 1 | 2 | 1 | 2 | 1 | 2 | 2 | 2 | 1 | 1 | 2 | **17** |
+| Umar Ashraf (`strategy_umar_ashraf_5_stage`) | 0 | 1 | 1 | 1 | 1 | 2 | 1 | 2 | 2 | 2 | 2 | 2 | **17** |
+| Dhesi (`strategy_dhesi_liquidity_inversion`) | 1 | 2 | 2 | 2 | 0 | 2 | 2 | 1 | 2 | 1 | 0 | 1 | **16** |
+| Fabio Valentini (`strategy_fabio_valentini_amt_order_flow`) | 2 | 2 | 2 | 2 | 1 | 2 | 2 | 1 | 2 | 0 | 0 | 0 | **16** |
+| Fredy Sarmiento (`strategy_fredy_sarmiento_options_flow`) | 2 | 2 | 2 | 2 | 0 | 2 | 2 | 1 | 1 | 2 | 0 | 0 | **16** |
+| Ariel Hernandez (`strategy_ariel_hernandez_real_simple`) | 1 | 2 | 2 | 2 | 0 | 2 | 2 | 1 | 2 | 1 | 0 | 0 | **15** |
+| Candace Lau (`strategy_candace_lau_nq_sweep_reversal`) | 1 | 2 | 2 | 2 | 1 | 2 | 2 | 0 | 2 | 0 | 1 | 0 | **15** |
+| Clement Ang (`strategy_clement_ang_price_cycle`) | 1 | 2 | 2 | 2 | 1 | 2 | 2 | 1 | 1 | 1 | 0 | 0 | **15** |
+| Kris Verma (`strategy_kris_verma_shorting`) | 2 | 2 | 1 | 2 | 1 | 2 | 2 | 1 | 1 | 0 | 0 | 1 | **15** |
+| Ted Zhang (`strategy_ted_zhang_stage_analysis`) | 1 | 2 | 2 | 2 | 0 | 2 | 2 | 1 | 2 | 1 | 0 | 0 | **15** |
+| Tori Trades (`strategy_tori_trendline_4h`) | 0 | 2 | 2 | 2 | 0 | 2 | 2 | 2 | 1 | 0 | 2 | 0 | **15** |
+| Abraham Perez (`strategy_abraham_perez_ict_orderflow`) | 2 | 2 | 2 | 2 | 1 | 2 | 2 | 0 | 1 | 0 | 0 | 0 | **14** |
+| Brando Elite (`strategy_brando_options_swing`) | 1 | 2 | 0 | 2 | 1 | 2 | 0 | 1 | 1 | 2 | 0 | 2 | **14** |
+| Jay Awtani (`strategy_jay_awtani_market_dna`) | 2 | 2 | 2 | 2 | 1 | 2 | 2 | 0 | 0 | 0 | 1 | 0 | **14** |
+| Kyle Williams (`strategy_kyle_williams_first_red_day`) | 2 | 1 | 2 | 2 | 0 | 2 | 2 | 0 | 1 | 1 | 1 | 0 | **14** |
+| Lance Breitstein (`strategy_lance_breitstein_mean_reversion`) | 2 | 2 | 2 | 2 | 1 | 2 | 2 | 0 | 1 | 0 | 0 | 0 | **14** |
+| Marios Stamatoudis (`strategy_marios_stamatoudis_parabolic_short`) | 2 | 2 | 2 | 2 | 1 | 2 | 2 | 0 | 1 | 0 | 0 | 0 | **14** |
+| Traveling Trader (`strategy_traveling_trader_universal`) | 2 | 2 | 2 | 2 | 0 | 2 | 2 | 0 | 0 | 2 | 0 | 0 | **14** |
+| Trader Yush (`strategy_yush_order_flow`) | 2 | 2 | 2 | 2 | 0 | 2 | 2 | 1 | 1 | 0 | 0 | 0 | **14** |
+| NBB Trader (`strategy_nbb_trader_po3_ote_adr`) | 1 | 2 | 2 | 2 | 1 | 2 | 2 | 0 | 1 | 0 | 0 | 0 | **13** |
+| Pavel (`strategy_pavel_first_principles`) | 2 | 2 | 1 | 2 | 2 | 0 | 1 | 1 | 1 | 0 | 1 | 0 | **13** |
+| Pradeep Bonde (`strategy_pradeep_bonde_episodic_pivot`) | 2 | 2 | 2 | 1 | 1 | 1 | 2 | 0 | 1 | 1 | 0 | 0 | **13** |
+| Alex Temiz (`strategy_alex_temiz_first_red_day`) | 2 | 1 | 2 | 2 | 0 | 2 | 2 | 0 | 1 | 0 | 0 | 0 | **12** |
+| Andrea Cimitan (`strategy_andrea_cimitan_amt`) | 2 | 2 | 2 | 2 | 0 | 2 | 2 | 0 | 0 | 0 | 0 | 0 | **12** |
+| Anthony Crudele (`strategy_anthony_crudele_futures_trend`) | 1 | 2 | 2 | 2 | 0 | 2 | 2 | 0 | 1 | 0 | 0 | 0 | **12** |
+| Jared Tendler (`strategy_jared_tendler_psychology`) | 1 | 0 | 0 | 0 | 1 | 2 | 1 | 1 | 0 | 2 | 2 | 2 | **12** |
+| Marco Trades (`strategy_marco_trades_liquidity_grab`) | 2 | 2 | 2 | 2 | 0 | 2 | 2 | 0 | 0 | 0 | 0 | 0 | **12** |
+| Tanja Trades (`strategy_tanja_amd_futures`) | 1 | 2 | 1 | 2 | 0 | 2 | 1 | 0 | 2 | 1 | 0 | 0 | **12** |
+| Vincent Desiano (`strategy_vincent_desiano_break_retest`) | 1 | 2 | 2 | 2 | 0 | 2 | 2 | 0 | 1 | 0 | 0 | 0 | **12** |
+| Ali Crooks (`strategy_ali_crooks_trendline_pocket`) | 1 | 2 | 1 | 2 | 1 | 2 | 0 | 0 | 1 | 0 | 1 | 0 | **11** |
+| Marci Silfrain (`strategy_marci_silfrain_measured_move`) | 1 | 1 | 2 | 2 | 0 | 2 | 1 | 2 | 0 | 0 | 0 | 0 | **11** |
+| Okala (`strategy_okala_80_20_nasdaq`) | 0 | 2 | 1 | 2 | 1 | 2 | 2 | 0 | 1 | 0 | 0 | 0 | **11** |
+| Rajan Dhall (`strategy_rajan_dhall_auction`) | 1 | 2 | 1 | 2 | 1 | 2 | 0 | 1 | 0 | 1 | 0 | 0 | **11** |
+| TG Capital (`strategy_tg_capital_trident`) | 0 | 2 | 1 | 2 | 1 | 2 | 1 | 0 | 1 | 1 | 0 | 0 | **11** |
+| Trader Mayne (`strategy_trader_mayne_structure_ote`) | 1 | 2 | 2 | 2 | 1 | 2 | 0 | 0 | 1 | 0 | 0 | 0 | **11** |
+| Carmine Rosato (`strategy_carmine_rosato_lvn`) | 2 | 0 | 2 | 1 | 0 | 2 | 1 | 1 | 1 | 0 | 0 | 0 | **10** |
+| Forrest Knight (`strategy_forrest_knight_volume_profile`) | 2 | 2 | 2 | 2 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | **10** |
+| JadeCap (`strategy_jadecap_liquidity_volatility`) | 1 | 2 | 2 | 1 | 0 | 2 | 1 | 0 | 0 | 0 | 1 | 0 | **10** |
+| Dylan O’Neil (`strategy_dylan_oneil_vix_futures`) | 2 | 2 | 1 | 2 | 0 | 1 | 0 | 0 | 1 | 0 | 0 | 0 | **9** |
+| Trader Kane (`strategy_trader_kane_lab_model`) | 1 | 2 | 2 | 1 | 0 | 1 | 2 | 0 | 0 | 0 | 0 | 0 | **9** |
+| Carmine Rosato (`strategy_carmine_rosato_orderflow_masterclass`) | 2 | 1 | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | **6** |
+| Usman Ashraf (`strategy_usman_ashraf_options`) | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | **5** |
 
 ## Most aligned playbooks
 
-- **Gala Trades playbook** (`strategy_gala_trades_price_action`, 21/24) — The fullest practitioner match to the philosophy: pre-market hypotheses, strict selectivity, rule-based management, a journal that grades process not P&L, and hidden running P&L. Only the mechanism and the statistics are thin.
-- **Jeff Holden playbook** (`strategy_jeff_holden_momentum_model`, 19/24) — A review-and-improvement loop that matches the philosophy's record, investigate and decision-quality principles almost exactly, adding grade-based risk budgeting. It is light on market mechanism and has no statistics.
-- **Matteo Conti playbook** (`strategy_matteo_conti_institutional`, 19/24) — The closest playbook to the philosophy's scientific method (Section XVII): mechanism, conditional testing, expectancy and monitoring are all explicit.
-- **Steven Dux playbook** (`strategy_steven_dux_small_cap_short`, 18/24) — The most evidence-driven discretionary playbook; it embodies principles 1-7 and 9 but omits the psychological layer.
-- **JJ Simon playbook** (`strategy_jj_simon_fair_pricing`, 17/24) — The most quantitatively validated playbook here: backtested pass rates, a ~50-backtest sample and a stop-the-reversions rule. Its evaluation stops come from account maths rather than chart invalidation, and it has no emotional or outcome-separation rules.
-- **Naoufel Taief playbook** (`strategy_naoufel_taief_algorithmic`, 17/24) — Strong on mathematics, capital and methodical response, but data-mining without a causal story directly contradicts Principle 1's demand for understanding.
-- **Umar Ashraf playbook** (`strategy_umar_ashraf_5_stage`, 17/24) — Covers the self-governance half of the doctrine (Principles 6, 8-12) almost perfectly, and leaves the market-analysis half to the trader.
-- **Dhesi playbook** (`strategy_dhesi_liquidity_inversion`, 16/24) — Reactive and selective, with structural stops, a two-loss daily stop and constant dollar risk, so it covers much of the philosophy's risk side. It has no statistics or journal, and its process framing is limited.
+- **Gala Trades** (`strategy_gala_trades_price_action`, 21/24) — The fullest practitioner match to the philosophy: pre-market hypotheses, strict selectivity, rule-based management, a journal that grades process not P&L, and hidden running P&L. Only the mechanism and the statistics are thin.
+- **Jeff Holden** (`strategy_jeff_holden_momentum_model`, 19/24) — A review-and-improvement loop that matches the philosophy's record, investigate and decision-quality principles almost exactly, adding grade-based risk budgeting. It is light on market mechanism and has no statistics.
+- **Matteo Conti** (`strategy_matteo_conti_institutional`, 19/24) — The closest playbook to the philosophy's scientific method (Section XVII): mechanism, conditional testing, expectancy and monitoring are all explicit.
+- **Steven Dux** (`strategy_steven_dux_small_cap_short`, 18/24) — The most evidence-driven discretionary playbook; it embodies principles 1-7 and 9 but omits the psychological layer.
+- **JJ Simon** (`strategy_jj_simon_fair_pricing`, 17/24) — The most quantitatively validated playbook here: backtested pass rates, a ~50-backtest sample and a stop-the-reversions rule. Its evaluation stops come from account maths rather than chart invalidation, and it has no emotional or outcome-separation rules.
+- **Naoufel Taief** (`strategy_naoufel_taief_algorithmic`, 17/24) — Strong on mathematics, capital and methodical response, but data-mining without a causal story directly contradicts Principle 1's demand for understanding.
+- **Umar Ashraf** (`strategy_umar_ashraf_5_stage`, 17/24) — Covers the self-governance half of the doctrine (Principles 6, 8-12) almost perfectly, and leaves the market-analysis half to the trader.
+- **Dhesi** (`strategy_dhesi_liquidity_inversion`, 16/24) — Reactive and selective, with structural stops, a two-loss daily stop and constant dollar risk, so it covers much of the philosophy's risk side. It has no statistics or journal, and its process framing is limited.
 
 ## Least aligned playbooks
 
-- **Usman Ashraf playbook** (`strategy_usman_ashraf_options`, 5/24) — biggest gap: No decision process at all: no entry, exit or selectivity (P6, P7).
-- **Carmine Rosato playbook** (`strategy_carmine_rosato_orderflow_masterclass`, 6/24) — biggest gap: No exit or management rules and no stop for one of the two setups; risk and sizing are entirely absent.
-- **Dylan O’Neil playbook** (`strategy_dylan_oneil_vix_futures`, 9/24) — biggest gap: No explicit stop, exit or management rule; invalidation is only implied.
-- **Trader Kane playbook** (`strategy_trader_kane_lab_model`, 9/24) — biggest gap: No capital protection or evidence (P5, P9).
-- **Carmine Rosato playbook** (`strategy_carmine_rosato_lvn`, 10/24) — biggest gap: No higher-timeframe, session or regime context required, and no evidence base.
-- **Forrest Knight playbook** (`strategy_forrest_knight_volume_profile`, 10/24) — biggest gap: Nothing after entry: no management, sizing or loss limits, and no review or emotional rules.
-- **JadeCap playbook** (`strategy_jadecap_liquidity_volatility`, 10/24) — biggest gap: Risk per trade, sizing, R:R and loss limits are all unspecified.
-- **Ali Crooks playbook** (`strategy_ali_crooks_trendline_pocket`, 11/24) — biggest gap: Hands-off management by design (no response to changed evidence) and a stop set at half the target distance rather than at an invalidation point.
+- **Usman Ashraf** (`strategy_usman_ashraf_options`, 5/24) — biggest gap: No decision process at all: no entry, exit or selectivity (P6, P7).
+- **Carmine Rosato** (`strategy_carmine_rosato_orderflow_masterclass`, 6/24) — biggest gap: No exit or management rules and no stop for one of the two setups; risk and sizing are entirely absent.
+- **Dylan O’Neil** (`strategy_dylan_oneil_vix_futures`, 9/24) — biggest gap: No explicit stop, exit or management rule; invalidation is only implied.
+- **Trader Kane** (`strategy_trader_kane_lab_model`, 9/24) — biggest gap: No capital protection or evidence (P5, P9).
+- **Carmine Rosato** (`strategy_carmine_rosato_lvn`, 10/24) — biggest gap: No higher-timeframe, session or regime context required, and no evidence base.
+- **Forrest Knight** (`strategy_forrest_knight_volume_profile`, 10/24) — biggest gap: Nothing after entry: no management, sizing or loss limits, and no review or emotional rules.
+- **JadeCap** (`strategy_jadecap_liquidity_volatility`, 10/24) — biggest gap: Risk per trade, sizing, R:R and loss limits are all unspecified.
+- **Ali Crooks** (`strategy_ali_crooks_trendline_pocket`, 11/24) — biggest gap: Hands-off management by design (no response to changed evidence) and a stop set at half the target distance rather than at an invalidation point.
+
+## Grading reliability
+
+A second agent re-graded 12 playbooks (every fourth, blind to the first grades). Agreement over 144 principle grades: **91% exact**, **100% within one point**, quadratic-weighted kappa **0.94** (0.6-0.8 is usually read as substantial agreement, above 0.8 as almost perfect). Principles with the lowest agreement are the ones whose rubric is most open to judgment:
+
+| Principle | Exact agreement |
+|---|---|
+| P1 Understand before acting | 100% |
+| P2 Interpret movements within their broader context | 75% |
+| P3 Treat the market's future as uncertain | 100% |
+| P4 Use probability conditionally | 92% |
+| P5 Require mathematical justification | 75% |
+| P6 Do not force opportunities | 92% |
+| P7 Respond to changed evidence methodically | 92% |
+| P8 Separate decision quality from individual outcomes | 83% |
+| P9 Protect capital | 92% |
+| P10 Protect emotional independence | 92% |
+| P11 Record and investigate | 100% |
+| P12 Follow the process, not the promise of money | 100% |
 
 ## Evidence
 

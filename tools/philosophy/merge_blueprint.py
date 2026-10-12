@@ -326,7 +326,9 @@ def main() -> None:
     rej = {(r["node"], r["id"]) for r in rejected}
     mapped, dropped, exts = clean_maps(res.get("maps", []), exts, known, rej)
     exemplars = write_alignment(res.get("align", []), labels, principles, known, res.get("regrade"))
-    counts = write_blueprint(mapped, exts, exemplars)
+    # Extension sources are linked from extensions.md itself; turning every (section x source) pair into
+    # a blueprint edge would multiply imprecise links, so the blueprint keeps only the mapped links.
+    counts = write_blueprint(mapped, [], exemplars)
     write_map_md(mapped, exts, labels, order, dropped, rejected)
     print(f"mapped {len(mapped)} philosophy nodes; links: {dict(counts)}; dropped {len(dropped)} unknown ids; "
           f"{len(rejected)} refuted by verification")

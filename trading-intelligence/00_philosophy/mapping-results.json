@@ -5068,7 +5068,393 @@
   }
  ],
  "extensions": {
-  "extensions": []
+  "extensions": [
+   {
+    "title": "Name the counterparty",
+    "relation": "sharpens",
+    "applies_to": [
+     "philo_source_of_opportunity",
+     "philo_market_is_relationship",
+     "principle_01_understand_before_acting"
+    ],
+    "source_ids": [
+     "concept_edge",
+     "synthesis_unified_framework",
+     "book_trading_and_exchanges",
+     "concept_market_microstructure",
+     "mathbook_ohara_microstructure_theory",
+     "concept_trade_execution",
+     "strategy_matteo_conti_institutional"
+    ],
+    "one_line": "An explanation is defensible when it names who is on the other side and why; if no one can be named, assume adverse selection: you may be the one paying for someone else's information or urgency."
+   },
+   {
+    "title": "Shared models are part of the market, and stops are one of them",
+    "relation": "challenges",
+    "applies_to": [
+     "philo_market_system_of_rules",
+     "philo_market_is_relationship",
+     "philo_evidence_changes",
+     "principle_03_future_is_uncertain",
+     "principle_07_respond_methodically"
+    ],
+    "source_ids": [
+     "concept_reflexivity",
+     "book_alchemy_of_finance",
+     "media_soros_ceu_lectures",
+     "person_karl_popper",
+     "concept_liquidity",
+     "concept_market_sentiment",
+     "concept_liquidity_sweep_reversal",
+     "strategy_candace_lau_nq_sweep_reversal",
+     "strategy_dhesi_liquidity_inversion",
+     "strategy_andrea_cimitan_amt",
+     "synthesis_consensus_conflicts"
+    ],
+    "one_line": "Section II's independence claim holds for a private model, but widely shared models (where crowds put stops, how they position) become liquidity that acts on the market, so invalidation at the obvious level can be run before the hypothesis is tested."
+   },
+   {
+    "title": "Observed interaction: a rung between price and inference",
+    "relation": "extends",
+    "applies_to": [
+     "philo_price_expression",
+     "philo_market_is_relationship",
+     "principle_01_understand_before_acting"
+    ],
+    "source_ids": [
+     "concept_order_flow",
+     "concept_wyckoff_method",
+     "paper_kyle_1985",
+     "concept_market_microstructure",
+     "mathbook_bouchaud_trades_quotes_prices",
+     "mathbook_hasbrouck_empirical_microstructure",
+     "strategy_andrea_cimitan_amt",
+     "strategy_carmine_rosato_orderflow_masterclass"
+    ],
+    "one_line": "In central-book markets, aggressor side, delta, absorption (effort vs result) and Kyle's lambda add an observable 'interaction' step between price and interpretation, making some inferences testable while intent stays inferred."
+   },
+   {
+    "title": "Value is what the auction accepts",
+    "relation": "sharpens",
+    "applies_to": [
+     "philo_value_vs_price",
+     "philo_price_expression"
+    ],
+    "source_ids": [
+     "concept_auction_market_theory",
+     "book_mind_over_markets",
+     "concept_volume_profile",
+     "concept_vwap",
+     "strategy_jj_simon_fair_pricing",
+     "strategy_lance_breitstein_mean_reversion",
+     "book_efficiently_inefficient"
+    ],
+    "one_line": "Section XV's value becomes operational in three senses (auction acceptance, event-defined fair price, anchored value), and limits to arbitrage explain why a known gap can persist."
+   },
+   {
+    "title": "Every edge is perishable",
+    "relation": "extends",
+    "applies_to": [
+     "philo_recurring_storyline",
+     "philo_conditional_probability",
+     "philo_manifesto",
+     "question_repeatable_behaviors",
+     "question_survives_regime_change"
+    ],
+    "source_ids": [
+     "book_adaptive_markets",
+     "person_andrew_lo",
+     "concept_random_walk_efficient_markets",
+     "concept_edge",
+     "strategy_pavel_first_principles",
+     "concept_trading_journal_review",
+     "concept_time_series_statistics",
+     "synthesis_consensus_conflicts"
+    ],
+    "one_line": "Under the adaptive-markets view, edges are found, crowded and decay (fastest on low timeframes in liquid markets), so each edge needs a stated cause, a re-validation schedule and a retirement rule."
+   },
+   {
+    "title": "Fat tails slow the law of large numbers",
+    "relation": "challenges",
+    "applies_to": [
+     "philo_conditional_probability",
+     "philo_mathematics_sword",
+     "principle_03_future_is_uncertain",
+     "principle_09_protect_capital",
+     "question_estimate_reliability"
+    ],
+    "source_ids": [
+     "concept_probability_fat_tails",
+     "mathbook_statistical_consequences_fat_tails",
+     "book_misbehavior_of_markets",
+     "mathbook_mandelbrot_fractals_scaling",
+     "person_benoit_mandelbrot",
+     "book_black_swan",
+     "concept_performance_metrics",
+     "concept_trade_management",
+     "concept_trade_execution",
+     "synthesis_pre_trade_checklist"
+    ],
+    "one_line": "With power-law tails, sample means converge slowly, a few trades dominate a record, high-win-rate strategies hide tail risk and stops slip in gaps, so estimates need wider uncertainty and size must be set for the tail, not the average loss."
+   },
+   {
+    "title": "Count every trial, then deflate the winner",
+    "relation": "sharpens",
+    "applies_to": [
+     "philo_conditional_probability",
+     "philo_scientific_method",
+     "philo_research_foundations",
+     "principle_04_conditional_probability",
+     "question_repeatable_behaviors",
+     "question_estimate_reliability"
+    ],
+    "source_ids": [
+     "concept_overfitting_validation",
+     "formula_sheet",
+     "paper_deflated_sharpe_2014",
+     "person_marcos_lopez_de_prado",
+     "book_advances_financial_ml",
+     "book_evidence_based_ta",
+     "mathbook_all_of_statistics",
+     "strategy_naoufel_taief_algorithmic",
+     "strategy_matteo_conti_institutional"
+    ],
+    "one_line": "The best of N skill-less trials shows a Sharpe growing like sqrt(2 ln N), and finer conditions (Principle 4) multiply trials, so every variant must be logged and the winner judged by a deflated Sharpe or data-snooping test."
+   },
+   {
+    "title": "Start from a sceptical base rate, then score your calibration",
+    "relation": "sharpens",
+    "applies_to": [
+     "philo_conditional_probability",
+     "philo_journal",
+     "principle_04_conditional_probability",
+     "question_estimate_reliability"
+    ],
+    "source_ids": [
+     "concept_probabilistic_thinking",
+     "concept_probability_fat_tails",
+     "mathbook_jaynes_probability_logic",
+     "person_et_jaynes",
+     "concept_random_walk_efficient_markets",
+     "book_evidence_based_ta",
+     "formula_sheet",
+     "book_thinking_in_bets"
+    ],
+    "one_line": "Since most candidate patterns are noise, a new pattern should start near 'no edge' and be updated Bayesian-style, and the probabilities recorded in the journal should be checked for calibration."
+   },
+   {
+    "title": "A ready vocabulary of measurable conditions",
+    "relation": "extends",
+    "applies_to": [
+     "philo_recurring_storyline",
+     "principle_02_context_before_movement",
+     "principle_04_conditional_probability",
+     "question_define_conditions"
+    ],
+    "source_ids": [
+     "concept_market_regimes",
+     "concept_time_series_statistics",
+     "concept_volatility",
+     "formula_sheet",
+     "concept_auction_market_theory",
+     "book_mind_over_markets",
+     "mathbook_hamilton_time_series",
+     "strategy_anthony_crudele_futures_trend",
+     "strategy_andrea_cimitan_amt"
+    ],
+    "one_line": "The knowledge base already lists measurable regime detectors (trend/range x volatility, AMT balance and day type, Hurst, variance ratio, ATR percentile, EMA alignment, Bollinger environment, regime-switching models) that could become the philosophy's fixed default conditions."
+   },
+   {
+    "title": "Edges that need no story",
+    "relation": "challenges",
+    "applies_to": [
+     "principle_01_understand_before_acting",
+     "philo_source_of_opportunity",
+     "philo_acb_principle"
+    ],
+    "source_ids": [
+     "concept_trend_following",
+     "book_trend_following_covel",
+     "concept_random_walk_efficient_markets",
+     "book_expected_returns",
+     "book_efficiently_inefficient",
+     "person_cliff_asness",
+     "media_fwm_cliff_asness"
+    ],
+    "one_line": "Trend following enters because price is moving, names no destination and is among the best-documented anomalies, explained by risk premia or limits to arbitrage, so the philosophy must say whether a tested reason why a class of moves pays counts as understanding."
+   },
+   {
+    "title": "Costs are set by the relationship, not a constant",
+    "relation": "sharpens",
+    "applies_to": [
+     "philo_mathematics_sword",
+     "philo_source_of_opportunity",
+     "principle_05_mathematical_justification",
+     "question_survives_costs"
+    ],
+    "source_ids": [
+     "concept_optimal_execution_market_impact",
+     "mathbook_bouchaud_trades_quotes_prices",
+     "paper_almgren_chriss_2000",
+     "concept_market_microstructure",
+     "book_trading_and_exchanges",
+     "concept_trade_execution",
+     "strategy_pavel_first_principles",
+     "concept_expectancy",
+     "formula_sheet"
+    ],
+    "one_line": "Section VII's flat cost term hides that spreads widen in fast markets, stops fill into thinning books, impact grows with the square root of size, and frequency multiplies costs, so costs must be estimated for the conditions actually traded and weighed against the expected move."
+   },
+   {
+    "title": "Expected value is not growth: size is part of the edge",
+    "relation": "sharpens",
+    "applies_to": [
+     "philo_mathematics_sword",
+     "philo_capital_preservation",
+     "principle_05_mathematical_justification",
+     "principle_09_protect_capital"
+    ],
+    "source_ids": [
+     "concept_kelly_criterion_optimal_f",
+     "paper_kelly_1956",
+     "mathbook_kelly_capital_growth",
+     "book_fortunes_formula",
+     "concept_stochastic_processes",
+     "formula_sheet",
+     "book_mathematics_of_money_management",
+     "concept_risk_of_ruin_drawdown",
+     "concept_prop_firm_risk_rules"
+    ],
+    "one_line": "An account compounds along one path at roughly mu - sigma^2/2, so positive EV is enough only at a suitable size: beyond about 2x Kelly the same edge shrinks capital, which makes Sections VII and XIV two halves of one result and argues for fractional Kelly under estimation error."
+   },
+   {
+    "title": "Graded conviction instead of trade / no trade",
+    "relation": "extends",
+    "applies_to": [
+     "philo_source_of_opportunity",
+     "philo_capital_preservation",
+     "principle_06_do_not_force",
+     "principle_09_protect_capital"
+    ],
+    "source_ids": [
+     "strategy_jeff_holden_momentum_model",
+     "strategy_candace_lau_nq_sweep_reversal",
+     "strategy_lance_breitstein_mean_reversion",
+     "strategy_naoufel_taief_algorithmic",
+     "concept_machine_learning_finance",
+     "concept_position_sizing",
+     "concept_kelly_criterion_optimal_f",
+     "strategy_jared_tendler_psychology"
+    ],
+    "one_line": "Practitioners size by evidence strength (Holden's grade-based share of the daily stop, confluence-based sizing, ensemble agreement, meta-labeling, Kelly), which would make Principles 5, 6 and 9 graded rather than binary, provided grades follow written criteria and are validated in the journal."
+   },
+   {
+    "title": "Correlation: of positions, of strategies, of trades",
+    "relation": "extends",
+    "applies_to": [
+     "philo_capital_preservation",
+     "philo_conditional_probability",
+     "principle_09_protect_capital"
+    ],
+    "source_ids": [
+     "concept_correlation_portfolio_risk",
+     "mathbook_markowitz_portfolio_selection",
+     "concept_position_sizing",
+     "mathbook_grinold_kahn_active_pm",
+     "person_ray_dalio",
+     "strategy_matteo_conti_institutional",
+     "strategy_pavel_first_principles",
+     "book_when_genius_failed",
+     "book_way_of_the_turtle",
+     "concept_time_series_statistics"
+    ],
+    "one_line": "Correlated positions are one bet and correlations rise in crises, uncorrelated strategies add breadth, and clustered or overlapping trades shrink the effective sample, so capital preservation needs portfolio-heat and correlation limits and the LLN needs independent observations."
+   },
+   {
+    "title": "Record the trade's path, not only its verdict",
+    "relation": "extends",
+    "applies_to": [
+     "philo_journal",
+     "philo_mathematics_sword",
+     "principle_05_mathematical_justification",
+     "principle_11_record_and_investigate"
+    ],
+    "source_ids": [
+     "concept_trade_management",
+     "concept_risk_reward_r_multiples",
+     "concept_trading_journal_review",
+     "concept_machine_learning_finance",
+     "strategy_candace_lau_nq_sweep_reversal",
+     "strategy_dhesi_liquidity_inversion",
+     "book_daily_trading_coach",
+     "person_brett_steenbarger",
+     "strategy_jeff_holden_momentum_model"
+    ],
+    "one_line": "Average win and loss are produced by management rules (breakeven, partials, trailing, time stops), so a setup must be tested together with its management, the journal must log MAE/MFE, and review should cover strengths and one root-caused mistake at a time."
+   },
+   {
+    "title": "Expected-range bands: normal variance or a broken edge",
+    "relation": "extends",
+    "applies_to": [
+     "philo_evidence_changes",
+     "philo_being_wrong",
+     "philo_scientific_method",
+     "principle_07_respond_methodically",
+     "principle_08_decision_quality_not_outcome",
+     "question_survives_regime_change"
+    ],
+    "source_ids": [
+     "strategy_matteo_conti_institutional",
+     "strategy_naoufel_taief_algorithmic",
+     "concept_risk_of_ruin_drawdown",
+     "concept_backtesting",
+     "strategy_jj_simon_fair_pricing",
+     "book_adaptive_markets"
+    ],
+    "one_line": "Shuffling and resampling the trade list gives drawdown and losing-streak bands to monitor live results against; a breach triggers a size cut and review, not a verdict, and failing strategies are benched and replaced from an incubation pool rather than deleted."
+   },
+   {
+    "title": "Emotion is a state to measure, with structural stops",
+    "relation": "challenges",
+    "applies_to": [
+     "philo_protect_process",
+     "philo_step_back",
+     "principle_10_emotional_independence",
+     "question_consistent_execution"
+    ],
+    "source_ids": [
+     "strategy_jared_tendler_psychology",
+     "book_mental_game_of_trading",
+     "strategy_umar_ashraf_5_stage",
+     "strategy_dhesi_liquidity_inversion",
+     "concept_prop_firm_risk_rules",
+     "book_hour_between_dog_wolf",
+     "concept_trading_psychology"
+    ],
+    "one_line": "Rather than interference to exclude, emotion is energy with an optimal middle, a measurable state with carryover, a signal that size is too large and partly physiology, so the process is protected by state checks, session stops and size limits set while calm."
+   },
+   {
+    "title": "Stepping back has a cost: define it in advance and log it",
+    "relation": "challenges",
+    "applies_to": [
+     "philo_step_back",
+     "principle_06_do_not_force",
+     "question_consistent_execution"
+    ],
+    "source_ids": [
+     "book_way_of_the_turtle",
+     "concept_trend_following",
+     "concept_probabilistic_thinking",
+     "strategy_pavel_first_principles",
+     "concept_trade_execution",
+     "synthesis_consensus_conflicts",
+     "strategy_marco_trades_liquidity_grab",
+     "concept_trading_sessions_killzones",
+     "concept_market_regimes"
+    ],
+    "one_line": "Skipping valid signals destroyed failed Turtles' distributions and waiting for confirmation costs edge, so 'unclear' should be a condition written before the session, watching limited to fixed windows, and skipped setups logged so the cost of waiting is measured."
+   }
+  ]
  },
  "align": [
   {
@@ -8327,6 +8713,737 @@
    "key": "grounded_in",
    "reason": "The evidence lab's S1 does not say the regime at A moved P(B) more than detour depth did: out of sample a 1-ATR detour cut P(B) by 13-17 points and a 3-ATR detour by 33-40, against a regime gap of 12 points (19 at 3 ATR), 10 of the 12 unconditional points were reproduced by the memoryless null, and the regime note itself contains no such finding.",
    "lens": "fidelity"
+  },
+  {
+   "node": "philo_evidence_changes",
+   "id": "strategy_jeff_holden_momentum_model",
+   "key": "operationalized_by",
+   "reason": "Every detail in the why is in the note, but the five-whys loop diagnoses the trader's own execution errors (selling early, badly placed stops), not changes in market evidence on a live position, so it belongs with Principle 11 (record and investigate), and 'fix risk mistakes before exit mistakes' only echoes 'manage risk first' on the surface.",
+   "lens": "fidelity+relevance"
+  },
+  {
+   "node": "philo_step_back",
+   "id": "concept_trading_sessions_killzones",
+   "key": "grounded_in",
+   "reason": "The note is about time-of-day volatility and liquidity windows used as a filter and says nothing about stepping back when understanding fails or about limiting screen time, so Section IX does not rest on it and the link is only loosely related.",
+   "lens": "fidelity+relevance"
+  },
+  {
+   "node": "philo_step_back",
+   "id": "book_market_wizards",
+   "key": "supported_by",
+   "reason": "Paul Tudor Jones's 'defence first, size down when trading poorly' is a response to one's own drawdown and belongs to Principle 9 (protect capital), not to Section IX's rule of not trading a market one does not understand; sizing down is not stepping aside.",
+   "lens": "fidelity+relevance"
+  },
+  {
+   "node": "principle_06_do_not_force",
+   "id": "book_market_wizards",
+   "key": "supported_by",
+   "reason": "'The wizards share risk control and discipline across very different methods' is generic padding that could be attached to any principle, and it says nothing specific about staying out when the evidence is unclear.",
+   "lens": "fidelity+relevance"
+  },
+  {
+   "node": "principle_02_context_before_movement",
+   "id": "concept_liquidity_sweep_reversal",
+   "key": "challenged_by",
+   "reason": "The warnings the why cites (every reversal looks like a sweep afterwards, and a pool can be run with continuation) appear only in the Pitfalls section of concept_liquidity (07_concepts/liquidity.md lines 60-63); the liquidity-sweep-reversal note has no such caveat and simply sets out the setup's rules, variants and lineage.",
+   "lens": "fidelity+relevance"
+  },
+  {
+   "node": "question_consistent_execution",
+   "id": "synthesis_consensus_conflicts",
+   "key": "challenged_by",
+   "reason": "The note settles discretionary versus systematic with a hybrid: a discretionary setup plus a meta-labeled filter and sizing. It never mentions automation or execution consistency, and taking discretion out would be one way to answer whether the trader can execute consistently, not a challenge to the question.",
+   "lens": "fidelity+relevance"
+  },
+  {
+   "node": "question_estimate_reliability",
+   "id": "mathbook_blitzstein_intro_probability",
+   "key": "supported_by",
+   "reason": "The why describes an introductory text on conditioning and expectation as 'the basis for estimating probabilities under defined conditions', which fits Principle 4 and the question of how to define conditions, not how reliable a historical success rate is given small samples or unrepresentative data. Here it is generic padding.",
+   "lens": "fidelity+relevance"
+  },
+  {
+   "node": "question_estimate_reliability",
+   "id": "mathbook_jaynes_probability_logic",
+   "key": "challenged_by",
+   "reason": "The polarity is wrong. Bayesian posterior uncertainty is a way to answer 'how reliable is that estimate', not something that complicates the question, and the KB's own notes (probability-fat-tails, probabilistic-thinking) present Jaynes-style updating as the right frame for estimating edge.",
+   "lens": "fidelity+relevance"
+  },
+  {
+   "node": "question_estimate_reliability",
+   "id": "strategy_naoufel_taief_algorithmic",
+   "key": "operationalized_by",
+   "reason": "Rule 7's Monte Carlo reshuffles the order of the same trade list to estimate drawdown and losing streaks, which leaves the win rate and expectancy unchanged. It therefore does not test whether a probability estimate rests on too few observations or represents future conditions. It belongs under Section XI, where the same rule is already linked.",
+   "lens": "fidelity+relevance"
+  },
+  {
+   "node": "philo_price_expression",
+   "id": "strategy_ted_zhang_stage_analysis",
+   "key": "operationalized_by",
+   "reason": "Zhang's rule makes price the judge of non-price stories (narrative and fundamentals count only if price confirms them), which is the reverse of Section IV's point that a price move alone cannot establish its cause and needs more evidence, so it does not put Section IV's observation-versus-inference split into practice.",
+   "lens": "fidelity+relevance"
+  },
+  {
+   "node": "philo_source_of_opportunity",
+   "id": "strategy_pavel_first_principles",
+   "key": "challenged_by",
+   "reason": "Pavel's rule 10 only says not to wait for price to turn before entering a mean-reversion pullback; that is about entry timing, not Section VIII's need for understanding, evidence and mathematics to agree, and the playbook's 'measurable cost in price and R:R' is not in the note (it says only that waiting 'gives up part of the edge'), so the challenge does not apply.",
+   "lens": "fidelity+relevance"
+  },
+  {
+   "node": "philo_market_system_of_rules",
+   "id": "framework_ontology",
+   "key": "operationalized_by",
+   "reason": "The ontology sorts the knowledge base's notes into layers (maths, mechanics, setups, sizing, psychology, review). It is not a model of the market system and it tests nothing against the market, so the why misdescribes it and it does not put Section II's system-versus-model testing into practice.",
+   "lens": "fidelity+relevance"
+  },
+  {
+   "node": "question_repeatable_behaviors",
+   "id": "synthesis_idea_lineage",
+   "key": "operationalized_by",
+   "reason": "The lineage map traces where trading ideas came from (several of its roots, such as Kelly sizing and probability misjudgment, are not market behaviours at all) and offers no test or evidence of repeatability; equating an idea's age with a behaviour's persistence is the linker's own inference, not something the note says.",
+   "lens": "fidelity+relevance"
   }
- ]
+ ],
+ "regrade": {
+  "grades": [
+   {
+    "strategy_id": "strategy_abraham_perez_ict_orderflow",
+    "scores": [
+     {
+      "principle_id": "principle_01_understand_before_acting",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_02_context_before_movement",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_03_future_is_uncertain",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_04_conditional_probability",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_05_mathematical_justification",
+      "score": 0
+     },
+     {
+      "principle_id": "principle_06_do_not_force",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_07_respond_methodically",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_08_decision_quality_not_outcome",
+      "score": 0
+     },
+     {
+      "principle_id": "principle_09_protect_capital",
+      "score": 1
+     },
+     {
+      "principle_id": "principle_10_emotional_independence",
+      "score": 0
+     },
+     {
+      "principle_id": "principle_11_record_and_investigate",
+      "score": 0
+     },
+     {
+      "principle_id": "principle_12_process_not_money",
+      "score": 0
+     }
+    ]
+   },
+   {
+    "strategy_id": "strategy_anthony_crudele_futures_trend",
+    "scores": [
+     {
+      "principle_id": "principle_01_understand_before_acting",
+      "score": 1
+     },
+     {
+      "principle_id": "principle_02_context_before_movement",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_03_future_is_uncertain",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_04_conditional_probability",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_05_mathematical_justification",
+      "score": 0
+     },
+     {
+      "principle_id": "principle_06_do_not_force",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_07_respond_methodically",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_08_decision_quality_not_outcome",
+      "score": 0
+     },
+     {
+      "principle_id": "principle_09_protect_capital",
+      "score": 1
+     },
+     {
+      "principle_id": "principle_10_emotional_independence",
+      "score": 0
+     },
+     {
+      "principle_id": "principle_11_record_and_investigate",
+      "score": 0
+     },
+     {
+      "principle_id": "principle_12_process_not_money",
+      "score": 0
+     }
+    ]
+   },
+   {
+    "strategy_id": "strategy_carmine_rosato_lvn",
+    "scores": [
+     {
+      "principle_id": "principle_01_understand_before_acting",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_02_context_before_movement",
+      "score": 1
+     },
+     {
+      "principle_id": "principle_03_future_is_uncertain",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_04_conditional_probability",
+      "score": 1
+     },
+     {
+      "principle_id": "principle_05_mathematical_justification",
+      "score": 0
+     },
+     {
+      "principle_id": "principle_06_do_not_force",
+      "score": 1
+     },
+     {
+      "principle_id": "principle_07_respond_methodically",
+      "score": 1
+     },
+     {
+      "principle_id": "principle_08_decision_quality_not_outcome",
+      "score": 1
+     },
+     {
+      "principle_id": "principle_09_protect_capital",
+      "score": 1
+     },
+     {
+      "principle_id": "principle_10_emotional_independence",
+      "score": 0
+     },
+     {
+      "principle_id": "principle_11_record_and_investigate",
+      "score": 0
+     },
+     {
+      "principle_id": "principle_12_process_not_money",
+      "score": 0
+     }
+    ]
+   },
+   {
+    "strategy_id": "strategy_dylan_oneil_vix_futures",
+    "scores": [
+     {
+      "principle_id": "principle_01_understand_before_acting",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_02_context_before_movement",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_03_future_is_uncertain",
+      "score": 1
+     },
+     {
+      "principle_id": "principle_04_conditional_probability",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_05_mathematical_justification",
+      "score": 0
+     },
+     {
+      "principle_id": "principle_06_do_not_force",
+      "score": 1
+     },
+     {
+      "principle_id": "principle_07_respond_methodically",
+      "score": 0
+     },
+     {
+      "principle_id": "principle_08_decision_quality_not_outcome",
+      "score": 0
+     },
+     {
+      "principle_id": "principle_09_protect_capital",
+      "score": 1
+     },
+     {
+      "principle_id": "principle_10_emotional_independence",
+      "score": 0
+     },
+     {
+      "principle_id": "principle_11_record_and_investigate",
+      "score": 0
+     },
+     {
+      "principle_id": "principle_12_process_not_money",
+      "score": 0
+     }
+    ]
+   },
+   {
+    "strategy_id": "strategy_gala_trades_price_action",
+    "scores": [
+     {
+      "principle_id": "principle_01_understand_before_acting",
+      "score": 1
+     },
+     {
+      "principle_id": "principle_02_context_before_movement",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_03_future_is_uncertain",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_04_conditional_probability",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_05_mathematical_justification",
+      "score": 0
+     },
+     {
+      "principle_id": "principle_06_do_not_force",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_07_respond_methodically",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_08_decision_quality_not_outcome",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_09_protect_capital",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_10_emotional_independence",
+      "score": 1
+     },
+     {
+      "principle_id": "principle_11_record_and_investigate",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_12_process_not_money",
+      "score": 2
+     }
+    ]
+   },
+   {
+    "strategy_id": "strategy_jeff_holden_momentum_model",
+    "scores": [
+     {
+      "principle_id": "principle_01_understand_before_acting",
+      "score": 1
+     },
+     {
+      "principle_id": "principle_02_context_before_movement",
+      "score": 1
+     },
+     {
+      "principle_id": "principle_03_future_is_uncertain",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_04_conditional_probability",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_05_mathematical_justification",
+      "score": 0
+     },
+     {
+      "principle_id": "principle_06_do_not_force",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_07_respond_methodically",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_08_decision_quality_not_outcome",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_09_protect_capital",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_10_emotional_independence",
+      "score": 1
+     },
+     {
+      "principle_id": "principle_11_record_and_investigate",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_12_process_not_money",
+      "score": 1
+     }
+    ]
+   },
+   {
+    "strategy_id": "strategy_lance_breitstein_mean_reversion",
+    "scores": [
+     {
+      "principle_id": "principle_01_understand_before_acting",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_02_context_before_movement",
+      "score": 1
+     },
+     {
+      "principle_id": "principle_03_future_is_uncertain",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_04_conditional_probability",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_05_mathematical_justification",
+      "score": 1
+     },
+     {
+      "principle_id": "principle_06_do_not_force",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_07_respond_methodically",
+      "score": 1
+     },
+     {
+      "principle_id": "principle_08_decision_quality_not_outcome",
+      "score": 1
+     },
+     {
+      "principle_id": "principle_09_protect_capital",
+      "score": 1
+     },
+     {
+      "principle_id": "principle_10_emotional_independence",
+      "score": 0
+     },
+     {
+      "principle_id": "principle_11_record_and_investigate",
+      "score": 0
+     },
+     {
+      "principle_id": "principle_12_process_not_money",
+      "score": 0
+     }
+    ]
+   },
+   {
+    "strategy_id": "strategy_matteo_conti_institutional",
+    "scores": [
+     {
+      "principle_id": "principle_01_understand_before_acting",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_02_context_before_movement",
+      "score": 1
+     },
+     {
+      "principle_id": "principle_03_future_is_uncertain",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_04_conditional_probability",
+      "score": 1
+     },
+     {
+      "principle_id": "principle_05_mathematical_justification",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_06_do_not_force",
+      "score": 1
+     },
+     {
+      "principle_id": "principle_07_respond_methodically",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_08_decision_quality_not_outcome",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_09_protect_capital",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_10_emotional_independence",
+      "score": 0
+     },
+     {
+      "principle_id": "principle_11_record_and_investigate",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_12_process_not_money",
+      "score": 1
+     }
+    ]
+   },
+   {
+    "strategy_id": "strategy_pavel_first_principles",
+    "scores": [
+     {
+      "principle_id": "principle_01_understand_before_acting",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_02_context_before_movement",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_03_future_is_uncertain",
+      "score": 1
+     },
+     {
+      "principle_id": "principle_04_conditional_probability",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_05_mathematical_justification",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_06_do_not_force",
+      "score": 0
+     },
+     {
+      "principle_id": "principle_07_respond_methodically",
+      "score": 1
+     },
+     {
+      "principle_id": "principle_08_decision_quality_not_outcome",
+      "score": 0
+     },
+     {
+      "principle_id": "principle_09_protect_capital",
+      "score": 1
+     },
+     {
+      "principle_id": "principle_10_emotional_independence",
+      "score": 0
+     },
+     {
+      "principle_id": "principle_11_record_and_investigate",
+      "score": 1
+     },
+     {
+      "principle_id": "principle_12_process_not_money",
+      "score": 0
+     }
+    ]
+   },
+   {
+    "strategy_id": "strategy_tanja_amd_futures",
+    "scores": [
+     {
+      "principle_id": "principle_01_understand_before_acting",
+      "score": 1
+     },
+     {
+      "principle_id": "principle_02_context_before_movement",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_03_future_is_uncertain",
+      "score": 1
+     },
+     {
+      "principle_id": "principle_04_conditional_probability",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_05_mathematical_justification",
+      "score": 0
+     },
+     {
+      "principle_id": "principle_06_do_not_force",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_07_respond_methodically",
+      "score": 1
+     },
+     {
+      "principle_id": "principle_08_decision_quality_not_outcome",
+      "score": 0
+     },
+     {
+      "principle_id": "principle_09_protect_capital",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_10_emotional_independence",
+      "score": 1
+     },
+     {
+      "principle_id": "principle_11_record_and_investigate",
+      "score": 0
+     },
+     {
+      "principle_id": "principle_12_process_not_money",
+      "score": 0
+     }
+    ]
+   },
+   {
+    "strategy_id": "strategy_trader_kane_lab_model",
+    "scores": [
+     {
+      "principle_id": "principle_01_understand_before_acting",
+      "score": 1
+     },
+     {
+      "principle_id": "principle_02_context_before_movement",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_03_future_is_uncertain",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_04_conditional_probability",
+      "score": 1
+     },
+     {
+      "principle_id": "principle_05_mathematical_justification",
+      "score": 0
+     },
+     {
+      "principle_id": "principle_06_do_not_force",
+      "score": 1
+     },
+     {
+      "principle_id": "principle_07_respond_methodically",
+      "score": 2
+     },
+     {
+      "principle_id": "principle_08_decision_quality_not_outcome",
+      "score": 0
+     },
+     {
+      "principle_id": "principle_09_protect_capital",
+      "score": 0
+     },
+     {
+      "principle_id": "principle_10_emotional_independence",
+      "score": 0
+     },
+     {
+      "principle_id": "principle_11_record_and_investigate",
+      "score": 0
+     },
+     {
+      "principle_id": "principle_12_process_not_money",
+      "score": 0
+     }
+    ]
+   },
+   {
+    "strategy_id": "strategy_usman_ashraf_options",
+    "scores": [
+     {
+      "principle_id": "principle_01_understand_before_acting",
+      "score": 1
+     },
+     {
+      "principle_id": "principle_02_context_before_movement",
+      "score": 0
+     },
+     {
+      "principle_id": "principle_03_future_is_uncertain",
+      "score": 1
+     },
+     {
+      "principle_id": "principle_04_conditional_probability",
+      "score": 1
+     },
+     {
+      "principle_id": "principle_05_mathematical_justification",
+      "score": 0
+     },
+     {
+      "principle_id": "principle_06_do_not_force",
+      "score": 0
+     },
+     {
+      "principle_id": "principle_07_respond_methodically",
+      "score": 0
+     },
+     {
+      "principle_id": "principle_08_decision_quality_not_outcome",
+      "score": 0
+     },
+     {
+      "principle_id": "principle_09_protect_capital",
+      "score": 1
+     },
+     {
+      "principle_id": "principle_10_emotional_independence",
+      "score": 0
+     },
+     {
+      "principle_id": "principle_11_record_and_investigate",
+      "score": 0
+     },
+     {
+      "principle_id": "principle_12_process_not_money",
+      "score": 0
+     }
+    ]
+   }
+  ]
+ }
 }

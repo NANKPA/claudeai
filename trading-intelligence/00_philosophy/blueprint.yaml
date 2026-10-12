@@ -78,7 +78,6 @@ sections:
   - strategy_pavel_first_principles?
   - strategy_naoufel_taief_algorithmic?
   - synthesis_unified_framework?
-  - framework_ontology?
 - id: philo_acb_principle
   type: philosophy
   title: 'III. The A → C → B principle: the destination is not the path'
@@ -152,7 +151,6 @@ sections:
   - strategy_andrea_cimitan_amt?
   - strategy_carmine_rosato_orderflow_masterclass?
   - strategy_candace_lau_nq_sweep_reversal?
-  - strategy_ted_zhang_stage_analysis?
   - strategy_matteo_conti_institutional?
   - strategy_dylan_oneil_vix_futures?
 - id: philo_recurring_storyline
@@ -304,7 +302,6 @@ sections:
   challenged_by:
   - book_man_who_solved_the_market?
   - concept_random_walk_efficient_markets?
-  - strategy_pavel_first_principles?
   operationalized_by:
   - strategy_matteo_conti_institutional?
   - strategy_lance_breitstein_mean_reversion?
@@ -331,13 +328,11 @@ sections:
   - concept_random_walk_efficient_markets?
   - concept_overfitting_validation?
   - concept_edge?
-  - concept_trading_sessions_killzones?
   supported_by:
   - book_fooled_by_randomness?
   - book_thinking_fast_slow?
   - book_mental_game_of_trading?
   - book_hour_between_dog_wolf?
-  - book_market_wizards?
   challenged_by:
   - book_way_of_the_turtle?
   - concept_probabilistic_thinking?
@@ -389,7 +384,6 @@ sections:
   - strategy_jj_simon_fair_pricing?
   - strategy_fredy_sarmiento_options_flow?
   - strategy_ted_zhang_stage_analysis?
-  - strategy_jeff_holden_momentum_model?
 - id: philo_being_wrong
   type: philosophy
   title: XI. Being wrong is part of the system (decision quality vs. outcome)
@@ -882,7 +876,6 @@ principles:
   - book_mind_over_markets?
   - book_secrets_bull_bear_markets?
   challenged_by:
-  - concept_liquidity_sweep_reversal?
   - concept_trend_following?
   operationalized_by:
   - strategy_trader_mayne_structure_ote?
@@ -1131,7 +1124,6 @@ principles:
   - book_mental_game_of_trading?
   - book_thinking_fast_slow?
   - book_fooled_by_randomness?
-  - book_market_wizards?
   challenged_by:
   - strategy_pavel_first_principles?
   - book_way_of_the_turtle?
@@ -1490,7 +1482,6 @@ questions:
   - strategy_naoufel_taief_algorithmic?
   - strategy_pavel_first_principles?
   - formula_sheet?
-  - synthesis_idea_lineage?
 - id: question_define_conditions
   type: question
   title: How should the relevant conditions be defined and measured?
@@ -1538,19 +1529,16 @@ questions:
   supported_by:
   - mathbook_all_of_statistics?
   - mathbook_casella_berger?
-  - mathbook_blitzstein_intro_probability?
   - mathbook_statistical_consequences_fat_tails?
   - paper_deflated_sharpe_2014?
   - book_fooled_by_randomness?
   challenged_by:
-  - mathbook_jaynes_probability_logic?
   - book_adaptive_markets?
   operationalized_by:
   - formula_sheet?
   - synthesis_pre_trade_checklist?
   - strategy_jj_simon_fair_pricing?
   - strategy_matteo_conti_institutional?
-  - strategy_naoufel_taief_algorithmic?
 - id: question_survives_costs
   type: question
   title: Does the advantage survive trading costs?
@@ -1635,7 +1623,6 @@ questions:
   - book_mental_game_of_trading?
   - book_market_wizards?
   challenged_by:
-  - synthesis_consensus_conflicts?
   - book_hour_between_dog_wolf?
   operationalized_by:
   - strategy_naoufel_taief_algorithmic?
