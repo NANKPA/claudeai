@@ -1,0 +1,279 @@
+# Hypotheses — "The Philosophy of the Relationship" restated as falsifiable claims.
+# Education, not financial advice. No entry is a trading signal, a win rate or a P&L.
+#
+# Each entry turns a claim of the philosophy (philosophy-of-the-relationship.md) into a statement
+# that an observation could refute. Readable version: hypotheses.md. Plan: research-program.md.
+#
+# status:
+#   supported      an evidence-lab study (evidence-lab.md) tested it and the data behaved as stated
+#   qualified      a study tested it and the data agreed only in part, or only under conditions
+#   not-supported  a study tested it and the pre-stated refuting observation occurred
+#   untested       no evidence-lab study has tested it yet; the test_design says how to
+# A status describes the operational statement below, not the philosophy as a whole. It changes
+# only after a pre-registered study (or a journal review meeting the stated sample) is run.
+#
+# Evidence numbers are copied from evidence-lab.md as regenerated on 2026-10-12 (data to 2026-09-30;
+# in-sample to 2012-12-31, out-of-sample from 2013-01-01). Edge keys read by tools/ti_lib.py:
+# tests (-> philo_* / principle_*), answers (-> question_*), uses (-> concept_*).
+
+hypotheses:
+
+- id: hypothesis_acb_detour_not_verdict
+  type: hypothesis
+  title: "H1: An adverse move weakens the hypothesis without settling it"
+  statement: "For a long hypothesis from A toward B = A + 3 × ATR14 within 60 daily bars, touching an adverse level C_k = A − k × ATR14 (k from 0.5 to 3) before B lowers the probability of still reaching B, but leaves it well above zero in both trend regimes and both periods."
+  tests: [philo_acb_principle, principle_02_context_before_movement, principle_03_future_is_uncertain]
+  answers: []
+  uses: [concept_market_structure, concept_volatility, concept_market_regimes, concept_trade_management]
+  layer: L2
+  falsified_if: "At some depth up to 3 ATR the 95% CI of P(B | C_k) lies entirely below 5% in either regime (the adverse move would then settle the hypothesis), or P(B | C_k) is not below the unconditional P(B) (the adverse move would cost nothing)."
+  test_design: "S1: every day of ^GSPC, ^NDX, GC=F, EURUSD=X and CL=F is an entry A; B = A + 3 ATR14; horizon 60 bars; depths 0.5, 1, 1.5, 2 and 3 ATR; a bar touching both C_k and B counts against B; regime at A = close above SMA200 and SMA50 above SMA200, else other; in-sample to 2012-12-31 with outcome windows purged, out-of-sample 2013-01-01 to 2026-09-30; 95% CIs from 2,000 block-bootstrap replicates of 182-day blocks across all five markets. No costs: a probability study, not a strategy. Replication: add ES=F and NQ=F (already in the data cache) and an intraday version when intraday bars are available."
+  status: supported
+  evidence: "S1: out of sample, touching C at −1 ATR cut P(B) from 69.3% to 56.1% in uptrends and from 57.4% to 40.7% otherwise; after a 3-ATR detour B was still reached 36.2% [30.7, 41.8] of the time in uptrends and 17.6% [12.5, 24.3] otherwise."
+
+- id: hypothesis_depth_signals_breakdown
+  type: hypothesis
+  title: "H2: A deep enough adverse move signals a breakdown"
+  statement: "Beyond some depth up to 3 ATR, touching C_k carries information of its own: P(B | C_k) falls below what a memoryless market with the same drift, volatility and regime produces, so depth alone can tell a breakdown from a detour."
+  tests: [philo_acb_principle, principle_02_context_before_movement, principle_07_respond_methodically]
+  answers: [question_define_conditions]
+  uses: [concept_market_structure, concept_volatility, concept_random_walk_efficient_markets, concept_stochastic_processes]
+  layer: L2
+  falsified_if: "No tested depth up to 3 ATR has a 95% CI of P(B | C_k) entirely below the memoryless null in both the in-sample and the out-of-sample period, in either regime (the pre-registered structural-change rule of S1)."
+  test_design: "S1 design (see H1) plus a memoryless null for each market, regime and period: 20,000 60-day paths of i.i.d. resampled days (close, high and low changes divided by the prior ATR) with the same B, C_k and tie rule. Pre-registered rule: depth k behaves like structural change only if its CI lies below the null in both periods. Sensitivity run without GC=F and CL=F, whose continuous futures series carry unadjusted roll gaps."
+  status: not-supported
+  evidence: "S1: no depth up to 3 ATR fell below the null in both periods, in either regime, with or without the two futures series; the only single-period CI clear of the null (out-of-sample uptrend at 3 ATR) sat above it, 1 of 20 comparisons, about what chance alone gives. Depth carried no breakdown signal beyond geometry."
+
+- id: hypothesis_context_at_a_shapes_path
+  type: hypothesis
+  title: "H3: The context at A shapes the whole detour curve"
+  statement: "The trend regime at A shifts P(B | C_k) at every depth, and by more than the different drift and volatility of the two regimes' days would produce on their own."
+  tests: [philo_acb_principle, philo_recurring_storyline, principle_02_context_before_movement, principle_04_conditional_probability]
+  answers: [question_define_conditions]
+  uses: [concept_market_regimes, concept_moving_averages, concept_trend_following, concept_multi_timeframe_analysis]
+  layer: L2
+  falsified_if: "Out of sample, the uptrend-minus-other gap in P(B | C_k) has a 95% CI that includes zero at most depths, or the gap between the regimes' observed-minus-null values is zero within its CI at every depth."
+  test_design: "S1 data and bootstrap; the uptrend-minus-other difference is bootstrapped from the same block resamples and set against the difference between the two regimes' memoryless nulls. Next step: bootstrap the regime difference of (observed − null) with the null's own estimation error included, and add a second context variable (the realised-volatility tercile of S2) fixed before the run."
+  status: qualified
+  evidence: "S1: out of sample the uptrend curve sat above the other-regime curve by 12 points [+3, +20] unconditionally and 19 points [+10, +26] at 3 ATR, with the CI excluding zero at 12 of 12 period-depth points; but the two regimes' memoryless nulls differ by about 10 points at both places, so 84% of the unconditional gap and 51% of the 3-ATR gap is what drift and volatility alone produce, and the remainder was not tested formally."
+
+- id: hypothesis_structure_break_marks_breakdown
+  type: hypothesis
+  title: "H4: A break of structure, not depth, separates breakdowns from detours"
+  statement: "Among paths that touch C_k before B, those on which a pre-defined structural invalidation came first (a daily close below the last confirmed swing low before A) reach B less often than the memoryless null, while paths with structure intact reach B at least as often as the null."
+  tests: [philo_acb_principle, philo_market_system_of_rules, philo_evidence_changes, principle_02_context_before_movement, principle_07_respond_methodically]
+  answers: [question_define_conditions, question_repeatable_behaviors]
+  uses: [concept_market_structure, concept_support_resistance, concept_dow_theory, concept_multi_timeframe_analysis]
+  layer: L2
+  falsified_if: "Out of sample, P(B | C_k, structure broken) is not below the S1 null at any depth (95% CI), or P(B | C_k, structure intact) − P(B | C_k, structure broken) has a CI that includes zero at every depth: the structural rule would then add nothing to depth."
+  test_design: "Proposed study S8 (not yet in studies.py): S1's markets, entries, B, horizon, tie rule, split and block bootstrap; swing lows from a fixed fractal rule (a low below the 5 bars on each side, usable only once confirmed 5 bars later, so no look-ahead); structure broken = a daily close below the last confirmed swing low before A, at or before the C_k touch; one alternative rule (a close below SMA50) fixed in advance; Holm correction across 2 rules × 5 depths × 2 regimes. No costs: a probability study."
+  status: untested
+  evidence: "not yet tested"
+
+- id: hypothesis_conditioning_changes_odds
+  type: hypothesis
+  title: "H5: Defined conditions change the odds"
+  statement: "Conditioning on trend regime, realised-volatility tercile and one simple recurring pattern (three consecutive lower closes) moves the 5-day outcome of daily index, gold and EUR/USD closes away from the unconditional baseline in more cells than chance alone would."
+  tests: [philo_conditional_probability, philo_recurring_storyline, principle_04_conditional_probability]
+  answers: [question_define_conditions, question_repeatable_behaviors]
+  uses: [concept_market_regimes, concept_volatility, concept_probabilistic_thinking, concept_time_series_statistics]
+  layer: L2
+  falsified_if: "The number of judged cells whose in-sample difference from baseline has a 95% CI excluding zero is no larger than a null with no conditional structure produces (about 5% of cells, or the 95th percentile of a block-permutation null that shuffles the condition labels)."
+  test_design: "S2: ^GSPC, ^NDX, EURUSD=X and GC=F; outcome log(close[t+5] / close[t]) and P(up); trend regime × volatility tercile (cut-offs set on in-sample data, frozen for out-of-sample), and 3-down alone and inside each of the six contexts (13 cells per market); cell minus baseline bootstrapped jointly over 91-day blocks; cells in fewer than 10 blocks in either period marked too few to judge. Next step: a block-permutation null for the count of found cells, so that the nesting of cells is inside the test, and a direct test of whether 3-down behaves differently across the six contexts."
+  status: qualified
+  evidence: "S2: 11 of 74 judged cells differed from baseline in-sample where about 4 would by chance; 11 or more would occur with probability 0.0011 if the tests were independent, but they are not (nested cells, two correlated metrics), so the excess is suggestive, not established. 15 of 52 cells per metric had too few blocks to judge."
+
+- id: hypothesis_conditional_tendencies_decay
+  type: hypothesis
+  title: "H6: A conditional tendency has to be re-earned in each period"
+  statement: "Most conditional differences found in one period do not hold in the next: of the cells whose in-sample difference from baseline excludes zero, fewer than half keep the same sign with a CI excluding zero out of sample."
+  tests: [philo_recurring_storyline, philo_conditional_probability, principle_04_conditional_probability, principle_03_future_is_uncertain]
+  answers: [question_survives_regime_change, question_repeatable_behaviors]
+  uses: [concept_market_regimes, concept_overfitting_validation, concept_time_series_statistics, concept_random_walk_efficient_markets]
+  layer: L8
+  falsified_if: "Half or more of the cells found in-sample hold out of sample (same sign, 95% CI excluding zero)."
+  test_design: "S2 design (see H5) with the pre-registered fates held, weakened, vanished and reversed; in-sample to 2012-12-31, out-of-sample 2013-01-01 to 2026-09-30; the change in each baseline between periods bootstrapped. Next step: rolling five-year evaluation windows so persistence is judged on many splits rather than one, and the same cells on ES=F and NQ=F from the data cache."
+  status: supported
+  evidence: "S2: of the 11 cells found in-sample, 1 held out of sample (^GSPC 3-down, mean 5-day return) and 10 weakened; none vanished or reversed. Even the baselines moved: P(up) for ^GSPC went from 55.4% to 60.7% (+5.3 points [+1.9, +8.7]) and for ^NDX by +3.9 points [+0.2, +7.5]; the changes for EURUSD=X and GC=F were within noise."
+
+- id: hypothesis_small_samples_cannot_confirm
+  type: hypothesis
+  title: "H7: A few dozen trades cannot confirm a thin edge"
+  statement: "For a strategy with a real but thin edge (win rate 55%, payoff 1:1, cost 0.05R, true expectancy +0.05R), roughly a third of independent 30- to 100-trade samples show a non-positive expectancy, and a 95% interval on expectancy excludes zero with 80% power only after thousands of trades."
+  tests: [philo_conditional_probability, philo_mathematics_sword, principle_04_conditional_probability, principle_05_mathematical_justification]
+  answers: [question_estimate_reliability, question_repeatable_behaviors]
+  uses: [concept_expectancy, concept_probabilistic_thinking, concept_performance_metrics, concept_probability_fat_tails]
+  layer: L0
+  falsified_if: "The exact binomial share of 30- and 100-trade samples with observed expectancy at or below zero is under 10%, or trades_needed gives fewer than 1,000 trades for 80% power. Empirically: a condition-matched record whose trades are less dispersed or less dependent than assumed, so that its estimates converge faster than the i.i.d. calculation."
+  test_design: "S3: 100,000 seeded samples at each size (10, 30, 100, 300 and 1,000 trades) checked against the exact binomial; trades_needed for the sample plan; one empirical cell (the S7 cell, non-overlapping 5-day trades) checked with wilson_interval, beta_posterior and expectancy_from_results. For any setup of the owner's: python3 tools/philosophy/edge_lab.py sample --p <win rate> --rr <payoff> --cost <cost in R>."
+  status: supported
+  evidence: "S3: 35.3% (exact 35.5%) of 30-trade and 30.7% of 100-trade samples looked like losing strategies; about 1,522 trades are needed for a 95% interval to exclude zero on an average sample and 3,109 for 80% power. The empirical cell's in-sample win rate of 60.0% on 145 trades had a Wilson CI of [51.9, 67.6] and was 48.6% on 37 out-of-sample trades."
+
+- id: hypothesis_estimates_are_calibrated
+  type: hypothesis
+  title: "H8: My recorded probability estimates are calibrated"
+  statement: "Across journaled positions, the frozen pre-trade estimates are calibrated: in each est_win_prob bin the mean estimate lies inside the 95% Wilson interval of the realised win rate, and the mean of est_ev_r − result_r is within two standard errors of zero (no systematic optimism)."
+  tests: [philo_journal, philo_conditional_probability, principle_11_record_and_investigate, principle_04_conditional_probability]
+  answers: [question_estimate_reliability]
+  uses: [concept_trading_journal_review, concept_probabilistic_thinking, concept_expectancy, concept_performance_metrics]
+  layer: L8
+  falsified_if: "Over at least 100 closed take rows, the mean of est_ev_r − result_r exceeds zero by more than two standard errors, or the realised win rate falls below the mean estimate's Wilson interval in two or more bins holding 30 or more trades each: the estimates are optimistic, the contradiction Section XVI warns of."
+  test_design: "Journal (framework_trading_journal), live and forward rows only, backtest rows in a separate file; est_* fields frozen at decided_at; per setup_id and overall. python3 tools/philosophy/journal_review.py <journal.csv> --out <private path> prints the calibration table, the Brier score and estimated versus realised EV; result_r is already net of costs. No in/out-of-sample split is needed because every estimate is written before its outcome; at least 100 closed trades overall and 30 per bin before a bin is read."
+  status: untested
+  evidence: "not yet tested"
+
+- id: hypothesis_edge_survives_costs
+  type: hypothesis
+  title: "H9: Costs decide whether a selected short-horizon edge is worth trading"
+  statement: "For a short-horizon edge chosen on in-sample daily data, the out-of-sample break-even cost per side is below a realistic cost for the instrument, so the edge does not survive trading costs even when it looks robust to them in-sample."
+  tests: [philo_mathematics_sword, philo_scientific_method, principle_05_mathematical_justification]
+  answers: [question_survives_costs]
+  uses: [concept_expectancy, concept_trade_execution, concept_market_microstructure, concept_optimal_execution_market_impact]
+  layer: L1
+  falsified_if: "The selected edge's out-of-sample net expectancy at a cost assumption fixed before the run (for example 2 bp per side on an index future) has mean − 1 SE > 0, so that its out-of-sample break-even cost is above the realistic cost."
+  test_design: "S7: the cell with the largest in-sample mean among 32 S2 candidates with 150 or more in-sample observations; long at close t, exit at close t+5, no overlapping trades; costs of 0, 1, 2, 5 and 10 bp per side charged twice; Student-t CIs; in-sample to 2012, out-of-sample from 2013. Next: the same cost grid on an edge that is still positive out of sample before costs (a journal setup, or the S5 winner), with costs measured from fills (journal cost_r) and on a tradable instrument (ES=F or NQ=F from the cache)."
+  status: qualified
+  evidence: "S7: the best in-sample cell (^GSPC · 3-down · other · high vol) had an in-sample break-even of 35.8 bp per side, far above the 1–10 bp tested, but out of sample its gross expectancy was already −25 bp per trade [−168, +117], so there was no out-of-sample break-even and costs only deepened the loss (−29 bp at 2 bp per side). The period, not the costs, removed the edge, so the cost claim itself was not exercised."
+
+- id: hypothesis_in_sample_winner_decays
+  type: hypothesis
+  title: "H10: What wins in-sample loses most of its edge out of sample"
+  statement: "An advantage chosen as the best of many candidates on in-sample data is smaller out of sample: its out-of-sample excess over the relevant benchmark (buy and hold, or the unconditional long trade) is below its in-sample excess."
+  tests: [philo_scientific_method, philo_recurring_storyline, principle_05_mathematical_justification, principle_03_future_is_uncertain]
+  answers: [question_survives_regime_change, question_repeatable_behaviors]
+  uses: [concept_overfitting_validation, concept_backtesting, concept_performance_metrics, concept_edge]
+  layer: L8
+  falsified_if: "Across selections made on in-sample data only, the out-of-sample excess over the benchmark is on average at least as large as the in-sample excess (no shrinkage)."
+  test_design: "S5 and S7, both selecting on data up to 2012-12-31 and evaluating from 2013-01-01. S5: 238 trend-rule variants on ^GSPC, 1 bp per side, Sharpe in excess of buy and hold. S7: best of 32 S2 cells, non-overlapping 5-day trades, against a 5-day long trade on every eligible day. Next: rolling selection (choose on 10 years, evaluate on the next 3, step 1 year) on ^GSPC, ^NDX, ES=F and NQ=F, so that the shrinkage is measured as a distribution rather than from one split."
+  status: supported
+  evidence: "S5: the winner's Sharpe advantage over buy and hold went from 0.18 in-sample to −0.01 out of sample, although its absolute Sharpe rose with the market (0.63 to 0.80). S7: the best cell went from +72 bp per trade in-sample to −25 bp out of sample before costs, against +27 bp for a 5-day long trade taken on every eligible day."
+
+- id: hypothesis_search_manufactures_edges
+  type: hypothesis
+  title: "H11: Searching many rules manufactures an apparent edge"
+  statement: "On data with no exploitable serial structure, the best of a few hundred rule variants still shows an in-sample advantage over buy and hold, so an in-sample winner counts as evidence only if it beats what the same search produces on no-signal data (deflated Sharpe of at least 0.95, permutation p below 0.05)."
+  tests: [philo_scientific_method, philo_research_foundations, principle_05_mathematical_justification]
+  answers: [question_repeatable_behaviors]
+  uses: [concept_overfitting_validation, concept_backtesting, concept_moving_averages, concept_trend_following]
+  layer: L8
+  falsified_if: "On permuted (no-signal) copies of the data the best variant's in-sample Sharpe is on average no higher than buy and hold's: the search alone would then manufacture no advantage."
+  test_design: "S5: ^GSPC daily, 238 variants (SMA crossovers, close versus SMA, time-series momentum, Donchian breakouts; long/flat and long/short), 1 bp per side; winner by in-sample Sharpe; deflated Sharpe ratio from the number and variance of the trials; the whole search repeated on 20 copies of the in-sample series with permuted daily returns. Next: 1,000 permutations instead of 20, a Reality Check bootstrap (paper_white_2000) and the probability of backtest overfitting by combinatorially symmetric cross-validation (paper_bailey_pbo_2017), proposed additions to studies.py."
+  status: supported
+  evidence: "S5: on 20 no-signal copies the best of 238 rules averaged an in-sample Sharpe of 0.52 against 0.46 for holding, an advantage of up to 0.25 from selection alone; the real winner's advantage of 0.18 sat inside that range (deflated Sharpe 0.78, permutation p = 0.14)."
+
+- id: hypothesis_ruin_set_by_size
+  type: hypothesis
+  title: "H12: Bet size, not the edge, decides survival"
+  statement: "For a fixed positive-expectancy strategy, the probability of a 50% drawdown within 250 trades rises from near zero at 1% risk per trade to near certainty at 10%, and beyond the full-Kelly fraction more risk lowers even the median final equity."
+  tests: [philo_capital_preservation, principle_09_protect_capital]
+  answers: [question_consistent_execution]
+  uses: [concept_risk_of_ruin_drawdown, concept_position_sizing, concept_kelly_criterion_optimal_f, concept_expectancy]
+  layer: L6
+  falsified_if: "With the edge held fixed, P(drawdown of 50% or more) does not rise with risk per trade, or the median final equity keeps rising beyond the strategy's full-Kelly fraction."
+  test_design: "S4: three hypothetical positive-EV strategies (p = 0.35 at 2.5R, 0.50 at 1.5R, 0.60 at 1R) after a 0.05R cost, each at 0.5%, 1%, 2%, 5% and 10% fixed-fractional risk; 250 trades × 10,000 seeded paths compounding on current equity; exact losing-streak probabilities. Next: replace the assumed win rate with the posterior of a real record (kelly_under_uncertainty) and reshuffle the owner's R-record in blocks so that real streaks are kept. Example: python3 tools/philosophy/edge_lab.py ruin --p 0.35 --rr 2.5 --risk 0.01 --cost 0.05 --trades 250 --paths 10000."
+  status: supported
+  evidence: "S4: the same edge (p = 0.35, 2.5R, EV +0.175R) reached a 50% drawdown in 1 of 10,000 paths at 1% risk and in 9,997 of 10,000 at 10%; beyond its full-Kelly fraction (6.8%) the median final equity fell from 3.54 at 5% risk to 2.67 at 10%. A 50% loss needs a 100% gain to recover."
+
+- id: hypothesis_outcomes_misjudge_decisions
+  type: hypothesis
+  title: "H13: Short-run results are a weak verdict on a decision"
+  statement: "Over the horizons on which traders usually judge themselves (20 to 100 trades), the sign of cumulative P&L poorly separates a positive-EV process from a negative-EV one with the same payoffs: the +$7 strategy of Section VII is behind, or its −$4 twin ahead, in more than 20% of cases at every horizon up to 100 trades."
+  tests: [philo_being_wrong, philo_decisions_not_money, philo_mathematics_sword, principle_08_decision_quality_not_outcome, principle_12_process_not_money]
+  answers: [question_estimate_reliability]
+  uses: [concept_probabilistic_thinking, concept_expectancy, concept_performance_metrics, concept_trading_psychology]
+  layer: L8
+  falsified_if: "The exact probability that the +$7 strategy is behind after 20 trades, or that the −$4 twin is ahead, is below 10%."
+  test_design: "S6: exact binomial probabilities, checked against 100,000 seeded simulations, for p = 0.60, average win $100, average loss $120, cost $5 (EV +$7) and a twin with p = 0.55 (EV −$4), at 1 to 500 trades, plus the trade count after which each probability stays below 5%. Parameters are assumed known and stable; the journal version of this claim is H14."
+  status: supported
+  evidence: "S6: after 20 trades the +$7 strategy is behind 40.4% of the time and the −$4 twin is ahead 41.4% of the time; the two probabilities stay below 5% only from 663 and 2,060 trades respectively."
+
+- id: hypothesis_good_decisions_earn_more
+  type: hypothesis
+  title: "H14: Good decisions earn more over a large sample, though not trade by trade"
+  statement: "In the journal, positions graded good decisions (all three gate scores at 2, size within Gate 6, executed per plan) earn a higher mean net result_r than positions graded poor decisions, once each group holds at least 50 closed positions, even though single outcomes overlap heavily between the groups."
+  tests: [philo_being_wrong, philo_source_of_opportunity, principle_08_decision_quality_not_outcome, principle_11_record_and_investigate]
+  answers: [question_consistent_execution, question_repeatable_behaviors]
+  uses: [concept_trading_journal_review, concept_trading_plan, concept_expectancy, concept_probabilistic_thinking]
+  layer: L8
+  falsified_if: "With at least 50 closed positions in each group, the difference in mean result_r (good minus poor) has a 95% CI lying entirely at or below zero."
+  test_design: "Journal: grade each closed position only from fields frozen before the outcome (the three scores, risk_pct against the plan) plus executed_per_plan, never from result_r; the four cells (Earned, Variance, Lucky, Earned loss) from journal_review.py; Welch t and a bootstrap CI on the difference in mean result_r; live and forward rows kept apart. With an sd near 1R, detecting a 0.3R difference with 80% power needs about 175 positions per group (2 × (1.96 + 0.84)² / 0.3²), so a CI that still includes zero at 50 per group means 'not yet shown', not 'refuted'. A rising Lucky count is a warning even when the difference is positive."
+  status: untested
+  evidence: "not yet tested"
+
+- id: hypothesis_step_back_selects_better_trades
+  type: hypothesis
+  title: "H15: Stepping back leaves fewer, better-justified trades"
+  statement: "Candidates skipped or left to lapse because a gate failed (any score below 2, an unclear regime, over-watching) would have earned a lower mean R, measured mechanically from their planned entry, stop and target, than the candidates taken; the step-back rule therefore raises expectancy per trade while cutting the number of trades."
+  tests: [philo_step_back, philo_source_of_opportunity, principle_06_do_not_force, principle_01_understand_before_acting]
+  answers: [question_consistent_execution, question_define_conditions]
+  uses: [concept_trading_plan, concept_trading_psychology, concept_market_regimes, concept_expectancy]
+  layer: L7
+  falsified_if: "With at least 50 skip or wait rows carrying a mechanical counterfactual result_r and at least 100 closed takes, the takes' mean R minus the skips' counterfactual mean R has a 95% CI whose upper bound is below +0.1R: the filter would then remove trades no worse than those it keeps."
+  test_design: "Journal: each skip and wait row gets a counterfactual result_r computed mechanically from planned_entry, planned_stop and planned_target with the same exit rules as takes, kept out of every performance statistic as the journal template requires (journal_review.py separates counterfactuals); compare with closed takes of the same setup_id and regime_tag. Mechanical proxy on daily data (proposed): in S2's markets, mark days with mixed trend signals (close above SMA200 but SMA50 below it, or the reverse) as unclear, and compare per-trade expectancy and trade count with and without skipping them, in- and out-of-sample, at 2 bp per side."
+  status: untested
+  evidence: "not yet tested"
+
+- id: hypothesis_journal_reduces_hindsight
+  type: hypothesis
+  title: "H16: The frozen journal record removes hindsight from the review"
+  statement: "When I reconstruct a past decision from memory after seeing its outcome, the win probability and invalidation I recall shift toward the outcome (higher after wins, lower after losses) relative to the frozen pre-trade record; reviewing from the frozen record removes that shift."
+  tests: [philo_journal, philo_being_wrong, principle_11_record_and_investigate, principle_08_decision_quality_not_outcome]
+  answers: [question_estimate_reliability, question_consistent_execution]
+  uses: [concept_trading_journal_review, concept_trading_psychology, concept_probabilistic_thinking]
+  layer: L8
+  falsified_if: "Over at least 60 recalled decisions (30 wins and 30 losses), the hindsight shift, defined as mean(recalled − frozen est_win_prob) after wins minus the same after losses, has a 95% CI that includes zero with an upper bound below 3 points: memory would then not be bent by outcomes, and the frozen record adds rigour without removing a bias."
+  test_design: "Recall protocol at the weekly review: before opening the journal, write from memory the est_win_prob and the invalidation of a random sample of the previous week's decided rows (wins, losses and skips), then compare them with the frozen fields (pre-trade fields are written before decided_at and never edited). Keep the recall sheets in a separate private file, not in the journal. Also count how often a recalled invalidation differs in substance from the written one. No market data or costs."
+  status: untested
+  evidence: "not yet tested"
+
+- id: hypothesis_losses_impair_next_decision
+  type: hypothesis
+  title: "H17: A loss degrades the next decision"
+  statement: "Decisions taken right after a losing position, or in an amber or red emotional state, follow the plan less often (executed_per_plan = n, discretionary exits, takes with failing scores) and earn a lower mean net R than decisions taken after a win or scratch in a green state, despite the protocol's post-loss pause."
+  tests: [philo_protect_process, philo_decisions_not_money, principle_10_emotional_independence, principle_12_process_not_money]
+  answers: [question_consistent_execution]
+  uses: [concept_trading_psychology, concept_trading_journal_review, concept_trading_plan, concept_risk_of_ruin_drawdown]
+  layer: L7
+  falsified_if: "With at least 50 post-loss decisions and 50 others, the plan-adherence rates differ by less than 5 points and the difference in mean result_r has a 95% CI that includes zero and lies within ±0.1R: either the post-loss pause works or the effect is absent."
+  test_design: "Journal, live rows only (paper trades carry little emotional load), at least three months: order rows by decided_at, label each decision by the sign of the previous closed position and by the colour of emotional_state_pre (green, amber, red); journal_review.py already reports results after a win versus after a loss and by emotion colour; add a two-proportion test on plan adherence and a Welch t on mean result_r. Behavioural priors: loss aversion (paper_kahneman_tversky_1979) and the disposition effect (paper_shefrin_statman_1985)."
+  status: untested
+  evidence: "not yet tested"
+
+- id: hypothesis_predefined_exits_curb_disposition
+  type: hypothesis
+  title: "H18: Pre-defined exits prevent riding losers and cutting winners"
+  statement: "Discretionary exits show the disposition pattern that rule-based exits prevent: among discretionary exits, winners are closed before their planned target more often than losers are closed before their stop, and discretionary losses average worse than −1R beyond the slippage allowance; exits by stop, invalidation, evidence_changed, time_stop or management show neither pattern."
+  tests: [philo_evidence_changes, philo_protect_process, principle_07_respond_methodically, principle_10_emotional_independence]
+  answers: [question_consistent_execution]
+  uses: [concept_trade_management, concept_risk_reward_r_multiples, concept_trading_psychology, concept_trade_execution]
+  layer: L5
+  falsified_if: "With at least 30 discretionary exits, the share of winners closed before target is no higher than the share of losers closed before stop (difference under 10 points, two-proportion p above 0.05), and the discretionary mean loss is no worse than the rule-based mean loss."
+  test_design: "Journal: exit_reason classifies every closed position; the planned target in R comes from planned_entry, planned_stop and planned_target; compare discretionary with rule-based exits on early-exit rates, mean loss, the MAE of losers and the MFE given back by winners (mfe_r − result_r). Section X's order (manage the risk first, then investigate) is part of the test: evidence_changed exits should cut losses without lowering mean R relative to holding to the stop, checked against the hold-to-stop counterfactual where the price record allows. Reading: paper_shefrin_statman_1985."
+  status: untested
+  evidence: "not yet tested"
+
+- id: hypothesis_value_gap_not_edge
+  type: hypothesis
+  title: "H19: A gap between price and value is not an edge by itself"
+  statement: "On daily bars, a large gap between price and a defined value estimate (the close more than 2 ATR from a 20-day volume-weighted average price, or from the 200-day SMA where volume is missing) does not by itself give a positive expectancy after costs out of sample; any reversion toward value appears only under stated conditions (a range rather than a trend regime)."
+  tests: [philo_value_vs_price, philo_price_expression, principle_05_mathematical_justification, principle_04_conditional_probability]
+  answers: [question_repeatable_behaviors, question_survives_costs, question_define_conditions]
+  uses: [concept_mean_reversion, concept_auction_market_theory, concept_vwap, concept_random_walk_efficient_markets]
+  layer: L3
+  falsified_if: "The unconditional gap-reversion trade earns an out-of-sample net expectancy with mean − 2 SE > 0 in at least three of the four markets (the discrepancy alone would then be an edge), or the regime-conditioned version does no better out of sample than the unconditional one."
+  test_design: "Proposed study S9 (not yet in studies.py): ^GSPC, ^NDX, ES=F and NQ=F (volume available) and GC=F with the SMA proxy; signal when the close is more than 2 ATR14 beyond the value estimate; trade toward the estimate, exit at it, at a 2-ATR adverse stop, or after 10 bars; non-overlapping trades; 2 and 5 bp per side; in-sample to 2012-12-31, out-of-sample after; S1's trend regime as the condition; only the 2-ATR threshold and one alternative (3 ATR) pre-registered. A statistical value estimate is a narrow stand-in for Section XV's value; a fundamental version would need valuation data the cache does not hold."
+  status: untested
+  evidence: "not yet tested"
+
+- id: hypothesis_losing_run_check_calibrated
+  type: hypothesis
+  title: "H20: The losing-run check tells ordinary variance from a broken edge"
+  statement: "edge_lab's consistency_check flags (as unusual or inconsistent) no more than 10% of 40-trade runs drawn from the strategy's own reference distribution, and no more than 2% as inconsistent, while flagging at least half of 40-trade runs from a genuinely deteriorated version (win rate down from 55% to 40% at a 1:1 payoff)."
+  tests: [philo_being_wrong, philo_evidence_changes, principle_07_respond_methodically, principle_08_decision_quality_not_outcome]
+  answers: [question_survives_regime_change, question_estimate_reliability]
+  uses: [concept_risk_of_ruin_drawdown, concept_performance_metrics, concept_trading_journal_review, concept_probabilistic_thinking]
+  layer: L8
+  falsified_if: "In seeded simulation, more than 10% of reference runs are flagged at either level (or more than 2% as inconsistent), or fewer than 50% of deteriorated runs are flagged at either level."
+  test_design: "Simulation, no market data: 10,000 seeded 40-trade runs from the reference (p = 0.55, 1R, cost 0.05R) and 10,000 from the deteriorated version (p = 0.40), each passed to consistency_check with the reference p, mean R and sd R and a 300-trade reference record for the drawdown bootstrap; record the verdict rates; repeat with 20-trade windows (journal_review.py's default window). The 'unusual' verdict uses the smallest raw p-value of several tests, so its false-alarm rate is expected to exceed 5%; if it exceeds 10%, a multiplicity-adjusted rule is pre-registered before any rerun."
+  status: untested
+  evidence: "not yet tested"
