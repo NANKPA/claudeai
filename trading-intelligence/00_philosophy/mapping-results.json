@@ -5070,5 +5070,3163 @@
  "extensions": {
   "extensions": []
  },
- "align": []
+ "align": [
+  {
+   "grades": [
+    {
+     "strategy_id": "strategy_abraham_perez_ict_orderflow",
+     "summary": "Strong on understanding, context, invalidation and selectivity (an explicit no-trade list), but silent on the owner's review, emotional and outcome-separation principles.",
+     "biggest_gap": "No journaling, emotional rules, loss limits or process-over-outcome framing (principles 8, 10, 11, 12 all absent).",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 2,
+       "evidence": "Core idea: the edge is where liquidity is targeted and who is in control; 'liquidity can attract price, but aggression moves price'."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 2,
+       "evidence": "Daily/4H bias and direction required first; 1H/15M structure must support it; session quality (Asia vs NY vs London) weighed."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 2,
+       "evidence": "Stop above swept high or invalidating structure; POC/VWAP reclaimed against the trade flags a weakening thesis."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 2,
+       "evidence": "Explicit no-trade list: HTF/LTF disagreement, balanced market, no liquidity taken, no order-flow confirmation, undefined risk."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 1,
+       "evidence": "Only a conditional ~1:2 target rule for choppy sessions; no win rate, sample or expectancy given."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 2,
+       "evidence": "Wait for liquidity rather than front-run; all five checklist items required; if Bookmap is balanced, wait; no late entries."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 2,
+       "evidence": "Give room while POC/VWAP support; cut or reduce if aggressive volume flips or the controlling side loses control."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 0,
+       "evidence": "No statement on judging process versus outcome or accepting losses."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 1,
+       "evidence": "Size matched to stop distance only; no % risk, daily limit or drawdown rule."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 0,
+       "evidence": "No rules on emotion, tilt or revenge trading."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 0,
+       "evidence": "No journaling or review practice mentioned."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 0,
+       "evidence": "No warning against P&L focus or process framing of goals."
+      }
+     ]
+    },
+    {
+     "strategy_id": "strategy_alex_temiz_first_red_day",
+     "summary": "A clear mechanism-and-invalidation playbook (prior close as the line) with good patience rules, but it gives no evidence base, capital limits or review and psychology layer.",
+     "biggest_gap": "No mathematical support beyond a single self-reported $50k anecdote, and no capital, emotional or journaling rules.",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 2,
+       "evidence": "Explains why: momentum shift traps late buyers, greed and chasing recur, dilutive offerings add supply."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 1,
+       "evidence": "Daily chart must show a 3+ day parabolic run, but no market regime or session context; claims it works in any market."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 2,
+       "evidence": "A reclaim and hold above the previous close invalidates the setup; cut immediately, don't hold and hope."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 2,
+       "evidence": "Applies only after 3+ strong consecutive days, parabolic not slow trend; one or two green days not enough; gap-up vs gap-down scenarios."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 0,
+       "evidence": "No win rate, R multiple or sample; only a self-reported SMCI dollar result."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 2,
+       "evidence": "Never short because it 'should' fall; the stock must go red first; clean setups may be weeks or months apart."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 2,
+       "evidence": "Starter then add on confirmation, partial covers into the flush, re-enter on failed bounce, keep small runner."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 1,
+       "evidence": "Start small and add only on confirmation; no $ or % risk per trade and no daily limit."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 0,
+       "evidence": "No emotional or tilt rules for the trader (greed is only cited as the crowd's driver)."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 0,
+       "evidence": "No journaling or review."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 0,
+       "evidence": "No process framing; the example is presented by dollar profit."
+      }
+     ]
+    },
+    {
+     "strategy_id": "strategy_ali_crooks_trendline_pocket",
+     "summary": "A tightly filtered, condition-specific model with a stated (unsampled) win rate, but its stop is geometric, management deliberately ignores new evidence, and psychology and capital limits are absent.",
+     "biggest_gap": "Hands-off management by design (no response to changed evidence) and a stop set at half the target distance rather than at an invalidation point.",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 1,
+       "evidence": "Rationale is a momentum shift after a key-level reaction and trendline/swing break; little explanation of the underlying market mechanism."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 2,
+       "evidence": "Daily/weekly Frequency & Proximity key levels and market-condition classification required before any trigger."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 1,
+       "evidence": "Setup voids defined (second overshoot, no swing break), but the stop is half the target distance, not structural invalidation."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 2,
+       "evidence": "Trade only the Pocket; skip with-trend and counter-trend conditions; skip if no clean air to 2R."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 1,
+       "evidence": "Self-reported ~58% win rate at fixed 2R, with no sample size or period."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 2,
+       "evidence": "If any requirement is missing, skip the trade; trendline break alone is not an entry."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 0,
+       "evidence": "Explicitly hands-off: no micromanagement, no trailing, no early exits."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 1,
+       "evidence": "Fixed 2:1 structure and a warning about correlated pairs, but no % risk or exposure cap."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 1,
+       "evidence": "Masterclass covers testing and journaling; win rate comes from historical tracking, but no journaling rule in the playbook."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 0,
+       "evidence": "Absent."
+      }
+     ]
+    },
+    {
+     "strategy_id": "strategy_andrea_cimitan_amt",
+     "summary": "Close to the philosophy's understanding-first stance, grounded in auction microstructure with acceptance-vs-absorption tests, but it has no numbers, sizing or trader-side discipline.",
+     "biggest_gap": "Nothing on capital protection, statistics, journaling or emotion; risk per trade, sizing and limits all unspecified.",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 2,
+       "evidence": "Continuous double auction: urgency moves price, meta-orders seek liquidity; trade only when one side is proven in control."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 2,
+       "evidence": "Rule 1 builds a bias from daily candle and session order-flow autocorrelation; locate fair value on the profile first."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 2,
+       "evidence": "Stops go where the idea fails (where the opposing side would show control), not at arbitrary distances."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 2,
+       "evidence": "Breakouts only with acceptance; a quick return inside is a failed auction; skip ORB when aggressors are absorbed."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 0,
+       "evidence": "No win rate, R:R or outcome data."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 2,
+       "evidence": "Absorption alone is not an entry; first breakout with wick-only aggression was skipped."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 2,
+       "evidence": "Hold while the controlling side stays in control; exit when the opposite side takes over."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 0,
+       "evidence": "Risk per trade, sizing and loss limits not specified."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 0,
+       "evidence": "Absent."
+      }
+     ]
+    },
+    {
+     "strategy_id": "strategy_anthony_crudele_futures_trend",
+     "summary": "The most regime-conditional playbook in the set: environment first and 'hands in pocket' when unclear. Still, it gives no statistics and no review or psychology layer.",
+     "biggest_gap": "No outcome data or expectancy for any of the three environments, and no journaling or emotional rules.",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 1,
+       "evidence": "Describes how each band environment behaves (false breakouts in consolidation, one-way tape in expansion) but not why."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 2,
+       "evidence": "Daily Bollinger environment classification is non-negotiable before any lower-timeframe work."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 2,
+       "evidence": "Stops at structural key high/low, or a daily close back above the relevant Beacon level for mean-reversion shorts."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 2,
+       "evidence": "Separate posture per regime: edges only in consolidation, one direction in expansion, smaller counter-trend size in mean reversion."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 0,
+       "evidence": "No win rate, R:R or P&L given."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 2,
+       "evidence": "'Hands in pocket' after the 50% target; stand aside when environment unclear; sometimes no trade is correct."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 2,
+       "evidence": "Posture changes when environment shifts; exits via 8/21/34 MAs and anchored-VWAP bands; stay in until a daily close back above level."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 1,
+       "evidence": "Dollar-risk sizing, smaller counter-trend size, options to cap risk; no % per trade or loss limits."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 0,
+       "evidence": "Absent."
+      }
+     ]
+    },
+    {
+     "strategy_id": "strategy_ariel_hernandez_real_simple",
+     "summary": "A well-rounded swing playbook with market/group context, pre-set structural stops, 0.5-1% risk and anti-FOMO patience, but no evidence base or review loop.",
+     "biggest_gap": "No statistics or expectancy for any of the six setups, and no journaling or review practice.",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 1,
+       "evidence": "Trades 'footprints of institutions' (high-volume breakouts, relative strength), a stated but thin rationale."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 2,
+       "evidence": "Every setup requires accumulation/base, strong group and supportive market confirmed on the daily first."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 2,
+       "evidence": "Entry and structural stop marked in advance for every setup."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 2,
+       "evidence": "Healthy trending market required; U&R suited to corrections; weak/choppy markets produce more false breakouts."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 0,
+       "evidence": "No win rate, R:R or P&L claimed."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 2,
+       "evidence": "Act only when market, group and setup agree; if a move is missed, wait for the next setup."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 2,
+       "evidence": "Partials after 3-5 strong days, trail with 10/20-day MA, exit without hesitation on violation; add only as trades work."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 1,
+       "evidence": "Accepts many small 'paper cut' losses as a known drawback of tight stops."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 2,
+       "evidence": "Stopped-out trade costs only 0.5-1% of equity; size from stop distance; exposure built gradually."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 1,
+       "evidence": "Patience framed as the answer to FOMO; no tilt or post-loss rules."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 0,
+       "evidence": "Absent."
+      }
+     ]
+    },
+    {
+     "strategy_id": "strategy_brando_options_swing",
+     "summary": "Its mindset puts learning ahead of quick money and patience ahead of action, as the philosophy does, but it drops invalidation and trade management for 'size for zero' and rests on an implausible self-reported win rate.",
+     "biggest_gap": "No invalidation condition and no exit or management rule; the premium is the only risk control.",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 1,
+       "evidence": "Rationale: catalyst supplies the volatility for a big move at a major level; no deeper mechanism."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 2,
+       "evidence": "Weekly/daily key levels plus a scheduled macro or earnings catalyst required."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 0,
+       "evidence": "No stop or invalidation; what to do if the level fails after entry is unspecified."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 2,
+       "evidence": "Don't trade a level without a strong catalyst; such setups tend to fail or chop."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 1,
+       "evidence": "Self-reported 80% win rate and 5-10R aims, on a small sample of a few setups a year."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 2,
+       "evidence": "Wait for confirmation even at a perfect level; not every day is a trade day; few ideal setups a year."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 0,
+       "evidence": "Hold through volatility; the page gives no explicit exit or management rule."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 1,
+       "evidence": "Stay emotionally stable through wins and losses; implicit only."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 1,
+       "evidence": "'Size for zero': risk only an amount you can lose in full; no % of account or limits."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 2,
+       "evidence": "Mindset first: emotional neutrality and stability through wins and losses as rule 1."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 2,
+       "evidence": "Rule 1: put learning ahead of quick money and fast profits."
+      }
+     ]
+    },
+    {
+     "strategy_id": "strategy_candace_lau_nq_sweep_reversal",
+     "summary": "A disciplined sweep-and-confirm scalp with session windows, structural stops, a daily loss limit and quality-based sizing, but no psychology or outcome-separation layer.",
+     "biggest_gap": "No emotional or after-loss rules (the page doesn't say what to do after a loss) and no win-rate evidence.",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 1,
+       "evidence": "NQ often reverses after taking a liquidity pool, framed as accumulation-manipulation-distribution; mechanism asserted, not explained."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 2,
+       "evidence": "Daily/1H levels, FVGs and session liquidity marked first; London 2-5 AM ET window, no entries before 2:00."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 2,
+       "evidence": "Stop beyond the structure that invalidates the setup (swing, manipulation extreme)."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 2,
+       "evidence": "Session window, fallback liquidity when Asia trends, sweep alone never an entry, weaker setups get smaller size."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 1,
+       "evidence": "Minimum 1:2 R:R rule; no win rate, so no expectancy."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 2,
+       "evidence": "Wait for the actual sweep; conservative entry needs a body close through the FVG; never enter before 2:00."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 2,
+       "evidence": "Tighten stop behind new structure after minor liquidity is taken; planned sequence to partials and trail."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 2,
+       "evidence": "Daily max dollar/% loss (prop example ~$3k on ~$160k); % risk on personal capital; MNQ fallback when risk too large."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 0,
+       "evidence": "Absent; post-loss behaviour unspecified."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 1,
+       "evidence": "Decide profit-taking method in advance and test which works best; no journal."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 0,
+       "evidence": "Absent."
+      }
+     ]
+    },
+    {
+     "strategy_id": "strategy_carmine_rosato_lvn",
+     "summary": "A mechanism-led, patient pullback model with a structural stop and constant dollar risk. It has no context requirement, statistics or review, and treats losses only in passing.",
+     "biggest_gap": "No higher-timeframe, session or regime context required, and no evidence base.",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 2,
+       "evidence": "LVN shows where large participants were active; price returns there for them to reload or defend."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 0,
+       "evidence": "No timeframe, session or regime requirement; only a local level of interest."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 2,
+       "evidence": "Stop beyond the LVN or recent swing; a move through the zone is the invalidation."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 1,
+       "evidence": "Requires impulsive departure and order-flow defence, but no no-trade conditions or regime filters."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 0,
+       "evidence": "No win rate, R:R or P&L; only a qualitative 'high R:R potential'."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 2,
+       "evidence": "First move away is not an entry; wait for the revisit and order-flow proof of defence."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 1,
+       "evidence": "Scale out or take whole profit depending on context; no rule for changing evidence."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 1,
+       "evidence": "Mindset line: accept that some trades will lose and stay disciplined."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 1,
+       "evidence": "Fix dollar risk before each entry and size from stop distance; amount and loss limits unspecified."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 0,
+       "evidence": "Only a generic 'stay disciplined'; no emotional rules."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 0,
+       "evidence": "Absent."
+      }
+     ]
+    },
+    {
+     "strategy_id": "strategy_carmine_rosato_orderflow_masterclass",
+     "summary": "A teaching page that explains the auction mechanism well but is not a complete playbook: invalidation is partial, exits are missing, and there are no risk, review or psychology rules.",
+     "biggest_gap": "No exit or management rules and no stop for one of the two setups; risk and sizing are entirely absent.",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 2,
+       "evidence": "Passive orders supply liquidity, aggressive orders move price; S/R is where aggression fails against passive liquidity."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 1,
+       "evidence": "Names Context, Location, Confirmation and prior-day levels, but never defines context."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 1,
+       "evidence": "Stop below the flush low for the reclaim long; no stop for the absorption short."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 1,
+       "evidence": "Signals defined at levels, but no regime filters or no-trade conditions."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 0,
+       "evidence": "No win rate, R:R or P&L."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 1,
+       "evidence": "Core idea says trade only once a side visibly takes control; no explicit selectivity rule."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 0,
+       "evidence": "Exit not specified; no management rules."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 0,
+       "evidence": "Risk per trade, sizing and limits not specified."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 0,
+       "evidence": "Absent in the playbook (the journaling suggestion is the note's own)."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 0,
+       "evidence": "Absent."
+      }
+     ]
+    },
+    {
+     "strategy_id": "strategy_clement_ang_price_cycle",
+     "summary": "A thorough cycle-based playbook with filters, pre-trade invalidation questions, staged management and an attempt cap. It openly accepts a ~30% win rate but gives no account-level risk number and no journal.",
+     "biggest_gap": "No account risk per trade or loss limits, and no journaling, even though a low win rate makes validation essential.",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 1,
+       "evidence": "Stocks move through a cycle; buy RS leaders on volatility contraction. Describes the sequence more than the cause."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 2,
+       "evidence": "Relative strength vs index, industry group, bases in corrections, QQQ confirmation for shorts, 50/200-day context."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 2,
+       "evidence": "Pre-trade question 'where is the trade invalid'; close back above the capping MA is invalidation; honour the stop."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 2,
+       "evidence": "$50M dollar volume and ADR >3% filters; Entry 2 for choppy markets; skip near earnings."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 1,
+       "evidence": "Self-reported ~30% win rate offset by large R; ADR/ATR scale-out rules; no average R or sample."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 2,
+       "evidence": "Don't chase the first 20 EMA break; re-enter only from a fresh base; skip developing setup near earnings."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 2,
+       "evidence": "Thirds at 2x ADR and 8-10 ATR, stop toward breakeven, trail on 10 EMA close; cover by halves on shorts."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 1,
+       "evidence": "Accepts a ~30% win rate with edge coming from tight stops and running winners."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 1,
+       "evidence": "Pre-trade 'how much is at risk' and event-risk avoidance; no $ or % risk or loss limits."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 1,
+       "evidence": "Cap of about three attempts per ticker, then stop trading the name (listed as tilt control)."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 0,
+       "evidence": "Absent."
+      }
+     ]
+    },
+    {
+     "strategy_id": "strategy_dhesi_liquidity_inversion",
+     "summary": "Reactive and selective, with structural stops, a two-loss daily stop and constant dollar risk, so it covers much of the philosophy's risk side. It has no statistics or journal, and its process framing is limited.",
+     "biggest_gap": "No outcome statistics or minimum R:R, and no journaling or review practice.",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 1,
+       "evidence": "Liquidity draws and FVG inversion as the trigger; mechanism mostly asserted (monthly levels give strongest reactions)."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 2,
+       "evidence": "Monthly-to-session draws marked; 10:00 ET four-hour candle must reveal behaviour; swing entries need 1H+."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 2,
+       "evidence": "'Stop where the chart is wrong' beyond the protected high/low; if price respects the gap there is no reversal."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 2,
+       "evidence": "Full model only in expanded volatility; in dead volatility don't trade aggressively; lingering in the gap loses urgency."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 0,
+       "evidence": "No win rate, sample or R floor; only qualitative runner claims."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 2,
+       "evidence": "Stay reactive, do not chase, one clean attempt; a missed entry waits for a later session."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 2,
+       "evidence": "Trim 50% at first technical target, stop to breakeven, runner to HTF draw; never move the stop from discomfort."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 1,
+       "evidence": "A runner stopped at breakeven still counts as a successful trade."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 2,
+       "evidence": "Two losses end the day; same dollar risk with fewer contracts when stops widen; no averaging."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 1,
+       "evidence": "Discomfort with dollar amount is no reason to move the stop; two-loss rule limits revenge trading implicitly."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 0,
+       "evidence": "Only advice to prove the model before watching many tickers; no journal or review."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 1,
+       "evidence": "Never set targets from dollar goals or arbitrary point counts."
+      }
+     ]
+    },
+    {
+     "strategy_id": "strategy_dylan_oneil_vix_futures",
+     "summary": "A conditional confirmation filter with a clear mechanism and regime caveats, which suits the philosophy's conditional probability, but it is not a full system: no stops, management or risk rules.",
+     "biggest_gap": "No explicit stop, exit or management rule; invalidation is only implied.",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 2,
+       "evidence": "VIX reflects SPX put demand and hedging pressure that weighs on ES; the 'backpack' analogy."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 2,
+       "evidence": "Read the VIX backdrop and previous-day levels on ES, NQ and VIX before judging a break."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 1,
+       "evidence": "Invalidation only implied (VIX falling back below its prior-day high); no explicit stop."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 2,
+       "evidence": "Confirmed vs unconfirmed breakdowns; rising VIX near all-time highs is not a reliable signal on its own."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 0,
+       "evidence": "Only a single self-reported 6R trade and an unsourced 90%-algorithmic claim."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 1,
+       "evidence": "Do not short unconfirmed breakdowns; 1% rule used to avoid chasing extended moves."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 0,
+       "evidence": "No management or exit rules."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 1,
+       "evidence": "Avoid duplicating one idea across correlated instruments; no sizing or limits."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 0,
+       "evidence": "Absent."
+      }
+     ]
+    },
+    {
+     "strategy_id": "strategy_fabio_valentini_amt_order_flow",
+     "summary": "State, location and aggression with 'stay flat if any is missing' closely mirrors the philosophy's understanding + evidence logic, and it has defined risk. Its statistics are unsupported, and it has no journal or emotional rules.",
+     "biggest_gap": "The '70%' and R:R claims have no data behind them, and there is no journaling or emotional rule set.",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 2,
+       "evidence": "Auction alternates balance and imbalance; most traders lose trading breakouts inside balance."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 2,
+       "evidence": "Market state (in or out of balance) and session (NY trend, London mean reversion) required first."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 2,
+       "evidence": "Stop just beyond the aggressive print; never widen it; if wrong, be wrong immediately."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 2,
+       "evidence": "Two models for two regimes; avoid London open fake breakouts; skip if price is just rotating."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 1,
+       "evidence": "Self-reported ~70% balance claims and 1:2.5-1:5 R:R with no win rate or data."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 2,
+       "evidence": "If state, location or aggression is missing, stay flat; no aggression means no trade; don't take first move back."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 2,
+       "evidence": "Breakeven early on strong CVD; example closed early when sellers showed aggression; full exit at POC."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 1,
+       "evidence": "Expects several small stop-outs in a row as normal for the method."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 2,
+       "evidence": "Risk 0.25%-0.5% of account per trade in both models."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 0,
+       "evidence": "Stress acknowledged as a drawback; no rules."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 0,
+       "evidence": "Absent."
+      }
+     ]
+    },
+    {
+     "strategy_id": "strategy_forrest_knight_volume_profile",
+     "summary": "A clean entry model that needs context, waits for the candle to close and sits out when there is no edge. It stops at the entry: no management, risk, review or psychology.",
+     "biggest_gap": "Nothing after entry: no management, sizing or loss limits, and no review or emotional rules.",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 2,
+       "evidence": "Volume at price shows positioning: HVAs are sticky, price travels fast through LVAs, trapped traders act at daily levels."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 2,
+       "evidence": "Directional bias from weekly/daily required; execution on 4H/1H under that bias."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 2,
+       "evidence": "Stop just beyond the signal-candle wick or the high-value-node edge."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 2,
+       "evidence": "All three qualifiers required; not viable in spot forex; no mid-zone trades."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 0,
+       "evidence": "No win rate, R:R or P&L."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 2,
+       "evidence": "Wait for the signal candle to close; sit out when no valid edge appears."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 0,
+       "evidence": "No partial, breakeven, trailing or stall rules."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 0,
+       "evidence": "Risk per trade, sizing and limits not specified."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 0,
+       "evidence": "Absent."
+      }
+     ]
+    },
+    {
+     "strategy_id": "strategy_fredy_sarmiento_options_flow",
+     "summary": "One of the closest matches to the philosophy: a mechanism-first map, calendar-aware no-trade conditions, a rule to accept a failed level, and explicit warnings about revenge trading. Its only gaps are evidence and records.",
+     "biggest_gap": "No statistics or sample at all, and no journaling.",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 2,
+       "evidence": "Dealer gamma hedging forces futures flows that make strikes act as barriers, magnets or accelerators."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 2,
+       "evidence": "Check the expiry calendar first; build the options map before the session; first two US hours."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 2,
+       "evidence": "Stop beyond the invalidation area where the reaction thesis is clearly wrong."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 2,
+       "evidence": "No trades on OPEX, triple witching, VIX expiry or roll periods; approach speed changes the play."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 0,
+       "evidence": "No win rate, R:R or sample."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 2,
+       "evidence": "No trade between levels; may be no trade that day; don't trade just because the market is open."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 2,
+       "evidence": "Partial on first reaction, reduce risk; if a wall breaks and holds, stop fading and reassess the dominant level."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 1,
+       "evidence": "Frames a stopped trade as 'one controlled loss' to be kept from growing."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 1,
+       "evidence": "Contracts must fit a predefined risk; extra contracts for scaling, not risk; no number given."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 2,
+       "evidence": "Recognise when a loss affects decisions and stop; names revenge trading and sizing up after losses."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 0,
+       "evidence": "Absent."
+      }
+     ]
+    },
+    {
+     "strategy_id": "strategy_gala_trades_price_action",
+     "summary": "The fullest practitioner match to the philosophy: pre-market hypotheses, strict selectivity, rule-based management, a journal that grades process not P&L, and hidden running P&L. Only the mechanism and the statistics are thin.",
+     "biggest_gap": "No win rate or sample behind the 1.5-2R design and no account-level loss limit; the mechanism behind hourly levels is barely explained.",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 1,
+       "evidence": "Join the next leg of the hourly trend at clean levels; written scenarios before the open, but little market mechanism."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 2,
+       "evidence": "Hourly trend sets calls or puts; index alignment preferred; economic calendar checked pre-market."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 2,
+       "evidence": "Stops beyond the extreme retest, bounce or rejection wick; failed setups closed, never held overnight in hope."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 2,
+       "evidence": "Drop hard-to-read charts; avoid longs while indices sell off hard; 5-minute must agree with 2-minute."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 1,
+       "evidence": "1.5R-2R target design; no win rate or sample."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 2,
+       "evidence": "Wait for first 5-minute close; don't invent plans; skip rather than chase; max two attempts per setup."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 2,
+       "evidence": "Half at first target, get defensive on smaller candles or rejection, trail behind 5-minute swings."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 2,
+       "evidence": "'Grade the process, not the P&L'; a 2R+ winner graded three stars for plan deviations."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 1,
+       "evidence": "Max dollar loss set before the order and a comfort test; no % of account or daily loss limit."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 2,
+       "evidence": "Hide running P&L, manage from the chart; emotional state is a sizing input and journal field."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 2,
+       "evidence": "Journal every trade: entry, exit, stop, size, setup, planned or not, mistakes, emotional state, grade."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 2,
+       "evidence": "Hides P&L during trades and grades the process rather than the money."
+      }
+     ]
+    },
+    {
+     "strategy_id": "strategy_jadecap_liquidity_volatility",
+     "summary": "A session-anchored raid model with a daily bias and stops beyond the sweep. It mentions journaling only in passing and gives no risk sizing or emotional rules.",
+     "biggest_gap": "Risk per trade, sizing, R:R and loss limits are all unspecified.",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 1,
+       "evidence": "Stops cluster beyond highs and lows and price runs into them, then reverses or continues; mechanism is thin."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 2,
+       "evidence": "Daily bias first; prior-day, Asian and London levels; NY 9:30-11:30 window listed as a condition."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 2,
+       "evidence": "Stop beyond the sweep extreme."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 1,
+       "evidence": "Raid, confirmation and time window required, but no regime filter or explicit no-trade conditions."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 0,
+       "evidence": "No win rate, R:R or P&L."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 2,
+       "evidence": "Wait for a NY raid, then require one of the listed 15m/5m confirmations before entry."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 1,
+       "evidence": "Discretionary midday time exit if momentum fades; hold swings while bias holds; partials have no rule."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 0,
+       "evidence": "Risk per trade, sizing and limits not specified."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 1,
+       "evidence": "Says confidence comes from tracking outcomes and journaling; no method given."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 0,
+       "evidence": "Absent."
+      }
+     ]
+    },
+    {
+     "strategy_id": "strategy_jared_tendler_psychology",
+     "summary": "A mental-game framework rather than a setup. It fully covers the philosophy's emotional-independence, journaling and process-over-money principles but none of the market-facing ones.",
+     "biggest_gap": "No market context, invalidation, setup conditions or capital rules; it assumes a strategy and risk plan exist elsewhere.",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 1,
+       "evidence": "Explains why emotion degrades decisions (Yerkes-Dodson, working-memory shutdown), not a market mechanism."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 0,
+       "evidence": "No market context requirement."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 0,
+       "evidence": "No invalidation logic."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 0,
+       "evidence": "No setup conditions or market filters."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 1,
+       "evidence": "'Emotional expected value' weighs small upside against large spiral downside; conceptual, no data."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 2,
+       "evidence": "When not in the zone, trade less, be more selective; sometimes the best trade is no trade."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 1,
+       "evidence": "Mid-session reset protocol when state changes; not about trade or market evidence."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 1,
+       "evidence": "Set one process goal per session (e.g. patience for 30 minutes)."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 0,
+       "evidence": "Financial risk, limits and sizing not specified."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 2,
+       "evidence": "Zone Map, warning-sign tracking, name-move-refocus-limit reset; breaking the limit ends the session."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 2,
+       "evidence": "Weeks of warning-sign data collection; post-session journal with top three lessons and If-Then plan."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 2,
+       "evidence": "Motivation from goals, growth and mastery rather than money alone."
+      }
+     ]
+    },
+    {
+     "strategy_id": "strategy_jay_awtani_market_dna",
+     "summary": "Mechanism-first tape reading restricted to catalyst sessions, with structural invalidation and evidence-driven exits. It has no capital, review or emotional rules.",
+     "biggest_gap": "No position sizing, risk per trade or loss limits; only a minimum 3:1 R:R.",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 2,
+       "evidence": "Only buyers and sellers move price; enter where aggressive orders overwhelm passive walls and control flips."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 2,
+       "evidence": "Live catalyst with heavy relative volume or macro session required; DNA zones from prior large moves."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 2,
+       "evidence": "Stop just beyond the DNA zone; if the zone fails, exit and never hold past it."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 2,
+       "evidence": "No forex; no trades in flat or range-bound sessions; valid only when aggression overwhelms absorption."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 1,
+       "evidence": "Minimum 3:1 R:R and a self-reported 4-5:1 typical; no win rate."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 2,
+       "evidence": "No trades in flat sessions; enter only as aggression confirms the flip."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 2,
+       "evidence": "Partials at first reaction, hold until tape aggression flips, trail behind new aggressive zones."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 0,
+       "evidence": "Risk per trade, sizing and limits not specified."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 1,
+       "evidence": "Masterclass topics include journaling and grading setups; no playbook rule."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 0,
+       "evidence": "Absent."
+      }
+     ]
+    },
+    {
+     "strategy_id": "strategy_jeff_holden_momentum_model",
+     "summary": "A review-and-improvement loop that matches the philosophy's record, investigate and decision-quality principles almost exactly, adding grade-based risk budgeting. It is light on market mechanism and has no statistics.",
+     "biggest_gap": "No outcome statistics or measurable test of whether a fix worked, and the daily stop's size is unspecified.",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 1,
+       "evidence": "Chart examples explain short covering and buyer urgency, but the framework is about development, not mechanism."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 1,
+       "evidence": "Write a separate variant if a setup only works with broad-market alignment; study a product before trading it."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 2,
+       "evidence": "Define structure, invalidation and risk before entry; stop at the point of maximum pain, not comfort."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 2,
+       "evidence": "Playbook variants per condition; don't carry a playbook into a new product without study."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 1,
+       "evidence": "A+ trades framed as the distribution's tail with sizing by grade; no statistics."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 2,
+       "evidence": "Never force A+ treatment onto lesser trades; skip marginal trades; don't trade an undiagnosed mistake."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 2,
+       "evidence": "Hold while price respects the 9 EMA; exit on a meaningful close below it or change in buyer behaviour."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 2,
+       "evidence": "Mistakes are information, logged without judgment; friction is data, not failure of the fix."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 2,
+       "evidence": "Risk as share of daily stop by grade (A+ 80%, A 30%, B 15%, C 5%); fix risk mistakes first."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 1,
+       "evidence": "Log without self-attack; 'be more disciplined' is not a fix; no tilt rules."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 2,
+       "evidence": "Daily report card, weekly review, five-whys diagnosis, measurable fix, repeat."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 1,
+       "evidence": "Edge from stacking small process wins; a C trade with A+ risk is 'hope with leverage'."
+      }
+     ]
+    },
+    {
+     "strategy_id": "strategy_jj_simon_fair_pricing",
+     "summary": "The most quantitatively validated playbook here: backtested pass rates, a ~50-backtest sample and a stop-the-reversions rule. Its evaluation stops come from account maths rather than chart invalidation, and it has no emotional or outcome-separation rules.",
+     "biggest_gap": "Evaluation stops are fixed point sizes, not invalidation levels, and there are no emotional or psychology rules.",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 2,
+       "evidence": "New-volume events set a fair price; price displaces then reverts; fair price reassessed when a new event takes over."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 2,
+       "evidence": "Event-defined fair price, 6-12 hour lookback, first 90 minutes of a session."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 1,
+       "evidence": "Evaluation stops chosen from the account model, not chart invalidation; live accounts use structure."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 2,
+       "evidence": "Unexpected news: don't expect a return; three failed reversions mean the market may be trending."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 2,
+       "evidence": "Backtest evaluation pass rate under real rules; ~50 backtests to reduce small-sample noise; cost-vs-payout example."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 2,
+       "evidence": "Never fade a move just because it looks extended; enter only after the confirming candle closes."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 2,
+       "evidence": "Keep reassessing fair price; exit on a close through opposing structure; Three-Loss Rule halts reversions."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 2,
+       "evidence": "Contracts scale inversely to stop for constant dollar exposure; prop drawdown rules; layering across accounts."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 1,
+       "evidence": "Historical testing and backtesting of the account model; no trade journal."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 1,
+       "evidence": "Measure evaluation pass rate rather than raw P&L."
+      }
+     ]
+    },
+    {
+     "strategy_id": "strategy_kris_verma_shorting",
+     "summary": "Behaviour-confirmed, time-boxed shorting with clear filters and evidence-driven management. Its fixed-percentage stop replaces structural invalidation, and its 'data-backed' edge comes with no data.",
+     "biggest_gap": "A wide fixed-percentage stop with no defined percentage and no invalidation logic, plus an asserted but unshown data edge.",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 2,
+       "evidence": "Weak small caps sell stock into liquidity spikes, so gaps fade; more traders now cause squeezes before drops."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 2,
+       "evidence": "4-10 AM window, edge fades after noon; checks on overall small-cap strength and sympathy movers."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 1,
+       "evidence": "Wide fixed-% stop without invalidation logic; Setup A's 10:00 check above the open is a partial invalidation."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 2,
+       "evidence": "Market cap, institutional ownership and gap-size filters; avoid 20-40% gaps; best earlier in the day."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 1,
+       "evidence": "Judges by profit factor and cites ~30-40% historical pullbacks, but shows no statistics."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 2,
+       "evidence": "No pre-market entries; skip the first wobble; never short the low of a flush."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 2,
+       "evidence": "10:00 rule and 30-minute rule to reduce or reassess; recycling shares when the stock ranges."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 1,
+       "evidence": "Accepts larger single losses and judges the method by overall profit factor."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 1,
+       "evidence": "Controlled, conservative sizing; no single trade may put the account at risk; no numbers."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 1,
+       "evidence": "The goal is consistency, not catching every move."
+      }
+     ]
+    },
+    {
+     "strategy_id": "strategy_kyle_williams_first_red_day",
+     "summary": "A well-qualified, graded short setup with a clear thesis-killing level and attempt caps. It has no statistics and no account-level risk number, and review and psychology appear only in passing.",
+     "biggest_gap": "No statistics behind the 'higher win rate' claim and no account risk per trade or loss limits.",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 2,
+       "evidence": "Holders judge P&L against the prior close; breaking it puts many underwater at once; SSR adds pressure."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 1,
+       "evidence": "Daily chart qualifies the run; avoid late-day entries; no broad-market regime requirement."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 2,
+       "evidence": "Primary invalidation is the run's high; new highs kill the thesis; a stop per entry style."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 2,
+       "evidence": "All four bubble criteria required; explicit 'not a parabola' list; don't short gap-downs already down 10%+."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 0,
+       "evidence": "Win-rate vs R:R claims are qualitative with no numbers."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 2,
+       "evidence": "If any criterion is missing it is not the setup; avoid overtrading C-grades; 3-5 attempt cap."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 2,
+       "evidence": "Cover into weakness, scale out, add on failed bounces, optional 15-minute-high trail."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 1,
+       "evidence": "Size by setup grade, attempt cap, no late-day positions; no $ or % risk or limits."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 1,
+       "evidence": "Over-trying burns mental capital; don't use up energy before an A+ appears."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 1,
+       "evidence": "Track performance by setup grade; no journal method."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 0,
+       "evidence": "Absent."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "grades": [
+    {
+     "strategy_id": "strategy_lance_breitstein_mean_reversion",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 2,
+       "evidence": "Core idea: panic, forced liquidation or sentiment swings push price from equilibrium; reversion toward the 20-MA is the stated mechanism."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 2,
+       "evidence": "Rule 3 requires checking the daily chart to confirm the move is abnormal for that stock before the intraday trigger."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 2,
+       "evidence": "Stop placed 'where the idea is invalid': below capitulation low, failed reversal structure, or broken higher lows."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 2,
+       "evidence": "Scored conditions (no fundamental change, forced flows, sentiment extreme); real news may shift equilibrium, so the setup weakens."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 1,
+       "evidence": "EV formula stated as a way of thinking, but no win rate, sample or backtest; one example implies about 1.3R."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 2,
+       "evidence": "'Wait for the turn, never the falling knife'; weaker setups go smaller or are skipped."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 2,
+       "evidence": "Trail stop under each prior bar low/high; target the first bounce to the 20-MA."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 0,
+       "evidence": "No statement separating process quality from trade outcomes."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 1,
+       "evidence": "Size by setup quality, smaller on panic-candle entries, extra care on shorts; no risk-per-trade or loss limits."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 0,
+       "evidence": "No rules on the trader's own emotions or tilt."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 0,
+       "evidence": "No journaling or review practice mentioned."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 0,
+       "evidence": "No warning against P&L focus."
+      }
+     ],
+     "summary": "A mechanism-first, invalidation-defined reversal setup that matches the philosophy's analytical half but says nothing about the trader's own conduct.",
+     "biggest_gap": "No evidence base (P5) and no psychology, journal or process-over-outcome rules (P8, P10-P12)."
+    },
+    {
+     "strategy_id": "strategy_marci_silfrain_measured_move",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 1,
+       "evidence": "Trends move in measurable impulse-pullback steps tied to Fibonacci logic; page admits it 'assumes price tends to complete these moves'."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 1,
+       "evidence": "Trend must be confirmed and Bollinger context checked; higher-timeframe direction is only 'a common approach', not required."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 2,
+       "evidence": "Explicit invalidation: confirmed close beyond the trendline, structure too extended, or collapse without pullback."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 2,
+       "evidence": "Early structures stronger, fourth/fifth signal exhaustion; sideways drift or band extremes warn the trend is ending."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 0,
+       "evidence": "No win rate, R:R or test; only a T3 competition return figure."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 2,
+       "evidence": "Never enter during the initial impulse; after invalidation wait for a new structure."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 1,
+       "evidence": "Stops not too tight, optional partials, let the measured move complete; no rule for adjusting as evidence changes."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 2,
+       "evidence": "Mindset (T3 recap in note): plan to lose every trade and for the next 20 trades to be losers."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 0,
+       "evidence": "Risk per trade, sizing and limits explicitly not specified."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 0,
+       "evidence": "No rules on emotions or tilt."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 0,
+       "evidence": "Only a T3 mention of backtesting and sim habits; no journaling rule."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 0,
+       "evidence": "No process-over-money framing."
+      }
+     ],
+     "summary": "Strong on invalidation and conditional structure filters, weak on mechanism, evidence and capital rules.",
+     "biggest_gap": "No sizing or capital protection (P9) and no statistical justification (P5)."
+    },
+    {
+     "strategy_id": "strategy_marco_trades_liquidity_grab",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 2,
+       "evidence": "Respected highs/lows leave resting stops beyond them; price seeks that liquidity and traps retail traders."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 2,
+       "evidence": "Bias from liquidity on the 30-minute chart, and only one fixed session window counts."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 2,
+       "evidence": "Stop beyond the swept high/low; moving back past it invalidates the idea."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 2,
+       "evidence": "'No liquidity, no trade'; stand aside after big moves leaving no levels; no setup in window means no trade."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 0,
+       "evidence": "No win rate, R:R or test; partials explicitly not at R multiples."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 2,
+       "evidence": "Enter only after liquidity is taken and trap confirmed; ignore price action outside the window."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 2,
+       "evidence": "Trail only on new structure; no break-even before partials; do not cut early unless the system says so."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 0,
+       "evidence": "Risk per trade, size, max trades and loss limits not specified."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 0,
+       "evidence": "Absent."
+      }
+     ],
+     "summary": "A well-reasoned, filter-heavy setup that covers principles 1-4, 6 and 7 but none of the capital, evidence or self-governance principles.",
+     "biggest_gap": "No capital protection or any quantitative evidence (P5, P9)."
+    },
+    {
+     "strategy_id": "strategy_marios_stamatoudis_parabolic_short",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 2,
+       "evidence": "Early buyers, momentum traders, then late chasers exhaust demand; a small trigger then causes collapse."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 2,
+       "evidence": "Daily qualification required: move size from the 20-day MA base by market cap, plus acceleration."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 2,
+       "evidence": "A strong VWAP reclaim followed by continuation cancels the setup; stop at the day's high."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 2,
+       "evidence": "Slow trends don't qualify; skip if much of the expected drop is done; not active while above VWAP."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 1,
+       "evidence": "Expected-move ranges estimated before entry, but no win rate or sample; 'high-probability' is unsupported."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 2,
+       "evidence": "Not a daily setup, needs patience; drop the idea if nothing triggers in two days; do not call the top."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 2,
+       "evidence": "Partial then break-even, risk-free add only at break-even, close before end of day."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 1,
+       "evidence": "Max two attempts, no overnight, add only when risk-free; no per-trade risk or loss limit."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 0,
+       "evidence": "Absent."
+      }
+     ],
+     "summary": "One of the most complete analytical playbooks against the doctrine, with clear mechanism, context, invalidation and selectivity, but no self-governance layer.",
+     "biggest_gap": "No per-trade sizing or loss limits (P9) and no review or psychology rules (P10, P11)."
+    },
+    {
+     "strategy_id": "strategy_matteo_conti_institutional",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 2,
+       "evidence": "Step 2: explain why the edge should exist (order imbalance, VWAP execution, slow news absorption, overnight premium)."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 1,
+       "evidence": "Session windows defined per model and regime noted for momentum vs mean reversion, but no regime filter required."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 2,
+       "evidence": "Every model needs an objective exit (stop, target or time) defined before testing."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 2,
+       "evidence": "Knowing the cause helps notice when it stops applying; PEAD needs positive reaction and EPS beat."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 2,
+       "evidence": "Backtest, 80/20 in/out-of-sample, Monte Carlo shuffle and resampling; positive expected return over a large sample."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 1,
+       "evidence": "Trade only validated, frozen rules; no per-session selectivity rules."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 2,
+       "evidence": "Monitor live results against Monte Carlo ranges; a breach triggers review, not automatic abandonment."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 2,
+       "evidence": "The question is never whether the next trade wins but whether rules have positive expectancy across a large sample."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 2,
+       "evidence": "One fixed contract in development, volatility-targeted sizing live, 1-2% per stock, uncorrelated portfolio."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 0,
+       "evidence": "No emotion rules; systematic process replaces them implicitly."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 2,
+       "evidence": "Review backtest statistics and monitor live results continuously against simulated ranges."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 1,
+       "evidence": "Build and validate a strategy before risking money; no explicit warning against P&L chasing."
+      }
+     ],
+     "summary": "The closest playbook to the philosophy's scientific method (Section XVII): mechanism, conditional testing, expectancy and monitoring are all explicit.",
+     "biggest_gap": "No treatment of emotional independence (P10) and costs are left out of the backtests."
+    },
+    {
+     "strategy_id": "strategy_naoufel_taief_algorithmic",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 0,
+       "evidence": "Strategies are machine-generated from building blocks; no market mechanism is required for a rule set."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 1,
+       "evidence": "Tests span bull/bear/volatility regimes and universe uses trend filters, but no live regime check before acting."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 2,
+       "evidence": "A stop loss and profit target are mandatory in every built strategy."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 1,
+       "evidence": "Universe filters and cross-regime tests, but the aim is logic that does not depend on one environment."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 2,
+       "evidence": "Return/drawdown at least 4, profit factor 1.3-1.5, parameter robustness, out-of-sample and Monte Carlo drawdown."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 1,
+       "evidence": "Trade only the few strategies that survive robustness tests; selectivity at strategy, not trade, level."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 2,
+       "evidence": "Bench, do not panic: act when drawdown nears expected max; cut size or move to simulation; replace from incubation."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 2,
+       "evidence": "Process over prediction; do not pull a strategy for short-term underperformance."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 2,
+       "evidence": "Set risk tolerance first; 5-25% allocation per strategy; average loss 0.5% of allocation; sizing by risk of ruin."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 1,
+       "evidence": "No discretionary overrides and 'do not panic' on benching; no explicit emotion rules."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 1,
+       "evidence": "Incubation pool tracks strategies on new data; no journal or review routine described."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 2,
+       "evidence": "Judge on risk-adjusted performance and drawdown, not raw return; forcing extreme return targets causes curve-fitting."
+      }
+     ],
+     "summary": "Strong on mathematics, capital and methodical response, but data-mining without a causal story directly contradicts Principle 1's demand for understanding.",
+     "biggest_gap": "No market mechanism behind generated strategies (P1)."
+    },
+    {
+     "strategy_id": "strategy_nbb_trader_po3_ote_adr",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 1,
+       "evidence": "Accumulation-manipulation-distribution template says a range break traps traders; phases are asserted rather than explained."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 2,
+       "evidence": "Bias set from weekly/daily before the day; never trade both directions; only in session windows."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 2,
+       "evidence": "Stop at the 1.0 Fibonacci level (swing extreme), or 0.90."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 2,
+       "evidence": "Skip if price opens far from a PD array; London Close only after an earlier large move."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 1,
+       "evidence": "R-multiples fixed by geometry (page's figures are off by one level); no win rate or sample."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 2,
+       "evidence": "Wait for manipulation to finish; skip weak displacement or opposing PD array; no trade without 0.50 pullback."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 2,
+       "evidence": "Break-even on close past 0.20; trail if TP breaks with momentum; scale only at break-even or better."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 1,
+       "evidence": "Never add while the first position carries full risk; risk per trade and limits not specified."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 0,
+       "evidence": "Absent."
+      }
+     ],
+     "summary": "Rule-dense on context, filters and management, but its causal story is a template and its evidence is geometry, not data.",
+     "biggest_gap": "No tested evidence (P5); the page's own R figures are wrong."
+    },
+    {
+     "strategy_id": "strategy_okala_80_20_nasdaq",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 0,
+       "evidence": "Prices ending in 20/80 are where NQ 'tends to' react; no reason is given for why."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 2,
+       "evidence": "Trade when the market moves with intent, ideally the NY open; avoid lunch drift; 10-minute chart for structure."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 1,
+       "evidence": "Fixed 10-point stop beyond the level or extreme; a size rule, not structural invalidation logic."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 2,
+       "evidence": "NQ-specific; skip pattern away from level, reaction without structure, or trade needing a larger stop."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 1,
+       "evidence": "Built-in 1.5R first scale; no win rate, so no expectancy."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 2,
+       "evidence": "'If price turns before the level, the trade is missed. Do not chase.' Overtrading named as the main danger."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 2,
+       "evidence": "Scale at +15, stop to break-even, reduce or close runner if price stalls or loses structure."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 1,
+       "evidence": "Fixed 10-point stop, skip setups needing more; contracts, account risk and daily limits not specified."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 0,
+       "evidence": "Absent."
+      }
+     ],
+     "summary": "A disciplined execution model built on an unexplained level effect, so it fails the philosophy's first test of understanding.",
+     "biggest_gap": "No mechanism for why 20/80 levels matter (P1) and no evidence that they do (P5)."
+    },
+    {
+     "strategy_id": "strategy_pavel_first_principles",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 2,
+       "evidence": "'A trading tool is not the same thing as a trading edge'; edges come from competition, liquidity and cost structure."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 2,
+       "evidence": "Assess the playground (asset class, timeframe, liquidity, competition) before any setup."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 1,
+       "evidence": "Exits defined (time, return to mean, 10-day MA close) but no protective stop or invalidation."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 2,
+       "evidence": "Match approach to asset class; mean reversion needs stretch relative to normal behaviour, not direction alone."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 2,
+       "evidence": "Check expectancy against costs; example: 0.2% costs take half of a 0.4% edge; research thresholds per market."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 0,
+       "evidence": "No selectivity rules; rule 10 says waiting for confirmation gives up edge."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 1,
+       "evidence": "Exit when momentum fades or on MA close; keep researching because edges decay."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 1,
+       "evidence": "Edge framed as positive expected outcome over a large sample, not single trades."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 1,
+       "evidence": "Portfolio of less-correlated strategies rebalanced to weights; no stops or per-trade sizing."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 1,
+       "evidence": "Research is continuing work to detect edge decay; no journal."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 0,
+       "evidence": "Absent."
+      }
+     ],
+     "summary": "Philosophically closest to Sections II and VII (system vs tool, maths serving the decision), but thin on trade-level risk and conduct.",
+     "biggest_gap": "No protective stops or per-trade sizing (P3, P9)."
+    },
+    {
+     "strategy_id": "strategy_pradeep_bonde_episodic_pivot",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 2,
+       "evidence": "Neglect, a story-changing catalyst, and rapid repricing on volume explain why the re-rating happens."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 2,
+       "evidence": "Rule 1 requires months of neglect on the daily chart before the catalyst counts; no market regime filter."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 2,
+       "evidence": "Stops per EP type; invalidation when trend breaks, catalyst weakens, or volume and momentum fade."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 1,
+       "evidence": "Each EP type has qualifying conditions; few no-trade conditions and no market-regime filter."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 1,
+       "evidence": "Move sizes and frequency stated, but only winners shown; no win rate or average R."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 1,
+       "evidence": "Delayed short: don't short Day 1, wait for the bounce; Day-1 entry only 'if strength confirms'."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 2,
+       "evidence": "Exit when catalyst loses strength or volume collapses; break-even then trail under daily swing lows."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 1,
+       "evidence": "Scale size with conviction; tighter delayed entries allow larger size; no risk-per-trade figure."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 1,
+       "evidence": "Notes that sizing big on story EPs is emotionally hard; no rule to handle it."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 0,
+       "evidence": "Only a watchlist for delayed EPs; no journaling or review."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 0,
+       "evidence": "Opposite tone: a single EP can move an account 20-100%+."
+      }
+     ],
+     "summary": "Causally grounded and well managed, but its evidence is survivorship-biased winners and its framing leans toward the promise of big returns.",
+     "biggest_gap": "Winner-only evidence and money-forward framing (P5, P12)."
+    },
+    {
+     "strategy_id": "strategy_rajan_dhall_auction",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 1,
+       "evidence": "Each day is an auction; the zone is where buyers and sellers found balance; brief rationale only."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 2,
+       "evidence": "Bias from prior daily candle; daily and 5-minute trends must align; first hour after the open."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 1,
+       "evidence": "Stop just beyond the rejection candle; a candle-based stop without wider invalidation logic."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 2,
+       "evidence": "No-trade if timeframes disagree, structure is messy, sentiment unclear, or price never retests."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 1,
+       "evidence": "Minimum 2:1 target; no win rate, so expectancy cannot be checked."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 2,
+       "evidence": "Explicit no-trade list; avoid mid and late session unless conditions clearly line up."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 0,
+       "evidence": "Break-even, partials and retest limits are unspecified."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 1,
+       "evidence": "Being a 'good loser' listed as a requirement."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 0,
+       "evidence": "Risk per trade, sizing, limits and max trades not specified."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 1,
+       "evidence": "Temperament named (good loser, act fast) without rules."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 0,
+       "evidence": "Absent."
+      }
+     ],
+     "summary": "Good on context and no-trade conditions, thin on everything after entry.",
+     "biggest_gap": "No trade management or capital rules (P7, P9)."
+    },
+    {
+     "strategy_id": "strategy_steven_dux_small_cap_short",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 2,
+       "evidence": "Short only when numbers show selling pressure outweighing buying power: spent volume, trapped holders, exhausted runners."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 2,
+       "evidence": "9:30-11:30 window, daily history of trapped supply, crowding and float rotation checks before acting."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 2,
+       "evidence": "'Stop first, size second': stop at the real invalidation point, then size down."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 2,
+       "evidence": "Universe filters, biotech/energy exclusions, crowding limits, skip if current volume can overwhelm trapped supply."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 2,
+       "evidence": "Dux's tracked statistics: average risk ~7%, fade 24-26%, opening-push averages; win rates withheld."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 2,
+       "evidence": "Do not short the open; skip if exhaustion unlikely; skip if the red day erased over half the run."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 2,
+       "evidence": "Manage by whether volume dries up; cover along the way with size; scale in during consolidation."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 1,
+       "evidence": "'The account has to survive being early'; don't size as if the top were guaranteed."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 2,
+       "evidence": "Size caps under 10% of float and 1% of volume; size down for crowded names; catastrophe rules."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 0,
+       "evidence": "No emotion rules."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 1,
+       "evidence": "Filters derive from Dux's own tracking (e.g. biotech win-rate drop); no journaling rule for the reader."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 0,
+       "evidence": "Absent."
+      }
+     ],
+     "summary": "The most evidence-driven discretionary playbook; it embodies principles 1-7 and 9 but omits the psychological layer.",
+     "biggest_gap": "Win rates withheld so expectancy is unverifiable, and no emotional rules (P10)."
+    },
+    {
+     "strategy_id": "strategy_tanja_amd_futures",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 1,
+       "evidence": "AMD cycle: range builds liquidity, sweep, then real leg; phases described more than explained."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 2,
+       "evidence": "Classify the day by economic calendar, check Nasdaq-S&P correlation, name the higher-timeframe draw on liquidity."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 1,
+       "evidence": "Stop above the manipulation spike only in the example; no general stop rule."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 2,
+       "evidence": "High- vs low-probability day lists, including skipping the day before CPI, FOMC or NFP."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 0,
+       "evidence": "No win rate or R:R; one self-reported 100-point example."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 2,
+       "evidence": "'No clear destination, no trade'; never chase; the safest trade is no trade."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 1,
+       "evidence": "Partials at logical targets and trailing once confirmed; trail rules unspecified."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 2,
+       "evidence": "Two trades per session; after two losses stop for the day; size down before major news."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 1,
+       "evidence": "Two-loss stop acts as an implicit tilt guard; no explicit emotion rules."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 0,
+       "evidence": "Absent."
+      }
+     ],
+     "summary": "Strongest of the ICT-style notes on conditional context and not forcing trades, with a real daily loss stop.",
+     "biggest_gap": "No general invalidation rule or evidence (P3, P5)."
+    },
+    {
+     "strategy_id": "strategy_ted_zhang_stage_analysis",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 1,
+       "evidence": "Edge comes from knowing the active stage; price must confirm any story; stage causes are only lightly explained."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 2,
+       "evidence": "Weekly stage classification required before daily entry; breadth lowers confidence in longs."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 2,
+       "evidence": "'Set invalidation before entry': below the base or breakout-failure level."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 2,
+       "evidence": "Longs only in Stage 2; explicit no-trade list (Stage 4, unbroken Stage 1, loose Stage 3, messy bases)."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 0,
+       "evidence": "No win rate, R:R or test."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 2,
+       "evidence": "A possible base is not yet a trade; skip extended breakouts you would be chasing."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 2,
+       "evidence": "Exit when Stage 2 structure is lost (Moderna); reduce when loose; rotate into cleaner bases."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 1,
+       "evidence": "Moderna shown as a lesson in taking a valid but failed trade's loss."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 2,
+       "evidence": "Size to stop distance; cut exposure as breadth deteriorates; do not ride deep drawdowns on the story."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 1,
+       "evidence": "Don't buy because cheap or hold because news sounds good; narrative attachment, not emotion rules."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 0,
+       "evidence": "Absent."
+      }
+     ],
+     "summary": "Closely mirrors Principles 2-4 and 7: context first, explicit no-trade states, exit when evidence changes.",
+     "biggest_gap": "No statistical evidence and no journaling (P5, P11)."
+    },
+    {
+     "strategy_id": "strategy_tg_capital_trident",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 0,
+       "evidence": "Pattern recipe (FVG, doji at 50%, confirmation) with no market mechanism for why it works."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 2,
+       "evidence": "200 EMA bias with daily structure agreement; London kill-zone window only."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 1,
+       "evidence": "Stop below the FVG candle low, but gold uses no hard stop."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 2,
+       "evidence": "Tangled EMAs invalidate the setup; valid-pairs list; FVGs outside the window ignored."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 1,
+       "evidence": "Claims ~90% win rate and years of backtesting with no data; independent T3 retest shows ~20%."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 2,
+       "evidence": "Quality over quantity; setups may come only a handful of times a year."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 1,
+       "evidence": "Consider closing if EMAs reverse or an opposing candle breaks structure."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 1,
+       "evidence": "Time-limited exposure and prop-firm drawdown caveat; no risk per trade."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 1,
+       "evidence": "Must sit through long gaps and large open-profit swings; no rules."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 0,
+       "evidence": "Absent; video billing promotes 90% win rate at 1:20 RR."
+      }
+     ],
+     "summary": "Filters well, but pairs a mechanism-free pattern with implausible performance claims, the opposite of the philosophy's demand for justified evidence.",
+     "biggest_gap": "Unsupported 90% win-rate claim contradicted by an independent test (P5), plus no mechanism (P1)."
+    },
+    {
+     "strategy_id": "strategy_tori_trendline_4h",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 0,
+       "evidence": "'Price often respects trendlines'; no reason given."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 2,
+       "evidence": "Confirm main trend on daily or weekly before working the 4-hour chart."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 2,
+       "evidence": "Safety Line defined before entry; a close through it ends the trade at once."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 2,
+       "evidence": "Favour instruments that respect trendlines, avoid frequent false breaks; ranging markets give few valid trades."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 0,
+       "evidence": "No data shown despite claiming it can be backed by real data."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 2,
+       "evidence": "Wait for an opposing line if none exists; skip breaks too far from the Safety Line."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 2,
+       "evidence": "Trail the Safety Line as structure develops; add as trend continues."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 2,
+       "evidence": "Page admits fake-outs and losses are part of the system."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 1,
+       "evidence": "Risk defined by distance to Safety Line, skip if too large; no account sizing."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 2,
+       "evidence": "Log 2-touch breaks separately from 3-touch breaks."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 0,
+       "evidence": "Absent."
+      }
+     ],
+     "summary": "Unusually complete on invalidation, loss acceptance and record-keeping, but rests on an unexplained trendline effect.",
+     "biggest_gap": "No mechanism or evidence for why trendlines hold (P1, P5)."
+    },
+    {
+     "strategy_id": "strategy_trader_kane_lab_model",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 1,
+       "evidence": "Price 'often returns' to the 50% level; PO3 framing names phases without explaining cause."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 2,
+       "evidence": "Daily, 4H and 1H must align; manipulation expected around 10:00 AM EST."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 2,
+       "evidence": "Stop beyond the SMT extreme; back past the manipulation candle means you are probably wrong."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 1,
+       "evidence": "Requires alignment and SMT, but no explicit no-trade conditions."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 0,
+       "evidence": "No win rate or R:R; admits a high break-even rate."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 1,
+       "evidence": "Wait for manipulation at the key time; take base hits, not full moves."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 2,
+       "evidence": "Move to break-even early once trade confirms; exit if price returns past the manipulation extreme."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 0,
+       "evidence": "Risk per trade, size and limits not specified."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 0,
+       "evidence": "Absent (logging break-even exits is an editorial suggestion)."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 0,
+       "evidence": "Absent."
+      }
+     ],
+     "summary": "Context and invalidation are clear, but the note covers only the analytical and execution layers.",
+     "biggest_gap": "No capital protection or evidence (P5, P9)."
+    },
+    {
+     "strategy_id": "strategy_trader_mayne_structure_ote",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 1,
+       "evidence": "Pullback returns to the zone that caused the break, where the next higher low is expected; asserted, not explained."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 2,
+       "evidence": "Higher-timeframe market structure break and range required; buy only in discount, sell only in premium."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 2,
+       "evidence": "Invalidation beyond the LTF swept low/high."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 2,
+       "evidence": "Every condition must be present for the setup to be valid; premium/discount location filter."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 1,
+       "evidence": "Minimum 2:1 filter; no win rate; page says the method needs backtesting."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 2,
+       "evidence": "Wait for pullback into POI and full LTF breaker; skip setups under 2:1."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 0,
+       "evidence": "Break-even, partials and trailing not specified."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 1,
+       "evidence": "Size by confidence and confluence; no base risk."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 0,
+       "evidence": "Only a cons note that backtesting is needed."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 0,
+       "evidence": "Absent."
+      }
+     ],
+     "summary": "Context-and-confluence-driven entry framework that stops at the entry; post-entry and self-governance principles are missing.",
+     "biggest_gap": "No management after entry (P7)."
+    },
+    {
+     "strategy_id": "strategy_traveling_trader_universal",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 2,
+       "evidence": "A trade is valid only when it tells a clear, logical story: catalyst, displacement, retracement."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 2,
+       "evidence": "Map higher-timeframe direction and macro/news backdrop; lower-timeframe setups without it often fail."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 2,
+       "evidence": "Stop beyond the level that proves the story wrong; exit without hesitation if it breaks."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 2,
+       "evidence": "No catalyst means no trade; confluence required; quiet markets give no trade."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 0,
+       "evidence": "No statistics; universal claim untested."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 2,
+       "evidence": "Never trade a single signal; never enter on first impulse; don't chase or move entry from FOMO."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 2,
+       "evidence": "Manage by the story: exit when narrative is complete, not early to protect profit."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 0,
+       "evidence": "Risk per trade, sizing and limits not specified; risks only acknowledged."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 2,
+       "evidence": "Manage by story, not emotion; no wide stops from fear; panic exits and revenge trades named."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 0,
+       "evidence": "Absent."
+      }
+     ],
+     "summary": "The practitioner note that most resembles the philosophy's reasoning (a defensible story, invalidation, emotional independence), though without any numbers.",
+     "biggest_gap": "No mathematics or capital rules (P5, P9)."
+    },
+    {
+     "strategy_id": "strategy_umar_ashraf_5_stage",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 0,
+       "evidence": "A development framework; no market mechanism for any setup."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 1,
+       "evidence": "Stage 3 playbook must record each setup's context; no context rule itself."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 1,
+       "evidence": "Each setup's invalidation must be written into the playbook; no values."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 1,
+       "evidence": "Track performance by setup, time of day and market conditions to adapt."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 1,
+       "evidence": "Collect win rate and per-setup data; no expectancy or sample thresholds for advancing."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 2,
+       "evidence": "Narrow to 1-2 setups; cut every trade outside the plan, even ones that work; no random trades."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 1,
+       "evidence": "Use journal data only for small refinements; no in-trade management."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 2,
+       "evidence": "Judge execution rather than outcome; aim for repeatable process rather than being right."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 2,
+       "evidence": "Risk staged: extremely low, then small, then gradual increases only on best setups."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 2,
+       "evidence": "If emotions take over you're trading too big; revenge trading named; handle drawdowns without panic."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 2,
+       "evidence": "Journaling mandatory at every stage; daily review; post-market journal."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 2,
+       "evidence": "Goal is not X dollars but a repeatable process; money is a by-product."
+      }
+     ],
+     "summary": "Covers the self-governance half of the doctrine (Principles 6, 8-12) almost perfectly, and leaves the market-analysis half to the trader.",
+     "biggest_gap": "No market understanding or setup-level context (P1, P2)."
+    },
+    {
+     "strategy_id": "strategy_usman_ashraf_options",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 1,
+       "evidence": "Explains how premium, moneyness, decay, IV and Greeks work; no setup mechanism."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 1,
+       "evidence": "Check IV, especially around earnings volatility crush; no market context rule."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 1,
+       "evidence": "Choose a risk method: whole premium as risk, or a premium/price stop."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 1,
+       "evidence": "Match expiry to style; short-dated contracts lose value fast in sideways moves."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 0,
+       "evidence": "Greek arithmetic only; no edge statistics."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 0,
+       "evidence": "No exit or management rules."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 1,
+       "evidence": "Beginners should buy rather than sell for defined risk; leverage warning; no sizing numbers."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 0,
+       "evidence": "Absent."
+      }
+     ],
+     "summary": "An instrument primer rather than a playbook, so it touches the doctrine only through understanding the instrument and defined risk.",
+     "biggest_gap": "No decision process at all: no entry, exit or selectivity (P6, P7)."
+    },
+    {
+     "strategy_id": "strategy_vincent_desiano_break_retest",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 1,
+       "evidence": "Broken levels 'often' get retested before continuing; behaviour described, cause not explained."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 2,
+       "evidence": "Mark prior-day and premarket levels and the no-trade zone before the open."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 2,
+       "evidence": "Stop just beyond the invalidation point; a close above the retest wick voids the setup."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 2,
+       "evidence": "No trades inside the NTZ; trade only breaks that retest with confirmation."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 0,
+       "evidence": "'High probability' claim unsupported; no statistics."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 2,
+       "evidence": "'No retest, no trade'; accept missed breaks; don't chase late entries."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 2,
+       "evidence": "Take 25-50% at TP1, reduce risk, hold runner while move continues."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 1,
+       "evidence": "Fixed risk and 10-2-2 sizing rule mentioned but not explained."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 0,
+       "evidence": "Absent."
+      }
+     ],
+     "summary": "A clean expression of 'do not force': pre-planned no-trade zone and retest-only entries, with nothing on evidence or conduct.",
+     "biggest_gap": "Sizing rule unexplained and no evidence (P5, P9)."
+    },
+    {
+     "strategy_id": "strategy_yush_order_flow",
+     "scores": [
+      {
+       "principle_id": "principle_01_understand_before_acting",
+       "score": 2,
+       "evidence": "Trade the other way once order flow shows one side pushed and failed: absorption or trapped traders."
+      },
+      {
+       "principle_id": "principle_02_context_before_movement",
+       "score": 2,
+       "evidence": "Classify market state (balanced vs imbalanced) before choosing the model."
+      },
+      {
+       "principle_id": "principle_03_future_is_uncertain",
+       "score": 2,
+       "evidence": "Define risk before every entry; stop just outside range edge or quick invalidation in trend model."
+      },
+      {
+       "principle_id": "principle_04_conditional_probability",
+       "score": 2,
+       "evidence": "Market state picks the model; middle of range is a no-trade zone; AOI needs at least 2 tools."
+      },
+      {
+       "principle_id": "principle_05_mathematical_justification",
+       "score": 0,
+       "evidence": "No win rate, R:R or test; lot thresholds are filters, not evidence."
+      },
+      {
+       "principle_id": "principle_06_do_not_force",
+       "score": 2,
+       "evidence": "No return to AOI means no trade; react, don't anticipate; typically 2-3 high-quality trades a day."
+      },
+      {
+       "principle_id": "principle_07_respond_methodically",
+       "score": 2,
+       "evidence": "Partials at prior highs/lows, break-even after partial, trail on structure, add only to winners."
+      },
+      {
+       "principle_id": "principle_08_decision_quality_not_outcome",
+       "score": 1,
+       "evidence": "Accept losses quickly; a break-even stop-out is acceptable."
+      },
+      {
+       "principle_id": "principle_09_protect_capital",
+       "score": 1,
+       "evidence": "Smaller size on aggressive entries, never add to losers; no risk per trade or daily limit."
+      },
+      {
+       "principle_id": "principle_10_emotional_independence",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_11_record_and_investigate",
+       "score": 0,
+       "evidence": "Absent."
+      },
+      {
+       "principle_id": "principle_12_process_not_money",
+       "score": 0,
+       "evidence": "Absent."
+      }
+     ],
+     "summary": "Among the strongest matches on Principles 1-4, 6 and 7, because it is regime-conditional and grounded in observed order flow.",
+     "biggest_gap": "No quantitative evidence and no journaling or emotion rules (P5, P10, P11)."
+    }
+   ]
+  }
+ ]
 }
