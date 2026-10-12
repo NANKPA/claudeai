@@ -71,7 +71,9 @@ def graph_view_exclusions(kb) -> dict[str, set[str]]:
     out["youtube shorts"] = {n.id for n in kb.nodes.values() if n.kind == "media" and n.attrs.get("tab") == "shorts"}
     out["podcast episodes without a known guest"] = {
         nid for nid in podcast_eps
-        if nid in kb.nodes and kb.nodes[nid].attrs.get("status") == "scraped" and nid not in speakers}
+        if nid in kb.nodes and nid not in speakers and kb.nodes[nid].kind == "media"
+        and (kb.nodes[nid].attrs.get("status") == "scraped"
+             or kb.nodes[nid].source_file.endswith("podcast-episodes.scraped.yaml"))}
     hidden = set().union(*out.values())
     linked = {x for e in kb.edges if e.source not in hidden and e.target not in hidden for x in (e.source, e.target)}
     out["nodes with no links (e.g. scraped videos no concept or person could be tagged on)"] = {
@@ -178,7 +180,11 @@ def label_communities(G, communities: dict[int, list[str]]) -> dict[int, str]:
                 (m for m in members if G.nodes[m].get("kind") in ("concept", "strategy", "course", "channel", "podcast", "synthesis", "framework", "track")),
                 key=lambda m: -G.degree(m),
             ) or sorted(members, key=lambda m: -G.degree(m))
-            name = " / ".join(G.nodes[m].get("label", m).split(" (")[0] for m in ranked[:2])
+            parts = [G.nodes[m].get("label", m).split(" (")[0].split(" — ")[-1] if G.nodes[m].get("kind") == "track"
+                     else G.nodes[m].get("label", m).split(" (")[0].split(" — ")[0] for m in ranked[:2]]
+            name = " / ".join(parts) if len(" / ".join(parts)) <= 36 else parts[0]
+            if len(name) > 40:
+                name = name[:40].rsplit(" ", 1)[0] + "…"
         used[name] += 1
         labels[cid] = name if used[name] == 1 else f"{name} ({used[name]})"
     return labels

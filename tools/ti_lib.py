@@ -217,7 +217,9 @@ class _Builder:
         else:
             # Merge: a registry entry and a summary note may describe the same node.
             # Registry label wins (it is the canonical title); the longer body wins.
-            if source_file.endswith(".yaml") and existing.source_file.endswith(".md") and (entity.get("title") or entity.get("name")):
+            # (Scraped registries only fill gaps: they never override a curated note's title or status.)
+            if (source_file.endswith(".yaml") and not source_file.endswith(".scraped.yaml")
+                    and existing.source_file.endswith(".md") and (entity.get("title") or entity.get("name"))):
                 existing.label = str(label)
                 existing.attrs.update(attrs)
             else:
@@ -264,12 +266,15 @@ class _Builder:
 
 def load_kb(root: Path = KB_ROOT, include_raw: bool = True) -> KnowledgeBase:
     b = _Builder()
+    raw_paths: list[tuple[Path, str]] = []
     for path in sorted(root.rglob("*.md")):
         rel = path.relative_to(root).as_posix()
         if rel.startswith(("09_knowledge-graph/", "graphify-out/")):
             continue
-        if "/raw/" in f"/{rel}" and not include_raw:
-            continue
+        if "/raw/" in f"/{rel}":
+            if include_raw:
+                raw_paths.append((path, rel))
+            continue  # scraped source text is loaded last (see below)
         fm, body = parse_frontmatter(path)
         if not fm:
             continue  # generated tables and plain docs carry no node
@@ -290,6 +295,12 @@ def load_kb(root: Path = KB_ROOT, include_raw: bool = True) -> KnowledgeBase:
                 entity = {k: v for k, v in entity.items() if k not in ("also_in_top100", "title", "key_idea")}
                 entity["id"] = alias
             b.add_entity(entity, rel)
+    # Raw scraped pages (git-ignored) only add nodes nobody else defines: a curated note or registry
+    # entry with the same id is authoritative and must not inherit the raw page's status or text.
+    for path, rel in raw_paths:
+        fm, body = parse_frontmatter(path)
+        if fm and "id" in fm and str(fm["id"]) not in b.nodes:
+            b.add_entity(fm, rel, body)
     return b.finalize()
 
 

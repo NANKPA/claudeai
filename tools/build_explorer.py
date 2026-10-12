@@ -86,9 +86,10 @@ def foundation(kb, index: dict[str, int]) -> dict | None:
     cent_path = KB_ROOT / "00_philosophy" / "centrality.json"
     cent = None
     if cent_path.exists():
-        c = json.loads(cent_path.read_text(encoding="utf-8"))["super"]
-        cent = {"reach2": c["reach_pct"]["2"], "bridged": c["communities_touched"],
-                "communities": c["communities_other"], "super_rank": c["pagerank_rank"]}
+        data = json.loads(cent_path.read_text(encoding="utf-8"))
+        ph = next(u for u in data["units"] if u["unit"] == "PHILOSOPHY")
+        cent = {"units": len(data["units"]), "pr_rank": ph["pagerank_rank"], "bt_rank": ph["betweenness_rank"],
+                "linked": ph["communities_linked"]}
     return {"graded": graded, "centrality": cent,
             "principles": [{"i": index[p.id], "n": p.attrs.get("number"), "t": p.label.split(": ", 1)[-1],
                             "x": exemplified[p.id]} for p in principles if p.id in index]}
@@ -126,7 +127,12 @@ def summary_for(node, labels) -> str:
     return a.get("summary") or a.get("statement") or a.get("known_for") or a.get("key_idea") or ""
 
 
-def layout(nodes: list[str], edges: list[tuple[str, str]], community: dict[str, int]) -> dict[str, tuple[float, float]]:
+def layout(nodes: list[str], edges: list[tuple[str, str]], community: dict[str, int],
+           names: dict[int, str] | None = None, center: int | None = None) -> dict[str, tuple[float, float]]:
+    """Community-grouped layout: place community centres with a spring layout (the `center` community,
+    the philosophy, pinned at the origin), push centres apart until no two clusters (or their labels)
+    overlap, then lay out each community's members inside its own circle."""
+    names = names or {}
     G = nx.Graph()
     G.add_nodes_from(nodes)
     G.add_edges_from(edges)
@@ -140,15 +146,38 @@ def layout(nodes: list[str], edges: list[tuple[str, str]], community: dict[str, 
         if cu != cv:
             w = CG.get_edge_data(cu, cv, {}).get("weight", 0) + 1
             CG.add_edge(cu, cv, weight=w)
-    centers = nx.spring_layout(CG, weight="weight", seed=11, k=2.2, iterations=300)
+    init = {center: (0.0, 0.0)} if center in CG else None
+    centers = nx.spring_layout(CG, weight="weight", seed=11, k=2.2, iterations=300,
+                               pos=init, fixed=[center] if init else None)
+    radius = {c: 34 * math.sqrt(len(m)) for c, m in members.items()}
+    # footprint: the cluster circle, widened to fit its label (about 7.5 px per character at 26 px)
+    foot = {c: max(radius[c], 7.5 * len(names.get(c, ""))) + 40 for c in members}
+    pts = {c: [centers[c][0] * 760, centers[c][1] * 760] for c in members}
+    cs = sorted(pts)
+    for _ in range(400):
+        moved = False
+        for i, a in enumerate(cs):
+            for b in cs[i + 1:]:
+                dx, dy = pts[b][0] - pts[a][0], pts[b][1] - pts[a][1]
+                d = math.hypot(dx, dy) or 0.01
+                need = foot[a] + foot[b]
+                if d < need:
+                    push = (need - d) / 2 + 1
+                    ux, uy = dx / d, dy / d
+                    wa = 0.0 if a == center else (1.0 if b == center else 0.5)
+                    wb = 0.0 if b == center else (1.0 if a == center else 0.5)
+                    pts[a][0] -= ux * push * 2 * wa; pts[a][1] -= uy * push * 2 * wa
+                    pts[b][0] += ux * push * 2 * wb; pts[b][1] += uy * push * 2 * wb
+                    moved = True
+        if not moved:
+            break
     pos: dict[str, tuple[float, float]] = {}
     for cid, mem in members.items():
         sub = G.subgraph(mem)
         local = nx.spring_layout(sub, seed=11, k=0.9 / math.sqrt(max(len(mem), 1)) * 3, iterations=150)
-        radius = 34 * math.sqrt(len(mem))
-        cx, cy = centers[cid][0] * 760, centers[cid][1] * 760
+        cx, cy = pts[cid]
         for n, (x, y) in local.items():
-            pos[n] = (cx + x * radius, cy + y * radius)
+            pos[n] = (cx + x * radius[cid], cy + y * radius[cid])
     return pos
 
 
@@ -170,7 +199,8 @@ def main() -> None:
     for s, t, _, _ in edges:
         degree[s] += 1
         degree[t] += 1
-    pos = layout(ids, [(ids[s], ids[t]) for s, t, _, _ in edges], community)
+    philo_comm = community.get(START)
+    pos = layout(ids, [(ids[s], ids[t]) for s, t, _, _ in edges], community, comm_names, philo_comm)
 
     nodes_out = []
     for nid in ids:

@@ -584,9 +584,9 @@ footer code { font-family: var(--font-mono); font-size: 12px; color: var(--ink-2
     bindChips(pl);
     const c = F.centrality;
     document.getElementById('centrality').innerHTML = c ? [
-      `<span>Reach: <b>${c.reach2}%</b> of the graph within 2 links</span>`,
-      `<span>Communities touched: <b>${c.bridged} of ${c.communities}</b></span>`,
-      `<span>Rank as one unit (PageRank): <b>#${c.super_rank}</b></span>`,
+      `<span>Rank among the ${c.units} communities: <b>#${c.pr_rank}</b> (PageRank)</span>`,
+      `<span>As a bridge: <b>#${c.bt_rank}</b> (betweenness)</span>`,
+      `<span>Links into <b>${c.linked} of ${c.units - 1}</b> other communities</span>`,
     ].join('') : '';
   }
 

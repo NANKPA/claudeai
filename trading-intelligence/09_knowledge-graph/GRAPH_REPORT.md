@@ -1,75 +1,72 @@
 # Graph Report - trading-intelligence  (2026-10-12)
 
 ## Corpus Check
-- Large corpus: 249 files · ~1,058,847 words. Semantic extraction will be expensive (many Claude tokens). Consider running on a subfolder.
+- Large corpus: 250 files · ~1,082,932 words. Semantic extraction will be expensive (many Claude tokens). Consider running on a subfolder.
 
 ## Summary
-- 1150 nodes · 5739 edges · 35 communities (34 shown, 1 thin omitted)
-- Extraction: 85% EXTRACTED · 15% INFERRED · 0% AMBIGUOUS · INFERRED: 853 edges (avg confidence: 0.75)
+- 1153 nodes · 5649 edges · 32 communities (31 shown, 1 thin omitted)
+- Extraction: 85% EXTRACTED · 15% INFERRED · 0% AMBIGUOUS · INFERRED: 871 edges (avg confidence: 0.75)
 - Token cost: 0 input · 0 output
 
 ## Community Hubs (Navigation)
-- Backtesting, ML & Edge Validation
-- Kelly, Sizing & Money Management
-- Auction Market Theory & Order Flow
+- Candlesticks & Price Action
 - Microstructure & Optimal Execution
-- Liquidity Sweeps & Reversals
 - Psychology, Plan & Discipline
 - Trend Following & the Turtles
-- Price Action Trading / Desire To Trade
-- Wyckoff, Tape Reading & AMD
-- Growth-Stock Momentum (CANSLIM→VCP→EP)
-- Chart Fanatics Ecosystem
-- Correlation & Portfolio Risk / Track E — Risk, Sizing & Portfolio Mathematics
-- Macro, Fundamentals & Reflexivity
-- Classical Charting & Patterns
-- Support & Resistance / Premium / Discount & Optimal Trade Entry
-- Prop-Firm Evaluations & Risk Rules
-- Words of Rizdom
-- Options & Volatility
-- Volatility / Time-Series Statistics
-- Breakout Trading / Bollinger Bands & Volatility Squeezes
-- Better System Trader
-- Moving Averages / VWAP
 - Smart Money / ICT & Liquidity
+- Growth-Stock Momentum (CANSLIM→VCP→EP)
 - Stochastic Calculus, Options & Derivatives
+- Macro, Fundamentals & Reflexivity
+- Chart Fanatics Ecosystem
+- Prop-Firm Evaluations & Risk Rules
+- Kelly, Sizing & Money Management
+- Options & Volatility
+- Correlation & Portfolio Risk
+- Leverage, Margin, Pips & Lots
+- Words of Rizdom
+- VWAP / The Day Trading Show
+- Backtesting, ML & Edge Validation
+- Premium / Discount & Optimal Trade Entry
+- Probability, Expectancy & Fat Tails
+- Edge
+- Better System Trader
+- Desire To Trade
+- Price Action Trading
 - Trading Podcasts
-- Reflexivity
-- Jared Tendler / Rajan Dhall
-- Odd Lots
-- Indicators & Oscillators
-- Top Traders Unplugged / Flirting with Models
+- Auction Market Theory & Order Flow
+- Time-Series Statistics
+- Classical Charting & Patterns
+- Efficient Markets Debate
+- Backtesting / Matteo Conti
+- The Unified Trading Intelligence…
 - Market Wizards / Jack D. Schwager
-- Scalping / SteadyTrade
-- Track B — Stochastic Calculus & Derivatives
-- Lance Breitstein / Options Prop Firm Strategy For Quick Payouts!
 
 ## God Nodes (most connected - your core abstractions)
-1. `Trading Psychology & Discipline` - 162 edges
-2. `Chart Fanatics (YouTube channel)` - 160 edges
-3. `Trend Following` - 120 edges
-4. `Position Sizing` - 114 edges
-5. `Trading Plan (rules written before the trade)` - 109 edges
-6. `Market Regimes (trend vs range, high vs low volatility)` - 102 edges
-7. `Risk of Ruin & Drawdown Math` - 94 edges
-8. `Prop-Firm Evaluations & Risk Rules` - 93 edges
-9. `Edge (positive expectancy, repeatable)` - 88 edges
-10. `Support & Resistance` - 83 edges
+1. `Chart Fanatics (YouTube channel)` - 163 edges
+2. `Trading Psychology & Discipline` - 149 edges
+3. `Trend Following` - 121 edges
+4. `Position Sizing` - 115 edges
+5. `Market Regimes (trend vs range, high vs low volatility)` - 96 edges
+6. `Risk of Ruin & Drawdown Math` - 95 edges
+7. `Prop-Firm Evaluations & Risk Rules` - 92 edges
+8. `Edge (positive expectancy, repeatable)` - 89 edges
+9. `Decision Protocol — the Philosophy of the Relationship as an operating procedure` - 83 edges
+10. `Trading Journal & Performance Review` - 83 edges
 11. `Backtesting (manual & systematic)` - 82 edges
-12. `Trading Journal & Performance Review` - 82 edges
-13. `Decision Protocol — the Philosophy of the Relationship as an operating procedure` - 81 edges
-14. `Trade Management (stops, targets, breakeven, scaling, trailing)` - 81 edges
-15. `Order Flow (footprint, delta, CVD, absorption, trapped traders)` - 80 edges
-16. `The Philosophy of the Relationship` - 72 edges
-17. `Chart Fanatics — Cross-Playbook Patterns (47 first-party playbooks)` - 69 edges
+12. `Trading Plan (rules written before the trade)` - 82 edges
+13. `Trade Management (stops, targets, breakeven, scaling, trailing)` - 81 edges
+14. `Support & Resistance` - 78 edges
+15. `Order Flow (footprint, delta, CVD, absorption, trapped traders)` - 75 edges
+16. `The Philosophy of the Relationship` - 73 edges
+17. `Chart Fanatics — Cross-Playbook Patterns (47 first-party playbooks)` - 72 edges
 18. `Expectancy (expected value per trade)` - 69 edges
 19. `Overfitting & Edge Validation (multiple testing, deflated Sharpe)` - 69 edges
-20. `Breakout Trading (and fakeouts)` - 66 edges
-21. `Principle 4: Use probability conditionally` - 66 edges
-22. `Fundamental & Macro Analysis (rates, central banks, growth, inflation)` - 65 edges
-23. `Probabilistic Thinking (thinking in bets)` - 65 edges
-24. `Words of Rizdom` - 64 edges
-25. `Scalping` - 62 edges
+20. `Principle 4: Use probability conditionally` - 67 edges
+21. `Words of Rizdom` - 67 edges
+22. `Probabilistic Thinking (thinking in bets)` - 65 edges
+23. `Fundamental & Macro Analysis (rates, central banks, growth, inflation)` - 62 edges
+24. `Research Program — what the philosophy still needs to prove` - 61 edges
+25. `Breakout Trading (and fakeouts)` - 61 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `II. The market as a system governed by rules (the system vs. my model of it)` --operationalized_by--> `Trading Intelligence Ontology (the 9-layer stack)`  [INFERRED]
@@ -83,143 +80,131 @@
 - `The Philosophy of the Relationship` --supported_by--> `The Alchemy of Finance`  [INFERRED]
   00_philosophy/philosophy-of-the-relationship.md → 05_books-top-100/summaries/alchemy-of-finance.md
 
-## Communities (35 total, 1 thin omitted)
+## Communities (32 total, 1 thin omitted)
 
-### Community 0 - "Backtesting, ML & Edge Validation"
-Cohesion: 0.03
-Nodes (101): Adaptive Markets, Advances in Financial Machine Learning, Building Winning Algorithmic Trading Systems, Where Are the Customers' Yachts?, Efficiently Inefficient, Evidence-Based Technical Analysis, Expected Returns, The Man Who Solved the Market (+93 more)
-
-### Community 1 - "Kelly, Sizing & Money Management"
-Cohesion: 0.04
-Nodes (88): Against the Gods, Antifragile, Beat the Dealer, The Black Swan, The Definitive Guide to Position Sizing, Dynamic Hedging, Fooled by Randomness, Fortune's Formula (+80 more)
-
-### Community 2 - "Auction Market Theory & Order Flow"
-Cohesion: 0.11
-Nodes (67): Algorithmic Trading: Winning Strategies and Their Rationale, Markets and Market Logic, Markets in Profile, Mastering the Market Cycle, Mind Over Markets, The Most Important Thing, Quantitative Trading, Reminiscences of a Stock Operator (+59 more)
-
-### Community 3 - "Microstructure & Optimal Execution"
-Cohesion: 0.05
-Nodes (60): The Art and Science of Technical Analysis, Flash Boys, Inside the Black Box, Market Microstructure in Practice, Trading and Exchanges, Market Microstructure (order book, bid/ask, order types), Optimal Execution & Market Impact (Almgren-Chriss, square-root law), Trade Execution (triggers, order types, confirmation) (+52 more)
-
-### Community 4 - "Liquidity Sweeps & Reversals"
-Cohesion: 0.13
-Nodes (56): The Dow Theory, Street Smarts, Trader Vic: Methods of a Wall Street Master, Trading Sardines, Chart Academy (education platform), Chart Fanatics Live (YouTube), The Inner Circle Trader (YouTube), AMD / Power of Three (accumulation, manipulation, distribution) (+48 more)
-
-### Community 5 - "Psychology, Plan & Discipline"
-Cohesion: 0.07
-Nodes (44): The Alchemy of Finance, Best Loser Wins, The Daily Trading Coach, The Disciplined Trader, The Hour Between Dog and Wolf, The Mental Game of Trading, Principles, The Psychology of Trading (+36 more)
-
-### Community 6 - "Trend Following & the Turtles"
-Cohesion: 0.11
-Nodes (43): The Complete TurtleTrader, Trend Following, Trend Following, 034: Michael Melissinos – Launching a Fund at 26, and Trading Trends in 40 Global Futures Markets, 067: Jerry Parker – The Turtle Traders Story, Following Major Trends and Managing Investors Money, 180: Larry Hite – Reflection on Markets & Life—With a Man Who’s Had Vast Financial Success, Trend Following Radio Ep. 1000 — Jerry Parker interview, The Whipsaw Song — Ed Seykota (+35 more)
-
-### Community 7 - "Price Action Trading / Desire To Trade"
-Cohesion: 0.09
-Nodes (42): Japanese Candlestick Charting Techniques, Price Action Trading (naked charts), 106: Can meditation give traders an edge with Adam Grimes, 188: "Why trading can be so challenging (and what to do about it)" – Adam Grimes, 021: Adam Grimes – How to Identify a Trading Edge, and a Realistic Breakdown of ‘The Path to Becoming a Trader’, 115: Adam Grimes – What Hand Traders Can Learn From System Traders, and Vice Versa, 332 · Steve Nison - The Man Who Introduced Candlestick Charting to the West, 221: The Best Price Action Trader In The World - Al Brooks (+34 more)
-
-### Community 8 - "Wyckoff, Tape Reading & AMD"
+### Community 0 - "Candlesticks & Price Action"
 Cohesion: 0.08
-Nodes (40): The Art of Contrary Thinking, Day Trading with Short Term Price Patterns and Opening Range Breakout, Studies in Tape Reading, Tape Reading and Market Tactics, Trades About to Happen, Leverage, Margin, Pips & Lots, Order Flow (footprint, delta, CVD, absorption, trapped traders), Wyckoff Method (accumulation, distribution, composite operator) (+32 more)
+Nodes (112): The Art and Science of Technical Analysis, Bollinger on Bollinger Bands, Day Trading with Short Term Price Patterns and Opening Range Breakout, Elliott Wave Principle, Japanese Candlestick Charting Techniques, Long-Term Secrets to Short-Term Trading, Mastering the Market Cycle, Mastering the Trade (+104 more)
 
-### Community 9 - "Growth-Stock Momentum (CANSLIM→VCP→EP)"
-Cohesion: 0.11
-Nodes (40): One Up on Wall Street, Secrets for Profiting in Bull and Bear Markets, Think & Trade Like a Champion, Trade Like a Stock Market Wizard, Episodic Pivot (EP), Growth-Stock Momentum (CANSLIM, SEPA, VCP), News & Event Trading, 1,379% Return in 3 years | Interview with David Ryan | 3X US Investing Champion (Episode 3) (+32 more)
+### Community 1 - "Microstructure & Optimal Execution"
+Cohesion: 0.04
+Nodes (60): Efficiently Inefficient, Expected Returns, Flash Boys, Inside the Black Box, Market Microstructure in Practice, New Concepts in Technical Trading Systems, Trading and Exchanges, Market Microstructure (order book, bid/ask, order types) (+52 more)
 
-### Community 10 - "Chart Fanatics Ecosystem"
+### Community 2 - "Psychology, Plan & Discipline"
+Cohesion: 0.07
+Nodes (60): The Alchemy of Finance, The Battle for Investment Survival, Best Loser Wins, The Daily Trading Coach, The Disciplined Trader, Fooled by Randomness, The Hour Between Dog and Wolf, The Mental Game of Trading (+52 more)
+
+### Community 3 - "Trend Following & the Turtles"
+Cohesion: 0.08
+Nodes (58): The Complete TurtleTrader, Trend Following, Trend Following, 017: Jerry Parker from the original Turtles trading group shares 30+ years of trading experience in trend following and systematic trading., 216: Trading Triumphs - Jerry Parker #1: Fear of Executing Trades, 233: The Trading Panel – Episode 10, 034: Michael Melissinos – Launching a Fund at 26, and Trading Trends in 40 Global Futures Markets, 067: Jerry Parker – The Turtle Traders Story, Following Major Trends and Managing Investors Money (+50 more)
+
+### Community 4 - "Smart Money / ICT & Liquidity"
+Cohesion: 0.09
+Nodes (48): The Dow Theory, Street Smarts, Studies in Tape Reading, Trader Vic: Methods of a Wall Street Master, Trades About to Happen, The Inner Circle Trader (YouTube), AMD / Power of Three (accumulation, manipulation, distribution), Dow Theory (+40 more)
+
+### Community 5 - "Growth-Stock Momentum (CANSLIM→VCP→EP)"
+Cohesion: 0.08
+Nodes (48): How I Made $2,000,000 in the Stock Market, How to Make Money in Stocks, How to Trade in Stocks, One Up on Wall Street, Secrets for Profiting in Bull and Bear Markets, Think & Trade Like a Champion, Trade Like a Stock Market Wizard, Growth-Stock Momentum (CANSLIM, SEPA, VCP) (+40 more)
+
+### Community 6 - "Stochastic Calculus, Options & Derivatives"
+Cohesion: 0.05
+Nodes (48): Options, Futures, and Other Derivatives, Technical Analysis Explained, Oscillators & Momentum Indicators (RSI, MACD, Stochastic, ADX), Stochastic Processes (Brownian motion, Itô, mean-reverting OU), Arbitrage Theory in Continuous Time, The Volatility Surface, Brownian Motion and Stochastic Calculus, A Practical Guide to Quantitative Finance Interviews (+40 more)
+
+### Community 7 - "Macro, Fundamentals & Reflexivity"
+Cohesion: 0.07
+Nodes (44): Big Debt Crises, Extraordinary Popular Delusions and the Madness of Crowds, Inside the House of Money, More Money Than God, Fundamental & Macro Analysis (rates, central banks, growth, inflation), Reflexivity (Soros), 141: Erik Townsend – Software Millionaire Fooled by ‘The Dream’ and Saved by Global Macro, Principles for Dealing with the Changing World Order — Ray Dalio (+36 more)
+
+### Community 8 - "Chart Fanatics Ecosystem"
+Cohesion: 0.05
+Nodes (43): Chart Academy (education platform), Chart Fanatics (YouTube channel), Chart Fanatics Live (YouTube), If You Only Watch ONE Market Cycle Trading Video, Make It This (500%+ Champion), Simple ONE Candle Trading Strategy Thats Profited Millions (80%+ Win Rate) , Wall Street's EXACT Formula To Measure FEAR In The Markets (Trade This NOW), If You Only Watch One Trading Strategy Video, Make It This, Options Trading for Beginners: Super Simple - 2 Hour FREE Course (+35 more)
+
+### Community 9 - "Prop-Firm Evaluations & Risk Rules"
 Cohesion: 0.06
-Nodes (37): Chart Fanatics (YouTube channel), If You Only Watch ONE Market Cycle Trading Video, Make It This (500%+ Champion), Simple ONE Candle Trading Strategy Thats Profited Millions (80%+ Win Rate) , Wall Street's EXACT Formula To Measure FEAR In The Markets (Trade This NOW), If You Only Watch One Trading Strategy Video, Make It This, Options Trading for Beginners: Super Simple - 2 Hour FREE Course, Verified $5M+ Trader: LIVE Trading Using His EXACT Strategy, Master The Mental Game of Trading In 60 Minutes (STOP TILT/FOMO) (+29 more)
+Nodes (44): Prop-Firm Evaluations & Risk Rules, Scalping, Worlds BEST Prop Firm Trader Reveals SIMPLE Trading Strategy - Jadecap (Full Breakdown), Trading LIVE With The World’s #1 Prop Firm Scalper ($2.5M+ Payouts), Worlds BEST NQ Scalper Reveals His A+ Trading Strategy, 74% Win Rate Trader Shares His EXACT OrderFlow Strategy ($2M+ Payouts), COPY This Prop Firm Simple Trading Strategy with 65% Win Rate ($5+ Million Payouts), The ONE Trading Indicator That Will EXPOSE The Truth About The Markets (PASS Prop Firms) (+36 more)
 
-### Community 11 - "Correlation & Portfolio Risk / Track E — Risk, Sizing & Portfolio Mathematics"
+### Community 10 - "Kelly, Sizing & Money Management"
+Cohesion: 0.08
+Nodes (42): Beat the Dealer, The Definitive Guide to Position Sizing, Fortune's Formula, A Man for All Markets, The Mathematics of Money Management, When Genius Failed, The Zurich Axioms, Kelly Criterion & Optimal f (+34 more)
+
+### Community 11 - "Options & Volatility"
 Cohesion: 0.06
-Nodes (36): Following the Trend, Correlation & Portfolio Risk, Convex Optimization, Elements of Information Theory, Active Portfolio Management, Value at Risk, Fractals and Scaling in Finance, Portfolio Selection: Efficient Diversification of Investments (+28 more)
+Nodes (39): The Art of Contrary Thinking, Option Volatility & Pricing, Options as a Strategic Investment, Tape Reading and Market Tactics, Options & the Greeks, Order Flow (footprint, delta, CVD, absorption, trapped traders), Andy Krieger — the $300 Million Trade, Order-flow traders Fabio Valentini & Carmine Rosato (Chart Fanatics episode) (+31 more)
 
-### Community 12 - "Macro, Fundamentals & Reflexivity"
+### Community 12 - "Correlation & Portfolio Risk"
+Cohesion: 0.07
+Nodes (37): Following the Trend, Correlation & Portfolio Risk, Convex Optimization, Elements of Information Theory, Active Portfolio Management, Value at Risk, Fractals and Scaling in Finance, Portfolio Selection: Efficient Diversification of Investments (+29 more)
+
+### Community 13 - "Leverage, Margin, Pips & Lots"
+Cohesion: 0.07
+Nodes (36): Dynamic Hedging, Leverage, Margin, Pips & Lots, 106: Can meditation give traders an edge with Adam Grimes, 151: Buy the fear, sell the greed - Larry Connors, 155: Stories from the trading floor - Damon Pavlatos, 140: Jimmy Soni – The Life and Times of Genius Problem Solver, Claude Shannon, 153: Xiao Qiao – Research Analyst Shares Practical Ways to do Better Research, Annie Duke on the Power of Quitting (+28 more)
+
+### Community 14 - "Words of Rizdom"
+Cohesion: 0.08
+Nodes (35): First systematic trader on Chart Fanatics & Words of Rizdom (Oct 2025), 12 Years of Trading Knowledge in 2 Hours - Umar Ashraf, STEAL This SIMPLE Trading Strategy from The WORLD's #2 Futures Trader - Marci Silfrain, Ted Zhang — managing $25 million at a young age (Nov 2025), Trading $50M At 25 Using One SIMPLE Market Cycle Strategy (4 Stages) - Ted Zhang, +291% Swing Trading in 2023 - The 3 Powerful Setups of a Top Trader, BEST Trading Podcast: From Losing To Consistent Profitable Trader Managing $50 Million, The World's #2 Trader | Futures Trading World Champion Marci Silfrain (Words of Rizdom) (+27 more)
+
+### Community 15 - "VWAP / The Day Trading Show"
+Cohesion: 0.09
+Nodes (34): Technical Analysis Using Multiple Timeframes, VWAP (volume-weighted average price) & anchored VWAP, 029: Brian Shannon – The Science of Technical Analysis, Versus the Art of Trading, 080: Anthony Crudele – One Traders Volatile Path From (Below) Zero to Hero, and Beyond, AstroFX, Trading Success, and Fatherhood With Riz Iqbal | 068, Brian Shannon Reveals The Most Critical Error Traders Make - VWAP Deep Dive, Ex-Pit Trader Shares Secrets For Success With Anthony Crudele | 091, Exclusive VWAP Deep Dive With Brian Shannon | 135 (+26 more)
+
+### Community 16 - "Backtesting, ML & Edge Validation"
 Cohesion: 0.10
-Nodes (32): Big Debt Crises, Inside the House of Money, Fundamental & Macro Analysis (rates, central banks, growth, inflation), 141: Erik Townsend – Software Millionaire Fooled by ‘The Dream’ and Saved by Global Macro, Principles for Dealing with the Changing World Order — Ray Dalio, How the Economic Machine Works — Ray Dalio, Ray Dalio on the Coming Crisis in US Debt, Paul Tudor Jones on Invest Like the Best — 50-year career and philosophy (+24 more)
+Nodes (32): Advances in Financial Machine Learning, Machine Learning in Finance (labels, leakage, meta-labeling), Overfitting & Edge Validation (multiple testing, deflated Sharpe), The Elements of Statistical Learning, Finding Alphas, Python for Finance, An Introduction to Statistical Learning, Machine Learning for Algorithmic Trading (+24 more)
 
-### Community 13 - "Classical Charting & Patterns"
+### Community 17 - "Premium / Discount & Optimal Trade Entry"
 Cohesion: 0.15
-Nodes (31): Diary of a Professional Commodity Trader, Elliott Wave Principle, Encyclopedia of Chart Patterns, Intermarket Analysis, Technical Analysis of the Financial Markets, Technical Analysis of Stock Trends, Japanese Candlestick Patterns, Carry Trade (+23 more)
+Nodes (26): Premium / Discount & Optimal Trade Entry (OTE), RWH051: Master of Change w/ Brad Stulberg, RWH058: Winning Ways w/ Bill Nygren, RWH059: Ask Me Anything w/ William Green, RWH063: Avoid Disaster w/ Howard Marks, RWH066: Essential Truths w/ Howard Marks, Nima Shayegh & William Green, RWH069: The Psychology of Investing w/ Emily Haisley, TIP623: The Art Of Decision Making w/ Annie Duke (+18 more)
 
-### Community 14 - "Support & Resistance / Premium / Discount & Optimal Trade Entry"
-Cohesion: 0.17
-Nodes (27): Premium / Discount & Optimal Trade Entry (OTE), Support & Resistance, RWH051: Master of Change w/ Brad Stulberg, RWH058: Winning Ways w/ Bill Nygren, RWH059: Ask Me Anything w/ William Green, RWH063: Avoid Disaster w/ Howard Marks, RWH066: Essential Truths w/ Howard Marks, Nima Shayegh & William Green, RWH069: The Psychology of Investing w/ Emily Haisley (+19 more)
-
-### Community 15 - "Prop-Firm Evaluations & Risk Rules"
+### Community 18 - "Probability, Expectancy & Fat Tails"
 Cohesion: 0.10
-Nodes (23): Day Trading and Swing Trading the Currency Market, Prop-Firm Evaluations & Risk Rules, Worlds BEST Prop Firm Trader Reveals SIMPLE Trading Strategy - Jadecap (Full Breakdown), 74% Win Rate Trader Shares His EXACT OrderFlow Strategy ($2M+ Payouts), COPY This Prop Firm Simple Trading Strategy with 65% Win Rate ($5+ Million Payouts), Pass Prop Firms Using This ICT & Orderflow Futures Trading Strategy ($600k+), The ONE Trading Indicator That Will EXPOSE The Truth About The Markets (PASS Prop Firms), STEAL This Trading Champion’s Exact Strategy - Math Based Models for Prop Firms (+15 more)
+Nodes (24): Against the Gods, Antifragile, The Black Swan, The (Mis)Behavior of Markets, Probability, Distributions & Fat Tails, Introduction to Probability, Statistical Inference, Fifty Challenging Problems in Probability with Solutions (+16 more)
 
-### Community 16 - "Words of Rizdom"
-Cohesion: 0.12
-Nodes (23): First systematic trader on Chart Fanatics & Words of Rizdom (Oct 2025), STEAL This SIMPLE Trading Strategy from The WORLD's #2 Futures Trader - Marci Silfrain, Ted Zhang — managing $25 million at a young age (Nov 2025), Trading $50M At 25 Using One SIMPLE Market Cycle Strategy (4 Stages) - Ted Zhang, BEST Trading Podcast: From Losing To Consistent Profitable Trader Managing $50 Million, The World's #2 Trader | Futures Trading World Champion Marci Silfrain (Words of Rizdom), Trading Psychologist: Here's How I MAKE Traders Profitable Long Term (Words of Rizdom), $16+ Million Trader vs 15 Losing Traders (FT Alex Temiz) (+15 more)
-
-### Community 17 - "Options & Volatility"
+### Community 19 - "Edge"
 Cohesion: 0.10
-Nodes (22): Option Volatility & Pricing, Options as a Strategic Investment, Options & the Greeks, Andy Krieger — the $300 Million Trade, MIT 15.401 Finance Theory I — Andrew Lo (Fall 2008), Veritasium — The Trillion Dollar Equation (Black–Scholes, Bachelier, Thorp, Simons), How to Trade with the Black-Scholes Model, Option Greeks Explained - Theta Delta Gamma Vega RHO | Stock Market Trading Knowledge | Share Market (+14 more)
-
-### Community 18 - "Volatility / Time-Series Statistics"
-Cohesion: 0.13
-Nodes (20): The (Mis)Behavior of Markets, New Concepts in Technical Trading Systems, Time-Series Statistics (stationarity, autocorrelation, cointegration), Volatility (realized, implied, ATR, regimes), Time Series Analysis, Statistics and Data Analysis for Financial Engineering, Analysis of Financial Time Series, Pairs Trading: The Cointegration Approach and Minimum Profit Optimization (+12 more)
-
-### Community 19 - "Breakout Trading / Bollinger Bands & Volatility Squeezes"
-Cohesion: 0.16
-Nodes (20): The Battle for Investment Survival, Bollinger on Bollinger Bands, How I Made $2,000,000 in the Stock Market, How to Make Money in Stocks, How to Trade in Stocks, Mastering the Trade, Reading Price Charts Bar by Bar, Bollinger Bands & Volatility Squeezes (+12 more)
+Nodes (23): The Man Who Solved the Market, Edge (positive expectancy, repeatable), 025: Dr Brett Steenbarger, trader and trading coach, discusses creativity, static thinking and why it's important to have unique ideas for trading success. We also cover tips to increasing our creativity, why traditional trading rules need to be updated,, 183: Gregory Zuckerman – Jim Simons—The Pinnacle of Trading Greatness, Jim Simons — Mathematics, Common Sense, and Good Luck: My Life and Careers (MIT, 2010), Jim Simons — Numberphile interview ('Billionaire Mathematician', full and short versions), Jim Simons — The mathematician who cracked Wall Street (TED 2015), €15B Bank Trader: THIS Is How YOU Build A Trading Strategy That Actually Works (+15 more)
 
 ### Community 20 - "Better System Trader"
-Cohesion: 0.13
-Nodes (19): Long-Term Secrets to Short-Term Trading, 017: Jerry Parker from the original Turtles trading group shares 30+ years of trading experience in trend following and systematic trading., 028: David Aronson shares research into indicators that identify Bull and Bear markets, including the Golden Cross/Death Cross, RSI, ADX, ROC and many others., 039: Michael Cook discusses position sizing to maximise returns, using the market to determine stop levels and the role of discretion in systematic trading., 040: Larry Williams discusses algorithmic forecasting, the methods and applications of forecasting, cycles and seasonality, plus some forecasts for the markets in 2016., 216: Trading Triumphs - Jerry Parker #1: Fear of Executing Trades, 217: Trading Triumphs - Jerry Parker #2: Excessive Risk, 218: Trading Triumphs - Jerry Parker #3: The Dangers of Optimization (+11 more)
+Cohesion: 0.10
+Nodes (23): 011: Ralph Vince talks position sizing, the different applications of optimalf, trading horizon, diversification and his changing views over 25 years., 020: Larry Williams talks conditional trading, what drives prices, the misuse of indicators, cycles, forecasting markets PLUS 50 years of trading insights, 026: Systematic trader Robert Carver discusses trading rules, what makes a good trading rule and the advantages of using continuous rather than binary rules. He also shares insights into over-fitting and the challenges of walk-forward testing that can mak, 039: Michael Cook discusses position sizing to maximise returns, using the market to determine stop levels and the role of discretion in systematic trading., 040: Larry Williams discusses algorithmic forecasting, the methods and applications of forecasting, cycles and seasonality, plus some forecasts for the markets in 2016., 070: Risk Management with Robert Carver, 217: Trading Triumphs - Jerry Parker #2: Excessive Risk, 218: Trading Triumphs - Jerry Parker #3: The Dangers of Optimization (+15 more)
 
-### Community 21 - "Moving Averages / VWAP"
-Cohesion: 0.19
-Nodes (19): Pit Bull, Technical Analysis Using Multiple Timeframes, Moving Averages (SMA, EMA, stacks, crossovers), VWAP (volume-weighted average price) & anchored VWAP, 029: Brian Shannon – The Science of Technical Analysis, Versus the Art of Trading, Brian Shannon Reveals The Most Critical Error Traders Make - VWAP Deep Dive, Exclusive VWAP Deep Dive With Brian Shannon | 135, Making Millions Using AVWAP With Brian Shannon! | 074 (+11 more)
+### Community 21 - "Desire To Trade"
+Cohesion: 0.15
+Nodes (22): Rajan Dhall — A+ Simple Trading Strategy & Market Auction Theory (May 2025), 257 Trade The Process, Results Will Follow - Ali Crooks - @AliCrooks, 311:Med Student Turned Full-Time Trader - Kathy Lien, 358:  "Professional Trader Secrets Revealed" - Ali Crooks (@AliCrooks), 366: "Escaping The 9-5 Job For Trading" | Forex Trader Motivation, 370: Escaping The 9-5 Job For Trading - Forex Trader Motivation, 382: How to Become Consistently Profitable in 2023 | Forex Trader Motivation, 408: Trading Full-Time & Managing A Private Fund - Ali Crooks (+14 more)
 
-### Community 22 - "Smart Money / ICT & Liquidity"
-Cohesion: 0.13
-Nodes (19): Smart Money Concepts / ICT (umbrella), The SIMPLE $10 Million ICT Blueprint They Don’t Want You To See (Forex Trading Strategy) , TAKE This EASY ICT Trading Strategy For Prop Firms (INSANE Entries), This SIMPLE ICT Futures Trading Strategy Made Her Over $100,000 - Tanja Trades (Copy This), If You Only Watch One ICT Trading Video, Make It This (LIVE Trading), Elite Scalper: I Studied Trading Champions, THIS Is The Pattern I Found!, ICT Roundtable: NBB Trader, JadeCapFX, Ali khan ICT, Kimmel Trading | WOR Podcast EP.100, NBB Trader Part II: This ICT Strategy Will Change Everything! | WOR Podcast - EP.118 (+11 more)
+### Community 22 - "Price Action Trading"
+Cohesion: 0.15
+Nodes (20): Trading Sardines, Price Action Trading (naked charts), 221: The Best Price Action Trader In The World - Al Brooks, 233: The True Life of a Forex Trader | Forex Trader Motivation, 241: Behaviors & Thoughts Of Great Traders | Forex Trader Motivation, 245: Your Trading Is Only As Good As Your Mindset | Forex Trader Motivation, 273: 6-Figure Income Trading Forex Advice | Forex Trader Motivation, 305: Become an Unstoppable Trader | Forex Trader Motivation (+12 more)
 
-### Community 23 - "Stochastic Calculus, Options & Derivatives"
+### Community 23 - "Trading Podcasts"
 Cohesion: 0.12
-Nodes (19): Stochastic Processes (Brownian motion, Itô, mean-reverting OU), Python for Finance, Brownian Motion and Stochastic Calculus, A Practical Guide to Quantitative Finance Interviews, MIT 18.642 Topics in Mathematics with Applications in Finance (Fall 2024) — successor course with recordings, MIT 18.S096 Topics in Mathematics with Applications in Finance (Fall 2013) — full lecture series, MIT 6.041 Probabilistic Systems Analysis / RES.6-012 Introduction to Probability — John Tsitsiklis, Paul Wilmott on Quantitative Finance, Chapter 4.6, Brownian motion (+11 more)
+Nodes (19): 030: Tom Basso – The Logic of Trend Following, and How to Improve Your Trader Psychology w/ a Market Wizard, 229: Lance Breitstein – The Ultimate Day Trader, Pt. 2, 271: Tom Basso - The Sweet Balance Between Risk and Reward, 290 · Mark Ritchie II - Price-Action, Swing Trading Equities from the Long Side, 292 · Laurens Bensdorp - Running 55+ Systematic Trading Strategies Simultaneously, Chat With Traders — Best of Day Trading (Parts 1–2), How To Become An All Weather Trader With Tom Basso | 076, 391: Legendary Professional Trader & Market Wizard - Tom Basso (+11 more)
 
-### Community 24 - "Trading Podcasts"
-Cohesion: 0.12
-Nodes (18): 231: The Trading Panel – Episode 8, 030: Tom Basso – The Logic of Trend Following, and How to Improve Your Trader Psychology w/ a Market Wizard, 271: Tom Basso - The Sweet Balance Between Risk and Reward, 290 · Mark Ritchie II - Price-Action, Swing Trading Equities from the Long Side, 292 · Laurens Bensdorp - Running 55+ Systematic Trading Strategies Simultaneously, 323 · Alex Temiz - Starbucks Barista to  8-figure Short Selling Strategy, Chat With Traders — Best of Day Trading (Parts 1–2), Tom Basso Explains How To Make Millions Trading Volatile Markets (+10 more)
+### Community 24 - "Auction Market Theory & Order Flow"
+Cohesion: 0.24
+Nodes (17): Markets and Market Logic, Markets in Profile, Mind Over Markets, Auction Market Theory (balance, imbalance, value), Volume Profile (POC, value area, HVN/LVN), Trading LIVE with a World TOP Ranked Scalper (EXTREME Accuracy), Elite Scalper: I Studied Trading Champions, THIS Is The Pattern I Found!, Auction market theory, volume profiling & mindfullness w/ Kam Dhadwar (+9 more)
 
-### Community 25 - "Reflexivity"
-Cohesion: 0.17
-Nodes (17): Extraordinary Popular Delusions and the Madness of Crowds, More Money Than God, Reflexivity (Soros), The Soros Lectures at Central European University (2009) — reflexivity, financial markets, TIP614: Investing Guardrails: Avoiding Common Mistakes w/ Kyle Grieve and Clay Finck, He Made 4200% At The World’s TOP Hedge Fund (He’s SOLD EVERYTHING) - Jim Rogers, World’s Best Trader: The $300 Million Trade (George Soros Copied Him), George Soros interview (1995) (+9 more)
+### Community 25 - "Time-Series Statistics"
+Cohesion: 0.15
+Nodes (16): Algorithmic Trading: Winning Strategies and Their Rationale, Quantitative Trading, Time-Series Statistics (stationarity, autocorrelation, cointegration), Time Series Analysis, Statistics and Data Analysis for Financial Engineering, Pairs Trading: The Cointegration Approach and Minimum Profit Optimization, Master Volatility with ARCH & GARCH Models, GARCH Model : Time Series Talk (+8 more)
 
-### Community 26 - "Jared Tendler / Rajan Dhall"
-Cohesion: 0.12
-Nodes (17): Rajan Dhall — A+ Simple Trading Strategy & Market Auction Theory (May 2025), 086: Jared Tendler – What Traders Can Learn About Mental Game, From a World Champion Poker Coach, 217: Jared Tendler – Practical Solutions to Strengthen Your Mental Game, The Mental Game Of Trading With Jared Tendler | 062, 418: "The Mental Game of Trading" - Jared Tendler, 452: Master Your Trading Psychology For High-Performance - Jared Tendler, 469: A Winning Trader's Mindset - Jared Tendler, 504: Lessons From a Full-Time Trader Running a Multi-Million Fund - Rajan Dhall (+9 more)
+### Community 26 - "Classical Charting & Patterns"
+Cohesion: 0.30
+Nodes (15): Diary of a Professional Commodity Trader, Encyclopedia of Chart Patterns, Intermarket Analysis, Technical Analysis of the Financial Markets, Technical Analysis of Stock Trends, Classical Chart Patterns, Intermarket Analysis & Correlations, Trendlines & Channels (+7 more)
 
-### Community 27 - "Odd Lots"
-Cohesion: 0.12
-Nodes (17): 153: Xiao Qiao – Research Analyst Shares Practical Ways to do Better Research, Cliff Asness on How Markets Got Dumber in the Last 10 Years, Eugene Fama and David Booth on the Birth of Modern Finance, How Oaktree's Howard Marks Spots a Market Bubble, Nassim Taleb on Living a Good Life in an Age of Volatility, Ray Dalio on the Five Forces That Make This a Historical Moment, A RANDOM WALK DOWN WALL STREET SUMMARY (BY BURTON MALKIEL), Benoit Mandelbrot: Fractals and the art of roughness (+9 more)
+### Community 27 - "Efficient Markets Debate"
+Cohesion: 0.21
+Nodes (14): Adaptive Markets, Where Are the Customers' Yachts?, A Non-Random Walk Down Wall Street, A Random Walk Down Wall Street, Random Walk & Efficient Market Hypothesis, The Econometrics of Financial Markets, A RANDOM WALK DOWN WALL STREET SUMMARY (BY BURTON MALKIEL), The Adaptive Markets Hypothesis (paper, Journal of Portfolio Management) (+6 more)
 
-### Community 28 - "Indicators & Oscillators"
-Cohesion: 0.12
-Nodes (16): Technical Analysis Explained, Oscillators & Momentum Indicators (RSI, MACD, Stochastic, ADX), Brownian Motion-I, Lecture 24: Stochastic Calculus, Ito's Lemma -- Some intuitive explanations on the solution of stochastic differential equations, Derivation of Ito's Lemma, Stochastic Calculus for Quants | Understanding Geometric Brownian Motion using Itô Calculus, Rough volatility: An overview by Jim Gatheral (+8 more)
+### Community 28 - "Backtesting / Matteo Conti"
+Cohesion: 0.22
+Nodes (13): Building Winning Algorithmic Trading Systems, Evidence-Based Technical Analysis, Backtesting (manual & systematic), All of Statistics, 028: David Aronson shares research into indicators that identify Bull and Bear markets, including the Golden Cross/Death Cross, RSI, ADX, ROC and many others., Monte Carlo Simulation of a Stock Portfolio with Python, Why Monte Carlo Simulation Works, David Aronson (+5 more)
 
-### Community 29 - "Top Traders Unplugged / Flirting with Models"
-Cohesion: 0.17
-Nodes (16): Cliff Asness - "...But Not So Open Your Mind Falls Out" (S3E13), What would Cliff Asness ask St. Peter at the pearly gates?, Flirting with Models — Cliff Asness (AQR), IL22: The Fund - The Other Side of Dalio & Bridgewater ft. Rob Copeland, OI16: Return Stacking: Form, Function & Friction ft. Corey Hoffstein and Adam Butler, SI253: A New Trend Following ETF is Born ft. Andrew Beer & Jerry Parker, SI265: Deep Dive Into Non-Trend Complementary Strategies ft. Nick Baltas, SI291: Trend Following...What should it mean to Investors? ft. Richard Brennan (+8 more)
+### Community 29 - "The Unified Trading Intelligence…"
+Cohesion: 0.23
+Nodes (11): Day Trading and Swing Trading the Currency Market, Carry Trade, Episodic Pivot (EP), News & Event Trading, BabyPips Course 7 — Undergraduate Freshman: macro fundamentals behind currency moves, BabyPips Course 8 — Undergraduate Sophomore: sentiment, news, carry, intermarket, 316 · The Turning Points That Shaped Great Traders, Swing Traders should Master these AVWAP Strategies | Brian Shannon, 35+ years Trading (+3 more)
 
 ### Community 30 - "Market Wizards / Jack D. Schwager"
 Cohesion: 0.27
 Nodes (11): Hedge Fund Market Wizards, Market Wizards, The New Market Wizards, Stock Market Wizards, Unknown Market Wizards, The Next Generation of Market Wizards — Jack Schwager & George Coyle, Forex trader: how Bruce Kovner went from taxi driver to billionaire!, Market Wizards: How to Become a Successful Trader with Jack Schwager | WOR Podcast - EP.121 (+3 more)
-
-### Community 31 - "Scalping / SteadyTrade"
-Cohesion: 0.18
-Nodes (11): Scalping, Trading LIVE With The World’s #1 Prop Firm Scalper ($2.5M+ Payouts), Worlds BEST NQ Scalper Reveals His A+ Trading Strategy, Trading LIVE with One of the World's BEST Scalpers (PERFECT Sniper Entries), 4 Institutional Scalping Strategies Market Makers Keep SECRET (Automate Prop Firm Trading), Trading LIVE With The World’s #1 Prop Firm Scalper ($2.5M+ Payouts), Trading LIVE with the World TOP Ranked Scalper (PERFECT Accuracy), Worlds BEST NQ Scalper Reveals His A+ Trading Strategy (+3 more)
-
-### Community 32 - "Track B — Stochastic Calculus & Derivatives"
-Cohesion: 0.20
-Nodes (10): Options, Futures, and Other Derivatives, Arbitrage Theory in Continuous Time, The Volatility Surface, Stochastic Calculus for Finance I & II, Paul Wilmott Introduces Quantitative Finance, Jim Gatheral, John Hull, Paul Wilmott (+2 more)
-
-### Community 33 - "Lance Breitstein / Options Prop Firm Strategy For Quick Payouts!"
-Cohesion: 0.20
-Nodes (10): 228: Lance Breitstein – The Ultimate Day Trader, Pt. 1, 229: Lance Breitstein – The Ultimate Day Trader, Pt. 2, 236: Lance Breitstein – The Ultimate Day Trader, Pt. 3, 316 · The Turning Points That Shaped Great Traders, 331 · Jeff Holden - How Top Prop Traders Find and Scale Their Edge, Options Prop Firm Strategy For Quick Payouts!, SMB Capital Roundtable - Lance Breitstein, Brett Steenbarger, Mike Bellafiore, Jeff Holden, The Easy Money Trading Concept Elite Traders Use - Lance Breitstein (+2 more)
 
 ## Knowledge Gaps
 - **213 isolated node(s):** `STEAL The 1-Minute Strategy That Made Him $1.8M+ (Works EVERY Session)`, `If You Only Watch ONE Market Cycle Trading Video, Make It This (500%+ Champion)`, `20 Years Of Institutional Trading Knowledge In 70 Minutes ($20M+ AUM)`, `Verified $5M+ Trader: LIVE Trading Using His EXACT Strategy`, `The ONE Liquidity Trading Pattern That Actually Works (Precise Entries)` (+208 more)
@@ -229,17 +214,17 @@ Nodes (10): 228: Lance Breitstein – The Ultimate Day Trader, Pt. 1, 229: Lance
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Chart Fanatics (YouTube channel)` connect `Chart Fanatics Ecosystem` to `Backtesting, ML & Edge Validation`, `Kelly, Sizing & Money Management`, `Auction Market Theory & Order Flow`, `Lance Breitstein / Options Prop Firm Strategy For Quick Payouts!`, `Liquidity Sweeps & Reversals`, `Psychology, Plan & Discipline`, `Price Action Trading / Desire To Trade`, `Wyckoff, Tape Reading & AMD`, `Growth-Stock Momentum (CANSLIM→VCP→EP)`, `Prop-Firm Evaluations & Risk Rules`, `Words of Rizdom`, `Options & Volatility`, `Smart Money / ICT & Liquidity`, `Jared Tendler / Rajan Dhall`, `Scalping / SteadyTrade`?**
-  _High betweenness centrality (0.111) - this node is a cross-community bridge._
+- **Why does `Trading Psychology & Discipline` connect `Psychology, Plan & Discipline` to `Candlesticks & Price Action`, `Microstructure & Optimal Execution`, `Trend Following & the Turtles`, `Growth-Stock Momentum (CANSLIM→VCP→EP)`, `Chart Fanatics Ecosystem`, `Prop-Firm Evaluations & Risk Rules`, `Kelly, Sizing & Money Management`, `Options & Volatility`, `Words of Rizdom`, `VWAP / The Day Trading Show`, `Premium / Discount & Optimal Trade Entry`, `Better System Trader`, `Desire To Trade`, `Price Action Trading`, `Trading Podcasts`, `Classical Charting & Patterns`, `The Unified Trading Intelligence…`, `Market Wizards / Jack D. Schwager`, `The Philosophy of the Relationship`?**
+  _High betweenness centrality (0.097) - this node is a cross-community bridge._
 - **Are the 14 inferred relationships involving `Trading Psychology & Discipline` (e.g. with `XIII. Follow the right decisions, not the money` and `XVI. The trading journal as a record of understanding`) actually correct?**
   _`Trading Psychology & Discipline` has 14 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `STEAL The 1-Minute Strategy That Made Him $1.8M+ (Works EVERY Session)`, `If You Only Watch ONE Market Cycle Trading Video, Make It This (500%+ Champion)`, `20 Years Of Institutional Trading Knowledge In 70 Minutes ($20M+ AUM)` to the rest of the system?**
   _213 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `Backtesting, ML & Edge Validation` be split into smaller, more focused modules?**
-  _Cohesion score 0.0341681226946224 - nodes in this community are weakly interconnected._
-- **Why does `Trading Psychology & Discipline` connect `Psychology, Plan & Discipline` to `Backtesting, ML & Edge Validation`, `Kelly, Sizing & Money Management`, `Auction Market Theory & Order Flow`, `Microstructure & Optimal Execution`, `Liquidity Sweeps & Reversals`, `Trend Following & the Turtles`, `Price Action Trading / Desire To Trade`, `Wyckoff, Tape Reading & AMD`, `Growth-Stock Momentum (CANSLIM→VCP→EP)`, `Chart Fanatics Ecosystem`, `Correlation & Portfolio Risk / Track E — Risk, Sizing & Portfolio Mathematics`, `Macro, Fundamentals & Reflexivity`, `Classical Charting & Patterns`, `Support & Resistance / Premium / Discount & Optimal Trade Entry`, `Prop-Firm Evaluations & Risk Rules`, `Words of Rizdom`, `Breakout Trading / Bollinger Bands & Volatility Squeezes`, `Better System Trader`, `Moving Averages / VWAP`, `Trading Podcasts`, `Jared Tendler / Rajan Dhall`, `Market Wizards / Jack D. Schwager`, `Lance Breitstein / Options Prop Firm Strategy For Quick Payouts!`, `The Philosophy of the Relationship`?**
-  _High betweenness centrality (0.077) - this node is a cross-community bridge._
+- **Should `Candlesticks & Price Action` be split into smaller, more focused modules?**
+  _Cohesion score 0.08154235145385588 - nodes in this community are weakly interconnected._
+- **Why does `Trend Following` connect `Trend Following & the Turtles` to `Candlesticks & Price Action`, `Microstructure & Optimal Execution`, `Psychology, Plan & Discipline`, `Smart Money / ICT & Liquidity`, `Growth-Stock Momentum (CANSLIM→VCP→EP)`, `Macro, Fundamentals & Reflexivity`, `Kelly, Sizing & Money Management`, `Correlation & Portfolio Risk`, `Leverage, Margin, Pips & Lots`, `Words of Rizdom`, `Better System Trader`, `Trading Podcasts`, `Auction Market Theory & Order Flow`, `Time-Series Statistics`, `Classical Charting & Patterns`, `Efficient Markets Debate`, `Backtesting / Matteo Conti`, `The Unified Trading Intelligence…`, `Market Wizards / Jack D. Schwager`, `The Philosophy of the Relationship`?**
+  _High betweenness centrality (0.094) - this node is a cross-community bridge._
 - **Are the 4 inferred relationships involving `Trend Following` (e.g. with `III. The A → C → B principle: the destination is not the path` and `Principle 1: Understand before acting`) actually correct?**
   _`Trend Following` has 4 INFERRED edges - model-reasoned connections that need verification._
-- **Should `Kelly, Sizing & Money Management` be split into smaller, more focused modules?**
-  _Cohesion score 0.04443309499489275 - nodes in this community are weakly interconnected._
+- **Should `Microstructure & Optimal Execution` be split into smaller, more focused modules?**
+  _Cohesion score 0.041826923076923074 - nodes in this community are weakly interconnected._

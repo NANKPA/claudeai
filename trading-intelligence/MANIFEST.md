@@ -2,7 +2,7 @@
 
 # Knowledge Base Manifest
 
-- Nodes: **6373** · Edges: **18695**
+- Nodes: **6373** · Edges: **18516**
 - Inferred (lower-confidence) edges: 875
 - Dangling references: 1
 
