@@ -24,6 +24,12 @@ Section XVIII ([[philo_practical_doctrine]]) it enforces, and points to the
 knowledge-base concepts that supply its tools. Every answer is written into
 the journal ([[framework_trading_journal]]) before the order is sent.
 
+The manifesto ends with the aim of understanding the market "well enough
+to know when to act, when to wait, and when I am wrong" (Section XXI,
+[[philo_manifesto]]). The protocol gives each of the three a written form:
+`take` after Gate 6, `skip` or `wait` on the Step-back path, and the
+invalidation condition fixed in Gate 2 before entry.
+
 ## How the protocol works
 
 Three rules hold the gates together.
@@ -58,14 +64,14 @@ Three rules hold the gates together.
 |---|---|---|---|---|---|
 | 0 State check | Am I in a state to decide at all? | [[principle_10_emotional_independence]], [[principle_12_process_not_money]] | XII, XIII | L7 | `emotional_state_pre` |
 | 1 Ladder | What do I see, what do I infer, what do I claim? | [[principle_01_understand_before_acting]], [[principle_03_future_is_uncertain]], [[principle_05_mathematical_justification]] | IV, I | L1/L3 | `observation`, `interpretation`, `hypothesis` |
-| 2 Context & level | Which level is the claim about, and where is it wrong? | [[principle_02_context_before_movement]], [[principle_03_future_is_uncertain]] | III | L2 | `timeframe`, `invalidation`, `planned_stop`, `planned_target` |
+| 2 Context & level | Which level is the claim about, and where is it wrong? | [[principle_02_context_before_movement]], [[principle_03_future_is_uncertain]] | III, II | L2 | `timeframe`, `invalidation`, `planned_stop`, `planned_target` |
 | 3 Conditions | Does today match the measured conditions of a defined setup? | [[principle_04_conditional_probability]] | V, VI | L2/L4 | `setup_id`, `regime_tag`, `session`, `evidence_for`, `evidence_against` |
-| 4 Three elements | Do understanding, evidence and mathematics agree? | [[principle_01_understand_before_acting]], [[principle_05_mathematical_justification]], [[principle_06_do_not_force]] | VIII | L4 | `understanding_score`, `evidence_score`, `math_score` |
+| 4 Three elements | Do understanding, evidence and mathematics agree? | [[principle_01_understand_before_acting]], [[principle_05_mathematical_justification]], [[principle_06_do_not_force]] | VIII, XV | L4 | `understanding_score`, `evidence_score`, `math_score` |
 | 5 Mathematics | Is the expected value positive after costs, given the estimate's uncertainty? | [[principle_05_mathematical_justification]], [[principle_04_conditional_probability]] | VII, VI | L0/L6 | `est_win_prob`, `est_avg_win_r`, `est_avg_loss_r`, `est_cost_r`, `est_ev_r` |
 | 6 Size | Can I be wrong, repeatedly, and still continue? | [[principle_09_protect_capital]], [[principle_10_emotional_independence]] | XIV | L6 | `decision`, `planned_entry`, `risk_pct`, `position_size` |
-| 7 Execute | Am I following the plan, and what do I do when the evidence changes? | [[principle_07_respond_methodically]], [[principle_02_context_before_movement]], [[principle_12_process_not_money]] | X, XIII | L5 | `executed_per_plan`, `exit_reason`, `mae_r`, `mfe_r`, `emotional_state_during` |
-| 8 Review | Was the decision good, separately from the result? What changes? | [[principle_08_decision_quality_not_outcome]], [[principle_11_record_and_investigate]] | XI, XVI | L8 | `result_r`, `cost_r`, `outcome_within_expected`, `lesson`, `hypothesis_update`, `reviewed_at` |
-| Step back | Not trading is a decision | [[principle_06_do_not_force]], [[principle_01_understand_before_acting]], [[principle_10_emotional_independence]] | IX | L7 | `decision` = `skip` or `wait` |
+| 7 Execute | Am I following the plan, and what do I do when the evidence changes? | [[principle_07_respond_methodically]], [[principle_02_context_before_movement]], [[principle_12_process_not_money]], [[principle_09_protect_capital]] | X, XIII | L5 | `executed_per_plan`, `exit_reason`, `mae_r`, `mfe_r`, `emotional_state_during` |
+| 8 Review | Was the decision good, separately from the result? What changes? | [[principle_08_decision_quality_not_outcome]], [[principle_11_record_and_investigate]] | XI, XVI, XVII | L8 | `result_r`, `cost_r`, `outcome_within_expected`, `lesson`, `hypothesis_update`, `reviewed_at` |
+| Step back | Not trading is a decision | [[principle_06_do_not_force]], [[principle_01_understand_before_acting]], [[principle_10_emotional_independence]] | IX, XIII | L7 | `decision` = `skip` or `wait` |
 
 The layers are those of the knowledge base's stack ([[framework_ontology]]);
 the gates follow the analysis-to-execution order of
@@ -82,8 +88,8 @@ the gates follow the analysis-to-execution order of
 [[concept_trading_plan]], [[concept_risk_of_ruin_drawdown]]
 
 Section XII names the four emotions that hijack a method: fear, greed,
-frustration and excitement. It also names the two moments when they are
-strongest: just after a loss (the urge to recover) and just after a win
+frustration and excitement. It also describes two moments of particular
+pressure: just after a loss (the urge to recover) and just after a win
 (confidence that outruns the evidence). Gate 0 runs before any chart work,
 and again before each new candidate.
 
@@ -297,8 +303,9 @@ same level) in `evidence_against`. Tag the regime (`regime_tag`) and session
 
 **Enforces:** [[principle_01_understand_before_acting]],
 [[principle_05_mathematical_justification]], [[principle_06_do_not_force]] ·
-**Philosophy:** VIII ([[philo_source_of_opportunity]]) · **Concepts:**
-[[concept_edge]], [[concept_expectancy]], [[concept_probabilistic_thinking]]
+**Philosophy:** VIII ([[philo_source_of_opportunity]]), XV
+([[philo_value_vs_price]]) · **Concepts:** [[concept_edge]],
+[[concept_expectancy]], [[concept_probabilistic_thinking]]
 
 Section VIII defines an opportunity as the agreement of three things: a
 defensible explanation (understanding), present-day conditions that support
@@ -329,6 +336,16 @@ does not resolve, the `wait` becomes a skip at the end of the window.
 The one thing never allowed: settling the contradiction in favour of the
 trade you want. In the owner's words, "An opportunity is not created by my
 desire to trade."
+
+**A gap between price and value is not evidence on its own.** Section XV
+([[philo_value_vs_price]]) calls a perceived discrepancy between price and an
+estimate of value "the beginning of an investigation, not proof of an
+edge": the estimate may be wrong, the gap may persist, and the costs may
+outweigh the benefit. So "price is far from value" can raise a candidate,
+but it earns an `evidence_score` above 0 only through a setup card whose
+conditions define that gap, and a `math_score` above 0 only if the card's
+record shows the gap paying after costs (Gates 3 and 5; H19 in
+`hypotheses.md` tests the claim).
 
 ---
 
@@ -633,7 +650,7 @@ changes, manage the risk first and investigate second.
    may reduce or exit; you may never widen or add.
 
 Section X is explicit that neither reflex is acceptable: assuming the market
-is "just taking a detour", and dropping every hypothesis the moment price
+is "simply taking a detour", and dropping every hypothesis the moment price
 moves against you.
 
 **Step 2: investigate**, once the position is flat or its risk is reduced.

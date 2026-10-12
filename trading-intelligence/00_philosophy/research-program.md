@@ -222,8 +222,8 @@ A discretionary tag with less than 60% agreement is rewritten as a rule, or drop
 **What the lab already answered.** For thin edges, an estimate from a realistic personal sample is
 not reliable enough to tell an edge from zero.
 
-- A true +0.05R edge looks like a loser in 35% of 30-trade samples, and separating it from zero
-  with 80% power takes about 3,109 trades (S3, H7).
+- A true +0.05R edge looks like a loser in 35.3% of simulated 30-trade samples (35.5% exact), and
+  separating it from zero with 80% power takes about 3,109 trades (S3, H7).
 - The lab's one empirical cell won 60.0% of 145 trades in-sample, with a Wilson interval of
   [51.9, 67.6]. Out of sample it won 48.6% of 37 trades.
 - Even with the parameters known exactly, the +$7 strategy of Section VII is behind after 20
@@ -377,7 +377,9 @@ mostly did not carry into the later one at their earlier strength.
 
 - 1 of 11 found cells held out of sample, and even the unconditional baselines of `^GSPC` and
   `^NDX` moved beyond noise (S2, H6).
-- The S5 winner's advantage over holding vanished, and the S7 cell's edge reversed (H10).
+- The S5 winner's advantage over holding fell to zero (0.18 to −0.01 Sharpe), and the S7 cell's
+  point estimate turned negative (+72 to −25 bp per trade before costs, with a wide out-of-sample
+  interval) (H10).
 
 Two periods are a thin test. Persistence has to be measured as a distribution, not inferred from
 a single split.

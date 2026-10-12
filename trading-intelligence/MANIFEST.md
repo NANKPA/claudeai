@@ -2,9 +2,9 @@
 
 # Knowledge Base Manifest
 
-- Nodes: **6373** · Edges: **18516**
-- Inferred (lower-confidence) edges: 875
-- Dangling references: 1
+- Nodes: **6374** · Edges: **18639**
+- Inferred (lower-confidence) edges: 858
+- Dangling references: 0
 
 | Kind | Count |
 |---|---|
@@ -17,8 +17,8 @@
 | philosophy | 22 |
 | hypothesis | 20 |
 | podcast | 16 |
+| synthesis | 13 |
 | paper | 13 |
-| synthesis | 12 |
 | principle | 12 |
 | course | 11 |
 | framework | 7 |
@@ -30,7 +30,7 @@
 | Partition | Nodes defined |
 |---|---|
 | 00_framework | 4 |
-| 00_philosophy | 77 |
+| 00_philosophy | 78 |
 | 01_chart-fanatics | 1092 |
 | 02_podcasts-interviews | 4592 |
 | 03_legends-authorities | 158 |

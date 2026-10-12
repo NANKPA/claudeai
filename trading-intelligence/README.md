@@ -40,10 +40,10 @@ Claude (Projects, Claude Code, or the API) and mapped with
 ## Using it with Claude
 
 - **Claude Projects (claude.ai):** upload `dist/trading-intelligence-core.md`
-  (about 130k tokens; built by `tools/bundle_for_claude.py`) as project knowledge,
+  (about 140k tokens; built by `tools/bundle_for_claude.py`) as project knowledge,
   add `dist/partitions/01_chart-fanatics.md` for the 47 full playbooks, and paste
   `CLAUDE.md` into the project instructions. `dist/trading-intelligence-bundle.md`
-  has everything (about 330k tokens) for retrieval-based setups.
+  has everything (about 340k tokens) for retrieval-based setups.
 - **Claude Code:** open this repo. `CLAUDE.md` tells Claude how to route
   questions through the partitions and the graph. With graphify installed,
   `/graphify query "..."` traverses `09_knowledge-graph/graph.json`.

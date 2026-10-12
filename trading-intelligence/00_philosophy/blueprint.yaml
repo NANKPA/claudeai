@@ -52,8 +52,8 @@ sections:
   expresses:
   - principle_01_understand_before_acting
   - principle_03_future_is_uncertain
-  summary: The market follows real rules that are complex and change over time (supply and demand, information, structure, liquidity, behaviour, economic conditions). No trader can know them fully, so the
-    trader builds a model of the system. The model is not the system and must be tested against the market continually.
+  summary: The market operates within a system of rules, constraints and relationships that is complex and changes over time (supply and demand, information, structure, liquidity, behaviour, economic conditions).
+    No trader can know them fully, so the trader builds a model of the system. The model is not the system and must be tested against the market continually.
   grounded_in:
   - concept_market_microstructure?
   - concept_auction_market_theory?
@@ -501,7 +501,7 @@ sections:
   expresses:
   - principle_09_protect_capital
   summary: Capital is the resource that buys future participation. Because even a positive-expectancy strategy meets unfavourable sequences, sizing, leverage, drawdowns and ruin must be managed so that
-    being wrong never removes the ability to continue; losses are asymmetric, since a 50% loss needs a 100% gain to recover.
+    being wrong does not automatically prevent future participation; losses are asymmetric, since a 50% loss needs a 100% gain to recover.
   grounded_in:
   - concept_risk_of_ruin_drawdown?
   - concept_position_sizing?

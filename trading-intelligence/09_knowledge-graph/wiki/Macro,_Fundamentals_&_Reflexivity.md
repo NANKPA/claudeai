@@ -1,64 +1,65 @@
 # Macro, Fundamentals & Reflexivity
 
-> 38 nodes · cohesion 0.09
+> 29 nodes · cohesion 0.11
 
 ## Key Concepts
 
-- **Fundamental & Macro Analysis (rates, central banks, growth, inflation)** (35 connections) — `07_concepts/fundamental-macro-analysis.md`
-- **Reflexivity (Soros)** (13 connections) — `07_concepts/reflexivity.md`
-- **Carry Trade** (12 connections) — `07_concepts/carry-trade.md`
-- **Intermarket Analysis & Correlations** (11 connections) — `07_concepts/intermarket-analysis.md`
-- **Paul Tudor Jones II** (9 connections) — `03_legends-authorities/people.yaml`
-- **George Soros** (8 connections) — `03_legends-authorities/people.yaml`
-- **Ray Dalio** (8 connections) — `03_legends-authorities/people.yaml`
-- **More Money Than God** (7 connections) — `05_books-top-100/books.yaml`
-- **Stanley Druckenmiller** (7 connections) — `03_legends-authorities/people.yaml`
-- **The Alchemy of Finance** (6 connections) — `05_books-top-100/summaries/alchemy-of-finance.md`
-- **John J. Murphy** (6 connections) — `03_legends-authorities/people.yaml`
-- **Day Trading and Swing Trading the Currency Market** (5 connections) — `05_books-top-100/books.yaml`
-- **Stanley Druckenmiller — Lost Tree Club speech (Jan 2015)** (5 connections) — `02_podcasts-interviews/landmark-media.yaml`
+- **Fundamental & Macro Analysis (rates, central banks, growth, inflation)** (62 connections) — `07_concepts/fundamental-macro-analysis.md`
+- **Ray Dalio** (27 connections) — `03_legends-authorities/people.yaml`
+- **Paul Tudor Jones II** (11 connections) — `03_legends-authorities/people.yaml`
+- **BTC229: Trump Tariffs, Market Chaos, Bitcoin Impact w/ James Lavish** (6 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
+- **SI270: CPI, Trend Reversals & Dalio on US-China War ft. Alan Dunne** (6 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
 - **Paul Tudor Jones on Invest Like the Best — 50-year career and philosophy** (5 connections) — `02_podcasts-interviews/landmark-media.yaml`
-- **Expected Returns** (4 connections) — `05_books-top-100/books.yaml`
-- **Principles** (4 connections) — `05_books-top-100/books.yaml`
+- **GM62: How to Build a Future-Proof Portfolio ft. Bob Elliott** (5 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
+- **How the Economic Machine Works — Ray Dalio** (4 connections) — `02_podcasts-interviews/landmark-media.yaml`
 - **Trader (1987 PBS documentary) — Paul Tudor Jones** (4 connections) — `02_podcasts-interviews/landmark-media.yaml`
-- **Kathy Lien** (4 connections) — `03_legends-authorities/people.yaml`
-- **Odd Lots (Bloomberg)** (4 connections) — `02_podcasts-interviews/podcasts.yaml`
+- **Erik Townsend** (4 connections) — `03_legends-authorities/people.yaml`
+- **Real Vision** (4 connections) — `02_podcasts-interviews/podcasts.yaml`
 - **Big Debt Crises** (3 connections) — `05_books-top-100/books.yaml`
 - **Inside the House of Money** (3 connections) — `05_books-top-100/books.yaml`
-- **Intermarket Analysis** (3 connections) — `05_books-top-100/books.yaml`
-- **One Up on Wall Street** (3 connections) — `05_books-top-100/books.yaml`
-- **How the Economic Machine Works — Ray Dalio** (3 connections) — `02_podcasts-interviews/landmark-media.yaml`
-- **The Soros Lectures at Central European University (2009) — reflexivity, financial markets** (3 connections) — `02_podcasts-interviews/landmark-media.yaml`
-- *... and 13 more nodes in this community*
+- **141: Erik Townsend – Software Millionaire Fooled by ‘The Dream’ and Saved by Global Macro** (3 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
+- **Dalio: "The World Order Has Broken Down"** (3 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
+- **Invest Like the Best** (3 connections) — `02_podcasts-interviews/podcasts.yaml`
+- **MacroVoices** (3 connections) — `02_podcasts-interviews/podcasts.yaml`
+- **Principles for Dealing with the Changing World Order — Ray Dalio** (2 connections) — `02_podcasts-interviews/landmark-media.yaml`
+- **US-EU Trade Deal, China Talks, and Dalio’s Crypto Pivot: PALvatar Market Recap, July 29 2025** (2 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
+- **MacroVoices #359 Lyn Alden: 2023 Macro Outlook** (2 connections) — `02_podcasts-interviews/landmark-media.scraped.yaml`
+- **Ray Dalio on the US Debt Crisis, Interest Rates, AI, Risk in Europe, US vs. China** (2 connections) — `02_podcasts-interviews/landmark-media.scraped.yaml`
+- **Patrick O'Shaughnessy** (2 connections) — `03_legends-authorities/people.yaml`
+- **MacroVoices #551 Michael Every: Decoding The Global Geopolitical Puzzle** (1 connections) — `02_podcasts-interviews/landmark-media.scraped.yaml`
+- **Ray Dalio & Andrew Ross Sorkin on His New Book "1929" and How Debt Drives Every Crash** (1 connections) — `02_podcasts-interviews/landmark-media.scraped.yaml`
+- **Ray Dalio Just Issued His Most Terrifying Debt Warning Yet.** (1 connections) — `02_podcasts-interviews/landmark-media.scraped.yaml`
+- *... and 4 more nodes in this community*
 
 ## Relationships
 
-- [Psychology, Plan & Discipline](Psychology,_Plan_&_Discipline.md) (19 shared connections)
-- [Trend Following & the Turtles](Trend_Following_&_the_Turtles.md) (15 shared connections)
-- [Growth-Stock Momentum (CANSLIM→VCP→EP)](Growth-Stock_Momentum_CANSLIM→VCP→EP.md) (12 shared connections)
-- [Probability, Expectancy & Fat Tails](Probability,_Expectancy_&_Fat_Tails.md) (5 shared connections)
-- [Smart Money / ICT & Liquidity](Smart_Money_-_ICT_&_Liquidity.md) (5 shared connections)
-- [Backtesting, ML & Edge Validation](Backtesting,_ML_&_Edge_Validation.md) (4 shared connections)
-- [Classical Charting & Patterns](Classical_Charting_&_Patterns.md) (3 shared connections)
-- [Stochastic Calculus, Options & Derivatives](Stochastic_Calculus,_Options_&_Derivatives.md) (2 shared connections)
-- [Microstructure & Optimal Execution](Microstructure_&_Optimal_Execution.md) (1 shared connections)
+- [Candlesticks & Price Action](Candlesticks_&_Price_Action.md) (12 shared connections)
+- [Reflexivity / We Study Billionaires](Reflexivity_-_We_Study_Billionaires.md) (9 shared connections)
+- [The Philosophy of the Relationship](The_Philosophy_of_the_Relationship.md) (7 shared connections)
+- [Indicators & Oscillators](Indicators_&_Oscillators.md) (6 shared connections)
+- [Leverage, Margin, Pips & Lots](Leverage,_Margin,_Pips_&_Lots.md) (6 shared connections)
+- [Trend Following & the Turtles](Trend_Following_&_the_Turtles.md) (5 shared connections)
+- [Psychology, Plan & Discipline](Psychology,_Plan_&_Discipline.md) (4 shared connections)
+- [Edge](Edge.md) (4 shared connections)
+- [Correlation & Portfolio Risk](Correlation_&_Portfolio_Risk.md) (4 shared connections)
+- [Top Traders Unplugged](Top_Traders_Unplugged.md) (4 shared connections)
+- [Trade Management / Chart Fanatics](Trade_Management_-_Chart_Fanatics.md) (4 shared connections)
+- [Position Sizing & Risk](Position_Sizing_&_Risk.md) (2 shared connections)
 
 ## Source Files
 
+- `02_podcasts-interviews/landmark-media.scraped.yaml`
 - `02_podcasts-interviews/landmark-media.yaml`
+- `02_podcasts-interviews/podcast-episodes.scraped.yaml`
 - `02_podcasts-interviews/podcasts.yaml`
 - `03_legends-authorities/people.yaml`
 - `05_books-top-100/books.yaml`
-- `05_books-top-100/summaries/alchemy-of-finance.md`
-- `07_concepts/carry-trade.md`
 - `07_concepts/fundamental-macro-analysis.md`
-- `07_concepts/intermarket-analysis.md`
-- `07_concepts/reflexivity.md`
 
 ## Audit Trail
 
-- EXTRACTED: 129 (98%)
-- INFERRED: 2 (2%)
+- EXTRACTED: 122 (95%)
+- INFERRED: 7 (5%)
 - AMBIGUOUS: 0 (0%)
 
 ---

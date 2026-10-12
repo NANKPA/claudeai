@@ -129,6 +129,22 @@
    "auto_created": false
   },
   {
+   "id": "synthesis_philosophy_extensions",
+   "label": "Beyond the Philosophy — what the knowledge base adds, sharpens and challenges",
+   "file_type": "rationale",
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "source_url": null,
+   "captured_at": null,
+   "author": null,
+   "contributor": "trading-intelligence",
+   "kind": "synthesis",
+   "layer": "L0",
+   "partition": "00_philosophy",
+   "status": "synthesized",
+   "auto_created": false
+  },
+  {
    "id": "synthesis_philosophy_hypotheses",
    "label": "The Philosophy as Falsifiable Hypotheses",
    "file_type": "rationale",
@@ -18611,6 +18627,16 @@
    "weight": 1.0
   },
   {
+   "source": "synthesis_blueprint_map",
+   "target": "synthesis_philosophy_extensions",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/blueprint-map.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
    "source": "synthesis_philosophy_centrality",
    "target": "philosophy_relationship",
    "relation": "related",
@@ -18804,6 +18830,16 @@
    "source": "framework_decision_protocol",
    "target": "concept_multi_timeframe_analysis",
    "relation": "uses",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/decision-protocol.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "framework_decision_protocol",
+   "target": "philo_manifesto",
+   "relation": "related",
    "confidence": "EXTRACTED",
    "confidence_score": 1.0,
    "source_file": "00_philosophy/decision-protocol.md",
@@ -19243,6 +19279,16 @@
   {
    "source": "framework_decision_protocol",
    "target": "question_repeatable_behaviors",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/decision-protocol.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "framework_decision_protocol",
+   "target": "philo_value_vs_price",
    "relation": "related",
    "confidence": "EXTRACTED",
    "confidence_score": 1.0,
@@ -19987,6 +20033,1376 @@
    "confidence": "EXTRACTED",
    "confidence_score": 1.0,
    "source_file": "00_philosophy/evidence-lab.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "philosophy_relationship",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "synthesis_blueprint_map",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "synthesis_philosophy_hypotheses",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "philo_source_of_opportunity",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "philo_market_is_relationship",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "principle_01_understand_before_acting",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "concept_edge",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "synthesis_unified_framework",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "book_trading_and_exchanges",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "concept_market_microstructure",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "mathbook_ohara_microstructure_theory",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "concept_trade_execution",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "strategy_matteo_conti_institutional",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "philo_market_system_of_rules",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "philo_evidence_changes",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "principle_03_future_is_uncertain",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "principle_07_respond_methodically",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "concept_reflexivity",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "book_alchemy_of_finance",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "media_soros_ceu_lectures",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "person_karl_popper",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "concept_liquidity",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "concept_market_sentiment",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "concept_liquidity_sweep_reversal",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "strategy_candace_lau_nq_sweep_reversal",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "strategy_dhesi_liquidity_inversion",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "strategy_andrea_cimitan_amt",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "synthesis_consensus_conflicts",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "philo_price_expression",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "concept_order_flow",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "concept_wyckoff_method",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "paper_kyle_1985",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "mathbook_bouchaud_trades_quotes_prices",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "mathbook_hasbrouck_empirical_microstructure",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "strategy_carmine_rosato_orderflow_masterclass",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "philo_value_vs_price",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "concept_auction_market_theory",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "book_mind_over_markets",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "concept_volume_profile",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "concept_vwap",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "strategy_jj_simon_fair_pricing",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "strategy_lance_breitstein_mean_reversion",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "book_efficiently_inefficient",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "philo_recurring_storyline",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "philo_conditional_probability",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "philo_manifesto",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "question_repeatable_behaviors",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "question_survives_regime_change",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "book_adaptive_markets",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "person_andrew_lo",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "concept_random_walk_efficient_markets",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "strategy_pavel_first_principles",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "concept_trading_journal_review",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "concept_time_series_statistics",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "philo_mathematics_sword",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "principle_09_protect_capital",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "question_estimate_reliability",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "concept_probability_fat_tails",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "mathbook_statistical_consequences_fat_tails",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "book_misbehavior_of_markets",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "mathbook_mandelbrot_fractals_scaling",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "person_benoit_mandelbrot",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "book_black_swan",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "concept_performance_metrics",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "concept_trade_management",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "synthesis_pre_trade_checklist",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "philo_scientific_method",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "philo_research_foundations",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "principle_04_conditional_probability",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "concept_overfitting_validation",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "formula_sheet",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "paper_deflated_sharpe_2014",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "person_marcos_lopez_de_prado",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "book_advances_financial_ml",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "book_evidence_based_ta",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "mathbook_all_of_statistics",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "strategy_naoufel_taief_algorithmic",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "philo_journal",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "concept_probabilistic_thinking",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "mathbook_jaynes_probability_logic",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "person_et_jaynes",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "book_thinking_in_bets",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "principle_02_context_before_movement",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "question_define_conditions",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "concept_market_regimes",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "concept_volatility",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "mathbook_hamilton_time_series",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "strategy_anthony_crudele_futures_trend",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "philo_acb_principle",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "concept_trend_following",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "book_trend_following_covel",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "book_expected_returns",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "person_cliff_asness",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "media_fwm_cliff_asness",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "principle_05_mathematical_justification",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "question_survives_costs",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "concept_optimal_execution_market_impact",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "paper_almgren_chriss_2000",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "concept_expectancy",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "philo_capital_preservation",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "concept_kelly_criterion_optimal_f",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "paper_kelly_1956",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "mathbook_kelly_capital_growth",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "book_fortunes_formula",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "concept_stochastic_processes",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "book_mathematics_of_money_management",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "concept_risk_of_ruin_drawdown",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "concept_prop_firm_risk_rules",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "podcast_econtalk",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "principle_06_do_not_force",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "strategy_jeff_holden_momentum_model",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "concept_machine_learning_finance",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "concept_position_sizing",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "strategy_jared_tendler_psychology",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "concept_correlation_portfolio_risk",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "mathbook_markowitz_portfolio_selection",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "mathbook_grinold_kahn_active_pm",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "person_ray_dalio",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "book_when_genius_failed",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "book_way_of_the_turtle",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "principle_11_record_and_investigate",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "concept_risk_reward_r_multiples",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "book_daily_trading_coach",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "person_brett_steenbarger",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "philo_being_wrong",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "principle_08_decision_quality_not_outcome",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "concept_backtesting",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "philo_protect_process",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "philo_step_back",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "principle_10_emotional_independence",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "question_consistent_execution",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "book_mental_game_of_trading",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "strategy_umar_ashraf_5_stage",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "book_hour_between_dog_wolf",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "concept_trading_psychology",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "strategy_marco_trades_liquidity_grab",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
+   "source_location": null,
+   "weight": 1.0
+  },
+  {
+   "source": "synthesis_philosophy_extensions",
+   "target": "concept_trading_sessions_killzones",
+   "relation": "related",
+   "confidence": "EXTRACTED",
+   "confidence_score": 1.0,
+   "source_file": "00_philosophy/extensions.md",
    "source_location": null,
    "weight": 1.0
   },
@@ -44912,16 +46328,6 @@
   },
   {
    "source": "philo_market_system_of_rules",
-   "target": "framework_ontology",
-   "relation": "operationalized_by",
-   "confidence": "INFERRED",
-   "confidence_score": 0.75,
-   "source_file": "00_philosophy/blueprint.yaml",
-   "source_location": null,
-   "weight": 0.75
-  },
-  {
-   "source": "philo_market_system_of_rules",
    "target": "principle_01_understand_before_acting",
    "relation": "expresses",
    "confidence": "EXTRACTED",
@@ -45372,16 +46778,6 @@
   },
   {
    "source": "philo_price_expression",
-   "target": "strategy_ted_zhang_stage_analysis",
-   "relation": "operationalized_by",
-   "confidence": "INFERRED",
-   "confidence_score": 0.75,
-   "source_file": "00_philosophy/blueprint.yaml",
-   "source_location": null,
-   "weight": 0.75
-  },
-  {
-   "source": "philo_price_expression",
    "target": "strategy_matteo_conti_institutional",
    "relation": "operationalized_by",
    "confidence": "INFERRED",
@@ -45653,16 +47049,6 @@
   {
    "source": "philo_conditional_probability",
    "target": "concept_probability_fat_tails",
-   "relation": "grounded_in",
-   "confidence": "INFERRED",
-   "confidence_score": 0.75,
-   "source_file": "00_philosophy/blueprint.yaml",
-   "source_location": null,
-   "weight": 0.75
-  },
-  {
-   "source": "philo_conditional_probability",
-   "target": "concept_expectancy",
    "relation": "grounded_in",
    "confidence": "INFERRED",
    "confidence_score": 0.75,
@@ -46322,16 +47708,6 @@
   },
   {
    "source": "philo_source_of_opportunity",
-   "target": "strategy_pavel_first_principles",
-   "relation": "challenged_by",
-   "confidence": "INFERRED",
-   "confidence_score": 0.75,
-   "source_file": "00_philosophy/blueprint.yaml",
-   "source_location": null,
-   "weight": 0.75
-  },
-  {
-   "source": "philo_source_of_opportunity",
    "target": "strategy_matteo_conti_institutional",
    "relation": "operationalized_by",
    "confidence": "INFERRED",
@@ -46492,16 +47868,6 @@
   },
   {
    "source": "philo_step_back",
-   "target": "concept_trading_sessions_killzones",
-   "relation": "grounded_in",
-   "confidence": "INFERRED",
-   "confidence_score": 0.75,
-   "source_file": "00_philosophy/blueprint.yaml",
-   "source_location": null,
-   "weight": 0.75
-  },
-  {
-   "source": "philo_step_back",
    "target": "book_fooled_by_randomness",
    "relation": "supported_by",
    "confidence": "INFERRED",
@@ -46533,16 +47899,6 @@
   {
    "source": "philo_step_back",
    "target": "book_hour_between_dog_wolf",
-   "relation": "supported_by",
-   "confidence": "INFERRED",
-   "confidence_score": 0.75,
-   "source_file": "00_philosophy/blueprint.yaml",
-   "source_location": null,
-   "weight": 0.75
-  },
-  {
-   "source": "philo_step_back",
-   "target": "book_market_wizards",
    "relation": "supported_by",
    "confidence": "INFERRED",
    "confidence_score": 0.75,
@@ -46893,16 +48249,6 @@
   {
    "source": "philo_evidence_changes",
    "target": "strategy_ted_zhang_stage_analysis",
-   "relation": "operationalized_by",
-   "confidence": "INFERRED",
-   "confidence_score": 0.75,
-   "source_file": "00_philosophy/blueprint.yaml",
-   "source_location": null,
-   "weight": 0.75
-  },
-  {
-   "source": "philo_evidence_changes",
-   "target": "strategy_jeff_holden_momentum_model",
    "relation": "operationalized_by",
    "confidence": "INFERRED",
    "confidence_score": 0.75,
@@ -48792,16 +50138,6 @@
   },
   {
    "source": "philo_practical_doctrine",
-   "target": "synthesis_unified_framework",
-   "relation": "operationalized_by",
-   "confidence": "INFERRED",
-   "confidence_score": 0.75,
-   "source_file": "00_philosophy/blueprint.yaml",
-   "source_location": null,
-   "weight": 0.75
-  },
-  {
-   "source": "philo_practical_doctrine",
    "target": "strategy_fabio_valentini_amt_order_flow",
    "relation": "operationalized_by",
    "confidence": "INFERRED",
@@ -50074,16 +51410,6 @@
    "source": "principle_02_context_before_movement",
    "target": "book_secrets_bull_bear_markets",
    "relation": "supported_by",
-   "confidence": "INFERRED",
-   "confidence_score": 0.75,
-   "source_file": "00_philosophy/blueprint.yaml",
-   "source_location": null,
-   "weight": 0.75
-  },
-  {
-   "source": "principle_02_context_before_movement",
-   "target": "concept_liquidity_sweep_reversal",
-   "relation": "challenged_by",
    "confidence": "INFERRED",
    "confidence_score": 0.75,
    "source_file": "00_philosophy/blueprint.yaml",
@@ -52102,16 +53428,6 @@
   },
   {
    "source": "principle_06_do_not_force",
-   "target": "book_market_wizards",
-   "relation": "supported_by",
-   "confidence": "INFERRED",
-   "confidence_score": 0.75,
-   "source_file": "00_philosophy/blueprint.yaml",
-   "source_location": null,
-   "weight": 0.75
-  },
-  {
-   "source": "principle_06_do_not_force",
    "target": "strategy_pavel_first_principles",
    "relation": "challenged_by",
    "confidence": "INFERRED",
@@ -52733,16 +54049,6 @@
   {
    "source": "principle_07_respond_methodically",
    "target": "strategy_brando_options_swing",
-   "relation": "challenged_by",
-   "confidence": "INFERRED",
-   "confidence_score": 0.75,
-   "source_file": "00_philosophy/blueprint.yaml",
-   "source_location": null,
-   "weight": 0.75
-  },
-  {
-   "source": "principle_07_respond_methodically",
-   "target": "strategy_trader_kane_lab_model",
    "relation": "challenged_by",
    "confidence": "INFERRED",
    "confidence_score": 0.75,
@@ -54382,16 +55688,6 @@
   },
   {
    "source": "principle_12_process_not_money",
-   "target": "concept_trading_psychology",
-   "relation": "grounded_in",
-   "confidence": "INFERRED",
-   "confidence_score": 0.75,
-   "source_file": "00_philosophy/blueprint.yaml",
-   "source_location": null,
-   "weight": 0.75
-  },
-  {
-   "source": "principle_12_process_not_money",
    "target": "concept_trading_plan",
    "relation": "grounded_in",
    "confidence": "INFERRED",
@@ -54811,16 +56107,6 @@
    "weight": 0.75
   },
   {
-   "source": "question_repeatable_behaviors",
-   "target": "synthesis_idea_lineage",
-   "relation": "operationalized_by",
-   "confidence": "INFERRED",
-   "confidence_score": 0.75,
-   "source_file": "00_philosophy/blueprint.yaml",
-   "source_location": null,
-   "weight": 0.75
-  },
-  {
    "source": "question_define_conditions",
    "target": "philo_open_questions",
    "relation": "part_of",
@@ -55112,16 +56398,6 @@
   },
   {
    "source": "question_estimate_reliability",
-   "target": "mathbook_blitzstein_intro_probability",
-   "relation": "supported_by",
-   "confidence": "INFERRED",
-   "confidence_score": 0.75,
-   "source_file": "00_philosophy/blueprint.yaml",
-   "source_location": null,
-   "weight": 0.75
-  },
-  {
-   "source": "question_estimate_reliability",
    "target": "mathbook_statistical_consequences_fat_tails",
    "relation": "supported_by",
    "confidence": "INFERRED",
@@ -55144,16 +56420,6 @@
    "source": "question_estimate_reliability",
    "target": "book_fooled_by_randomness",
    "relation": "supported_by",
-   "confidence": "INFERRED",
-   "confidence_score": 0.75,
-   "source_file": "00_philosophy/blueprint.yaml",
-   "source_location": null,
-   "weight": 0.75
-  },
-  {
-   "source": "question_estimate_reliability",
-   "target": "mathbook_jaynes_probability_logic",
-   "relation": "challenged_by",
    "confidence": "INFERRED",
    "confidence_score": 0.75,
    "source_file": "00_philosophy/blueprint.yaml",
@@ -55203,16 +56469,6 @@
   {
    "source": "question_estimate_reliability",
    "target": "strategy_matteo_conti_institutional",
-   "relation": "operationalized_by",
-   "confidence": "INFERRED",
-   "confidence_score": 0.75,
-   "source_file": "00_philosophy/blueprint.yaml",
-   "source_location": null,
-   "weight": 0.75
-  },
-  {
-   "source": "question_estimate_reliability",
-   "target": "strategy_naoufel_taief_algorithmic",
    "relation": "operationalized_by",
    "confidence": "INFERRED",
    "confidence_score": 0.75,
@@ -55764,16 +57020,6 @@
    "source": "question_consistent_execution",
    "target": "book_market_wizards",
    "relation": "supported_by",
-   "confidence": "INFERRED",
-   "confidence_score": 0.75,
-   "source_file": "00_philosophy/blueprint.yaml",
-   "source_location": null,
-   "weight": 0.75
-  },
-  {
-   "source": "question_consistent_execution",
-   "target": "synthesis_consensus_conflicts",
-   "relation": "challenged_by",
    "confidence": "INFERRED",
    "confidence_score": 0.75,
    "source_file": "00_philosophy/blueprint.yaml",

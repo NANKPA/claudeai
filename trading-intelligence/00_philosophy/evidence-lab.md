@@ -353,7 +353,7 @@ With 37 cells per metric, about 1.9 would clear a 95% interval by chance alone e
 
 The in-sample row is also the *best of 32 cells*, so its numbers carry selection bias on top of sampling error: the interval describes sampling noise only, not the luck of being picked. Even so, an interval of [51.9, 67.6] on 145 trades is the honest size of what the sample knows.
 
-**Verdict: Supports.** With a genuine edge of +0.05R, 36% of 30-trade samples and 31% of 100-trade samples still look like losing strategies, and about 3,109 trades are needed before the evidence reliably separates the edge from zero.
+**Verdict: Supports.** With a genuine edge of +0.05R, 35.5% of 30-trade samples and 30.7% of 100-trade samples still look like losing strategies, and about 3,109 trades are needed before the evidence reliably separates the edge from zero.
 
 **What this does NOT show.** The simulated trades are independent and identically distributed; real trades are not (regimes change, S2), which makes the real problem harder, not easier. The empirical row describes one cell of one study, not a strategy anyone trades.
 
@@ -516,7 +516,7 @@ Break-even cost per side: **35.8 bp in-sample, none (the gross expectancy is alr
 | --- | --- | --- | --- |
 | S1 | III; P2–P3 | supports | OOS, a 1-ATR detour cut P(B) from 69% to 56% (uptrend) and 57% to 41% (other); no depth up to 3 ATR beat a memoryless null as a breakdown signal (also without the futures: supports); the regime at A shifted the whole curve (OOS gap 12 points unconditionally, 10 of them reproduced by the memoryless null). |
 | S2 | V, VI; P4 | supports | 11 of 74 conditional cells differed in-sample (≈4 expected by chance, before allowing for dependence); 1 held OOS, 10 weakened, vanished or reversed. |
-| S3 | VI (LLN); Q3 | supports | A true +0.05R edge looks like a loser in 36% of 30-trade samples; ≈3,109 trades needed for 80% power. |
+| S3 | VI (LLN); Q3 | supports | A true +0.05R edge looks like a loser in 35.5% of 30-trade samples; ≈3,109 trades needed for 80% power. |
 | S4 | XIV; P9 | supports | Same +EV edge (p = 0.35, 2.5R): a 50% drawdown in 1 of 10,000 simulated paths at 1% risk vs 9,997 of 10,000 at 10%; a 50% loss needs +100%. |
 | S5 | XVII, XX.4; P5 | supports | Best of 238 rules: Sharpe 0.63 IS → 0.80 OOS, but its edge over buy and hold went 0.18 → -0.01; DSR 0.78; no-signal winners averaged 0.52 vs 0.46 for holding. |
 | S6 | XI, XIII; P8 | supports | After 20 trades the +$7 strategy is behind 40% of the time; the −$4 twin is ahead 41%. |

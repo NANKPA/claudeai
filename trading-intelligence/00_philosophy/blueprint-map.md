@@ -74,16 +74,16 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - Monte Carlo probability of a 20% and a 50% drawdown at the chosen risk fraction, using the journal's own R-multiples.
 - Rule-adherence rate over time and its relation to outcome, to test whether following the process improves decisions.
 
-**Gaps in the knowledge base**
+**Gaps in the knowledge base** (as found during mapping; → marks what has been added since)
 - The owner has no trade record in the knowledge base yet, so no principle has been tested on the owner's own decisions.
 - There is no tick, order-book or COT data in the knowledge base, so the microstructure claims of Sections I and IV cannot be tested directly; the evidence lab uses daily bars.
-- Two sources named in Section XX have no node: Madhavan's microstructure survey and Kahneman & Tversky's 1979 prospect-theory paper (only Thinking, Fast and Slow is present).
+- Two sources named in Section XX have no node: Madhavan's microstructure survey and Kahneman & Tversky's 1979 prospect-theory paper (only Thinking, Fast and Slow is present). → Madhavan's survey is now `paper_madhavan_2000` in blueprint.yaml; the 1979 prospect-theory paper is now `paper_kahneman_tversky_1979`.
 - No concept note covers value vs price or fundamental valuation (Section XV) beyond the VWAP/POC idea of 'fair value' and macro analysis.
 - No empirical test of the philosophy as a whole exists; Section XIX itself says internal coherence is not proof of profitability.
-- Madhavan's microstructure survey and Kahneman and Tversky's prospect-theory paper, both named in Section XX, have no node in the allowed index.
+- Madhavan's microstructure survey and Kahneman and Tversky's prospect-theory paper, both named in Section XX, have no node in the allowed index. → Madhavan's survey is now `paper_madhavan_2000` in blueprint.yaml; the 1979 prospect-theory paper is now `paper_kahneman_tversky_1979`.
 - No audited or independently replicated track record exists in the KB for any strategy, so the philosophy's claim that the method can produce an edge is untested.
 - The KB has no study linking adherence to the philosophy's principles with trading outcomes.
-- The research papers Section XX points to (Madhavan's survey, Kahneman and Tversky's 1979 paper) have no linkable node in the allowed id index; only Kahneman's book and person node are available.
+- The research papers Section XX points to (Madhavan's survey, Kahneman and Tversky's 1979 paper) have no linkable node in the allowed id index; only Kahneman's book and person node are available. → Madhavan's survey is now `paper_madhavan_2000` in blueprint.yaml; the 1979 prospect-theory paper is now `paper_kahneman_tversky_1979`.
 - Reflexivity and market efficiency, the two strongest objections to Sections II and V, are not reconciled with the philosophy anywhere in the KB.
 
 ## I. The market is a relationship; price is its visible expression
@@ -123,16 +123,16 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - Use COT data to show commercials and speculators holding opposite net positions at the same prices, a direct measure of different participants meeting at one price.
 - Compare out-of-sample forecasts from price-only features with forecasts that add participant features (volume, delta, positioning).
 
-**Gaps in the knowledge base**
+**Gaps in the knowledge base** (as found during mapping; → marks what has been added since)
 - The knowledge base has no tick, Level 2 or COT data; the evidence lab uses daily bars only.
 - No concept note covers heterogeneous beliefs, hedging demand or 'agreeing to disagree', which are the core of the relationship idea.
-- Madhavan's microstructure survey, named in Section XX, has no node.
+- Madhavan's microstructure survey, named in Section XX, has no node. → Madhavan's survey is now `paper_madhavan_2000` in blueprint.yaml.
 
 ## II. The market as a system governed by rules (the system vs. my model of it)
 
 `philo_market_system_of_rules`
 
-*The market follows real rules that are complex and change over time (supply and demand, information, structure, liquidity, behaviour, economic conditions). No trader can know them fully, so the trader builds a model of the system. The model is not the system and must be tested against the market continually.*
+*The market operates within a system of rules, constraints and relationships that is complex and changes over time (supply and demand, information, structure, liquidity, behaviour, economic conditions). No trader can know them fully, so the trader builds a model of the system. The model is not the system and must be tested against the market continually.*
 
 **Grounded in**
 - **Market Microstructure** (`concept_market_microstructure`) — The institutional rules of trading (order types, matching, the spread) are the most concrete part of 'a system of rules and constraints'.
@@ -168,7 +168,7 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - Score the directional hypotheses recorded in the journal (Brier score) over time to measure how well the trader's model tracks the market.
 - Run rolling regressions of returns on liquidity, volatility and macro factors to show how their influence changes over time.
 
-**Gaps in the knowledge base**
+**Gaps in the knowledge base** (as found during mapping; → marks what has been added since)
 - No concept note covers model risk or model uncertainty (the gap between the system and the trader's model).
 - The evidence lab has no structural-break study.
 - Nothing in the knowledge base discusses the tension between Section II's independence claim and reflexivity.
@@ -213,7 +213,7 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - Test objective structure-change rules (Sperandeo's 1-2-3, a body-close CHoCH) as detectors: compare P(B) after adverse moves of equal depth with and without the rule firing.
 - Measure the hindsight gap: P(B) by deepest excursion (known only afterwards) against P(B) by depth touched (known in real time).
 
-**Gaps in the knowledge base**
+**Gaps in the knowledge base** (as found during mapping; → marks what has been added since)
 - The knowledge base has no tested, objective definition of 'the structure has changed'; concept_market_structure only suggests a fractal swing definition.
 - S1 uses daily bars and one context variable (a moving-average trend); there is no intraday or multi-timeframe version.
 - No rule says which timeframe counts as the 'broader' one.
@@ -259,7 +259,7 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - In the journal, record observation, interpretation, hypothesis and decision as separate fields, and count the stage at which errors start.
 - Check whether SMC 'institutional sweep' labels coincide with large aggressive prints in order-flow data.
 
-**Gaps in the knowledge base**
+**Gaps in the knowledge base** (as found during mapping; → marks what has been added since)
 - The knowledge base has no tick or order-flow dataset, so the section's microstructure claims are untested.
 - No study in the knowledge base measures how often inferences about intent (smart money, the composite operator) are right.
 - Beyond the formulas, no concept note covers price discovery or the information content of trades.
@@ -303,7 +303,7 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - Track a pattern's hit rate decade by decade to measure decay.
 - Pattern statistics by regime (failure rate, average move) in the style of Bulkowski.
 
-**Gaps in the knowledge base**
+**Gaps in the knowledge base** (as found during mapping; → marks what has been added since)
 - The knowledge base has no definition or metric for 'sufficiently similar' conditions.
 - Only one simple pattern (three lower closes) has been tested; the storyline frameworks (Wyckoff, AMD, stage analysis) have not.
 - There is no data on how edges decay after they are published or crowded.
@@ -352,8 +352,8 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - The section's own horizon example: P(up) over one hour against one day under the same condition.
 - A runs test or autocorrelation of trade outcomes, to check the independence the law of large numbers assumes.
 
-**Gaps in the knowledge base**
-- The knowledge base has no calibration or Brier-score tool.
+**Gaps in the knowledge base** (as found during mapping; → marks what has been added since)
+- The knowledge base has no calibration or Brier-score tool. → `tools/philosophy/journal_review.py` now scores calibration (Brier score and buckets).
 - formula_sheet has no Bayesian (beta-binomial) update formula, although the concept notes recommend Bayesian updating.
 - Nothing covers the law of large numbers when outcomes are dependent or non-stationary.
 - There is no intraday data to test the horizon dependence the section describes.
@@ -404,7 +404,7 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - Break-even cost: the cost per trade at which EV falls to zero (evidence-lab S7).
 - Expected log growth at the planned risk fraction, reported next to arithmetic EV.
 
-**Gaps in the knowledge base**
+**Gaps in the knowledge base** (as found during mapping; → marks what has been added since)
 - The knowledge base has no cost data per instrument (spreads, commissions, slippage).
 - Nothing records how many variants were tested, which the deflated Sharpe ratio needs.
 - The section's $7 example gives only averages; the knowledge base has no worked example of the same strategy's outcome variance or log growth.
@@ -451,7 +451,7 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - Compare out-of-sample decay (OOS/IS expectancy ratio) of setups with a written causal reason against purely data-mined variants to test whether the understanding leg improves persistence.
 - Recompute EV with costs at 1x and 2x realistic levels to see which setups survive.
 
-**Gaps in the knowledge base**
+**Gaps in the knowledge base** (as found during mapping; → marks what has been added since)
 - No rubric defines what makes an explanation 'defensible' or how to score the understanding leg.
 - Most of the 47 playbook notes state that no expectancy check is possible because win rate or R:R is missing, so the mathematics leg cannot be computed for them.
 - No per-instrument cost table (spread, commission, typical slippage) exists to feed the cost term.
@@ -497,10 +497,10 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - Rate clarity (1-5) before each potential trade and test whether clarity ratings predict outcomes.
 - Compare results on regime-tagged choppy or unclear days with clear-trend days to check whether standing aside on the former improves the equity curve.
 
-**Gaps in the knowledge base**
+**Gaps in the knowledge base** (as found during mapping; → marks what has been added since)
 - No objective definition of 'unclear': the regimes note gives detectors (ADX, Hurst, AMT balance) but no stand-aside thresholds.
-- The journal concept note has no field for no-trade decisions, so the cost of waiting cannot be measured.
-- No concept note on attention, screen time or overtrading; Barber and Odean's overtrading evidence is referenced in blueprint.yaml but has no node in the allowed index.
+- The journal concept note has no field for no-trade decisions, so the cost of waiting cannot be measured. → the journal's `decision` column records take / skip / wait.
+- No concept note on attention, screen time or overtrading; Barber and Odean's overtrading evidence is referenced in blueprint.yaml but has no node in the allowed index. → Barber & Odean (2000) is now `paper_barber_odean_2000`.
 - No KB data on how often large moves begin from conditions that looked unclear beforehand.
 
 ## X. When the evidence changes (manage risk first, then investigate)
@@ -548,7 +548,7 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - Compare live drawdowns and losing streaks with Monte Carlo bands from the backtest and count breaches.
 - Run change-point or rolling-expectancy tests on each setup's R-multiple series.
 
-**Gaps in the knowledge base**
+**Gaps in the knowledge base** (as found during mapping; → marks what has been added since)
 - No setup in the KB has a documented 'normal variation' band, such as the MAE distribution of its winners.
 - Structural-break and change-point detection appears only as a bullet in the time-series note, not as a worked procedure for trade results.
 - No data on how often price sweeps through structural stops and then reaches the original target.
@@ -596,7 +596,7 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - Report a Wilson interval on the win rate and the SQN of R-multiples, plus the number of trades needed for the interval to exclude breakeven.
 - Correlate rule-adherence rate with R per trade over rolling windows.
 
-**Gaps in the knowledge base**
+**Gaps in the knowledge base** (as found during mapping; → marks what has been added since)
 - No rubric scores decision quality independently of P&L; the playbooks that grade trades leave their grading criteria unspecified.
 - No pre-agreed thresholds for when a losing run counts as evidence that assumptions have failed; the Monte Carlo percentile is left open.
 - Sample-size guidance for fat-tailed, skewed R distributions is missing from the concept notes.
@@ -644,10 +644,10 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - Keep a rule-change log and measure what share of changes followed a documented test on N or more trades versus a short losing run.
 - Measure the R of trades taken after a daily loss limit would have ended the session.
 
-**Gaps in the knowledge base**
+**Gaps in the knowledge base** (as found during mapping; → marks what has been added since)
 - No KB note covers versioning a method: when a rule change is justified, how it is tested and how the old version is retired.
 - Links between emotion tags and outcomes rest on T4 practitioner heuristics with no data in the KB.
-- Prospect theory and the disposition effect are cited only through summaries; the underlying papers have no node in the allowed index.
+- Prospect theory and the disposition effect are cited only through summaries; the underlying papers have no node in the allowed index. → the 1979 prospect-theory paper is now `paper_kahneman_tversky_1979`.
 
 ## XIII. Follow the right decisions, not the money
 
@@ -685,7 +685,7 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - Compare the R of trades tagged as chasing a missed move with planned entries.
 - Record whether all seven Section XIII questions were answered before entry and test the completion rate against outcomes.
 
-**Gaps in the knowledge base**
+**Gaps in the knowledge base** (as found during mapping; → marks what has been added since)
 - No KB data shows how P&L visibility or profit targets change behaviour; hiding P&L is an untested practitioner heuristic.
 - No concept note on goal setting or incentive design; profit-target effects appear only in the prop-firm note.
 - The KB does not define what 'profitability' should mean as an objective (growth rate, drawdown-constrained return), beyond the Kelly growth criterion.
@@ -694,7 +694,7 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 
 `philo_capital_preservation`
 
-*Capital is the resource that buys future participation. Because even a positive-expectancy strategy meets unfavourable sequences, sizing, leverage, drawdowns and ruin must be managed so that being wrong never removes the ability to continue; losses are asymmetric, since a 50% loss needs a 100% gain to recover.*
+*Capital is the resource that buys future participation. Because even a positive-expectancy strategy meets unfavourable sequences, sizing, leverage, drawdowns and ruin must be managed so that being wrong does not automatically prevent future participation; losses are asymmetric, since a 50% loss needs a 100% gain to recover.*
 
 **Grounded in**
 - **Risk of Ruin & Drawdown Math** (`concept_risk_of_ruin_drawdown`) — The note gives the recovery formula 1/(1-DD) - 1 behind Section XIV's 50% to 100% example, plus streak damage under fixed-fractional risk and the gambler's-ruin approximation.
@@ -735,7 +735,7 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - Track portfolio heat (total open risk) and the average correlation of open positions against realised drawdowns.
 - Record drawdown depth and time to recover to check the loss asymmetry on the account's actual path.
 
-**Gaps in the knowledge base**
+**Gaps in the knowledge base** (as found during mapping; → marks what has been added since)
 - Most playbooks do not state risk per trade or daily limits, so the KB cannot compare preservation practices across them.
 - No guidance on choosing a fraction of Kelly when the win rate is a wide-interval estimate from a discretionary journal.
 - No per-instrument data on gap risk or slippage beyond stops.
@@ -784,7 +784,7 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - Compare reversion rates for moves with and without a fundamental catalyst, following Breitstein's criterion.
 - Journal every perceived discrepancy that was investigated, traded or rejected, with its outcome net of costs.
 
-**Gaps in the knowledge base**
+**Gaps in the knowledge base** (as found during mapping; → marks what has been added since)
 - The KB uses 'value' in at least three senses (auction value area, fundamental value, event-defined fair price) with no note reconciling them.
 - No concept note on fundamental valuation methods for single assets, such as cash-flow or relative valuation.
 - No empirical study in the KB of fair-value reversion rates by regime or after news.
@@ -832,9 +832,9 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - Condition dependence: expectancy per setup by pre-defined regime label, tested for a difference with a pre-specified interaction test rather than post-hoc slicing.
 - Invalidation discipline: fraction of losing trades closed because the recorded invalidation occurred versus for other reasons.
 
-**Gaps in the knowledge base**
-- The KB's journal concept note has no field for a pre-trade probability estimate or a timestamp rule against hindsight; the fuller template lives in 00_philosophy/journal-template.md, which has no node id.
-- Nothing in the KB covers forecast calibration scoring (Brier score, reliability diagrams), the natural test of recorded probability estimates.
+**Gaps in the knowledge base** (as found during mapping; → marks what has been added since)
+- The KB's journal concept note has no field for a pre-trade probability estimate or a timestamp rule against hindsight; the fuller template lives in 00_philosophy/journal-template.md, which has no node id. → `journal-template.md` is now a node (`framework_trading_journal`).
+- Nothing in the KB covers forecast calibration scoring (Brier score, reliability diagrams), the natural test of recorded probability estimates. → `tools/philosophy/journal_review.py` now scores calibration (Brier score and buckets).
 - No guidance on the minimum number of journal entries per condition before a 'performs well under X' conclusion is drawn, beyond the checklist's 30-instance rule of thumb.
 - No study in the KB shows that journaling improves trading results; support is practitioner (T2) and psychology literature.
 
@@ -885,8 +885,8 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - Performance by regime bucket using cut-offs fixed on in-sample data only.
 - Whether live drawdowns and losing streaks stay within the Monte Carlo percentile bands of the backtest.
 
-**Gaps in the knowledge base**
-- No KB note explains how to log the number of research trials so that deflated Sharpe or PBO can be computed; the evidence lab does this but has no node id.
+**Gaps in the knowledge base** (as found during mapping; → marks what has been added since)
+- No KB note explains how to log the number of research trials so that deflated Sharpe or PBO can be computed; the evidence lab does this but has no node id. → the evidence lab is now a node (`synthesis_evidence_lab`).
 - Most Chart Fanatics playbooks leave key terms undefined (for example 'displacement', 'balanced', 'expanded' volatility), so their rules cannot yet be coded and tested.
 - Cost and slippage assumptions are missing even from the two systematic frameworks (Matteo Conti and Naoufel Taief list them as unspecified).
 - The concept notes give the standard error of a win rate but no statistical-power guidance on how many trades a test needs.
@@ -932,7 +932,7 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - Logged no-trade decisions when the three elements disagreed, and the forward outcome of the skipped setups.
 - Frequency of each violation type over time, to find which principles are hardest to keep.
 
-**Gaps in the knowledge base**
+**Gaps in the knowledge base** (as found during mapping; → marks what has been added since)
 - The KB does not translate the principles into numeric thresholds (what risk fraction satisfies Principle 9, what sample satisfies Principle 5).
 - Principles 2 and 7 need an operational test of 'the structure has changed'; the playbooks that come closest leave it unspecified (for example Fabio Valentini's balance test).
 - There is no evidence beyond practitioner testimony that following such a rule set improves results.
@@ -982,7 +982,7 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - Q6: live versus backtest gap split into missed signals, slippage and rule violations.
 - For each hypothesis, a pre-registered falsification criterion and whether it was met.
 
-**Gaps in the knowledge base**
+**Gaps in the knowledge base** (as found during mapping; → marks what has been added since)
 - No strategy note in the KB states explicit falsification criteria.
 - There is no live-trading dataset in the KB; the evidence lab's own summary says Questions 1, 2, 5 and 6 remain mostly open, with only a handful of markets and two periods tested.
 - No measured transaction-cost data exists for any instrument or session.
@@ -1031,8 +1031,8 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - Inference: confidence intervals on win rate and expectancy for each setup.
 - Risk: Monte Carlo probability of ruin and drawdown at the chosen risk fraction.
 
-**Gaps in the knowledge base**
-- Madhavan's survey and Kahneman and Tversky's 1979 paper, both named in Section XX, have no linkable node in the allowed index.
+**Gaps in the knowledge base** (as found during mapping; → marks what has been added since)
+- Madhavan's survey and Kahneman and Tversky's 1979 paper, both named in Section XX, have no linkable node in the allowed index. → Madhavan's survey is now `paper_madhavan_2000` in blueprint.yaml; the 1979 prospect-theory paper is now `paper_kahneman_tversky_1979`.
 - The concept notes have no dedicated behavioural-finance entry for the disposition effect or overtrading research; it appears only inside the psychology note.
 - Of the backtest-overfitting literature only the deflated Sharpe paper is linkable; probability-of-backtest-overfitting and data-snooping papers are not nodes in the index.
 
@@ -1075,7 +1075,7 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - Whether profitable periods coincide with high adherence or with luck: compare adherence-weighted and unweighted expectancy.
 - Edge-validity checks: rolling out-of-sample expectancy per setup against its original estimate.
 
-**Gaps in the knowledge base**
+**Gaps in the knowledge base** (as found during mapping; → marks what has been added since)
 - The KB has no reconciliation of the manifesto's 'humble understanding' with reflexivity or with concentration-when-confident practice; the tensions are only implicit across notes.
 - No KB tool turns the manifesto's commitments into a periodic self-audit beyond the pre-trade checklist.
 
@@ -1117,7 +1117,7 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - Backtest entering on the break against entering on the retest, and on a touch against a close (the opening-range example), after costs.
 - Track the share of trades tagged as unplanned or chased over time.
 
-**Gaps in the knowledge base**
+**Gaps in the knowledge base** (as found during mapping; → marks what has been added since)
 - The knowledge base has no rubric for what makes an explanation 'defensible'.
 - No data compares entries backed by an explanation with momentum entries that have none.
 - The tension with trend following, which works without an explanation of conditions, is not addressed.
@@ -1160,7 +1160,7 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - A test of JJ Simon's three-loss rule: after three failed reversions in a session, is the EV of a fourth reversion negative?
 - Outcomes of identical pullback setups, grouped by Weinstein stage.
 
-**Gaps in the knowledge base**
+**Gaps in the knowledge base** (as found during mapping; → marks what has been added since)
 - The knowledge base has no rule for which timeframe counts as the 'broader' context.
 - The three-loss rule and the other structure-change heuristics are untested.
 - No study measures how much hindsight inflates the apparent accuracy of reading context.
@@ -1205,7 +1205,7 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - How often price sweeps the planned invalidation level and then reaches the target (the stop-run rate).
 - A comparison of structural stops and ATR-based stops on MAE and expectancy.
 
-**Gaps in the knowledge base**
+**Gaps in the knowledge base** (as found during mapping; → marks what has been added since)
 - The knowledge base has no data on stop slippage or gap losses.
 - No study measures how often structural invalidation levels are swept before the target is reached.
 - formula_sheet has no barrier-probability formula (the chance the target is reached before the stop), although triple-barrier labelling is mentioned.
@@ -1252,7 +1252,7 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - The number of conditions tried, with a multiple-testing correction (deflated Sharpe, false-discovery rate) applied to the conditional findings.
 - The stability of each conditional estimate across periods.
 
-**Gaps in the knowledge base**
+**Gaps in the knowledge base** (as found during mapping; → marks what has been added since)
 - The knowledge base lists regime detectors but defines no standard, measurable set of conditions (open question 2).
 - There is no multiple-testing tool for conditional cells beyond the deflated Sharpe ratio.
 - No minimum sample size per condition is set anywhere except the checklist's 30 instances per setup.
@@ -1300,7 +1300,7 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - Report skew, kurtosis and the share of total R that comes from the best 5% of trades.
 - Report the ratio of out-of-sample to in-sample expectancy.
 
-**Gaps in the knowledge base**
+**Gaps in the knowledge base** (as found during mapping; → marks what has been added since)
 - No shared dataset of trade outcomes for the 47 playbooks; most cannot be checked because win rate or R:R is missing.
 - No standard cost assumptions per market.
 - The pre-trade checklist's 30-trade minimum is a heuristic that is not justified for fat-tailed, skewed R distributions.
@@ -1343,10 +1343,10 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - Count trades outside the defined session window and their R.
 - Shadow-log no-trade days and estimate the expected value given up by waiting.
 
-**Gaps in the knowledge base**
+**Gaps in the knowledge base** (as found during mapping; → marks what has been added since)
 - No objective, testable definition of 'the evidence is unclear' in the KB.
 - No data compares anticipation and confirmation entries on the same setups, although the KB names this as a genuine conflict.
-- No record of skipped setups to estimate the cost of not forcing.
+- No record of skipped setups to estimate the cost of not forcing. → the journal's `decision` column records take / skip / wait.
 
 ## Principle 7: Respond to changed evidence methodically
 
@@ -1388,7 +1388,7 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - Record the price path after invalidation exits to estimate how often exits fall on detours.
 - Compare later expectancy of revised setups with unrevised ones.
 
-**Gaps in the knowledge base**
+**Gaps in the knowledge base** (as found during mapping; → marks what has been added since)
 - No KB procedure says what evidence, and how much, is required before revising a hypothesis.
 - No data on how often stops are run at structural invalidation levels.
 
@@ -1431,7 +1431,7 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - Score each trade's process before seeing the result and test whether process scores predict R over rolling samples.
 - Compute how many trades are needed before the confidence interval on expectancy excludes zero.
 
-**Gaps in the knowledge base**
+**Gaps in the knowledge base** (as found during mapping; → marks what has been added since)
 - No KB rubric for scoring decision quality; the playbooks that grade trades leave their criteria unspecified.
 - No guidance on blinding the process score from the outcome to avoid hindsight bias.
 
@@ -1481,7 +1481,7 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - Total open risk including correlated positions (portfolio heat) at each point in time.
 - Chosen risk fraction compared with an estimated Kelly fraction, with the estimate's uncertainty.
 
-**Gaps in the knowledge base**
+**Gaps in the knowledge base** (as found during mapping; → marks what has been added since)
 - Most Chart Fanatics playbooks leave risk per trade and daily or weekly limits 'not specified' (for example Gala Trades, Marci Silfrain, Clement Ang, Jared Tendler), so the KB has few concrete T2 sizing rules to test.
 - There is no KB data on how often and by how much stops are gapped through by instrument.
 - No KB guidance on shrinking size to reflect uncertainty in the edge estimate, beyond the fractional-Kelly heuristic.
@@ -1528,7 +1528,7 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - Rule changes made within a few days of a drawdown versus changes made at a scheduled review.
 - Compliance rate with session-stop rules.
 
-**Gaps in the knowledge base**
+**Gaps in the knowledge base** (as found during mapping; → marks what has been added since)
 - No KB data links emotion tags to performance; the psychology frameworks are practitioner heuristics (Tendler's 60/80/100% scale has no scoring method).
 - The KB has no operational test of when a method change is evidence-based rather than impulsive (for example a minimum sample or review cadence before a rule changes).
 - Behavioural-finance papers on the disposition effect and overtrading are not linkable nodes in the index.
@@ -1574,10 +1574,10 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - Monthly gap between live and backtest expectancy per setup.
 - Hypothesis log: number of hypotheses revised or retired, and the evidence that triggered each change.
 
-**Gaps in the knowledge base**
+**Gaps in the knowledge base** (as found during mapping; → marks what has been added since)
 - The KB gives no statistical method for journal review (minimum sample per slice, control for multiple comparisons).
 - There is no standard taxonomy of trading mistakes to make records comparable over time.
-- The full journal template in 00_philosophy has no node id, so the principle cannot be linked to it in the graph.
+- The full journal template in 00_philosophy has no node id, so the principle cannot be linked to it in the graph. → `journal-template.md` is now a node (`framework_trading_journal`).
 
 ## Principle 12: Follow the process, not the promise of money
 
@@ -1616,9 +1616,9 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - Days on which trading continued to reach a money target, and the R of trades taken after the target pressure began.
 - Forward outcomes of setups skipped because the process did not justify them.
 
-**Gaps in the knowledge base**
+**Gaps in the knowledge base** (as found during mapping; → marks what has been added since)
 - The KB has no evidence on how payout or profit-target incentives change trader behaviour.
-- Research on overtrading and the cost of trading activity (for example Barber and Odean) is not a linkable node in the index.
+- Research on overtrading and the cost of trading activity (for example Barber and Odean) is not a linkable node in the index. → Barber & Odean (2000) is now `paper_barber_odean_2000`.
 - No KB comparison exists between process grades and P&L for any strategy.
 
 ## Which market behaviours are genuinely repeatable?
@@ -1661,7 +1661,7 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - Replication rate of a behaviour across markets and non-overlapping periods.
 - Placebo test: the same rule on shuffled or simulated random-walk data, to estimate how often it 'works' by chance.
 
-**Gaps in the knowledge base**
+**Gaps in the knowledge base** (as found during mapping; → marks what has been added since)
 - The KB has no catalogue of independently replicated market behaviours with effect sizes.
 - Practitioner playbooks rarely give a sample size or win rate, so their behaviours cannot be checked for repeatability.
 - The evidence lab found only 1 of 11 in-sample conditional differences holding out of sample, on a handful of markets; broader evidence is missing.
@@ -1706,7 +1706,7 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - Observations per condition cell, against a minimum sample.
 - Whether the label changes the out-of-sample distribution of outcomes (for example a two-sample KS test).
 
-**Gaps in the knowledge base**
+**Gaps in the knowledge base** (as found during mapping; → marks what has been added since)
 - Many playbooks list the key condition as unspecified, for example an objective test for balance (Fabio Valentini), what a healthy market is (Ariel Hernandez) and expanded versus dead volatility (Dhesi).
 - The KB has no standard regime taxonomy with numeric thresholds shared across notes.
 - There is no guidance on testing the reliability of discretionary condition labels.
@@ -1748,9 +1748,9 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - Bootstrap probability that expectancy is zero or below.
 - Stability of the estimate across non-overlapping sub-periods.
 
-**Gaps in the knowledge base**
-- The KB has no calibration tools (Brier score, reliability diagrams) for checking probability estimates.
-- No concept note turns an edge size into the number of trades needed to detect it; the evidence lab's power calculation has no node id.
+**Gaps in the knowledge base** (as found during mapping; → marks what has been added since)
+- The KB has no calibration tools (Brier score, reliability diagrams) for checking probability estimates. → `tools/philosophy/journal_review.py` now scores calibration (Brier score and buckets).
+- No concept note turns an edge size into the number of trades needed to detect it; the evidence lab's power calculation has no node id. → the evidence lab is now a node (`synthesis_evidence_lab`).
 - Practitioner win-rate claims rarely state a sample size, so their reliability cannot be assessed.
 
 ## Does the advantage survive trading costs?
@@ -1792,7 +1792,7 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - Sensitivity of out-of-sample results to 1x, 2x and 3x the assumed costs.
 - Turnover times cost per trade compared with gross expectancy per period.
 
-**Gaps in the knowledge base**
+**Gaps in the knowledge base** (as found during mapping; → marks what has been added since)
 - The KB has no measured spread or slippage data by instrument or session.
 - Both systematic frameworks (Matteo Conti, Naoufel Taief) leave cost and slippage assumptions unspecified, and the evidence lab uses flat cost assumptions.
 - Financing and borrow costs appear only in the Kris Verma note; overnight financing for leveraged FX and futures is not covered.
@@ -1839,7 +1839,7 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - Share of time live drawdown spends outside the Monte Carlo percentile bands.
 - Performance before and after a behaviour became widely published.
 
-**Gaps in the knowledge base**
+**Gaps in the knowledge base** (as found during mapping; → marks what has been added since)
 - No Chart Fanatics strategy in the KB has a multi-regime test record.
 - There is no standard decay metric or benching threshold in the KB; the Naoufel Taief note itself leaves 'extended underperformance' undefined.
 - The adaptive-markets and post-publication-decay papers are not linkable nodes in the index; only Lo's book is.
@@ -1885,7 +1885,7 @@ Ids are given as `code` rather than wikilinks so this page does not duplicate th
 - Variance of risk per trade against the planned risk.
 - Behaviour after losses compared with baseline (trade frequency, size, setup grade).
 
-**Gaps in the knowledge base**
+**Gaps in the knowledge base** (as found during mapping; → marks what has been added since)
 - The KB has no data on any trader's live-versus-backtest execution gap.
 - There is no KB definition or threshold for 'consistent' execution.
 - No KB evidence compares discretionary and automated execution of the same rules.

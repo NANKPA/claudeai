@@ -53,6 +53,16 @@ Another reasonable version could come out differently. H2 is the clearest case. 
 not-supported, but it does not refute Section III, because Section III never claims that the size
 of an adverse move decides its meaning.
 
+**Whose claim each entry is.** Not every entry restates something the owner wrote. H1, H3, H5–H7,
+H9–H13, H17 and H19 restate claims or warnings in the philosophy's own text. H2 is a stronger
+reading that the philosophy does not make. H8 and H16 turn open question 3 and Section XVI's
+warning about hindsight into claims about this trader's records. H14, H15, H18 and H20 test rules
+and tools that this knowledge base built on top of the philosophy: the protocol's definition of a
+good decision, its step-back gates, its exit vocabulary, and `edge_lab.py`'s consistency check. H4
+is this knowledge base's proposal for the question H2 leaves open. A refutation of one of these
+built entries counts first against the knowledge base's operational version, and only then, as a
+suggestion for the owner to weigh, against the philosophy.
+
 **Four kinds of claim.**
 
 - *Market claims* (H1–H6, H9–H11, H19) are about how prices behaved. Only data can settle them.
@@ -111,9 +121,10 @@ what it could not.
   *above* the null. That is 1 of 20 comparisons, about what chance alone produces.
 - **What it means.** P(B) falls with depth for geometric reasons alone: from C the target is
   farther away and less time is left. On these data, depth added nothing beyond that geometry.
-  Measuring depth is the most common way of turning the owner's caution, that not every adverse
-  movement is merely a detour, into a rule, and it failed. So telling a breakdown from a detour needs something other than the size of the move,
-  which is what Principle 2 asks for. H4 is the next candidate.
+  Measuring depth is the simplest way of turning the owner's caution, that not every adverse
+  movement is merely a detour, into a rule, and it failed here. So telling a breakdown from a
+  detour needs something other than the size of the move, which is what Principle 2 asks for. H4
+  is the next candidate.
 
 ### H3. The context at A shapes the whole detour curve
 
@@ -489,7 +500,7 @@ eliminate hindsight bias by itself." All but H13 must be tested on the owner's o
 | H4 A break of structure, not depth, separates breakdowns from detours (`hypothesis_structure_break_marks_breakdown`) | untested | not yet tested (proposed S8) |
 | H5 Defined conditions change the odds (`hypothesis_conditioning_changes_odds`) | qualified | S2: 11 of 74 cells differed in-sample vs about 4 by chance; tests not independent |
 | H6 A conditional tendency has to be re-earned in each period (`hypothesis_conditional_tendencies_decay`) | supported | S2: 1 of 11 found cells held OOS, 10 weakened; `^GSPC` and `^NDX` baselines moved beyond noise |
-| H7 A few dozen trades cannot confirm a thin edge (`hypothesis_small_samples_cannot_confirm`) | supported | S3: a +0.05R edge looks like a loser in 35% of 30-trade samples; 3,109 trades for 80% power |
+| H7 A few dozen trades cannot confirm a thin edge (`hypothesis_small_samples_cannot_confirm`) | supported | S3: a +0.05R edge looks like a loser in 35.3% (exact 35.5%) of 30-trade samples; 3,109 trades for 80% power |
 | H8 My recorded probability estimates are calibrated (`hypothesis_estimates_are_calibrated`) | untested | not yet tested (journal) |
 | H9 Costs decide whether a selected short-horizon edge is worth trading (`hypothesis_edge_survives_costs`) | qualified | S7: IS break-even 35.8 bp/side; OOS gross already −25 bp, so costs were not the deciding factor |
 | H10 What wins in-sample loses most of its edge out of sample (`hypothesis_in_sample_winner_decays`) | supported | S5: edge over buy and hold 0.18 → −0.01; S7: +72 → −25 bp per trade |

@@ -1623,13 +1623,13 @@ def report_s3(s3: dict, s7: dict, fig: str) -> tuple[list[str], str]:
           f"picked. Even so, an interval of {ci_pct(*di['wilson'])} on {di['n']} trades is the honest size of "
           "what the sample knows.", ""]
     L += [f"**Verdict: {verdict_word(s3['verdict'])}.** With a genuine edge of {s3['true_ev']:+.2f}R, "
-          f"{pct(s3['rows'][1]['loser_exact'], 0)} of 30-trade samples and {pct(s3['rows'][2]['loser_exact'], 0)} "
+          f"{pct(s3['rows'][1]['loser_exact'], 1)} of 30-trade samples and {pct(s3['rows'][2]['loser_exact'], 1)} "
           f"of 100-trade samples still look like losing strategies, and about {pl.n_expectancy:,.0f} trades are "
           "needed before the evidence reliably separates the edge from zero.", ""]
     L += ["**What this does NOT show.** The simulated trades are independent and identically distributed; "
           "real trades are not (regimes change, S2), which makes the real problem harder, not easier. The "
           "empirical row describes one cell of one study, not a strategy anyone trades.", ""]
-    finding = (f"A true {s3['true_ev']:+.2f}R edge looks like a loser in {pct(s3['rows'][1]['loser_exact'], 0)} "
+    finding = (f"A true {s3['true_ev']:+.2f}R edge looks like a loser in {pct(s3['rows'][1]['loser_exact'], 1)} "
                f"of 30-trade samples; ≈{pl.n_expectancy:,.0f} trades needed for 80% power.")
     return L, finding
 

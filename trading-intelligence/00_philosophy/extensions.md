@@ -69,13 +69,14 @@ already set up as falsifiable hypotheses in [[synthesis_philosophy_hypotheses]].
 
 **Relation:** SHARPENS · **Touches:** [[philo_source_of_opportunity]] (VIII), [[philo_market_is_relationship]] (I), [[principle_01_understand_before_acting]]
 
-**The idea.** Section VIII asks for "a defensible explanation" but never says what makes an
-explanation defensible. The knowledge base offers one test: say who is on the other side of the
-trade, and why they are willing to be there. Section I already notes that people trade for
+**The idea.** Section VIII asks for "a defensible explanation" and says what it must cover: what the
+setup represents, why it may produce the outcome, and what could undermine it, specific enough to
+form a testable hypothesis. The knowledge base offers one further test: say who is on the other side
+of the trade, and why they are willing to be there. Section I already notes that people trade for
 different reasons. Some have a view, some are hedging, and some simply need to transact now. The
 edge note turns that into a checklist of causes: forced liquidation, hedging flow, clustered stops,
-a behavioural bias, a risk premium, or a lag in information. If a counterparty and its motive can
-be named, the understanding leg of Section VIII can be checked rather than just believed.
+a behavioural bias, a risk premium, or a lag in information. If a counterparty and its motive can be
+named, the understanding leg of Section VIII can be checked rather than just believed.
 
 The test also has a darker side. Microstructure theory says that market makers widen the spread
 to protect themselves from better-informed traders. A resting limit order fills most reliably on
@@ -232,13 +233,15 @@ therefore prefer less contested markets and horizons, and research never stops. 
 base also stresses selection. A strategy presented in public is the survivor of an invisible
 selection process, so it may already be crowded.
 
-The knowledge base's own pre-registered study points the same way (`evidence-lab.md`, study S2).
-Of the conditional cells on daily index data that differed in-sample, only one held its difference
-out of sample; most weakened, vanished or reversed. The knowledge base has no data on how fast an
-edge decays after it is published, so that remains an open question rather than a finding.
+The knowledge base's own pre-registered study points the same way (`evidence-lab.md`, study S2). Of
+the 11 conditional cells on daily index, gold and EUR/USD data that differed in-sample, only one
+held its difference out of sample; the other ten weakened (their out-of-sample intervals included
+zero), and none vanished or reversed. The knowledge base has no data on how fast an edge decays
+after it is published, so that remains an open question rather than a finding.
 
-The philosophy already asks for re-checking. What it lacks is a schedule for re-validation and a
-rule for retiring a strategy.
+The philosophy already asks for re-checking. Its manifesto (Section XXI) commits to "continually
+examine whether it remains valid". What it lacks is a schedule for re-validation and a rule for
+retiring a strategy.
 
 **Where the knowledge base carries it**
 - [[book_adaptive_markets]], [[person_andrew_lo]], [[concept_random_walk_efficient_markets]]: efficiency is ecological; edges appear, crowd and decay; assume most patterns are noise.
@@ -344,10 +347,11 @@ read off a backtest. At 50 trades and a 50% observed rate, one standard error is
 a 95% interval spans roughly 36% to 64%.
 
 The second is calibration. Section XVI already asks the trader to record the probability estimate
-behind each trade. Those records make a check possible that the philosophy does not yet request:
-did the trades labelled about 70% win about 70% of the time? The knowledge base flags the absence
-of a calibration tool (a reliability table or Brier score) as a gap. The hypotheses page sets the
-check up as a test.
+behind each trade. Those records make a check possible that the philosophy does not yet request: did
+the trades labelled about 70% win about 70% of the time? The mapping of the knowledge base found no
+calibration tool (a reliability table or Brier score) among its notes. This partition now supplies
+one: `tools/philosophy/journal_review.py` prints a calibration table and a Brier score from the
+journal's frozen `est_win_prob`, and the hypotheses page sets the check up as a test (H8).
 
 **Where the knowledge base carries it**
 - [[concept_probabilistic_thinking]]: Bayesian updating of the edge estimate; a 30-trade win rate has a wide interval.
@@ -367,7 +371,8 @@ check up as a test.
 **Relation:** EXTENDS · **Touches:** [[philo_recurring_storyline]] (V), [[principle_02_context_before_movement]], [[principle_04_conditional_probability]], [[question_define_conditions]]
 
 **The idea.** The philosophy asks for conditions that are "measurable and consistently
-identifiable" (open question 2) but names none. The knowledge base already has a working list:
+identifiable" (open question 2). It names candidate factors (volatility, trend, liquidity) but no
+measures or thresholds for them. The knowledge base already has a working list:
 
 - **Regime grid.** Trend versus range, crossed with low versus high volatility. The same setup can
   have opposite expectancy in different cells.
@@ -441,9 +446,10 @@ of strategy in the knowledge base.
 
 **Relation:** SHARPENS · **Touches:** [[philo_mathematics_sword]] (VII), [[philo_source_of_opportunity]] (VIII), [[principle_05_mathematical_justification]], [[question_survives_costs]]
 
-**The idea.** Section VII subtracts trading costs as one flat figure ($5 a trade). The knowledge
-base treats cost as one more expression of the relationship, so it varies with the conditions the
-trader is in:
+**The idea.** In its worked example, Section VII subtracts trading costs as one flat figure ($5 a
+trade), although Section XIX lists spreads, commissions, slippage, financing and execution
+conditions. The knowledge base treats cost as one more expression of the relationship, so it varies
+with the conditions the trader is in:
 
 - The spread is the price of immediacy, and it widens in fast markets and around news.
 - A stop becomes a market order in a book that is often thinning, which is why slippage is worst
@@ -522,8 +528,9 @@ drawdown limit, not the nominal account size. The knowledge base's simulation of
 
 **Relation:** EXTENDS · **Touches:** [[philo_source_of_opportunity]] (VIII), [[philo_capital_preservation]] (XIV), [[principle_06_do_not_force]], [[principle_09_protect_capital]]
 
-**The idea.** Section VIII treats an opportunity as present when its three elements agree and
-absent when they do not. Several sources instead size the position by how strong the evidence is.
+**The idea.** Section VIII treats the agreement of its three elements as the condition under which
+"an opportunity may exist", and their contradiction as a reason not to force a decision. Several
+sources instead size the position by how strong the evidence is.
 
 - **Jeff Holden (SMB)** allocates the daily stop by grade: up to 80% for A+, 30% for A, 15% for B,
   5% for C. He calls a C trade with A+ risk "hope with leverage."
@@ -612,8 +619,10 @@ produced by management rules.
   trade, so win rates from different sources are often not comparable.
 
 The unit to test is therefore setup plus management. Candace Lau's playbook makes this explicit:
-choose the profit-taking method in advance, then test which one works. The journal needs each
-trade's maximum adverse and favourable excursion (MAE and MFE) to make that test possible.
+choose the profit-taking method in advance, then test which one works. That test needs each trade's
+maximum adverse and favourable excursion (MAE and MFE). This partition's journal template already
+records them (`mae_r`, `mfe_r`) and marks pre-written management exits (`exit_reason` =
+`management`); individual management actions still go only in `lesson`.
 
 Section XVI uses the journal mainly to expose contradictions. Two review habits in the knowledge
 base would widen it. Steenbarger reviews what one does well as rigorously as the mistakes. Jeff
@@ -696,8 +705,9 @@ The practical answer is structural. Check state before the session. Use behaviou
 advance, such as Dhesi's two losses ending the day and prop-firm daily loss limits. Cut size when
 emotion runs high. These carry the discipline that willpower alone cannot.
 
-**Limits.** All of this is practitioner heuristics (T4). The knowledge base has no data linking
-emotion tags to outcomes.
+**Limits.** All of this is practitioner heuristics, from first-party playbooks (T2) and
+practitioner books, not tested evidence. The knowledge base has no data linking emotion tags to
+outcomes; H17 in the hypotheses page sets up that test on the journal.
 
 **Where the knowledge base carries it**
 - [[strategy_jared_tendler_psychology]], [[book_mental_game_of_trading]]: the zone map, warning signs, carryover, emotional expected value, the reset with a hard limit.
@@ -733,8 +743,10 @@ hours.
 
 The challenge to Section IX is about timing. A decision to step back made in the moment, on a
 feeling that things are "unclear," works as an untested discretionary filter whose cost no one ever
-sees. The knowledge base's journal has no field for trades not taken, so that cost cannot be
-measured yet.
+sees. This partition's journal template now gives every skip and wait its own row, and allows a
+mechanical counterfactual `result_r` for research (never for grading the skip), so the cost can be
+measured; H15 in the hypotheses page sets up the test. What remains unmeasurable is a step back
+taken on a feeling that was never written down as a condition.
 
 **Where the knowledge base carries it**
 - [[book_way_of_the_turtle]], [[concept_trend_following]]: failed Turtles skipped signals; a few outlier trends carry the results.

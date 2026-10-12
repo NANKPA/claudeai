@@ -92,9 +92,10 @@ rebuilt afterwards so that it looks more logical. So:
 
 - Live decisions go in the live journal. Forward (paper) tests and backtests
   go in **separate files with the same 39 columns**. Mixing them would blend
-  real execution with hypothetical execution, which is the separation
-  Section XVII ([[philo_scientific_method]]) asks for. In backtest files the
-  emotional columns are `na`.
+  real execution with hypothetical execution. Keeping them apart follows
+  Section XVII ([[philo_scientific_method]]), which separates developing a
+  method from evaluating it and asks for results under realistic
+  conditions. In backtest files the emotional columns are `na`.
 - Copy the template, then delete the two `EXAMPLE-` rows from the working
   file. The `EXAMPLE-` prefix in `setup_id` marks them so that they can
   also be filtered out.

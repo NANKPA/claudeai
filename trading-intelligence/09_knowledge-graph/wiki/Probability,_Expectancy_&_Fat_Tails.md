@@ -1,70 +1,65 @@
 # Probability, Expectancy & Fat Tails
 
-> 62 nodes · cohesion 0.06
+> 36 nodes · cohesion 0.08
 
 ## Key Concepts
 
-- **Probability, Distributions & Fat Tails** (38 connections) — `07_concepts/probability-fat-tails.md`
-- **Probabilistic Thinking (thinking in bets)** (29 connections) — `07_concepts/probabilistic-thinking.md`
-- **Expectancy (expected value per trade)** (24 connections) — `07_concepts/expectancy.md`
-- **Risk:Reward & R-Multiples** (14 connections) — `07_concepts/risk-reward-r-multiples.md`
-- **Nassim Nicholas Taleb** (11 connections) — `03_legends-authorities/people.yaml`
+- **Probability, Distributions & Fat Tails** (51 connections) — `07_concepts/probability-fat-tails.md`
+- **Statistical Consequences of Fat Tails** (18 connections) — `06_mathematics-foundations/math-books.yaml`
+- **Nassim Nicholas Taleb** (14 connections) — `03_legends-authorities/people.yaml`
+- **The Black Swan** (11 connections) — `05_books-top-100/books.yaml`
+- **Probability Theory: The Logic of Science** (10 connections) — `06_mathematics-foundations/math-books.yaml`
+- **EconTalk** (9 connections) — `02_podcasts-interviews/podcasts.yaml`
 - **Track A — Probability & Statistics** (9 connections) — `06_mathematics-foundations/math-books.yaml`
-- **Van K. Tharp** (8 connections) — `03_legends-authorities/people.yaml`
-- **Fooled by Randomness** (7 connections) — `05_books-top-100/summaries/fooled-by-randomness.md`
-- **Trade Your Way to Financial Freedom** (7 connections) — `05_books-top-100/summaries/trade-your-way-to-financial-freedom.md`
-- **Trading in the Zone** (7 connections) — `05_books-top-100/summaries/trading-in-the-zone.md`
-- **Benoit Mandelbrot** (7 connections) — `03_legends-authorities/people.yaml`
-- **Best Loser Wins** (6 connections) — `05_books-top-100/summaries/best-loser-wins.md`
-- **Quantitative Risk Management** (6 connections) — `06_mathematics-foundations/math-books.yaml`
-- **Mark Douglas** (6 connections) — `03_legends-authorities/people.yaml`
-- **The Black Swan** (5 connections) — `05_books-top-100/books.yaml`
-- **The Definitive Guide to Position Sizing** (5 connections) — `05_books-top-100/books.yaml`
-- **The (Mis)Behavior of Markets** (5 connections) — `05_books-top-100/books.yaml`
-- **Introduction to Probability** (5 connections) — `06_mathematics-foundations/math-books.yaml`
+- **Introduction to Probability** (8 connections) — `06_mathematics-foundations/math-books.yaml`
+- **Statistical Inference** (7 connections) — `06_mathematics-foundations/math-books.yaml`
+- **Antifragile** (6 connections) — `05_books-top-100/books.yaml`
+- **Statistics and Data Analysis for Financial Engineering** (5 connections) — `06_mathematics-foundations/math-books.yaml`
 - **EconTalk — Nassim Taleb episodes (Black Swan, fat tails, skin in the game)** (5 connections) — `06_mathematics-foundations/lectures.yaml`
-- **Antifragile** (4 connections) — `05_books-top-100/books.yaml`
-- **When Genius Failed** (4 connections) — `05_books-top-100/books.yaml`
-- **Statistical Inference** (4 connections) — `06_mathematics-foundations/math-books.yaml`
-- **An Introduction to Probability Theory and Its Applications (Vol. I)** (4 connections) — `06_mathematics-foundations/math-books.yaml`
+- **Harvard Stat 110: Probability — Joe Blitzstein** (5 connections) — `06_mathematics-foundations/lectures.yaml`
+- **Against the Gods** (4 connections) — `05_books-top-100/books.yaml`
 - **Fifty Challenging Problems in Probability with Solutions** (4 connections) — `06_mathematics-foundations/math-books.yaml`
-- **Probability Theory: The Logic of Science** (4 connections) — `06_mathematics-foundations/math-books.yaml`
-- *... and 37 more nodes in this community*
+- **A Practical Guide to Quantitative Finance Interviews** (4 connections) — `06_mathematics-foundations/math-books.yaml`
+- **3Blue1Brown — Bayes theorem, the geometry of changing beliefs** (4 connections) — `06_mathematics-foundations/lectures.yaml`
+- **E. T. Jaynes** (4 connections) — `03_legends-authorities/people.yaml`
+- **Dynamic Hedging** (3 connections) — `05_books-top-100/books.yaml`
+- **Heard on the Street** (3 connections) — `06_mathematics-foundations/math-books.yaml`
+- **Can a Phone Be a Cow? (with Philip Auerswald)** (3 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
+- **3Blue1Brown — But what is the Central Limit Theorem?** (2 connections) — `06_mathematics-foundations/lectures.yaml`
+- **Annie Duke on the Power of Quitting** (2 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
+- **Nassim Nicholas Taleb on the Pandemic** (2 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
+- **Grant Sanderson** (2 connections) — `06_mathematics-foundations/lectures.yaml`
+- *... and 11 more nodes in this community*
 
 ## Relationships
 
-- [Psychology, Plan & Discipline](Psychology,_Plan_&_Discipline.md) (27 shared connections)
-- [Backtesting, ML & Edge Validation](Backtesting,_ML_&_Edge_Validation.md) (21 shared connections)
-- [Trend Following & the Turtles](Trend_Following_&_the_Turtles.md) (12 shared connections)
-- [Growth-Stock Momentum (CANSLIM→VCP→EP)](Growth-Stock_Momentum_CANSLIM→VCP→EP.md) (8 shared connections)
-- [Kelly, Sizing & Money Management](Kelly,_Sizing_&_Money_Management.md) (7 shared connections)
-- [Microstructure & Optimal Execution](Microstructure_&_Optimal_Execution.md) (7 shared connections)
+- [The Philosophy of the Relationship](The_Philosophy_of_the_Relationship.md) (50 shared connections)
+- [Psychology, Plan & Discipline](Psychology,_Plan_&_Discipline.md) (15 shared connections)
+- [Risk of Ruin & Drawdown Math](Risk_of_Ruin_&_Drawdown_Math.md) (7 shared connections)
+- [Backtesting, ML & Edge Validation](Backtesting,_ML_&_Edge_Validation.md) (7 shared connections)
 - [Stochastic Calculus, Options & Derivatives](Stochastic_Calculus,_Options_&_Derivatives.md) (6 shared connections)
-- [Smart Money / ICT & Liquidity](Smart_Money_-_ICT_&_Liquidity.md) (5 shared connections)
-- [Macro, Fundamentals & Reflexivity](Macro,_Fundamentals_&_Reflexivity.md) (5 shared connections)
-- [Classical Charting & Patterns](Classical_Charting_&_Patterns.md) (3 shared connections)
-- [Auction Market Theory & Order Flow](Auction_Market_Theory_&_Order_Flow.md) (2 shared connections)
+- [Leverage, Margin, Pips & Lots](Leverage,_Margin,_Pips_&_Lots.md) (3 shared connections)
+- [Auction Market Theory & Order Flow](Auction_Market_Theory_&_Order_Flow.md) (3 shared connections)
+- [Reflexivity / We Study Billionaires](Reflexivity_-_We_Study_Billionaires.md) (3 shared connections)
+- [An Introduction to Probability Theory…](An_Introduction_to_Probability_Theory….md) (2 shared connections)
+- [Candlesticks & Price Action](Candlesticks_&_Price_Action.md) (2 shared connections)
+- [Correlation & Portfolio Risk](Correlation_&_Portfolio_Risk.md) (2 shared connections)
+- [Edge](Edge.md) (2 shared connections)
 
 ## Source Files
 
+- `02_podcasts-interviews/podcast-episodes.scraped.yaml`
 - `02_podcasts-interviews/podcasts.yaml`
 - `03_legends-authorities/people.yaml`
 - `05_books-top-100/books.yaml`
-- `05_books-top-100/summaries/best-loser-wins.md`
-- `05_books-top-100/summaries/fooled-by-randomness.md`
-- `05_books-top-100/summaries/trade-your-way-to-financial-freedom.md`
-- `05_books-top-100/summaries/trading-in-the-zone.md`
 - `06_mathematics-foundations/lectures.yaml`
 - `06_mathematics-foundations/math-books.yaml`
-- `07_concepts/expectancy.md`
-- `07_concepts/probabilistic-thinking.md`
 - `07_concepts/probability-fat-tails.md`
-- `07_concepts/risk-reward-r-multiples.md`
 
 ## Audit Trail
 
-- EXTRACTED: 203 (98%)
-- INFERRED: 5 (2%)
+- EXTRACTED: 121 (76%)
+- INFERRED: 39 (24%)
 - AMBIGUOUS: 0 (0%)
 
 ---

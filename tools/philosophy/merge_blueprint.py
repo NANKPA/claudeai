@@ -143,6 +143,28 @@ def write_blueprint(mapped: dict, exts: list[dict], exemplars: dict[str, list[st
     return counts
 
 
+# Gaps the mapping agents reported that later work in 00_philosophy has since addressed. Each rule is a
+# list of alternatives; an alternative is a tuple of substrings that must ALL appear in the gap text.
+RESOLVED_GAPS = [
+    ([("madhavan",)], "Madhavan's survey is now `paper_madhavan_2000` in blueprint.yaml"),
+    ([("kahneman", "1979"), ("prospect", "paper")], "the 1979 prospect-theory paper is now `paper_kahneman_tversky_1979`"),
+    ([("barber",)], "Barber & Odean (2000) is now `paper_barber_odean_2000`"),
+    ([("calibration", "tool"), ("brier",), ("calibration scoring",)],
+     "`tools/philosophy/journal_review.py` now scores calibration (Brier score and buckets)"),
+    ([("no empirical study", "philosophy"), ("no study", "philosophy's claims")],
+     "the evidence lab (`evidence-lab.md`) now tests seven of the philosophy's claims on daily data"),
+    ([("evidence lab", "no node"), ("power calculation", "no node")], "the evidence lab is now a node (`synthesis_evidence_lab`)"),
+    ([("journal template", "no node"), ("journal", "no node id")], "`journal-template.md` is now a node (`framework_trading_journal`)"),
+    ([("no-trade",), ("skipped setups",), ("no record of skip",)], "the journal's `decision` column records take / skip / wait"),
+]
+
+
+def gap_status(text: str) -> str:
+    t = text.lower()
+    notes = [note for alts, note in RESOLVED_GAPS if any(all(k in t for k in alt) for alt in alts)]
+    return f" → {'; '.join(notes)}." if notes else ""
+
+
 def write_map_md(mapped: dict, exts: list[dict], labels: dict[str, str], order: list[str], dropped: list[str],
                  rejected: list[dict] = ()) -> None:
     lab = lambda i: labels.get(i, i).split(" (")[0]  # noqa: E731
@@ -177,7 +199,8 @@ def write_map_md(mapped: dict, exts: list[dict], labels: dict[str, str], order: 
         if m.get("measurable_as"):
             L += ["**How it could be measured**"] + [f"- {x}" for x in m["measurable_as"]] + [""]
         if m.get("gaps"):
-            L += ["**Gaps in the knowledge base**"] + [f"- {x}" for x in m["gaps"]] + [""]
+            L += ["**Gaps in the knowledge base** (as found during mapping; → marks what has been added since)"]
+            L += [f"- {x}{gap_status(x)}" for x in m["gaps"]] + [""]
     if exts:
         L += ["## Extension links", "",
               "Ideas from [[synthesis_philosophy_extensions]] that add, sharpen or challenge parts of the philosophy.", "",
