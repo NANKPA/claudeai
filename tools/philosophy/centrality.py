@@ -20,8 +20,9 @@ Usage: python3 tools/philosophy/centrality.py
 from __future__ import annotations
 
 import json
+import random
 import sys
-from collections import Counter
+from collections import Counter, defaultdict
 from pathlib import Path
 
 import networkx as nx
@@ -69,6 +70,58 @@ def contracted(G: nx.Graph, philo: set[str]) -> nx.Graph:
 
 def short(label: str) -> str:
     return (label or "").split(" (")[0].split(" — ")[0]
+
+
+def community_units(G: nx.Graph, philo: set[str], names: dict) -> list[dict]:
+    """Every community contracted to one unit (the philosophy is one of them). For each unit: weighted
+    PageRank and betweenness on the community graph, the number of other communities it links to, and
+    its participation coefficient P = 1 - sum_c (w_c / W)^2 (Guimera & Amaral), which is near 1 when a
+    unit's outside links are spread evenly over many communities and near 0 when they go to one."""
+    unit = {n: ("PHILOSOPHY" if n in philo else G.nodes[n]["community"]) for n in G}
+    CG = nx.Graph()
+    CG.add_nodes_from(set(unit.values()))
+    for u, v in G.edges:
+        a, b = unit[u], unit[v]
+        if a != b:
+            CG.add_edge(a, b, weight=CG.get_edge_data(a, b, {}).get("weight", 0) + 1)
+    for _, _, d in CG.edges(data=True):
+        d["dist"] = 1.0 / d["weight"]
+    pr = nx.pagerank(CG, weight="weight")
+    bt = nx.betweenness_centrality(CG, weight="dist")
+    size = Counter(unit.values())
+    rows = []
+    for c in CG:
+        w = [d["weight"] for _, _, d in CG.edges(c, data=True)]
+        W = sum(w)
+        rows.append({"unit": c, "name": "The Philosophy of the Relationship" if c == "PHILOSOPHY" else names.get(c, str(c)),
+                     "size": size[c], "outside_links": W, "communities_linked": len(w),
+                     "participation": round(1 - sum((x / W) ** 2 for x in w), 3) if W else 0.0,
+                     "pagerank": pr[c], "betweenness": bt[c]})
+    for key in ("pagerank", "betweenness", "participation"):
+        for i, r in enumerate(sorted(rows, key=lambda r: -r[key]), 1):
+            r[f"{key}_rank"] = i
+    return sorted(rows, key=lambda r: r["pagerank_rank"])
+
+
+def random_baseline(G: nx.Graph, philo: set[str], trials: int = 200, seed: int = 11) -> dict:
+    """Contract random node sets of the philosophy's size (drawn from the rest of the graph) and rank
+    the merged node by PageRank, to show how much of the philosophy's rank merging alone explains."""
+    rest = G.subgraph([n for n in G if n not in philo]).copy()
+    pool = sorted(rest)
+    rng = random.Random(seed)
+    ranks, reach2 = [], []
+    for _ in range(trials):
+        sample = set(rng.sample(pool, len(philo)))
+        H = contracted(rest, sample)
+        pr = nx.pagerank(H)
+        ranks.append(rank_of(pr, SUPER))
+        dist = nx.single_source_shortest_path_length(H, SUPER, cutoff=2)
+        reach2.append(100 * sum(1 for d in dist.values() if 0 < d <= 2) / (H.number_of_nodes() - 1))
+    ranks.sort()
+    reach2.sort()
+    return {"trials": trials, "set_size": len(philo), "median_rank": ranks[len(ranks) // 2],
+            "best_rank": ranks[0], "share_rank_1": sum(r == 1 for r in ranks) / trials,
+            "median_reach2": round(reach2[len(reach2) // 2], 1), "p95_reach2": round(reach2[int(0.95 * len(reach2))], 1)}
 
 
 def compute(G: nx.Graph, names: dict) -> dict:
@@ -135,7 +188,11 @@ def compute(G: nx.Graph, names: dict) -> dict:
     nodes_tbl.sort(key=lambda r: r["pagerank_rank"])
 
     top_pr = sorted(pr_h, key=lambda n: -pr_h[n])[:12]
+    units = community_units(G, philo, names)
+    baseline = random_baseline(G, philo)
     return {
+        "units": units,
+        "baseline": baseline,
         "graph": {"nodes": n_total, "edges": G.number_of_edges(), "communities": len(other_comms) + 1, "philosophy_nodes": len(philo)},
         "root": {"degree": deg[ROOT_ID], "pagerank_rank": rank_of(pr, ROOT_ID), "betweenness_rank": rank_of(bt, ROOT_ID)},
         "super": {"pagerank_rank": rank_of(pr_h, SUPER), "betweenness_rank": rank_of(bt_h, SUPER),
@@ -149,6 +206,32 @@ def compute(G: nx.Graph, names: dict) -> dict:
         "bridges": [(c, G.nodes[c]["label"], a, b) for c, a, b in bridges[:15]],
         "philosophy_community": names.get(philo_comm),
     }
+
+
+def fair_comparisons(res: dict) -> list[str]:
+    b, units = res["baseline"], res["units"]
+    ph = next(u for u in units if u["unit"] == "PHILOSOPHY")
+    n = len(units)
+    L = ["## Fair comparison 1: every community as one unit", "",
+         f"All {n} communities contracted to one node each, the philosophy among them. Links between units are "
+         "weighted by how many edges join them.", "",
+         f"The philosophy ranks **#{ph['pagerank_rank']} of {n} by PageRank**, **#{ph['betweenness_rank']} by "
+         f"betweenness** and **#{ph['participation_rank']} by participation** (participation {ph['participation']}: "
+         f"its {ph['outside_links']} outside links reach {ph['communities_linked']} of the other {n - 1} communities).", "",
+         "| Rank (PageRank) | Community | Nodes | Outside links | Communities linked | Participation | Betweenness rank |",
+         "|---|---|---|---|---|---|---|"]
+    for u in units[:12]:
+        name = f"**{u['name']}**" if u["unit"] == "PHILOSOPHY" else u["name"]
+        L.append(f"| {u['pagerank_rank']} | {name} | {u['size']} | {u['outside_links']} | {u['communities_linked']} | "
+                 f"{u['participation']} | {u['betweenness_rank']} |")
+    L += ["", "## Fair comparison 2: random sets of the same size", "",
+          f"{b['trials']} random sets of {b['set_size']} nodes from the rest of the graph, each contracted into one "
+          f"node. Median PageRank rank of the merged random set: **#{b['median_rank']}** (best #{b['best_rank']}; "
+          f"rank #1 in {b['share_rank_1']:.0%} of trials). Median reach within 2 links: **{b['median_reach2']}%** "
+          f"(95th percentile {b['p95_reach2']}%), against **{res['super']['reach_pct'][2]}%** for the philosophy.", "",
+          "So part of the philosophy's headline rank comes from merging alone; the part that does not is what the "
+          "comparison with the random sets and with the other communities shows.", ""]
+    return L
 
 
 def render(res: dict, G: nx.Graph) -> str:
@@ -180,9 +263,10 @@ def render(res: dict, G: nx.Graph) -> str:
          "The root note alone (`philosophy_relationship`): "
          f"degree {r['degree']}, PageRank rank #{r['pagerank_rank']}, betweenness rank #{r['betweenness_rank']}.", "",
          "How to read this: PageRank asks \"how much of the graph's linking flows into this node\"; betweenness asks "
-         "\"how many shortest paths between other ideas pass through it\". A high betweenness rank for the contracted "
-         "philosophy means it works as a bridge: it joins communities (microstructure, probability, risk, psychology, "
-         "practitioner playbooks) that are otherwise only loosely connected.", "",
+         "\"how many shortest paths between other ideas pass through it\". **Caveat:** contracting dozens of nodes into "
+         "one adds up their links, so a merged unit outranks single nodes almost automatically. The two fair "
+         "comparisons below control for that.", "",
+         *fair_comparisons(res),
          "## The most central nodes when the philosophy counts as one", "",
          "| # | Node | PageRank |", "|---|---|---|"]
     for i, (n, v) in enumerate(s["top_pagerank"], 1):

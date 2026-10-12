@@ -8228,5 +8228,105 @@
     }
    ]
   }
+ ],
+ "rejected": [
+  {
+   "node": "philo_recurring_storyline",
+   "id": "concept_wyckoff_method",
+   "key": "grounded_in",
+   "reason": "The why calls Wyckoff's accumulation-markup-distribution-markdown cycle the knowledge base's 'oldest' recurring storyline, but the KB says otherwise: the Wyckoff note lists derived_from: [concept_dow_theory], and the Dow Theory note (c. 1900-1902) says its three primary-trend phases 'anticipate Wyckoff and ICT's AMD'.",
+   "lens": "fidelity"
+  },
+  {
+   "node": "philo_recurring_storyline",
+   "id": "strategy_steven_dux_small_cap_short",
+   "key": "operationalized_by",
+   "reason": "The playbook breaks out only the opening push by float band (30-35% on 1-2M floats, 20-25% on 5-10M floats); the fade is a single figure (about 24-26%, average risk about 7%) with no float split, so the claim that it quantifies the 'opening push, fade' separately for each float band is not in the note.",
+   "lens": "fidelity"
+  },
+  {
+   "node": "philo_recurring_storyline",
+   "id": "concept_amd_power_of_three",
+   "key": "grounded_in",
+   "reason": "Section V does not rest on AMD: the note models every candle and session as the same three phases with an assumed 'manipulation' intent, which is the 'every new chapter reproduces the previous one' reading Section V (and Section IV on inferring intent) warns against, and the storyline lineage is already covered by the Wyckoff link and the Tanja playbook.",
+   "lens": "relevance"
+  },
+  {
+   "node": "philo_decisions_not_money",
+   "id": "concept_prop_firm_risk_rules",
+   "key": "grounded_in",
+   "reason": "Section XIII does not rest on prop-firm evaluation rules; the note gives the point only as one table row ('Profit target encourages over-aggression near deadlines'), so it is at most an illustration, and filing it as a foundation misleads.",
+   "lens": "relevance"
+  },
+  {
+   "node": "philo_decisions_not_money",
+   "id": "book_market_wizards",
+   "key": "supported_by",
+   "reason": "The cited finding ('methods differ wildly; risk control does not') is about trading methods, not about following decisions rather than money; it says nothing about the pursuit of money distorting judgment and could be attached equally to XII, XIV or any section.",
+   "lens": "relevance"
+  },
+  {
+   "node": "philo_decisions_not_money",
+   "id": "strategy_jj_simon_fair_pricing",
+   "key": "challenged_by",
+   "reason": "The pass-rate and cost-per-funded-account calculation is a systematic expected-value check of whether the return justifies the risk, which Section XIII endorses, and XIII already says 'profitability remains the objective of a trading system', so the cited evidence does not challenge the section.",
+   "lens": "relevance"
+  },
+  {
+   "node": "principle_08_decision_quality_not_outcome",
+   "id": "strategy_dhesi_liquidity_inversion",
+   "key": "operationalized_by",
+   "reason": "In Dhesi's playbook, rule 12 calls a breakeven-stopped runner a success because half the position was already trimmed at the first target ('the model delivered the base hit'), so it is an outcome-accounting rule for trade management and does not separate decision quality from outcome.",
+   "lens": "relevance"
+  },
+  {
+   "node": "philo_manifesto",
+   "id": "concept_reflexivity",
+   "key": "challenged_by",
+   "reason": "'I will not attempt to control the market' is a commitment not to force trades, not a claim that the trader stands outside the market (the manifesto opens by calling the market a relationship between participants), so the stated tension misreads the line; the real reflexivity tension is Section II's independence claim, which the whole-philosophy node already links.",
+   "lens": "relevance"
+  },
+  {
+   "node": "question_define_conditions",
+   "id": "concept_liquidity",
+   "key": "grounded_in",
+   "reason": "The liquidity Section XIX names is market liquidity measured by depth or volume, but concept_liquidity is about SMC/ICT stop pools and sweeps; its first lines send that 'microstructure liquidity' sense to concept_market_microstructure, so the link points to the wrong meaning.",
+   "lens": "relevance"
+  },
+  {
+   "node": "question_survives_costs",
+   "id": "concept_liquidity",
+   "key": "grounded_in",
+   "reason": "The why relies on thin liquidity widening spreads and slippage, but this note only covers where stop orders cluster and how sweeps work, with nothing on spreads or slippage; that sense of liquidity lives in concept_market_microstructure, which is already linked here.",
+   "lens": "relevance"
+  },
+  {
+   "node": "question_define_conditions",
+   "id": "synthesis_consensus_conflicts",
+   "key": "challenged_by",
+   "reason": "The note's discretionary-vs-systematic row is about trading style, not how to define conditions, and it resolves the conflict with a systematic filter and sizing on top of discretionary setups (meta-labeling), which supports measurable conditions rather than challenging the need for them.",
+   "lens": "relevance"
+  },
+  {
+   "node": "question_survives_costs",
+   "id": "strategy_jj_simon_fair_pricing",
+   "key": "operationalized_by",
+   "reason": "The $100 evaluation / 25% pass rate / $400 per funded account sum is about the economics of prop-firm access, not the spreads, commissions, slippage, financing and execution costs the question asks an edge to survive, so it only loosely puts this question into practice.",
+   "lens": "relevance"
+  },
+  {
+   "node": "principle_04_conditional_probability",
+   "id": "concept_backtesting",
+   "key": "grounded_in",
+   "reason": "The backtesting note says nothing about conditioning, regimes or defined situations (it covers clean data, costs, look-ahead and out-of-sample tests), and the why's 'with realistic costs' belongs to Principle 5, so here the link is generic padding that fits any testing-related part equally well.",
+   "lens": "relevance"
+  },
+  {
+   "node": "philo_acb_principle",
+   "id": "concept_market_regimes",
+   "key": "grounded_in",
+   "reason": "The evidence lab's S1 does not say the regime at A moved P(B) more than detour depth did: out of sample a 1-ATR detour cut P(B) by 13-17 points and a 3-ATR detour by 33-40, against a regime gap of 12 points (19 at 3 ATR), 10 of the 12 unconditional points were reproduced by the memoryless null, and the regime note itself contains no such finding.",
+   "lens": "fidelity"
+  }
  ]
 }

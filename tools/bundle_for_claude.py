@@ -27,11 +27,17 @@ GRAPH_FILES = ["09_knowledge-graph/GRAPH_REPORT.md", "09_knowledge-graph/BUILD_R
 # The owner's philosophy is the foundation: its partition goes first, in reading order.
 FIRST_PARTITION = "00_philosophy"
 PHILO_ORDER = ["README.md", "philosophy-of-the-relationship.md", "decision-protocol.md", "journal-template.md",
-               "blueprint-map.md", "centrality-report.md", "strategy-alignment.md", "evidence-lab.md",
-               "hypotheses.md", "research-program.md", "extensions.md"]
+               "centrality-report.md", "strategy-alignment.md", "evidence-lab.md",
+               "hypotheses.md", "research-program.md", "extensions.md", "blueprint-map.md",
+               "strategy-alignment-evidence.md"]
 # Left out of the core bundle (still in the full bundle and the partition files).
-CORE_EXCLUDE = ("01_chart-fanatics/strategies/", "01_chart-fanatics/video-catalog.md",
-                "03_legends-authorities/people.yaml", "02_podcasts-interviews/podcast-episodes")
+CORE_EXCLUDE = ("01_chart-fanatics/strategies/", "01_chart-fanatics/video-catalog.md", "01_chart-fanatics/concept-frequency.md",
+                "03_legends-authorities/people.yaml", "03_legends-authorities/people-directory.md",
+                "02_podcasts-interviews/podcast-episodes", "02_podcasts-interviews/podcast-directory.md",
+                "02_podcasts-interviews/landmark-media.md", "06_mathematics-foundations/lectures.md",
+                "05_books-top-100/books.yaml",                       # top-100-trading-books.md carries it
+                "00_philosophy/blueprint-map.md",                    # link rationale; the links are in the graph
+                "00_philosophy/strategy-alignment-evidence.md")
 
 
 def partition_files(part: Path, include_raw: bool) -> list[Path]:

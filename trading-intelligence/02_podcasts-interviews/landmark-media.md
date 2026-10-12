@@ -16,13 +16,13 @@
 | **Trend Following Radio Ep. 1000 — Jerry Parker interview** | Jerry Parker, Michael W. Covel |  | podcast | verified | `concept_trend_following` | [link](https://metacast.app/podcast/michael-covel-s-trend-following/BLF1Y5UM/ep-1000-jerry-parker-interview-with-michael-covel-on-trend-following-radio/faSwKSbs) |
 | **How the Economic Machine Works — Ray Dalio** | Ray Dalio | 2013 | animated explainer (~30 min) | known | `concept_fundamental_macro_analysis`, `concept_market_regimes` |  |
 | **ICT 2022 Mentorship (YouTube series) — Michael J. Huddleston** | Michael J. Huddleston (ICT) | 2022 | video series | known | `concept_smart_money_concepts`, `concept_fair_value_gap`, `concept_liquidity`, `concept_trading_sessions_killzones`, `concept_market_structure` |  |
-| **Marci Silfrain — Chart Fanatics strategy episode (World #2 futures trader)** | Marci Silfrain |  |  | third-party | `strategy_marci_silfrain_measured_move` | [link](https://outlierkit.com/channel/chart-fanatics) |
 | **Principles for Dealing with the Changing World Order — Ray Dalio** | Ray Dalio | 2022 | animated explainer | known | `concept_fundamental_macro_analysis` |  |
-| **STEAL This EASY Liquidity TRAP Trading Strategy - $500K+ (PERFECT Sniper Entries)** |  |  |  | third-party | `concept_liquidity`, `concept_liquidity_sweep_reversal`, `concept_multi_timeframe_analysis` | [link](https://www.youtube.com/watch?v=DAnXM7C16h0) |
+| **STEAL This EASY Liquidity TRAP Trading Strategy - $500K+ (PERFECT Sniper Entries)** |  |  |  | confirmed | `concept_liquidity`, `concept_liquidity_sweep_reversal`, `concept_multi_timeframe_analysis` | [link](https://www.youtube.com/watch?v=DAnXM7C16h0) |
+| **STEAL This SIMPLE Trading Strategy from The WORLD's #2 Futures Trader - Marci Silfrain** | Marci Silfrain |  |  | confirmed | `strategy_marci_silfrain_measured_move` | [link](https://www.youtube.com/watch?v=AVVM-FyewLg) |
 | **The Soros Lectures at Central European University (2009) — reflexivity, financial markets** | George Soros | 2009 | lecture series | known | `concept_reflexivity`, `concept_fundamental_macro_analysis` |  |
 | **The Whipsaw Song — Ed Seykota** | Ed Seykota |  | music video | known | `concept_trend_following`, `concept_trading_psychology` |  |
 | **The World's #2 Trader \| Futures Trading World Champion Marci Silfrain (Words of Rizdom)** | Marci Silfrain |  |  | third-party | `strategy_marci_silfrain_measured_move`, `concept_trading_psychology` | [link](https://recapio.com/digest/the-world-s-2-trader-futures-trading-world-champion-marci-silfrain-by-words-of-rizdom) |
-| **Trading LIVE with the #1 Scalper in the WORLD (EXTREME Accuracy)** | Fabio Valentini |  |  | third-party | `strategy_fabio_valentini_amt_order_flow`, `concept_auction_market_theory`, `concept_order_flow`, `concept_scalping` | [link](https://www.youtube.com/watch?v=tvERE-Beu2U) |
+| **Trading LIVE with a World TOP Ranked Scalper (EXTREME Accuracy)** | Fabio Valentini |  |  | confirmed | `concept_scalping`, `strategy_fabio_valentini_amt_order_flow`, `concept_auction_market_theory`, `concept_order_flow` | [link](https://www.youtube.com/watch?v=tvERE-Beu2U) |
 
 ## Discovery queries (scraper fills the ranked top-100 from these)
 

@@ -2,35 +2,40 @@
 
 # Knowledge Base Manifest
 
-- Nodes: **6272** · Edges: **16236**
-- Inferred (lower-confidence) edges: 26
-- Dangling references: 0
+- Nodes: **6373** · Edges: **18695**
+- Inferred (lower-confidence) edges: 875
+- Dangling references: 1
 
 | Kind | Count |
 |---|---|
-| media | 5716 |
-| person | 244 |
+| media | 5730 |
+| person | 258 |
 | book | 100 |
 | concept | 69 |
 | strategy | 47 |
-| mathbook | 44 |
+| mathbook | 39 |
+| philosophy | 22 |
+| hypothesis | 20 |
 | podcast | 16 |
+| paper | 13 |
+| synthesis | 12 |
+| principle | 12 |
 | course | 11 |
+| framework | 7 |
+| question | 6 |
 | track | 6 |
-| framework | 5 |
-| synthesis | 5 |
 | channel | 4 |
-| paper | 4 |
 | formula | 1 |
 
 | Partition | Nodes defined |
 |---|---|
 | 00_framework | 4 |
-| 01_chart-fanatics | 1095 |
+| 00_philosophy | 77 |
+| 01_chart-fanatics | 1092 |
 | 02_podcasts-interviews | 4592 |
 | 03_legends-authorities | 158 |
 | 04_babypips-school-of-pipsology | 11 |
-| 05_books-top-100 | 138 |
-| 06_mathematics-foundations | 115 |
+| 05_books-top-100 | 100 |
+| 06_mathematics-foundations | 166 |
 | 07_concepts | 69 |
 | 08_synthesis | 4 |
