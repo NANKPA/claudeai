@@ -36,10 +36,14 @@ be found in `hypotheses.yaml`.
 
 | Status | Meaning |
 |---|---|
-| supported | An evidence-lab study tested the claim, and the data behaved as the claim states. |
+| supported | A study tested the claim, and the data behaved as the claim states. |
 | qualified | A study tested it, and the data agreed only in part, or only under conditions the claim does not state. |
 | not-supported | A study tested it, and the refuting observation written in advance occurred. |
 | untested | No study has tested it yet. The registry's `test_design` says how one would. |
+
+A "study" is a pre-registered evidence-lab study published in `evidence-lab.md`, or, for the
+journal hypotheses, a monthly journal review that meets the sample stated in the entry. Every
+status other than "untested" on this page comes from the lab's studies S1–S7.
 
 **What a status grades.** A status grades the operational statement on this page, not the
 philosophy as a whole. The philosophy mostly speaks in careful conditionals: B is a hypothesis,

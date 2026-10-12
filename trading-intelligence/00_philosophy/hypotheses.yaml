@@ -5,12 +5,14 @@
 # that an observation could refute. Readable version: hypotheses.md. Plan: research-program.md.
 #
 # status:
-#   supported      an evidence-lab study (evidence-lab.md) tested it and the data behaved as stated
+#   supported      a study tested it and the data behaved as stated
 #   qualified      a study tested it and the data agreed only in part, or only under conditions
 #   not-supported  a study tested it and the pre-stated refuting observation occurred
-#   untested       no evidence-lab study has tested it yet; the test_design says how to
-# A status describes the operational statement below, not the philosophy as a whole. It changes
-# only after a pre-registered study (or a journal review meeting the stated sample) is run.
+#   untested       no study has tested it yet; the test_design says how to
+# "Study" means a pre-registered evidence-lab study published in evidence-lab.md (market data or
+# simulation) or, for the journal hypotheses, a monthly journal review that meets the sample stated
+# in the entry. Every non-untested status below comes from evidence-lab studies S1-S7.
+# A status describes the operational statement below, not the philosophy as a whole.
 #
 # Evidence numbers are copied from evidence-lab.md as regenerated on 2026-10-12 (data to 2026-09-30;
 # in-sample to 2012-12-31, out-of-sample from 2013-01-01). Edge keys read by tools/ti_lib.py:
