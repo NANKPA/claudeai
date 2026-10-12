@@ -199,7 +199,27 @@ def write_map_md(mapped: dict, exts: list[dict], labels: dict[str, str], order: 
     (PHILO_DIR / "blueprint-map.md").write_text("\n".join(L), encoding="utf-8")
 
 
-def write_alignment(align: list[dict], labels: dict[str, str], principles: list[dict], known: set[str]) -> dict[str, list[str]]:
+def agreement(a: list[int], b: list[int]) -> dict:
+    """Exact and within-one agreement plus quadratic-weighted Cohen's kappa for 0/1/2 grades."""
+    n = len(a)
+    if not n:
+        return {}
+    cats = [0, 1, 2]
+    obs = [[0] * 3 for _ in cats]
+    for x, y in zip(a, b):
+        obs[x][y] += 1
+    pa = [sum(obs[i]) / n for i in cats]
+    pb = [sum(obs[i][j] for i in cats) / n for j in cats]
+    w = [[(i - j) ** 2 / 4 for j in cats] for i in cats]
+    do = sum(w[i][j] * obs[i][j] / n for i in cats for j in cats)
+    de = sum(w[i][j] * pa[i] * pb[j] for i in cats for j in cats)
+    return {"n": n, "exact": sum(x == y for x, y in zip(a, b)) / n,
+            "within_one": sum(abs(x - y) <= 1 for x, y in zip(a, b)) / n,
+            "kappa_w": (1 - do / de) if de else 1.0}
+
+
+def write_alignment(align: list[dict], labels: dict[str, str], principles: list[dict], known: set[str],
+                    regrade: dict | None = None) -> dict[str, list[str]]:
     pids = [p["id"] for p in principles]
     grades = {}
     for a in align:
@@ -244,6 +264,27 @@ def write_alignment(align: list[dict], labels: dict[str, str], principles: list[
     L += ["", "## Least aligned playbooks", ""]
     for s in sorted(grades, key=lambda s: total[s])[:8]:
         L.append(f"- **{lab(s)}** (`{s}`, {total[s]}/24) — biggest gap: {grades[s].get('biggest_gap', '')}")
+    if regrade and regrade.get("grades"):
+        a, b, per_p = [], [], defaultdict(lambda: ([], []))
+        rs = [g for g in regrade["grades"] if g["strategy_id"] in score]
+        for g in rs:
+            for x in g["scores"]:
+                if x["principle_id"] in pids:
+                    a.append(score[g["strategy_id"]].get(x["principle_id"], 0)); b.append(int(x["score"]))
+                    per_p[x["principle_id"]][0].append(a[-1]); per_p[x["principle_id"]][1].append(b[-1])
+        ag = agreement(a, b)
+        if ag:
+            L += ["", "## Grading reliability", "",
+                  f"A second agent re-graded {len(rs)} playbooks (every fourth, blind to the first grades). "
+                  f"Agreement over {ag['n']} principle grades: **{ag['exact']:.0%} exact**, "
+                  f"**{ag['within_one']:.0%} within one point**, quadratic-weighted kappa **{ag['kappa_w']:.2f}** "
+                  "(0.6-0.8 is usually read as substantial agreement, above 0.8 as almost perfect). "
+                  "Principles with the lowest agreement are the ones whose rubric is most open to judgment:", "",
+                  "| Principle | Exact agreement |", "|---|---|"]
+            for i, p in enumerate(principles, 1):
+                xa, xb = per_p[p["id"]]
+                if xa:
+                    L.append(f"| P{i} {p['title']} | {sum(x == y for x, y in zip(xa, xb)) / len(xa):.0%} |")
     L += ["", "## Evidence per playbook", ""]
     for s in sorted(grades):
         L += [f"### {lab(s)} · {total[s]}/24", "", f"`{s}` — {grades[s].get('summary', '')}", ""]
@@ -267,7 +308,7 @@ def main() -> None:
     rejected = res.get("rejected", [])
     rej = {(r["node"], r["id"]) for r in rejected}
     mapped, dropped, exts = clean_maps(res.get("maps", []), exts, known, rej)
-    exemplars = write_alignment(res.get("align", []), labels, principles, known)
+    exemplars = write_alignment(res.get("align", []), labels, principles, known, res.get("regrade"))
     counts = write_blueprint(mapped, exts, exemplars)
     write_map_md(mapped, exts, labels, order, dropped, rejected)
     print(f"mapped {len(mapped)} philosophy nodes; links: {dict(counts)}; dropped {len(dropped)} unknown ids; "
