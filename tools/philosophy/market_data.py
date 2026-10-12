@@ -16,6 +16,9 @@ Cleaning (deliberately minimal, so the studies see the data as published):
 Nothing else is changed: no adjustment for dividends or splits, no
 back-adjustment of futures rolls, no outlier filter. Quality problems are
 reported by :func:`quality_report` instead of being silently fixed.
+:func:`bad_print_mask` flags isolated bad prints (a whole bar far away from
+both neighbours, e.g. five ``EURUSD=X`` bars in 2008); the loader keeps them
+and ``studies.py`` drops them explicitly.
 
 Usage
 -----
@@ -102,12 +105,47 @@ def load(symbol: str, refresh: bool = False) -> pd.DataFrame:
     return clean(raw)
 
 
+#: A bar is a bad print when its whole range sits this many robust daily sds away from both neighbours.
+BAD_PRINT_K = 5.0
+#: Trailing window (bars) of the robust daily sd used by bad_print_mask.
+BAD_PRINT_WINDOW = 60
+
+
+def bad_print_mask(df: pd.DataFrame, k: float = BAD_PRINT_K, window: int = BAD_PRINT_WINDOW) -> pd.Series:
+    """Isolated bad prints: True for a bar whose whole range lies far beyond BOTH neighbours' ranges.
+
+    Bar ranges are widened to include open and close. A bar at t is flagged when
+    ``log(low[t] / max(high[t-1], high[t+1]))`` (a spike up) or
+    ``log(min(low[t-1], low[t+1]) / high[t])`` (a spike down) exceeds ``k``
+    robust daily sds, the sd being 1.4826 x the median absolute daily log return
+    of the ``window`` bars before t. A genuine shock moves the market to a new
+    level, so its neighbour on one side overlaps it; a misprint jumps away and
+    straight back. The rule looks at bar t+1, so it is a cleaning step for data
+    errors, not something a decision at t could use. On the cached series it flags
+    exactly five ``EURUSD=X`` bars in 2008 (closes about 6-15% off, all dated the 8th
+    of a month) and nothing else.
+    """
+    if len(df) < 3:
+        return pd.Series(False, index=df.index)
+    hi = df[["open", "high", "close"]].max(axis=1)
+    lo = df[["open", "low", "close"]].min(axis=1)
+    r = np.log(df["close"]).diff()
+    sd = r.abs().shift(1).rolling(window, min_periods=20).median() * 1.4826
+    nb_hi = np.maximum(hi.shift(1), hi.shift(-1))
+    nb_lo = np.minimum(lo.shift(1), lo.shift(-1))
+    with np.errstate(invalid="ignore", divide="ignore"):
+        up = np.log(lo / nb_hi)
+        down = np.log(nb_lo / hi)
+    return ((up > k * sd) | (down > k * sd)).fillna(False).astype(bool)
+
+
 def quality_report(symbol: str) -> dict:
     """Counts of the rows dropped by cleaning and of suspicious bars that were kept."""
     path = cache_path(symbol)
     if not path.exists():
         load(symbol)
     raw = pd.read_csv(path, index_col="date", parse_dates=["date"])
+    n_dup = int(raw.index.duplicated(keep="last").sum())
     raw = raw[~raw.index.duplicated(keep="last")]
     df = clean(raw)
     p = raw[PRICE_COLUMNS]
@@ -121,8 +159,10 @@ def quality_report(symbol: str) -> dict:
         "rows_clean": int(len(df)),
         "dropped_missing": int(p.isna().any(axis=1).sum()),
         "dropped_nonpositive": int(((p <= 0).any(axis=1) & p.notna().all(axis=1)).sum()),
+        "duplicate_dates": n_dup,
         "flat_bars": int((df["high"] == df["low"]).sum()),
         "inconsistent_bars": int((hi_bad | lo_bad).sum()),
+        "bad_prints": int(bad_print_mask(df).sum()),
     }
 
 
@@ -139,8 +179,9 @@ def main(argv: list[str] | None = None) -> int:
             print(f"{sym}: failed: {exc}", file=sys.stderr)
             continue
         print(f"{sym:9s} {q['first']} -> {q['last']}  rows {q['rows_clean']:6d} "
-              f"(dropped {q['dropped_missing']} missing, {q['dropped_nonpositive']} non-positive; "
-              f"{q['flat_bars']} flat, {q['inconsistent_bars']} inconsistent bars kept)")
+              f"(dropped {q['dropped_missing']} missing, {q['dropped_nonpositive']} non-positive, "
+              f"{q['duplicate_dates']} duplicate dates; kept {q['flat_bars']} flat, "
+              f"{q['inconsistent_bars']} inconsistent, {q['bad_prints']} bad-print bars)")
     return 0
 
 

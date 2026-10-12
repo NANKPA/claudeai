@@ -18,8 +18,8 @@ EDGE_LAB = Path(__file__).resolve().parents[1] / "edge_lab.py"
 # --------------------------------------------------------------------------- Section VII
 def test_expected_value_reproduces_the_philosophy_example():
     # Section VII: (0.60 x $100) - (0.40 x $120) - $5 = $7 per trade
-    assert el.expected_value(0.60, 100, 120, 5) == pytest.approx(7.0, abs=1e-12)
-    assert round(el.expected_value(0.60, 100, 120, 5), 10) == 7.0
+    assert el.expected_value(0.60, 100, 120, 5) == 7.0  # exactly, not approximately
+    assert el.expected_value(0.60, 100, -120, 5) == 7.0
 
 
 def test_expected_value_ignores_loss_sign_and_validates_probability():

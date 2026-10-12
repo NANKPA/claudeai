@@ -130,6 +130,11 @@ PARAMS = {
 
 #: Changes made after the first results were seen. Kept empty unless something had to change.
 DEVIATIONS: list[str] = [
+    "Data (added in review): isolated bad prints are dropped before any study runs "
+    "(`market_data.bad_print_mask`: a bar whose whole range sits more than 5 robust daily sds beyond BOTH "
+    "neighbours' ranges; the bars removed are listed under *Data and caveats*). Kept, they inflated the ATR "
+    "and realised volatility of the affected market for weeks, moved the first touches of B and C in S1, and "
+    "put large outliers into S2's 5-day returns. Every number on this page was recomputed after the change.",
     "S2: a cell whose observations fall in fewer than 10 distinct bootstrap blocks in either period is "
     "reported as 'too few to judge' instead of being classified. Added after the first run, where a cell "
     "with 4 out-of-sample observations (all in one or two blocks) received a 95% CI under 6 points wide and "
@@ -177,7 +182,33 @@ def ci_pct(lo: float, hi: float, d: int = 1, signed: bool = False) -> str:
 def bp(x: float, d: int = 0, signed: bool = True) -> str:
     if x is None or not np.isfinite(x):
         return "n/a"
+    if 0 < abs(1e4 * x) < 0.5 * 10 ** -d:  # would print as "-0"/"+0": show one more decimal
+        d += 1
     return f"{1e4 * x:+.{d}f}" if signed else f"{1e4 * x:.{d}f}"
+
+
+def share(x: float, n: int, d: int = 1) -> str:
+    """A simulated share of n paths; shares that would print as 0% or 100% are given as counts."""
+    if x is None or not np.isfinite(x):
+        return "n/a"
+    k = int(round(x * n))
+    if k == n:
+        return f"all {n:,}"
+    if round(100 * x, d) == 0 or round(100 * x, d) == 100:
+        return f"{k:,} of {n:,}"
+    return pct(x, d)
+
+
+def prob(x: float, d: int = 1) -> str:
+    """An exact probability; values that would round to 0% or 100% are shown as bounds."""
+    if x is None or not np.isfinite(x):
+        return "n/a"
+    lim = 0.5 * 10 ** -(d + 2)
+    if 0 < x < lim:
+        return f"<{pct(lim * 2, d)}"
+    if 1 - lim < x < 1:
+        return f">{pct(1 - lim * 2, d)}"
+    return pct(x, d)
 
 
 def ci_bp(lo: float, hi: float, d: int = 0) -> str:
@@ -230,8 +261,11 @@ REFRESH = False
 
 
 def prepare(raw: pd.DataFrame) -> pd.DataFrame:
-    """Cut at data_end, make bars consistent, add ATR, SMAs, regime and realised vol (causal)."""
+    """Cut at data_end, drop isolated bad prints, make bars consistent, add ATR, SMAs, regime and
+    realised vol (causal: each value at t uses bars up to t)."""
     df = raw.loc[: P["data_end"]].copy()
+    bad = md.bad_print_mask(df)  # see DEVIATIONS; a data-error filter, it looks at bar t+1
+    df = df[~bad.to_numpy()].copy()
     df["high"] = df[["open", "high", "close"]].max(axis=1)
     df["low"] = df[["open", "low", "close"]].min(axis=1)
     c = df["close"]
@@ -314,18 +348,28 @@ def data_section_rows() -> list[list[str]]:
         if not used[s]:
             continue
         df = get(s)
-        raw = pd.read_csv(md.cache_path(s), index_col="date", parse_dates=["date"])
-        raw = raw[~raw.index.duplicated(keep="last")].sort_index().loc[: P["data_end"]]
+        raw = pd.read_csv(md.cache_path(s), index_col="date", parse_dates=["date"]).sort_index()
+        raw = raw.loc[: P["data_end"]]
+        dups = int(raw.index.duplicated(keep="last").sum())
+        raw = raw[~raw.index.duplicated(keep="last")]
         pr = raw[md.PRICE_COLUMNS]
         missing = int(pr.isna().any(axis=1).sum())
         nonpos = int(((pr <= 0).any(axis=1) & pr.notna().all(axis=1)).sum())
         cl = md.clean(raw)
+        spikes = int(md.bad_print_mask(cl).sum())
         oc_hi, oc_lo = cl[["open", "close"]].max(axis=1), cl[["open", "close"]].min(axis=1)
         flat = int((cl["high"] == cl["low"]).sum())
         bad = int(((cl["high"] < oc_hi - 1e-9) | (cl["low"] > oc_lo + 1e-9)).sum())
         rows.append([f"`{s}`", df.index[0].date().isoformat(), df.index[-1].date().isoformat(), f"{len(df):,}",
-                     str(missing), str(nonpos), str(flat), str(bad), ", ".join(sorted(set(used[s])))])
+                     str(missing), str(nonpos), str(dups), str(spikes), str(flat), str(bad),
+                     ", ".join(sorted(set(used[s])))])
     return rows
+
+
+def flat_share(symbol: str, start: str | None = None, end: str | None = None) -> float:
+    """Share of bars with high == low (no intraday range recorded) in a date window."""
+    df = get(symbol).loc[start:end]
+    return float((df["high"] == df["low"]).mean()) if len(df) else float("nan")
 
 
 # ---------------------------------------------------------------------------
@@ -400,6 +444,89 @@ def s1_symbol(sym: str, rng: np.random.Generator) -> tuple[pd.DataFrame, dict, d
     return obs, null, ties
 
 
+def s1_pooled(sub: pd.DataFrame, nulls: dict, symbols: list[str], period: str,
+              rng: np.random.Generator) -> dict:
+    """Pooled P(B), P(B | C_k), touch shares and exclusive bins for one period, with block-bootstrap CIs,
+    the entry-weighted memoryless null, and the uptrend-minus-other differences (same resamples)."""
+    p1 = P["S1"]
+    depths = p1["depths_atr"]
+    regimes = ["uptrend", "other"]
+    bins = [(0.0, depths[0])] + [(depths[i], depths[i + 1]) for i in range(len(depths) - 1)] + [(depths[-1], np.inf)]
+    blocks = calendar_blocks(sub["date"], p1["block_calendar_days"])
+    cols, nums, dens = [], [], []
+    for r in regimes:
+        rm = (sub["regime"] == r).to_numpy()
+        cols.append((r, "PB", 0.0)); nums.append(sub["B"].to_numpy() & rm); dens.append(rm)
+        for k in depths:
+            E = sub[f"E{k}"].to_numpy() & rm
+            cols.append((r, "PBC", k)); nums.append(sub[f"BC{k}"].to_numpy() & rm); dens.append(E)
+            cols.append((r, "share", k)); nums.append(E); dens.append(rm)
+        for (a, b) in bins:
+            if a == 0.0:
+                mask = rm & ~sub[f"E{b}"].to_numpy()
+                hit = sub["B"].to_numpy() & mask
+            elif np.isinf(b):
+                mask = rm & sub[f"E{a}"].to_numpy()
+                hit = sub[f"BC{a}"].to_numpy() & mask
+            else:
+                mask = rm & sub[f"E{a}"].to_numpy() & ~sub[f"E{b}"].to_numpy()
+                hit = sub[f"BC{a}"].to_numpy() & mask
+            cols.append((r, "bin", (a, b))); nums.append(hit); dens.append(mask)
+    point, reps = block_bootstrap(np.column_stack(nums), np.column_stack(dens), blocks, rng, P["n_boot"])
+    lo, hi = ci_of(reps)
+    dsum = np.column_stack(dens).sum(0)
+    out: dict = {}
+    for j, key in enumerate(cols):
+        out[(period,) + key] = (point[j], lo[j], hi[j], int(dsum[j]))
+    # uptrend minus other, from the same block resamples
+    col_ix = {key: j for j, key in enumerate(cols)}
+    for key, k in [("PB", 0.0)] + [("PBC", k) for k in depths]:
+        ju, jo = col_ix[("uptrend", key, k)], col_ix[("other", key, k)]
+        dl, dh = ci_of(reps[:, ju] - reps[:, jo])
+        out[(period, "diff", key, k)] = (point[ju] - point[jo], float(dl), float(dh))
+    # pooled memoryless null, weighting symbols by their entry counts in the cell
+    for r in regimes:
+        w = {s: int(((sub["symbol"] == s) & (sub["regime"] == r)).sum()) for s in symbols}
+        nb = sum(w[s] * nulls[s][(period, r)]["B"] for s in w if (period, r) in nulls[s])
+        nd = sum(w[s] for s in w if (period, r) in nulls[s])
+        out[(period, r, "null", 0.0)] = nb / nd if nd else np.nan
+        for k in depths:
+            a = sum(w[s] * nulls[s][(period, r)][("BC", k)] for s in w if (period, r) in nulls[s])
+            b = sum(w[s] * nulls[s][(period, r)][("E", k)] for s in w if (period, r) in nulls[s])
+            out[(period, r, "null", k)] = a / b if b else np.nan
+    return out
+
+
+def s1_calls(pooled: dict) -> tuple[dict, dict, str]:
+    """Observed-vs-null call per (period, regime, depth), breakdown-like depth per regime, and the verdict."""
+    depths = P["S1"]["depths_atr"]
+    regimes = ["uptrend", "other"]
+    calls = {}
+    for period in ["IS", "OOS"]:
+        for r in regimes:
+            for k in depths:
+                v, lo_, hi_, _n = pooled[(period, r, "PBC", k)]
+                nv = pooled[(period, r, "null", k)]
+                calls[(period, r, k)] = ("below null" if hi_ < nv else "above null" if lo_ > nv else "at null")
+    sc_depth = {}
+    for r in regimes:
+        ks = [k for k in depths if calls[("IS", r, k)] == "below null" and calls[("OOS", r, k)] == "below null"]
+        sc_depth[r] = min(ks) if ks else None
+    # verdict (pre-registered rule)
+    shallow_all_below = all(calls[(pd_, r, depths[0])] == "below null" for pd_ in ["IS", "OOS"] for r in regimes)
+    if shallow_all_below:
+        verdict = "contradicts"
+    elif any(v is not None for v in sc_depth.values()):
+        verdict = "qualifies"
+    else:
+        verdict = "supports"
+    return calls, sc_depth, verdict
+
+
+#: S1 sensitivity (added in review): the futures series carry unadjusted roll gaps in their ATR and paths.
+S1_FUTURES = ["GC=F", "CL=F"]
+
+
 def s1_run() -> dict:
     log("S1: A -> C -> B ...")
     p1 = P["S1"]
@@ -414,44 +541,9 @@ def s1_run() -> dict:
     obs = pd.concat(frames, ignore_index=True)
     out: dict = {"obs": obs, "pooled": {}, "per_symbol": {}, "bins": {}, "ties": ties}
     regimes = ["uptrend", "other"]
-    bins = [(0.0, depths[0])] + [(depths[i], depths[i + 1]) for i in range(len(depths) - 1)] + [(depths[-1], np.inf)]
     for period in ["IS", "OOS"]:
         sub = obs[obs["period"] == period]
-        blocks = calendar_blocks(sub["date"], p1["block_calendar_days"])
-        cols, nums, dens = [], [], []
-        for r in regimes:
-            rm = (sub["regime"] == r).to_numpy()
-            cols.append((r, "PB", 0.0)); nums.append(sub["B"].to_numpy() & rm); dens.append(rm)
-            for k in depths:
-                E = sub[f"E{k}"].to_numpy() & rm
-                cols.append((r, "PBC", k)); nums.append(sub[f"BC{k}"].to_numpy() & rm); dens.append(E)
-                cols.append((r, "share", k)); nums.append(E); dens.append(rm)
-            for (a, b) in bins:
-                if a == 0.0:
-                    mask = rm & ~sub[f"E{b}"].to_numpy()
-                    hit = sub["B"].to_numpy() & mask
-                elif np.isinf(b):
-                    mask = rm & sub[f"E{a}"].to_numpy()
-                    hit = sub[f"BC{a}"].to_numpy() & mask
-                else:
-                    mask = rm & sub[f"E{a}"].to_numpy() & ~sub[f"E{b}"].to_numpy()
-                    hit = sub[f"BC{a}"].to_numpy() & mask
-                cols.append((r, "bin", (a, b))); nums.append(hit); dens.append(mask)
-        point, reps = block_bootstrap(np.column_stack(nums), np.column_stack(dens), blocks, rng, P["n_boot"])
-        lo, hi = ci_of(reps)
-        dsum = np.column_stack(dens).sum(0)
-        for j, key in enumerate(cols):
-            out["pooled"][(period,) + key] = (point[j], lo[j], hi[j], int(dsum[j]))
-        # pooled memoryless null, weighting symbols by their entry counts in the cell
-        for r in regimes:
-            w = {s: int(((sub["symbol"] == s) & (sub["regime"] == r)).sum()) for s in p1["symbols"]}
-            nb = sum(w[s] * nulls[s][(period, r)]["B"] for s in w if (period, r) in nulls[s])
-            nd = sum(w[s] for s in w if (period, r) in nulls[s])
-            out["pooled"][(period, r, "null", 0.0)] = nb / nd if nd else np.nan
-            for k in depths:
-                a = sum(w[s] * nulls[s][(period, r)][("BC", k)] for s in w if (period, r) in nulls[s])
-                b = sum(w[s] * nulls[s][(period, r)][("E", k)] for s in w if (period, r) in nulls[s])
-                out["pooled"][(period, r, "null", k)] = a / b if b else np.nan
+        out["pooled"].update(s1_pooled(sub, nulls, p1["symbols"], period, rng))
         # per symbol, all regimes
         for s in p1["symbols"]:
             ss = sub[sub["symbol"] == s]
@@ -469,32 +561,27 @@ def s1_run() -> dict:
                 "PB": (pt[0], l2[0], h2[0]), "PBC1": (pt[1], l2[1], h2[1], int(cd[1].sum())),
                 "PBC2": (pt[2], l2[2], h2[2], int(cd[2].sum()))}
     # classification against the null
-    calls = {}
-    for period in ["IS", "OOS"]:
-        for r in regimes:
-            for k in depths:
-                v, lo_, hi_, _n = out["pooled"][(period, r, "PBC", k)]
-                nv = out["pooled"][(period, r, "null", k)]
-                calls[(period, r, k)] = ("below null" if hi_ < nv else "above null" if lo_ > nv else "at null")
+    calls, sc_depth, verdict = s1_calls(out["pooled"])
     out["calls"] = calls
-    sc_depth = {}
-    for r in regimes:
-        ks = [k for k in depths if calls[("IS", r, k)] == "below null" and calls[("OOS", r, k)] == "below null"]
-        sc_depth[r] = min(ks) if ks else None
     out["sc_depth"] = sc_depth
-    out["bins_def"] = bins
+    out["bins_def"] = ([(0.0, depths[0])] + [(depths[i], depths[i + 1]) for i in range(len(depths) - 1)]
+                       + [(depths[-1], np.inf)])
     out["n"] = {(pd_, r): int(((obs["period"] == pd_) & (obs["regime"] == r)).sum())
                 for pd_ in ["IS", "OOS"] for r in regimes}
     out["nulls"] = nulls
-    # verdict (pre-registered rule)
-    shallow_all_below = all(calls[(pd_, r, depths[0])] == "below null" for pd_ in ["IS", "OOS"] for r in regimes)
-    if shallow_all_below:
-        verdict = "contradicts"
-    elif any(v is not None for v in sc_depth.values()):
-        verdict = "qualifies"
-    else:
-        verdict = "supports"
+    out["n_blocks"] = {pd_: int(len(np.unique(calendar_blocks(obs.loc[obs["period"] == pd_, "date"],
+                                                                p1["block_calendar_days"]))))
+                       for pd_ in ["IS", "OOS"]}
     out["verdict"] = verdict
+    # sensitivity (added in review, own seed so the main numbers are unchanged): without the futures
+    rng_s = np.random.default_rng(P["seed"] + 11)
+    keep = [s for s in p1["symbols"] if s not in S1_FUTURES]
+    sens: dict = {}
+    for period in ["IS", "OOS"]:
+        sub = obs[(obs["period"] == period) & obs["symbol"].isin(keep)]
+        sens.update(s1_pooled(sub, nulls, keep, period, rng_s))
+    s_calls, s_sc, s_verdict = s1_calls(sens)
+    out["sens"] = {"symbols": keep, "pooled": sens, "calls": s_calls, "sc_depth": s_sc, "verdict": s_verdict}
     s1_chart(out)
     return out
 
@@ -597,6 +684,7 @@ def s2_run() -> dict:
                 "d_up": up_pt - up_pt[0], "d_up_ci": (dul, duh),
                 "d_mean": mean_pt - mean_pt[0], "d_mean_ci": (dml, dmh),
                 "first": df.index[rows][0].date().isoformat(), "last": df.index[rows][-1].date().isoformat(),
+                "base_up_rep": up_rep[:, 0].copy(), "base_mean_rep": mean_rep[:, 0].copy(),
             }
             assert len(stats_p[period]["n"]) == nc
         res["symbols"][sym] = {"cells": cells, "stats": stats_p, "q": (q1, q2), "fwd": fwd,
@@ -1088,10 +1176,20 @@ def s6_run() -> dict:
                 return n
         return None
 
-    n_down5 = first_below(lambda n: s6_probs(p, win, loss, cost, n)[0], 0.05)
-    n_up5 = first_below(lambda n: s6_probs(q, win, loss, cost, n)[1], 0.05)
+    def stays_below(fn, level, n_max=5000):
+        """Smallest n from which fn stays below level up to n_max (the curves zigzag)."""
+        last = None
+        for n in range(1, n_max + 1):
+            if fn(n) >= level:
+                last = n
+        return None if last is None else (last + 1 if last < n_max else None)
+
+    f_down = lambda n: s6_probs(p, win, loss, cost, n)[0]  # noqa: E731
+    f_up = lambda n: s6_probs(q, win, loss, cost, n)[1]  # noqa: E731
+    n_down5, n_up5 = first_below(f_down, 0.05), first_below(f_up, 0.05)
     out = {"rows": rows, "ev": el.expected_value(p, win, loss, cost), "ev_twin": el.expected_value(q, win, loss, cost),
-           "n_down5": n_down5, "n_up5": n_up5, "curve": curve}
+           "n_down5": n_down5, "n_up5": n_up5, "n_down5_stay": stays_below(f_down, 0.05),
+           "n_up5_stay": stays_below(f_up, 0.05), "curve": curve}
     r20 = [r for r in rows if r["n"] == 20][0]
     out["verdict"] = "supports" if (r20["down"] >= 0.2 and r20["up_twin"] >= 0.2) else "qualifies"
     s6_chart(out)
@@ -1169,7 +1267,7 @@ def report_s1(s1: dict, fig: str) -> tuple[list[str], str]:
           "markets together (preserving the overlap and the cross-market correlation).", ""]
     L += ["**The yardstick.** P(B) falls with depth for pure geometry: from C_k the target is (3 + k) ATR "
           "away and less time is left. So a falling curve alone says nothing about a change in structure. "
-          "Each curve is compared with a *memoryless null*: 60-day paths built from the same market's own "
+          f"Each curve is compared with a *memoryless null*: {p1['horizon']}-day paths built from the same market's own "
           "days (close, high and low changes divided by the prior ATR), drawn at random from the same "
           "period and regime. The null keeps each market's drift, volatility and fat tails but has no memory, "
           "so in it an adverse move carries no information about what follows. Observed below the null = the "
@@ -1181,8 +1279,8 @@ def report_s1(s1: dict, fig: str) -> tuple[list[str], str]:
             d = s1["per_symbol"].get((s, period))
             if d:
                 rows.append([f"`{s}`", period, f"{d['first']} → {d['last']}", f"{d['n']:,}", pct(d["up_share"], 0)])
-    L += ["**Data.** Entries per market and period (the IS window ends 60 trading days before 2013 so no "
-          "in-sample outcome uses 2013 data):", ""]
+    L += [f"**Data.** Entries per market and period (the IS window ends {p1['horizon']} trading days before "
+          "2013 so no in-sample outcome uses 2013 data):", ""]
     L += table(["market", "period", "entries", "n", "share in uptrend"], rows)
     for period, title in [("IS", "In-sample"), ("OOS", "Out-of-sample")]:
         nu, no = s1["n"][(period, "uptrend")], s1["n"][(period, "other")]
@@ -1209,7 +1307,7 @@ def report_s1(s1: dict, fig: str) -> tuple[list[str], str]:
     L += ["**The hindsight trap (exclusive bins).** The same entries cut by the *deepest* excursion reached "
           "before B (for paths that never reach B, the deepest point of the whole window). Read this way, "
           "detours look almost harmless until 2 ATR, but the reading is circular: a path that never reaches B "
-          "has 60 days to sink, so it almost always lands in the deepest bin, and the shallow bins are left "
+          f"has {p1['horizon']} days to sink, so it almost always lands in the deepest bin, and the shallow bins are left "
           "with the winners. The deepest point is known only afterwards. The real-time tables above are the "
           "ones a decision can use; this one shows how hindsight flatters a hypothesis.", ""]
     rows = []
@@ -1261,9 +1359,20 @@ def report_s1(s1: dict, fig: str) -> tuple[list[str], str]:
 
     above = [f"{pd_} {r} at {k:g} ATR" for (pd_, r, k), c in s1["calls"].items() if c == "above null"]
     below = [f"{pd_} {r} at {k:g} ATR" for (pd_, r, k), c in s1["calls"].items() if c == "below null"]
+    n_cmp = len(s1["calls"])
     go_is, go_oos, gu_oos = gap("IS", "other"), gap("OOS", "other"), gap("OOS", "uptrend")
     ctx_all = all(s1["pooled"][(pd_, "uptrend", key, k)][0] > s1["pooled"][(pd_, "other", key, k)][0]
                   for pd_ in ["IS", "OOS"] for key, k in [("PB", 0.0)] + [("PBC", k) for k in depths])
+    pooled = s1["pooled"]
+    d0, dk = pooled[("OOS", "diff", "PB", 0.0)], pooled[("OOS", "diff", "PBC", kd)]
+    n0 = pooled[("OOS", "uptrend", "null", 0.0)] - pooled[("OOS", "other", "null", 0.0)]
+    nk = pooled[("OOS", "uptrend", "null", kd)] - pooled[("OOS", "other", "null", kd)]
+    diff_clear = [f"{pd_} {'unconditional' if k == 0 else f'{k:g} ATR'}"
+                  for pd_ in ["IS", "OOS"] for key, k in [("PB", 0.0)] + [("PBC", k) for k in depths]
+                  if pooled[(pd_, "diff", key, k)][1] > 0]
+    sens = s1["sens"]
+    s_above = [f"{pd_} {r} at {k:g} ATR" for (pd_, r, k), c in sens["calls"].items() if c == "above null"]
+    s_below = [f"{pd_} {r} at {k:g} ATR" for (pd_, r, k), c in sens["calls"].items() if c == "below null"]
     if all(v is None for v in sc.values()):
         depth_txt = ("**No depth behaved like structural change** in either regime: up to "
                      f"{kd:g} ATR, the observed curve never sat clearly below (in both periods) what a memoryless "
@@ -1277,33 +1386,67 @@ def report_s1(s1: dict, fig: str) -> tuple[list[str], str]:
           f"P(B) from {pct(u0)} to {pct(u1)} in uptrends and from {pct(o0)} to {pct(o1)} otherwise; even after "
           f"a {kd:g}-ATR detour, B was still reached {pct(u3)} of the time in uptrends ({pct(o3)} otherwise). "
           + depth_txt + " "
-          + ("Context did more than depth: at every depth and in both periods the uptrend curve sits above "
-             "the other-regime curve, " if ctx_all else "The regime curves differ but cross at some depth; ")
-          + f"the gap is {pp(u0 - o0, 0)} points unconditionally and {pp(u3 - o3, 0)} points at "
-          f"{kd:g} ATR out-of-sample. Softer signals, mostly inside the CIs: observed minus null ranged "
-          f"from {pp(go_is[0], 0, True)} to {pp(go_is[1], 0, True)} points in-sample and from "
+          + ("The regime at A shifts the whole curve: at every depth and in both periods the uptrend point "
+             "estimate sits above the other-regime one, " if ctx_all else "The regime curves differ but cross at "
+             "some depth; ")
+          + f"out-of-sample by {pp(d0[0], 0)} points {ci_pct(d0[1], d0[2], 0, True)} unconditionally and "
+          f"{pp(dk[0], 0)} points {ci_pct(dk[1], dk[2], 0, True)} at {kd:g} ATR (95% CIs of the difference, "
+          "same block resamples; "
+          + (f"the interval excludes zero at {len(diff_clear)} of {2 * (len(depths) + 1)} period-depth points). "
+             if diff_clear else "no interval excludes zero). ")
+          + f"The memoryless nulls differ by {pp(n0, 0)} and {pp(nk, 0)} points at the same two places, so "
+          + ("most of that gap is what the different drift and volatility of uptrend and other-regime days "
+             "produce, not extra information carried by the detour. "
+             if min(n0 / d0[0], nk / dk[0]) >= 2 / 3 else
+             f"unconditionally {n0 / d0[0]:.0%} of the gap is what the different drift and volatility of the "
+             f"two regimes' days produce, but at {kd:g} ATR only {nk / dk[0]:.0%}; the remainder comes from "
+             "uptrend paths running above their null after deep detours and other-regime paths running below "
+             "theirs, which is suggestive only (see the next sentences). ")
+          + "Softer signals, mostly inside the CIs: observed "
+          f"minus null ranged from {pp(go_is[0], 0, True)} to {pp(go_is[1], 0, True)} points in-sample and from "
           f"{pp(go_oos[0], 0, True)} to {pp(go_oos[1], 0, True)} out-of-sample in the *other* regime"
-          + (" (adverse moves there leaned towards bad news)" if max(go_is[1], go_oos[1]) < 0 else "")
+          + (" (adverse moves there leaned towards bad news, but these ten numbers are nested and strongly "
+             "correlated, not ten independent signs)" if max(go_is[1], go_oos[1]) < 0 else "")
           + f", and from {pp(gu_oos[0], 0, True)} to "
           f"{pp(gu_oos[1], 0, True)} for out-of-sample uptrends"
           + (f"; single-period CIs clear of the null: above at {', '.join(above)}" if above else "")
           + (f"; below at {', '.join(below)}" if below else "") + ". "
+          + (f"That is {len(above) + len(below)} of {n_cmp} period × regime × depth comparisons, about the "
+             f"{0.05 * n_cmp:.0f} a 95% interval would give by chance alone, so it is not read as a finding. "
+             if (above or below) else "")
+          + f"Sensitivity (added in review): without the two futures series ({', '.join(S1_FUTURES)}), whose ATR "
+          "and paths include unadjusted roll gaps, the pre-registered rule gives "
+          f"*{sens['verdict']}*"
+          + (f", with {len(s_above) + len(s_below)} of {len(sens['calls'])} single-period CIs clear of the null"
+             if (s_above or s_below) else ", with no single-period CI clear of the null")
+          + (f" (above at {', '.join(s_above)})" if s_above else "")
+          + (f" (below at {', '.join(s_below)})" if s_below else "") + ". "
           "For Section III this means the distinction between a detour and a breakdown cannot be read from "
-          "the size of the adverse move alone; it has to come from the context in which the move happens, "
-          "which is what Principle 2 asks for.", ""]
+          "the size of the adverse move alone; the depth of a detour, on its own, carried no information "
+          "beyond geometry here. Whether richer context can tell the two apart, as Principle 2 asks, is "
+          "not something this test of one trend filter can settle.", ""]
     L += ["**What this does NOT show.** It does not show that B = A + 3 ATR is a sensible target, or that "
           "buying every day is a strategy (most entries are not trades anyone would take). It uses daily "
           "bars, so the order of events within a day is unknown. It conditions on one context variable "
           "(trend); the philosophy's *structure* is richer than a moving-average test, and a richer context "
           "might find the breakdown signal that depth alone does not carry. The memoryless null removes "
           "volatility clustering: after a sharp fall volatility usually rises, so real paths, measured in "
-          "ATR at entry, swing wider in both directions than the null's. It says nothing about the short side.", ""]
+          "ATR at entry, swing wider in both directions than the null's. The null is also held in one regime "
+          f"for all {p1['horizon']} days, and its value is treated as fixed: its own estimation error (it is "
+          "built from the same finite sample of days) is not in the CIs, so single-period 'above' or 'below' "
+          f"calls are, if anything, too easy to get. The block bootstrap uses {p1['block_calendar_days']}-day "
+          f"blocks for {p1['horizon']}-trading-day outcomes (about {p1['horizon'] * 365.25 / 252:.0f} calendar "
+          "days), so neighbouring blocks still share some outcome windows, and the out-of-sample period holds "
+          f"only {s1['n_blocks']['OOS']} blocks ({s1['n_blocks']['IS']} in-sample): the CIs are approximate. It "
+          "says nothing about the short side.", ""]
     if all(v is None for v in sc.values()):
         sc_txt = f"no depth up to {kd:g} ATR beat a memoryless null as a breakdown signal"
     else:
         sc_txt = "breakdown-like from " + ", ".join(f"{sc[r]:g} ATR ({r})" for r in sc if sc[r] is not None)
     finding = (f"OOS, a 1-ATR detour cut P(B) from {pct(u0, 0)} to {pct(u1, 0)} (uptrend) and "
-               f"{pct(o0, 0)} to {pct(o1, 0)} (other); {sc_txt}; the regime at A mattered more than depth.")
+               f"{pct(o0, 0)} to {pct(o1, 0)} (other); {sc_txt} (also without the futures: "
+               f"{sens['verdict']}); the regime at A shifted the whole curve (OOS gap {pp(d0[0], 0)} points "
+               f"unconditionally, {pp(n0, 0)} of them reproduced by the memoryless null).")
     return L, finding
 
 
@@ -1368,7 +1511,8 @@ def report_s2(s2: dict, fig: str) -> tuple[list[str], str]:
         rows.append([lab, str(c["tested"]), str(c["found"]), str(c["held"]), str(c["weakened"]), str(c["vanished"]),
                      str(c["reversed"]), str(c["not found IS (sig. OOS)"])])
     n_cells = len(s2["rows"])
-    L += [f"**Scorecard.** {n_cells} cells per metric (13 × 4 markets); {cnt['cls_mean']['too_few']} were too "
+    L += [f"**Scorecard.** {n_cells} cells per metric ({len(s2['symbols'][p2['symbols'][0]]['cells']) - 1} × "
+          f"{len(p2['symbols'])} markets); {cnt['cls_mean']['too_few']} were too "
           "few to judge, the rest are counted below.", ""]
     L += table(["metric", "cells judged", "found IS", "held", "weakened", "vanished", "reversed",
                 "appeared only OOS"], rows)
@@ -1382,27 +1526,48 @@ def report_s2(s2: dict, fig: str) -> tuple[list[str], str]:
     held_up = [f"`{r['symbol']}` {r['cell']}" for r in s2["rows"] if r["cls_up"] == "held" and not r["too_few"]]
     found = cnt["cls_up"]["found"] + cnt["cls_mean"]["found"]
     heldn = cnt["cls_up"]["held"] + cnt["cls_mean"]["held"]
-    base = "; ".join(
-        f"`{sym}` {pct(s2['symbols'][sym]['stats']['IS']['up'][0])} → {pct(s2['symbols'][sym]['stats']['OOS']['up'][0])}"
-        for sym in p2["symbols"])
+    base_parts, moved = [], []
+    for sym in p2["symbols"]:
+        st_ = s2["symbols"][sym]["stats"]
+        # IS and OOS resamples are independent, so pairing them bootstraps the difference
+        dl, dh = ci_of(st_["OOS"]["base_up_rep"] - st_["IS"]["base_up_rep"])
+        dv = st_["OOS"]["up"][0] - st_["IS"]["up"][0]
+        base_parts.append(f"`{sym}` {pct(st_['IS']['up'][0])} → {pct(st_['OOS']['up'][0])} "
+                          f"({pp(dv, 1, True)} points {ci_pct(dl, dh, 1, True)})")
+        if dl > 0 or dh < 0:
+            moved.append(f"`{sym}`")
+    base = "; ".join(base_parts)
     tested2 = cnt["cls_up"]["tested"] + cnt["cls_mean"]["tested"]
+    p_chance = float(stats.binom.sf(found - 1, tested2, 0.05)) if found else 1.0
     L += [f"**Verdict: {verdict_word(s2['verdict'])}** (pre-registered rule: some in-sample differences held "
           "and some did not). The support is mostly for the cautious half of Sections V–VI. Across both "
           f"metrics, {found} of {tested2} judged cells differed from their baseline in-sample, where about "
-          f"{0.05 * tested2:.0f} would by chance; {heldn} held out-of-sample and {found - heldn} weakened, "
+          f"{0.05 * tested2:.0f} would by chance; if the {tested2} tests were independent, {found} or more would "
+          f"happen by chance with probability {p_chance:.2g}, but they are not (nested cells, and two strongly "
+          "correlated metrics on the same cells), so the true chance is larger and the excess is suggestive, "
+          f"not established. {heldn} held out-of-sample and {found - heldn} weakened, "
           f"vanished or reversed. Held (mean): {', '.join(held) if held else 'none'}. Held (P(up)): "
-          f"{', '.join(held_up) if held_up else 'none'}. Even the unconditional baselines moved between "
-          f"periods (P(up), in-sample → out-of-sample: {base}), so the 'unconditional' probability was itself "
-          "conditional on the period. Conditioning can matter, but with these simple conditions most apparent "
+          f"{', '.join(held_up) if held_up else 'none'}. "
+          + (f"A single held cell out of {tested2} tests is itself weak evidence. " if heldn == 1 else "")
+          + f"The unconditional baselines also differed between periods (P(up), in-sample → out-of-sample, "
+          f"with a 95% CI of the change: {base}); "
+          + (f"for {', '.join(moved)} the change is beyond sampling noise, so even the 'unconditional' "
+             "probability was conditional on the period, while for the others it is within noise. "
+             if moved else "none of these changes is beyond sampling noise. ")
+          + "Conditioning can matter, but with these simple conditions most apparent "
           "differences were within noise, and a difference that looked real on one period usually did not "
           "survive to the next: a conditional estimate has to be re-earned, not assumed.", ""]
     L += ["**What this does NOT show.** These are statistical tendencies of index, gold and EUR/USD closes, "
           "not setups. A cell that held is not a trading edge: S7 shows what costs do to the best one. Two "
           "periods are a thin test of persistence; a cell can hold across 2013–2026 and still fail later. "
           "The regime and volatility definitions are one simple choice among many; other definitions would "
-          "give other cells. Equity index levels exclude dividends.", ""]
+          "give other cells. The in-sample volatility terciles are cut on the whole in-sample period, so the "
+          "in-sample classification of a day uses later in-sample data (a fitted, not a real-time, split); "
+          "only the out-of-sample classification is real-time. No p-value or interval here is corrected for "
+          "the number of cells scanned. Equity index levels exclude dividends.", ""]
     finding = (f"{found} of {tested2} conditional cells differed in-sample (≈{0.05 * tested2:.0f} expected by "
-               f"chance); {heldn} held OOS, {found - heldn} weakened, vanished or reversed.")
+               f"chance, before allowing for dependence); {heldn} held OOS, {found - heldn} weakened, vanished "
+               "or reversed.")
     return L, finding
 
 
@@ -1425,7 +1590,8 @@ def report_s3(s3: dict, s7: dict, fig: str) -> tuple[list[str], str]:
     for r in s3["rows"]:
         rows.append([str(r["n"]), pct(r["wr_q"][1]), f"{pct(r['wr_q'][0])} – {pct(r['wr_q'][2])}",
                      f"{r['exp_q'][0]:+.2f}R – {r['exp_q'][2]:+.2f}R",
-                     f"{pct(r['loser_sim'])} ({pct(r['loser_exact'])})", f"{pct(r['star_sim'], 2)} ({pct(r['star_exact'], 2)})"])
+                     f"{pct(r['loser_sim'])} ({prob(r['loser_exact'])})",
+                     f"{share(r['star_sim'], p3['n_samples'], 2)} ({prob(r['star_exact'], 2)})"])
     L += ["**Results (hypothetical, simulated).**", ""]
     L += table(["trades", "median win rate", "95% of samples: win rate", "95% of samples: expectancy",
                 "looks like a loser: sim (exact)", "looks like a star: sim (exact)"], rows)
@@ -1483,7 +1649,7 @@ def report_s4(s4: dict, fig: str) -> tuple[list[str], str]:
     rows = []
     for p, b in p4["strategies"]:
         rows.append([f"p = {p:.2f}, {b:g}R", f"{s4['ev'][(p, b)]:+.3f}R", f"{s4['kelly'][(p, b)]:.1%}",
-                     pct(s4["streaks"][(p, b, p4['streaks'][0])]), pct(s4["streaks"][(p, b, p4['streaks'][1])])])
+                     prob(s4["streaks"][(p, b, p4['streaks'][0])]), prob(s4["streaks"][(p, b, p4['streaks'][1])])])
     L += ["**The strategies.**", ""]
     L += table(["strategy", "EV per trade", "full Kelly fraction", f"P({p4['streaks'][0]}+ loss streak in "
                 f"{p4['n_trades']})", f"P({p4['streaks'][1]}+ loss streak in {p4['n_trades']})"], rows)
@@ -1492,8 +1658,8 @@ def report_s4(s4: dict, fig: str) -> tuple[list[str], str]:
         for f in p4["risk_per_trade"]:
             s = s4["sims"][(p, b, f)]
             rows.append([f"p = {p:.2f}, {b:g}R", f"{f:.1%}", pct(s["max_drawdown_median"]), pct(s["max_drawdown_p95"]),
-                         pct(s["prob_ruin"]), num(s["final_equity_median"], 2),
-                         pct(s["prob_final_below_start"])])
+                         share(s["prob_ruin"], p4["n_paths"]), num(s["final_equity_median"], 2),
+                         share(s["prob_final_below_start"], p4["n_paths"])])
     L += ["**Results (hypothetical, simulated).**", ""]
     L += table(["strategy", "risk per trade", "median max DD", "95th pct max DD", "P(DD ≥ 50%)",
                 "median final equity (start 1.00)", "P(end below start)"], rows)
@@ -1518,19 +1684,21 @@ def report_s4(s4: dict, fig: str) -> tuple[list[str], str]:
     for p, b in under:
         parts.append(f"for p = {p:.2f}, {b:g}R (Kelly {s4['kelly'][(p, b)]:.1%}) the median kept rising to "
                      f"{num(s4['sims'][(p, b, hi_f)]['final_equity_median'])} at {hi_f:.0%} while P(DD ≥ 50%) "
-                     f"reached {pct(s4['sims'][(p, b, hi_f)]['prob_ruin'])}")
-    kelly_txt = ("The median hides the path: " + "; ".join(parts) + ". Few people sit through a 50% "
-                 "drawdown with their process intact, which is the practical sense of Principle 9.") if parts else ""
+                     f"reached {share(s4['sims'][(p, b, hi_f)]['prob_ruin'], p4['n_paths'])}")
+    kelly_txt = ("The median hides the path: " + "; ".join(parts) + ". The simulation cannot measure how a "
+                 "person trades through a 50% drawdown; Principle 9's point is that the process should never "
+                 "have to find out.") if parts else ""
     L += [f"**Verdict: {verdict_word(s4['verdict'])}.** The same edge (p = {worst[0]:.2f}, {worst[1]:g}R, EV "
-          f"{s4['ev'][worst]:+.3f}R) has P(DD ≥ 50%) of {pct(s1p['prob_ruin'])} at 1% risk per trade and "
-          f"{pct(sw['prob_ruin'])} at {hi_f:.0%}. A positive expectancy does not protect an account from its "
-          "own bet size. " + kelly_txt, ""]
+          f"{s4['ev'][worst]:+.3f}R) reached a 50% drawdown in {share(s1p['prob_ruin'], p4['n_paths'])} "
+          f"simulated paths at 1% risk per trade and in {share(sw['prob_ruin'], p4['n_paths'])} at "
+          f"{hi_f:.0%}. A positive expectancy does not protect an account from its own bet size. " + kelly_txt, ""]
     L += ["**What this does NOT show.** The win rates and payoffs are assumed known and constant; in "
           "practice they are estimates (S3), which argues for sizing below these levels. Trades are "
           "independent here; correlated losses (several positions in one regime) make streaks and "
           "drawdowns worse. No real account or strategy is described.", ""]
-    finding = (f"Same +EV edge: P(DD ≥ 50%) {pct(s1p['prob_ruin'])} at 1% risk vs {pct(sw['prob_ruin'])} at "
-               f"{hi_f:.0%} (p = {worst[0]:.2f}, {worst[1]:g}R); a 50% loss needs +100%.")
+    finding = (f"Same +EV edge (p = {worst[0]:.2f}, {worst[1]:g}R): a 50% drawdown in "
+               f"{share(s1p['prob_ruin'], p4['n_paths'])} simulated paths at 1% risk vs "
+               f"{share(sw['prob_ruin'], p4['n_paths'])} at {hi_f:.0%}; a 50% loss needs +100%.")
     return L, finding
 
 
@@ -1552,8 +1720,8 @@ def report_s5(s5: dict, fig: str) -> tuple[list[str], str]:
           f"{s5['oos_span'][0]} → {s5['oos_span'][1]} ({s5['n_oos']:,} days). The winner is the highest "
           "in-sample Sharpe. Its Deflated Sharpe Ratio uses the number of variants tried and the variance of "
           f"their Sharpe ratios. The whole search is then repeated on {p5['n_shuffles']} copies of the "
-          "in-sample series whose daily returns were randomly permuted: same returns, same drift, same "
-          "buy-and-hold Sharpe, no serial structure for any rule to find.", ""]
+          "in-sample series whose daily returns were randomly permuted: same returns, same drift, nearly the "
+          "same buy-and-hold Sharpe, no serial structure for any rule to find.", ""]
     m = s5["win_moments"]
     rows = [
         ["variants searched", f"{s5['n_variants']}"],
@@ -1615,8 +1783,8 @@ def report_s5(s5: dict, fig: str) -> tuple[list[str], str]:
           + ("sits inside that range. " if (best - bh_sh).max() >= s5['win_is'] - s5['bh_is'] else
              "is larger than any of them. ")
           + f"The high IS-OOS rank correlation "
-          f"({num(s5['rho'])}) says the rules differ persistently in *how much* market exposure they carry, "
-          "not that the best one found timing skill.", ""]
+          f"({num(s5['rho'])}) is consistent with the rules differing persistently in *how much* market "
+          "exposure they carry rather than in timing skill (exposure itself was not measured here).", ""]
     L += ["**What this does NOT show.** It does not show that trend rules never work: one market, one "
           "family of rules and one split are tested. The variants are highly correlated, so the effective "
           "number of independent trials is smaller than the count, which makes the deflation conservative. "
@@ -1651,9 +1819,10 @@ def report_s6(s6: dict, fig: str) -> tuple[list[str], str]:
     L += table(["trades", f"+EV strategy (EV +${s6['ev']:.0f}): P(behind)",
                 f"−EV twin (EV −${abs(s6['ev_twin']):.0f}): P(ahead)"], rows)
     L += [f"The +EV strategy loses any single trade with probability {1 - p6['p_win']:.0%}. Its chance of being "
-          f"behind first drops below 5% after **{s6['n_down5']:,} trades**; the −EV twin's chance of being "
-          f"ahead first drops below 5% after **{s6['n_up5']:,} trades**. (The zigzag at small n in the chart "
-          "is real: the total moves in whole trades, so the break-even number of wins jumps as n grows.)", ""]
+          f"behind first dips below 5% at {s6['n_down5']:,} trades and stays below from **{s6['n_down5_stay']:,} "
+          f"trades**; the −EV twin's chance of being ahead first dips below 5% at {s6['n_up5']:,} trades and stays "
+          f"below from **{s6['n_up5_stay']:,} trades**. (The zigzag in the chart is real: the total moves in whole "
+          "trades, so the break-even number of wins jumps as n grows.)", ""]
     L += [f"![S6 decision vs outcome]({fig})", ""]
     r20 = [r for r in s6["rows"] if r["n"] == 20][0]
     L += [f"**Verdict: {verdict_word(s6['verdict'])}.** After 20 trades the sound strategy is behind "
@@ -1723,13 +1892,23 @@ def report_s7(s7: dict, s2: dict, fig: str) -> tuple[list[str], str]:
              "the loss. " if g_oos <= 0 else
              f"The gross edge survived out-of-sample, and costs above {be_txt('OOS')} per side would erase it. ")
           + f"With {no} trades the interval is wide either way: the evidence cannot say the cell is bad, only that "
-          "it never earned the confidence its in-sample numbers suggested.", ""]
+          "it never earned the confidence its in-sample numbers suggested. "
+          + ("Scope of the verdict: the pre-registered rule counts an out-of-sample loss before costs as "
+             "support, but this cell does not test the narrower claim that costs turn a real advantage into a "
+             "loss; what it shows is the decay from the selection period to the next (question 5). "
+             if g_oos <= 0 else "")
+          + f"Its in-sample numbers are also the best of {s7['n_candidates']} candidate cells, so they are "
+          "biased upward by the selection itself (S5's lesson), on top of sampling error.", ""]
     L += ["**What this does NOT show.** The costs are flat assumptions, not measured spreads or slippage, "
           "and an index cannot be traded directly (futures or ETFs add their own costs and tracking). The "
-          "trades are long only, so the result mixes the condition with the market's drift. Nothing here is "
-          "a recommendation to trade the cell.", ""]
+          "trades are long only, so the result mixes the condition with the market's drift. The Student-t "
+          "intervals treat the non-overlapping trades as independent; trades taken in the same sell-off are "
+          "not fully independent, so the true intervals are somewhat wider. Nothing here is a recommendation "
+          "to trade the cell.", ""]
     finding = (f"Best IS cell ({s7['symbol']} · {s7['cell']}): {bp(s7['rows'][('IS', 0)].mean)} bp/trade IS "
-               f"→ {bp(s7['rows'][('OOS', 0)].mean)} bp OOS before costs; break-even OOS: {be_txt('OOS')}.")
+               f"→ {bp(s7['rows'][('OOS', 0)].mean)} bp OOS before costs; break-even OOS: {be_txt('OOS')}"
+               + ("; the edge fell away before costs, so costs themselves were not the test." if
+                  s7["rows"][("OOS", 0)].mean <= 0 else "."))
     return L, finding
 
 
@@ -1755,20 +1934,41 @@ def write_report(s1, s2, s3, s4, s5, s6, s7, runtime: float) -> None:
           "```", "",
           "Data are cached in `tools/philosophy/data/` (git-ignored). Seeds are fixed: the same cache gives the "
           f"same page. This run took {runtime:.0f} s.", ""]
+    gc_flat_is, gc_flat_oos = flat_share("GC=F", None, "2007-12-31"), flat_share("GC=F", "2008-01-01", None)
+    bad_txt = []
+    for sym in md.DEFAULT_SYMBOLS:
+        if not any(sym in P[k]["symbols"] for k in ("S1", "S2")) and sym != P["S5"]["symbol"]:
+            continue
+        cl = md.clean(pd.read_csv(md.cache_path(sym), index_col="date", parse_dates=["date"])).loc[: P["data_end"]]
+        m = md.bad_print_mask(cl).to_numpy()
+        if m.any():
+            c_ = cl["close"].to_numpy()
+            ix = np.flatnonzero(m)
+            off = [abs(math.log(c_[i] / math.sqrt(c_[i - 1] * c_[i + 1]))) for i in ix]
+            bad_txt.append(f"`{sym}`: {len(ix)} bars ({', '.join(cl.index[i].date().isoformat() for i in ix)}), "
+                           f"closes {pct(min(off), 0)}–{pct(max(off), 0)} away from their neighbours")
+    bad_line = ("Bad prints dropped by the studies: " + "; ".join(bad_txt) + "." if bad_txt
+                else "No bad prints were found.")
     L += ["## Data and caveats", "",
           "Daily bars from the public Yahoo Finance chart API, cut at the pre-registered end date. "
-          "Columns: rows dropped by the loader for a missing price or a non-positive price, and bars kept but "
-          "suspicious (a high equal to the low, or a high/low inside the open-close range, which the studies "
-          "widen to the open and close).", ""]
-    L += table(["symbol", "first", "last", "rows used", "dropped: missing", "dropped: ≤ 0", "flat bars",
-                "inconsistent bars", "studies"], data_section_rows())
-    L += ["- **Yahoo data quality.** Free daily data has gaps and errors. `GC=F` has many flat or inconsistent "
-          "bars before 2009 (the range is often missing), which understates intraday excursions there; "
-          "`EURUSD=X` bars are a 24-hour quote, not an exchange print, and have occasional bad highs/lows.",
+          "Columns: rows dropped by the loader for a missing price or a non-positive price, duplicate dates "
+          "(the last bar is kept), isolated bad prints dropped by the studies (see the deviations), and bars "
+          "kept but suspicious (a high equal to the low, or a high/low inside the open-close range, which the "
+          "studies widen to the open and close).", ""]
+    L += table(["symbol", "first", "last", "rows used", "dropped: missing", "dropped: ≤ 0", "duplicate dates",
+                "dropped: bad prints", "flat bars", "inconsistent bars", "studies"], data_section_rows())
+    L += ["- **Yahoo data quality.** Free daily data has gaps and errors. "
+          f"{pct(gc_flat_is, 0)} of `GC=F` bars up to 2007 have no intraday range at all (open = high = low = "
+          f"close; {pct(gc_flat_oos, 0)} from 2008), so ATR and intraday excursions there come from close-to-close "
+          "moves only and are understated; the same days feed S1's null, which keeps the comparison like for "
+          "like but makes the gold in-sample rows a close-only test. `EURUSD=X` bars are a 24-hour quote, not "
+          "an exchange print, with occasional bad highs/lows. " + bad_line,
           "- **Futures roll gaps.** `GC=F` and `CL=F` are front-month continuous series with no "
-          "back-adjustment: each roll can add a jump that no position earned. ATR and excursions include "
-          "them. `CL=F`'s negative settlement of April 2020 and the next day are dropped by the loader "
-          "(a non-positive price has no return).",
+          "back-adjustment: each roll can add a jump that no position earned, which inflates ATR and the path "
+          "excursions in S1 (only S1 uses `CL=F`; S2 uses `GC=F`, where the jump lands in a 5-day return). "
+          "They are not corrected; S1 reports a sensitivity run without the two futures series. `CL=F`'s "
+          "negative settlement of April 2020 and the next day are dropped by the loader (a non-positive price "
+          "has no return), so the following bar's range and return span three sessions.",
           "- **Index levels.** `^GSPC` and `^NDX` are index levels: they have no survivorship bias of their own "
           "(the index is what it was), but they are not tradable instruments, and they exclude dividends, "
           "so long-side returns are understated (by roughly the dividend yield).",
@@ -1777,8 +1977,14 @@ def write_report(s1, s2, s3, s4, s5, s6, s7, runtime: float) -> None:
           "- **Dependence.** Daily entries with multi-day outcomes overlap. S1 and S2 use every day and report "
           "block-bootstrap CIs (non-overlapping calendar blocks resampled with replacement). S3's empirical "
           "cell and S7 use non-overlapping trades. S5 uses daily returns.",
-          "- **Look-ahead.** Every condition at day t uses data up to and including t; outcomes start at t+1. "
-          "Volatility terciles are cut on in-sample data only. In-sample outcome windows end by 2012-12-31.",
+          "- **Look-ahead.** Every condition at day t uses bars up to and including t, and outcomes start at "
+          "t+1; in-sample outcome windows end by 2012-12-31, and every selection (S5's best rule, S7's best "
+          "cell) uses in-sample data only. Two disclosed exceptions, neither of which reaches the out-of-sample "
+          "tests: S2's volatility tercile cut-offs are fitted on the whole in-sample period, so the "
+          "*in-sample* tercile of a day uses later in-sample data (the out-of-sample classification uses the "
+          "frozen in-sample cut-offs, so it is real-time); and the bad-print filter looks at the next bar, "
+          "as a cleaning step for data errors. S1's memoryless null is built from the same period's days; it "
+          "is a yardstick, not a rule anyone could have traded.",
           ""]
     L += ["## Pre-registration", "",
           "The block below is copied from the top of `studies.py`. It was written before any study was run "

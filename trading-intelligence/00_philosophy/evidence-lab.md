@@ -23,26 +23,26 @@ python3 tools/philosophy/studies.py               # run S1-S7, rewrite this page
 python3 tools/philosophy/studies.py --refresh     # re-download the data first
 ```
 
-Data are cached in `tools/philosophy/data/` (git-ignored). Seeds are fixed: the same cache gives the same page. This run took 8 s.
+Data are cached in `tools/philosophy/data/` (git-ignored). Seeds are fixed: the same cache gives the same page. This run took 13 s.
 
 ## Data and caveats
 
-Daily bars from the public Yahoo Finance chart API, cut at the pre-registered end date. Columns: rows dropped by the loader for a missing price or a non-positive price, and bars kept but suspicious (a high equal to the low, or a high/low inside the open-close range, which the studies widen to the open and close).
+Daily bars from the public Yahoo Finance chart API, cut at the pre-registered end date. Columns: rows dropped by the loader for a missing price or a non-positive price, duplicate dates (the last bar is kept), isolated bad prints dropped by the studies (see the deviations), and bars kept but suspicious (a high equal to the low, or a high/low inside the open-close range, which the studies widen to the open and close).
 
-| symbol | first | last | rows used | dropped: missing | dropped: ≤ 0 | flat bars | inconsistent bars | studies |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| `^GSPC` | 1970-01-02 | 2026-09-30 | 14,308 | 0 | 0 | 19 | 0 | S1, S2, S5 |
-| `^NDX` | 1985-10-01 | 2026-09-30 | 10,329 | 0 | 0 | 1 | 0 | S1, S2 |
-| `CL=F` | 2000-08-23 | 2026-09-30 | 6,552 | 80 | 2 | 0 | 7 | S1 |
-| `GC=F` | 2000-08-30 | 2026-09-30 | 6,546 | 83 | 0 | 979 | 441 | S1, S2 |
-| `EURUSD=X` | 2003-12-01 | 2026-09-30 | 5,924 | 34 | 0 | 14 | 128 | S1, S2 |
+| symbol | first | last | rows used | dropped: missing | dropped: ≤ 0 | duplicate dates | dropped: bad prints | flat bars | inconsistent bars | studies |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| `^GSPC` | 1970-01-02 | 2026-09-30 | 14,308 | 0 | 0 | 0 | 0 | 19 | 0 | S1, S2, S5 |
+| `^NDX` | 1985-10-01 | 2026-09-30 | 10,329 | 0 | 0 | 0 | 0 | 1 | 0 | S1, S2 |
+| `CL=F` | 2000-08-23 | 2026-09-30 | 6,552 | 80 | 2 | 0 | 0 | 0 | 7 | S1 |
+| `GC=F` | 2000-08-30 | 2026-09-30 | 6,546 | 83 | 0 | 0 | 0 | 979 | 441 | S1, S2 |
+| `EURUSD=X` | 2003-12-01 | 2026-09-30 | 5,919 | 34 | 0 | 0 | 5 | 14 | 128 | S1, S2 |
 
-- **Yahoo data quality.** Free daily data has gaps and errors. `GC=F` has many flat or inconsistent bars before 2009 (the range is often missing), which understates intraday excursions there; `EURUSD=X` bars are a 24-hour quote, not an exchange print, and have occasional bad highs/lows.
-- **Futures roll gaps.** `GC=F` and `CL=F` are front-month continuous series with no back-adjustment: each roll can add a jump that no position earned. ATR and excursions include them. `CL=F`'s negative settlement of April 2020 and the next day are dropped by the loader (a non-positive price has no return).
+- **Yahoo data quality.** Free daily data has gaps and errors. 33% of `GC=F` bars up to 2007 have no intraday range at all (open = high = low = close; 3% from 2008), so ATR and intraday excursions there come from close-to-close moves only and are understated; the same days feed S1's null, which keeps the comparison like for like but makes the gold in-sample rows a close-only test. `EURUSD=X` bars are a 24-hour quote, not an exchange print, with occasional bad highs/lows. Bad prints dropped by the studies: `EURUSD=X`: 5 bars (2008-01-08, 2008-02-08, 2008-09-08, 2008-10-08, 2008-12-08), closes 6%–15% away from their neighbours.
+- **Futures roll gaps.** `GC=F` and `CL=F` are front-month continuous series with no back-adjustment: each roll can add a jump that no position earned, which inflates ATR and the path excursions in S1 (only S1 uses `CL=F`; S2 uses `GC=F`, where the jump lands in a 5-day return). They are not corrected; S1 reports a sensitivity run without the two futures series. `CL=F`'s negative settlement of April 2020 and the next day are dropped by the loader (a non-positive price has no return), so the following bar's range and return span three sessions.
 - **Index levels.** `^GSPC` and `^NDX` are index levels: they have no survivorship bias of their own (the index is what it was), but they are not tradable instruments, and they exclude dividends, so long-side returns are understated (by roughly the dividend yield).
 - **Execution.** Signals and entries use the same close (a market-on-close assumption), which is optimistic. Costs are flat assumptions. No interest is earned when flat.
 - **Dependence.** Daily entries with multi-day outcomes overlap. S1 and S2 use every day and report block-bootstrap CIs (non-overlapping calendar blocks resampled with replacement). S3's empirical cell and S7 use non-overlapping trades. S5 uses daily returns.
-- **Look-ahead.** Every condition at day t uses data up to and including t; outcomes start at t+1. Volatility terciles are cut on in-sample data only. In-sample outcome windows end by 2012-12-31.
+- **Look-ahead.** Every condition at day t uses bars up to and including t, and outcomes start at t+1; in-sample outcome windows end by 2012-12-31, and every selection (S5's best rule, S7's best cell) uses in-sample data only. Two disclosed exceptions, neither of which reaches the out-of-sample tests: S2's volatility tercile cut-offs are fitted on the whole in-sample period, so the *in-sample* tercile of a day uses later in-sample data (the out-of-sample classification uses the frozen in-sample cut-offs, so it is real-time); and the bad-print filter looks at the next bar, as a cleaning step for data errors. S1's memoryless null is built from the same period's days; it is a yardstick, not a rule anyone could have traded.
 
 ## Pre-registration
 
@@ -140,6 +140,7 @@ PARAMS = {
 
 **Deviations from the pre-registration**, made after results were seen:
 
+- Data (added in review): isolated bad prints are dropped before any study runs (`market_data.bad_print_mask`: a bar whose whole range sits more than 5 robust daily sds beyond BOTH neighbours' ranges; the bars removed are listed under *Data and caveats*). Kept, they inflated the ATR and realised volatility of the affected market for weeks, moved the first touches of B and C in S1, and put large outliers into S2's 5-day returns. Every number on this page was recomputed after the change.
 - S2: a cell whose observations fall in fewer than 10 distinct bootstrap blocks in either period is reported as 'too few to judge' instead of being classified. Added after the first run, where a cell with 4 out-of-sample observations (all in one or two blocks) received a 95% CI under 6 points wide and a 'reversed' label: with so few blocks the block bootstrap cannot see the uncertainty. The cut-off of 10 blocks was set once, from that reasoning, and not tuned; S7's candidate rule is unchanged.
 
 ## S1 — A → C → B: is an adverse move a detour or a breakdown?
@@ -160,32 +161,32 @@ PARAMS = {
 | `^NDX` | OOS | 2013-01-02 → 2026-07-07 | 3,397 | 79% |
 | `GC=F` | IS | 2001-06-18 → 2012-10-02 | 2,830 | 81% |
 | `GC=F` | OOS | 2013-01-02 → 2026-07-07 | 3,397 | 55% |
-| `EURUSD=X` | IS | 2004-09-03 → 2012-10-05 | 2,087 | 54% |
+| `EURUSD=X` | IS | 2004-09-03 → 2012-10-05 | 2,082 | 54% |
 | `EURUSD=X` | OOS | 2013-01-01 → 2026-07-08 | 3,518 | 40% |
 | `CL=F` | IS | 2001-06-11 → 2012-10-02 | 2,838 | 61% |
 | `CL=F` | OOS | 2013-01-02 → 2026-07-07 | 3,395 | 41% |
 
-**In-sample, five markets pooled** (uptrend n = 16,157; other n = 8,803). *Touched* = share of entries whose path touched C_k before B. P(B | C_k) with 95% block-bootstrap CI, the memoryless null, and the comparison.
+**In-sample, five markets pooled** (uptrend n = 16,154; other n = 8,801). *Touched* = share of entries whose path touched C_k before B. P(B | C_k) with 95% block-bootstrap CI, the memoryless null, and the comparison.
 
 | depth | up: touched | up: P(B) [95% CI] | up: null | up: vs null | other: touched | other: P(B) [95% CI] | other: null | other: vs null |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| unconditional | — | 69.8% [65.3, 73.9] | 71.0% |  | — | 61.2% [53.8, 68.6] | 64.8% |  |
-| C at −0.5 ATR | 79.8% | 62.2% [57.2, 66.9] | 63.9% | at null | 81.6% | 52.6% [45.0, 60.6] | 57.5% | at null |
-| C at −1 ATR | 68.8% | 56.4% [50.8, 61.5] | 57.6% | at null | 70.9% | 45.9% [38.4, 54.0] | 50.4% | at null |
-| C at −1.5 ATR | 59.9% | 50.1% [44.4, 55.7] | 50.8% | at null | 62.5% | 39.3% [32.0, 47.4] | 43.5% | at null |
-| C at −2 ATR | 52.0% | 43.7% [38.0, 49.4] | 43.9% | at null | 55.3% | 33.3% [26.4, 41.3] | 36.5% | at null |
-| C at −3 ATR | 39.2% | 31.9% [26.7, 37.3] | 31.1% | at null | 42.4% | 23.3% [17.4, 31.0] | 23.9% | at null |
+| unconditional | — | 69.8% [65.3, 73.9] | 71.0% |  | — | 61.2% [53.8, 68.7] | 64.5% |  |
+| C at −0.5 ATR | 79.9% | 62.2% [57.2, 66.9] | 63.9% | at null | 81.6% | 52.6% [45.0, 60.6] | 57.2% | at null |
+| C at −1 ATR | 68.8% | 56.3% [50.9, 61.4] | 57.6% | at null | 70.9% | 46.0% [38.6, 54.1] | 50.0% | at null |
+| C at −1.5 ATR | 60.0% | 50.2% [44.5, 55.7] | 50.9% | at null | 62.5% | 39.4% [32.2, 47.6] | 43.1% | at null |
+| C at −2 ATR | 52.1% | 43.7% [38.1, 49.3] | 44.0% | at null | 55.4% | 33.5% [26.5, 41.5] | 36.1% | at null |
+| C at −3 ATR | 39.3% | 31.9% [26.6, 37.3] | 31.1% | at null | 42.6% | 23.5% [17.7, 30.8] | 23.4% | at null |
 
 **Out-of-sample, five markets pooled** (uptrend n = 10,011; other n = 7,093). *Touched* = share of entries whose path touched C_k before B. P(B | C_k) with 95% block-bootstrap CI, the memoryless null, and the comparison.
 
 | depth | up: touched | up: P(B) [95% CI] | up: null | up: vs null | other: touched | other: P(B) [95% CI] | other: null | other: vs null |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| unconditional | — | 69.3% [64.6, 73.7] | 69.6% |  | — | 57.4% [50.3, 64.8] | 59.6% |  |
-| C at −0.5 ATR | 80.2% | 61.9% [56.8, 66.7] | 62.2% | at null | 83.2% | 48.8% [41.7, 56.7] | 52.0% | at null |
-| C at −1 ATR | 69.3% | 56.1% [51.0, 61.2] | 56.0% | at null | 71.3% | 40.7% [33.9, 48.4] | 45.5% | at null |
-| C at −1.5 ATR | 60.4% | 50.6% [45.6, 56.0] | 49.5% | at null | 62.1% | 33.1% [26.7, 40.7] | 38.6% | at null |
-| C at −2 ATR | 52.5% | 44.9% [39.9, 50.3] | 42.5% | at null | 55.4% | 27.0% [21.1, 34.1] | 32.0% | at null |
-| C at −3 ATR | 40.7% | 36.2% [30.6, 41.9] | 29.8% | above null | 43.7% | 17.6% [12.4, 24.1] | 20.2% | at null |
+| unconditional | — | 69.3% [64.7, 73.7] | 69.6% |  | — | 57.4% [50.5, 64.9] | 59.6% |  |
+| C at −0.5 ATR | 80.2% | 61.9% [56.9, 66.8] | 62.2% | at null | 83.2% | 48.8% [42.0, 56.6] | 52.0% | at null |
+| C at −1 ATR | 69.3% | 56.1% [51.1, 61.3] | 56.1% | at null | 71.3% | 40.7% [34.1, 48.4] | 45.5% | at null |
+| C at −1.5 ATR | 60.4% | 50.6% [45.5, 55.9] | 49.5% | at null | 62.1% | 33.1% [26.7, 40.8] | 38.6% | at null |
+| C at −2 ATR | 52.5% | 44.9% [39.9, 50.2] | 42.6% | at null | 55.4% | 27.0% [21.1, 34.2] | 31.9% | at null |
+| C at −3 ATR | 40.7% | 36.2% [30.7, 41.8] | 29.8% | above null | 43.7% | 17.6% [12.5, 24.3] | 20.3% | at null |
 
 ![S1 detour curve](figures/s1_detour_curve.png)
 
@@ -193,33 +194,33 @@ PARAMS = {
 
 | deepest excursion before B | IS uptrend | IS other | OOS uptrend | OOS other |
 | --- | ---: | ---: | ---: | ---: |
-| 0–0.5 ATR | 100% (n 3,262) | 99% (n 1,622) | 99% (n 1,979) | 99% (n 1,192) |
-| 0.5–1 ATR | 99% (n 1,779) | 97% (n 943) | 98% (n 1,098) | 97% (n 841) |
-| 1–1.5 ATR | 98% (n 1,441) | 95% (n 738) | 94% (n 889) | 92% (n 655) |
-| 1.5–2 ATR | 93% (n 1,281) | 85% (n 635) | 88% (n 792) | 84% (n 476) |
-| 2–3 ATR | 80% (n 2,056) | 66% (n 1,129) | 75% (n 1,175) | 62% (n 826) |
-| ≥ 3 ATR | 32% (n 6,338) | 23% (n 3,736) | 36% (n 4,078) | 18% (n 3,103) |
+| 0–0.5 ATR | 100% (n 3,253) | 99% (n 1,623) | 99% (n 1,979) | 99% (n 1,192) |
+| 0.5–1 ATR | 99% (n 1,779) | 97% (n 940) | 98% (n 1,098) | 97% (n 841) |
+| 1–1.5 ATR | 98% (n 1,435) | 95% (n 736) | 94% (n 889) | 92% (n 655) |
+| 1.5–2 ATR | 93% (n 1,274) | 86% (n 630) | 88% (n 792) | 84% (n 476) |
+| 2–3 ATR | 80% (n 2,063) | 67% (n 1,125) | 75% (n 1,175) | 62% (n 826) |
+| ≥ 3 ATR | 32% (n 6,350) | 23% (n 3,747) | 36% (n 4,078) | 18% (n 3,103) |
 
 **Per market (both regimes together).**
 
 | market | period | P(B) [95% CI] | P(B \| C at −1 ATR) [95% CI] | P(B \| C at −2 ATR) [95% CI] |
 | --- | ---: | ---: | ---: | ---: |
-| `^GSPC` | IS | 64.4% [58.8, 69.8] | 50.5% [44.2, 56.7] (n 7,543) | 38.0% [31.6, 44.4] (n 5,778) |
-| `^GSPC` | OOS | 78.3% [70.6, 85.8] | 68.0% [58.8, 77.9] (n 2,272) | 59.5% [49.0, 71.1] (n 1,719) |
-| `^NDX` | IS | 68.5% [61.5, 74.7] | 55.1% [47.0, 62.9] (n 4,620) | 43.3% [35.0, 51.9] (n 3,607) |
-| `^NDX` | OOS | 79.8% [71.7, 86.7] | 70.0% [59.5, 79.6] (n 2,281) | 59.5% [47.8, 71.3] (n 1,646) |
-| `GC=F` | IS | 77.8% [70.5, 84.0] | 64.2% [55.4, 72.8] (n 1,757) | 51.7% [42.4, 61.6] (n 1,293) |
-| `GC=F` | OOS | 63.1% [55.7, 70.8] | 47.1% [39.7, 55.2] (n 2,346) | 32.8% [26.0, 40.5] (n 1,781) |
-| `EURUSD=X` | IS | 58.8% [44.7, 71.9] | 42.0% [29.6, 56.0] (n 1,450) | 26.8% [17.6, 39.8] (n 1,104) |
-| `EURUSD=X` | OOS | 45.2% [35.9, 54.1] | 27.9% [20.0, 36.3] (n 2,655) | 15.9% [10.4, 23.2] (n 2,116) |
-| `CL=F` | IS | 66.4% [58.4, 74.5] | 52.2% [43.5, 61.8] (n 1,984) | 38.3% [30.3, 48.2] (n 1,477) |
-| `CL=F` | OOS | 56.0% [47.1, 65.0] | 39.3% [31.1, 48.3] (n 2,440) | 25.6% [18.5, 33.9] (n 1,920) |
+| `^GSPC` | IS | 64.4% [58.8, 69.7] | 50.5% [44.2, 56.7] (n 7,543) | 38.0% [31.7, 44.4] (n 5,778) |
+| `^GSPC` | OOS | 78.3% [70.5, 86.0] | 68.0% [58.5, 78.0] (n 2,272) | 59.5% [49.0, 71.4] (n 1,719) |
+| `^NDX` | IS | 68.5% [61.4, 75.0] | 55.1% [47.0, 63.1] (n 4,620) | 43.3% [34.9, 52.0] (n 3,607) |
+| `^NDX` | OOS | 79.8% [71.4, 86.7] | 70.0% [59.2, 79.7] (n 2,281) | 59.5% [47.7, 71.0] (n 1,646) |
+| `GC=F` | IS | 77.8% [70.5, 84.1] | 64.2% [55.2, 72.9] (n 1,757) | 51.7% [42.4, 61.6] (n 1,293) |
+| `GC=F` | OOS | 63.1% [55.5, 71.0] | 47.1% [39.6, 55.3] (n 2,346) | 32.8% [25.8, 40.7] (n 1,781) |
+| `EURUSD=X` | IS | 58.8% [45.0, 71.8] | 42.4% [30.1, 56.2] (n 1,456) | 28.0% [18.5, 40.8] (n 1,130) |
+| `EURUSD=X` | OOS | 45.2% [35.9, 54.5] | 27.9% [20.1, 36.8] (n 2,655) | 15.9% [10.4, 23.2] (n 2,116) |
+| `CL=F` | IS | 66.4% [58.5, 74.7] | 52.2% [43.6, 62.3] (n 1,984) | 38.3% [30.2, 48.2] (n 1,477) |
+| `CL=F` | OOS | 56.0% [47.2, 64.7] | 39.3% [31.2, 48.2] (n 2,440) | 25.6% [18.6, 33.3] (n 1,920) |
 
 Same-bar ties (C_k and B on one bar), all depths and markets: 49; they were resolved against the claim as stated above.
 
-**Verdict: Supports** (pre-registered rule: in the *uptrend* regime no tested depth (up to 3 ATR) fell below the memoryless null in both periods; in the *other* regime no tested depth (up to 3 ATR) fell below the memoryless null in both periods). An adverse move weakens the hypothesis without settling it. Out-of-sample, a 1-ATR detour took P(B) from 69.3% to 56.1% in uptrends and from 57.4% to 40.7% otherwise; even after a 3-ATR detour, B was still reached 36.2% of the time in uptrends (17.6% otherwise). **No depth behaved like structural change** in either regime: up to 3 ATR, the observed curve never sat clearly below (in both periods) what a memoryless market with the same drift and volatility produces. The decline of P(B) with depth is, within the precision of these data, geometry: farther to go and less time to get there. Context did more than depth: at every depth and in both periods the uptrend curve sits above the other-regime curve, the gap is 12 points unconditionally and 19 points at 3 ATR out-of-sample. Softer signals, mostly inside the CIs: observed minus null ranged from -5 to -1 points in-sample and from -6 to -3 out-of-sample in the *other* regime (adverse moves there leaned towards bad news), and from 0 to +6 for out-of-sample uptrends; single-period CIs clear of the null: above at OOS uptrend at 3 ATR. For Section III this means the distinction between a detour and a breakdown cannot be read from the size of the adverse move alone; it has to come from the context in which the move happens, which is what Principle 2 asks for.
+**Verdict: Supports** (pre-registered rule: in the *uptrend* regime no tested depth (up to 3 ATR) fell below the memoryless null in both periods; in the *other* regime no tested depth (up to 3 ATR) fell below the memoryless null in both periods). An adverse move weakens the hypothesis without settling it. Out-of-sample, a 1-ATR detour took P(B) from 69.3% to 56.1% in uptrends and from 57.4% to 40.7% otherwise; even after a 3-ATR detour, B was still reached 36.2% of the time in uptrends (17.6% otherwise). **No depth behaved like structural change** in either regime: up to 3 ATR, the observed curve never sat clearly below (in both periods) what a memoryless market with the same drift and volatility produces. The decline of P(B) with depth is, within the precision of these data, geometry: farther to go and less time to get there. The regime at A shifts the whole curve: at every depth and in both periods the uptrend point estimate sits above the other-regime one, out-of-sample by 12 points [+3, +20] unconditionally and 19 points [+10, +26] at 3 ATR (95% CIs of the difference, same block resamples; the interval excludes zero at 12 of 12 period-depth points). The memoryless nulls differ by 10 and 10 points at the same two places, so unconditionally 84% of the gap is what the different drift and volatility of the two regimes' days produce, but at 3 ATR only 51%; the remainder comes from uptrend paths running above their null after deep detours and other-regime paths running below theirs, which is suggestive only (see the next sentences). Softer signals, mostly inside the CIs: observed minus null ranged from -5 to 0 points in-sample and from -6 to -3 out-of-sample in the *other* regime, and from 0 to +6 for out-of-sample uptrends; single-period CIs clear of the null: above at OOS uptrend at 3 ATR. That is 1 of 20 period × regime × depth comparisons, about the 1 a 95% interval would give by chance alone, so it is not read as a finding. Sensitivity (added in review): without the two futures series (GC=F, CL=F), whose ATR and paths include unadjusted roll gaps, the pre-registered rule gives *supports*, with 2 of 20 single-period CIs clear of the null (above at OOS uptrend at 2 ATR, OOS uptrend at 3 ATR). For Section III this means the distinction between a detour and a breakdown cannot be read from the size of the adverse move alone; the depth of a detour, on its own, carried no information beyond geometry here. Whether richer context can tell the two apart, as Principle 2 asks, is not something this test of one trend filter can settle.
 
-**What this does NOT show.** It does not show that B = A + 3 ATR is a sensible target, or that buying every day is a strategy (most entries are not trades anyone would take). It uses daily bars, so the order of events within a day is unknown. It conditions on one context variable (trend); the philosophy's *structure* is richer than a moving-average test, and a richer context might find the breakdown signal that depth alone does not carry. The memoryless null removes volatility clustering: after a sharp fall volatility usually rises, so real paths, measured in ATR at entry, swing wider in both directions than the null's. It says nothing about the short side.
+**What this does NOT show.** It does not show that B = A + 3 ATR is a sensible target, or that buying every day is a strategy (most entries are not trades anyone would take). It uses daily bars, so the order of events within a day is unknown. It conditions on one context variable (trend); the philosophy's *structure* is richer than a moving-average test, and a richer context might find the breakdown signal that depth alone does not carry. The memoryless null removes volatility clustering: after a sharp fall volatility usually rises, so real paths, measured in ATR at entry, swing wider in both directions than the null's. The null is also held in one regime for all 60 days, and its value is treated as fixed: its own estimation error (it is built from the same finite sample of days) is not in the CIs, so single-period 'above' or 'below' calls are, if anything, too easy to get. The block bootstrap uses 182-day blocks for 60-trading-day outcomes (about 87 calendar days), so neighbouring blocks still share some outcome windows, and the out-of-sample period holds only 28 blocks (85 in-sample): the CIs are approximate. It says nothing about the short side.
 
 ## S2 — Recurrence is conditional
 
@@ -233,7 +234,7 @@ Same-bar ties (C_k and B on one bar), all depths and markets: 49; they were reso
 | --- | ---: | ---: | ---: | ---: | ---: |
 | `^GSPC` | 1970-10-14 → 2012-12-21 | 10,647 | 2013-01-02 → 2026-09-23 | 3,452 | 10.8% / 15.5% |
 | `^NDX` | 1986-07-16 → 2012-12-21 | 6,668 | 2013-01-02 → 2026-09-23 | 3,452 | 16.6% / 24.8% |
-| `EURUSD=X` | 2004-09-03 → 2012-12-24 | 2,142 | 2013-01-01 → 2026-09-23 | 3,573 | 8.3% / 10.9% |
+| `EURUSD=X` | 2004-09-03 → 2012-12-24 | 2,137 | 2013-01-01 → 2026-09-23 | 3,573 | 8.2% / 10.7% |
 | `GC=F` | 2001-06-18 → 2012-12-21 | 2,885 | 2013-01-02 → 2026-09-23 | 3,452 | 14.0% / 18.7% |
 
 **`^GSPC`.** Baseline in-sample: P(up) 55.4% [53.5, 57.3], mean +13 bp [+3, +23]. Out-of-sample: P(up) 60.7% [58.0, 63.5], mean +24 bp [+12, +37]. Cells show the difference from that baseline.
@@ -268,7 +269,7 @@ Same-bar ties (C_k and B on one bar), all depths and markets: 49; they were reso
 | 3-down · uptrend · low vol | 154 | +1.5 [-7.8, +10.2] | -23 [-92, +42] | 105 | +3.6 [-7.7, +14.9] | +8 [-40, +58] | not found IS | not found IS |
 | 3-down · uptrend · mid vol | 162 | +8.5 [+0.7, +16.6] | +48 [-27, +109] | 66 | +0.4 [-11.9, +13.6] | +4 [-80, +78] | weakened | not found IS |
 | 3-down · uptrend · high vol | 64 | +4.7 [-5.8, +16.1] | +98 [-36, +228] | 13 | +1.3 [-14.5, +39.5] | +114 [+8, +393] | too few to judge | too few to judge |
-| 3-down · other · low vol | 71 | +0.1 [-15.1, +17.8] | +0 [-65, +78] | 11 | +3.4 [-39.3, +41.9] | +33 [-111, +360] | too few to judge | too few to judge |
+| 3-down · other · low vol | 71 | +0.1 [-15.1, +17.8] | +0.5 [-65, +78] | 11 | +3.4 [-39.3, +41.9] | +33 [-111, +360] | too few to judge | too few to judge |
 | 3-down · other · mid vol | 75 | +2.4 [-9.1, +14.8] | +29 [-32, +98] | 16 | +2.3 [-41.0, +27.1] | +21 [-341, +227] | too few to judge | too few to judge |
 | 3-down · other · high vol | 143 | +7.4 [-2.0, +18.5] | +107 [-27, +253] | 46 | -3.7 [-19.3, +10.3] | +8 [-229, +157] | too few to judge | too few to judge |
 
@@ -276,19 +277,19 @@ Same-bar ties (C_k and B on one bar), all depths and markets: 49; they were reso
 
 | cell | IS n | IS ΔP(up), pp | IS Δmean, bp | OOS n | OOS ΔP(up), pp | OOS Δmean, bp | P(up): fate | mean: fate |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| uptrend · low vol | 539 | +9.3 [+3.9, +16.2] | +22 [+6, +41] | 1,150 | +0.1 [-4.3, +3.8] | +0 [-10, +9] | weakened | weakened |
-| uptrend · mid vol | 311 | +1.7 [-6.5, +10.1] | -3 [-28, +23] | 225 | +7.6 [-5.9, +19.9] | +18 [-9, +48] | not found IS | not found IS |
-| uptrend · high vol | 307 | -3.1 [-10.2, +3.3] | -17 [-54, +9] | 32 | -29.6 [-49.1, +6.8] | -35 [-66, +21] | too few to judge | too few to judge |
-| other · low vol | 175 | -2.4 [-17.4, +12.4] | +2 [-42, +38] | 1,442 | -1.7 [-5.0, +1.9] | -1 [-9, +6] | not found IS | not found IS |
-| other · mid vol | 403 | -7.5 [-15.8, +2.1] | -10 [-35, +21] | 433 | +0.3 [-7.0, +8.7] | -10 [-31, +13] | not found IS | not found IS |
-| other · high vol | 407 | -2.8 [-9.5, +4.9] | -5 [-45, +29] | 291 | +4.5 [-5.1, +15.8] | +10 [-16, +38] | not found IS | not found IS |
-| 3-down (no context) | 245 | +3.3 [-1.5, +8.5] | +17 [-1, +38] | 429 | +1.7 [-3.2, +6.9] | +11 [-0, +23] | not found IS | not found IS |
-| 3-down · uptrend · low vol | 49 | +12.6 [-0.4, +28.2] | +25 [-0, +60] | 123 | +0.4 [-11.0, +12.1] | +8 [-12, +29] | not found IS | not found IS |
-| 3-down · uptrend · mid vol | 42 | +4.5 [-2.7, +14.5] | +15 [-8, +52] | 18 | +12.7 [-25.7, +50.7] | +43 [-21, +145] | too few to judge | too few to judge |
-| 3-down · uptrend · high vol | 25 | -4.7 [-30.5, +20.3] | -33 [-152, +64] | 1 | -48.4 [-51.5, -45.3] | -62 [-70, -55] | too few to judge | too few to judge |
-| 3-down · other · low vol | 25 | -16.7 [-44.3, +10.1] | -28 [-79, +22] | 201 | -1.1 [-9.5, +7.9] | -1 [-20, +18] | too few to judge | too few to judge |
-| 3-down · other · mid vol | 50 | +3.3 [-18.9, +19.7] | +19 [-24, +48] | 50 | -8.4 [-27.0, +9.4] | -9 [-53, +36] | not found IS | not found IS |
-| 3-down · other · high vol | 54 | +6.6 [-7.7, +18.9] | +55 [-16, +137] | 36 | +32.2 [+15.8, +45.2] | +99 [+49, +136] | not found IS (sig. OOS) | not found IS (sig. OOS) |
+| uptrend · low vol | 541 | +9.6 [+4.1, +16.5] | +23 [+7, +43] | 1,148 | +0.1 [-4.4, +3.8] | +0.3 [-10, +9] | weakened | weakened |
+| uptrend · mid vol | 323 | +1.8 [-6.1, +10.2] | -3 [-28, +22] | 226 | +7.8 [-5.6, +20.1] | +18 [-9, +48] | not found IS | not found IS |
+| uptrend · high vol | 290 | -3.7 [-8.9, +1.7] | -20 [-47, +0.2] | 33 | -30.2 [-49.1, +3.2] | -35 [-65, +17] | too few to judge | too few to judge |
+| other · low vol | 172 | -2.1 [-17.2, +12.5] | +2 [-42, +39] | 1,434 | -1.7 [-5.1, +1.8] | -2 [-9, +6] | not found IS | not found IS |
+| other · mid vol | 389 | -8.2 [-16.4, +2.0] | -10 [-34, +21] | 423 | +0.1 [-7.3, +8.6] | -10 [-32, +15] | not found IS | not found IS |
+| other · high vol | 422 | -2.7 [-9.9, +5.4] | -4 [-43, +30] | 309 | +5.0 [-4.2, +15.9] | +11 [-15, +40] | not found IS | not found IS |
+| 3-down (no context) | 245 | +2.4 [-2.8, +7.9] | +6 [-14, +23] | 429 | +1.7 [-3.2, +6.9] | +11 [-0.5, +23] | not found IS | not found IS |
+| 3-down · uptrend · low vol | 49 | +12.6 [-0.5, +28.1] | +25 [-0.2, +60] | 123 | +0.4 [-11.0, +12.1] | +8 [-12, +29] | not found IS | not found IS |
+| 3-down · uptrend · mid vol | 44 | +8.7 [+1.2, +20.4] | +24 [-4, +64] | 18 | +12.7 [-25.7, +50.7] | +43 [-21, +145] | too few to judge | too few to judge |
+| 3-down · uptrend · high vol | 23 | -13.6 [-33.7, +8.5] | -53 [-168, +48] | 1 | -48.4 [-51.5, -45.3] | -62 [-70, -55] | too few to judge | too few to judge |
+| 3-down · other · low vol | 23 | -13.6 [-43.7, +19.7] | -24 [-77, +36] | 201 | -1.1 [-9.5, +7.9] | -1 [-20, +18] | too few to judge | too few to judge |
+| 3-down · other · mid vol | 51 | +2.2 [-20.3, +19.6] | +17 [-24, +47] | 49 | -9.6 [-29.9, +8.3] | -18 [-63, +22] | not found IS | not found IS |
+| 3-down · other · high vol | 55 | +1.9 [-16.4, +16.5] | -1 [-86, +75] | 37 | +32.7 [+16.5, +45.4] | +109 [+49, +153] | not found IS (sig. OOS) | not found IS (sig. OOS) |
 
 **`GC=F`.** Baseline in-sample: P(up) 57.3% [53.5, 60.8], mean +31 bp [+12, +50]. Out-of-sample: P(up) 54.5% [51.2, 57.8], mean +14 bp [-3, +32]. Cells show the difference from that baseline.
 
@@ -299,12 +300,12 @@ Same-bar ties (C_k and B on one bar), all depths and markets: 49; they were reso
 | uptrend · high vol | 689 | -8.6 [-14.8, -3.0] | -50 [-85, -20] | 438 | -0.7 [-7.7, +6.5] | -4 [-47, +55] | weakened | weakened |
 | other · low vol | 138 | +10.1 [-9.5, +23.7] | +27 [-62, +101] | 771 | -3.3 [-9.8, +3.2] | -23 [-52, +8] | not found IS | not found IS |
 | other · mid vol | 136 | +0.1 [-9.9, +14.2] | +8 [-36, +63] | 501 | +3.1 [-2.5, +9.1] | +10 [-22, +39] | not found IS | not found IS |
-| other · high vol | 273 | -2.7 [-12.4, +7.8] | +16 [-82, +105] | 310 | +2.2 [-4.0, +11.4] | +0 [-33, +48] | not found IS | not found IS |
+| other · high vol | 273 | -2.7 [-12.4, +7.8] | +16 [-82, +105] | 310 | +2.2 [-4.0, +11.4] | +0.4 [-33, +48] | not found IS | not found IS |
 | 3-down (no context) | 226 | +1.6 [-5.8, +9.1] | +11 [-43, +67] | 343 | -1.2 [-6.2, +3.8] | -13 [-38, +11] | not found IS | not found IS |
 | 3-down · uptrend · low vol | 31 | +13.7 [-1.3, +28.3] | +51 [-1, +104] | 79 | -1.4 [-14.8, +11.3] | +6 [-39, +59] | not found IS | not found IS |
 | 3-down · uptrend · mid vol | 55 | +0.9 [-17.5, +19.4] | +28 [-59, +112] | 34 | +1.3 [-19.1, +26.8] | +59 [-31, +180] | not found IS | not found IS |
 | 3-down · uptrend · high vol | 62 | -2.4 [-15.5, +10.0] | +38 [-57, +139] | 38 | -1.9 [-12.9, +12.4] | -43 [-135, +44] | not found IS | not found IS |
-| 3-down · other · low vol | 16 | -1.0 [-23.7, +42.4] | +12 [-110, +224] | 101 | -3.1 [-12.6, +6.6] | -50 [-101, +0] | too few to judge | too few to judge |
+| 3-down · other · low vol | 16 | -1.0 [-23.7, +42.4] | +12 [-110, +224] | 101 | -3.1 [-12.6, +6.6] | -50 [-101, +0.0] | too few to judge | too few to judge |
 | 3-down · other · mid vol | 16 | +17.7 [-11.9, +44.0] | +17 [-105, +144] | 60 | +0.5 [-14.7, +15.5] | -7 [-57, +40] | too few to judge | too few to judge |
 | 3-down · other · high vol | 46 | -5.1 [-22.8, +22.5] | -73 [-276, +235] | 31 | +0.3 [-22.3, +20.8] | +3 [-113, +129] | too few to judge | too few to judge |
 
@@ -319,9 +320,9 @@ With 37 cells per metric, about 1.9 would clear a 95% interval by chance alone e
 
 ![S2 in-sample vs out-of-sample](figures/s2_conditional_is_vs_oos.png)
 
-**Verdict: Supports** (pre-registered rule: some in-sample differences held and some did not). The support is mostly for the cautious half of Sections V–VI. Across both metrics, 11 of 74 judged cells differed from their baseline in-sample, where about 4 would by chance; 1 held out-of-sample and 10 weakened, vanished or reversed. Held (mean): `^GSPC` 3-down (no context). Held (P(up)): none. Even the unconditional baselines moved between periods (P(up), in-sample → out-of-sample: `^GSPC` 55.4% → 60.7%; `^NDX` 56.3% → 60.2%; `EURUSD=X` 52.7% → 48.4%; `GC=F` 57.3% → 54.5%), so the 'unconditional' probability was itself conditional on the period. Conditioning can matter, but with these simple conditions most apparent differences were within noise, and a difference that looked real on one period usually did not survive to the next: a conditional estimate has to be re-earned, not assumed.
+**Verdict: Supports** (pre-registered rule: some in-sample differences held and some did not). The support is mostly for the cautious half of Sections V–VI. Across both metrics, 11 of 74 judged cells differed from their baseline in-sample, where about 4 would by chance; if the 74 tests were independent, 11 or more would happen by chance with probability 0.0011, but they are not (nested cells, and two strongly correlated metrics on the same cells), so the true chance is larger and the excess is suggestive, not established. 1 held out-of-sample and 10 weakened, vanished or reversed. Held (mean): `^GSPC` 3-down (no context). Held (P(up)): none. A single held cell out of 74 tests is itself weak evidence. The unconditional baselines also differed between periods (P(up), in-sample → out-of-sample, with a 95% CI of the change: `^GSPC` 55.4% → 60.7% (+5.3 points [+1.9, +8.7]); `^NDX` 56.3% → 60.2% (+3.9 points [+0.2, +7.5]); `EURUSD=X` 52.7% → 48.4% (-4.3 points [-9.5, +0.7]); `GC=F` 57.3% → 54.5% (-2.7 points [-7.5, +2.2])); for `^GSPC`, `^NDX` the change is beyond sampling noise, so even the 'unconditional' probability was conditional on the period, while for the others it is within noise. Conditioning can matter, but with these simple conditions most apparent differences were within noise, and a difference that looked real on one period usually did not survive to the next: a conditional estimate has to be re-earned, not assumed.
 
-**What this does NOT show.** These are statistical tendencies of index, gold and EUR/USD closes, not setups. A cell that held is not a trading edge: S7 shows what costs do to the best one. Two periods are a thin test of persistence; a cell can hold across 2013–2026 and still fail later. The regime and volatility definitions are one simple choice among many; other definitions would give other cells. Equity index levels exclude dividends.
+**What this does NOT show.** These are statistical tendencies of index, gold and EUR/USD closes, not setups. A cell that held is not a trading edge: S7 shows what costs do to the best one. Two periods are a thin test of persistence; a cell can hold across 2013–2026 and still fail later. The regime and volatility definitions are one simple choice among many; other definitions would give other cells. The in-sample volatility terciles are cut on the whole in-sample period, so the in-sample classification of a day uses later in-sample data (a fitted, not a real-time, split); only the out-of-sample classification is real-time. No p-value or interval here is corrected for the number of cells scanned. Equity index levels exclude dividends.
 
 ## S3 — The law of large numbers: what a sample can and cannot establish
 
@@ -336,8 +337,8 @@ With 37 cells per metric, about 1.9 would clear a 95% interval by chance alone e
 | 10 | 60.0% | 20.0% – 80.0% | -0.65R – +0.55R | 49.6% (49.6%) | 26.67% (26.60%) |
 | 30 | 56.7% | 36.7% – 73.3% | -0.32R – +0.42R | 35.3% (35.5%) | 6.93% (6.94%) |
 | 100 | 55.0% | 45.0% – 65.0% | -0.15R – +0.25R | 30.7% (30.7%) | 0.15% (0.15%) |
-| 300 | 55.0% | 49.3% – 60.7% | -0.06R – +0.16R | 19.1% (19.2%) | 0.00% (0.00%) |
-| 1000 | 55.0% | 51.9% – 58.1% | -0.01R – +0.11R | 6.0% (6.0%) | 0.00% (0.00%) |
+| 300 | 55.0% | 49.3% – 60.7% | -0.06R – +0.16R | 19.1% (19.2%) | 0 of 100,000 (<0.01%) |
+| 1000 | 55.0% | 51.9% – 58.1% | -0.01R – +0.11R | 6.0% (6.0%) | 0 of 100,000 (<0.01%) |
 
 `trades_needed` for the true parameters: per-trade expectancy +0.050R with sd 0.995R, so a 95% interval on expectancy excludes zero on an average sample only after about **1,522 trades**, and with 80% power after about **3,109 trades**; pinning the win rate to ±5 points takes about 381 trades.
 
@@ -366,7 +367,7 @@ The in-sample row is also the *best of 32 cells*, so its numbers carry selection
 
 | strategy | EV per trade | full Kelly fraction | P(6+ loss streak in 250) | P(10+ loss streak in 250) |
 | --- | ---: | ---: | ---: | ---: |
-| p = 0.35, 2.5R | +0.175R | 6.8% | 100.0% | 70.0% |
+| p = 0.35, 2.5R | +0.175R | 6.8% | >99.9% | 70.0% |
 | p = 0.50, 1.5R | +0.200R | 13.1% | 86.8% | 11.2% |
 | p = 0.60, 1R | +0.150R | 15.0% | 45.9% | 1.5% |
 
@@ -374,19 +375,19 @@ The in-sample row is also the *best of 32 cells*, so its numbers carry selection
 
 | strategy | risk per trade | median max DD | 95th pct max DD | P(DD ≥ 50%) | median final equity (start 1.00) | P(end below start) |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| p = 0.35, 2.5R | 0.5% | 8.3% | 15.0% | 0.0% | 1.22 | 5.8% |
-| p = 0.35, 2.5R | 1.0% | 16.0% | 28.3% | 0.0% | 1.47 | 5.3% |
+| p = 0.35, 2.5R | 0.5% | 8.3% | 15.0% | 0 of 10,000 | 1.22 | 5.8% |
+| p = 0.35, 2.5R | 1.0% | 16.0% | 28.3% | 1 of 10,000 | 1.47 | 5.3% |
 | p = 0.35, 2.5R | 2.0% | 29.9% | 49.2% | 4.5% | 2.16 | 7.2% |
 | p = 0.35, 2.5R | 5.0% | 62.1% | 84.6% | 83.6% | 3.54 | 14.5% |
-| p = 0.35, 2.5R | 10.0% | 89.8% | 98.9% | 100.0% | 2.67 | 35.2% |
-| p = 0.50, 1.5R | 0.5% | 5.3% | 9.4% | 0.0% | 1.28 | 0.6% |
-| p = 0.50, 1.5R | 1.0% | 10.5% | 17.9% | 0.0% | 1.62 | 0.7% |
+| p = 0.35, 2.5R | 10.0% | 89.8% | 98.9% | 9,997 of 10,000 | 2.67 | 35.2% |
+| p = 0.50, 1.5R | 0.5% | 5.3% | 9.4% | 0 of 10,000 | 1.28 | 0.6% |
+| p = 0.50, 1.5R | 1.0% | 10.5% | 17.9% | 0 of 10,000 | 1.62 | 0.7% |
 | p = 0.50, 1.5R | 2.0% | 20.2% | 33.6% | 0.1% | 2.51 | 1.0% |
 | p = 0.50, 1.5R | 5.0% | 45.1% | 66.4% | 33.3% | 7.45 | 2.1% |
 | p = 0.50, 1.5R | 10.0% | 73.4% | 92.0% | 98.0% | 21.31 | 5.9% |
-| p = 0.60, 1R | 0.5% | 4.4% | 7.8% | 0.0% | 1.20 | 0.8% |
-| p = 0.60, 1R | 1.0% | 8.7% | 15.3% | 0.0% | 1.44 | 0.9% |
-| p = 0.60, 1R | 2.0% | 16.8% | 29.0% | 0.0% | 2.02 | 1.3% |
+| p = 0.60, 1R | 0.5% | 4.4% | 7.8% | 0 of 10,000 | 1.20 | 0.8% |
+| p = 0.60, 1R | 1.0% | 8.7% | 15.3% | 0 of 10,000 | 1.44 | 0.9% |
+| p = 0.60, 1R | 2.0% | 16.8% | 29.0% | 1 of 10,000 | 2.02 | 1.3% |
 | p = 0.60, 1R | 5.0% | 38.6% | 59.3% | 16.5% | 4.80 | 2.1% |
 | p = 0.60, 1R | 10.0% | 66.0% | 87.0% | 91.4% | 12.43 | 5.5% |
 
@@ -403,7 +404,7 @@ The in-sample row is also the *best of 32 cells*, so its numbers carry selection
 
 ![S4 ruin](figures/s4_ruin.png)
 
-**Verdict: Supports.** The same edge (p = 0.35, 2.5R, EV +0.175R) has P(DD ≥ 50%) of 0.0% at 1% risk per trade and 100.0% at 10%. A positive expectancy does not protect an account from its own bet size. The median hides the path: for p = 0.35, 2.5R (full Kelly 6.8%), going from 5% to 10% risk lowered the median final equity from 3.54 to 2.67: past Kelly, more risk is worse even for the typical path; for p = 0.50, 1.5R (Kelly 13.1%) the median kept rising to 21.31 at 10% while P(DD ≥ 50%) reached 98.0%; for p = 0.60, 1R (Kelly 15.0%) the median kept rising to 12.43 at 10% while P(DD ≥ 50%) reached 91.4%. Few people sit through a 50% drawdown with their process intact, which is the practical sense of Principle 9.
+**Verdict: Supports.** The same edge (p = 0.35, 2.5R, EV +0.175R) reached a 50% drawdown in 1 of 10,000 simulated paths at 1% risk per trade and in 9,997 of 10,000 at 10%. A positive expectancy does not protect an account from its own bet size. The median hides the path: for p = 0.35, 2.5R (full Kelly 6.8%), going from 5% to 10% risk lowered the median final equity from 3.54 to 2.67: past Kelly, more risk is worse even for the typical path; for p = 0.50, 1.5R (Kelly 13.1%) the median kept rising to 21.31 at 10% while P(DD ≥ 50%) reached 98.0%; for p = 0.60, 1R (Kelly 15.0%) the median kept rising to 12.43 at 10% while P(DD ≥ 50%) reached 91.4%. The simulation cannot measure how a person trades through a 50% drawdown; Principle 9's point is that the process should never have to find out.
 
 **What this does NOT show.** The win rates and payoffs are assumed known and constant; in practice they are estimates (S3), which argues for sizing below these levels. Trades are independent here; correlated losses (several positions in one regime) make streaks and drawdowns worse. No real account or strategy is described.
 
@@ -411,7 +412,7 @@ The in-sample row is also the *best of 32 cells*, so its numbers carry selection
 
 **Claim tested.** Section XVII ([[philo_scientific_method]]) warns that rules adjusted until they fit the past can learn the noise of the sample; Section XX.4 ([[philo_research_foundations]]) points to the research on backtest overfitting; Principle 5 ([[principle_05_mathematical_justification]]) asks for mathematical justification, not a convincing backtest. See [[concept_overfitting_validation]], [[concept_backtesting]], [[paper_deflated_sharpe_2014]] ([[person_marcos_lopez_de_prado]]).
 
-**Design.** `^GSPC` daily closes. 238 rule variants ([[concept_moving_averages]], [[concept_trend_following]], [[concept_breakout_trading]]): SMA crossovers, close vs SMA, time-series momentum and Donchian breakouts, each long/flat and long/short. Position decided at the close from data up to that close, held to the next close; 1 bp per side on every change of position; flat earns nothing. In-sample 1971-03-11 → 2012-12-31 (10,550 days), out-of-sample 2013-01-02 → 2026-09-30 (3,457 days). The winner is the highest in-sample Sharpe. Its Deflated Sharpe Ratio uses the number of variants tried and the variance of their Sharpe ratios. The whole search is then repeated on 20 copies of the in-sample series whose daily returns were randomly permuted: same returns, same drift, same buy-and-hold Sharpe, no serial structure for any rule to find.
+**Design.** `^GSPC` daily closes. 238 rule variants ([[concept_moving_averages]], [[concept_trend_following]], [[concept_breakout_trading]]): SMA crossovers, close vs SMA, time-series momentum and Donchian breakouts, each long/flat and long/short. Position decided at the close from data up to that close, held to the next close; 1 bp per side on every change of position; flat earns nothing. In-sample 1971-03-11 → 2012-12-31 (10,550 days), out-of-sample 2013-01-02 → 2026-09-30 (3,457 days). The winner is the highest in-sample Sharpe. Its Deflated Sharpe Ratio uses the number of variants tried and the variance of their Sharpe ratios. The whole search is then repeated on 20 copies of the in-sample series whose daily returns were randomly permuted: same returns, same drift, nearly the same buy-and-hold Sharpe, no serial structure for any rule to find.
 
 **Results.**
 
@@ -454,7 +455,7 @@ Top five in-sample variants:
 
 ![S5 overfitting](figures/s5_overfitting.png)
 
-**Verdict: Supports.** Pre-registered triggers met: its Deflated Sharpe Ratio is below 0.95; the best rule on no-signal copies matched or beat it in 2 of 20 copies (permutation p = 0.14 ≥ 0.05). The winner, close vs SMA 250, long/flat, did not collapse: in-sample Sharpe 0.63, out-of-sample 0.80. But what the search was selecting for, an advantage over simply holding, did not carry over: 0.18 Sharpe over buy and hold in-sample, -0.01 out-of-sample, and only 4.2% of all variants beat buy and hold out-of-sample. On series with no signal at all, the best of 238 rules reached a mean in-sample Sharpe of 0.52 against 0.46 for holding, an advantage of up to 0.25 produced by selection alone; the real winner's in-sample advantage (0.18) sits inside that range. The high IS-OOS rank correlation (0.82) says the rules differ persistently in *how much* market exposure they carry, not that the best one found timing skill.
+**Verdict: Supports.** Pre-registered triggers met: its Deflated Sharpe Ratio is below 0.95; the best rule on no-signal copies matched or beat it in 2 of 20 copies (permutation p = 0.14 ≥ 0.05). The winner, close vs SMA 250, long/flat, did not collapse: in-sample Sharpe 0.63, out-of-sample 0.80. But what the search was selecting for, an advantage over simply holding, did not carry over: 0.18 Sharpe over buy and hold in-sample, -0.01 out-of-sample, and only 4.2% of all variants beat buy and hold out-of-sample. On series with no signal at all, the best of 238 rules reached a mean in-sample Sharpe of 0.52 against 0.46 for holding, an advantage of up to 0.25 produced by selection alone; the real winner's in-sample advantage (0.18) sits inside that range. The high IS-OOS rank correlation (0.82) is consistent with the rules differing persistently in *how much* market exposure they carry rather than in timing skill (exposure itself was not measured here).
 
 **What this does NOT show.** It does not show that trend rules never work: one market, one family of rules and one split are tested. The variants are highly correlated, so the effective number of independent trials is smaller than the count, which makes the deflation conservative. The index excludes dividends (understating every long position) and flat periods earn no interest (understating the long/flat rules); the two biases partly offset. The DSR assumes skill-less trials centre on zero Sharpe; with a drifting index, long-biased rules do not, so the shuffled winners' DSR also measures the drift, not timing skill.
 
@@ -475,7 +476,7 @@ Top five in-sample variants:
 | 100 | 23.7% (23.6%) | 38.3% (38.3%) |
 | 500 | 7.9% (8.0%) | 19.7% (19.9%) |
 
-The +EV strategy loses any single trade with probability 40%. Its chance of being behind first drops below 5% after **616 trades**; the −EV twin's chance of being ahead first drops below 5% after **1,973 trades**. (The zigzag at small n in the chart is real: the total moves in whole trades, so the break-even number of wins jumps as n grows.)
+The +EV strategy loses any single trade with probability 40%. Its chance of being behind first dips below 5% at 616 trades and stays below from **663 trades**; the −EV twin's chance of being ahead first dips below 5% at 1,973 trades and stays below from **2,060 trades**. (The zigzag in the chart is real: the total moves in whole trades, so the break-even number of wins jumps as n grows.)
 
 ![S6 decision vs outcome](figures/s6_decision_vs_outcome.png)
 
@@ -495,7 +496,7 @@ The +EV strategy loses any single trade with probability 40%. Its chance of bein
 | --- | ---: | ---: | ---: | ---: |
 | 0 | +72 [+4, +139] | 60.0% | -25 [-168, +117] | 48.6% |
 | 1 | +70 [+2, +137] | 60.0% | -27 [-170, +115] | 48.6% |
-| 2 | +68 [-0, +135] | 60.0% | -29 [-172, +113] | 45.9% |
+| 2 | +68 [-0.3, +135] | 60.0% | -29 [-172, +113] | 45.9% |
 | 5 | +62 [-6, +129] | 58.6% | -35 [-178, +107] | 45.9% |
 | 10 | +52 [-16, +119] | 58.6% | -45 [-188, +97] | 45.9% |
 
@@ -505,21 +506,21 @@ Break-even cost per side: **35.8 bp in-sample, none (the gross expectancy is alr
 
 **Two averages of one cell.** In S2 the cell's out-of-sample mean was +74 bp over 71 overlapping days; the 37 non-overlapping trades a trader could actually take averaged -25 bp. Signals in this cell come in clusters (sell-offs), and a one-position-at-a-time rule takes the first signal of each cluster and skips the rest: out-of-sample the 34 skipped signal days averaged +197 bp (simple return). In-sample the cell mean was +85 bp, the trades +72 bp and the skipped days +123 bp. A conditional frequency and a tradable expectancy are different objects.
 
-**Verdict: Supports.** The cell chosen as best in-sample (+72 bp per trade gross, break-even 35.8 bp per side) earned -25 bp per trade out-of-sample before costs and -29 bp [-172, +113] at 2 bp per side; break-even out-of-sample: none (the gross expectancy is already ≤ 0). Here the out-of-sample period, not the costs, removed the apparent edge; costs only deepened the loss. With 37 trades the interval is wide either way: the evidence cannot say the cell is bad, only that it never earned the confidence its in-sample numbers suggested.
+**Verdict: Supports.** The cell chosen as best in-sample (+72 bp per trade gross, break-even 35.8 bp per side) earned -25 bp per trade out-of-sample before costs and -29 bp [-172, +113] at 2 bp per side; break-even out-of-sample: none (the gross expectancy is already ≤ 0). Here the out-of-sample period, not the costs, removed the apparent edge; costs only deepened the loss. With 37 trades the interval is wide either way: the evidence cannot say the cell is bad, only that it never earned the confidence its in-sample numbers suggested. Scope of the verdict: the pre-registered rule counts an out-of-sample loss before costs as support, but this cell does not test the narrower claim that costs turn a real advantage into a loss; what it shows is the decay from the selection period to the next (question 5). Its in-sample numbers are also the best of 32 candidate cells, so they are biased upward by the selection itself (S5's lesson), on top of sampling error.
 
-**What this does NOT show.** The costs are flat assumptions, not measured spreads or slippage, and an index cannot be traded directly (futures or ETFs add their own costs and tracking). The trades are long only, so the result mixes the condition with the market's drift. Nothing here is a recommendation to trade the cell.
+**What this does NOT show.** The costs are flat assumptions, not measured spreads or slippage, and an index cannot be traded directly (futures or ETFs add their own costs and tracking). The trades are long only, so the result mixes the condition with the market's drift. The Student-t intervals treat the non-overlapping trades as independent; trades taken in the same sell-off are not fully independent, so the true intervals are somewhat wider. Nothing here is a recommendation to trade the cell.
 
 ## Summary
 
 | study | section | verdict | one-line finding |
 | --- | --- | --- | --- |
-| S1 | III; P2–P3 | supports | OOS, a 1-ATR detour cut P(B) from 69% to 56% (uptrend) and 57% to 41% (other); no depth up to 3 ATR beat a memoryless null as a breakdown signal; the regime at A mattered more than depth. |
-| S2 | V, VI; P4 | supports | 11 of 74 conditional cells differed in-sample (≈4 expected by chance); 1 held OOS, 10 weakened, vanished or reversed. |
+| S1 | III; P2–P3 | supports | OOS, a 1-ATR detour cut P(B) from 69% to 56% (uptrend) and 57% to 41% (other); no depth up to 3 ATR beat a memoryless null as a breakdown signal (also without the futures: supports); the regime at A shifted the whole curve (OOS gap 12 points unconditionally, 10 of them reproduced by the memoryless null). |
+| S2 | V, VI; P4 | supports | 11 of 74 conditional cells differed in-sample (≈4 expected by chance, before allowing for dependence); 1 held OOS, 10 weakened, vanished or reversed. |
 | S3 | VI (LLN); Q3 | supports | A true +0.05R edge looks like a loser in 36% of 30-trade samples; ≈3,109 trades needed for 80% power. |
-| S4 | XIV; P9 | supports | Same +EV edge: P(DD ≥ 50%) 0.0% at 1% risk vs 100.0% at 10% (p = 0.35, 2.5R); a 50% loss needs +100%. |
+| S4 | XIV; P9 | supports | Same +EV edge (p = 0.35, 2.5R): a 50% drawdown in 1 of 10,000 simulated paths at 1% risk vs 9,997 of 10,000 at 10%; a 50% loss needs +100%. |
 | S5 | XVII, XX.4; P5 | supports | Best of 238 rules: Sharpe 0.63 IS → 0.80 OOS, but its edge over buy and hold went 0.18 → -0.01; DSR 0.78; no-signal winners averaged 0.52 vs 0.46 for holding. |
 | S6 | XI, XIII; P8 | supports | After 20 trades the +$7 strategy is behind 40% of the time; the −$4 twin is ahead 41%. |
-| S7 | XIX Q4; P5 | supports | Best IS cell (^GSPC · 3-down · other · high vol): +72 bp/trade IS → -25 bp OOS before costs; break-even OOS: none (the gross expectancy is already ≤ 0). |
+| S7 | XIX Q4; P5 | supports | Best IS cell (^GSPC · 3-down · other · high vol): +72 bp/trade IS → -25 bp OOS before costs; break-even OOS: none (the gross expectancy is already ≤ 0); the edge fell away before costs, so costs themselves were not the test. |
 
 *Supports* = the data behave as the section says; *qualifies* = they agree in part, or only under conditions the section does not state; *contradicts* = they behave otherwise. Verdict rules were fixed in advance (see the code). S3, S4 and S6 are mathematics about hypothetical strategies; S1, S2, S5 and S7 use market data.
 
