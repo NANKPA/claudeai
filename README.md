@@ -8,6 +8,10 @@ A partitioned, graph-linked trading knowledge base built for Claude.
   top-100 books, mathematics, concepts, synthesis) and the graphify knowledge graph in
   `09_knowledge-graph/`. Start with
   [`trading-intelligence/README.md`](trading-intelligence/README.md).
+- **`trading_intelligence/`**: the bot plug-in (see [`BOT_INTEGRATION.md`](BOT_INTEGRATION.md)): an MCP
+  server that gives a Claude session the philosophy, the knowledge graph and the maths as tools, and a
+  Python package whose `PhilosophyGate` runs the owner's decision protocol before every order.
+  Install: `pip install "trading-intelligence[mcp] @ git+https://github.com/NANKPA/claudeai.git"`.
 - **`tools/`**: the build and scraping toolchain:
   - `render_registries.py`: YAML registries → markdown tables
   - `build_graph.py`: notes + registries → graphify (Leiden communities, report, HTML, wiki)

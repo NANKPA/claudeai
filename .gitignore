@@ -20,3 +20,7 @@ tools/philosophy/data/
 
 # Hand-off archive of git-ignored local data (see HANDOFF.md)
 claudeai-local-data.tar.gz
+
+# Python packaging
+*.egg-info/
+build/

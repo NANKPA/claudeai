@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trading-intelligence"
+version = "1.0.0"
+description = "Trading intelligence built on the owner's Philosophy of the Relationship: knowledge-graph queries, the decision protocol as a pre-trade gate, an append-only journal, and an MCP server for Claude."
+requires-python = ">=3.10"
+dependencies = ["pyyaml>=6.0", "numpy>=1.26", "scipy>=1.11", "pandas>=2.0", "networkx>=3.0"]
+
+[project.optional-dependencies]
+mcp = ["mcp>=1.2"]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+trading-intelligence-mcp = "trading_intelligence.mcp_server:main"
+
+[tool.setuptools]
+packages = ["trading_intelligence"]
+# Install editable (pip install -e .) so the package can read the knowledge base next to it,
+# or set TI_ROOT to the repository folder.
