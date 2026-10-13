@@ -88,4 +88,56 @@ def test_mcp_server_tools():
     out = m.evaluate_trade(
         proposal={k: v for k, v in proposal().__dict__.items()},
         account={"equity": 10_000, "emotional_state": "calm"}, setup=GOOD_SETUP)
+    assert out["ignored_limit_overrides"] == []
     assert out["action"] == "take" and "Decision: TAKE" in out["explanation"]
+
+
+def test_journal_handles_missing_trailing_newline(tmp_path):
+    j = Journal(tmp_path / "j.csv")
+    j.record_decision(_decision("A"))
+    p = tmp_path / "j.csv"
+    p.write_bytes(p.read_bytes().rstrip(b"\r\n"))
+    j.record_decision(_decision("B"))
+    assert [r["trade_id"] for r in j.rows()] == ["A", "B"]
+
+
+def test_journal_concurrent_writers_lose_nothing(tmp_path):
+    import threading
+    j = Journal(tmp_path / "c.csv")
+    j.record_decision(_decision("seed"))
+    errors = []
+
+    def writer(prefix):
+        for i in range(25):
+            try:
+                Journal(tmp_path / "c.csv").record_decision(_decision(f"{prefix}{i}"))
+            except Exception as e:  # noqa: BLE001
+                errors.append(e)
+
+    def reviewer():
+        for i in range(25):
+            try:
+                Journal(tmp_path / "c.csv").record_outcome("seed", lesson=f"pass {i}")
+            except Exception as e:  # noqa: BLE001
+                errors.append(e)
+
+    threads = [threading.Thread(target=writer, args=("w",)), threading.Thread(target=writer, args=("v",)),
+               threading.Thread(target=reviewer), threading.Thread(target=reviewer)]
+    for t in threads:
+        t.start()
+    for t in threads:
+        t.join()
+    ids = [r["trade_id"] for r in j.rows()]
+    assert not errors and len(ids) == 51 and len(set(ids)) == 51
+
+
+def test_mcp_limits_can_only_tighten():
+    pytest.importorskip("mcp")
+    from trading_intelligence import mcp_server as m
+    acct = {"equity": 10_000, "emotional_state": "calm", "realized_today_r": -4.0}
+    out = m.evaluate_trade(proposal={k: v for k, v in proposal().__dict__.items()}, account=acct, setup=GOOD_SETUP,
+                           stricter_limits={"daily_loss_r": 1e9})
+    assert out["action"] == "skip" and out["ignored_limit_overrides"]
+    out = m.evaluate_trade(proposal={"setup_id": "x", "instrument": "y", "side": "long", "entry": 1, "stop": 0.5,
+                                     "target": 2, "bogus": 1}, account={"equity": 1})
+    assert out["action"] == "skip"

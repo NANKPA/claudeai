@@ -123,19 +123,52 @@ def evidence_lab() -> list[dict]:
 
 
 # ── the decision protocol ──────────────────────────────────────────────────
+def _plan_limits() -> _gate.Limits:
+    """The trading plan's limits, fixed when the server starts (Gate 6.3: write them before the
+    session, never loosen them mid-session). TI_LIMITS_FILE may point to a JSON file of Limits fields;
+    otherwise the protocol's example defaults apply."""
+    import json
+    import os
+    path = os.environ.get("TI_LIMITS_FILE")
+    return _gate.Limits(**json.loads(Path(path).read_text(encoding="utf-8"))) if path else _gate.Limits()
+
+
+PLAN_LIMITS = _plan_limits()
+
+
 @server.tool()
-def evaluate_trade(proposal: dict, account: dict, setup: dict | None = None, limits: dict | None = None) -> dict:
-    """Run the owner's decision protocol (Gates 0-6) on a candidate trade. Returns action
-    (take / skip / wait), every gate's result with the principle it enforces, scores, expected
-    value after costs, risk % and position size, and the pre-trade journal row to save BEFORE
-    any order. Fields: see trading_intelligence.gate (TradeProposal, SetupRecord, AccountState,
-    Limits). Required: proposal {setup_id, instrument, side, entry, stop, target}, account {equity}."""
-    d = _gate.PhilosophyGate(_gate.Limits(**(limits or {}))).evaluate(
-        _gate.TradeProposal(**proposal),
-        _gate.SetupRecord(**setup) if setup else None,
-        _gate.AccountState(**account))
+def evaluate_trade(proposal: dict, account: dict, setup: dict | None = None,
+                   stricter_limits: dict | None = None) -> dict:
+    """Run the owner's decision protocol (Gates 0-6) on a candidate trade BEFORE any order. Returns
+    action (take / skip / wait), every gate's result with the principle it enforces, scores, expected
+    value after costs, risk % and position size, and the pre-trade journal row to save first.
+    It fails closed: anything missing or invalid is a skip.
+
+    proposal (required): setup_id, instrument, side (long/short), entry, stop, target, cost_price
+      (round-trip friction in price units), timeframe, regime_tag, session, observation,
+      interpretation, alternative_interpretation, hypothesis, horizon, invalidation, explanation,
+      undermined_by, required_conditions [names], conditions_present {name: true/false/"borderline"};
+      optional evidence_for, evidence_against (unresolved: blocks), resolved_against, value_gap_only.
+    account (required): equity, emotional_state (journal tags, e.g. "calm,focused"), point_value,
+      lot_step, base_risk_pct, realized_today_r and realized_week_r (losses negative),
+      consecutive_losses_setup_session, drawdown_from_peak_pct, open_risk_pct,
+      minutes_since_last_loss (or trading_style "swing" + loss_this_session).
+    setup: the setup's OWN out-of-sample record: either results_r [net R per trade] + avg_cost_r, or
+      n, win_rate, avg_win_r, avg_loss_r, avg_cost_r (gross, in R) and optionally sd_r; source "own";
+      optional valid_regimes / valid_sessions.
+    stricter_limits: optional overrides that can only TIGHTEN the plan's limits (looser ones are
+    ignored and reported)."""
+    limits, ignored = PLAN_LIMITS.tightened(stricter_limits)
+    try:
+        t = _gate.TradeProposal(**proposal)
+        a = _gate.AccountState(**account)
+        sr = _gate.SetupRecord(**setup) if setup else None
+    except TypeError as e:
+        return {"action": "skip", "explanation": f"Decision: SKIP\n  [fail] 0 Inputs: {e}", "ignored_limit_overrides": ignored}
+    d = _gate.PhilosophyGate(limits).evaluate(t, sr, a)
     out = d.to_dict()
     out["explanation"] = d.explain()
+    out["ignored_limit_overrides"] = ignored
     return out
 
 

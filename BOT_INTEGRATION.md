@@ -57,7 +57,9 @@ proposal = TradeProposal(
     timeframe="1h/5m", regime_tag="trend_low_vol", session="ny_am",
     observation="Price traded 6 points below the prior-day low and closed back above it.",
     interpretation="Sell stops under the low were absorbed.",
+    alternative_interpretation="A stop run inside a developing down day.",
     hypothesis="1h: price reaches the prior-day high this session.",
+    horizon="by the New York close",
     invalidation="A 5m close back below the sweep low.",
     explanation="Stops below an obvious low supply liquidity to larger buyers.",
     undermined_by="A trend day down with no reclaim.",
@@ -66,8 +68,8 @@ proposal = TradeProposal(
 )
 # The setup's OWN out-of-sample / forward / live record. Never someone else's claims.
 setup = SetupRecord(setup_id="nq-sweep-v1", results_r=past_net_r_multiples)
-account = AccountState(equity=25_000, point_value=2.0, base_risk_pct=0.5,
-                       emotional_state="calm", realized_today_r=-1.0)
+account = AccountState(equity=25_000, point_value=2.0, base_risk_pct=0.5, emotional_state="calm,focused",
+                       realized_today_r=-1.0, minutes_since_last_loss=40)
 
 decision = gate.evaluate(proposal, setup, account)
 journal.record_decision(decision)                # the reasoning is saved BEFORE the order (Section XVI)
@@ -79,15 +81,26 @@ journal.record_outcome(decision.journal_row["trade_id"], executed_per_plan="y", 
                        result_r=2.9, cost_r=0.05, outcome_within_expected="y")
 ```
 
+**It fails closed.** A missing, non-finite, negative or ambiguous input (no `cost_price`, no
+`emotional_state`, regime `unclear`, NaN anywhere, a signed loss, a bad side) is a `skip` with a
+"0 Inputs" reason and a journal row. It never raises, and it never returns `take`. Sign
+conventions: prices and costs are positive; `realized_today_r` and `realized_week_r` are signed
+(losses negative); `drawdown_from_peak_pct` is a magnitude; `open_risk_pct` ≥ 0.
+
+**Limits come from your plan.** Build `Limits(...)` once from your trading plan. The protocol's own
+floors are enforced: n ≥ 30, Kelly fraction ≤ ½, EV floor ≥ 0. For the MCP server, put the plan in a
+JSON file and set `TI_LIMITS_FILE`. A per-call `stricter_limits` can only tighten it; looser values
+are ignored and reported.
+
 What the gate enforces (from `trading-intelligence/00_philosophy/decision-protocol.md`):
 
 | Gate | Rule | Principle |
 |---|---|---|
-| 0 | Red emotional state → skip. Amber → half risk. Pause after a loss. Daily (3R), weekly (5R), 3-in-a-row and 20%-drawdown breakers. | P10, P12, P9 |
-| 1–2 | Observation, interpretation and hypothesis written separately. A real explanation. Invalidation written before entry. Stop and target on the right side. | P1, P2, P3 |
-| 3 | Every required condition of the setup present. A price-vs-value gap alone is not evidence. | P4 |
+| 0 | Red emotional state (incl. fomo, revenge, greed, excitement) → skip. Amber → half the final risk. State not recorded → skip. Daily (3R), weekly (5R), 3-in-a-row and 20%-drawdown breakers come first, then the pause after a loss (15 min intraday, next session for swing). | P10, P12, P9 |
+| 1–2 | Observation, interpretation, alternative interpretation and hypothesis written separately. A real explanation. Level (timeframe) and horizon named. Invalidation written before entry. Stop and target on the right side. | P1, P2, P3 |
+| 3 | Regime and session tagged and not "unclear". Every required condition present, and today's regime/session among those the record was measured in. Unresolved arguments against → wait. A price-vs-value gap alone is not evidence. | P4, P6 |
 | 4 | Own out-of-sample record: n ≥ 30 and mean − 1 SE > 0 for a 2. Any 0 → skip; any 1 → wait. | P1, P5, P6 |
-| 5 | This trade's EV after its own costs, with the average win capped at the target, must be > 0. | P5 |
+| 5 | `cost_price` required. This trade's EV, using gross win and loss with the win capped at the target, minus this trade's own cost in R, must be > 0. | P5 |
 | 6 | Fixed-fractional size: full base risk only when mean − 2 SE > 0, otherwise half. ¼ Kelly from the conservative win rate as a ceiling. Heat ≤ 2%. Rounded down. | P9 |
 
 Run the tests: `python -m pytest -q trading_intelligence/tests tools/philosophy/tests`.
