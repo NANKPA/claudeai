@@ -17,3 +17,6 @@ graphify-out/
 
 # Market data cached by tools/philosophy/studies.py (re-download with --refresh)
 tools/philosophy/data/
+
+# Hand-off archive of git-ignored local data (see HANDOFF.md)
+claudeai-local-data.tar.gz
