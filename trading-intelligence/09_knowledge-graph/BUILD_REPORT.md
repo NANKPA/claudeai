@@ -1,7 +1,7 @@
 # Build Report — Trading Intelligence Knowledge Graph
 
-- **1154 nodes · 5772 edges · 30 communities**
-- Inferred (lower-confidence) edges: 858
+- **1191 nodes · 6219 edges · 35 communities**
+- Inferred (lower-confidence) edges: 1102
 - Dangling references: 0
 
 ## Nodes by kind
@@ -10,14 +10,15 @@
 |---|---|
 | media | 5730 |
 | person | 258 |
-| book | 100 |
+| book | 119 |
 | concept | 69 |
 | strategy | 47 |
 | mathbook | 39 |
 | philosophy | 22 |
 | hypothesis | 20 |
+| synthesis | 17 |
 | podcast | 16 |
-| synthesis | 13 |
+| setup | 14 |
 | paper | 13 |
 | principle | 12 |
 | course | 11 |
@@ -35,29 +36,29 @@
 | L1 | 14 |
 | L2 | 15 |
 | L3 | 33 |
-| L4 | 56 |
+| L4 | 57 |
 | L5 | 11 |
-| L6 | 13 |
+| L6 | 14 |
 | L7 | 19 |
-| L8 | 38 |
+| L8 | 40 |
 
 ## Edges by relation
 
 | Relation | Count |
 |---|---|
-| covers | 7979 |
+| covers | 8352 |
 | featured_in | 5619 |
-| related | 1826 |
+| related | 2065 |
 | uses | 618 |
-| features_speaker | 421 |
+| features_speaker | 427 |
 | grounded_in | 270 |
 | supported_by | 255 |
 | teaches | 252 |
 | exemplified_by | 240 |
 | operationalized_by | 216 |
+| derived_from | 209 |
 | authored_by | 196 |
 | influenced_by | 176 |
-| derived_from | 140 |
 | part_of | 110 |
 | challenged_by | 95 |
 | tests | 75 |
@@ -73,72 +74,77 @@
 
 | # | Name | Size | Top members |
 |---|---|---|---|
-| 0 | Backtesting, ML & Edge Validation | 93 | Backtesting (manual & systematic), Overfitting & Edge Validation (multiple testing, deflated Sharpe), Random Walk & Efficient Market Hypothesis, Matteo Conti — Institutional Strategy Development Framework (multi-asset, day and swing trading), Time-Series Statistics (stationarity, autocorrelation, cointegration), Naoufel Taief — No-Code Algorithmic Strategy Portfolio: Generate, Stress-Test & Rotate (stocks/futures, systematic trading) |
-| 1 | Auction Market Theory & Order Flow | 83 | Order Flow (footprint, delta, CVD, absorption, trapped traders), Market Microstructure (order book, bid/ask, order types), The Unified Trading Intelligence Framework (analysis → execution), Auction Market Theory (balance, imbalance, value), Core Formulas of Analysis & Execution, Trade Execution (triggers, order types, confirmation) |
-| 29 | The Philosophy of the Relationship | 69 | Beyond the Philosophy — what the knowledge base adds, sharpens and challenges, Decision Protocol — the Philosophy of the Relationship as an operating procedure, The Philosophy of the Relationship, Principle 4: Use probability conditionally, Research Program — what the philosophy still needs to prove, Principle 3: Treat the market's future as uncertain |
-| 2 | Psychology, Plan & Discipline | 63 | Trading Psychology & Discipline, Trading Journal & Performance Review, Expectancy (expected value per trade), Probabilistic Thinking (thinking in bets), Master Pre-Trade Checklist (synthesised from all partitions), Umar Ashraf — 5-Stage Trader Development Framework (any market, trader development) |
-| 3 | Chart Fanatics Ecosystem | 60 | Chart Fanatics (YouTube channel), Rajan Dhall, Tori Trades, First systematic trader on Chart Fanatics & Words of Rizdom (Oct 2025), Swing Trading, D*** Pics, & $22k In A Month With Tori Trades | 092, Andrea Cimitan |
-| 4 | Stochastic Calculus, Options & Derivatives | 53 | Options & the Greeks, Stochastic Processes (Brownian motion, Itô, mean-reverting OU), MIT 18.S096 Topics in Mathematics with Applications in Finance (Fall 2013) — full lecture series, Track B — Stochastic Calculus & Derivatives, Andy Krieger — the $300 Million Trade, Financial Engineering and Risk Management (Columbia, Coursera) — Martin Haugh & Garud Iyengar |
-| 5 | Candlesticks & Price Action | 52 | Support & Resistance, Price Action Trading (naked charts), Market Sentiment & Positioning (COT, contrarian signals), Premium / Discount & Optimal Trade Entry (OTE), BabyPips — School of Pipsology (course map), News & Event Trading |
-| 6 | Growth-Stock Momentum (CANSLIM→VCP→EP) | 48 | Growth-Stock Momentum (CANSLIM, SEPA, VCP), TraderLion Podcast, Mark Minervini, Jared Tendler, Jesse Livermore, Oliver Kell |
-| 7 | Smart Money / ICT & Liquidity | 48 | Market Structure (swings, BOS, CHoCH / MSS), Trading Sessions & Kill Zones (time-of-day edge), Liquidity (resting orders, stop pools, sweeps), Smart Money Concepts / ICT (umbrella), Liquidity Sweep Reversal (stop-hunt reversal), Candace Lau — NQ Liquidity Sweep & IFVG Reversal (NQ futures, scalping) |
-| 8 | Indicators & Oscillators | 47 | Market Regimes (trend vs range, high vs low volatility), Breakout Trading (and fakeouts), Volatility (realized, implied, ATR, regimes), Mean Reversion, Oscillators & Momentum Indicators (RSI, MACD, Stochastic, ADX), Dylan O’Neil — VIX Futures Strategy: VIX Pressure as Confirmation for ES and NQ (index and VIX futures, day and swing trading) |
-| 9 | Trend Following & the Turtles | 47 | Trend Following, Trend Following with Michael Covel, Jerry Parker, Ed Seykota, Larry Hite, Richard Dennis |
-| 10 | Scalping / Desire To Trade | 47 | Scalping, Desire To Trade, Al Brooks, Ali Crooks, Kathy Lien, 314: The Biggest Obstacles in my Forex Trading Journey |
-| 11 | Classical Charting & Patterns | 46 | Moving Averages (SMA, EMA, stacks, crossovers), Classical Chart Patterns, VWAP (volume-weighted average price) & anchored VWAP, Marci Silfrain — Measured Move Trend Strategy: Little RZY (stocks, futures and crypto, swing trading), Dow Theory, Trendlines & Channels |
-| 12 | Reflexivity / We Study Billionaires | 38 | Reflexivity (Soros), We Study Billionaires (The Investor's Podcast), Howard Marks, George Soros, Annie Duke, Stanley Druckenmiller |
-| 13 | Probability, Expectancy & Fat Tails | 36 | Probability, Distributions & Fat Tails, Statistical Consequences of Fat Tails, Nassim Nicholas Taleb, The Black Swan, Probability Theory: The Logic of Science, EconTalk |
-| 14 | Prop-Firm Evaluations & Risk Rules | 36 | Prop-Firm Evaluations & Risk Rules, Words of Rizdom, Umar Ashraf, Trader Kane, Umar Ashraf: Making $18 Million Day Trading | WOR Podcast EP.70, Ted Zhang |
-| 15 | Trade Management / Chart Fanatics | 35 | Trade Management (stops, targets, breakeven, scaling, trailing), Chart Fanatics — Cross-Playbook Patterns (47 first-party playbooks), Multi-Timeframe Analysis (top-down), Risk:Reward & R-Multiples, JJ Simon — Fair Pricing Theory: Continuation & Reversion (Nasdaq futures, 1-minute scalping), Fabio Valentini — Auction Market Theory + Order-Flow Scalping (NQ/ES futures, scalping) |
-| 16 | Trading Podcasts | 33 | Chat With Traders, The Day Trading Show, Tom Basso, Lance Breitstein, Anthony Crudele, SI231: The Perfect Fit for Trend Following ft. Richard Brennan |
-| 17 | Macro, Fundamentals & Reflexivity | 29 | Fundamental & Macro Analysis (rates, central banks, growth, inflation), Ray Dalio, Paul Tudor Jones II, BTC229: Trump Tariffs, Market Chaos, Bitcoin Impact w/ James Lavish, SI270: CPI, Trend Reversals & Dalio on US-China War ft. Alan Dunne, Paul Tudor Jones on Invest Like the Best — 50-year career and philosophy |
-| 18 | Position Sizing & Risk | 27 | Position Sizing, Better System Trader, Larry Williams, The Mathematics of Money Management, US Trading Champion: He Made 520% Competing Against The World’s BEST Traders - Here’s how!, 013: Hedge fund manager Andreas Clenow discusses cash vs risk allocation, position rebalancing and why traditional trend following doesn't work in stocks. |
-| 19 | Leverage, Margin, Pips & Lots | 26 | Leverage, Margin, Pips & Lots, Adam Grimes, Benoit Mandelbrot, Odd Lots (Bloomberg), Eugene Fama, Eugene Fama and David Booth on the Birth of Modern Finance |
-| 20 | Edge | 25 | Edge (positive expectancy, repeatable), Market Wizards, Jack D. Schwager, The New Market Wizards, Hedge Fund Market Wizards, Market Wizards: How to Become a Successful Trader with Jack Schwager | WOR Podcast - EP.121 |
-| 21 | Risk of Ruin & Drawdown Math | 17 | Risk of Ruin & Drawdown Math, Performance Metrics (Sharpe, Sortino, MAR, profit factor), How Clement Ang Achieved 150%+ Returns in the US Investing Championship, Tori Trades: Becoming A Full Time Trader Using The Easiest Concepts | WOR Podcast EP.74, Pro Trader Turned $3K Into $2.1M IGNORING Retail ADVICE, Traveling Trader: Why Trading Is The Hardest Thing You’ll Ever Do | WOR Podcast EP.97 |
-| 22 | Correlation & Portfolio Risk | 17 | Correlation & Portfolio Risk, Trading LIVE with the BEST Scalper in the World (PERFECT Accuracy), BabyPips Course 10 — Undergraduate Senior: risk management, Quantitative Risk Management, SI289: Kahneman, Trend Following & Cocoa ft. Mark Rzepczynski, The Trading Mistake 99% of People Make (Tom Basso's Secret Profitable Trading System) |
-| 23 | Top Traders Unplugged | 16 | Top Traders Unplugged, Cliff Asness, Flirting with Models, Flirting with Models — Cliff Asness (AQR), SI313: The Paradox of High-Volatility Alternatives ft. Alan Dunne, TTU145: All In on Trend Following ft. Jerry Parker, Founder of Chesapeake Capital |
-| 24 | Trading Plan | 14 | Trading Plan (rules written before the trade), The ICT Trader Who Made $2 Million After SWITCHING To Orderflow - Yush, NBB Trader Part II: This ICT Strategy Will Change Everything! | WOR Podcast - EP.118, World’s Best Trader: The $300 Million Trade (George Soros Copied Him), OI10: The Untold Side of the Turtle Trading Legacy ft. Bill Eckhardt & Rob Sorrentino, Tanja Trades: Become More Profitable with This ONE Trading Hack | WOR Podcast - EP.127 |
-| 25 | Risk, Sizing & Portfolio Mathematics | 14 | Track E — Risk, Sizing & Portfolio Mathematics, Active Portfolio Management, A New Interpretation of Information Rate (paper, Bell System Technical Journal), Convex Optimization, Elements of Information Theory, Value at Risk |
-| 26 | Kelly, Sizing & Money Management | 13 | Kelly Criterion & Optimal f, Edward O. Thorp, Fortune's Formula, Claude Shannon, Beat the Dealer, A Man for All Markets |
-| 27 | Jim Simons | 12 | Jim Simons, +382% Return in 1 Year - Why Most Traders FAIL at Shorting from a Trading Champion, Ep. 1216: Marsten Parker Interview with Michael Covel on Trend Following Radio, Jim Simons — Mathematics, Common Sense, and Good Luck: My Life and Careers (MIT, 2010), Jim Simons — Numberphile interview ('Billionaire Mathematician', full and short versions), Jim Simons — The mathematician who cracked Wall Street (TED 2015) |
-| 28 | An Introduction to Probability Theory… | 10 | An Introduction to Probability Theory and Its Applications (Vol. I), The Kelly Capital Growth Investment Criterion, When Genius Failed, The Definitive Guide to Position Sizing, The Zurich Axioms, Leonard Maclean |
+| 0 | Backtesting, ML & Edge Validation | 69 | Reading List — precise entries, short-term systems and small accounts, Backtesting (manual & systematic), Overfitting & Edge Validation (multiple testing, deflated Sharpe), Performance Metrics (Sharpe, Sortino, MAR, profit factor), Matteo Conti — Institutional Strategy Development Framework (multi-asset, day and swing trading), Naoufel Taief — No-Code Algorithmic Strategy Portfolio: Generate, Stress-Test & Rotate (stocks/futures, systematic trading) |
+| 34 | The Philosophy of the Relationship | 69 | Beyond the Philosophy — what the knowledge base adds, sharpens and challenges, Decision Protocol — the Philosophy of the Relationship as an operating procedure, The Philosophy of the Relationship, Principle 4: Use probability conditionally, Principle 3: Treat the market's future as uncertain, Principle 6: Do not force opportunities |
+| 1 | Smart Money / ICT & Liquidity | 68 | Sniper Entries — codeable rules from the playbooks and the web, Liquidity (resting orders, stop pools, sweeps), Trading Sessions & Kill Zones (time-of-day edge), Smart Money Concepts / ICT (umbrella), Liquidity Sweep Reversal (stop-hunt reversal), Premium / Discount & Optimal Trade Entry (OTE) |
+| 2 | Classical Charting & Patterns | 58 | Support & Resistance, Market Structure (swings, BOS, CHoCH / MSS), Price Action Trading (naked charts), BabyPips — School of Pipsology (course map), Classical Chart Patterns, Dow Theory |
+| 3 | Efficient Markets Debate | 53 | Market Regimes (trend vs range, high vs low volatility), Volatility (realized, implied, ATR, regimes), Random Walk & Efficient Market Hypothesis, Time-Series Statistics (stationarity, autocorrelation, cointegration), Adaptive Markets, Carry Trade |
+| 4 | Growth-Stock Momentum (CANSLIM→VCP→EP) | 51 | Growth-Stock Momentum (CANSLIM, SEPA, VCP), TraderLion Podcast, News & Event Trading, Mark Minervini, The 7 Puzzle Pieces to a Profitable Trading System | Ariel Hernandez, Episodic Pivot (EP) |
+| 5 | Trend Following & the Turtles | 51 | Trend Following, Trend Following with Michael Covel, Jerry Parker, Ed Seykota, Larry Hite, Richard Dennis |
+| 6 | Psychology, Plan & Discipline | 49 | Trading Psychology & Discipline, Jared Tendler, Adam Grimes, Mark Douglas, Tom Hougaard, Trading for a Living |
+| 7 | Journal, Review & Metrics | 47 | Trading Journal & Performance Review, Trading Plan (rules written before the trade), Expectancy (expected value per trade), Probabilistic Thinking (thinking in bets), The Unified Trading Intelligence Framework (analysis → execution), Master Pre-Trade Checklist (synthesised from all partitions) |
+| 8 | Microstructure & Optimal Execution | 47 | Market Microstructure (order book, bid/ask, order types), Trade Execution (triggers, order types, confirmation), Core Formulas of Analysis & Execution, Optimal Execution & Market Impact (Almgren-Chriss, square-root law), Trading and Exchanges, Partition 06 — Mathematics Foundations of Analysis & Execution |
+| 9 | Auction Market Theory & Order Flow | 41 | Order Flow (footprint, delta, CVD, absorption, trapped traders), Auction Market Theory (balance, imbalance, value), Volume Profile (POC, value area, HVN/LVN), Wyckoff Method (accumulation, distribution, composite operator), Mind Over Markets, Fabio Valentini |
+| 10 | Chart Fanatics Ecosystem | 41 | Chart Fanatics (YouTube channel), 74% Win Rate Trader Shares His EXACT OrderFlow Strategy ($2M+ Payouts), Pass Prop Firms Using This ICT & Orderflow Futures Trading Strategy ($600k+), Marios Stamatoudis, Steven Dux, Wall Street's EXACT Formula To Measure FEAR In The Markets (Trade This NOW) |
+| 11 | Trade Management / Chart Fanatics | 39 | Trade Management (stops, targets, breakeven, scaling, trailing), Chart Fanatics — Cross-Playbook Patterns (47 first-party playbooks), Risk:Reward & R-Multiples, Market Sentiment & Positioning (COT, contrarian signals), Fabio Valentini — Auction Market Theory + Order-Flow Scalping (NQ/ES futures, scalping), Gala Trades — Price Action Strategy: Hourly Levels with Breaking Retest, Bounce & Rejection (stock options, day trading) |
+| 12 | Macro, Fundamentals & Reflexivity | 37 | Fundamental & Macro Analysis (rates, central banks, growth, inflation), Ray Dalio, Paul Tudor Jones II, BTC229: Trump Tariffs, Market Chaos, Bitcoin Impact w/ James Lavish, SI270: CPI, Trend Reversals & Dalio on US-China War ft. Alan Dunne, Andy Krieger — the $300 Million Trade |
+| 13 | Prop-Firm Evaluations & Risk Rules | 37 | Prop-Firm Evaluations & Risk Rules, Words of Rizdom, Umar Ashraf, Marci Silfrain, NBB Trader Part II: This ICT Strategy Will Change Everything! | WOR Podcast - EP.118, Ted Zhang |
+| 14 | Multi-Timeframe Analysis | 37 | Multi-Timeframe Analysis (top-down), Moving Averages (SMA, EMA, stacks, crossovers), VWAP (volume-weighted average price) & anchored VWAP, Marci Silfrain — Measured Move Trend Strategy: Little RZY (stocks, futures and crypto, swing trading), Anthony Crudele — Futures Trend Trading Strategy: Bollinger Band Environments (index futures, swing trading), Tori Trades — Trendline Trading Playbook: Action Line and Safety Line (stocks, futures and forex, 4H swing trading) |
+| 15 | Desire To Trade | 36 | Desire To Trade, Al Brooks, Ali Crooks, Kathy Lien, 314: The Biggest Obstacles in my Forex Trading Journey, Day Trading and Swing Trading the Currency Market |
+| 16 | Trading Podcasts | 33 | Scalping, Chat With Traders, Lance Breitstein, Tori Trades: Becoming A Full Time Trader Using The Easiest Concepts | WOR Podcast EP.74, 331 · Jeff Holden - How Top Prop Traders Find and Scale Their Edge, SMB Capital Roundtable - Lance Breitstein, Brett Steenbarger, Mike Bellafiore, Jeff Holden |
+| 17 | Breakout Trading / Mean Reversion | 30 | Breakout Trading (and fakeouts), Mean Reversion, Bollinger Bands & Volatility Squeezes, Reading Price Charts Bar by Bar, TTU152: Where is the Open? ft. Toby Crabel, The 10 Lessons Part Time Traders NEED to Learn to be Successful - From Market Wizard Linda Rashke |
+| 18 | Position Sizing & Risk | 27 | Position Sizing, Risk of Ruin & Drawdown Math, Market Wizards, The Mathematics of Money Management, An Introduction to Probability Theory and Its Applications (Vol. I), The Definitive Guide to Position Sizing |
+| 19 | Edge | 26 | Edge (positive expectancy, repeatable), Jim Simons, The Man Who Solved the Market, Active Portfolio Management, US Trading Champion: How To Catch 100x Trades (While Trading Less), Trader Kane: Record Breaking Prop Firm Payout $1,866,230 | WOR Podcast - EP.133 |
+| 20 | Reflexivity | 25 | Reflexivity (Soros), George Soros, Annie Duke, Stanley Druckenmiller, Stanley Druckenmiller — Lost Tree Club speech (Jan 2015), World’s Best Trader: The $300 Million Trade (George Soros Copied Him) |
+| 21 | Stochastic Calculus, Options & Derivatives | 24 | Stochastic Processes (Brownian motion, Itô, mean-reverting OU), Track B — Stochastic Calculus & Derivatives, Steven E. Shreve, Options, Futures, and Other Derivatives, The Volatility Surface, Brownian Motion and Stochastic Calculus |
+| 22 | Options & Volatility | 21 | Options & the Greeks, Ex-Market Maker: “We Manipulate Markets, Take Your Stops & Grab Liquidity....We HAVE To”, Veritasium — The Trillion Dollar Equation (Black–Scholes, Bachelier, Thorp, Simons), Option Volatility & Pricing, IL52: Why Staying Calm Is the Ultimate Investing Edge ft. David Booth, Sheldon Natenberg |
+| 23 | Leverage, Margin, Pips & Lots | 19 | Leverage, Margin, Pips & Lots, Odd Lots (Bloomberg), Eugene Fama, AstroFX, Trading Success, and Fatherhood With Riz Iqbal | 068, Eugene Fama and David Booth on the Birth of Modern Finance, Cliff Asness on How Markets Got Dumber in the Last 10 Years |
+| 24 | Kelly, Sizing & Money Management | 18 | Kelly Criterion & Optimal f, Edward O. Thorp, The Kelly Capital Growth Investment Criterion, Fortune's Formula, Claude Shannon, Beat the Dealer |
+| 25 | Better System Trader | 17 | Better System Trader, Larry Williams, Long-Term Secrets to Short-Term Trading, 020: Larry Williams talks conditional trading, what drives prices, the misuse of indicators, cycles, forecasting markets PLUS 50 years of trading insights, 217: Trading Triumphs - Jerry Parker #2: Excessive Risk, 236: How to Profit and Protect in Any Market Conditions - with Tom Basso |
+| 26 | Indicators & Oscillators | 16 | Oscillators & Momentum Indicators (RSI, MACD, Stochastic, ADX), Short Term Trading Strategies That Work, 028: David Aronson shares research into indicators that identify Bull and Bear markets, including the Golden Cross/Death Cross, RSI, ADX, ROC and many others., Technical Analysis Explained, Brownian Motion-I, Stochastic Calculus for Quants | Understanding Geometric Brownian Motion using Itô Calculus |
+| 27 | Probability & Statistics | 16 | Probability Theory: The Logic of Science, Track A — Probability & Statistics, Introduction to Probability, Statistical Inference, Harvard Stat 110: Probability — Joe Blitzstein, Fifty Challenging Problems in Probability with Solutions |
+| 28 | We Study Billionaires | 16 | We Study Billionaires (The Investor's Podcast), Howard Marks, TIP793: Thinking Fast & Slow by Daniel Kahneman w/ Clay Finck, TIP823: From Railroads to AI: The Timeless Patterns Behind Market Bubbles w/ Kyle Grieve, RWH063: Avoid Disaster w/ Howard Marks, RWH066: Essential Truths w/ Howard Marks, Nima Shayegh & William Green |
+| 29 | Correlation & Portfolio Risk | 16 | Correlation & Portfolio Risk, SI234: Trend Followers are minnows, not whales ft. Rob Carver, BabyPips Course 10 — Undergraduate Senior: risk management, 013: Hedge fund manager Andreas Clenow discusses cash vs risk allocation, position rebalancing and why traditional trend following doesn't work in stocks., Financial Engineering and Risk Management (Columbia, Coursera) — Martin Haugh & Garud Iyengar, Andreas Clenow |
+| 30 | Probability, Expectancy & Fat Tails | 15 | Probability, Distributions & Fat Tails, Nassim Nicholas Taleb, The Black Swan, EconTalk, Antifragile, EconTalk — Nassim Taleb episodes (Black Swan, fat tails, skin in the game) |
+| 31 | Top Traders Unplugged | 15 | Top Traders Unplugged, Cliff Asness, SI231: The Perfect Fit for Trend Following ft. Richard Brennan, Flirting with Models, Flirting with Models — Cliff Asness (AQR), SI313: The Paradox of High-Volatility Alternatives ft. Alan Dunne |
+| 32 | Risk, Sizing & Portfolio Mathematics | 14 | Track E — Risk, Sizing & Portfolio Mathematics, Quantitative Risk Management, Convex Optimization, Elements of Information Theory, Value at Risk, Fractals and Scaling in Finance |
+| 33 | Tom Basso / Jack D. Schwager | 13 | Tom Basso, Jack D. Schwager, The New Market Wizards, The Trading Mistake 99% of People Make (Tom Basso's Secret Profitable Trading System), Ep. 1098: Tom Basso Interview with Michael Covel on Trend Following Radio, Ep. 1174: Tom Basso Interview with Michael Covel on Trend Following Radio |
 
 ## Hub nodes (highest degree)
 
 | Node | Kind | Degree |
 |---|---|---|
 | Chart Fanatics (YouTube channel) | channel | 163 |
-| Trading Psychology & Discipline | concept | 149 |
+| Trading Psychology & Discipline | concept | 150 |
 | Beyond the Philosophy — what the knowledge base adds, sharpens and challenges | synthesis | 137 |
-| Trend Following | concept | 122 |
-| Position Sizing | concept | 116 |
-| Market Regimes (trend vs range, high vs low volatility) | concept | 97 |
-| Risk of Ruin & Drawdown Math | concept | 96 |
+| Trend Following | concept | 131 |
+| Position Sizing | concept | 124 |
+| Reading List — precise entries, short-term systems and small accounts | synthesis | 108 |
+| Risk of Ruin & Drawdown Math | concept | 101 |
+| Market Regimes (trend vs range, high vs low volatility) | concept | 100 |
 | Prop-Firm Evaluations & Risk Rules | concept | 93 |
+| Backtesting (manual & systematic) | concept | 91 |
+| Support & Resistance | concept | 91 |
 | Edge (positive expectancy, repeatable) | concept | 90 |
-| Decision Protocol — the Philosophy of the Relationship as an operating procedure | framework | 85 |
-| Trading Journal & Performance Review | concept | 84 |
-| Backtesting (manual & systematic) | concept | 83 |
-| Trade Management (stops, targets, breakeven, scaling, trailing) | concept | 82 |
-| Trading Plan (rules written before the trade) | concept | 82 |
-| Support & Resistance | concept | 78 |
-| Order Flow (footprint, delta, CVD, absorption, trapped traders) | concept | 76 |
-| The Philosophy of the Relationship | philosophy | 74 |
+| Sniper Entries — codeable rules from the playbooks and the web | synthesis | 90 |
+| Decision Protocol — the Philosophy of the Relationship as an operating procedure | framework | 89 |
+| Trade Management (stops, targets, breakeven, scaling, trailing) | concept | 89 |
+| Trading Journal & Performance Review | concept | 87 |
+| Trading Plan (rules written before the trade) | concept | 86 |
+| Order Flow (footprint, delta, CVD, absorption, trapped traders) | concept | 83 |
+| The Philosophy of the Relationship | philosophy | 78 |
+| Breakout Trading (and fakeouts) | concept | 75 |
+| Overfitting & Edge Validation (multiple testing, deflated Sharpe) | concept | 75 |
+| Expectancy (expected value per trade) | concept | 73 |
 | Chart Fanatics — Cross-Playbook Patterns (47 first-party playbooks) | synthesis | 72 |
-| Overfitting & Edge Validation (multiple testing, deflated Sharpe) | concept | 70 |
-| Expectancy (expected value per trade) | concept | 69 |
-| Principle 4: Use probability conditionally | principle | 68 |
-| Words of Rizdom | podcast | 67 |
-| Probabilistic Thinking (thinking in bets) | concept | 66 |
-| Fundamental & Macro Analysis (rates, central banks, growth, inflation) | concept | 62 |
-| Research Program — what the philosophy still needs to prove | synthesis | 61 |
+| Market Structure (swings, BOS, CHoCH / MSS) | concept | 70 |
+| Principle 4: Use probability conditionally | principle | 70 |
 
 ## Deepest idea-lineage chains (oldest idea first)
 
+- Dow Theory → Wyckoff Method → Liquidity → Liquidity Sweep Reversal → Marco Trades → Prior-day liquidity sweep + reclaim
 - Dow Theory → Trend Following → Growth-Stock Momentum → Episodic Pivot → Ariel Hernandez
-- Dow Theory → Wyckoff Method → Liquidity → Liquidity Sweep Reversal → Marco Trades
-- Dow Theory → Wyckoff Method → Smart Money Concepts / ICT → Abraham Perez
+- Dow Theory → Wyckoff Method → Smart Money Concepts / ICT → Trader Mayne → Fair value gap retrace in the HTF trend
 - Market Microstructure → Auction Market Theory → Volume Profile → Carmine Rosato
 - Dow Theory → Wyckoff Method → AMD / Power of Three → Tanja Trades
 - Jesse Livermore → William J. O'Neil → Mark Minervini → Oliver Kell
@@ -147,10 +153,10 @@
 - Louis Bachelier → Benoit Mandelbrot → Eugene Fama → Burton Malkiel
 - Jesse Livermore → Richard D. Wyckoff → Michael J. Huddleston → TG Capital
 - How to Trade in Stocks → How to Make Money in Stocks → Trade Like a Stock Market Wizard → Think & Trade Like a Champion
+- Market Microstructure → Auction Market Theory → JJ Simon → VWAP band re-entry in a range
 - Dow Theory → Market Structure → Ali Crooks
 - Market Microstructure → Auction Market Theory → Andrea Cimitan
 - Market Microstructure → Auction Market Theory → Carmine Rosato
-- Market Microstructure → Auction Market Theory → Fabio Valentini
 
 ## Graph view exclusions
 

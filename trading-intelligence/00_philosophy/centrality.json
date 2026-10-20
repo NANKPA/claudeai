@@ -4,391 +4,456 @@
    "unit": "PHILOSOPHY",
    "name": "The Philosophy of the Relationship",
    "size": 60,
-   "outside_links": 1102,
-   "communities_linked": 25,
-   "participation": 0.862,
-   "pagerank": 0.14264571904395368,
-   "betweenness": 0.7339901477832512,
+   "outside_links": 1141,
+   "communities_linked": 27,
+   "participation": 0.875,
+   "pagerank": 0.13260931574009424,
+   "betweenness": 0.7058823529411764,
    "pagerank_rank": 1,
    "betweenness_rank": 1,
+   "participation_rank": 24
+  },
+  {
+   "unit": 11,
+   "name": "Trade Management / Chart Fanatics",
+   "size": 39,
+   "outside_links": 682,
+   "communities_linked": 29,
+   "participation": 0.876,
+   "pagerank": 0.08043911005211878,
+   "betweenness": 0.2798573975044563,
+   "pagerank_rank": 2,
+   "betweenness_rank": 2,
    "participation_rank": 23
   },
   {
-   "unit": 15,
-   "name": "Trade Management / Chart Fanatics",
-   "size": 35,
-   "outside_links": 683,
-   "communities_linked": 24,
-   "participation": 0.848,
-   "pagerank": 0.08823548668312693,
-   "betweenness": 0.3226600985221675,
-   "pagerank_rank": 2,
-   "betweenness_rank": 2,
-   "participation_rank": 25
+   "unit": 7,
+   "name": "Journal, Review & Metrics",
+   "size": 47,
+   "outside_links": 595,
+   "communities_linked": 29,
+   "participation": 0.792,
+   "pagerank": 0.07213793647838604,
+   "betweenness": 0.11764705882352941,
+   "pagerank_rank": 3,
+   "betweenness_rank": 7,
+   "participation_rank": 34
   },
   {
-   "unit": 2,
-   "name": "Psychology, Plan & Discipline",
-   "size": 63,
-   "outside_links": 533,
-   "communities_linked": 25,
-   "participation": 0.766,
-   "pagerank": 0.07276443702537591,
-   "betweenness": 0.15024630541871922,
-   "pagerank_rank": 3,
-   "betweenness_rank": 4,
-   "participation_rank": 28
+   "unit": 1,
+   "name": "Smart Money / ICT & Liquidity",
+   "size": 68,
+   "outside_links": 517,
+   "communities_linked": 24,
+   "participation": 0.895,
+   "pagerank": 0.06210581571658774,
+   "betweenness": 0.012477718360071301,
+   "pagerank_rank": 4,
+   "betweenness_rank": 11,
+   "participation_rank": 19
   },
   {
    "unit": 0,
    "name": "Backtesting, ML & Edge Validation",
-   "size": 93,
-   "outside_links": 388,
-   "communities_linked": 25,
-   "participation": 0.764,
-   "pagerank": 0.05559444699512307,
-   "betweenness": 0.2315270935960591,
-   "pagerank_rank": 4,
-   "betweenness_rank": 3,
-   "participation_rank": 29
-  },
-  {
-   "unit": 7,
-   "name": "Smart Money / ICT & Liquidity",
-   "size": 48,
-   "outside_links": 389,
-   "communities_linked": 19,
-   "participation": 0.868,
-   "pagerank": 0.051959496648307305,
-   "betweenness": 0.0,
+   "size": 69,
+   "outside_links": 491,
+   "communities_linked": 29,
+   "participation": 0.866,
+   "pagerank": 0.061011490573337095,
+   "betweenness": 0.1336898395721925,
    "pagerank_rank": 5,
-   "betweenness_rank": 14,
-   "participation_rank": 19
+   "betweenness_rank": 4,
+   "participation_rank": 27
   },
   {
-   "unit": 5,
-   "name": "Candlesticks & Price Action",
-   "size": 52,
-   "outside_links": 351,
-   "communities_linked": 26,
-   "participation": 0.921,
-   "pagerank": 0.05156569516239681,
-   "betweenness": 0.14285714285714285,
-   "pagerank_rank": 6,
-   "betweenness_rank": 5,
-   "participation_rank": 10
-  },
-  {
-   "unit": 1,
-   "name": "Auction Market Theory & Order Flow",
-   "size": 83,
-   "outside_links": 364,
-   "communities_linked": 25,
-   "participation": 0.892,
-   "pagerank": 0.05104349575172483,
-   "betweenness": 0.0,
-   "pagerank_rank": 7,
-   "betweenness_rank": 10,
-   "participation_rank": 17
-  },
-  {
-   "unit": 8,
-   "name": "Indicators & Oscillators",
-   "size": 47,
-   "outside_links": 328,
-   "communities_linked": 24,
-   "participation": 0.912,
-   "pagerank": 0.04710062713447832,
-   "betweenness": 0.08620689655172414,
-   "pagerank_rank": 8,
-   "betweenness_rank": 6,
-   "participation_rank": 14
-  },
-  {
-   "unit": 11,
+   "unit": 2,
    "name": "Classical Charting & Patterns",
-   "size": 46,
-   "outside_links": 248,
-   "communities_linked": 23,
-   "participation": 0.913,
-   "pagerank": 0.036087435715967515,
-   "betweenness": 0.0,
-   "pagerank_rank": 9,
-   "betweenness_rank": 16,
-   "participation_rank": 13
+   "size": 58,
+   "outside_links": 357,
+   "communities_linked": 29,
+   "participation": 0.904,
+   "pagerank": 0.04654919634142852,
+   "betweenness": 0.1194295900178253,
+   "pagerank_rank": 6,
+   "betweenness_rank": 6,
+   "participation_rank": 16
   },
   {
-   "unit": 14,
-   "name": "Prop-Firm Evaluations & Risk Rules",
-   "size": 36,
-   "outside_links": 201,
-   "communities_linked": 22,
-   "participation": 0.931,
-   "pagerank": 0.03226714383863181,
-   "betweenness": 0.0,
-   "pagerank_rank": 10,
-   "betweenness_rank": 19,
-   "participation_rank": 8
+   "unit": 3,
+   "name": "Efficient Markets Debate",
+   "size": 53,
+   "outside_links": 307,
+   "communities_linked": 31,
+   "participation": 0.868,
+   "pagerank": 0.042628391704842776,
+   "betweenness": 0.1800356506238859,
+   "pagerank_rank": 7,
+   "betweenness_rank": 3,
+   "participation_rank": 25
   },
   {
    "unit": 18,
    "name": "Position Sizing & Risk",
    "size": 27,
-   "outside_links": 182,
-   "communities_linked": 28,
-   "participation": 0.94,
-   "pagerank": 0.031220099851582275,
-   "betweenness": 0.0049261083743842365,
-   "pagerank_rank": 11,
-   "betweenness_rank": 9,
-   "participation_rank": 3
+   "outside_links": 276,
+   "communities_linked": 31,
+   "participation": 0.933,
+   "pagerank": 0.03993489024399089,
+   "betweenness": 0.12477718360071301,
+   "pagerank_rank": 8,
+   "betweenness_rank": 5,
+   "participation_rank": 6
   },
   {
-   "unit": 21,
-   "name": "Risk of Ruin & Drawdown Math",
-   "size": 17,
-   "outside_links": 176,
-   "communities_linked": 27,
-   "participation": 0.938,
-   "pagerank": 0.02969905426210658,
+   "unit": 14,
+   "name": "Multi-Timeframe Analysis",
+   "size": 37,
+   "outside_links": 270,
+   "communities_linked": 26,
+   "participation": 0.923,
+   "pagerank": 0.03545480602823619,
    "betweenness": 0.0,
-   "pagerank_rank": 12,
-   "betweenness_rank": 24,
-   "participation_rank": 4
-  },
-  {
-   "unit": 9,
-   "name": "Trend Following & the Turtles",
-   "size": 47,
-   "outside_links": 150,
-   "communities_linked": 23,
-   "participation": 0.94,
-   "pagerank": 0.027246192035144015,
-   "betweenness": 0.0665024630541872,
-   "pagerank_rank": 13,
-   "betweenness_rank": 7,
-   "participation_rank": 2
-  },
-  {
-   "unit": 20,
-   "name": "Edge",
-   "size": 25,
-   "outside_links": 149,
-   "communities_linked": 25,
-   "participation": 0.929,
-   "pagerank": 0.026179236499503086,
-   "betweenness": 0.0,
-   "pagerank_rank": 14,
-   "betweenness_rank": 23,
+   "pagerank_rank": 9,
+   "betweenness_rank": 18,
    "participation_rank": 9
   },
   {
-   "unit": 3,
-   "name": "Chart Fanatics Ecosystem",
-   "size": 60,
-   "outside_links": 169,
-   "communities_linked": 18,
-   "participation": 0.863,
-   "pagerank": 0.025999497287655524,
-   "betweenness": 0.0,
-   "pagerank_rank": 15,
-   "betweenness_rank": 11,
-   "participation_rank": 22
+   "unit": 13,
+   "name": "Prop-Firm Evaluations & Risk Rules",
+   "size": 37,
+   "outside_links": 204,
+   "communities_linked": 26,
+   "participation": 0.934,
+   "pagerank": 0.02892964532873642,
+   "betweenness": 0.0481283422459893,
+   "pagerank_rank": 10,
+   "betweenness_rank": 10,
+   "participation_rank": 5
   },
   {
-   "unit": 24,
-   "name": "Trading Plan",
-   "size": 14,
-   "outside_links": 125,
-   "communities_linked": 24,
-   "participation": 0.921,
-   "pagerank": 0.02175484247810765,
+   "unit": 9,
+   "name": "Auction Market Theory & Order Flow",
+   "size": 41,
+   "outside_links": 209,
+   "communities_linked": 25,
+   "participation": 0.9,
+   "pagerank": 0.02790899221622679,
    "betweenness": 0.0,
-   "pagerank_rank": 16,
-   "betweenness_rank": 26,
-   "participation_rank": 11
+   "pagerank_rank": 11,
+   "betweenness_rank": 16,
+   "participation_rank": 18
   },
   {
    "unit": 6,
+   "name": "Psychology, Plan & Discipline",
+   "size": 49,
+   "outside_links": 193,
+   "communities_linked": 27,
+   "participation": 0.922,
+   "pagerank": 0.027653217847657296,
+   "betweenness": 0.0035650623885918,
+   "pagerank_rank": 12,
+   "betweenness_rank": 12,
+   "participation_rank": 10
+  },
+  {
+   "unit": 5,
+   "name": "Trend Following & the Turtles",
+   "size": 51,
+   "outside_links": 168,
+   "communities_linked": 24,
+   "participation": 0.94,
+   "pagerank": 0.02645953834493649,
+   "betweenness": 0.0641711229946524,
+   "pagerank_rank": 13,
+   "betweenness_rank": 8,
+   "participation_rank": 3
+  },
+  {
+   "unit": 17,
+   "name": "Breakout Trading / Mean Reversion",
+   "size": 30,
+   "outside_links": 189,
+   "communities_linked": 26,
+   "participation": 0.916,
+   "pagerank": 0.02614432657771548,
+   "betweenness": 0.0,
+   "pagerank_rank": 14,
+   "betweenness_rank": 21,
+   "participation_rank": 12
+  },
+  {
+   "unit": 4,
    "name": "Growth-Stock Momentum (CANSLIM→VCP→EP)",
-   "size": 48,
-   "outside_links": 122,
-   "communities_linked": 21,
-   "participation": 0.905,
-   "pagerank": 0.021279967683338195,
+   "size": 51,
+   "outside_links": 176,
+   "communities_linked": 27,
+   "participation": 0.929,
+   "pagerank": 0.02543137364344939,
+   "betweenness": 0.0,
+   "pagerank_rank": 15,
+   "betweenness_rank": 14,
+   "participation_rank": 7
+  },
+  {
+   "unit": 8,
+   "name": "Microstructure & Optimal Execution",
+   "size": 47,
+   "outside_links": 182,
+   "communities_linked": 24,
+   "participation": 0.841,
+   "pagerank": 0.02512881395568406,
+   "betweenness": 0.0,
+   "pagerank_rank": 16,
+   "betweenness_rank": 15,
+   "participation_rank": 32
+  },
+  {
+   "unit": 10,
+   "name": "Chart Fanatics Ecosystem",
+   "size": 41,
+   "outside_links": 169,
+   "communities_linked": 20,
+   "participation": 0.855,
+   "pagerank": 0.023172488901687622,
    "betweenness": 0.0,
    "pagerank_rank": 17,
-   "betweenness_rank": 13,
-   "participation_rank": 15
+   "betweenness_rank": 17,
+   "participation_rank": 31
   },
   {
    "unit": 16,
    "name": "Trading Podcasts",
    "size": 33,
-   "outside_links": 97,
-   "communities_linked": 22,
-   "participation": 0.936,
-   "pagerank": 0.018841309541617085,
+   "outside_links": 113,
+   "communities_linked": 24,
+   "participation": 0.939,
+   "pagerank": 0.018030344312538037,
    "betweenness": 0.0,
    "pagerank_rank": 18,
    "betweenness_rank": 20,
-   "participation_rank": 6
-  },
-  {
-   "unit": 13,
-   "name": "Probability, Expectancy & Fat Tails",
-   "size": 36,
-   "outside_links": 102,
-   "communities_linked": 19,
-   "participation": 0.806,
-   "pagerank": 0.01869498573983668,
-   "betweenness": 0.0,
-   "pagerank_rank": 19,
-   "betweenness_rank": 18,
-   "participation_rank": 26
-  },
-  {
-   "unit": 10,
-   "name": "Scalping / Desire To Trade",
-   "size": 47,
-   "outside_links": 102,
-   "communities_linked": 19,
-   "participation": 0.92,
-   "pagerank": 0.018491306133587022,
-   "betweenness": 0.0,
-   "pagerank_rank": 20,
-   "betweenness_rank": 15,
-   "participation_rank": 12
-  },
-  {
-   "unit": 12,
-   "name": "Reflexivity / We Study Billionaires",
-   "size": 38,
-   "outside_links": 91,
-   "communities_linked": 15,
-   "participation": 0.849,
-   "pagerank": 0.017666701854993735,
-   "betweenness": 0.0,
-   "pagerank_rank": 21,
-   "betweenness_rank": 17,
-   "participation_rank": 24
-  },
-  {
-   "unit": 22,
-   "name": "Correlation & Portfolio Risk",
-   "size": 17,
-   "outside_links": 80,
-   "communities_linked": 23,
-   "participation": 0.937,
-   "pagerank": 0.017479055908469023,
-   "betweenness": 0.0665024630541872,
-   "pagerank_rank": 22,
-   "betweenness_rank": 8,
-   "participation_rank": 5
-  },
-  {
-   "unit": 17,
-   "name": "Macro, Fundamentals & Reflexivity",
-   "size": 29,
-   "outside_links": 84,
-   "communities_linked": 22,
-   "participation": 0.933,
-   "pagerank": 0.017287956039807723,
-   "betweenness": 0.0,
-   "pagerank_rank": 23,
-   "betweenness_rank": 21,
-   "participation_rank": 7
+   "participation_rank": 4
   },
   {
    "unit": 19,
-   "name": "Leverage, Margin, Pips & Lots",
+   "name": "Edge",
    "size": 26,
-   "outside_links": 70,
-   "communities_linked": 26,
-   "participation": 0.947,
-   "pagerank": 0.015458483158907674,
+   "outside_links": 112,
+   "communities_linked": 23,
+   "participation": 0.906,
+   "pagerank": 0.017770111353752394,
    "betweenness": 0.0,
-   "pagerank_rank": 24,
+   "pagerank_rank": 19,
    "betweenness_rank": 22,
+   "participation_rank": 15
+  },
+  {
+   "unit": 12,
+   "name": "Macro, Fundamentals & Reflexivity",
+   "size": 37,
+   "outside_links": 91,
+   "communities_linked": 26,
+   "participation": 0.943,
+   "pagerank": 0.016734644295098383,
+   "betweenness": 0.0017825311942959,
+   "pagerank_rank": 20,
+   "betweenness_rank": 13,
    "participation_rank": 1
   },
   {
-   "unit": 4,
-   "name": "Stochastic Calculus, Options & Derivatives",
-   "size": 53,
-   "outside_links": 61,
-   "communities_linked": 14,
-   "participation": 0.884,
-   "pagerank": 0.013369835962895921,
-   "betweenness": 0.0,
-   "pagerank_rank": 25,
-   "betweenness_rank": 12,
-   "participation_rank": 18
+   "unit": 29,
+   "name": "Correlation & Portfolio Risk",
+   "size": 16,
+   "outside_links": 73,
+   "communities_linked": 24,
+   "participation": 0.929,
+   "pagerank": 0.014905185246084893,
+   "betweenness": 0.0570409982174688,
+   "pagerank_rank": 21,
+   "betweenness_rank": 9,
+   "participation_rank": 8
   },
   {
-   "unit": 26,
-   "name": "Kelly, Sizing & Money Management",
-   "size": 13,
-   "outside_links": 47,
-   "communities_linked": 14,
-   "participation": 0.897,
-   "pagerank": 0.012579912396405067,
+   "unit": 30,
+   "name": "Probability, Expectancy & Fat Tails",
+   "size": 15,
+   "outside_links": 71,
+   "communities_linked": 18,
+   "participation": 0.88,
+   "pagerank": 0.013856005563725179,
    "betweenness": 0.0,
-   "pagerank_rank": 26,
-   "betweenness_rank": 28,
-   "participation_rank": 16
+   "pagerank_rank": 22,
+   "betweenness_rank": 32,
+   "participation_rank": 22
+  },
+  {
+   "unit": 20,
+   "name": "Reflexivity",
+   "size": 25,
+   "outside_links": 73,
+   "communities_linked": 19,
+   "participation": 0.912,
+   "pagerank": 0.013729544826439427,
+   "betweenness": 0.0,
+   "pagerank_rank": 23,
+   "betweenness_rank": 23,
+   "participation_rank": 14
+  },
+  {
+   "unit": 15,
+   "name": "Desire To Trade",
+   "size": 36,
+   "outside_links": 71,
+   "communities_linked": 20,
+   "participation": 0.912,
+   "pagerank": 0.012851556298356923,
+   "betweenness": 0.0,
+   "pagerank_rank": 24,
+   "betweenness_rank": 19,
+   "participation_rank": 13
   },
   {
    "unit": 23,
-   "name": "Top Traders Unplugged",
-   "size": 16,
-   "outside_links": 47,
-   "communities_linked": 16,
+   "name": "Leverage, Margin, Pips & Lots",
+   "size": 19,
+   "outside_links": 56,
+   "communities_linked": 24,
+   "participation": 0.941,
+   "pagerank": 0.011772183292001236,
+   "betweenness": 0.0,
+   "pagerank_rank": 25,
+   "betweenness_rank": 26,
+   "participation_rank": 2
+  },
+  {
+   "unit": 24,
+   "name": "Kelly, Sizing & Money Management",
+   "size": 18,
+   "outside_links": 51,
+   "communities_linked": 14,
    "participation": 0.867,
-   "pagerank": 0.01201682612232388,
+   "pagerank": 0.011680153650276845,
+   "betweenness": 0.0,
+   "pagerank_rank": 26,
+   "betweenness_rank": 27,
+   "participation_rank": 26
+  },
+  {
+   "unit": 33,
+   "name": "Tom Basso / Jack D. Schwager",
+   "size": 13,
+   "outside_links": 51,
+   "communities_linked": 19,
+   "participation": 0.89,
+   "pagerank": 0.011073395259286994,
    "betweenness": 0.0,
    "pagerank_rank": 27,
-   "betweenness_rank": 25,
+   "betweenness_rank": 35,
    "participation_rank": 20
   },
   {
-   "unit": 28,
-   "name": "An Introduction to Probability Theory…",
-   "size": 10,
-   "outside_links": 32,
-   "communities_linked": 10,
-   "participation": 0.74,
-   "pagerank": 0.009419261436738276,
+   "unit": 22,
+   "name": "Options & Volatility",
+   "size": 21,
+   "outside_links": 44,
+   "communities_linked": 16,
+   "participation": 0.902,
+   "pagerank": 0.01090178764180013,
    "betweenness": 0.0,
    "pagerank_rank": 28,
-   "betweenness_rank": 30,
-   "participation_rank": 30
-  },
-  {
-   "unit": 27,
-   "name": "Jim Simons",
-   "size": 12,
-   "outside_links": 22,
-   "communities_linked": 10,
-   "participation": 0.802,
-   "pagerank": 0.008075319264888248,
-   "betweenness": 0.0,
-   "pagerank_rank": 29,
-   "betweenness_rank": 29,
-   "participation_rank": 27
+   "betweenness_rank": 25,
+   "participation_rank": 17
   },
   {
    "unit": 25,
-   "name": "Risk, Sizing & Portfolio Mathematics",
-   "size": 14,
-   "outside_links": 17,
-   "communities_linked": 10,
-   "participation": 0.865,
-   "pagerank": 0.007976172343006285,
+   "name": "Better System Trader",
+   "size": 17,
+   "outside_links": 50,
+   "communities_linked": 18,
+   "participation": 0.921,
+   "pagerank": 0.01070544637211586,
+   "betweenness": 0.0,
+   "pagerank_rank": 29,
+   "betweenness_rank": 28,
+   "participation_rank": 11
+  },
+  {
+   "unit": 31,
+   "name": "Top Traders Unplugged",
+   "size": 15,
+   "outside_links": 47,
+   "communities_linked": 17,
+   "participation": 0.857,
+   "pagerank": 0.010595826806155208,
    "betweenness": 0.0,
    "pagerank_rank": 30,
-   "betweenness_rank": 27,
+   "betweenness_rank": 33,
+   "participation_rank": 30
+  },
+  {
+   "unit": 28,
+   "name": "We Study Billionaires",
+   "size": 16,
+   "outside_links": 37,
+   "communities_linked": 11,
+   "participation": 0.86,
+   "pagerank": 0.009265419412182256,
+   "betweenness": 0.0,
+   "pagerank_rank": 31,
+   "betweenness_rank": 31,
+   "participation_rank": 29
+  },
+  {
+   "unit": 21,
+   "name": "Stochastic Calculus, Options & Derivatives",
+   "size": 24,
+   "outside_links": 31,
+   "communities_linked": 13,
+   "participation": 0.86,
+   "pagerank": 0.009204363091863172,
+   "betweenness": 0.0,
+   "pagerank_rank": 32,
+   "betweenness_rank": 24,
+   "participation_rank": 28
+  },
+  {
+   "unit": 26,
+   "name": "Indicators & Oscillators",
+   "size": 16,
+   "outside_links": 37,
+   "communities_linked": 13,
+   "participation": 0.887,
+   "pagerank": 0.009166956373286038,
+   "betweenness": 0.0,
+   "pagerank_rank": 33,
+   "betweenness_rank": 29,
    "participation_rank": 21
+  },
+  {
+   "unit": 27,
+   "name": "Probability & Statistics",
+   "size": 16,
+   "outside_links": 27,
+   "communities_linked": 7,
+   "participation": 0.768,
+   "pagerank": 0.007446977937582649,
+   "betweenness": 0.0,
+   "pagerank_rank": 34,
+   "betweenness_rank": 30,
+   "participation_rank": 35
+  },
+  {
+   "unit": 32,
+   "name": "Risk, Sizing & Portfolio Mathematics",
+   "size": 14,
+   "outside_links": 15,
+   "communities_linked": 8,
+   "participation": 0.836,
+   "pagerank": 0.006610748572338474,
+   "betweenness": 0.0,
+   "pagerank_rank": 35,
+   "betweenness_rank": 34,
+   "participation_rank": 33
   }
  ],
  "baseline": {
@@ -396,119 +461,123 @@
   "set_size": 60,
   "median_rank": 1,
   "best_rank": 1,
-  "share_rank_1": 0.98,
-  "median_reach2": 89.7,
-  "p95_reach2": 91.9
+  "share_rank_1": 0.99,
+  "median_reach2": 90.1,
+  "p95_reach2": 92.6
  },
  "graph": {
-  "nodes": 1145,
-  "edges": 5360,
-  "communities": 30,
+  "nodes": 1182,
+  "edges": 5796,
+  "communities": 35,
   "philosophy_nodes": 60
  },
  "root": {
-  "degree": 65,
-  "pagerank_rank": 32,
-  "betweenness_rank": 50
+  "degree": 69,
+  "pagerank_rank": 34,
+  "betweenness_rank": 51
  },
  "super": {
   "pagerank_rank": 1,
   "betweenness_rank": 1,
   "closeness_rank_among_top150": 1,
-  "degree": 204,
+  "degree": 208,
   "reach_pct": {
-   "1": 18.8,
-   "2": 82.5,
+   "1": 18.5,
+   "2": 84.4,
    "3": 99.8
   },
-  "communities_touched": 25,
-  "communities_other": 29,
+  "communities_touched": 27,
+  "communities_other": 34,
   "top_pagerank": [
    [
     "THE PHILOSOPHY (all philosophy nodes as one)",
-    0.01973
+    0.01853
    ],
    [
     "channel_chart_fanatics",
-    0.01842
+    0.01616
    ],
    [
     "concept_trading_psychology",
-    0.01354
+    0.01273
    ],
    [
     "concept_trend_following",
-    0.01153
+    0.01151
    ],
    [
     "concept_position_sizing",
-    0.00984
+    0.00981
+   ],
+   [
+    "synthesis_sniper_reading_list",
+    0.00822
    ],
    [
     "concept_prop_firm_risk_rules",
-    0.00879
+    0.00817
    ],
    [
     "concept_risk_of_ruin_drawdown",
-    0.00803
-   ],
-   [
-    "concept_edge",
-    0.00789
+    0.00792
    ],
    [
     "concept_order_flow",
-    0.00745
+    0.00754
+   ],
+   [
+    "concept_edge",
+    0.00736
+   ],
+   [
+    "concept_support_resistance",
+    0.00727
    ],
    [
     "concept_backtesting",
-    0.00708
-   ],
-   [
-    "concept_fundamental_macro_analysis",
-    0.00692
-   ],
-   [
-    "podcast_words_of_rizdom",
-    0.00673
+    0.00718
    ]
   ]
  },
  "communities_touched": [
   [
-   "Trade Management / Chart Fanatics",
-   31
-  ],
-  [
-   "Backtesting, ML & Edge Validation",
-   28
-  ],
-  [
-   "Psychology, Plan & Discipline",
+   "Journal, Review & Metrics",
    27
   ],
   [
-   "Auction Market Theory & Order Flow",
-   25
+   "Trade Management / Chart Fanatics",
+   27
+  ],
+  [
+   "Efficient Markets Debate",
+   20
+  ],
+  [
+   "Backtesting, ML & Edge Validation",
+   19
   ],
   [
    "Smart Money / ICT & Liquidity",
    19
   ],
   [
+   "Microstructure & Optimal Execution",
+   17
+  ],
+  [
+   "Position Sizing & Risk",
+   10
+  ],
+  [
    "Classical Charting & Patterns",
    10
   ],
   [
-   "Probability, Expectancy & Fat Tails",
-   10
+   "Auction Market Theory & Order Flow",
+   9
   ],
   [
-   "Candlesticks & Price Action",
-   8
-  ],
-  [
-   "Indicators & Oscillators",
+   "Multi-Timeframe Analysis",
    7
   ],
   [
@@ -516,43 +585,43 @@
    6
   ],
   [
-   "An Introduction to Probability Theory…",
+   "Kelly, Sizing & Money Management",
    5
   ],
   [
-   "Reflexivity / We Study Billionaires",
+   "Probability, Expectancy & Fat Tails",
    5
   ],
   [
-   "Edge",
+   "Psychology, Plan & Discipline",
    4
+  ],
+  [
+   "Probability & Statistics",
+   4
+  ],
+  [
+   "Reflexivity",
+   3
   ],
   [
    "Macro, Fundamentals & Reflexivity",
    3
   ],
   [
-   "Kelly, Sizing & Money Management",
+   "Breakout Trading / Mean Reversion",
    3
   ],
   [
-   "Correlation & Portfolio Risk",
+   "Edge",
    2
   ],
   [
-   "Position Sizing & Risk",
-   2
-  ],
-  [
-   "Risk of Ruin & Drawdown Math",
-   2
-  ],
-  [
-   "Stochastic Calculus, Options & Derivatives",
+   "Top Traders Unplugged",
    1
   ],
   [
-   "Scalping / Desire To Trade",
+   "Growth-Stock Momentum (CANSLIM→VCP→EP)",
    1
   ],
   [
@@ -560,19 +629,23 @@
    1
   ],
   [
-   "Trading Plan",
+   "Trading Podcasts",
    1
   ],
   [
-   "Prop-Firm Evaluations & Risk Rules",
+   "Stochastic Calculus, Options & Derivatives",
    1
   ],
   [
-   "Top Traders Unplugged",
+   "Correlation & Portfolio Risk",
    1
   ],
   [
    "Risk, Sizing & Portfolio Mathematics",
+   1
+  ],
+  [
+   "Prop-Firm Evaluations & Risk Rules",
    1
   ]
  ],
@@ -581,481 +654,481 @@
    "id": "philosophy_relationship",
    "label": "The Philosophy of the Relationship",
    "kind": "philosophy",
-   "degree": 65,
-   "pagerank_rank": 32,
-   "betweenness_rank": 50
+   "degree": 69,
+   "pagerank_rank": 34,
+   "betweenness_rank": 51
   },
   {
    "id": "principle_04_conditional_probability",
    "label": "Principle 4: Use probability conditionally",
    "kind": "principle",
-   "degree": 64,
-   "pagerank_rank": 34,
-   "betweenness_rank": 59
-  },
-  {
-   "id": "principle_02_context_before_movement",
-   "label": "Principle 2: Interpret movements within their broader context",
-   "kind": "principle",
-   "degree": 55,
-   "pagerank_rank": 48,
-   "betweenness_rank": 100
+   "degree": 66,
+   "pagerank_rank": 39,
+   "betweenness_rank": 66
   },
   {
    "id": "principle_06_do_not_force",
    "label": "Principle 6: Do not force opportunities",
    "kind": "principle",
-   "degree": 56,
-   "pagerank_rank": 49,
-   "betweenness_rank": 151
+   "degree": 59,
+   "pagerank_rank": 51,
+   "betweenness_rank": 143
   },
   {
    "id": "principle_03_future_is_uncertain",
    "label": "Principle 3: Treat the market's future as uncertain",
    "kind": "principle",
-   "degree": 55,
-   "pagerank_rank": 50,
-   "betweenness_rank": 99
+   "degree": 57,
+   "pagerank_rank": 52,
+   "betweenness_rank": 87
+  },
+  {
+   "id": "principle_02_context_before_movement",
+   "label": "Principle 2: Interpret movements within their broader context",
+   "kind": "principle",
+   "degree": 56,
+   "pagerank_rank": 53,
+   "betweenness_rank": 113
   },
   {
    "id": "principle_07_respond_methodically",
    "label": "Principle 7: Respond to changed evidence methodically",
    "kind": "principle",
-   "degree": 52,
-   "pagerank_rank": 54,
-   "betweenness_rank": 143
+   "degree": 53,
+   "pagerank_rank": 57,
+   "betweenness_rank": 142
   },
   {
    "id": "principle_01_understand_before_acting",
    "label": "Principle 1: Understand before acting",
    "kind": "principle",
-   "degree": 45,
-   "pagerank_rank": 61,
-   "betweenness_rank": 80
+   "degree": 46,
+   "pagerank_rank": 64,
+   "betweenness_rank": 88
   },
   {
    "id": "principle_09_protect_capital",
    "label": "Principle 9: Protect capital",
    "kind": "principle",
-   "degree": 36,
-   "pagerank_rank": 66,
-   "betweenness_rank": 78
+   "degree": 39,
+   "pagerank_rank": 68,
+   "betweenness_rank": 73
   },
   {
    "id": "principle_05_mathematical_justification",
    "label": "Principle 5: Require mathematical justification",
    "kind": "principle",
-   "degree": 35,
-   "pagerank_rank": 79,
-   "betweenness_rank": 208
+   "degree": 38,
+   "pagerank_rank": 80,
+   "betweenness_rank": 205
+  },
+  {
+   "id": "philo_conditional_probability",
+   "label": "VI. Probability as the foundation of decisions; the law of large numbers; probability is conditional",
+   "kind": "philosophy",
+   "degree": 32,
+   "pagerank_rank": 87,
+   "betweenness_rank": 84
+  },
+  {
+   "id": "philo_mathematics_sword",
+   "label": "VII. Mathematics, the trader's sword (expected value; maths must serve the decision)",
+   "kind": "philosophy",
+   "degree": 33,
+   "pagerank_rank": 88,
+   "betweenness_rank": 159
   },
   {
    "id": "philo_scientific_method",
    "label": "XVII. Turning the philosophy into a scientific method",
    "kind": "philosophy",
-   "degree": 31,
-   "pagerank_rank": 85,
-   "betweenness_rank": 146
+   "degree": 32,
+   "pagerank_rank": 92,
+   "betweenness_rank": 225
+  },
+  {
+   "id": "philo_practical_doctrine",
+   "label": "XVIII. The practical doctrine (the 12 principles)",
+   "kind": "philosophy",
+   "degree": 35,
+   "pagerank_rank": 93,
+   "betweenness_rank": 194
   },
   {
    "id": "philo_research_foundations",
    "label": "XX. The research behind the philosophy",
    "kind": "philosophy",
    "degree": 27,
-   "pagerank_rank": 87,
-   "betweenness_rank": 55
+   "pagerank_rank": 95,
+   "betweenness_rank": 68
   },
   {
-   "id": "philo_practical_doctrine",
-   "label": "XVIII. The practical doctrine (the 12 principles)",
+   "id": "philo_capital_preservation",
+   "label": "XIV. Capital preservation and survival (the asymmetry of losses)",
    "kind": "philosophy",
-   "degree": 34,
-   "pagerank_rank": 88,
-   "betweenness_rank": 222
+   "degree": 29,
+   "pagerank_rank": 98,
+   "betweenness_rank": 100
   },
   {
    "id": "question_repeatable_behaviors",
    "label": "Which market behaviours are genuinely repeatable?",
    "kind": "question",
    "degree": 29,
-   "pagerank_rank": 89,
-   "betweenness_rank": 111
+   "pagerank_rank": 100,
+   "betweenness_rank": 128
   },
   {
-   "id": "philo_mathematics_sword",
-   "label": "VII. Mathematics, the trader's sword (expected value; maths must serve the decision)",
-   "kind": "philosophy",
-   "degree": 30,
-   "pagerank_rank": 90,
-   "betweenness_rank": 152
-  },
-  {
-   "id": "philo_conditional_probability",
-   "label": "VI. Probability as the foundation of decisions; the law of large numbers; probability is conditional",
-   "kind": "philosophy",
-   "degree": 29,
-   "pagerank_rank": 91,
-   "betweenness_rank": 113
+   "id": "principle_11_record_and_investigate",
+   "label": "Principle 11: Record and investigate",
+   "kind": "principle",
+   "degree": 32,
+   "pagerank_rank": 102,
+   "betweenness_rank": 219
   },
   {
    "id": "principle_08_decision_quality_not_outcome",
    "label": "Principle 8: Separate decision quality from individual outcomes",
    "kind": "principle",
    "degree": 31,
-   "pagerank_rank": 97,
-   "betweenness_rank": 163
+   "pagerank_rank": 104,
+   "betweenness_rank": 190
   },
   {
    "id": "philo_open_questions",
    "label": "XIX. What this philosophy still needs to prove",
    "kind": "philosophy",
    "degree": 29,
-   "pagerank_rank": 98,
-   "betweenness_rank": 97
+   "pagerank_rank": 105,
+   "betweenness_rank": 127
   },
   {
-   "id": "philo_capital_preservation",
-   "label": "XIV. Capital preservation and survival (the asymmetry of losses)",
+   "id": "philo_acb_principle",
+   "label": "III. The A → C → B principle: the destination is not the path",
    "kind": "philosophy",
-   "degree": 27,
-   "pagerank_rank": 99,
-   "betweenness_rank": 112
+   "degree": 29,
+   "pagerank_rank": 112,
+   "betweenness_rank": 102
   },
   {
-   "id": "principle_11_record_and_investigate",
-   "label": "Principle 11: Record and investigate",
-   "kind": "principle",
-   "degree": 30,
-   "pagerank_rank": 103,
-   "betweenness_rank": 165
+   "id": "philo_source_of_opportunity",
+   "label": "VIII. The source of a trading opportunity: understanding + evidence + mathematics",
+   "kind": "philosophy",
+   "degree": 28,
+   "pagerank_rank": 117,
+   "betweenness_rank": 193
   },
   {
    "id": "philo_evidence_changes",
    "label": "X. When the evidence changes (manage risk first, then investigate)",
    "kind": "philosophy",
    "degree": 29,
-   "pagerank_rank": 107,
-   "betweenness_rank": 166
+   "pagerank_rank": 118,
+   "betweenness_rank": 198
+  },
+  {
+   "id": "principle_10_emotional_independence",
+   "label": "Principle 10: Protect emotional independence",
+   "kind": "principle",
+   "degree": 29,
+   "pagerank_rank": 119,
+   "betweenness_rank": 218
   },
   {
    "id": "philo_value_vs_price",
    "label": "XV. The difference between value and price",
    "kind": "philosophy",
    "degree": 26,
-   "pagerank_rank": 109,
-   "betweenness_rank": 118
+   "pagerank_rank": 121,
+   "betweenness_rank": 138
+  },
+  {
+   "id": "question_survives_costs",
+   "label": "Does the advantage survive trading costs?",
+   "kind": "question",
+   "degree": 22,
+   "pagerank_rank": 122,
+   "betweenness_rank": 74
   },
   {
    "id": "question_define_conditions",
    "label": "How should the relevant conditions be defined and measured?",
    "kind": "question",
    "degree": 26,
-   "pagerank_rank": 112,
-   "betweenness_rank": 144
-  },
-  {
-   "id": "philo_source_of_opportunity",
-   "label": "VIII. The source of a trading opportunity: understanding + evidence + mathematics",
-   "kind": "philosophy",
-   "degree": 27,
-   "pagerank_rank": 114,
-   "betweenness_rank": 194
-  },
-  {
-   "id": "principle_10_emotional_independence",
-   "label": "Principle 10: Protect emotional independence",
-   "kind": "principle",
-   "degree": 28,
-   "pagerank_rank": 115,
-   "betweenness_rank": 232
-  },
-  {
-   "id": "philo_acb_principle",
-   "label": "III. The A → C → B principle: the destination is not the path",
-   "kind": "philosophy",
-   "degree": 27,
-   "pagerank_rank": 116,
-   "betweenness_rank": 98
-  },
-  {
-   "id": "question_survives_costs",
-   "label": "Does the advantage survive trading costs?",
-   "kind": "question",
-   "degree": 21,
-   "pagerank_rank": 118,
-   "betweenness_rank": 75
+   "pagerank_rank": 124,
+   "betweenness_rank": 192
   },
   {
    "id": "question_consistent_execution",
    "label": "Can the trader execute the strategy consistently?",
    "kind": "question",
    "degree": 27,
-   "pagerank_rank": 119,
-   "betweenness_rank": 193
+   "pagerank_rank": 128,
+   "betweenness_rank": 236
   },
   {
    "id": "philo_being_wrong",
    "label": "XI. Being wrong is part of the system (decision quality vs. outcome)",
    "kind": "philosophy",
    "degree": 27,
-   "pagerank_rank": 121,
-   "betweenness_rank": 197
+   "pagerank_rank": 131,
+   "betweenness_rank": 211
   },
   {
    "id": "question_survives_regime_change",
    "label": "Does the strategy survive changing market conditions?",
    "kind": "question",
    "degree": 25,
-   "pagerank_rank": 124,
-   "betweenness_rank": 149
+   "pagerank_rank": 132,
+   "betweenness_rank": 201
   },
   {
    "id": "philo_price_expression",
    "label": "IV. Price as the expression of a relationship (observation vs. inference)",
    "kind": "philosophy",
    "degree": 25,
-   "pagerank_rank": 126,
-   "betweenness_rank": 147
-  },
-  {
-   "id": "philo_recurring_storyline",
-   "label": "V. The market as a recurring storyline (recurrence is not repetition)",
-   "kind": "philosophy",
-   "degree": 25,
-   "pagerank_rank": 128,
-   "betweenness_rank": 145
+   "pagerank_rank": 133,
+   "betweenness_rank": 230
   },
   {
    "id": "philo_protect_process",
    "label": "XII. Protect the process, not the ego",
    "kind": "philosophy",
    "degree": 26,
-   "pagerank_rank": 129,
-   "betweenness_rank": 215
+   "pagerank_rank": 134,
+   "betweenness_rank": 223
+  },
+  {
+   "id": "philo_recurring_storyline",
+   "label": "V. The market as a recurring storyline (recurrence is not repetition)",
+   "kind": "philosophy",
+   "degree": 25,
+   "pagerank_rank": 136,
+   "betweenness_rank": 139
   },
   {
    "id": "philo_journal",
    "label": "XVI. The trading journal as a record of understanding",
    "kind": "philosophy",
    "degree": 26,
-   "pagerank_rank": 131,
-   "betweenness_rank": 209
+   "pagerank_rank": 137,
+   "betweenness_rank": 221
   },
   {
    "id": "philo_market_system_of_rules",
    "label": "II. The market as a system governed by rules (the system vs. my model of it)",
    "kind": "philosophy",
    "degree": 24,
-   "pagerank_rank": 134,
-   "betweenness_rank": 115
+   "pagerank_rank": 139,
+   "betweenness_rank": 136
   },
   {
    "id": "question_estimate_reliability",
    "label": "How reliable are the probability estimates?",
    "kind": "question",
    "degree": 22,
-   "pagerank_rank": 146,
-   "betweenness_rank": 235
+   "pagerank_rank": 152,
+   "betweenness_rank": 259
   },
   {
    "id": "philo_step_back",
    "label": "IX. When understanding fails, step back (not trading is a decision)",
    "kind": "philosophy",
-   "degree": 22,
-   "pagerank_rank": 149,
-   "betweenness_rank": 170
+   "degree": 23,
+   "pagerank_rank": 154,
+   "betweenness_rank": 199
+  },
+  {
+   "id": "principle_12_process_not_money",
+   "label": "Principle 12: Follow the process, not the promise of money",
+   "kind": "principle",
+   "degree": 24,
+   "pagerank_rank": 158,
+   "betweenness_rank": 294
   },
   {
    "id": "philo_market_is_relationship",
    "label": "I. The market is a relationship; price is its visible expression",
    "kind": "philosophy",
    "degree": 20,
-   "pagerank_rank": 153,
-   "betweenness_rank": 122
-  },
-  {
-   "id": "principle_12_process_not_money",
-   "label": "Principle 12: Follow the process, not the promise of money",
-   "kind": "principle",
-   "degree": 23,
-   "pagerank_rank": 154,
-   "betweenness_rank": 361
+   "pagerank_rank": 167,
+   "betweenness_rank": 117
   },
   {
    "id": "philo_manifesto",
    "label": "XXI. My personal trading manifesto",
    "kind": "philosophy",
    "degree": 20,
-   "pagerank_rank": 165,
-   "betweenness_rank": 219
+   "pagerank_rank": 174,
+   "betweenness_rank": 202
   },
   {
    "id": "philo_decisions_not_money",
    "label": "XIII. Follow the right decisions, not the money",
    "kind": "philosophy",
    "degree": 20,
-   "pagerank_rank": 181,
-   "betweenness_rank": 417
+   "pagerank_rank": 188,
+   "betweenness_rank": 392
   },
   {
    "id": "hypothesis_value_gap_not_edge",
    "label": "H19: A gap between price and value is not an edge by itself",
    "kind": "hypothesis",
    "degree": 11,
-   "pagerank_rank": 268,
-   "betweenness_rank": 518
+   "pagerank_rank": 277,
+   "betweenness_rank": 581
   },
   {
    "id": "hypothesis_structure_break_marks_breakdown",
    "label": "H4: A break of structure, not depth, separates breakdowns from detours",
    "kind": "hypothesis",
    "degree": 11,
-   "pagerank_rank": 290,
-   "betweenness_rank": 588
+   "pagerank_rank": 296,
+   "betweenness_rank": 620
   },
   {
    "id": "hypothesis_conditional_tendencies_decay",
    "label": "H6: A conditional tendency has to be re-earned in each period",
    "kind": "hypothesis",
    "degree": 10,
-   "pagerank_rank": 293,
-   "betweenness_rank": 665
+   "pagerank_rank": 301,
+   "betweenness_rank": 729
   },
   {
    "id": "hypothesis_in_sample_winner_decays",
    "label": "H10: What wins in-sample loses most of its edge out of sample",
    "kind": "hypothesis",
    "degree": 10,
-   "pagerank_rank": 296,
-   "betweenness_rank": 719
+   "pagerank_rank": 304,
+   "betweenness_rank": 789
   },
   {
    "id": "hypothesis_small_samples_cannot_confirm",
    "label": "H7: A few dozen trades cannot confirm a thin edge",
    "kind": "hypothesis",
    "degree": 10,
-   "pagerank_rank": 298,
-   "betweenness_rank": 697
+   "pagerank_rank": 306,
+   "betweenness_rank": 768
   },
   {
    "id": "hypothesis_outcomes_misjudge_decisions",
    "label": "H13: Short-run results are a weak verdict on a decision",
    "kind": "hypothesis",
    "degree": 10,
-   "pagerank_rank": 307,
-   "betweenness_rank": 579
+   "pagerank_rank": 312,
+   "betweenness_rank": 627
   },
   {
    "id": "hypothesis_step_back_selects_better_trades",
    "label": "H15: Stepping back leaves fewer, better-justified trades",
    "kind": "hypothesis",
    "degree": 10,
-   "pagerank_rank": 309,
-   "betweenness_rank": 564
+   "pagerank_rank": 315,
+   "betweenness_rank": 590
   },
   {
    "id": "hypothesis_losing_run_check_calibrated",
    "label": "H20: The losing-run check tells ordinary variance from a broken edge",
    "kind": "hypothesis",
    "degree": 10,
-   "pagerank_rank": 310,
-   "betweenness_rank": 679
+   "pagerank_rank": 316,
+   "betweenness_rank": 692
   },
   {
    "id": "hypothesis_good_decisions_earn_more",
    "label": "H14: Good decisions earn more over a large sample, though not trade by trade",
    "kind": "hypothesis",
    "degree": 10,
-   "pagerank_rank": 314,
-   "betweenness_rank": 630
+   "pagerank_rank": 318,
+   "betweenness_rank": 699
   },
   {
    "id": "hypothesis_conditioning_changes_odds",
    "label": "H5: Defined conditions change the odds",
    "kind": "hypothesis",
    "degree": 9,
-   "pagerank_rank": 325,
-   "betweenness_rank": 607
+   "pagerank_rank": 333,
+   "betweenness_rank": 682
   },
   {
    "id": "hypothesis_losses_impair_next_decision",
    "label": "H17: A loss degrades the next decision",
    "kind": "hypothesis",
    "degree": 9,
-   "pagerank_rank": 345,
-   "betweenness_rank": 729
+   "pagerank_rank": 357,
+   "betweenness_rank": 741
   },
   {
    "id": "hypothesis_estimates_are_calibrated",
    "label": "H8: My recorded probability estimates are calibrated",
    "kind": "hypothesis",
    "degree": 9,
-   "pagerank_rank": 346,
-   "betweenness_rank": 739
+   "pagerank_rank": 360,
+   "betweenness_rank": 793
   },
   {
    "id": "hypothesis_journal_reduces_hindsight",
    "label": "H16: The frozen journal record removes hindsight from the review",
    "kind": "hypothesis",
    "degree": 9,
-   "pagerank_rank": 353,
-   "betweenness_rank": 698
+   "pagerank_rank": 361,
+   "betweenness_rank": 723
   },
   {
    "id": "hypothesis_context_at_a_shapes_path",
    "label": "H3: The context at A shapes the whole detour curve",
    "kind": "hypothesis",
    "degree": 9,
-   "pagerank_rank": 355,
-   "betweenness_rank": 639
-  },
-  {
-   "id": "hypothesis_edge_survives_costs",
-   "label": "H9: Costs decide whether a selected short-horizon edge is worth trading",
-   "kind": "hypothesis",
-   "degree": 8,
-   "pagerank_rank": 356,
-   "betweenness_rank": 649
+   "pagerank_rank": 367,
+   "betweenness_rank": 664
   },
   {
    "id": "hypothesis_depth_signals_breakdown",
    "label": "H2: A deep enough adverse move signals a breakdown",
    "kind": "hypothesis",
    "degree": 8,
-   "pagerank_rank": 363,
-   "betweenness_rank": 510
+   "pagerank_rank": 375,
+   "betweenness_rank": 468
+  },
+  {
+   "id": "hypothesis_edge_survives_costs",
+   "label": "H9: Costs decide whether a selected short-horizon edge is worth trading",
+   "kind": "hypothesis",
+   "degree": 8,
+   "pagerank_rank": 376,
+   "betweenness_rank": 724
   },
   {
    "id": "hypothesis_predefined_exits_curb_disposition",
    "label": "H18: Pre-defined exits prevent riding losers and cutting winners",
    "kind": "hypothesis",
    "degree": 9,
-   "pagerank_rank": 366,
-   "betweenness_rank": 667
+   "pagerank_rank": 377,
+   "betweenness_rank": 689
   },
   {
    "id": "hypothesis_search_manufactures_edges",
    "label": "H11: Searching many rules manufactures an apparent edge",
    "kind": "hypothesis",
    "degree": 8,
-   "pagerank_rank": 367,
-   "betweenness_rank": 458
+   "pagerank_rank": 382,
+   "betweenness_rank": 537
   },
   {
    "id": "hypothesis_ruin_set_by_size",
    "label": "H12: Bet size, not the edge, decides survival",
    "kind": "hypothesis",
    "degree": 7,
-   "pagerank_rank": 423,
-   "betweenness_rank": 745
+   "pagerank_rank": 446,
+   "betweenness_rank": 801
   },
   {
    "id": "hypothesis_acb_detour_not_verdict",
    "label": "H1: An adverse move weakens the hypothesis without settling it",
    "kind": "hypothesis",
    "degree": 7,
-   "pagerank_rank": 492,
-   "betweenness_rank": 720
+   "pagerank_rank": 519,
+   "betweenness_rank": 770
   }
  ],
  "pulled": {
@@ -1063,464 +1136,484 @@
    [
     "concept_trading_psychology",
     "Trading Psychology & Discipline",
-    0.01174
-   ],
-   [
-    "concept_market_regimes",
-    "Market Regimes (trend vs range, high vs low volatility)",
-    0.00956
-   ],
-   [
-    "concept_probabilistic_thinking",
-    "Probabilistic Thinking (thinking in bets)",
-    0.00947
+    0.0112
    ],
    [
     "concept_expectancy",
     "Expectancy (expected value per trade)",
-    0.00947
+    0.00923
+   ],
+   [
+    "concept_market_regimes",
+    "Market Regimes (trend vs range, high vs low volatility)",
+    0.0092
+   ],
+   [
+    "concept_probabilistic_thinking",
+    "Probabilistic Thinking (thinking in bets)",
+    0.00918
    ],
    [
     "concept_trading_journal_review",
     "Trading Journal & Performance Review",
-    0.00864
+    0.00834
    ],
    [
     "concept_position_sizing",
     "Position Sizing",
-    0.00824
-   ],
-   [
-    "concept_edge",
-    "Edge (positive expectancy, repeatable)",
-    0.00785
+    0.00811
    ],
    [
     "concept_overfitting_validation",
     "Overfitting & Edge Validation (multiple testing, deflated Sharpe)",
-    0.00779
+    0.00762
    ],
    [
     "concept_backtesting",
     "Backtesting (manual & systematic)",
-    0.00761
+    0.00759
    ],
    [
     "concept_trend_following",
     "Trend Following",
-    0.00743
+    0.00738
+   ],
+   [
+    "concept_edge",
+    "Edge (positive expectancy, repeatable)",
+    0.00736
    ]
   ],
   "strategy": [
    [
     "strategy_matteo_conti_institutional",
     "Matteo Conti — Institutional Strategy Development Framework (multi-asset, day and swing trading)",
-    0.00572
+    0.00545
    ],
    [
     "strategy_naoufel_taief_algorithmic",
     "Naoufel Taief — No-Code Algorithmic Strategy Portfolio: Generate, Stress-Test & Rotate (stocks/futures, systematic trading)",
-    0.00464
-   ],
-   [
-    "strategy_jj_simon_fair_pricing",
-    "JJ Simon — Fair Pricing Theory: Continuation & Reversion (Nasdaq futures, 1-minute scalping)",
-    0.00381
+    0.00442
    ],
    [
     "strategy_gala_trades_price_action",
     "Gala Trades — Price Action Strategy: Hourly Levels with Breaking Retest, Bounce & Rejection (stock options, day trading)",
-    0.00374
+    0.00369
    ],
    [
-    "strategy_pavel_first_principles",
-    "Pavel — First-Principles Trading Framework (multi-asset, strategy-design framework)",
-    0.00364
+    "strategy_jj_simon_fair_pricing",
+    "JJ Simon — Fair Pricing Theory: Continuation & Reversion (Nasdaq futures, 1-minute scalping)",
+    0.00368
    ],
    [
     "strategy_umar_ashraf_5_stage",
     "Umar Ashraf — 5-Stage Trader Development Framework (any market, trader development)",
-    0.00361
+    0.00355
+   ],
+   [
+    "strategy_pavel_first_principles",
+    "Pavel — First-Principles Trading Framework (multi-asset, strategy-design framework)",
+    0.00341
    ],
    [
     "strategy_fabio_valentini_amt_order_flow",
     "Fabio Valentini — Auction Market Theory + Order-Flow Scalping (NQ/ES futures, scalping)",
-    0.0033
+    0.00326
    ],
    [
     "strategy_jeff_holden_momentum_model",
     "Jeff Holden — Momentum Model Performance Development (stocks/futures, day-trading development loop)",
-    0.00303
+    0.00285
    ],
    [
-    "strategy_steven_dux_small_cap_short",
-    "Steven Dux — Small-Cap Short Statistics Playbook (US small-cap stocks, day trading)",
-    0.00284
+    "strategy_dhesi_liquidity_inversion",
+    "Dhesi — Liquidity Inversion Model: Sweep, FVG Inversion & LTF Confirmation (NQ/ES futures, day trading/swing trading)",
+    0.00271
    ],
    [
-    "strategy_clement_ang_price_cycle",
-    "Clement Ang — Price Cycle Strategy: Continuation Base and Late-Stage Failed Base (US stocks, swing trading)",
-    0.0028
+    "strategy_lance_breitstein_mean_reversion",
+    "Lance Breitstein — Capitulation Mean Reversion (stocks, day trading)",
+    0.0027
    ]
   ],
   "book": [
    [
     "book_trading_in_the_zone",
     "Trading in the Zone",
-    0.00348
+    0.00332
    ],
    [
     "book_fooled_by_randomness",
     "Fooled by Randomness",
-    0.00296
+    0.00281
    ],
    [
     "book_adaptive_markets",
     "Adaptive Markets",
-    0.0025
+    0.00237
    ],
    [
     "book_thinking_in_bets",
     "Thinking in Bets",
-    0.00211
+    0.00201
    ],
    [
     "book_evidence_based_ta",
     "Evidence-Based Technical Analysis",
-    0.00208
+    0.00201
    ],
    [
     "book_alchemy_of_finance",
     "The Alchemy of Finance",
-    0.00193
+    0.00183
    ],
    [
     "book_trade_your_way_financial_freedom",
     "Trade Your Way to Financial Freedom",
-    0.00191
-   ],
-   [
-    "book_market_wizards",
-    "Market Wizards",
-    0.00173
-   ],
-   [
-    "book_thinking_fast_slow",
-    "Thinking, Fast and Slow",
-    0.00173
+    0.00177
    ],
    [
     "book_mind_over_markets",
     "Mind Over Markets",
-    0.00171
+    0.00168
+   ],
+   [
+    "book_thinking_fast_slow",
+    "Thinking, Fast and Slow",
+    0.00164
+   ],
+   [
+    "book_market_wizards",
+    "Market Wizards",
+    0.00163
    ]
   ],
   "mathbook": [
    [
     "mathbook_statistical_consequences_fat_tails",
     "Statistical Consequences of Fat Tails",
-    0.00252
+    0.00238
    ],
    [
     "mathbook_all_of_statistics",
     "All of Statistics",
-    0.00133
+    0.00124
    ],
    [
     "mathbook_hamilton_time_series",
     "Time Series Analysis",
-    0.00107
+    0.00102
    ],
    [
     "mathbook_feller_probability",
     "An Introduction to Probability Theory and Its Applications (Vol. I)",
-    0.00104
+    0.00098
    ],
    [
     "mathbook_jaynes_probability_logic",
     "Probability Theory: The Logic of Science",
-    0.00101
+    0.00095
    ],
    [
     "mathbook_campbell_lo_mackinlay",
     "The Econometrics of Financial Markets",
-    0.00099
+    0.00094
    ],
    [
     "mathbook_bouchaud_trades_quotes_prices",
     "Trades, Quotes and Prices",
-    0.00088
-   ],
-   [
-    "mathbook_casella_berger",
-    "Statistical Inference",
-    0.00078
-   ],
-   [
-    "mathbook_blitzstein_intro_probability",
-    "Introduction to Probability",
-    0.00078
+    0.00089
    ],
    [
     "mathbook_hasbrouck_empirical_microstructure",
     "Empirical Market Microstructure",
-    0.00074
+    0.00076
+   ],
+   [
+    "mathbook_casella_berger",
+    "Statistical Inference",
+    0.00075
+   ],
+   [
+    "mathbook_blitzstein_intro_probability",
+    "Introduction to Probability",
+    0.00072
    ]
   ],
   "paper": [
    [
     "paper_deflated_sharpe_2014",
     "The Deflated Sharpe Ratio (paper, Journal of Portfolio Management)",
-    0.00157
+    0.00153
    ],
    [
     "paper_kahneman_tversky_1979",
     "Prospect Theory: An Analysis of Decision under Risk (paper, Econometrica)",
-    0.0005
-   ],
-   [
-    "paper_almgren_chriss_2000",
-    "Optimal Execution of Portfolio Transactions (paper, Journal of Risk)",
-    0.00049
-   ],
-   [
-    "paper_kyle_1985",
-    "Continuous Auctions and Insider Trading (paper, Econometrica)",
-    0.00045
+    0.00047
    ],
    [
     "paper_bailey_pbo_2017",
     "The Probability of Backtest Overfitting (paper, Journal of Computational Finance)",
-    0.00044
+    0.00046
+   ],
+   [
+    "paper_almgren_chriss_2000",
+    "Optimal Execution of Portfolio Transactions (paper, Journal of Risk)",
+    0.00045
+   ],
+   [
+    "paper_kyle_1985",
+    "Continuous Auctions and Insider Trading (paper, Econometrica)",
+    0.00042
    ],
    [
     "paper_madhavan_2000",
     "Market Microstructure: A Survey (paper, Journal of Financial Markets)",
-    0.00041
-   ],
-   [
-    "paper_kelly_1956",
-    "A New Interpretation of Information Rate (paper, Bell System Technical Journal)",
-    0.00032
-   ],
-   [
-    "paper_lo_adaptive_markets_2004",
-    "The Adaptive Markets Hypothesis (paper, Journal of Portfolio Management)",
-    0.00027
+    0.00038
    ],
    [
     "paper_mclean_pontiff_2016",
     "Does Academic Research Destroy Stock Return Predictability? (paper, Journal of Finance)",
-    0.00026
+    0.0003
+   ],
+   [
+    "paper_kelly_1956",
+    "A New Interpretation of Information Rate (paper, Bell System Technical Journal)",
+    0.00029
    ],
    [
     "paper_white_2000",
     "A Reality Check for Data Snooping (paper, Econometrica)",
-    0.00024
+    0.00028
+   ],
+   [
+    "paper_lo_adaptive_markets_2004",
+    "The Adaptive Markets Hypothesis (paper, Journal of Portfolio Management)",
+    0.00026
    ]
   ],
   "person": [
    [
     "person_ed_seykota",
     "Ed Seykota",
-    0.0012
+    0.00114
    ],
    [
     "person_karl_popper",
     "Karl Popper",
-    0.00116
+    0.00111
    ],
    [
     "person_ray_dalio",
     "Ray Dalio",
-    0.00109
+    0.00103
    ],
    [
     "person_nassim_taleb",
     "Nassim Nicholas Taleb",
-    0.00106
+    0.001
    ],
    [
     "person_ed_thorp",
     "Edward O. Thorp",
-    0.00106
+    0.00098
    ],
    [
     "person_mark_douglas",
     "Mark Douglas",
-    0.00101
+    0.00096
    ],
    [
     "person_mark_minervini",
     "Mark Minervini",
-    0.00095
+    0.00088
    ],
    [
     "person_larry_hite",
     "Larry Hite",
-    0.00094
+    0.00087
    ],
    [
     "person_jared_tendler",
     "Jared Tendler",
-    0.00092
+    0.00086
    ],
    [
     "person_jerry_parker",
     "Jerry Parker",
-    0.0009
+    0.00084
    ]
   ],
   "synthesis": [
    [
+    "synthesis_sniper_reading_list",
+    "Reading List — precise entries, short-term systems and small accounts",
+    0.00753
+   ],
+   [
+    "synthesis_sniper_entries",
+    "Sniper Entries — codeable rules from the playbooks and the web",
+    0.00671
+   ],
+   [
     "synthesis_cf_playbook_patterns",
     "Chart Fanatics — Cross-Playbook Patterns (47 first-party playbooks)",
-    0.0051
+    0.00467
    ],
    [
     "synthesis_unified_framework",
     "The Unified Trading Intelligence Framework (analysis → execution)",
-    0.00408
+    0.00379
    ],
    [
     "synthesis_pre_trade_checklist",
     "Master Pre-Trade Checklist (synthesised from all partitions)",
-    0.00355
+    0.00349
+   ],
+   [
+    "synthesis_small_account_venues",
+    "Trading a $20 Account — venues, fees, minimums and what is tradeable",
+    0.00237
    ],
    [
     "synthesis_consensus_conflicts",
     "Consensus & Conflicts across sources",
-    0.00134
+    0.00131
+   ],
+   [
+    "synthesis_sniper_backtests",
+    "Sniper Lab — backtests of the codified sniper entries (in-sample vs out-of-sample)",
+    0.00101
    ],
    [
     "synthesis_idea_lineage",
     "Idea Lineage Map — where every modern trading idea comes from",
-    0.00073
+    0.00068
    ],
    [
     "synthesis_chart_fanatics_ecosystem",
     "Chart Fanatics ecosystem (Live, Chart Academy, Words of Rizdom)",
-    0.00016
+    0.00015
    ]
   ],
   "framework": [
    [
     "framework_math_foundations",
     "Partition 06 — Mathematics Foundations of Analysis & Execution",
-    0.00115
+    0.00107
    ],
    [
     "framework_source_tiers",
     "Source Quality Tiers",
-    0.00051
+    0.00068
    ],
    [
     "framework_ontology",
     "Trading Intelligence Ontology (the 9-layer stack)",
-    0.00044
+    0.00038
    ],
    [
     "framework_learning_path",
     "Learning Path through the partitions",
-    0.00031
+    0.00029
    ],
    [
     "framework_note_schema",
     "Note & Registry Schema",
-    0.00012
+    0.00011
    ]
   ]
  },
  "homes": {
   "hypothesis_acb_detour_not_verdict": {
-   "community": 8,
-   "name": "Indicators & Oscillators",
+   "community": 3,
+   "name": "Efficient Markets Debate",
    "share": 0.5,
    "spread": 3
   },
   "hypothesis_conditional_tendencies_decay": {
-   "community": 0,
-   "name": "Backtesting, ML & Edge Validation",
+   "community": 3,
+   "name": "Efficient Markets Debate",
    "share": 0.75,
    "spread": 2
   },
   "hypothesis_conditioning_changes_odds": {
-   "community": 8,
-   "name": "Indicators & Oscillators",
+   "community": 3,
+   "name": "Efficient Markets Debate",
+   "share": 0.75,
+   "spread": 2
+  },
+  "hypothesis_context_at_a_shapes_path": {
+   "community": 14,
+   "name": "Multi-Timeframe Analysis",
    "share": 0.5,
    "spread": 3
   },
-  "hypothesis_context_at_a_shapes_path": {
-   "community": 8,
-   "name": "Indicators & Oscillators",
-   "share": 0.25,
-   "spread": 4
-  },
   "hypothesis_depth_signals_breakdown": {
-   "community": 7,
-   "name": "Smart Money / ICT & Liquidity",
-   "share": 0.25,
-   "spread": 4
+   "community": 3,
+   "name": "Efficient Markets Debate",
+   "share": 0.5,
+   "spread": 3
   },
   "hypothesis_edge_survives_costs": {
-   "community": 1,
-   "name": "Auction Market Theory & Order Flow",
+   "community": 8,
+   "name": "Microstructure & Optimal Execution",
    "share": 0.75,
    "spread": 2
   },
   "hypothesis_estimates_are_calibrated": {
-   "community": 2,
-   "name": "Psychology, Plan & Discipline",
+   "community": 7,
+   "name": "Journal, Review & Metrics",
    "share": 0.75,
    "spread": 2
   },
   "hypothesis_good_decisions_earn_more": {
-   "community": 2,
-   "name": "Psychology, Plan & Discipline",
-   "share": 0.75,
-   "spread": 2
+   "community": 7,
+   "name": "Journal, Review & Metrics",
+   "share": 1.0,
+   "spread": 1
   },
   "hypothesis_in_sample_winner_decays": {
    "community": 0,
    "name": "Backtesting, ML & Edge Validation",
+   "share": 0.75,
+   "spread": 2
+  },
+  "hypothesis_journal_reduces_hindsight": {
+   "community": 7,
+   "name": "Journal, Review & Metrics",
+   "share": 0.67,
+   "spread": 2
+  },
+  "hypothesis_losing_run_check_calibrated": {
+   "community": 7,
+   "name": "Journal, Review & Metrics",
    "share": 0.5,
    "spread": 3
   },
-  "hypothesis_journal_reduces_hindsight": {
-   "community": 2,
-   "name": "Psychology, Plan & Discipline",
-   "share": 1.0,
-   "spread": 1
-  },
-  "hypothesis_losing_run_check_calibrated": {
-   "community": 21,
-   "name": "Risk of Ruin & Drawdown Math",
-   "share": 0.5,
-   "spread": 2
-  },
   "hypothesis_losses_impair_next_decision": {
-   "community": 2,
-   "name": "Psychology, Plan & Discipline",
+   "community": 7,
+   "name": "Journal, Review & Metrics",
    "share": 0.5,
    "spread": 3
   },
   "hypothesis_outcomes_misjudge_decisions": {
-   "community": 2,
-   "name": "Psychology, Plan & Discipline",
-   "share": 0.75,
-   "spread": 2
+   "community": 7,
+   "name": "Journal, Review & Metrics",
+   "share": 0.5,
+   "spread": 3
   },
   "hypothesis_predefined_exits_curb_disposition": {
-   "community": 15,
+   "community": 11,
    "name": "Trade Management / Chart Fanatics",
    "share": 0.5,
    "spread": 3
   },
   "hypothesis_ruin_set_by_size": {
-   "community": 2,
-   "name": "Psychology, Plan & Discipline",
-   "share": 0.25,
-   "spread": 4
+   "community": 18,
+   "name": "Position Sizing & Risk",
+   "share": 0.5,
+   "spread": 3
   },
   "hypothesis_search_manufactures_edges": {
    "community": 0,
@@ -1529,268 +1622,268 @@
    "spread": 3
   },
   "hypothesis_small_samples_cannot_confirm": {
-   "community": 2,
-   "name": "Psychology, Plan & Discipline",
+   "community": 7,
+   "name": "Journal, Review & Metrics",
    "share": 0.5,
    "spread": 3
   },
   "hypothesis_step_back_selects_better_trades": {
-   "community": 2,
-   "name": "Psychology, Plan & Discipline",
+   "community": 7,
+   "name": "Journal, Review & Metrics",
    "share": 0.5,
    "spread": 3
   },
   "hypothesis_structure_break_marks_breakdown": {
-   "community": 11,
+   "community": 2,
    "name": "Classical Charting & Patterns",
-   "share": 0.25,
-   "spread": 4
+   "share": 0.75,
+   "spread": 2
   },
   "hypothesis_value_gap_not_edge": {
-   "community": 1,
+   "community": 9,
    "name": "Auction Market Theory & Order Flow",
    "share": 0.25,
    "spread": 4
   },
   "philo_acb_principle": {
-   "community": 15,
-   "name": "Trade Management / Chart Fanatics",
-   "share": 0.3,
-   "spread": 7
-  },
-  "philo_being_wrong": {
    "community": 2,
-   "name": "Psychology, Plan & Discipline",
-   "share": 0.48,
+   "name": "Classical Charting & Patterns",
+   "share": 0.27,
    "spread": 10
   },
-  "philo_capital_preservation": {
-   "community": 28,
-   "name": "An Introduction to Probability Theory…",
-   "share": 0.21,
-   "spread": 16
-  },
-  "philo_conditional_probability": {
-   "community": 13,
-   "name": "Probability, Expectancy & Fat Tails",
-   "share": 0.35,
+  "philo_being_wrong": {
+   "community": 7,
+   "name": "Journal, Review & Metrics",
+   "share": 0.48,
    "spread": 8
   },
+  "philo_capital_preservation": {
+   "community": 18,
+   "name": "Position Sizing & Risk",
+   "share": 0.27,
+   "spread": 15
+  },
+  "philo_conditional_probability": {
+   "community": 0,
+   "name": "Backtesting, ML & Edge Validation",
+   "share": 0.27,
+   "spread": 11
+  },
   "philo_decisions_not_money": {
-   "community": 2,
-   "name": "Psychology, Plan & Discipline",
+   "community": 7,
+   "name": "Journal, Review & Metrics",
    "share": 0.62,
    "spread": 5
   },
   "philo_evidence_changes": {
-   "community": 2,
-   "name": "Psychology, Plan & Discipline",
-   "share": 0.25,
-   "spread": 8
+   "community": 7,
+   "name": "Journal, Review & Metrics",
+   "share": 0.29,
+   "spread": 9
   },
   "philo_journal": {
-   "community": 2,
-   "name": "Psychology, Plan & Discipline",
+   "community": 7,
+   "name": "Journal, Review & Metrics",
    "share": 0.68,
-   "spread": 7
+   "spread": 6
   },
   "philo_manifesto": {
-   "community": 2,
-   "name": "Psychology, Plan & Discipline",
-   "share": 0.63,
-   "spread": 7
+   "community": 7,
+   "name": "Journal, Review & Metrics",
+   "share": 0.58,
+   "spread": 8
   },
   "philo_market_is_relationship": {
-   "community": 1,
-   "name": "Auction Market Theory & Order Flow",
-   "share": 0.44,
+   "community": 11,
+   "name": "Trade Management / Chart Fanatics",
+   "share": 0.28,
    "spread": 8
   },
   "philo_market_system_of_rules": {
-   "community": 0,
-   "name": "Backtesting, ML & Edge Validation",
-   "share": 0.4,
-   "spread": 7
+   "community": 3,
+   "name": "Efficient Markets Debate",
+   "share": 0.25,
+   "spread": 9
   },
   "philo_mathematics_sword": {
    "community": 0,
    "name": "Backtesting, ML & Edge Validation",
-   "share": 0.36,
+   "share": 0.43,
    "spread": 8
   },
   "philo_open_questions": {
    "community": 0,
    "name": "Backtesting, ML & Edge Validation",
-   "share": 0.45,
+   "share": 0.36,
    "spread": 7
   },
   "philo_practical_doctrine": {
-   "community": 2,
-   "name": "Psychology, Plan & Discipline",
-   "share": 0.52,
-   "spread": 7
+   "community": 7,
+   "name": "Journal, Review & Metrics",
+   "share": 0.45,
+   "spread": 8
   },
   "philo_price_expression": {
-   "community": 1,
+   "community": 9,
    "name": "Auction Market Theory & Order Flow",
-   "share": 0.38,
-   "spread": 8
+   "share": 0.24,
+   "spread": 7
   },
   "philo_protect_process": {
-   "community": 2,
-   "name": "Psychology, Plan & Discipline",
-   "share": 0.64,
-   "spread": 6
-  },
-  "philo_recurring_storyline": {
-   "community": 0,
-   "name": "Backtesting, ML & Edge Validation",
-   "share": 0.26,
+   "community": 7,
+   "name": "Journal, Review & Metrics",
+   "share": 0.55,
    "spread": 8
   },
-  "philo_research_foundations": {
-   "community": 1,
-   "name": "Auction Market Theory & Order Flow",
+  "philo_recurring_storyline": {
+   "community": 3,
+   "name": "Efficient Markets Debate",
    "share": 0.32,
-   "spread": 9
+   "spread": 10
+  },
+  "philo_research_foundations": {
+   "community": 8,
+   "name": "Microstructure & Optimal Execution",
+   "share": 0.28,
+   "spread": 12
   },
   "philo_scientific_method": {
    "community": 0,
    "name": "Backtesting, ML & Edge Validation",
-   "share": 0.6,
-   "spread": 9
+   "share": 0.62,
+   "spread": 6
   },
   "philo_source_of_opportunity": {
-   "community": 0,
-   "name": "Backtesting, ML & Edge Validation",
-   "share": 0.29,
-   "spread": 8
-  },
-  "philo_step_back": {
-   "community": 2,
-   "name": "Psychology, Plan & Discipline",
-   "share": 0.42,
-   "spread": 8
-  },
-  "philo_value_vs_price": {
-   "community": 0,
-   "name": "Backtesting, ML & Edge Validation",
-   "share": 0.22,
-   "spread": 8
-  },
-  "philosophy_relationship": {
-   "community": 2,
-   "name": "Psychology, Plan & Discipline",
-   "share": 0.38,
+   "community": 7,
+   "name": "Journal, Review & Metrics",
+   "share": 0.27,
    "spread": 9
   },
+  "philo_step_back": {
+   "community": 7,
+   "name": "Journal, Review & Metrics",
+   "share": 0.4,
+   "spread": 9
+  },
+  "philo_value_vs_price": {
+   "community": 3,
+   "name": "Efficient Markets Debate",
+   "share": 0.26,
+   "spread": 9
+  },
+  "philosophy_relationship": {
+   "community": 7,
+   "name": "Journal, Review & Metrics",
+   "share": 0.42,
+   "spread": 10
+  },
   "principle_01_understand_before_acting": {
-   "community": 15,
+   "community": 11,
    "name": "Trade Management / Chart Fanatics",
-   "share": 0.47,
+   "share": 0.46,
    "spread": 11
   },
   "principle_02_context_before_movement": {
-   "community": 15,
+   "community": 11,
    "name": "Trade Management / Chart Fanatics",
-   "share": 0.54,
-   "spread": 8
+   "share": 0.43,
+   "spread": 11
   },
   "principle_03_future_is_uncertain": {
-   "community": 15,
+   "community": 11,
    "name": "Trade Management / Chart Fanatics",
-   "share": 0.46,
-   "spread": 9
+   "share": 0.4,
+   "spread": 10
   },
   "principle_04_conditional_probability": {
-   "community": 15,
+   "community": 11,
    "name": "Trade Management / Chart Fanatics",
-   "share": 0.44,
+   "share": 0.38,
    "spread": 9
   },
   "principle_05_mathematical_justification": {
    "community": 0,
    "name": "Backtesting, ML & Edge Validation",
-   "share": 0.43,
-   "spread": 7
+   "share": 0.46,
+   "spread": 8
   },
   "principle_06_do_not_force": {
-   "community": 15,
+   "community": 11,
    "name": "Trade Management / Chart Fanatics",
-   "share": 0.53,
+   "share": 0.43,
    "spread": 8
   },
   "principle_07_respond_methodically": {
-   "community": 15,
+   "community": 11,
    "name": "Trade Management / Chart Fanatics",
-   "share": 0.51,
-   "spread": 8
+   "share": 0.43,
+   "spread": 9
   },
   "principle_08_decision_quality_not_outcome": {
-   "community": 2,
-   "name": "Psychology, Plan & Discipline",
+   "community": 7,
+   "name": "Journal, Review & Metrics",
    "share": 0.46,
-   "spread": 10
+   "spread": 9
   },
   "principle_09_protect_capital": {
-   "community": 15,
-   "name": "Trade Management / Chart Fanatics",
-   "share": 0.16,
-   "spread": 17
+   "community": 18,
+   "name": "Position Sizing & Risk",
+   "share": 0.2,
+   "spread": 15
   },
   "principle_10_emotional_independence": {
-   "community": 2,
-   "name": "Psychology, Plan & Discipline",
-   "share": 0.57,
-   "spread": 7
+   "community": 7,
+   "name": "Journal, Review & Metrics",
+   "share": 0.5,
+   "spread": 6
   },
   "principle_11_record_and_investigate": {
-   "community": 2,
-   "name": "Psychology, Plan & Discipline",
-   "share": 0.43,
-   "spread": 8
+   "community": 7,
+   "name": "Journal, Review & Metrics",
+   "share": 0.48,
+   "spread": 7
   },
   "principle_12_process_not_money": {
-   "community": 2,
-   "name": "Psychology, Plan & Discipline",
-   "share": 0.56,
+   "community": 7,
+   "name": "Journal, Review & Metrics",
+   "share": 0.58,
    "spread": 6
   },
   "question_consistent_execution": {
-   "community": 2,
-   "name": "Psychology, Plan & Discipline",
+   "community": 7,
+   "name": "Journal, Review & Metrics",
    "share": 0.6,
-   "spread": 9
+   "spread": 8
   },
   "question_define_conditions": {
-   "community": 0,
-   "name": "Backtesting, ML & Edge Validation",
-   "share": 0.42,
-   "spread": 5
+   "community": 3,
+   "name": "Efficient Markets Debate",
+   "share": 0.37,
+   "spread": 7
   },
   "question_estimate_reliability": {
    "community": 0,
    "name": "Backtesting, ML & Edge Validation",
-   "share": 0.31,
-   "spread": 7
+   "share": 0.38,
+   "spread": 8
   },
   "question_repeatable_behaviors": {
-   "community": 0,
-   "name": "Backtesting, ML & Edge Validation",
-   "share": 0.65,
+   "community": 3,
+   "name": "Efficient Markets Debate",
+   "share": 0.4,
    "spread": 8
   },
   "question_survives_costs": {
-   "community": 1,
-   "name": "Auction Market Theory & Order Flow",
-   "share": 0.67,
-   "spread": 5
+   "community": 8,
+   "name": "Microstructure & Optimal Execution",
+   "share": 0.58,
+   "spread": 7
   },
   "question_survives_regime_change": {
-   "community": 0,
-   "name": "Backtesting, ML & Edge Validation",
-   "share": 0.48,
-   "spread": 9
+   "community": 3,
+   "name": "Efficient Markets Debate",
+   "share": 0.38,
+   "spread": 8
   }
  },
  "bridges": [

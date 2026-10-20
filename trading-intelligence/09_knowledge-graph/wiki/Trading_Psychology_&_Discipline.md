@@ -1,13 +1,13 @@
 # Trading Psychology & Discipline
 
-> God node · 149 connections · `07_concepts/trading-psychology.md`
+> God node · 150 connections · `07_concepts/trading-psychology.md`
 
 **Community:** [Psychology, Plan & Discipline](Psychology,_Plan_&_Discipline.md)
 
 ## Connections by Relation
 
 ### covers
-- [Words of Rizdom](Words_of_Rizdom.md) `EXTRACTED`
+- Words of Rizdom `EXTRACTED`
 - Chat With Traders `EXTRACTED`
 - Thinking, Fast and Slow `EXTRACTED`
 - Trading LIVE with the BEST Scalper in the World (PERFECT Accuracy) `EXTRACTED`
@@ -27,7 +27,7 @@
 - US Trading Champion: He Made 520% Competing Against The World’s BEST Traders - Here’s how! `EXTRACTED`
 - The Psychology of Trading `EXTRACTED`
 - The Zurich Axioms `EXTRACTED`
-- *…and 65 more `covers` connection(s) not listed (lowest-degree first to go)*
+- *…and 66 more `covers` connection(s) not listed (lowest-degree first to go)*
 
 ### grounded_in
 - [The Philosophy of the Relationship](The_Philosophy_of_the_Relationship.md) `INFERRED`
@@ -35,9 +35,9 @@
 - Principle 1: Understand before acting `INFERRED`
 - XVIII. The practical doctrine (the 12 principles) `INFERRED`
 - XIX. What this philosophy still needs to prove `INFERRED`
+- Principle 10: Protect emotional independence `INFERRED`
 - Can the trader execute the strategy consistently? `INFERRED`
 - XX. The research behind the philosophy `INFERRED`
-- Principle 10: Protect emotional independence `INFERRED`
 - XVI. The trading journal as a record of understanding `INFERRED`
 - XII. Protect the process, not the ego `INFERRED`
 - IX. When understanding fails, step back (not trading is a decision) `INFERRED`
@@ -51,14 +51,14 @@
 - [Decision Protocol — the Philosophy of the Relationship as an operating procedure](Decision_Protocol_—_the_Philosophy_of_the_Relationship_as_an_operating_procedure.md) `EXTRACTED`
 - [Trading Journal & Performance Review](Trading_Journal_&_Performance_Review.md) `EXTRACTED`
 - [Trading Plan (rules written before the trade)](Trading_Plan_rules_written_before_the_trade.md) `EXTRACTED`
-- [Probabilistic Thinking (thinking in bets)](Probabilistic_Thinking_thinking_in_bets.md) `EXTRACTED`
+- Probabilistic Thinking (thinking in bets) `EXTRACTED`
 - The Unified Trading Intelligence Framework (analysis → execution) `EXTRACTED`
 - Market Sentiment & Positioning (COT, contrarian signals) `EXTRACTED`
 - BabyPips — School of Pipsology (course map) `EXTRACTED`
 - Gala Trades — Price Action Strategy: Hourly Levels with Breaking Retest, Bounce & Rejection (stock options, day trading) `EXTRACTED`
-- Clement Ang — Price Cycle Strategy: Continuation Base and Late-Stage Failed Base (US stocks, swing trading) `EXTRACTED`
 - Dhesi — Liquidity Inversion Model: Sweep, FVG Inversion & LTF Confirmation (NQ/ES futures, day trading/swing trading) `EXTRACTED`
 - Marci Silfrain — Measured Move Trend Strategy: Little RZY (stocks, futures and crypto, swing trading) `EXTRACTED`
+- Clement Ang — Price Cycle Strategy: Continuation Base and Late-Stage Failed Base (US stocks, swing trading) `EXTRACTED`
 - Master Pre-Trade Checklist (synthesised from all partitions) `EXTRACTED`
 - Umar Ashraf — 5-Stage Trader Development Framework (any market, trader development) `EXTRACTED`
 - Jeff Holden — Momentum Model Performance Development (stocks/futures, day-trading development loop) `EXTRACTED`

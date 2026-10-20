@@ -1,56 +1,76 @@
 # Risk of Ruin & Drawdown Math
 
-> 17 nodes · cohesion 0.13
+> God node · 101 connections · `07_concepts/risk-of-ruin-drawdown.md`
 
-## Key Concepts
+**Community:** [Position Sizing & Risk](Position_Sizing_&_Risk.md)
 
-- **Risk of Ruin & Drawdown Math** (96 connections) — `07_concepts/risk-of-ruin-drawdown.md`
-- **Performance Metrics (Sharpe, Sortino, MAR, profit factor)** (55 connections) — `07_concepts/performance-metrics.md`
-- **How Clement Ang Achieved 150%+ Returns in the US Investing Championship** (10 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
-- **Tori Trades: Becoming A Full Time Trader Using The Easiest Concepts | WOR Podcast EP.74** (8 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
-- **Pro Trader Turned $3K Into $2.1M IGNORING Retail ADVICE** (7 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
-- **Traveling Trader: Why Trading Is The Hardest Thing You’ll Ever Do | WOR Podcast EP.97** (7 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
-- **US Trading Champion: How To Catch 100x Trades (While Trading Less)** (7 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
-- **563: 1 Hour of Genius Trading Advice From Top 1% Traders** (5 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
-- **504: Lessons From a Full-Time Trader Running a Multi-Million Fund - Rajan Dhall** (4 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
-- **OI19 BONUS: Living With Ed Seykota ft. David Druz** (4 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
-- **Futures TRADING Champion Trained by Larry Williams (253.8% Return)** (4 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
-- **74% Win Rate Trader Shares His EXACT OrderFlow Strategy ($2M+ Payouts)** (3 connections) — `01_chart-fanatics/catalog.scraped.yaml`
-- **COPY This Prop Firm Simple Trading Strategy with 65% Win Rate ($5+ Million Payouts)** (3 connections) — `01_chart-fanatics/catalog.scraped.yaml`
-- **Sharpe Ratio, Treynor Ratio and Jensen's Alpha (Calculations for CFA® and FRM® Exams)** (2 connections) — `06_mathematics-foundations/lectures.scraped.yaml`
-- **STEAL This INSANE Simple 90% Win Rate Trading Strategy (1:20+ RR) - TG Capital** (2 connections) — `02_podcasts-interviews/landmark-media.scraped.yaml`
-- **Risk Management: Risk to Reward Ratio, Expectancy and Risk of Ruin** (2 connections) — `06_mathematics-foundations/lectures.scraped.yaml`
-- **The Sharpe Ratio Explained (by a quant trader)** (1 connections) — `06_mathematics-foundations/lectures.scraped.yaml`
+## Connections by Relation
 
-## Relationships
+### covers
+- The 7 Puzzle Pieces to a Profitable Trading System | Ariel Hernandez `EXTRACTED`
+- The Black Swan `EXTRACTED`
+- The Mathematics of Money Management `EXTRACTED`
+- +969% Return in 1 Year: The Winning Pullback Strategy of a Trading Champion `EXTRACTED`
+- How to Spot Relative Strength and Trade the Momentum Cycle | Clement Ang `EXTRACTED`
+- Trading LIVE with the BEST Scalper in the World (PERFECT Accuracy) `EXTRACTED`
+- How Clement Ang Achieved 150%+ Returns in the US Investing Championship `EXTRACTED`
+- Elite Scalper: I Studied Trading Champions, THIS Is The Pattern I Found! `EXTRACTED`
+- An Introduction to Probability Theory and Its Applications (Vol. I) `EXTRACTED`
+- The Kathy Lien Method: Refining Your Trading Mindset `EXTRACTED`
+- Running 75 Automated Systems While Traveling the World — Exclusive Interview With Laurens Bensdorp `EXTRACTED`
+- The Definitive Guide to Position Sizing `EXTRACTED`
+- Hedge Fund Market Wizards `EXTRACTED`
+- When Genius Failed `EXTRACTED`
+- Options Prop Firm Strategy For Quick Payouts! `EXTRACTED`
+- Prop Trading's Dirty Secret: The Monopoly `EXTRACTED`
+- Tori Trades: Becoming A Full Time Trader Using The Easiest Concepts | WOR Podcast EP.74 `EXTRACTED`
+- Umar Ashraf: Making $18 Million Day Trading | WOR Podcast EP.70 `EXTRACTED`
+- US Trading Champion: He Made 520% Competing Against The World’s BEST Traders - Here’s how! `EXTRACTED`
+- 013: Hedge fund manager Andreas Clenow discusses cash vs risk allocation, position rebalancing and why traditional trend following doesn't work in stocks. `EXTRACTED`
+- *…and 36 more `covers` connection(s) not listed (lowest-degree first to go)*
 
-- [The Philosophy of the Relationship](The_Philosophy_of_the_Relationship.md) (32 shared connections)
-- [Psychology, Plan & Discipline](Psychology,_Plan_&_Discipline.md) (17 shared connections)
-- [Prop-Firm Evaluations & Risk Rules](Prop-Firm_Evaluations_&_Risk_Rules.md) (15 shared connections)
-- [Backtesting, ML & Edge Validation](Backtesting,_ML_&_Edge_Validation.md) (14 shared connections)
-- [Auction Market Theory & Order Flow](Auction_Market_Theory_&_Order_Flow.md) (10 shared connections)
-- [Chart Fanatics Ecosystem](Chart_Fanatics_Ecosystem.md) (10 shared connections)
-- [Edge](Edge.md) (8 shared connections)
-- [Probability, Expectancy & Fat Tails](Probability,_Expectancy_&_Fat_Tails.md) (7 shared connections)
-- [Position Sizing & Risk](Position_Sizing_&_Risk.md) (7 shared connections)
-- [Growth-Stock Momentum (CANSLIM→VCP→EP)](Growth-Stock_Momentum_CANSLIM→VCP→EP.md) (7 shared connections)
-- [Candlesticks & Price Action](Candlesticks_&_Price_Action.md) (6 shared connections)
-- [Trend Following & the Turtles](Trend_Following_&_the_Turtles.md) (6 shared connections)
+### grounded_in
+- [The Philosophy of the Relationship](The_Philosophy_of_the_Relationship.md) `INFERRED`
+- Principle 9: Protect capital `INFERRED`
+- Principle 8: Separate decision quality from individual outcomes `INFERRED`
+- XIV. Capital preservation and survival (the asymmetry of losses) `INFERRED`
+- Principle 10: Protect emotional independence `INFERRED`
+- XI. Being wrong is part of the system (decision quality vs. outcome) `INFERRED`
+- XX. The research behind the philosophy `INFERRED`
+- XXI. My personal trading manifesto `INFERRED`
 
-## Source Files
+### related
+- [Trading Psychology & Discipline](Trading_Psychology_&_Discipline.md) `EXTRACTED`
+- [Beyond the Philosophy — what the knowledge base adds, sharpens and challenges](Beyond_the_Philosophy_—_what_the_knowledge_base_adds,_sharpens_and_challenges.md) `EXTRACTED`
+- [Position Sizing](Position_Sizing.md) `EXTRACTED`
+- [Reading List — precise entries, short-term systems and small accounts](Reading_List_—_precise_entries,_short-term_systems_and_small_accounts.md) `EXTRACTED`
+- [Prop-Firm Evaluations & Risk Rules](Prop-Firm_Evaluations_&_Risk_Rules.md) `EXTRACTED`
+- [Backtesting (manual & systematic)](Backtesting_manual_&_systematic.md) `EXTRACTED`
+- [Edge (positive expectancy, repeatable)](Edge_positive_expectancy,_repeatable.md) `EXTRACTED`
+- [Sniper Entries — codeable rules from the playbooks and the web](Sniper_Entries_—_codeable_rules_from_the_playbooks_and_the_web.md) `EXTRACTED`
+- [Decision Protocol — the Philosophy of the Relationship as an operating procedure](Decision_Protocol_—_the_Philosophy_of_the_Relationship_as_an_operating_procedure.md) `EXTRACTED`
+- [Chart Fanatics — Cross-Playbook Patterns (47 first-party playbooks)](Chart_Fanatics_—_Cross-Playbook_Patterns_47_first-party_playbooks.md) `EXTRACTED`
+- The Philosophy as Falsifiable Hypotheses `EXTRACTED`
+- Mean Reversion `EXTRACTED`
+- Performance Metrics (Sharpe, Sortino, MAR, profit factor) `EXTRACTED`
+- Probability, Distributions & Fat Tails `EXTRACTED`
+- [Correlation & Portfolio Risk](Correlation_&_Portfolio_Risk.md) `EXTRACTED`
+- Matteo Conti — Institutional Strategy Development Framework (multi-asset, day and swing trading) `EXTRACTED`
+- The Unified Trading Intelligence Framework (analysis → execution) `EXTRACTED`
+- Evidence Lab — testing the Philosophy of the Relationship on real market data `EXTRACTED`
+- [Leverage, Margin, Pips & Lots](Leverage,_Margin,_Pips_&_Lots.md) `EXTRACTED`
+- Core Formulas of Analysis & Execution `EXTRACTED`
+- *…and 11 more `related` connection(s) not listed (lowest-degree first to go)*
 
-- `01_chart-fanatics/catalog.scraped.yaml`
-- `02_podcasts-interviews/landmark-media.scraped.yaml`
-- `02_podcasts-interviews/podcast-episodes.scraped.yaml`
-- `06_mathematics-foundations/lectures.scraped.yaml`
-- `07_concepts/performance-metrics.md`
-- `07_concepts/risk-of-ruin-drawdown.md`
+### teaches
+- Nassim Nicholas Taleb `EXTRACTED`
+- Paul Tudor Jones II `EXTRACTED`
+- Bruce Kovner `EXTRACTED`
 
-## Audit Trail
-
-- EXTRACTED: 186 (92%)
-- INFERRED: 16 (8%)
-- AMBIGUOUS: 0 (0%)
+### uses
+- H20: The losing-run check tells ordinary variance from a broken edge `EXTRACTED`
+- H17: A loss degrades the next decision `EXTRACTED`
+- H12: Bet size, not the edge, decides survival `EXTRACTED`
 
 ---
 

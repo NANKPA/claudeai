@@ -2,22 +2,23 @@
 
 # Knowledge Base Manifest
 
-- Nodes: **6374** · Edges: **18639**
-- Inferred (lower-confidence) edges: 858
+- Nodes: **6411** · Edges: **19326**
+- Inferred (lower-confidence) edges: 1102
 - Dangling references: 0
 
 | Kind | Count |
 |---|---|
 | media | 5730 |
 | person | 258 |
-| book | 100 |
+| book | 119 |
 | concept | 69 |
 | strategy | 47 |
 | mathbook | 39 |
 | philosophy | 22 |
 | hypothesis | 20 |
+| synthesis | 17 |
 | podcast | 16 |
-| synthesis | 13 |
+| setup | 14 |
 | paper | 13 |
 | principle | 12 |
 | course | 11 |
@@ -39,3 +40,4 @@
 | 06_mathematics-foundations | 166 |
 | 07_concepts | 69 |
 | 08_synthesis | 4 |
+| 10_sniper-lab | 37 |

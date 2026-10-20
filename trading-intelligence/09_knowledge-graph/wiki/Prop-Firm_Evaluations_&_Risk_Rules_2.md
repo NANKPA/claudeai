@@ -7,12 +7,12 @@
 ## Connections by Relation
 
 ### challenged_by
-- XI. Being wrong is part of the system (decision quality vs. outcome) `INFERRED`
 - Principle 10: Protect emotional independence `INFERRED`
+- XI. Being wrong is part of the system (decision quality vs. outcome) `INFERRED`
 - Principle 12: Follow the process, not the promise of money `INFERRED`
 
 ### covers
-- [Words of Rizdom](Words_of_Rizdom.md) `EXTRACTED`
+- Words of Rizdom `EXTRACTED`
 - Elite Scalper: I Studied Trading Champions, THIS Is The Pattern I Found! `EXTRACTED`
 - The Kathy Lien Method: Refining Your Trading Mindset `EXTRACTED`
 - The ICT Trader Who Made $2 Million After SWITCHING To Orderflow - Yush `EXTRACTED`
@@ -36,8 +36,8 @@
 
 ### grounded_in
 - Principle 9: Protect capital `INFERRED`
-- Can the trader execute the strategy consistently? `INFERRED`
 - XIV. Capital preservation and survival (the asymmetry of losses) `INFERRED`
+- Can the trader execute the strategy consistently? `INFERRED`
 
 ### related
 - [Trading Psychology & Discipline](Trading_Psychology_&_Discipline.md) `EXTRACTED`
@@ -48,8 +48,8 @@
 - Scalping `EXTRACTED`
 - [Leverage, Margin, Pips & Lots](Leverage,_Margin,_Pips_&_Lots.md) `EXTRACTED`
 - JJ Simon — Fair Pricing Theory: Continuation & Reversion (Nasdaq futures, 1-minute scalping) `EXTRACTED`
-- News & Event Trading `EXTRACTED`
 - Candace Lau — NQ Liquidity Sweep & IFVG Reversal (NQ futures, scalping) `EXTRACTED`
+- News & Event Trading `EXTRACTED`
 - TG Capital — London Session Trident Strategy (forex, gold and futures, swing trading) `EXTRACTED`
 - BabyPips Course 10 — Undergraduate Senior: risk management `EXTRACTED`
 

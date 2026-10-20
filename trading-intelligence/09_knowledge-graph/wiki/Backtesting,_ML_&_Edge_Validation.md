@@ -1,54 +1,53 @@
 # Backtesting, ML & Edge Validation
 
-> 93 nodes · cohesion 0.04
+> 69 nodes · cohesion 0.06
 
 ## Key Concepts
 
-- **Backtesting (manual & systematic)** (83 connections) — `07_concepts/backtesting.md`
-- **Overfitting & Edge Validation (multiple testing, deflated Sharpe)** (70 connections) — `07_concepts/overfitting-validation.md`
-- **Random Walk & Efficient Market Hypothesis** (52 connections) — `07_concepts/random-walk-efficient-markets.md`
-- **Matteo Conti — Institutional Strategy Development Framework (multi-asset, day and swing trading)** (48 connections) — `01_chart-fanatics/strategies/matteo-conti-institutional.md`
-- **Time-Series Statistics (stationarity, autocorrelation, cointegration)** (41 connections) — `07_concepts/time-series-statistics.md`
-- **Naoufel Taief — No-Code Algorithmic Strategy Portfolio: Generate, Stress-Test & Rotate (stocks/futures, systematic trading)** (37 connections) — `01_chart-fanatics/strategies/naoufel-taief-algorithmic.md`
+- **Reading List — precise entries, short-term systems and small accounts** (108 connections) — `10_sniper-lab/reading-list.md`
+- **Backtesting (manual & systematic)** (91 connections) — `07_concepts/backtesting.md`
+- **Overfitting & Edge Validation (multiple testing, deflated Sharpe)** (75 connections) — `07_concepts/overfitting-validation.md`
+- **Performance Metrics (Sharpe, Sortino, MAR, profit factor)** (58 connections) — `07_concepts/performance-metrics.md`
+- **Matteo Conti — Institutional Strategy Development Framework (multi-asset, day and swing trading)** (49 connections) — `01_chart-fanatics/strategies/matteo-conti-institutional.md`
+- **Naoufel Taief — No-Code Algorithmic Strategy Portfolio: Generate, Stress-Test & Rotate (stocks/futures, systematic trading)** (38 connections) — `01_chart-fanatics/strategies/naoufel-taief-algorithmic.md`
 - **Pavel — First-Principles Trading Framework (multi-asset, strategy-design framework)** (35 connections) — `01_chart-fanatics/strategies/pavel-first-principles.md`
-- **Machine Learning in Finance (labels, leakage, meta-labeling)** (26 connections) — `07_concepts/machine-learning-finance.md`
-- **Adaptive Markets** (18 connections) — `05_books-top-100/books.yaml`
-- **Evidence-Based Technical Analysis** (16 connections) — `05_books-top-100/books.yaml`
-- **The Deflated Sharpe Ratio (paper, Journal of Portfolio Management)** (15 connections) — `06_mathematics-foundations/math-books.yaml`
-- **Advances in Financial Machine Learning** (11 connections) — `05_books-top-100/summaries/advances-financial-machine-learning.md`
+- **Machine Learning in Finance (labels, leakage, meta-labeling)** (28 connections) — `07_concepts/machine-learning-finance.md`
+- **Statistical Consequences of Fat Tails** (18 connections) — `06_mathematics-foundations/math-books.yaml`
+- **Evidence-Based Technical Analysis** (17 connections) — `05_books-top-100/books.yaml`
+- **The Deflated Sharpe Ratio (paper, Journal of Portfolio Management)** (16 connections) — `06_mathematics-foundations/math-books.yaml`
+- **Consensus & Conflicts across sources** (14 connections) — `08_synthesis/consensus-and-conflicts.md`
+- **Advances in Financial Machine Learning** (12 connections) — `05_books-top-100/summaries/advances-financial-machine-learning.md`
 - **All of Statistics** (11 connections) — `06_mathematics-foundations/math-books.yaml`
-- **Robert Carver** (11 connections) — `03_legends-authorities/people.yaml`
-- **The Econometrics of Financial Markets** (10 connections) — `06_mathematics-foundations/math-books.yaml`
-- **Time Series Analysis** (10 connections) — `06_mathematics-foundations/math-books.yaml`
+- **SI375: CTAs After the Walls Come Down ft. Rob Carver** (11 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
 - **Marcos López de Prado** (10 connections) — `03_legends-authorities/people.yaml`
-- **SI234: Trend Followers are minnows, not whales ft. Rob Carver** (9 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
+- **Running 75 Automated Systems While Traveling the World — Exclusive Interview With Laurens Bensdorp** (9 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
 - **Track F — Quant Research, ML & Validation** (9 connections) — `06_mathematics-foundations/math-books.yaml`
-- **Efficiently Inefficient** (8 connections) — `05_books-top-100/books.yaml`
-- **Expected Returns** (8 connections) — `05_books-top-100/books.yaml`
-- **The Man Who Solved the Market** (8 connections) — `05_books-top-100/books.yaml`
-- **A Non-Random Walk Down Wall Street** (8 connections) — `05_books-top-100/books.yaml`
-- **Systematic Trading** (8 connections) — `05_books-top-100/books.yaml`
 - **An Introduction to Statistical Learning** (8 connections) — `06_mathematics-foundations/math-books.yaml`
-- *... and 68 more nodes in this community*
+- **Trader Mayne: Millionaire Crypto Trader Shares Market Blueprint For 2024 | WOR Podcast EP.104** (8 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
+- **Umar Ashraf: Making $18 Million Day Trading | WOR Podcast EP.70** (8 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
+- **The Probability of Backtest Overfitting (paper, Journal of Computational Finance)** (8 connections) — `00_philosophy/blueprint.yaml`
+- **Algorithmic Trading: Winning Strategies and Their Rationale** (7 connections) — `05_books-top-100/books.yaml`
+- **The Art and Science of Technical Analysis** (7 connections) — `05_books-top-100/books.yaml`
+- **Building Winning Algorithmic Trading Systems** (7 connections) — `05_books-top-100/books.yaml`
+- *... and 44 more nodes in this community*
 
 ## Relationships
 
-- [The Philosophy of the Relationship](The_Philosophy_of_the_Relationship.md) (229 shared connections)
-- [Indicators & Oscillators](Indicators_&_Oscillators.md) (31 shared connections)
-- [Position Sizing & Risk](Position_Sizing_&_Risk.md) (18 shared connections)
-- [Risk of Ruin & Drawdown Math](Risk_of_Ruin_&_Drawdown_Math.md) (14 shared connections)
-- [Auction Market Theory & Order Flow](Auction_Market_Theory_&_Order_Flow.md) (14 shared connections)
-- [Trade Management / Chart Fanatics](Trade_Management_-_Chart_Fanatics.md) (14 shared connections)
+- [The Philosophy of the Relationship](The_Philosophy_of_the_Relationship.md) (199 shared connections)
+- [Journal, Review & Metrics](Journal,_Review_&_Metrics.md) (38 shared connections)
+- [Efficient Markets Debate](Efficient_Markets_Debate.md) (30 shared connections)
+- [Trade Management / Chart Fanatics](Trade_Management_-_Chart_Fanatics.md) (29 shared connections)
+- [Smart Money / ICT & Liquidity](Smart_Money_-_ICT_&_Liquidity.md) (26 shared connections)
+- [Breakout Trading / Mean Reversion](Breakout_Trading_-_Mean_Reversion.md) (23 shared connections)
+- [Position Sizing & Risk](Position_Sizing_&_Risk.md) (21 shared connections)
+- [Prop-Firm Evaluations & Risk Rules](Prop-Firm_Evaluations_&_Risk_Rules.md) (20 shared connections)
+- [Edge](Edge.md) (19 shared connections)
+- [Microstructure & Optimal Execution](Microstructure_&_Optimal_Execution.md) (17 shared connections)
+- [Classical Charting & Patterns](Classical_Charting_&_Patterns.md) (14 shared connections)
 - [Trend Following & the Turtles](Trend_Following_&_the_Turtles.md) (12 shared connections)
-- [Edge](Edge.md) (11 shared connections)
-- [Candlesticks & Price Action](Candlesticks_&_Price_Action.md) (10 shared connections)
-- [Classical Charting & Patterns](Classical_Charting_&_Patterns.md) (10 shared connections)
-- [Jim Simons](Jim_Simons.md) (8 shared connections)
-- [Correlation & Portfolio Risk](Correlation_&_Portfolio_Risk.md) (8 shared connections)
 
 ## Source Files
 
-- `00_framework/source-tiers.md`
 - `00_philosophy/blueprint.yaml`
 - `01_chart-fanatics/strategies/matteo-conti-institutional.md`
 - `01_chart-fanatics/strategies/naoufel-taief-algorithmic.md`
@@ -63,13 +62,15 @@
 - `07_concepts/backtesting.md`
 - `07_concepts/machine-learning-finance.md`
 - `07_concepts/overfitting-validation.md`
-- `07_concepts/random-walk-efficient-markets.md`
-- `07_concepts/time-series-statistics.md`
+- `07_concepts/performance-metrics.md`
+- `08_synthesis/consensus-and-conflicts.md`
+- `10_sniper-lab/books-sniper.yaml`
+- `10_sniper-lab/reading-list.md`
 
 ## Audit Trail
 
-- EXTRACTED: 437 (73%)
-- INFERRED: 163 (27%)
+- EXTRACTED: 537 (80%)
+- INFERRED: 131 (20%)
 - AMBIGUOUS: 0 (0%)
 
 ---

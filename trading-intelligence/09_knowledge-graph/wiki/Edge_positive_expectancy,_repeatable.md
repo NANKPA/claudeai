@@ -33,10 +33,10 @@
 - [The Philosophy of the Relationship](The_Philosophy_of_the_Relationship.md) `INFERRED`
 - Principle 1: Understand before acting `INFERRED`
 - Principle 5: Require mathematical justification `INFERRED`
-- XVII. Turning the philosophy into a scientific method `INFERRED`
-- Which market behaviours are genuinely repeatable? `INFERRED`
 - VII. Mathematics, the trader's sword (expected value; maths must serve the decision) `INFERRED`
+- XVII. Turning the philosophy into a scientific method `INFERRED`
 - VI. Probability as the foundation of decisions; the law of large numbers; probability is conditional `INFERRED`
+- Which market behaviours are genuinely repeatable? `INFERRED`
 - XIX. What this philosophy still needs to prove `INFERRED`
 - VIII. The source of a trading opportunity: understanding + evidence + mathematics `INFERRED`
 - Does the strategy survive changing market conditions? `INFERRED`
@@ -49,18 +49,18 @@
 - [Beyond the Philosophy — what the knowledge base adds, sharpens and challenges](Beyond_the_Philosophy_—_what_the_knowledge_base_adds,_sharpens_and_challenges.md) `EXTRACTED`
 - [Position Sizing](Position_Sizing.md) `EXTRACTED`
 - [Risk of Ruin & Drawdown Math](Risk_of_Ruin_&_Drawdown_Math.md) `EXTRACTED`
+- [Backtesting (manual & systematic)](Backtesting_manual_&_systematic.md) `EXTRACTED`
 - [Decision Protocol — the Philosophy of the Relationship as an operating procedure](Decision_Protocol_—_the_Philosophy_of_the_Relationship_as_an_operating_procedure.md) `EXTRACTED`
 - [Trading Journal & Performance Review](Trading_Journal_&_Performance_Review.md) `EXTRACTED`
-- [Backtesting (manual & systematic)](Backtesting_manual_&_systematic.md) `EXTRACTED`
 - [Overfitting & Edge Validation (multiple testing, deflated Sharpe)](Overfitting_&_Edge_Validation_multiple_testing,_deflated_Sharpe.md) `EXTRACTED`
 - [Expectancy (expected value per trade)](Expectancy_expected_value_per_trade.md) `EXTRACTED`
-- [Probabilistic Thinking (thinking in bets)](Probabilistic_Thinking_thinking_in_bets.md) `EXTRACTED`
+- Probabilistic Thinking (thinking in bets) `EXTRACTED`
 - Liquidity (resting orders, stop pools, sweeps) `EXTRACTED`
 - Performance Metrics (Sharpe, Sortino, MAR, profit factor) `EXTRACTED`
-- Random Walk & Efficient Market Hypothesis `EXTRACTED`
 - Probability, Distributions & Fat Tails `EXTRACTED`
-- The Unified Trading Intelligence Framework (analysis → execution) `EXTRACTED`
+- Random Walk & Efficient Market Hypothesis `EXTRACTED`
 - Matteo Conti — Institutional Strategy Development Framework (multi-asset, day and swing trading) `EXTRACTED`
+- The Unified Trading Intelligence Framework (analysis → execution) `EXTRACTED`
 - Pavel — First-Principles Trading Framework (multi-asset, strategy-design framework) `EXTRACTED`
 - Optimal Execution & Market Impact (Almgren-Chriss, square-root law) `EXTRACTED`
 - Steven Dux — Small-Cap Short Statistics Playbook (US small-cap stocks, day trading) `EXTRACTED`
@@ -69,7 +69,7 @@
 - *…and 2 more `related` connection(s) not listed (lowest-degree first to go)*
 
 ### teaches
-- [Jim Simons](Jim_Simons.md) `EXTRACTED`
+- Jim Simons `EXTRACTED`
 - Edward O. Thorp `EXTRACTED`
 - Mark Douglas `EXTRACTED`
 - Jack D. Schwager `EXTRACTED`

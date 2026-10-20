@@ -1,63 +1,62 @@
 # Chart Fanatics Ecosystem
 
-> 60 nodes · cohesion 0.03
+> 41 nodes · cohesion 0.05
 
 ## Key Concepts
 
 - **Chart Fanatics (YouTube channel)** (163 connections) — `01_chart-fanatics/README.md`
-- **Rajan Dhall** (8 connections) — `03_legends-authorities/people.yaml`
-- **Tori Trades** (8 connections) — `03_legends-authorities/people.yaml`
-- **First systematic trader on Chart Fanatics & Words of Rizdom (Oct 2025)** (4 connections) — `01_chart-fanatics/catalog.yaml`
-- **Swing Trading, D*** Pics, & $22k In A Month With Tori Trades | 092** (4 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
-- **Andrea Cimitan** (4 connections) — `03_legends-authorities/people.yaml`
-- **STEAL This INSANE 1-Minute Market Maker Trading Strategy (75% Win Rate)** (3 connections) — `01_chart-fanatics/catalog.scraped.yaml`
+- **74% Win Rate Trader Shares His EXACT OrderFlow Strategy ($2M+ Payouts)** (4 connections) — `01_chart-fanatics/catalog.scraped.yaml`
+- **Pass Prop Firms Using This ICT & Orderflow Futures Trading Strategy ($600k+)** (4 connections) — `01_chart-fanatics/catalog.scraped.yaml`
+- **Marios Stamatoudis** (4 connections) — `03_legends-authorities/people.yaml`
+- **Steven Dux** (4 connections) — `03_legends-authorities/people.yaml`
+- **Wall Street's EXACT Formula To Measure FEAR In The Markets (Trade This NOW)** (3 connections) — `01_chart-fanatics/catalog.scraped.yaml`
 - **TAKE This EASY ICT Trading Strategy For Prop Firms (INSANE Entries)** (3 connections) — `01_chart-fanatics/catalog.scraped.yaml`
-- **Pass Prop Firms Using This ICT & Orderflow Futures Trading Strategy ($600k+)** (3 connections) — `01_chart-fanatics/catalog.scraped.yaml`
 - **Rajan Dhall — A+ Simple Trading Strategy & Market Auction Theory (May 2025)** (3 connections) — `01_chart-fanatics/catalog.yaml`
-- **Trader Kane ($2M+) — episode** (3 connections) — `01_chart-fanatics/catalog.yaml`
-- **579: 7 Traders Share Their Secrets To Become Consistently Profitable (1-Hour Masterclass)** (3 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
-- **Forrest Knight** (3 connections) — `03_legends-authorities/people.yaml`
+- **The ONLY Break And Retest Trading Strategy You’ll EVER Need (Step By Step)** (3 connections) — `01_chart-fanatics/catalog.scraped.yaml`
+- **Trading $50M At 25 Using One SIMPLE Market Cycle Strategy (4 Stages) - Ted Zhang** (3 connections) — `01_chart-fanatics/catalog.scraped.yaml`
 - **Fredy Sarmiento** (3 connections) — `03_legends-authorities/people.yaml`
-- **Jay Awtani** (3 connections) — `03_legends-authorities/people.yaml`
 - **Kris Verma** (3 connections) — `03_legends-authorities/people.yaml`
 - **Kyle Williams** (3 connections) — `03_legends-authorities/people.yaml`
-- **Matteo Conti** (3 connections) — `03_legends-authorities/people.yaml`
 - **Vincent Desiano** (3 connections) — `03_legends-authorities/people.yaml`
 - **Simple ONE Candle Trading Strategy Thats Profited Millions (80%+ Win Rate) ** (2 connections) — `01_chart-fanatics/catalog.scraped.yaml`
-- **Master The Mental Game of Trading In 60 Minutes (STOP TILT/FOMO)** (2 connections) — `01_chart-fanatics/catalog.scraped.yaml`
-- **Worlds BEST Prop Firm Trader Reveals SIMPLE Trading Strategy - Jadecap (Full Breakdown)** (2 connections) — `01_chart-fanatics/catalog.scraped.yaml`
 - **The SIMPLE $10 Million ICT Blueprint They Don’t Want You To See (Forex Trading Strategy) ** (2 connections) — `01_chart-fanatics/catalog.scraped.yaml`
-- **12 Years of Trading Knowledge in 2 Hours - Umar Ashraf** (2 connections) — `01_chart-fanatics/catalog.scraped.yaml`
+- **COPY The BEST Gap Up Short Trading Strategy That Has Made Millions (Proven Results)** (2 connections) — `01_chart-fanatics/catalog.scraped.yaml`
 - **COPY This CRAZY Simple 98% Win Rate Trading Strategy** (2 connections) — `01_chart-fanatics/catalog.scraped.yaml`
-- *... and 35 more nodes in this community*
+- **STEAL This 7 Figure Liquidity HACK for Your Trading (Any Asset & Timeframe)** (2 connections) — `01_chart-fanatics/catalog.scraped.yaml`
+- **Copy this Complete In-Depth 85%+ Win Rate Short Trading Strategy - US Investing Champion** (2 connections) — `01_chart-fanatics/catalog.scraped.yaml`
+- **The ONE Liquidity Trading Pattern That Actually Works (Precise Entries)** (2 connections) — `01_chart-fanatics/catalog.scraped.yaml`
+- **Master ALGO Trading In Less Than 90 Minutes (NO Coding) | $1M+ Profits** (2 connections) — `01_chart-fanatics/catalog.scraped.yaml`
+- **LIVE TRADING - How He Made $40,000+ Trading using OrderFlow (Full Masterclass)** (2 connections) — `01_chart-fanatics/catalog.scraped.yaml`
+- **If You Only Watch One ICT Trading Video, Make It This (LIVE Trading)** (2 connections) — `01_chart-fanatics/catalog.scraped.yaml`
+- **Abraham Perez** (2 connections) — `03_legends-authorities/people.yaml`
+- *... and 16 more nodes in this community*
 
 ## Relationships
 
-- [Trade Management / Chart Fanatics](Trade_Management_-_Chart_Fanatics.md) (42 shared connections)
-- [Smart Money / ICT & Liquidity](Smart_Money_-_ICT_&_Liquidity.md) (33 shared connections)
+- [Trade Management / Chart Fanatics](Trade_Management_-_Chart_Fanatics.md) (41 shared connections)
+- [Smart Money / ICT & Liquidity](Smart_Money_-_ICT_&_Liquidity.md) (40 shared connections)
 - [Prop-Firm Evaluations & Risk Rules](Prop-Firm_Evaluations_&_Risk_Rules.md) (20 shared connections)
-- [Auction Market Theory & Order Flow](Auction_Market_Theory_&_Order_Flow.md) (18 shared connections)
-- [Risk of Ruin & Drawdown Math](Risk_of_Ruin_&_Drawdown_Math.md) (10 shared connections)
-- [Scalping / Desire To Trade](Scalping_-_Desire_To_Trade.md) (7 shared connections)
-- [Backtesting, ML & Edge Validation](Backtesting,_ML_&_Edge_Validation.md) (7 shared connections)
-- [Classical Charting & Patterns](Classical_Charting_&_Patterns.md) (6 shared connections)
-- [Psychology, Plan & Discipline](Psychology,_Plan_&_Discipline.md) (6 shared connections)
-- [Trading Podcasts](Trading_Podcasts.md) (4 shared connections)
-- [Candlesticks & Price Action](Candlesticks_&_Price_Action.md) (3 shared connections)
-- [Indicators & Oscillators](Indicators_&_Oscillators.md) (3 shared connections)
+- [Auction Market Theory & Order Flow](Auction_Market_Theory_&_Order_Flow.md) (12 shared connections)
+- [Backtesting, ML & Edge Validation](Backtesting,_ML_&_Edge_Validation.md) (10 shared connections)
+- [Multi-Timeframe Analysis](Multi-Timeframe_Analysis.md) (8 shared connections)
+- [Trading Podcasts](Trading_Podcasts.md) (7 shared connections)
+- [Journal, Review & Metrics](Journal,_Review_&_Metrics.md) (6 shared connections)
+- [Growth-Stock Momentum (CANSLIM→VCP→EP)](Growth-Stock_Momentum_CANSLIM→VCP→EP.md) (4 shared connections)
+- [Psychology, Plan & Discipline](Psychology,_Plan_&_Discipline.md) (3 shared connections)
+- [Breakout Trading / Mean Reversion](Breakout_Trading_-_Mean_Reversion.md) (3 shared connections)
+- [Options & Volatility](Options_&_Volatility.md) (2 shared connections)
 
 ## Source Files
 
 - `01_chart-fanatics/README.md`
 - `01_chart-fanatics/catalog.scraped.yaml`
 - `01_chart-fanatics/catalog.yaml`
-- `02_podcasts-interviews/podcast-episodes.scraped.yaml`
 - `03_legends-authorities/people.yaml`
 
 ## Audit Trail
 
-- EXTRACTED: 230 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 198 (95%)
+- INFERRED: 11 (5%)
 - AMBIGUOUS: 0 (0%)
 
 ---

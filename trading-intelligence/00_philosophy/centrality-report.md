@@ -14,47 +14,47 @@ status: computed
 
 ## Headline
 
-The measured graph (the explorer's graph view without the 00_philosophy working documents) has **1,145 nodes**, **5,360 edges** and **30 communities**; **60** of those nodes are the philosophy (the root, 21 sections, 12 principles, the open questions and the hypotheses). The 00_philosophy working documents (this report, the blueprint map, the alignment matrix, the lab, the protocol) are left out of the measurement: they describe the philosophy, and counting their links would inflate it.
+The measured graph (the explorer's graph view without the 00_philosophy working documents) has **1,182 nodes**, **5,796 edges** and **35 communities**; **60** of those nodes are the philosophy (the root, 21 sections, 12 principles, the open questions and the hypotheses). The 00_philosophy working documents (this report, the blueprint map, the alignment matrix, the lab, the protocol) are left out of the measurement: they describe the philosophy, and counting their links would inflate it.
 
 Treated as **one unit** (all philosophy nodes contracted into a single node):
 
 | Measure | Value |
 |---|---|
-| PageRank rank | **#1** of 1,086 |
+| PageRank rank | **#1** of 1,123 |
 | Betweenness rank (bridging) | **#1** |
 | Closeness rank among the 150 best-connected nodes | **#1** |
-| Direct links to the rest of the graph | 204 |
-| Reach within 1 / 2 / 3 links | 18.8% / 82.5% / 99.8% of the graph |
-| Communities touched directly | 25 of 29 |
+| Direct links to the rest of the graph | 208 |
+| Reach within 1 / 2 / 3 links | 18.5% / 84.4% / 99.8% of the graph |
+| Communities touched directly | 27 of 34 |
 
-The root note alone (`philosophy_relationship`): degree 65, PageRank rank #32, betweenness rank #50.
+The root note alone (`philosophy_relationship`): degree 69, PageRank rank #34, betweenness rank #51.
 
 How to read this: PageRank asks "how much of the graph's linking flows into this node"; betweenness asks "how many shortest paths between other ideas pass through it". **Caveat:** contracting dozens of nodes into one adds up their links, so a merged unit outranks single nodes almost automatically. The two fair comparisons below control for that.
 
 ## Fair comparison 1: every community as one unit
 
-All 30 communities contracted to one node each, the philosophy among them. Links between units are weighted by how many edges join them.
+All 35 communities contracted to one node each, the philosophy among them. Links between units are weighted by how many edges join them.
 
-The philosophy ranks **#1 of 30 by PageRank**, **#1 by betweenness** and **#23 by participation** (participation 0.862: its 1102 outside links reach 25 of the other 29 communities).
+The philosophy ranks **#1 of 35 by PageRank**, **#1 by betweenness** and **#24 by participation** (participation 0.875: its 1141 outside links reach 27 of the other 34 communities).
 
 | Rank (PageRank) | Community | Nodes | Outside links | Communities linked | Participation | Betweenness rank |
 |---|---|---|---|---|---|---|
-| 1 | **The Philosophy of the Relationship** | 60 | 1102 | 25 | 0.862 | 1 |
-| 2 | Trade Management / Chart Fanatics | 35 | 683 | 24 | 0.848 | 2 |
-| 3 | Psychology, Plan & Discipline | 63 | 533 | 25 | 0.766 | 4 |
-| 4 | Backtesting, ML & Edge Validation | 93 | 388 | 25 | 0.764 | 3 |
-| 5 | Smart Money / ICT & Liquidity | 48 | 389 | 19 | 0.868 | 14 |
-| 6 | Candlesticks & Price Action | 52 | 351 | 26 | 0.921 | 5 |
-| 7 | Auction Market Theory & Order Flow | 83 | 364 | 25 | 0.892 | 10 |
-| 8 | Indicators & Oscillators | 47 | 328 | 24 | 0.912 | 6 |
-| 9 | Classical Charting & Patterns | 46 | 248 | 23 | 0.913 | 16 |
-| 10 | Prop-Firm Evaluations & Risk Rules | 36 | 201 | 22 | 0.931 | 19 |
-| 11 | Position Sizing & Risk | 27 | 182 | 28 | 0.94 | 9 |
-| 12 | Risk of Ruin & Drawdown Math | 17 | 176 | 27 | 0.938 | 24 |
+| 1 | **The Philosophy of the Relationship** | 60 | 1141 | 27 | 0.875 | 1 |
+| 2 | Trade Management / Chart Fanatics | 39 | 682 | 29 | 0.876 | 2 |
+| 3 | Journal, Review & Metrics | 47 | 595 | 29 | 0.792 | 7 |
+| 4 | Smart Money / ICT & Liquidity | 68 | 517 | 24 | 0.895 | 11 |
+| 5 | Backtesting, ML & Edge Validation | 69 | 491 | 29 | 0.866 | 4 |
+| 6 | Classical Charting & Patterns | 58 | 357 | 29 | 0.904 | 6 |
+| 7 | Efficient Markets Debate | 53 | 307 | 31 | 0.868 | 3 |
+| 8 | Position Sizing & Risk | 27 | 276 | 31 | 0.933 | 5 |
+| 9 | Multi-Timeframe Analysis | 37 | 270 | 26 | 0.923 | 18 |
+| 10 | Prop-Firm Evaluations & Risk Rules | 37 | 204 | 26 | 0.934 | 10 |
+| 11 | Auction Market Theory & Order Flow | 41 | 209 | 25 | 0.9 | 16 |
+| 12 | Psychology, Plan & Discipline | 49 | 193 | 27 | 0.922 | 12 |
 
 ## Fair comparison 2: random sets of the same size
 
-200 random sets of 60 nodes from the rest of the graph, each contracted into one node. Median PageRank rank of the merged random set: **#1** (best #1; rank #1 in 98% of trials). Median reach within 2 links: **89.7%** (95th percentile 91.9%), against **82.5%** for the philosophy.
+200 random sets of 60 nodes from the rest of the graph, each contracted into one node. Median PageRank rank of the merged random set: **#1** (best #1; rank #1 in 99% of trials). Median reach within 2 links: **90.1%** (95th percentile 92.6%), against **84.4%** for the philosophy.
 
 So part of the philosophy's headline rank comes from merging alone; the part that does not is what the comparison with the random sets and with the other communities shows.
 
@@ -62,18 +62,18 @@ So part of the philosophy's headline rank comes from merging alone; the part tha
 
 | # | Node | PageRank |
 |---|---|---|
-| 1 | THE PHILOSOPHY (all philosophy nodes as one) | 0.01973 |
-| 2 | Chart Fanatics | 0.01842 |
-| 3 | Trading Psychology & Discipline | 0.01354 |
-| 4 | Trend Following | 0.01153 |
-| 5 | Position Sizing | 0.00984 |
-| 6 | Prop-Firm Evaluations & Risk Rules | 0.00879 |
-| 7 | Risk of Ruin & Drawdown Math | 0.00803 |
-| 8 | Edge | 0.00789 |
-| 9 | Order Flow | 0.00745 |
-| 10 | Backtesting | 0.00708 |
-| 11 | Fundamental & Macro Analysis | 0.00692 |
-| 12 | Words of Rizdom | 0.00673 |
+| 1 | THE PHILOSOPHY (all philosophy nodes as one) | 0.01853 |
+| 2 | Chart Fanatics | 0.01616 |
+| 3 | Trading Psychology & Discipline | 0.01273 |
+| 4 | Trend Following | 0.01151 |
+| 5 | Position Sizing | 0.00981 |
+| 6 | Reading List | 0.00822 |
+| 7 | Prop-Firm Evaluations & Risk Rules | 0.00817 |
+| 8 | Risk of Ruin & Drawdown Math | 0.00792 |
+| 9 | Order Flow | 0.00754 |
+| 10 | Edge | 0.00736 |
+| 11 | Support & Resistance | 0.00727 |
+| 12 | Backtesting | 0.00718 |
 
 ## Communities the philosophy touches
 
@@ -81,49 +81,51 @@ Number of direct links from philosophy nodes into each community.
 
 | Community | Links |
 |---|---|
-| Trade Management / Chart Fanatics | 31 |
-| Backtesting, ML & Edge Validation | 28 |
-| Psychology, Plan & Discipline | 27 |
-| Auction Market Theory & Order Flow | 25 |
+| Journal, Review & Metrics | 27 |
+| Trade Management / Chart Fanatics | 27 |
+| Efficient Markets Debate | 20 |
+| Backtesting, ML & Edge Validation | 19 |
 | Smart Money / ICT & Liquidity | 19 |
+| Microstructure & Optimal Execution | 17 |
+| Position Sizing & Risk | 10 |
 | Classical Charting & Patterns | 10 |
-| Probability, Expectancy & Fat Tails | 10 |
-| Candlesticks & Price Action | 8 |
-| Indicators & Oscillators | 7 |
+| Auction Market Theory & Order Flow | 9 |
+| Multi-Timeframe Analysis | 7 |
 | Trend Following & the Turtles | 6 |
-| An Introduction to Probability Theory… | 5 |
-| Reflexivity / We Study Billionaires | 5 |
-| Edge | 4 |
+| Kelly, Sizing & Money Management | 5 |
+| Probability, Expectancy & Fat Tails | 5 |
+| Psychology, Plan & Discipline | 4 |
+| Probability & Statistics | 4 |
+| Reflexivity | 3 |
 | Macro, Fundamentals & Reflexivity | 3 |
-| Kelly, Sizing & Money Management | 3 |
-| Correlation & Portfolio Risk | 2 |
-| Position Sizing & Risk | 2 |
-| Risk of Ruin & Drawdown Math | 2 |
-| Stochastic Calculus, Options & Derivatives | 1 |
-| Scalping / Desire To Trade | 1 |
-| Leverage, Margin, Pips & Lots | 1 |
-| Trading Plan | 1 |
-| Prop-Firm Evaluations & Risk Rules | 1 |
+| Breakout Trading / Mean Reversion | 3 |
+| Edge | 2 |
 | Top Traders Unplugged | 1 |
+| Growth-Stock Momentum (CANSLIM→VCP→EP) | 1 |
+| Leverage, Margin, Pips & Lots | 1 |
+| Trading Podcasts | 1 |
+| Stochastic Calculus, Options & Derivatives | 1 |
+| Correlation & Portfolio Risk | 1 |
 | Risk, Sizing & Portfolio Mathematics | 1 |
+| Prop-Firm Evaluations & Risk Rules | 1 |
 
 ## What the philosophy pulls in most (personalised PageRank)
 
 A random walk that keeps restarting from the philosophy: these are the nodes it visits most. This is the part of the knowledge base the philosophy is built on.
 
-**Concepts:** Trading Psychology & Discipline (`concept_trading_psychology`), Market Regimes (`concept_market_regimes`), Probabilistic Thinking (`concept_probabilistic_thinking`), Expectancy (`concept_expectancy`), Trading Journal & Performance Review (`concept_trading_journal_review`), Position Sizing (`concept_position_sizing`), Edge (`concept_edge`), Overfitting & Edge Validation (`concept_overfitting_validation`)
+**Concepts:** Trading Psychology & Discipline (`concept_trading_psychology`), Expectancy (`concept_expectancy`), Market Regimes (`concept_market_regimes`), Probabilistic Thinking (`concept_probabilistic_thinking`), Trading Journal & Performance Review (`concept_trading_journal_review`), Position Sizing (`concept_position_sizing`), Overfitting & Edge Validation (`concept_overfitting_validation`), Backtesting (`concept_backtesting`)
 
-**Practitioner playbooks:** Matteo Conti (`strategy_matteo_conti_institutional`), Naoufel Taief (`strategy_naoufel_taief_algorithmic`), JJ Simon (`strategy_jj_simon_fair_pricing`), Gala Trades (`strategy_gala_trades_price_action`), Pavel (`strategy_pavel_first_principles`), Umar Ashraf (`strategy_umar_ashraf_5_stage`), Fabio Valentini (`strategy_fabio_valentini_amt_order_flow`), Jeff Holden (`strategy_jeff_holden_momentum_model`)
+**Practitioner playbooks:** Matteo Conti (`strategy_matteo_conti_institutional`), Naoufel Taief (`strategy_naoufel_taief_algorithmic`), Gala Trades (`strategy_gala_trades_price_action`), JJ Simon (`strategy_jj_simon_fair_pricing`), Umar Ashraf (`strategy_umar_ashraf_5_stage`), Pavel (`strategy_pavel_first_principles`), Fabio Valentini (`strategy_fabio_valentini_amt_order_flow`), Jeff Holden (`strategy_jeff_holden_momentum_model`)
 
-**Books:** Trading in the Zone (`book_trading_in_the_zone`), Fooled by Randomness (`book_fooled_by_randomness`), Adaptive Markets (`book_adaptive_markets`), Thinking in Bets (`book_thinking_in_bets`), Evidence-Based Technical Analysis (`book_evidence_based_ta`), The Alchemy of Finance (`book_alchemy_of_finance`), Trade Your Way to Financial Freedom (`book_trade_your_way_financial_freedom`), Market Wizards (`book_market_wizards`)
+**Books:** Trading in the Zone (`book_trading_in_the_zone`), Fooled by Randomness (`book_fooled_by_randomness`), Adaptive Markets (`book_adaptive_markets`), Thinking in Bets (`book_thinking_in_bets`), Evidence-Based Technical Analysis (`book_evidence_based_ta`), The Alchemy of Finance (`book_alchemy_of_finance`), Trade Your Way to Financial Freedom (`book_trade_your_way_financial_freedom`), Mind Over Markets (`book_mind_over_markets`)
 
-**Mathematics books:** Statistical Consequences of Fat Tails (`mathbook_statistical_consequences_fat_tails`), All of Statistics (`mathbook_all_of_statistics`), Time Series Analysis (`mathbook_hamilton_time_series`), An Introduction to Probability Theory and Its Applications (`mathbook_feller_probability`), Probability Theory: The Logic of Science (`mathbook_jaynes_probability_logic`), The Econometrics of Financial Markets (`mathbook_campbell_lo_mackinlay`), Trades, Quotes and Prices (`mathbook_bouchaud_trades_quotes_prices`), Statistical Inference (`mathbook_casella_berger`)
+**Mathematics books:** Statistical Consequences of Fat Tails (`mathbook_statistical_consequences_fat_tails`), All of Statistics (`mathbook_all_of_statistics`), Time Series Analysis (`mathbook_hamilton_time_series`), An Introduction to Probability Theory and Its Applications (`mathbook_feller_probability`), Probability Theory: The Logic of Science (`mathbook_jaynes_probability_logic`), The Econometrics of Financial Markets (`mathbook_campbell_lo_mackinlay`), Trades, Quotes and Prices (`mathbook_bouchaud_trades_quotes_prices`), Empirical Market Microstructure (`mathbook_hasbrouck_empirical_microstructure`)
 
-**Papers:** The Deflated Sharpe Ratio (`paper_deflated_sharpe_2014`), Prospect Theory: An Analysis of Decision under Risk (`paper_kahneman_tversky_1979`), Optimal Execution of Portfolio Transactions (`paper_almgren_chriss_2000`), Continuous Auctions and Insider Trading (`paper_kyle_1985`), The Probability of Backtest Overfitting (`paper_bailey_pbo_2017`), Market Microstructure: A Survey (`paper_madhavan_2000`), A New Interpretation of Information Rate (`paper_kelly_1956`), The Adaptive Markets Hypothesis (`paper_lo_adaptive_markets_2004`)
+**Papers:** The Deflated Sharpe Ratio (`paper_deflated_sharpe_2014`), Prospect Theory: An Analysis of Decision under Risk (`paper_kahneman_tversky_1979`), The Probability of Backtest Overfitting (`paper_bailey_pbo_2017`), Optimal Execution of Portfolio Transactions (`paper_almgren_chriss_2000`), Continuous Auctions and Insider Trading (`paper_kyle_1985`), Market Microstructure: A Survey (`paper_madhavan_2000`), Does Academic Research Destroy Stock Return Predictability? (`paper_mclean_pontiff_2016`), A New Interpretation of Information Rate (`paper_kelly_1956`)
 
 **People:** Ed Seykota (`person_ed_seykota`), Karl Popper (`person_karl_popper`), Ray Dalio (`person_ray_dalio`), Nassim Nicholas Taleb (`person_nassim_taleb`), Edward O. Thorp (`person_ed_thorp`), Mark Douglas (`person_mark_douglas`), Mark Minervini (`person_mark_minervini`), Larry Hite (`person_larry_hite`)
 
-**Synthesis notes:** Chart Fanatics (`synthesis_cf_playbook_patterns`), The Unified Trading Intelligence Framework (`synthesis_unified_framework`), Master Pre-Trade Checklist (`synthesis_pre_trade_checklist`), Consensus & Conflicts across sources (`synthesis_consensus_conflicts`), Idea Lineage Map (`synthesis_idea_lineage`), Chart Fanatics ecosystem (`synthesis_chart_fanatics_ecosystem`)
+**Synthesis notes:** Reading List (`synthesis_sniper_reading_list`), Sniper Entries (`synthesis_sniper_entries`), Chart Fanatics (`synthesis_cf_playbook_patterns`), The Unified Trading Intelligence Framework (`synthesis_unified_framework`), Master Pre-Trade Checklist (`synthesis_pre_trade_checklist`), Trading a $20 Account (`synthesis_small_account_venues`), Consensus & Conflicts across sources (`synthesis_consensus_conflicts`), Sniper Lab (`synthesis_sniper_backtests`)
 
 **Frameworks:** Partition 06 (`framework_math_foundations`), Source Quality Tiers (`framework_source_tiers`), Trading Intelligence Ontology (`framework_ontology`), Learning Path through the partitions (`framework_learning_path`), Note & Registry Schema (`framework_note_schema`)
 
@@ -155,85 +157,85 @@ For every philosophy node, the community that holds most of its non-philosophy n
 
 | Node | Home community | Share | Communities reached |
 |---|---|---|---|
-| III. The A → C → B principle: the destination is not the path (`philo_acb_principle`) | Trade Management / Chart Fanatics | 30% | 7 |
-| XI. Being wrong is part of the system (`philo_being_wrong`) | Psychology, Plan & Discipline | 48% | 10 |
-| XIV. Capital preservation and survival (`philo_capital_preservation`) | An Introduction to Probability Theory… | 21% | 16 |
-| VI. Probability as the foundation of decisions; the law of large numbers; probability is conditional (`philo_conditional_probability`) | Probability, Expectancy & Fat Tails | 35% | 8 |
-| XIII. Follow the right decisions, not the money (`philo_decisions_not_money`) | Psychology, Plan & Discipline | 62% | 5 |
-| X. When the evidence changes (`philo_evidence_changes`) | Psychology, Plan & Discipline | 25% | 8 |
-| XVI. The trading journal as a record of understanding (`philo_journal`) | Psychology, Plan & Discipline | 68% | 7 |
-| XXI. My personal trading manifesto (`philo_manifesto`) | Psychology, Plan & Discipline | 63% | 7 |
-| I. The market is a relationship; price is its visible expression (`philo_market_is_relationship`) | Auction Market Theory & Order Flow | 44% | 8 |
-| II. The market as a system governed by rules (`philo_market_system_of_rules`) | Backtesting, ML & Edge Validation | 40% | 7 |
-| VII. Mathematics, the trader's sword (`philo_mathematics_sword`) | Backtesting, ML & Edge Validation | 36% | 8 |
-| XIX. What this philosophy still needs to prove (`philo_open_questions`) | Backtesting, ML & Edge Validation | 45% | 7 |
-| XVIII. The practical doctrine (`philo_practical_doctrine`) | Psychology, Plan & Discipline | 52% | 7 |
-| IV. Price as the expression of a relationship (`philo_price_expression`) | Auction Market Theory & Order Flow | 38% | 8 |
-| XII. Protect the process, not the ego (`philo_protect_process`) | Psychology, Plan & Discipline | 64% | 6 |
-| V. The market as a recurring storyline (`philo_recurring_storyline`) | Backtesting, ML & Edge Validation | 26% | 8 |
-| XX. The research behind the philosophy (`philo_research_foundations`) | Auction Market Theory & Order Flow | 32% | 9 |
-| XVII. Turning the philosophy into a scientific method (`philo_scientific_method`) | Backtesting, ML & Edge Validation | 60% | 9 |
-| VIII. The source of a trading opportunity: understanding + evidence + mathematics (`philo_source_of_opportunity`) | Backtesting, ML & Edge Validation | 28% | 8 |
-| IX. When understanding fails, step back (`philo_step_back`) | Psychology, Plan & Discipline | 42% | 8 |
-| XV. The difference between value and price (`philo_value_vs_price`) | Backtesting, ML & Edge Validation | 22% | 8 |
-| The Philosophy of the Relationship (`philosophy_relationship`) | Psychology, Plan & Discipline | 38% | 9 |
-| Principle 1: Understand before acting (`principle_01_understand_before_acting`) | Trade Management / Chart Fanatics | 47% | 11 |
-| Principle 2: Interpret movements within their broader context (`principle_02_context_before_movement`) | Trade Management / Chart Fanatics | 54% | 8 |
-| Principle 3: Treat the market's future as uncertain (`principle_03_future_is_uncertain`) | Trade Management / Chart Fanatics | 46% | 9 |
-| Principle 4: Use probability conditionally (`principle_04_conditional_probability`) | Trade Management / Chart Fanatics | 44% | 9 |
-| Principle 5: Require mathematical justification (`principle_05_mathematical_justification`) | Backtesting, ML & Edge Validation | 43% | 7 |
-| Principle 6: Do not force opportunities (`principle_06_do_not_force`) | Trade Management / Chart Fanatics | 53% | 8 |
-| Principle 7: Respond to changed evidence methodically (`principle_07_respond_methodically`) | Trade Management / Chart Fanatics | 51% | 8 |
-| Principle 8: Separate decision quality from individual outcomes (`principle_08_decision_quality_not_outcome`) | Psychology, Plan & Discipline | 46% | 10 |
-| Principle 9: Protect capital (`principle_09_protect_capital`) | Trade Management / Chart Fanatics | 16% | 17 |
-| Principle 10: Protect emotional independence (`principle_10_emotional_independence`) | Psychology, Plan & Discipline | 56% | 7 |
-| Principle 11: Record and investigate (`principle_11_record_and_investigate`) | Psychology, Plan & Discipline | 43% | 8 |
-| Principle 12: Follow the process, not the promise of money (`principle_12_process_not_money`) | Psychology, Plan & Discipline | 56% | 6 |
+| III. The A → C → B principle: the destination is not the path (`philo_acb_principle`) | Classical Charting & Patterns | 27% | 10 |
+| XI. Being wrong is part of the system (`philo_being_wrong`) | Journal, Review & Metrics | 48% | 8 |
+| XIV. Capital preservation and survival (`philo_capital_preservation`) | Position Sizing & Risk | 27% | 15 |
+| VI. Probability as the foundation of decisions; the law of large numbers; probability is conditional (`philo_conditional_probability`) | Backtesting, ML & Edge Validation | 27% | 11 |
+| XIII. Follow the right decisions, not the money (`philo_decisions_not_money`) | Journal, Review & Metrics | 62% | 5 |
+| X. When the evidence changes (`philo_evidence_changes`) | Journal, Review & Metrics | 28% | 9 |
+| XVI. The trading journal as a record of understanding (`philo_journal`) | Journal, Review & Metrics | 68% | 6 |
+| XXI. My personal trading manifesto (`philo_manifesto`) | Journal, Review & Metrics | 57% | 8 |
+| I. The market is a relationship; price is its visible expression (`philo_market_is_relationship`) | Trade Management / Chart Fanatics | 28% | 8 |
+| II. The market as a system governed by rules (`philo_market_system_of_rules`) | Efficient Markets Debate | 25% | 9 |
+| VII. Mathematics, the trader's sword (`philo_mathematics_sword`) | Backtesting, ML & Edge Validation | 43% | 8 |
+| XIX. What this philosophy still needs to prove (`philo_open_questions`) | Backtesting, ML & Edge Validation | 36% | 7 |
+| XVIII. The practical doctrine (`philo_practical_doctrine`) | Journal, Review & Metrics | 45% | 8 |
+| IV. Price as the expression of a relationship (`philo_price_expression`) | Auction Market Theory & Order Flow | 24% | 7 |
+| XII. Protect the process, not the ego (`philo_protect_process`) | Journal, Review & Metrics | 55% | 8 |
+| V. The market as a recurring storyline (`philo_recurring_storyline`) | Efficient Markets Debate | 32% | 10 |
+| XX. The research behind the philosophy (`philo_research_foundations`) | Microstructure & Optimal Execution | 28% | 12 |
+| XVII. Turning the philosophy into a scientific method (`philo_scientific_method`) | Backtesting, ML & Edge Validation | 62% | 6 |
+| VIII. The source of a trading opportunity: understanding + evidence + mathematics (`philo_source_of_opportunity`) | Journal, Review & Metrics | 27% | 9 |
+| IX. When understanding fails, step back (`philo_step_back`) | Journal, Review & Metrics | 40% | 9 |
+| XV. The difference between value and price (`philo_value_vs_price`) | Efficient Markets Debate | 26% | 9 |
+| The Philosophy of the Relationship (`philosophy_relationship`) | Journal, Review & Metrics | 42% | 10 |
+| Principle 1: Understand before acting (`principle_01_understand_before_acting`) | Trade Management / Chart Fanatics | 46% | 11 |
+| Principle 2: Interpret movements within their broader context (`principle_02_context_before_movement`) | Trade Management / Chart Fanatics | 43% | 11 |
+| Principle 3: Treat the market's future as uncertain (`principle_03_future_is_uncertain`) | Trade Management / Chart Fanatics | 40% | 10 |
+| Principle 4: Use probability conditionally (`principle_04_conditional_probability`) | Trade Management / Chart Fanatics | 38% | 9 |
+| Principle 5: Require mathematical justification (`principle_05_mathematical_justification`) | Backtesting, ML & Edge Validation | 46% | 8 |
+| Principle 6: Do not force opportunities (`principle_06_do_not_force`) | Trade Management / Chart Fanatics | 43% | 8 |
+| Principle 7: Respond to changed evidence methodically (`principle_07_respond_methodically`) | Trade Management / Chart Fanatics | 43% | 9 |
+| Principle 8: Separate decision quality from individual outcomes (`principle_08_decision_quality_not_outcome`) | Journal, Review & Metrics | 46% | 9 |
+| Principle 9: Protect capital (`principle_09_protect_capital`) | Position Sizing & Risk | 20% | 15 |
+| Principle 10: Protect emotional independence (`principle_10_emotional_independence`) | Journal, Review & Metrics | 50% | 6 |
+| Principle 11: Record and investigate (`principle_11_record_and_investigate`) | Journal, Review & Metrics | 48% | 7 |
+| Principle 12: Follow the process, not the promise of money (`principle_12_process_not_money`) | Journal, Review & Metrics | 57% | 6 |
 
 ## Philosophy nodes ranked
 
 | Node | Kind | Degree | PageRank rank | Betweenness rank |
 |---|---|---|---|---|
-| The Philosophy of the Relationship (`philosophy_relationship`) | philosophy | 65 | #32 | #50 |
-| Principle 4: Use probability conditionally (`principle_04_conditional_probability`) | principle | 64 | #34 | #59 |
-| Principle 2: Interpret movements within their broader context (`principle_02_context_before_movement`) | principle | 55 | #48 | #100 |
-| Principle 6: Do not force opportunities (`principle_06_do_not_force`) | principle | 56 | #49 | #151 |
-| Principle 3: Treat the market's future as uncertain (`principle_03_future_is_uncertain`) | principle | 55 | #50 | #99 |
-| Principle 7: Respond to changed evidence methodically (`principle_07_respond_methodically`) | principle | 52 | #54 | #143 |
-| Principle 1: Understand before acting (`principle_01_understand_before_acting`) | principle | 45 | #61 | #80 |
-| Principle 9: Protect capital (`principle_09_protect_capital`) | principle | 36 | #66 | #78 |
-| Principle 5: Require mathematical justification (`principle_05_mathematical_justification`) | principle | 35 | #79 | #208 |
-| XVII. Turning the philosophy into a scientific method (`philo_scientific_method`) | philosophy | 31 | #85 | #146 |
-| XX. The research behind the philosophy (`philo_research_foundations`) | philosophy | 27 | #87 | #55 |
-| XVIII. The practical doctrine (`philo_practical_doctrine`) | philosophy | 34 | #88 | #222 |
-| Which market behaviours are genuinely repeatable? (`question_repeatable_behaviors`) | question | 29 | #89 | #111 |
-| VII. Mathematics, the trader's sword (`philo_mathematics_sword`) | philosophy | 30 | #90 | #152 |
-| VI. Probability as the foundation of decisions; the law of large numbers; probability is conditional (`philo_conditional_probability`) | philosophy | 29 | #91 | #113 |
-| Principle 8: Separate decision quality from individual outcomes (`principle_08_decision_quality_not_outcome`) | principle | 31 | #97 | #163 |
-| XIX. What this philosophy still needs to prove (`philo_open_questions`) | philosophy | 29 | #98 | #97 |
-| XIV. Capital preservation and survival (`philo_capital_preservation`) | philosophy | 27 | #99 | #112 |
-| Principle 11: Record and investigate (`principle_11_record_and_investigate`) | principle | 30 | #103 | #165 |
-| X. When the evidence changes (`philo_evidence_changes`) | philosophy | 29 | #107 | #166 |
-| XV. The difference between value and price (`philo_value_vs_price`) | philosophy | 26 | #109 | #118 |
-| How should the relevant conditions be defined and measured? (`question_define_conditions`) | question | 26 | #112 | #144 |
-| VIII. The source of a trading opportunity: understanding + evidence + mathematics (`philo_source_of_opportunity`) | philosophy | 27 | #114 | #194 |
-| Principle 10: Protect emotional independence (`principle_10_emotional_independence`) | principle | 28 | #115 | #232 |
-| III. The A → C → B principle: the destination is not the path (`philo_acb_principle`) | philosophy | 27 | #116 | #98 |
-| Does the advantage survive trading costs? (`question_survives_costs`) | question | 21 | #118 | #75 |
-| Can the trader execute the strategy consistently? (`question_consistent_execution`) | question | 27 | #119 | #193 |
-| XI. Being wrong is part of the system (`philo_being_wrong`) | philosophy | 27 | #121 | #197 |
-| Does the strategy survive changing market conditions? (`question_survives_regime_change`) | question | 25 | #124 | #149 |
-| IV. Price as the expression of a relationship (`philo_price_expression`) | philosophy | 25 | #126 | #147 |
-| V. The market as a recurring storyline (`philo_recurring_storyline`) | philosophy | 25 | #128 | #145 |
-| XII. Protect the process, not the ego (`philo_protect_process`) | philosophy | 26 | #129 | #215 |
-| XVI. The trading journal as a record of understanding (`philo_journal`) | philosophy | 26 | #131 | #209 |
-| II. The market as a system governed by rules (`philo_market_system_of_rules`) | philosophy | 24 | #134 | #115 |
-| How reliable are the probability estimates? (`question_estimate_reliability`) | question | 22 | #146 | #235 |
-| IX. When understanding fails, step back (`philo_step_back`) | philosophy | 22 | #149 | #170 |
-| I. The market is a relationship; price is its visible expression (`philo_market_is_relationship`) | philosophy | 20 | #153 | #122 |
-| Principle 12: Follow the process, not the promise of money (`principle_12_process_not_money`) | principle | 23 | #154 | #361 |
-| XXI. My personal trading manifesto (`philo_manifesto`) | philosophy | 20 | #165 | #219 |
-| XIII. Follow the right decisions, not the money (`philo_decisions_not_money`) | philosophy | 20 | #181 | #417 |
+| The Philosophy of the Relationship (`philosophy_relationship`) | philosophy | 69 | #34 | #51 |
+| Principle 4: Use probability conditionally (`principle_04_conditional_probability`) | principle | 66 | #39 | #66 |
+| Principle 6: Do not force opportunities (`principle_06_do_not_force`) | principle | 59 | #51 | #143 |
+| Principle 3: Treat the market's future as uncertain (`principle_03_future_is_uncertain`) | principle | 57 | #52 | #87 |
+| Principle 2: Interpret movements within their broader context (`principle_02_context_before_movement`) | principle | 56 | #53 | #113 |
+| Principle 7: Respond to changed evidence methodically (`principle_07_respond_methodically`) | principle | 53 | #57 | #142 |
+| Principle 1: Understand before acting (`principle_01_understand_before_acting`) | principle | 46 | #64 | #88 |
+| Principle 9: Protect capital (`principle_09_protect_capital`) | principle | 39 | #68 | #73 |
+| Principle 5: Require mathematical justification (`principle_05_mathematical_justification`) | principle | 38 | #80 | #205 |
+| VI. Probability as the foundation of decisions; the law of large numbers; probability is conditional (`philo_conditional_probability`) | philosophy | 32 | #87 | #84 |
+| VII. Mathematics, the trader's sword (`philo_mathematics_sword`) | philosophy | 33 | #88 | #159 |
+| XVII. Turning the philosophy into a scientific method (`philo_scientific_method`) | philosophy | 32 | #92 | #225 |
+| XVIII. The practical doctrine (`philo_practical_doctrine`) | philosophy | 35 | #93 | #194 |
+| XX. The research behind the philosophy (`philo_research_foundations`) | philosophy | 27 | #95 | #68 |
+| XIV. Capital preservation and survival (`philo_capital_preservation`) | philosophy | 29 | #98 | #100 |
+| Which market behaviours are genuinely repeatable? (`question_repeatable_behaviors`) | question | 29 | #100 | #128 |
+| Principle 11: Record and investigate (`principle_11_record_and_investigate`) | principle | 32 | #102 | #219 |
+| Principle 8: Separate decision quality from individual outcomes (`principle_08_decision_quality_not_outcome`) | principle | 31 | #104 | #190 |
+| XIX. What this philosophy still needs to prove (`philo_open_questions`) | philosophy | 29 | #105 | #127 |
+| III. The A → C → B principle: the destination is not the path (`philo_acb_principle`) | philosophy | 29 | #112 | #102 |
+| VIII. The source of a trading opportunity: understanding + evidence + mathematics (`philo_source_of_opportunity`) | philosophy | 28 | #117 | #193 |
+| X. When the evidence changes (`philo_evidence_changes`) | philosophy | 29 | #118 | #198 |
+| Principle 10: Protect emotional independence (`principle_10_emotional_independence`) | principle | 29 | #119 | #218 |
+| XV. The difference between value and price (`philo_value_vs_price`) | philosophy | 26 | #121 | #138 |
+| Does the advantage survive trading costs? (`question_survives_costs`) | question | 22 | #122 | #74 |
+| How should the relevant conditions be defined and measured? (`question_define_conditions`) | question | 26 | #124 | #192 |
+| Can the trader execute the strategy consistently? (`question_consistent_execution`) | question | 27 | #128 | #236 |
+| XI. Being wrong is part of the system (`philo_being_wrong`) | philosophy | 27 | #131 | #211 |
+| Does the strategy survive changing market conditions? (`question_survives_regime_change`) | question | 25 | #132 | #201 |
+| IV. Price as the expression of a relationship (`philo_price_expression`) | philosophy | 25 | #133 | #230 |
+| XII. Protect the process, not the ego (`philo_protect_process`) | philosophy | 26 | #134 | #223 |
+| V. The market as a recurring storyline (`philo_recurring_storyline`) | philosophy | 25 | #136 | #139 |
+| XVI. The trading journal as a record of understanding (`philo_journal`) | philosophy | 26 | #137 | #221 |
+| II. The market as a system governed by rules (`philo_market_system_of_rules`) | philosophy | 24 | #139 | #136 |
+| How reliable are the probability estimates? (`question_estimate_reliability`) | question | 22 | #152 | #259 |
+| IX. When understanding fails, step back (`philo_step_back`) | philosophy | 23 | #154 | #199 |
+| Principle 12: Follow the process, not the promise of money (`principle_12_process_not_money`) | principle | 24 | #158 | #294 |
+| I. The market is a relationship; price is its visible expression (`philo_market_is_relationship`) | philosophy | 20 | #167 | #117 |
+| XXI. My personal trading manifesto (`philo_manifesto`) | philosophy | 20 | #174 | #202 |
+| XIII. Follow the right decisions, not the money (`philo_decisions_not_money`) | philosophy | 20 | #188 | #392 |
 
 ## Method notes
 

@@ -1,71 +1,78 @@
 # Classical Charting & Patterns
 
-> 46 nodes · cohesion 0.09
+> 58 nodes · cohesion 0.09
 
 ## Key Concepts
 
-- **Moving Averages (SMA, EMA, stacks, crossovers)** (47 connections) — `07_concepts/moving-averages.md`
-- **Classical Chart Patterns** (36 connections) — `07_concepts/chart-patterns.md`
-- **VWAP (volume-weighted average price) & anchored VWAP** (32 connections) — `07_concepts/vwap.md`
-- **Marci Silfrain — Measured Move Trend Strategy: Little RZY (stocks, futures and crypto, swing trading)** (31 connections) — `01_chart-fanatics/strategies/marci-silfrain-measured-move.md`
+- **Support & Resistance** (91 connections) — `07_concepts/support-resistance.md`
+- **Market Structure (swings, BOS, CHoCH / MSS)** (70 connections) — `07_concepts/market-structure.md`
+- **Price Action Trading (naked charts)** (58 connections) — `07_concepts/price-action.md`
+- **BabyPips — School of Pipsology (course map)** (39 connections) — `04_babypips-school-of-pipsology/README.md`
+- **Classical Chart Patterns** (37 connections) — `07_concepts/chart-patterns.md`
 - **Dow Theory** (27 connections) — `07_concepts/dow-theory.md`
-- **Trendlines & Channels** (19 connections) — `07_concepts/trendlines.md`
-- **Brian Shannon** (16 connections) — `03_legends-authorities/people.yaml`
-- **The 7 Puzzle Pieces to a Profitable Trading System | Ariel Hernandez** (14 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
+- **Trendlines & Channels** (21 connections) — `07_concepts/trendlines.md`
+- **Japanese Candlestick Patterns** (20 connections) — `07_concepts/candlestick-patterns.md`
+- **Fibonacci Retracements & Extensions** (18 connections) — `07_concepts/fibonacci.md`
+- **Intermarket Analysis & Correlations** (16 connections) — `07_concepts/intermarket-analysis.md`
 - **Technical Analysis of the Financial Markets** (13 connections) — `05_books-top-100/summaries/technical-analysis-financial-markets.md`
-- **Episodic Pivot (EP)** (13 connections) — `07_concepts/episodic-pivot.md`
-- **Marci Silfrain** (11 connections) — `03_legends-authorities/people.yaml`
+- **Elliott Wave Theory** (11 connections) — `07_concepts/elliott-wave.md`
+- **BabyPips Course 3 — Elementary (Grades 1–5): the core technical toolkit** (11 connections) — `04_babypips-school-of-pipsology/courses/03-elementary.md`
 - **Technical Analysis of Stock Trends** (10 connections) — `05_books-top-100/books.yaml`
+- **Pivot Points** (9 connections) — `07_concepts/pivot-points.md`
 - **Diary of a Professional Commodity Trader** (8 connections) — `05_books-top-100/books.yaml`
 - **The Dow Theory** (8 connections) — `05_books-top-100/books.yaml`
-- **Why Most Traders Lose at VWAP (Brian Shannon Breaks It Down)** (8 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
-- **Swing Traders should Master these AVWAP Strategies | Brian Shannon, 35+ years Trading** (8 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
 - **Charles H. Dow** (8 connections) — `03_legends-authorities/people.yaml`
-- **Encyclopedia of Chart Patterns** (7 connections) — `05_books-top-100/books.yaml`
+- **YTC Price Action Trader** (7 connections) — `10_sniper-lab/books-sniper.yaml`
+- **BabyPips Course 2 — Kindergarten: brokers & types of analysis** (7 connections) — `04_babypips-school-of-pipsology/courses/02-kindergarten.md`
+- **BabyPips Course 4 — Middle School (Grades 6–8): momentum, patterns, pivots** (7 connections) — `04_babypips-school-of-pipsology/courses/04-middle-school.md`
 - **329 · Peter Brandt - How a 50-Year Veteran Thinks About Risk Management** (7 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
 - **Peter L. Brandt** (7 connections) — `03_legends-authorities/people.yaml`
+- **The Logical Trader: Applying a Method to the Madness** (6 connections) — `10_sniper-lab/books-sniper.yaml`
 - **Trader Vic: Methods of a Wall Street Master** (6 connections) — `05_books-top-100/books.yaml`
-- **Brian Shannon Reveals The Most Critical Error Traders Make - VWAP Deep Dive** (6 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
-- **Exclusive VWAP Deep Dive With Brian Shannon | 135** (6 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
-- **414: Secrets From 30 Years Day Trading Market Structure - Brian Shannon** (6 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
-- **Smart Money is Trading Against YOU, Here’s How To Trade With Them - Brian Shannon** (6 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
-- *... and 21 more nodes in this community*
+- *... and 33 more nodes in this community*
 
 ## Relationships
 
-- [Trade Management / Chart Fanatics](Trade_Management_-_Chart_Fanatics.md) (35 shared connections)
-- [Candlesticks & Price Action](Candlesticks_&_Price_Action.md) (35 shared connections)
-- [Smart Money / ICT & Liquidity](Smart_Money_-_ICT_&_Liquidity.md) (31 shared connections)
+- [Smart Money / ICT & Liquidity](Smart_Money_-_ICT_&_Liquidity.md) (74 shared connections)
+- [Trade Management / Chart Fanatics](Trade_Management_-_Chart_Fanatics.md) (60 shared connections)
 - [The Philosophy of the Relationship](The_Philosophy_of_the_Relationship.md) (29 shared connections)
-- [Indicators & Oscillators](Indicators_&_Oscillators.md) (19 shared connections)
-- [Growth-Stock Momentum (CANSLIM→VCP→EP)](Growth-Stock_Momentum_CANSLIM→VCP→EP.md) (15 shared connections)
-- [Psychology, Plan & Discipline](Psychology,_Plan_&_Discipline.md) (14 shared connections)
-- [Auction Market Theory & Order Flow](Auction_Market_Theory_&_Order_Flow.md) (14 shared connections)
-- [Backtesting, ML & Edge Validation](Backtesting,_ML_&_Edge_Validation.md) (10 shared connections)
-- [Prop-Firm Evaluations & Risk Rules](Prop-Firm_Evaluations_&_Risk_Rules.md) (10 shared connections)
-- [Trend Following & the Turtles](Trend_Following_&_the_Turtles.md) (7 shared connections)
-- [Chart Fanatics Ecosystem](Chart_Fanatics_Ecosystem.md) (6 shared connections)
+- [Multi-Timeframe Analysis](Multi-Timeframe_Analysis.md) (29 shared connections)
+- [Breakout Trading / Mean Reversion](Breakout_Trading_-_Mean_Reversion.md) (21 shared connections)
+- [Backtesting, ML & Edge Validation](Backtesting,_ML_&_Edge_Validation.md) (14 shared connections)
+- [Journal, Review & Metrics](Journal,_Review_&_Metrics.md) (13 shared connections)
+- [Desire To Trade](Desire_To_Trade.md) (11 shared connections)
+- [Psychology, Plan & Discipline](Psychology,_Plan_&_Discipline.md) (10 shared connections)
+- [Efficient Markets Debate](Efficient_Markets_Debate.md) (10 shared connections)
+- [Trading Podcasts](Trading_Podcasts.md) (9 shared connections)
+- [Auction Market Theory & Order Flow](Auction_Market_Theory_&_Order_Flow.md) (9 shared connections)
 
 ## Source Files
 
-- `01_chart-fanatics/catalog.scraped.yaml`
-- `01_chart-fanatics/strategies/marci-silfrain-measured-move.md`
-- `02_podcasts-interviews/landmark-media.scraped.yaml`
 - `02_podcasts-interviews/podcast-episodes.scraped.yaml`
 - `03_legends-authorities/people.yaml`
+- `04_babypips-school-of-pipsology/README.md`
+- `04_babypips-school-of-pipsology/courses/01-preschool.md`
+- `04_babypips-school-of-pipsology/courses/02-kindergarten.md`
+- `04_babypips-school-of-pipsology/courses/03-elementary.md`
+- `04_babypips-school-of-pipsology/courses/04-middle-school.md`
+- `04_babypips-school-of-pipsology/courses/05-summer-school.md`
+- `04_babypips-school-of-pipsology/courses/06-high-school.md`
+- `04_babypips-school-of-pipsology/courses/08-undergraduate-sophomore.md`
 - `05_books-top-100/books.yaml`
 - `05_books-top-100/summaries/technical-analysis-financial-markets.md`
+- `06_mathematics-foundations/lectures.scraped.yaml`
+- `07_concepts/candlestick-patterns.md`
 - `07_concepts/chart-patterns.md`
 - `07_concepts/dow-theory.md`
-- `07_concepts/episodic-pivot.md`
-- `07_concepts/moving-averages.md`
-- `07_concepts/trendlines.md`
-- `07_concepts/vwap.md`
+- `07_concepts/elliott-wave.md`
+- `07_concepts/fibonacci.md`
+- `07_concepts/intermarket-analysis.md`
+- `07_concepts/market-structure.md`
 
 ## Audit Trail
 
-- EXTRACTED: 326 (94%)
-- INFERRED: 20 (6%)
+- EXTRACTED: 489 (96%)
+- INFERRED: 23 (4%)
 - AMBIGUOUS: 0 (0%)
 
 ---

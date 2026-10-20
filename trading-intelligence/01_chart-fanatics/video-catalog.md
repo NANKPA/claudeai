@@ -78,16 +78,16 @@
 |---|---|---|---|---|
 | 1 | [Trading LIVE with a World TOP Ranked Scalper (EXTREME Accuracy)](https://www.youtube.com/watch?v=tvERE-Beu2U) | 4,700,000 | 3:34:10 | `concept_scalping` |
 | 2 | [STEAL This EASY Liquidity TRAP Trading Strategy - $500K+ (PERFECT Sniper Entries)](https://www.youtube.com/watch?v=DAnXM7C16h0) | 1,300,000 | 1:49:37 |  |
-| 3 | [STEAL This SIMPLE Trading Strategy from The WORLD's #2 Futures Trader - Marci Silfrain](https://www.youtube.com/watch?v=AVVM-FyewLg) | 1,100,000 | 1:23:30 |  |
+| 3 | [STEAL This SIMPLE Trading Strategy from The WORLD's #2 Futures Trader - Marci Silfrain](https://www.youtube.com/watch?v=AVVM-FyewLg) | 1,100,000 | 1:23:30 | `strategy_marci_silfrain_measured_move` |
 | 4 | [The SIMPLE $10 Million ICT Blueprint They Don’t Want You To See (Forex Trading Strategy) ](https://www.youtube.com/watch?v=coBMd1vk2Lo) | 1,000,000 | 1:00:28 | `concept_smart_money_concepts` |
-| 5 | [Making $500,000 Using This SIMPLE Futures Strategy - Tori Trades (Simple Breakdown)](https://www.youtube.com/watch?v=VTEQ2fhGLqE) | 872,000 | 1:11:24 |  |
-| 6 | [STEAL This INSANE Simple 90% Win Rate Trading Strategy (1:20+ RR) - TG Capital](https://www.youtube.com/watch?v=ADnslyKOwFE) | 735,000 | 48:16 | `concept_performance_metrics` |
+| 5 | [Making $500,000 Using This SIMPLE Futures Strategy - Tori Trades (Simple Breakdown)](https://www.youtube.com/watch?v=VTEQ2fhGLqE) | 872,000 | 1:11:24 | `strategy_tori_trendline_4h` |
+| 6 | [STEAL This INSANE Simple 90% Win Rate Trading Strategy (1:20+ RR) - TG Capital](https://www.youtube.com/watch?v=ADnslyKOwFE) | 735,000 | 48:16 | `concept_performance_metrics`, `strategy_tg_capital_trident` |
 | 7 | [Worlds BEST NQ Scalper Reveals His A+ Trading Strategy](https://www.youtube.com/watch?v=HNuRp9Z1bMs) | 715,000 | 1:14:44 | `concept_scalping` |
-| 8 | [12 Years of Trading Knowledge in 2 Hours - Umar Ashraf](https://www.youtube.com/watch?v=IUo5AwmsE9A) | 674,000 | 1:59:05 |  |
+| 8 | [12 Years of Trading Knowledge in 2 Hours - Umar Ashraf](https://www.youtube.com/watch?v=IUo5AwmsE9A) | 674,000 | 1:59:05 | `strategy_umar_ashraf_5_stage` |
 | 9 | [The ONE Trading Indicator That Will EXPOSE The Truth About The Markets (PASS Prop Firms)](https://www.youtube.com/watch?v=q_MdVlZ1SH4) | 639,000 | 1:23:03 | `concept_prop_firm_risk_rules` |
 | 10 | [LIVE TRADING - How He Made $40,000+ Trading using OrderFlow (Full Masterclass)](https://www.youtube.com/watch?v=UhkRRqO1gQM) | 486,000 | 3:42:20 |  |
 | 11 | [The ONE Liquidity Trading Pattern That Actually Works (Precise Entries)](https://www.youtube.com/watch?v=T_djSNBmV00) | 472,000 | 1:11:22 |  |
-| 12 | [Worlds BEST Prop Firm Trader Reveals SIMPLE Trading Strategy - Jadecap (Full Breakdown)](https://www.youtube.com/watch?v=8OX-mcSHWhg) | 466,000 | 1:28:23 | `concept_prop_firm_risk_rules` |
+| 12 | [Worlds BEST Prop Firm Trader Reveals SIMPLE Trading Strategy - Jadecap (Full Breakdown)](https://www.youtube.com/watch?v=8OX-mcSHWhg) | 466,000 | 1:28:23 | `concept_prop_firm_risk_rules`, `strategy_jadecap_liquidity_volatility` |
 | 13 | [Options Trading for Beginners: Super Simple - 2 Hour FREE Course](https://www.youtube.com/watch?v=6Bdv-_YUQ0s) | 435,000 | 1:59:54 |  |
 | 14 | [STEAL The 1-Minute Strategy That Made Him $1.8M+ (Works EVERY Session)](https://www.youtube.com/watch?v=KHEQ5g55dQ4) | 419,000 | 1:42:25 |  |
 | 15 | [74% Win Rate Trader Shares His EXACT OrderFlow Strategy ($2M+ Payouts)](https://www.youtube.com/watch?v=hvyf6frvCcA) | 405,000 | 1:33:10 | `concept_performance_metrics`, `concept_prop_firm_risk_rules` |
@@ -97,14 +97,14 @@
 | 19 | [The ONLY Break And Retest Trading Strategy You’ll EVER Need (Step By Step)](https://www.youtube.com/watch?v=SMSqQTBxjc0) | 277,000 | 1:28:07 |  |
 | 20 | [LIVE Trading with a $1M+ Order Flow Trader (INSANE RESULTS)](https://www.youtube.com/watch?v=SQEtBHOJW6I) | 267,000 | 2:51:38 | `concept_order_flow` |
 | 21 | [If You Only Watch One Trading Strategy Video, Make It This](https://www.youtube.com/watch?v=52ZsDmFHqyY) | 250,000 | 1:07:43 |  |
-| 22 | [This SIMPLE ICT Futures Trading Strategy Made Her Over $100,000 - Tanja Trades (Copy This)](https://www.youtube.com/watch?v=PZDWQgtqt2I) | 245,000 | 1:10:18 | `concept_smart_money_concepts` |
+| 22 | [This SIMPLE ICT Futures Trading Strategy Made Her Over $100,000 - Tanja Trades (Copy This)](https://www.youtube.com/watch?v=PZDWQgtqt2I) | 245,000 | 1:10:18 | `concept_smart_money_concepts`, `strategy_tanja_amd_futures` |
 | 23 | [COPY This CRAZY Simple 98% Win Rate Trading Strategy](https://www.youtube.com/watch?v=Jx5cJ_qb31U) | 243,000 | 1:12:19 | `concept_performance_metrics` |
 | 24 | [$100+ Million Trader: His BEST Trading Strategy (Market Wizard)](https://www.youtube.com/watch?v=_qeFh1ADss8) | 241,000 | 1:31:11 |  |
-| 25 | [How To Trade Real Fair Value Gaps with Extreme Accuracy - Carmine Rosato (Full Strategy)](https://www.youtube.com/watch?v=jHsD2-2K_Kk) | 229,000 | 1:14:45 | `concept_fair_value_gap`, `concept_chart_patterns` |
+| 25 | [How To Trade Real Fair Value Gaps with Extreme Accuracy - Carmine Rosato (Full Strategy)](https://www.youtube.com/watch?v=jHsD2-2K_Kk) | 229,000 | 1:14:45 | `concept_fair_value_gap`, `concept_chart_patterns`, `strategy_carmine_rosato_lvn`, `strategy_carmine_rosato_orderflow_masterclass` |
 | 26 | [Master The Mental Game of Trading In 60 Minutes (STOP TILT/FOMO)](https://www.youtube.com/watch?v=8HxT9WQ-uD0) | 221,000 | 1:00:54 | `concept_trading_psychology` |
 | 27 | [COPY This EXACT Entry System to Become a Millionaire Trader](https://www.youtube.com/watch?v=YzYDUEUOZ4k) | 221,000 | 1:06:30 |  |
 | 28 | [PRO Trader Reveals Super Simple Trading Strategy (How The Markets Really Move)](https://www.youtube.com/watch?v=yZpzG8R3Ayk) | 220,000 | 1:20:39 |  |
-| 29 | [Trading $50M At 25 Using One SIMPLE Market Cycle Strategy (4 Stages) - Ted Zhang](https://www.youtube.com/watch?v=VDK200OHNSo) | 209,000 | 1:40:26 |  |
+| 29 | [Trading $50M At 25 Using One SIMPLE Market Cycle Strategy (4 Stages) - Ted Zhang](https://www.youtube.com/watch?v=VDK200OHNSo) | 209,000 | 1:40:26 | `strategy_ted_zhang_stage_analysis` |
 | 30 | [STEAL This INSANE 1-Minute Market Maker Trading Strategy (75% Win Rate)](https://www.youtube.com/watch?v=35cyqDz-ej8) | 193,000 | 2:29:41 | `concept_market_microstructure`, `concept_performance_metrics` |
 | 31 | [If You Only Watch One ICT Trading Video, Make It This (LIVE Trading)](https://www.youtube.com/watch?v=UIGZtoGGPH4) | 185,000 | 1:13:29 | `concept_smart_money_concepts` |
 | 32 | [STEAL This $100 Million Dollar Trading Strategy (Used by Market Wizards)](https://www.youtube.com/watch?v=mDNcx2Dhhms) | 178,000 | 57:14 |  |
@@ -114,7 +114,7 @@
 | 36 | [Verified $5M+ Trader: LIVE Trading Using His EXACT Strategy](https://www.youtube.com/watch?v=70UtrLU6RAg) | 128,000 | 2:09:41 |  |
 | 37 | [Trading Made SIMPLE - Use These 3 Specific Steps To Master Any Market](https://www.youtube.com/watch?v=9D9ck-ZI6V0) | 128,000 | 1:06:40 |  |
 | 38 | [If You Only Watch ONE Market Cycle Trading Video, Make It This (500%+ Champion)](https://www.youtube.com/watch?v=0_NSmOWVbpA) | 115,000 | 48:43 |  |
-| 39 | [COPY These 3 Simple Steps To Master The TREND Trading Futures - Anthony Crudele](https://www.youtube.com/watch?v=EZ_L7zovyrw) | 101,000 | 46:28 |  |
+| 39 | [COPY These 3 Simple Steps To Master The TREND Trading Futures - Anthony Crudele](https://www.youtube.com/watch?v=EZ_L7zovyrw) | 101,000 | 46:28 | `strategy_anthony_crudele_futures_trend` |
 | 40 | [Wall Street's EXACT Formula To Measure FEAR In The Markets (Trade This NOW)](https://www.youtube.com/watch?v=4BgkLlwgpvo) | 96,000 | 1:38:39 |  |
 | 41 | [Simple ONE Candle Trading Strategy Thats Profited Millions (80%+ Win Rate) ](https://www.youtube.com/watch?v=2Ug0jyDvoek) | 80,000 | 2:05:41 | `concept_performance_metrics` |
 | 42 | [Copy this Complete In-Depth 85%+ Win Rate Short Trading Strategy - US Investing Champion](https://www.youtube.com/watch?v=SInAfwX3X3A) | 77,000 | 2:17:11 | `concept_performance_metrics` |
@@ -124,5 +124,5 @@
 | 46 | [4 Institutional Scalping Strategies Market Makers Keep SECRET (Automate Prop Firm Trading)](https://www.youtube.com/watch?v=yW6c0K8uGvw) |  | 1:38:53 | `concept_scalping`, `concept_market_microstructure`, `concept_prop_firm_risk_rules` |
 | 47 | [STEAL This Trading Champion’s Exact Strategy - Math Based Models for Prop Firms](https://www.youtube.com/watch?v=xl4QHqlBCfk) |  | 2:42:09 | `concept_prop_firm_risk_rules` |
 | 48 | [If You Only Watch One Trading Process Video, Make It This](https://www.youtube.com/watch?v=WDdvnd9vLbM) |  | 1:24:45 |  |
-| 49 | [Trading LIVE with TWO World Class Order Flow Scalpers (FT Fabio Valentini & Carmine Rosato)](https://www.youtube.com/watch?v=xUyqIjCfZzg) |  | 3:49:38 | `concept_order_flow`, `concept_scalping` |
+| 49 | [Trading LIVE with TWO World Class Order Flow Scalpers (FT Fabio Valentini & Carmine Rosato)](https://www.youtube.com/watch?v=xUyqIjCfZzg) |  | 3:49:38 | `concept_order_flow`, `concept_scalping`, `strategy_carmine_rosato_lvn`, `strategy_carmine_rosato_orderflow_masterclass`, `strategy_fabio_valentini_amt_order_flow` |
 | 50 | [Trading LIVE with One of the World's BEST Scalpers (PERFECT Sniper Entries)](https://www.youtube.com/watch?v=TvoQr6ObjnU) |  | 5:41:15 | `concept_scalping` |

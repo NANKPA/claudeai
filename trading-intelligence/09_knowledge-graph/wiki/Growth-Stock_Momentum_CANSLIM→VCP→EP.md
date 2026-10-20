@@ -1,50 +1,50 @@
 # Growth-Stock Momentum (CANSLIM→VCP→EP)
 
-> 48 nodes · cohesion 0.08
+> 51 nodes · cohesion 0.09
 
 ## Key Concepts
 
 - **Growth-Stock Momentum (CANSLIM, SEPA, VCP)** (43 connections) — `07_concepts/growth-momentum-canslim.md`
 - **TraderLion Podcast** (38 connections) — `02_podcasts-interviews/podcasts.yaml`
+- **News & Event Trading** (36 connections) — `07_concepts/news-trading.md`
 - **Mark Minervini** (24 connections) — `03_legends-authorities/people.yaml`
-- **Jared Tendler** (18 connections) — `03_legends-authorities/people.yaml`
+- **The 7 Puzzle Pieces to a Profitable Trading System | Ariel Hernandez** (14 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
+- **Episodic Pivot (EP)** (13 connections) — `07_concepts/episodic-pivot.md`
+- **+969% Return in 1 Year: The Winning Pullback Strategy of a Trading Champion** (11 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
+- **How to Spot Relative Strength and Trade the Momentum Cycle | Clement Ang** (11 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
+- **How Clement Ang Achieved 150%+ Returns in the US Investing Championship** (10 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
 - **Jesse Livermore** (10 connections) — `03_legends-authorities/people.yaml`
 - **Oliver Kell** (9 connections) — `03_legends-authorities/people.yaml`
 - **Stan Weinstein** (9 connections) — `03_legends-authorities/people.yaml`
 - **How to Make Money in Stocks** (8 connections) — `05_books-top-100/summaries/how-to-make-money-in-stocks.md`
 - **Trading $100K Into $20 Million With Only One Setup | The VCP Strategy** (8 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
+- **Clement Ang** (8 connections) — `03_legends-authorities/people.yaml`
 - **William J. O'Neil** (8 connections) — `03_legends-authorities/people.yaml`
+- **Secrets for Profiting in Bull and Bear Markets** (7 connections) — `05_books-top-100/books.yaml`
 - **Trade Like a Stock Market Wizard** (7 connections) — `05_books-top-100/books.yaml`
+- **The BEST Prop Traders in the World - The Real Secret to 17M + in Prop Payouts** (7 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
+- **Multiple 100%+ Years After Blowing Out an Account | Sean Ryan** (6 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
 - **Secrets to Profitable Trading from Market Legend Stan Weinstein** (6 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
 - **The Battle for Investment Survival** (5 connections) — `05_books-top-100/books.yaml`
 - **How to Trade in Stocks** (5 connections) — `05_books-top-100/books.yaml`
+- **Stock Market Wizards** (5 connections) — `05_books-top-100/books.yaml`
 - **Think & Trade Like a Champion** (5 connections) — `05_books-top-100/books.yaml`
-- **+259% Top Trader Reveals His Super Performance Strategy** (5 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
-- **+291% Swing Trading in 2023 - The 3 Powerful Setups of a Top Trader** (5 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
-- **Lessons from a Stock Market Wizard with Mark Ritchie II** (5 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
-- **Gerald M. Loeb** (5 connections) — `03_legends-authorities/people.yaml`
-- **Nicolas Darvas** (5 connections) — `03_legends-authorities/people.yaml`
-- **How I Made $2,000,000 in the Stock Market** (4 connections) — `05_books-top-100/books.yaml`
-- **+805% Trading Champion of 2023 Reveals His Powerful Day Trading Setups** (4 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
-- **Interview with Stan Weinstein | Stage Analysis Secrets | The TraderLion Podcast | (Episode 1)** (4 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
-- **Lessons from the Greatest Traders of All Time With John Boik** (4 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
-- **The 10 Principles of Trading with Investing Champion Oliver Kell** (4 connections) — `02_podcasts-interviews/podcast-episodes.scraped.yaml`
-- *... and 23 more nodes in this community*
+- *... and 26 more nodes in this community*
 
 ## Relationships
 
-- [Indicators & Oscillators](Indicators_&_Oscillators.md) (21 shared connections)
-- [Psychology, Plan & Discipline](Psychology,_Plan_&_Discipline.md) (16 shared connections)
-- [Classical Charting & Patterns](Classical_Charting_&_Patterns.md) (15 shared connections)
-- [Trade Management / Chart Fanatics](Trade_Management_-_Chart_Fanatics.md) (14 shared connections)
-- [Position Sizing & Risk](Position_Sizing_&_Risk.md) (10 shared connections)
-- [Risk of Ruin & Drawdown Math](Risk_of_Ruin_&_Drawdown_Math.md) (7 shared connections)
-- [Trading Podcasts](Trading_Podcasts.md) (6 shared connections)
-- [Candlesticks & Price Action](Candlesticks_&_Price_Action.md) (5 shared connections)
-- [Trend Following & the Turtles](Trend_Following_&_the_Turtles.md) (4 shared connections)
-- [Edge](Edge.md) (4 shared connections)
-- [Prop-Firm Evaluations & Risk Rules](Prop-Firm_Evaluations_&_Risk_Rules.md) (4 shared connections)
-- [Trading Plan](Trading_Plan.md) (4 shared connections)
+- [Trade Management / Chart Fanatics](Trade_Management_-_Chart_Fanatics.md) (25 shared connections)
+- [Position Sizing & Risk](Position_Sizing_&_Risk.md) (18 shared connections)
+- [Multi-Timeframe Analysis](Multi-Timeframe_Analysis.md) (16 shared connections)
+- [Breakout Trading / Mean Reversion](Breakout_Trading_-_Mean_Reversion.md) (15 shared connections)
+- [Journal, Review & Metrics](Journal,_Review_&_Metrics.md) (15 shared connections)
+- [Psychology, Plan & Discipline](Psychology,_Plan_&_Discipline.md) (11 shared connections)
+- [Prop-Firm Evaluations & Risk Rules](Prop-Firm_Evaluations_&_Risk_Rules.md) (10 shared connections)
+- [Efficient Markets Debate](Efficient_Markets_Debate.md) (8 shared connections)
+- [Classical Charting & Patterns](Classical_Charting_&_Patterns.md) (8 shared connections)
+- [Tom Basso / Jack D. Schwager](Tom_Basso_-_Jack_D._Schwager.md) (5 shared connections)
+- [Macro, Fundamentals & Reflexivity](Macro,_Fundamentals_&_Reflexivity.md) (5 shared connections)
+- [Smart Money / ICT & Liquidity](Smart_Money_-_ICT_&_Liquidity.md) (5 shared connections)
 
 ## Source Files
 
@@ -55,12 +55,14 @@
 - `05_books-top-100/books.yaml`
 - `05_books-top-100/summaries/how-to-make-money-in-stocks.md`
 - `06_mathematics-foundations/lectures.scraped.yaml`
+- `07_concepts/episodic-pivot.md`
 - `07_concepts/growth-momentum-canslim.md`
+- `07_concepts/news-trading.md`
 
 ## Audit Trail
 
-- EXTRACTED: 211 (100%)
-- INFERRED: 1 (0%)
+- EXTRACTED: 283 (99%)
+- INFERRED: 3 (1%)
 - AMBIGUOUS: 0 (0%)
 
 ---
