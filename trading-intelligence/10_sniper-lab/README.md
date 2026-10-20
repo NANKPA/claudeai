@@ -37,7 +37,7 @@ agree before a trade (Section VIII). Expected value after costs, out of sample, 
 | Configurations positive after costs, out of sample | **0 of 84** | 7 of 44 |
 | Typical result before costs (median, R per trade) | −0.01 | −0.07 |
 | Typical cost (median, R per trade) | 0.32 | 0.03 (plus the spread, paid in the prices) |
-| Pass Gate 4 inside the conditions chosen in-sample | none | 3: Donchian trend 4h (both account types, +0.31R per trade over 112 trades) and VWAP reversion 1h (raw spread, +0.25R over 123) |
+| Pass Gate 4 inside the conditions chosen in-sample | none | 3: Donchian trend 4h (+0.31R per trade on both account types: 112 trades spread-only, 111 raw spread) and VWAP reversion 1h (raw spread, +0.25R over 123) |
 
 **Read the three survivors with care.** With 128 configurations tried, the best one has a
 deflated-Sharpe probability of 0.24 of being real (0.95 is the bar). So the lab marks every record
@@ -52,7 +52,9 @@ What it means for the owner's question:
 - **Wider stops and cheap spreads are where anything survives.** That means 1h and 4h forex and gold,
   on a raw-spread or cent account. There the cost is a few hundredths of 1R.
 - **"Trading every day" and "having an edge" pull against each other.** The survivors trade about 3–4
-  times a month across four markets. The busy setups trade 10–50 times a day and lose the most.
+  times a month across four markets. The busiest setups (the EMA pullback, its limit version and the
+  Donchian model on 5m crypto) trade about 10 times a day per coin, about 30 a day across three coins.
+  They lose the most R per day, because every trade pays the cost.
 
 ## The engine (in the `trading_intelligence` package)
 
