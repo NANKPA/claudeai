@@ -3,7 +3,9 @@
 Discipline (Section XVII: separate developing a hypothesis from evaluating it):
 - Trades are split by time: in-sample (IS) up to `split_date`, out-of-sample (OOS) after it.
 - Which regimes and sessions the setup is allowed in is decided on IS only (n >= `min_cell` and a
-  positive IS mean). OOS trades are then filtered by that IS choice and never used to choose it.
+  positive IS mean, each on its own), and the trades in both a kept regime and a kept session must
+  ALSO be positive in-sample on at least `min_cell` trades. OOS trades are then filtered by that IS
+  choice and never used to choose it.
 - The record handed to the gate is the OOS trades inside the IS-chosen conditions, as net R
   multiples with their average cost; the gate then applies n >= 30, mean - 1 SE and the rest.
 - Every configuration tried is counted, so the report can deflate the best result for the number
@@ -41,8 +43,11 @@ def build_record(trades: pd.DataFrame, setup_key: str, split_date: str, min_cell
     regimes, sessions = choose_conditions(is_t, min_cell)
     is_f = is_t[is_t["regime"].isin(regimes) & is_t["session"].isin(sessions)]
     oos_f = oos_t[oos_t["regime"].isin(regimes) & oos_t["session"].isin(sessions)]
+    # the regimes and the sessions were each chosen on their own; the trades in BOTH must also have
+    # worked in-sample, on enough trades, or the "conditions" were never evidence for this setup
+    combo_ok = len(is_f) >= min_cell and float(is_f["net_r"].mean()) > 0 if len(is_f) else False
     rec = None
-    if regimes and sessions and len(oos_f):
+    if regimes and sessions and combo_ok and len(oos_f):
         st = stats(oos_f)
         rec = {"setup_id": setup_key, "results_r": [round(float(x), 5) for x in oos_f["net_r"]],
                "avg_cost_r": round(float(oos_f["cost_r"].mean()), 5), "out_of_sample": True, "source": "own",
@@ -51,7 +56,7 @@ def build_record(trades: pd.DataFrame, setup_key: str, split_date: str, min_cell
             rec["effective_n"] = effective_n(st)                                 # design effect of same-day clustering
     oos_end = pd.Timestamp(oos_t["signal_time"].max()).isoformat() if len(oos_t) else None
     return {"setup_key": setup_key, "split_date": split_date, "oos_end": oos_end, "valid_regimes": regimes,
-            "valid_sessions": sessions,
+            "valid_sessions": sessions, "conditions_held_in_sample": bool(combo_ok),
             "is": stats(is_f), "is_unfiltered": stats(is_t), "oos": stats(oos_f), "oos_unfiltered": stats(oos_t),
             "record": rec}
 
@@ -97,11 +102,12 @@ def deflated_best(entries: list[dict], key: str = "oos") -> dict:
     """Probability that the best OOS per-trade Sharpe is real after all the trials.
 
     Every configuration tried counts as a trial (including those too thin to judge); the spread of
-    Sharpe ratios across trials comes from the configurations with at least 30 OOS trades."""
+    Sharpe ratios, and the best, come from the configurations that have a record (their conditions held
+    in-sample) and at least 30 effectively independent OOS trades."""
     from .._paths import ensure_tools_on_path
     ensure_tools_on_path()
     import edge_lab as el  # type: ignore
-    ok = [e for e in entries if effective_n(e[key]) >= 30 and e[key].get("sharpe_per_trade") is not None]
+    ok = [e for e in entries if e.get("record") and effective_n(e[key]) >= 30 and e[key].get("sharpe_per_trade") is not None]
     srs = [e[key]["sharpe_per_trade"] for e in ok]
     trials = max(len(entries), len(srs))
     if len(srs) < 2:

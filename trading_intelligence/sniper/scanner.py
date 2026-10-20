@@ -51,7 +51,12 @@ ACCOUNT_COLS = ["exit_time", "trade_id", "key", "symbol", "session", "net_r", "r
 def _venue_symbol(venue: str, sym: str) -> str:
     """BTCUSDT / EURUSD -> the venue's spelling."""
     if venue == "yahoo":
-        return {"XAUUSD": "GC=F", "XAGUSD": "SI=F"}.get(sym, f"{sym}=X")
+        if sym in ("XAUUSD", "XAGUSD"):
+            raise ValueError(f"{sym}: Yahoo has no spot metal, only COMEX futures (a different instrument); feed your "
+                             "broker's own candles with --venue csv --csv-dir <folder> instead")
+        return f"{sym}=X"
+    if venue == "csv":
+        return sym
     base, quote = sym[:-4], sym[-4:]
     return {"coinbase": f"{base}-{'USD' if quote == 'USDT' else quote}", "okx": f"{base}-{quote}",
             "kucoin": f"{base}-{quote}"}.get(venue, sym)
@@ -211,9 +216,15 @@ def forward_record(key: str, lab: dict, forward: list[dict]) -> G.SetupRecord | 
            and x["session"] in set(r["valid_sessions"]) and (end is None or pd.Timestamp(x["signal_time"]) > end)]
     if not fwd:
         return None
-    return G.SetupRecord(setup_id=key, results_r=[float(x["net_r"]) for x in fwd],
-                         avg_cost_r=sum(float(x["cost_r"]) for x in fwd) / len(fwd), out_of_sample=True, source="own",
-                         valid_regimes=r["valid_regimes"], valid_sessions=r["valid_sessions"])
+    df = pd.DataFrame(fwd)
+    for col in ("net_r", "gross_r", "cost_r", "stop_pct"):
+        df[col] = df[col].astype(float)
+    for col in ("signal_time", "entry_time", "exit_time"):
+        df[col] = pd.to_datetime(df[col], utc=True)
+    n_eff = rec.effective_n(rec.stats(df))                  # same-day forward trades count as fewer, as in the lab
+    return G.SetupRecord(setup_id=key, results_r=df["net_r"].tolist(), avg_cost_r=float(df["cost_r"].mean()),
+                         out_of_sample=True, source="own", valid_regimes=r["valid_regimes"],
+                         valid_sessions=r["valid_sessions"], effective_n=n_eff if n_eff < len(df) else None)
 
 
 def trade_id_for(key: str, symbol: str, sig: Signal) -> str:
@@ -257,6 +268,9 @@ class Scanner:
                              "markets; scan them separately with their own --fees")
         for x in a.symbols:
             point_value(x, 1.0)                                  # refuse crosses up front
+            _venue_symbol(a.venue, x)                            # and markets this feed cannot supply faithfully
+        if a.venue == "csv":
+            os.environ["TI_CSV_DIR"] = str(a.csv_dir or "")
         self.spread = FX_SPREAD.get(a.fees, 0.0) if a.fees in FEE_MARKET and FEE_MARKET[a.fees] == "fx" else 0.0
         self.lab = rec.load(a.records) if Path(a.records).exists() else {}
         limits_file = os.environ.get("TI_LIMITS_FILE")
@@ -404,8 +418,8 @@ class Scanner:
             entry = self.lab.get(key, {})
             if entry.get("provisional"):          # chosen from many trials: only clean forward trades may confirm it
                 live = self.gate.evaluate(t, forward_record(key, self.lab, forward), acct)
-                if live.action == "take":
-                    self.hand_off(sig, tid, key, sym, tf, d)
+                if live.action == "take":                 # sized on the clean forward evidence, not the combined record
+                    self.hand_off(sig, tid, key, sym, tf, live)
                 else:
                     why_live = next((g.detail for g in live.gates if g.status != "pass"), "")
                     self.journal.record_outcome(tid, lesson="paper only: the record is provisional (chosen out of many "
@@ -488,7 +502,9 @@ def report(home: Path, equity0: float) -> str:
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(prog="sniper scan")
     ap.add_argument("--venue", default="binance", help="candle source: binance (public data API), coinbase, kraken, okx, "
-                                                       "kucoin; yahoo for forex and gold (EURUSD, XAUUSD ...)")
+                                                       "kucoin; yahoo for forex pairs; csv for your broker's own candles")
+    ap.add_argument("--csv-dir", default=None, help="with --venue csv: folder of <SYMBOL>_<tf>.csv files (time,open,high,"
+                                                    "low,close[,volume]; time = bar OPEN, UTC), written by your bot")
     ap.add_argument("--symbols", nargs="+", default=["BTCUSDT", "ETHUSDT", "SOLUSDT"])
     ap.add_argument("--timeframes", nargs="+", default=["15m", "1h"])
     ap.add_argument("--setups", nargs="+", default=sorted(SETUPS))

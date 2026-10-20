@@ -1,9 +1,9 @@
 {
  "trials": 128,
- "judged": 12,
- "best": "trend_donchian_breakout@4h@fx_std",
- "best_sharpe_per_trade": 0.1782,
- "best_n": 112,
- "best_effective_n": 112,
- "deflated_sharpe_prob": 0.2361
+ "judged": 9,
+ "best": "sniper_vwap_reversion@1h@fx_raw",
+ "best_sharpe_per_trade": 0.1559,
+ "best_n": 123,
+ "best_effective_n": 123,
+ "deflated_sharpe_prob": 0.3533
 }

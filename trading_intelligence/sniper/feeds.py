@@ -216,6 +216,16 @@ def latest(venue: str, symbol: str, interval: str = "5m", limit: int = 300) -> p
     elif v == "binance":
         data = json.loads(_get(f"https://data-api.binance.vision/api/v3/klines?symbol={symbol}&interval={interval}&limit={min(limit, 1000)}"))
         df = _frame([[r[0], r[1], r[2], r[3], r[4], r[5]] for r in data], "ms")
+    elif v == "csv":
+        folder = Path(os.environ.get("TI_CSV_DIR", "."))
+        raw = pd.read_csv(folder / f"{symbol}_{interval}.csv")
+        tcol = raw.columns[0]
+        t = pd.to_datetime(raw[tcol], utc=True)
+        df = pd.DataFrame({"open": raw["open"], "high": raw["high"], "low": raw["low"], "close": raw["close"],
+                           "volume": raw["volume"] if "volume" in raw else 0.0}).astype(float)
+        df.index = t
+        df = df[~df.index.duplicated(keep="last")].sort_index()
+        return _closed(df[(df[["open", "high", "low", "close"]] > 0).all(axis=1)], interval).tail(limit)
     elif v == "yahoo":
         if interval == "4h":                                   # Yahoo has no 4h bars: build them from 1h
             return _closed(resample(latest("yahoo", symbol, "1h", limit=100000), "4h"), "4h").tail(limit)
@@ -264,6 +274,8 @@ def recent(venue: str, symbol: str, interval: str = "5m", days: float = 35) -> p
                 parts.append(_frame([[r[0], r[3], r[2], r[1], r[4], r[5]] for r in data], "s"))
             t = end
             time.sleep(0.15)                                       # public rate limit
+    elif v == "csv":
+        return latest("csv", symbol, interval, limit=int(days * 86400 // sec) + 1)
     else:
         return latest(venue, symbol, interval, limit=1000)
     if not parts:

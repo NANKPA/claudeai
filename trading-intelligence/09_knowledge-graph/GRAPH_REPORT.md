@@ -1,7 +1,7 @@
 # Graph Report - trading-intelligence  (2026-10-20)
 
 ## Corpus Check
-- Large corpus: 280 files · ~1,138,342 words. Semantic extraction will be expensive (many Claude tokens). Consider running on a subfolder.
+- Large corpus: 285 files · ~1,162,603 words. Semantic extraction will be expensive (many Claude tokens). Consider running on a subfolder.
 
 ## Summary
 - 1191 nodes · 6219 edges · 35 communities (34 shown, 1 thin omitted)

@@ -99,9 +99,9 @@ Also open:
 
 - Graph: 1,191 nodes, 6,219 edges, 35 communities; the philosophy is its own community, ranked #1
   by PageRank and betweenness, and the explorer's start node. 14 codified setups are graph nodes.
-- Sniper lab: 128 backtested configurations. Crypto 0 of 84 positive after costs. Forex/gold:
-  three pass Gate 4, all provisional (deflated-Sharpe probability 0.24): paper only until forward
-  trades confirm them (`trading-intelligence/10_sniper-lab/README.md`).
+- Sniper lab: 128 backtested configurations. Crypto 0 of 84 positive after costs. Forex/gold: one
+  passes Gate 4 (VWAP reversion 1h, raw spread), provisional (deflated-Sharpe probability 0.35): paper
+  only until its forward trades confirm it (`trading-intelligence/10_sniper-lab/README.md`).
 - 836 verified philosophy links (865 proposed, 31 refuted), 47 playbooks graded against the 12
   principles (blind re-grade kappa 0.94), 7 evidence-lab studies, 20 hypotheses, 18 extensions.
 - Hosted explorer: https://claude.ai/artifact/87RR4yVQKDBFdQ9GpwheF3 (private to your account).

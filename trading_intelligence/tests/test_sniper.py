@@ -186,7 +186,7 @@ def _scanner(tmp_path, lab, **kw):
                            maker=None, taker=None, slippage=None, equity=20.0, risk_pct=1.0, lot_step=0.000001,
                            min_notional=0.0, max_leverage=50.0, style="intraday", state="calm",
                            records=str(tmp_path / "none.json"), home=str(tmp_path / "home"), once=True, report=False,
-                           on_take=None)
+                           on_take=None, csv_dir=None)
     for k, v in kw.items():
         setattr(a, k, v)
     sc = Scanner(a)
@@ -510,3 +510,35 @@ def test_a_provisional_record_trades_on_paper_but_is_not_handed_off_until_forwar
     handed = out.read_text().splitlines() if out.exists() else []
     assert len(handed) < len(takes)                                      # but not every take goes live
     assert any("provisional" in r["lesson"] for r in sc.journal.rows())
+
+
+def test_conditions_whose_combination_lost_in_sample_give_no_record():
+    times = pd.date_range("2023-01-01", periods=480, freq="9h", tz="UTC")
+    regime = np.where(np.arange(480) % 2, "trend_high_vol", "range_low_vol")
+    session = np.where(np.arange(480) % 4 < 2, "london", "asia")
+    t = pd.DataFrame({"signal_time": times, "entry_time": times, "exit_time": times + pd.Timedelta("1h"),
+                      "regime": regime, "session": session, "gross_r": 0.0, "cost_r": 0.0, "stop_pct": 0.01})
+    # trend_high_vol is good on its own and london is good on its own, but trend x london loses
+    good_r, good_s = t["regime"] == "trend_high_vol", t["session"] == "london"
+    # alone: trend +0.25, range -0.4, london +0.35, asia -0.5; together trend x london = -0.5
+    t["net_r"] = np.select([good_r & good_s, good_r, good_s], [-0.5, 1.0, 1.2], -2.0)
+    e = rec.build_record(t, "k", "2023-04-15")
+    assert e["valid_regimes"] == ["trend_high_vol"] and e["valid_sessions"] == ["london"]
+    assert e["conditions_held_in_sample"] is False and e["record"] is None
+
+
+def test_csv_venue_reads_the_brokers_own_closed_candles(tmp_path, monkeypatch):
+    from trading_intelligence.sniper.feeds import latest
+    df = _walk(50, freq="1h", start="2024-01-01")
+    out = df.reset_index().rename(columns={"index": "time"})
+    out.to_csv(tmp_path / "XAUUSD_1h.csv", index=False)
+    monkeypatch.setenv("TI_CSV_DIR", str(tmp_path))
+    got = latest("csv", "XAUUSD", "1h", limit=10)
+    assert len(got) == 10 and got.index[-1] == df.index[-1]
+
+
+def test_yahoo_gold_is_refused_because_it_is_futures():
+    from trading_intelligence.sniper.scanner import _venue_symbol
+    with pytest.raises(ValueError):
+        _venue_symbol("yahoo", "XAUUSD")
+    assert _venue_symbol("yahoo", "EURUSD") == "EURUSD=X" and _venue_symbol("csv", "XAUUSD") == "XAUUSD"

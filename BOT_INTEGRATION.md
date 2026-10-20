@@ -113,8 +113,8 @@ The package also contains a scanner that finds the setups by itself and runs eac
 ```bash
 python -m trading_intelligence.sniper size --equity 20 --risk-pct 1        # any account size: cost in R per venue
 python -m trading_intelligence.sniper scan --equity 20 --risk-pct 1 --fees low --min-notional 1   # crypto, loops
-python -m trading_intelligence.sniper scan --venue yahoo --symbols EURUSD XAUUSD --timeframes 1h 4h \
-       --fees fx_std --lot-step 10 --min-notional 11.5 --max-leverage 30                          # forex / gold
+python -m trading_intelligence.sniper scan --venue csv --csv-dir ~/bot/candles --symbols EURUSD XAUUSD \
+       --timeframes 1h 4h --fees fx_raw --lot-step 10 --min-notional 11.5 --max-leverage 30       # forex / gold
 python -m trading_intelligence.sniper scan --report                        # forward (shadow) and account results
 ```
 
@@ -123,6 +123,11 @@ python -m trading_intelligence.sniper scan --report                        # for
   (`forward.csv`): that forward record is added to the setup's evidence, so a setup that starts working
   in new data can earn its way through Gate 4.
 - Only gate **takes** reach the paper account (`account.csv`), sized by Gate 6 for your equity.
+- For forex and gold, have your bot write its broker's closed candles to `<csv-dir>/<SYMBOL>_<tf>.csv`
+  (`time,open,high,low,close,volume`, time = bar open in UTC) and use `--venue csv`: the forward record
+  then comes from the prices you actually trade. Yahoo has forex pairs but no spot gold.
+- Records chosen out of many backtests are **provisional**: a take is handed to `--on-take` only when
+  the gate also says take on the setup's forward trades alone (see `10_sniper-lab/backtest-report.md`).
 - Gate 0 reads your state from `~/.trading-intelligence/sniper-paper/state.txt` on every pass: write
   `tired` and risk halves, `frustrated` and it stands aside.
 - **To trade for real**, pass `--on-take "python my_bot_order.py"`: the scanner calls your own order code

@@ -84,30 +84,30 @@ Number of direct links from philosophy nodes into each community.
 | Journal, Review & Metrics | 27 |
 | Trade Management / Chart Fanatics | 27 |
 | Efficient Markets Debate | 20 |
-| Backtesting, ML & Edge Validation | 19 |
 | Smart Money / ICT & Liquidity | 19 |
+| Backtesting, ML & Edge Validation | 19 |
 | Microstructure & Optimal Execution | 17 |
-| Position Sizing & Risk | 10 |
 | Classical Charting & Patterns | 10 |
+| Position Sizing & Risk | 10 |
 | Auction Market Theory & Order Flow | 9 |
 | Multi-Timeframe Analysis | 7 |
 | Trend Following & the Turtles | 6 |
-| Kelly, Sizing & Money Management | 5 |
 | Probability, Expectancy & Fat Tails | 5 |
+| Kelly, Sizing & Money Management | 5 |
 | Psychology, Plan & Discipline | 4 |
 | Probability & Statistics | 4 |
 | Reflexivity | 3 |
 | Macro, Fundamentals & Reflexivity | 3 |
 | Breakout Trading / Mean Reversion | 3 |
 | Edge | 2 |
-| Top Traders Unplugged | 1 |
-| Growth-Stock Momentum (CANSLIM→VCP→EP) | 1 |
-| Leverage, Margin, Pips & Lots | 1 |
-| Trading Podcasts | 1 |
-| Stochastic Calculus, Options & Derivatives | 1 |
-| Correlation & Portfolio Risk | 1 |
-| Risk, Sizing & Portfolio Mathematics | 1 |
 | Prop-Firm Evaluations & Risk Rules | 1 |
+| Growth-Stock Momentum (CANSLIM→VCP→EP) | 1 |
+| Top Traders Unplugged | 1 |
+| Correlation & Portfolio Risk | 1 |
+| Stochastic Calculus, Options & Derivatives | 1 |
+| Leverage, Margin, Pips & Lots | 1 |
+| Risk, Sizing & Portfolio Mathematics | 1 |
+| Trading Podcasts | 1 |
 
 ## What the philosophy pulls in most (personalised PageRank)
 

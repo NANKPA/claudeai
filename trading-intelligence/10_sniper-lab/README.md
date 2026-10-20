@@ -21,40 +21,55 @@ agree before a trade (Section VIII). Expected value after costs, out of sample, 
 
 ## What the lab found (2026-10-20)
 
-128 configurations: 14 setups × markets × timeframes × cost levels. The setups were chosen and filtered on
-2022–2023 and judged on 2024 to September 2026. Coverage:
+**What ran.** 128 configurations. A configuration is one setup on one timeframe at one cost level,
+pooled across its markets:
 
-- **Crypto:** BTC, ETH and SOL on 5m, and BTC and ETH on 15m, at three fee levels (0.08/0.10%, 0/0.05%
-  and 0/0.02%). The owner stopped the crypto run at that point. BNB, XRP and the 1h/4h crypto
-  timeframes were not run.
-- **Forex and gold:** EUR/USD, GBP/USD, USD/JPY and XAU/USD on 1h and 4h, at two account types:
-  spread-only at about 1.3 pips, and raw spread at about 0.15 pip plus commission. Intraday forex
-  (5m/15m) needs minute history, and the free archive throttles cloud servers, so run it at home
+- **Crypto:** 14 setups × 2 timeframes × 3 fee levels, 84 in all. The three fee levels re-price the
+  same trades. Data: BTC and ETH on 5m and 15m, SOL on 5m only. The owner stopped the crypto run there,
+  so BNB, XRP and 1h/4h crypto were not run.
+- **Forex and gold:** 11 setups × 2 timeframes × 2 account types, 44 in all. Data: EUR/USD, GBP/USD,
+  USD/JPY and XAU/USD on 1h and 4h. The other three setups only work intraday and were not run here.
+  Intraday forex (5m/15m) needs minute history that throttles cloud servers; run it at home
   (HANDOFF.md).
+
+Allowed regimes and sessions were chosen on 2022–2023. The trades in both a kept regime and a kept
+session also had to be positive in-sample. Everything was then judged on 2024 to September 2026. Those
+same years were used afterwards to see which configurations pass, which is why the multiple-testing
+check matters.
 
 | | Crypto | Forex and gold |
 |---|---|---|
 | Configurations positive after costs, out of sample | **0 of 84** | 7 of 44 |
-| Typical result before costs (median, R per trade) | −0.01 | −0.07 |
-| Typical cost (median, R per trade) | 0.32 | 0.03 (plus the spread, paid in the prices) |
-| Pass Gate 4 inside the conditions chosen in-sample | none | 3: Donchian trend 4h (+0.31R per trade on both account types: 112 trades spread-only, 111 raw spread) and VWAP reversion 1h (raw spread, +0.25R over 123) |
+| Typical result (median, R per trade) | −0.01 before fees | −0.07 after the spread, before commission |
+| Typical cost (median, R per trade) | 0.32 in fees | about 0.10 on a spread-only account and 0.06 on raw spread, spread included |
+| Pass Gate 4 inside conditions that held in-sample | none | **1:** VWAP reversion 1h, raw-spread account, +0.25R per trade over 123 trades |
 
-**Read the three survivors with care.** With 128 configurations tried, the best one has a
-deflated-Sharpe probability of 0.24 of being real (0.95 is the bar). So the lab marks every record
-*provisional*. The scanner paper-trades these setups through the gate, but hands a trade to your bot's
-order code only when the setup's **forward** trades alone pass Gate 4. Forward trades are the signals
-after the lab's data ends, so they played no part in choosing the setup.
+**The one that passes is not proven.** With 128 configurations tried, its deflated-Sharpe probability
+of being real is 0.35 (0.95 is the bar). It was positive in each year: 2024 +0.24R, 2025 +0.22R and
+2026 +0.29R per trade. Gold and GBP/USD carried it, while USD/JPY was flat. Its 5 best trades are 66% of
+the total. On a spread-only or cent account at about 1.3 pips it makes only +0.12R, with a t of 0.8,
+and fails. So the record is *provisional*. The scanner paper-trades it through the gate. It hands a
+trade to your bot's order code only when the full gate, run on the setup's **forward** trades alone,
+also says take. Forward trades are the signals after the lab's data, so they played no part in choosing
+the setup. At about 3–4 trades a month, 30 forward trades take many months.
 
 What it means for the owner's question:
 
-- **Precise 5-minute crypto entries do not pay at any fee level found.** Before costs they average
-  about zero. After costs they lose, because a 0.2–0.3% stop makes even a 0.02% fee a real share of 1R.
-- **Wider stops and cheap spreads are where anything survives.** That means 1h and 4h forex and gold,
-  on a raw-spread or cent account. There the cost is a few hundredths of 1R.
-- **"Trading every day" and "having an edge" pull against each other.** The survivors trade about 3–4
+- **Precise 5-minute crypto entries do not pay at any fee level found.** The median result before fees
+  is about zero, and four setups lose 0.14–0.24R per trade even before fees. Only the EMA pullback with
+  a market entry shows a gross edge that held out of sample: +0.035R per trade, against 0.27R of cost
+  on the cheapest venue found.
+- **The cost in R decides.** It is the round-trip cost divided by the stop distance. Tight stops pay
+  for themselves only where the round trip is tiny, as on raw-spread forex accounts. The one survivor
+  has tight stops (median 0.11%) and works only at raw-spread cost, about 0.10R per trade.
+- **"Trading every day" and "having an edge" pull against each other.** The survivor trades about 3–4
   times a month across four markets. The busiest setups (the EMA pullback, its limit version and the
   Donchian model on 5m crypto) trade about 10 times a day per coin, about 30 a day across three coins.
-  They lose the most R per day, because every trade pays the cost.
+  They lose the most R per day, because every trade pays the cost. The tight-stop setups lose the most
+  per trade.
+- **Known limits** (listed at the end of `backtest-report.md`). Targets fill on a touch, and the forex
+  spread is modelled. Together they can only flatter results. Forward evidence must come from data
+  like the lab's: use `--venue csv` with your broker's own candles. Yahoo has no spot gold.
 
 ## The engine (in the `trading_intelligence` package)
 
@@ -63,8 +78,8 @@ pip install "trading-intelligence[mcp] @ git+https://github.com/NANKPA/claudeai.
 
 python -m trading_intelligence.sniper size --equity 20 --risk-pct 1      # what a stop costs, venue by venue
 python -m trading_intelligence.sniper scan --fees low --min-notional 1   # live crypto scan, paper only
-python -m trading_intelligence.sniper scan --venue yahoo --symbols EURUSD GBPUSD USDJPY XAUUSD \
-       --timeframes 1h 4h --fees fx_raw --lot-step 10 --min-notional 11.5 --max-leverage 30   # forex/gold
+python -m trading_intelligence.sniper scan --venue csv --csv-dir ~/bot/candles --symbols EURUSD GBPUSD USDJPY XAUUSD \
+       --timeframes 1h 4h --fees fx_raw --lot-step 10 --min-notional 11.5 --max-leverage 30   # forex/gold, broker candles
 python -m trading_intelligence.sniper scan --report                      # forward results so far
 python -m trading_intelligence.sniper lab                                # re-run every backtest (about an hour)
 ```

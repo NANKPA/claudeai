@@ -186,7 +186,8 @@ def main(argv=None) -> int:
                          "oos_all_mean_cost_r": e["oos_unfiltered"].get("mean_cost_r"),
                          "oos_all_per_day": e["oos_unfiltered"].get("per_day"),
                          "median_stop_pct": e["oos_unfiltered"].get("median_stop_pct"),
-                         "valid_regimes": " ".join(e["valid_regimes"]), "valid_sessions": " ".join(e["valid_sessions"])})
+                         "valid_regimes": " ".join(e["valid_regimes"]), "valid_sessions": " ".join(e["valid_sessions"]),
+                         "conditions_held": bool(e.get("conditions_held_in_sample"))})
             for sym, gs in g.groupby("symbol"):
                 es = rec.build_record(gs, f"{key}:{sym}", a.split)
                 rows.append({"key": f"{key}:{sym}", "scope": "market", "market": FEE_MARKET[fee_name], "setup": setup,
@@ -204,7 +205,7 @@ def main(argv=None) -> int:
         e["deflated_sharpe_prob_best"] = deflated.get("deflated_sharpe_prob")
     rec.save(entries, out / "records.json")
     (out / "deflated.json").write_text(json.dumps(deflated, indent=1))
-    write_report(summary, entries, deflated, a, out)
+    write_report(summary, entries, deflated, a, out, trades)
     write_setups_registry(summary, out.parent / "setups.yaml")
     print(summary[summary["scope"] == "pooled"][["key", "is_n", "is_mean_net_r", "oos_n", "oos_mean_net_r", "oos_t",
                                                  "oos_mean_cost_r", "oos_per_day"]].to_string(index=False))
@@ -212,28 +213,72 @@ def main(argv=None) -> int:
     return 0
 
 
-def write_report(summary: pd.DataFrame, entries: list[dict], deflated: dict, a, out: Path) -> None:
+def _coverage(trades: pd.DataFrame) -> list[str]:
+    """What actually ran, read from the trades (not from the command line)."""
+    out = []
+    for mk, src in (("crypto", "Binance spot archive"), ("fx", "Dukascopy BID candles")):
+        t = trades[trades["market"] == mk]
+        if t.empty:
+            continue
+        per = t.groupby("symbol")["timeframe"].agg(lambda x: "/".join(sorted(set(x), key=lambda v: INTERVAL_SECONDS[v])))
+        start, end = t["signal_time"].min(), t["exit_time"].max()
+        out.append(f"{'Crypto' if mk == 'crypto' else 'Forex and gold'} ({src}): "
+                   + ", ".join(f"{sym} {tfs}" for sym, tfs in per.items())
+                   + f"; signals {start:%Y-%m-%d} to {end:%Y-%m-%d}")
+    return out
+
+
+def _breakdown(trades: pd.DataFrame, e: dict) -> list[str]:
+    """Per-year and per-market results of a passing record's out-of-sample trades, so a result carried
+    by one market or one year is visible."""
+    t = trades[(trades["setup"] == e["setup"]) & (trades["timeframe"] == e["timeframe"])
+               & (trades["market"] == FEE_MARKET[e["fees"]])]
+    if FEE_MARKET[e["fees"]] == "fx":
+        t = t[t["sim"] == e["fees"]]
+    t = recost(t, FEES[e["fees"]])
+    t = t[(t["signal_time"] >= pd.Timestamp(e["split_date"], tz="UTC")) & t["regime"].isin(e["valid_regimes"])
+          & t["session"].isin(e["valid_sessions"])]
+    if t.empty:
+        return []
+    rows = []
+    for name, g in list(t.groupby(t["signal_time"].dt.year)) + list(t.groupby("symbol")):
+        rows.append(f"{name}: {len(g)} trades, {g['net_r'].mean():+.3f}R, total {g['net_r'].sum():+.1f}R")
+    top5 = t["net_r"].nlargest(5).sum() / t["net_r"].sum() if t["net_r"].sum() > 0 else float("nan")
+    tail = f"; the 5 best trades are {top5:.0%} of the total" if top5 == top5 else ""
+    return [f"  - by year and market: " + "; ".join(rows) + tail]
+
+
+def write_report(summary: pd.DataFrame, entries: list[dict], deflated: dict, a, out: Path,
+                 trades: pd.DataFrame | None = None) -> None:
     pooled = summary[summary["scope"] == "pooled"].sort_values(["market", "fees", "timeframe", "setup"])
-    passing = [e for e in entries if rec.effective_n(e["oos"]) >= 30 and e["oos"].get("se")
+    passing = [e for e in entries if e.get("record") and rec.effective_n(e["oos"]) >= 30 and e["oos"].get("se")
                and e["oos"]["mean_net_r"] - max(e["oos"]["se"], e["oos"].get("se_day") or 0) > 0]
     when = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    syms = sorted(set(summary.get("key", pd.Series(dtype=str)).str.split(":").str[1].dropna()))
+    cov = _coverage(trades) if trades is not None else []
     L = ["---", "id: synthesis_sniper_backtests", "type: synthesis",
          'title: "Sniper Lab — backtests of the codified sniper entries (in-sample vs out-of-sample)"',
          "partition: 10_sniper-lab", "layer: L8",
          "related: [synthesis_sniper_entries, synthesis_small_account_venues, synthesis_evidence_lab, framework_decision_protocol, philosophy_relationship]",
          "status: computed", "---", "",
          "# Sniper Lab — backtests", "",
-         f"> Generated {when} by `python -m trading_intelligence.sniper lab`. Markets: {', '.join(syms)} (crypto: Binance spot "
-         "archive; forex and gold: Dukascopy BID candles). "
-         f"Timeframes: {', '.join(a.timeframes)}. Period {a.start} to {a.end or 'last full month'}. Rules and the allowed "
-         f"regimes/sessions are chosen on data before {a.split} and judged only on data after it. Fills are conservative "
-         "(a limit fills only when price trades at or through it; when stop and target share a bar the stop counts). "
-         "Education and research, not a trading signal.", "",
-         "## Cost levels (per side, fraction of price)", "",
-         "| Level | Market | Resting limit | Market order / stop | Extra slippage on stops |", "|---|---|---|---|---|"]
+         f"> Generated {when} by `python -m trading_intelligence.sniper lab`. Education and research, not a trading signal.", ""]
+    L += ["**What ran.** " + " ".join(f"{c}." for c in cov), "",
+          f"**Method.** Allowed regimes and sessions are chosen on signals before {a.split} (in-sample); the trades in a "
+          "kept regime AND a kept session must also have been positive in-sample. Everything is then judged on signals "
+          f"from {a.split} on (out-of-sample). Each configuration (setup × timeframe × cost level) pools its markets. "
+          "The three crypto fee levels are the same trades re-priced; each forex account type is its own simulation.", "",
+          "**Fills.** A market entry fills at the next bar's open. A resting limit entry fills only when price trades "
+          "THROUGH it (a touch is not a fill). On later bars, when the stop and the target fall in the same bar, the stop "
+          "counts; a bar that opens beyond the stop exits at that open. On the fill bar the stop is checked first, and a "
+          "bar that closes beyond the target exits at the target. A target fills on a TOUCH at the target price and pays "
+          "the maker fee: that assumes queue priority and is the one optimistic rule (see Known limits). R is measured "
+          "on the planned risk, the risk the gate sizes on.", "",
+          "## Cost levels (fraction of price)", "",
+          "| Level | Market | Resting limit (per side) | Market order / stop (per side) | Slippage on market entries, stops, time exits | Spread per round trip (paid in the prices) |",
+          "|---|---|---|---|---|---|"]
     for name, c in FEES.items():
-        L.append(f"| {name} | {FEE_MARKET[name]} | {c.maker_fee:.4%} | {c.taker_fee:.4%} | {c.slippage:.4%} |")
+        sp = FX_SPREAD.get(name, 0.0)
+        L.append(f"| {name} | {FEE_MARKET[name]} | {c.maker_fee:.4%} | {c.taker_fee:.4%} | {c.slippage:.4%} | {sp:.4%} |")
     for mk, title in (("crypto", "Crypto"), ("fx", "Forex and gold")):
         pm = pooled[pooled["market"] == mk]
         if pm.empty:
@@ -241,8 +286,10 @@ def write_report(summary: pd.DataFrame, entries: list[dict], deflated: dict, a, 
         note = ("IS = in-sample (before the split), OOS = out-of-sample. Gross R is before fees; net R is after fees and "
                 "slippage at that level." if mk == "crypto" else
                 "IS = in-sample (before the split), OOS = out-of-sample. The candles are bid prices and every buy pays the "
-                "ask, so **gross R is already after the spread**; the cost column is commission plus slippage only. "
-                "fx_std = spread-only account (about 1.3 pips), fx_raw = raw spread (about 0.15 pip) plus commission.")
+                "ask, so **gross R is already after the spread** (it changes with the account type); the cost column is "
+                "commission plus slippage only. The ask is modelled as bid × (1 + spread): 0.012% on fx_std (about 1.4 pips "
+                "on EUR/USD, 1.8 on USD/JPY, $0.40 on gold) and 0.0015% on fx_raw (about 0.17 pip, 0.23 pip, $0.05), the "
+                "same fraction for every market and hour, with no widening at rollover or news.")
         L += ["", f"## {title}: every trade, pooled across markets", "", note, "",
               "| Setup | TF | Costs | OOS trades/day | Stop % | IS gross R | OOS gross R | OOS cost R | OOS net R |",
               "|---|---|---|---|---|---|---|---|---|"]
@@ -251,41 +298,54 @@ def write_report(summary: pd.DataFrame, entries: list[dict], deflated: dict, a, 
                      f"{_f((r.get('median_stop_pct') or 0) * 100, 2)} | {_f(r.get('is_all_mean_gross_r'))} | "
                      f"{_f(r.get('oos_all_mean_gross_r'))} | {_f(r.get('oos_all_mean_cost_r'))} | {_f(r.get('oos_all_mean_net_r'))} |")
     L += ["", "## Inside the conditions chosen in-sample (the record the gate reads)", "",
-          "Only regimes and sessions that were positive after costs in-sample (at least 20 trades each) are kept; the "
-          "out-of-sample trades inside them are the evidence.", "",
-          "| Setup | TF | Costs | Allowed regimes | Allowed sessions | IS n | IS net R | OOS n | OOS net R | OOS t | OOS t (by day) |",
-          "|---|---|---|---|---|---|---|---|---|---|---|"]
+          "A regime and a session are each kept when, on their own, they were positive after costs in-sample on at least "
+          "20 trades. The trades in both a kept regime and a kept session must then also be positive in-sample on at "
+          "least 20 trades (\"held\"); only then is there a record. The out-of-sample trades inside the conditions are "
+          "the evidence.", "",
+          "| Setup | TF | Costs | Allowed regimes | Allowed sessions | IS n | IS net R | Held | OOS n | OOS net R | OOS t | OOS t (by day) |",
+          "|---|---|---|---|---|---|---|---|---|---|---|---|"]
     chosen = pooled[pooled["is_n"].fillna(0) > 0]
     for _, r in chosen.iterrows():
         L.append(f"| {r['setup']} | {r['timeframe']} | {r['fees']} | {r.get('valid_regimes') or '-'} | "
                  f"{r.get('valid_sessions') or '-'} | {int(r.get('is_n') or 0)} | {_f(r.get('is_mean_net_r'))} | "
+                 f"{'yes' if r.get('conditions_held') else 'no'} | "
                  f"{int(r.get('oos_n') or 0)} | {_f(r.get('oos_mean_net_r'))} | {_f(r.get('oos_t'), 2)} | {_f(r.get('oos_t_day'), 2)} |")
     if chosen.empty:
-        L.append("| (none: no regime and session was positive after costs in-sample) | | | | | | | | | | |")
+        L.append("| (none: no regime and session was positive after costs in-sample) | | | | | | | | | | | |")
     L += ["", "## What passes the owner's gate", ""]
     if passing:
         L += [f"{len(passing)} configuration(s) have at least 30 effectively independent out-of-sample trades and mean - 1 SE "
               "> 0 after costs, with the SE clustered by day as well as per trade (Gate 4's math score of 2). The scanner's "
               "gate can take only these:", ""]
-        L += [f"- `{e['setup_key']}`: OOS n {e['oos']['n']} (effective {rec.effective_n(e['oos'])}), "
-              f"{e['oos']['mean_net_r']:+.3f}R per trade (SE {max(e['oos']['se'], e['oos'].get('se_day') or 0):.3f}), "
-              f"{e['oos']['per_day']:.2f} trades/day, regimes {', '.join(e['valid_regimes'])}, sessions "
-              f"{', '.join(e['valid_sessions'])}" for e in passing]
+        distinct = len({(e["setup"], e["timeframe"], FEE_MARKET[e["fees"]]) for e in passing})
+        if distinct < len(passing):
+            L += [f"These are {distinct} distinct strategies: the same setup and timeframe at two cost levels shares most "
+                  "of its trades, so it counts once.", ""]
+        for e in passing:
+            L.append(f"- `{e['setup_key']}`: OOS n {e['oos']['n']} (effective {rec.effective_n(e['oos'])}), "
+                     f"{e['oos']['mean_net_r']:+.3f}R per trade (SE {max(e['oos']['se'], e['oos'].get('se_day') or 0):.3f}), "
+                     f"in-sample inside the same conditions {e['is'].get('mean_net_r', float('nan')):+.3f}R over "
+                     f"{e['is'].get('n', 0)} trades, {e['oos']['per_day']:.2f} trades/day, regimes "
+                     f"{', '.join(e['valid_regimes'])}, sessions {', '.join(e['valid_sessions'])}")
+            if trades is not None:
+                L += _breakdown(trades, e)
         L += ["", "Passing Gate 4 is necessary, not sufficient. These were chosen out of every configuration tried, using the "
               "same out-of-sample years that now make them look good; the multiple-testing result below says whether that "
               "choice could be luck."]
         if not ((deflated.get("deflated_sharpe_prob") or 0) >= 0.95):
             L += ["", "**They do not survive it, so every record is marked provisional.** The scanner paper-trades them "
-                  "through the gate as usual, but it hands a take to the owner's own order code (`--on-take`) only when "
-                  "that setup's FORWARD trades alone (signals after the lab's data ended) pass Gate 4 by themselves. "
-                  "Those trades played no part in choosing the setup, so they are the clean test."]
+                  "through the gate as usual. It hands a take to the owner's own order code (`--on-take`) only when the "
+                  "FULL gate, run on that setup's forward trades alone (signals after the lab's data ended, inside its "
+                  "chosen regimes and sessions, day-clustered like the lab), also says take; the size handed over comes "
+                  "from that forward-only decision. Forward trades played no part in choosing the setup, so they are the "
+                  "clean test. At a few trades a month, 30 of them take many months."]
     else:
         L += ["**None.** No configuration has an out-of-sample record that clears Gate 4 after costs. The gate will skip "
               "every live signal from these setups until a record does; the scanner keeps following them on paper to "
               "build forward evidence."]
     L += ["", "## Multiple testing", "",
-          f"{deflated.get('trials', 0)} configurations were tried; {deflated.get('judged', 0)} had at least 30 effectively "
-          "independent out-of-sample trades inside their chosen conditions. "
+          f"{deflated.get('trials', 0)} configurations were tried; {deflated.get('judged', 0)} have a record (conditions held "
+          "in-sample) and at least 30 effectively independent out-of-sample trades inside them. "
           + (f"The best of those (`{deflated['best']}`, per-trade Sharpe {deflated['best_sharpe_per_trade']:+.3f} over "
              f"{deflated['best_n']} trades) has a deflated-Sharpe probability of {deflated['deflated_sharpe_prob']:.2f} of being "
              "real once the number of trials is counted (Bailey & López de Prado; 0.95 is the usual bar)."
@@ -297,15 +357,30 @@ def write_report(summary: pd.DataFrame, entries: list[dict], deflated: dict, a, 
             continue
         b = pm.sort_values("oos_all_mean_gross_r", ascending=False).iloc[0]
         pos = pm[pm["oos_all_mean_net_r"] > 0]
-        L.append(f"- **{title}.** Best out-of-sample average before costs: {b['oos_all_mean_gross_r']:+.3f}R per trade "
-                 f"({b['setup']} {b['timeframe']}). {len(pos)} of {len(pm)} configurations are positive after costs "
-                 "out-of-sample (before the in-sample condition filter).")
-    L += ["- A pattern that does not pay before costs cannot be rescued by a cheaper venue; cheaper costs only shrink the "
-          "loss (Section VII: expected value first).",
+        what = "before fees" if mk == "crypto" else "after the spread, before commission"
+        L.append(f"- **{title}.** Best out-of-sample average {what}: {b['oos_all_mean_gross_r']:+.3f}R per trade "
+                 f"({b['setup']} {b['timeframe']} {b['fees']}, {int(b['oos_all_n'])} trades; in-sample "
+                 f"{b['is_all_mean_gross_r']:+.3f}R). {len(pos)} of {len(pm)} configurations are positive after costs "
+                 "out-of-sample before the in-sample condition filter.")
+    L += ["- Crypto: a pattern that does not pay before fees cannot be rescued by a cheaper venue; cheaper fees only "
+          "shrink the loss (Section VII: expected value first). Forex: the gross column already includes the spread, so "
+          "the account type changes it.",
           "- Cost in R = round-trip cost / stop distance. A 5-minute crypto stop of 0.2-0.3% against a 0.2% round trip "
           "costs most of 1R; the same stop in EUR/USD against a 0.01% round trip costs a few hundredths (Gate 5.6).",
           "- More trades is not more edge: every trade pays the cost, so frequency multiplies a negative expectancy.",
-          "- Only the out-of-sample columns are evidence; in-sample numbers chose the conditions (Section XVII).", ""]
+          "- Only the out-of-sample columns are evidence; in-sample numbers chose the conditions (Section XVII).", "",
+          "## Known limits of this test", "",
+          "- **Target fills on a touch** at the target price (queue priority assumed). This can only flatter results.",
+          "- **Forex spread is modelled**, a fixed fraction of price on BID candles, not the recorded ask; real spreads "
+          "widen at rollover and on news.",
+          "- **Pooled markets are correlated.** The day-clustered SE and the effective n correct for same-day "
+          "trades, not for every dependence.",
+          "- **The search over regimes and sessions** is not counted as extra trials in the deflated Sharpe, so that "
+          "check is, if anything, too kind.",
+          "- **Forward evidence must come from comparable data.** The lab used Binance trades and Dukascopy bid candles. "
+          "A scanner fed by another source (Yahoo quotes, a broker feed) builds forward records on different prices.",
+          "- **Crypto coverage was cut short by the owner:** BNB, XRP and the 1h/4h crypto timeframes were not run. "
+          "Intraday forex (5m/15m) needs minute history that throttles cloud servers; run it at home.", ""]
     (out.parent / "backtest-report.md").write_text("\n".join(L), encoding="utf-8")
 
 

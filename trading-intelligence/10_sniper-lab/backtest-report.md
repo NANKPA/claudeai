@@ -10,17 +10,23 @@ status: computed
 
 # Sniper Lab — backtests
 
-> Generated 2026-10-20 by `python -m trading_intelligence.sniper lab`. Markets: BTCUSDT, ETHUSDT, EURUSD, GBPUSD, SOLUSDT, USDJPY, XAUUSD (crypto: Binance spot archive; forex and gold: Dukascopy BID candles). Timeframes: 5m, 15m, 1h, 4h. Period 2022-01 to last full month. Rules and the allowed regimes/sessions are chosen on data before 2024-01-01 and judged only on data after it. Fills are conservative (a limit fills only when price trades at or through it; when stop and target share a bar the stop counts). Education and research, not a trading signal.
+> Generated 2026-10-20 by `python -m trading_intelligence.sniper lab`. Education and research, not a trading signal.
 
-## Cost levels (per side, fraction of price)
+**What ran.** Crypto (Binance spot archive): BTCUSDT 5m/15m, ETHUSDT 5m/15m, SOLUSDT 5m; signals 2022-01-02 to 2026-09-30. Forex and gold (Dukascopy BID candles): EURUSD 1h/4h, GBPUSD 1h/4h, USDJPY 1h/4h, XAUUSD 1h/4h; signals 2022-01-19 to 2026-09-30.
 
-| Level | Market | Resting limit | Market order / stop | Extra slippage on stops |
-|---|---|---|---|---|
-| std | crypto | 0.0800% | 0.1000% | 0.0200% |
-| low | crypto | 0.0000% | 0.0500% | 0.0100% |
-| ultra | crypto | 0.0000% | 0.0200% | 0.0100% |
-| fx_std | fx | 0.0000% | 0.0000% | 0.0020% |
-| fx_raw | fx | 0.0032% | 0.0032% | 0.0010% |
+**Method.** Allowed regimes and sessions are chosen on signals before 2024-01-01 (in-sample); the trades in a kept regime AND a kept session must also have been positive in-sample. Everything is then judged on signals from 2024-01-01 on (out-of-sample). Each configuration (setup × timeframe × cost level) pools its markets. The three crypto fee levels are the same trades re-priced; each forex account type is its own simulation.
+
+**Fills.** A market entry fills at the next bar's open. A resting limit entry fills only when price trades THROUGH it (a touch is not a fill). On later bars, when the stop and the target fall in the same bar, the stop counts; a bar that opens beyond the stop exits at that open. On the fill bar the stop is checked first, and a bar that closes beyond the target exits at the target. A target fills on a TOUCH at the target price and pays the maker fee: that assumes queue priority and is the one optimistic rule (see Known limits). R is measured on the planned risk, the risk the gate sizes on.
+
+## Cost levels (fraction of price)
+
+| Level | Market | Resting limit (per side) | Market order / stop (per side) | Slippage on market entries, stops, time exits | Spread per round trip (paid in the prices) |
+|---|---|---|---|---|---|
+| std | crypto | 0.0800% | 0.1000% | 0.0200% | 0.0000% |
+| low | crypto | 0.0000% | 0.0500% | 0.0100% | 0.0000% |
+| ultra | crypto | 0.0000% | 0.0200% | 0.0100% | 0.0000% |
+| fx_std | fx | 0.0000% | 0.0000% | 0.0020% | 0.0120% |
+| fx_raw | fx | 0.0032% | 0.0032% | 0.0010% | 0.0015% |
 
 ## Crypto: every trade, pooled across markets
 
@@ -115,7 +121,7 @@ IS = in-sample (before the split), OOS = out-of-sample. Gross R is before fees; 
 
 ## Forex and gold: every trade, pooled across markets
 
-IS = in-sample (before the split), OOS = out-of-sample. The candles are bid prices and every buy pays the ask, so **gross R is already after the spread**; the cost column is commission plus slippage only. fx_std = spread-only account (about 1.3 pips), fx_raw = raw spread (about 0.15 pip) plus commission.
+IS = in-sample (before the split), OOS = out-of-sample. The candles are bid prices and every buy pays the ask, so **gross R is already after the spread** (it changes with the account type); the cost column is commission plus slippage only. The ask is modelled as bid × (1 + spread): 0.012% on fx_std (about 1.4 pips on EUR/USD, 1.8 on USD/JPY, $0.40 on gold) and 0.0015% on fx_raw (about 0.17 pip, 0.23 pip, $0.05), the same fraction for every market and hour, with no widening at rollover or news.
 
 | Setup | TF | Costs | OOS trades/day | Stop % | IS gross R | OOS gross R | OOS cost R | OOS net R |
 |---|---|---|---|---|---|---|---|---|
@@ -166,47 +172,55 @@ IS = in-sample (before the split), OOS = out-of-sample. The candles are bid pric
 
 ## Inside the conditions chosen in-sample (the record the gate reads)
 
-Only regimes and sessions that were positive after costs in-sample (at least 20 trades each) are kept; the out-of-sample trades inside them are the evidence.
+A regime and a session are each kept when, on their own, they were positive after costs in-sample on at least 20 trades. The trades in both a kept regime and a kept session must then also be positive in-sample on at least 20 trades ("held"); only then is there a record. The out-of-sample trades inside the conditions are the evidence.
 
-| Setup | TF | Costs | Allowed regimes | Allowed sessions | IS n | IS net R | OOS n | OOS net R | OOS t | OOS t (by day) |
-|---|---|---|---|---|---|---|---|---|---|---|
-| sniper_ob_mean_threshold | 15m | ultra | range_high_vol | late | 4 | +2.635 | 4 | +0.754 | 0.40 | 0.40 |
-| sniper_ote_retrace | 1h | fx_raw | trend_low_vol | asia london | 123 | +0.039 | 154 | -0.074 | -0.62 | -0.59 |
-| sniper_vwap_reversion | 1h | fx_raw | range_high_vol range_low_vol | london ny | 97 | +0.426 | 123 | +0.250 | 1.73 | 1.80 |
-| trend_donchian_breakout | 1h | fx_raw | trend_low_vol | ny | 196 | +0.120 | 313 | -0.025 | -0.26 | -0.24 |
-| sniper_ema_pullback | 4h | fx_raw | trend_low_vol | asia ny | 118 | +0.209 | 217 | -0.050 | -0.52 | -0.52 |
-| sniper_ema_pullback_limit | 4h | fx_raw | trend_low_vol | asia ny | 117 | +0.231 | 217 | -0.039 | -0.40 | -0.41 |
-| sniper_ote_retrace | 4h | fx_raw | trend_low_vol | london | 22 | +0.477 | 22 | -0.426 | -1.56 | -1.52 |
-| sniper_sweep_reclaim | 4h | fx_raw | range_high_vol range_low_vol | asia | 25 | -0.231 | 73 | +0.093 | 0.52 | 0.53 |
-| trend_donchian_breakout | 4h | fx_raw | trend_high_vol | asia london | 90 | -0.051 | 111 | +0.312 | 1.86 | 1.90 |
-| sniper_fvg_retrace | 1h | fx_std | trend_low_vol | ny | 38 | +0.420 | 59 | -0.084 | -0.46 | -0.44 |
-| sniper_vwap_reversion | 1h | fx_std | range_high_vol range_low_vol | london ny | 97 | +0.280 | 123 | +0.115 | 0.83 | 0.85 |
-| sniper_ema_pullback | 4h | fx_std | trend_low_vol | asia ny | 119 | +0.218 | 217 | -0.078 | -0.81 | -0.82 |
-| sniper_ema_pullback_limit | 4h | fx_std | trend_high_vol trend_low_vol | asia ny | 287 | +0.135 | 431 | -0.117 | -1.80 | -1.75 |
-| sniper_ote_retrace | 4h | fx_std | trend_low_vol | london | 22 | +0.487 | 21 | -0.385 | -1.35 | -1.33 |
-| trend_donchian_breakout | 4h | fx_std | trend_high_vol | asia london | 90 | -0.053 | 112 | +0.313 | 1.89 | 1.91 |
+| Setup | TF | Costs | Allowed regimes | Allowed sessions | IS n | IS net R | Held | OOS n | OOS net R | OOS t | OOS t (by day) |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| sniper_ob_mean_threshold | 15m | ultra | range_high_vol | late | 4 | +2.635 | no | 4 | +0.754 | 0.40 | 0.40 |
+| sniper_ote_retrace | 1h | fx_raw | trend_low_vol | asia london | 123 | +0.039 | yes | 154 | -0.074 | -0.62 | -0.59 |
+| sniper_vwap_reversion | 1h | fx_raw | range_high_vol range_low_vol | london ny | 97 | +0.426 | yes | 123 | +0.250 | 1.73 | 1.80 |
+| trend_donchian_breakout | 1h | fx_raw | trend_low_vol | ny | 196 | +0.120 | yes | 313 | -0.025 | -0.26 | -0.24 |
+| sniper_ema_pullback | 4h | fx_raw | trend_low_vol | asia ny | 118 | +0.209 | yes | 217 | -0.050 | -0.52 | -0.52 |
+| sniper_ema_pullback_limit | 4h | fx_raw | trend_low_vol | asia ny | 117 | +0.231 | yes | 217 | -0.039 | -0.40 | -0.41 |
+| sniper_ote_retrace | 4h | fx_raw | trend_low_vol | london | 22 | +0.477 | yes | 22 | -0.426 | -1.56 | -1.52 |
+| sniper_sweep_reclaim | 4h | fx_raw | range_high_vol range_low_vol | asia | 25 | -0.231 | no | 73 | +0.093 | 0.52 | 0.53 |
+| trend_donchian_breakout | 4h | fx_raw | trend_high_vol | asia london | 90 | -0.051 | no | 111 | +0.312 | 1.86 | 1.90 |
+| sniper_fvg_retrace | 1h | fx_std | trend_low_vol | ny | 38 | +0.420 | yes | 59 | -0.084 | -0.46 | -0.44 |
+| sniper_vwap_reversion | 1h | fx_std | range_high_vol range_low_vol | london ny | 97 | +0.280 | yes | 123 | +0.115 | 0.83 | 0.85 |
+| sniper_ema_pullback | 4h | fx_std | trend_low_vol | asia ny | 119 | +0.218 | yes | 217 | -0.078 | -0.81 | -0.82 |
+| sniper_ema_pullback_limit | 4h | fx_std | trend_high_vol trend_low_vol | asia ny | 287 | +0.135 | yes | 431 | -0.117 | -1.80 | -1.75 |
+| sniper_ote_retrace | 4h | fx_std | trend_low_vol | london | 22 | +0.487 | yes | 21 | -0.385 | -1.35 | -1.33 |
+| trend_donchian_breakout | 4h | fx_std | trend_high_vol | asia london | 90 | -0.053 | no | 112 | +0.313 | 1.89 | 1.91 |
 
 ## What passes the owner's gate
 
-3 configuration(s) have at least 30 effectively independent out-of-sample trades and mean - 1 SE > 0 after costs, with the SE clustered by day as well as per trade (Gate 4's math score of 2). The scanner's gate can take only these:
+1 configuration(s) have at least 30 effectively independent out-of-sample trades and mean - 1 SE > 0 after costs, with the SE clustered by day as well as per trade (Gate 4's math score of 2). The scanner's gate can take only these:
 
-- `trend_donchian_breakout@4h@fx_std`: OOS n 112 (effective 112), +0.313R per trade (SE 0.166), 0.11 trades/day, regimes trend_high_vol, sessions asia, london
-- `sniper_vwap_reversion@1h@fx_raw`: OOS n 123 (effective 123), +0.250R per trade (SE 0.145), 0.12 trades/day, regimes range_high_vol, range_low_vol, sessions london, ny
-- `trend_donchian_breakout@4h@fx_raw`: OOS n 111 (effective 111), +0.312R per trade (SE 0.167), 0.11 trades/day, regimes trend_high_vol, sessions asia, london
+- `sniper_vwap_reversion@1h@fx_raw`: OOS n 123 (effective 123), +0.250R per trade (SE 0.145), in-sample inside the same conditions +0.426R over 97 trades, 0.12 trades/day, regimes range_high_vol, range_low_vol, sessions london, ny
+  - by year and market: 2024: 54 trades, +0.243R, total +13.1R; 2025: 35 trades, +0.221R, total +7.7R; 2026: 34 trades, +0.293R, total +9.9R; EURUSD: 34 trades, +0.161R, total +5.5R; GBPUSD: 43 trades, +0.327R, total +14.1R; USDJPY: 20 trades, -0.012R, total -0.2R; XAUUSD: 26 trades, +0.443R, total +11.5R; the 5 best trades are 66% of the total
 
 Passing Gate 4 is necessary, not sufficient. These were chosen out of every configuration tried, using the same out-of-sample years that now make them look good; the multiple-testing result below says whether that choice could be luck.
 
-**They do not survive it, so every record is marked provisional.** The scanner paper-trades them through the gate as usual, but it hands a take to the owner's own order code (`--on-take`) only when that setup's FORWARD trades alone (signals after the lab's data ended) pass Gate 4 by themselves. Those trades played no part in choosing the setup, so they are the clean test.
+**They do not survive it, so every record is marked provisional.** The scanner paper-trades them through the gate as usual. It hands a take to the owner's own order code (`--on-take`) only when the FULL gate, run on that setup's forward trades alone (signals after the lab's data ended, inside its chosen regimes and sessions, day-clustered like the lab), also says take; the size handed over comes from that forward-only decision. Forward trades played no part in choosing the setup, so they are the clean test. At a few trades a month, 30 of them take many months.
 
 ## Multiple testing
 
-128 configurations were tried; 12 had at least 30 effectively independent out-of-sample trades inside their chosen conditions. The best of those (`trend_donchian_breakout@4h@fx_std`, per-trade Sharpe +0.178 over 112 trades) has a deflated-Sharpe probability of 0.24 of being real once the number of trials is counted (Bailey & López de Prado; 0.95 is the usual bar).
+128 configurations were tried; 9 have a record (conditions held in-sample) and at least 30 effectively independent out-of-sample trades inside them. The best of those (`sniper_vwap_reversion@1h@fx_raw`, per-trade Sharpe +0.156 over 123 trades) has a deflated-Sharpe probability of 0.35 of being real once the number of trials is counted (Bailey & López de Prado; 0.95 is the usual bar).
 
 ## Reading this as the owner's philosophy asks
 
-- **Crypto.** Best out-of-sample average before costs: +0.064R per trade (trend_donchian_breakout 15m). 0 of 84 configurations are positive after costs out-of-sample (before the in-sample condition filter).
-- **Forex and gold.** Best out-of-sample average before costs: +0.316R per trade (sniper_ob_mean_threshold 4h). 7 of 44 configurations are positive after costs out-of-sample (before the in-sample condition filter).
-- A pattern that does not pay before costs cannot be rescued by a cheaper venue; cheaper costs only shrink the loss (Section VII: expected value first).
+- **Crypto.** Best out-of-sample average before fees: +0.064R per trade (trend_donchian_breakout 15m low, 5993 trades; in-sample -0.012R). 0 of 84 configurations are positive after costs out-of-sample before the in-sample condition filter.
+- **Forex and gold.** Best out-of-sample average after the spread, before commission: +0.316R per trade (sniper_ob_mean_threshold 4h fx_raw, 43 trades; in-sample -0.107R). 7 of 44 configurations are positive after costs out-of-sample before the in-sample condition filter.
+- Crypto: a pattern that does not pay before fees cannot be rescued by a cheaper venue; cheaper fees only shrink the loss (Section VII: expected value first). Forex: the gross column already includes the spread, so the account type changes it.
 - Cost in R = round-trip cost / stop distance. A 5-minute crypto stop of 0.2-0.3% against a 0.2% round trip costs most of 1R; the same stop in EUR/USD against a 0.01% round trip costs a few hundredths (Gate 5.6).
 - More trades is not more edge: every trade pays the cost, so frequency multiplies a negative expectancy.
 - Only the out-of-sample columns are evidence; in-sample numbers chose the conditions (Section XVII).
+
+## Known limits of this test
+
+- **Target fills on a touch** at the target price (queue priority assumed). This can only flatter results.
+- **Forex spread is modelled**, a fixed fraction of price on BID candles, not the recorded ask; real spreads widen at rollover and on news.
+- **Pooled markets are correlated.** The day-clustered SE and the effective n correct for same-day trades, not for every dependence.
+- **The search over regimes and sessions** is not counted as extra trials in the deflated Sharpe, so that check is, if anything, too kind.
+- **Forward evidence must come from comparable data.** The lab used Binance trades and Dukascopy bid candles. A scanner fed by another source (Yahoo quotes, a broker feed) builds forward records on different prices.
+- **Crypto coverage was cut short by the owner:** BNB, XRP and the 1h/4h crypto timeframes were not run. Intraday forex (5m/15m) needs minute history that throttles cloud servers; run it at home.
