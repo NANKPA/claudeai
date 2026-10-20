@@ -496,3 +496,17 @@ def test_forward_file_from_an_older_version_is_set_aside(tmp_path):
     _append(f, FORWARD_COLS, {"uid": "u1", "key": "k", "net_r": 0.5})
     assert f.read_text().splitlines()[0] == ",".join(FORWARD_COLS)
     assert list(tmp_path.glob("forward.old-*.csv"))
+
+
+def test_a_provisional_record_trades_on_paper_but_is_not_handed_off_until_forward_trades_pass(tmp_path):
+    import sys
+    out = tmp_path / "handed.jsonl"
+    hook = f"{sys.executable} -c \"import sys; open({str(out)!r}, 'a').write(sys.stdin.read() + chr(10))\""
+    lab = _passing_lab(provisional=True, oos_end="2000-01-01T00:00:00+00:00")
+    sc = _scanner(tmp_path, lab=lab, setups=["sniper_ema_pullback"], on_take=hook)
+    _replay(sc, _walk(2600))
+    takes = [r for r in sc.journal.rows() if r["decision"] == "take"]
+    assert takes                                                         # the paper account trades it
+    handed = out.read_text().splitlines() if out.exists() else []
+    assert len(handed) < len(takes)                                      # but not every take goes live
+    assert any("provisional" in r["lesson"] for r in sc.journal.rows())

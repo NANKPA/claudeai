@@ -194,8 +194,15 @@ def main(argv=None) -> int:
                              **{f"is_{k}": v for k, v in es["is"].items()}, **{f"oos_{k}": v for k, v in es["oos"].items()}})
     summary = pd.DataFrame(rows)
     summary.to_csv(out / "summary.csv", index=False)
-    rec.save(entries, out / "records.json")
     deflated = rec.deflated_best(entries)
+    # Every configuration was chosen from many tried. Unless the best survives the multiple-testing
+    # check, the out-of-sample years were used to CHOOSE it and are no longer clean evidence for it:
+    # the record is provisional, and only trades after the lab's data (forward) can confirm it.
+    survives = (deflated.get("deflated_sharpe_prob") or 0) >= 0.95
+    for e in entries:
+        e["provisional"] = not survives
+        e["deflated_sharpe_prob_best"] = deflated.get("deflated_sharpe_prob")
+    rec.save(entries, out / "records.json")
     (out / "deflated.json").write_text(json.dumps(deflated, indent=1))
     write_report(summary, entries, deflated, a, out)
     write_setups_registry(summary, out.parent / "setups.yaml")
@@ -231,8 +238,12 @@ def write_report(summary: pd.DataFrame, entries: list[dict], deflated: dict, a, 
         pm = pooled[pooled["market"] == mk]
         if pm.empty:
             continue
-        L += ["", f"## {title}: every trade, pooled across markets", "",
-              "IS = in-sample (before the split), OOS = out-of-sample. Gross R is before costs; net R after costs at that level.", "",
+        note = ("IS = in-sample (before the split), OOS = out-of-sample. Gross R is before fees; net R is after fees and "
+                "slippage at that level." if mk == "crypto" else
+                "IS = in-sample (before the split), OOS = out-of-sample. The candles are bid prices and every buy pays the "
+                "ask, so **gross R is already after the spread**; the cost column is commission plus slippage only. "
+                "fx_std = spread-only account (about 1.3 pips), fx_raw = raw spread (about 0.15 pip) plus commission.")
+        L += ["", f"## {title}: every trade, pooled across markets", "", note, "",
               "| Setup | TF | Costs | OOS trades/day | Stop % | IS gross R | OOS gross R | OOS cost R | OOS net R |",
               "|---|---|---|---|---|---|---|---|---|"]
         for _, r in pm.iterrows():
@@ -260,7 +271,14 @@ def write_report(summary: pd.DataFrame, entries: list[dict], deflated: dict, a, 
               f"{e['oos']['mean_net_r']:+.3f}R per trade (SE {max(e['oos']['se'], e['oos'].get('se_day') or 0):.3f}), "
               f"{e['oos']['per_day']:.2f} trades/day, regimes {', '.join(e['valid_regimes'])}, sessions "
               f"{', '.join(e['valid_sessions'])}" for e in passing]
-        L += ["", "Passing Gate 4 is necessary, not sufficient: read it together with the multiple-testing result below."]
+        L += ["", "Passing Gate 4 is necessary, not sufficient. These were chosen out of every configuration tried, using the "
+              "same out-of-sample years that now make them look good; the multiple-testing result below says whether that "
+              "choice could be luck."]
+        if not ((deflated.get("deflated_sharpe_prob") or 0) >= 0.95):
+            L += ["", "**They do not survive it, so every record is marked provisional.** The scanner paper-trades them "
+                  "through the gate as usual, but it hands a take to the owner's own order code (`--on-take`) only when "
+                  "that setup's FORWARD trades alone (signals after the lab's data ended) pass Gate 4 by themselves. "
+                  "Those trades played no part in choosing the setup, so they are the clean test."]
     else:
         L += ["**None.** No configuration has an out-of-sample record that clears Gate 4 after costs. The gate will skip "
               "every live signal from these setups until a record does; the scanner keeps following them on paper to "
@@ -301,7 +319,7 @@ def write_setups_registry(summary: pd.DataFrame, path: Path) -> None:
         tested = [{"config": r["key"], "oos_trades": int(r["oos_all_n"] or 0),
                    "oos_gross_r": round(float(r["oos_all_mean_gross_r"]), 3), "oos_net_r": round(float(r["oos_all_mean_net_r"]), 3)}
                   for _, r in rows.sort_values("oos_all_mean_net_r", ascending=False).iterrows()]
-        best = tested[0] if tested else None
+        best = dict(tested[0]) if tested else None
         verdict = ("not tested" if not best else
                    "positive after costs out-of-sample in its best configuration (check the gate and multiple testing)"
                    if best["oos_net_r"] > 0 else "negative after costs out-of-sample in every configuration tested")

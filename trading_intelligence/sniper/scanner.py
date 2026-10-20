@@ -199,6 +199,23 @@ def setup_record(key: str, lab: dict, forward: list[dict]) -> G.SetupRecord | No
     return G.SetupRecord(**r)
 
 
+def forward_record(key: str, lab: dict, forward: list[dict]) -> G.SetupRecord | None:
+    """Only the trades after the lab's data ended, inside the record's regimes and sessions: evidence that
+    played no part in choosing the setup."""
+    e = lab.get(key)
+    if not e or not e.get("record"):
+        return None
+    r = e["record"]
+    end = pd.Timestamp(e["oos_end"]) if e.get("oos_end") else None
+    fwd = [x for x in forward if x["key"] == key and x["regime"] in set(r["valid_regimes"])
+           and x["session"] in set(r["valid_sessions"]) and (end is None or pd.Timestamp(x["signal_time"]) > end)]
+    if not fwd:
+        return None
+    return G.SetupRecord(setup_id=key, results_r=[float(x["net_r"]) for x in fwd],
+                         avg_cost_r=sum(float(x["cost_r"]) for x in fwd) / len(fwd), out_of_sample=True, source="own",
+                         valid_regimes=r["valid_regimes"], valid_sessions=r["valid_sessions"])
+
+
 def trade_id_for(key: str, symbol: str, sig: Signal) -> str:
     return f"{key}-{symbol}-{pd.Timestamp(sig.time):%Y%m%dT%H%M}"
 
@@ -384,7 +401,17 @@ class Scanner:
         book.submit(sig, tag={"trade_id": tid, "key": key, "account": take, "size": d.position_size if take else 0,
                               "risk_pct": d.risk_pct if take else 0, "point_value": pv})
         if take and self.a.on_take:
-            self.hand_off(sig, tid, key, sym, tf, d)
+            entry = self.lab.get(key, {})
+            if entry.get("provisional"):          # chosen from many trials: only clean forward trades may confirm it
+                live = self.gate.evaluate(t, forward_record(key, self.lab, forward), acct)
+                if live.action == "take":
+                    self.hand_off(sig, tid, key, sym, tf, d)
+                else:
+                    why_live = next((g.detail for g in live.gates if g.status != "pass"), "")
+                    self.journal.record_outcome(tid, lesson="paper only: the record is provisional (chosen out of many "
+                                                f"configurations); live hand-off waits for its forward trades: {why_live}")
+            else:
+                self.hand_off(sig, tid, key, sym, tf, d)
         why = next((g.detail for g in d.gates if g.status == "fail"), d.gates[-1].detail if d.gates else "")
         size = f" size {d.position_size:g} risk {d.risk_pct:.2f}%" if take else ""
         return (f"{sig.time:%Y-%m-%d %H:%M} {key} {sym} {sig.side} {sig.order} @ {sig.entry:.6g} stop {sig.stop:.6g} "

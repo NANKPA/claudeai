@@ -27,9 +27,12 @@ status: researched
 The sniper lab has already answered three questions, and they decide what is
 worth reading next:
 
-- **Nothing passes yet.** None of the 34 codified configurations clears the
-  owner's Gate 4 after costs out of sample. The best one has a deflated-Sharpe
-  probability of 0.00 ([[synthesis_sniper_backtests]]).
+- **Almost nothing survives, and what does is not yet trusted.** Of 128 codified
+  configurations, none on crypto is positive after costs out of sample. Three on
+  forex and gold (1h/4h) pass Gate 4, but the best of all has a deflated-Sharpe
+  probability of only 0.24 once the number of trials is counted
+  ([[synthesis_sniper_backtests]]). So their records are provisional until forward
+  trades confirm them.
 - **Costs decide at short horizons.** On a regular-fee venue, 5-minute sniper
   entries are untradeable at any account size ([[synthesis_sniper_entries]]).
 - **At $20 the realistic rhythm is one to three trades a day on 1-hour or
