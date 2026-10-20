@@ -31,7 +31,6 @@ trading-intelligence/10_sniper-lab/backtests/*/jobs/
 trading-intelligence/10_sniper-lab/backtests/jobs/
 trading-intelligence/10_sniper-lab/backtests/*/trades.csv.gz
 # Sniper lab: partial grids (combined into backtests/ by `lab --from-trades --inputs ...`)
-trading-intelligence/10_sniper-lab/backtests/crypto/
-trading-intelligence/10_sniper-lab/backtests/fx/
+trading-intelligence/10_sniper-lab/backtests/*/
 trading-intelligence/10_sniper-lab/backtests/backtest-report.md
 trading-intelligence/10_sniper-lab/backtests/setups.yaml
