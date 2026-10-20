@@ -66,7 +66,21 @@ python tools/scrapers/babypips_course.py
 ./tools/run_pipeline.sh
 ```
 
+The sniper lab also does more at home, because the free forex datafeed (Dukascopy) throttles cloud
+servers. At home the intraday forex tests can run:
+
+```bash
+# Forex and gold on 5m/15m (downloads minute history once, then caches it; takes a while)
+python -m trading_intelligence.sniper lab --symbols EURUSD GBPUSD USDJPY XAUUSD --timeframes 5m 15m 1h 4h \
+       --out trading-intelligence/10_sniper-lab/backtests/fx
+# Paper-trade every setup live through your PhilosophyGate (state: ~/.trading-intelligence/sniper-paper/)
+python -m trading_intelligence.sniper scan --equity 20 --risk-pct 1 --fees low
+python -m trading_intelligence.sniper scan --report
+```
+
 Also open:
+- `trading-intelligence/10_sniper-lab/README.md`: the sniper entries, what the backtests found after
+  costs, venues for small accounts, and how the scanner hands gated trades to your bot (`--on-take`).
 - `trading-intelligence/00_philosophy/README.md`: what was built around your philosophy and
   what it found.
 - `trading-intelligence/00_philosophy/research-program.md`: the 12-week plan, starting with
