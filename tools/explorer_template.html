@@ -276,7 +276,7 @@ footer code { font-family: var(--font-mono); font-size: 12px; color: var(--ink-2
   const D = JSON.parse(document.getElementById('ti-data').textContent);
   const N = D.nodes, E = D.edges, R = D.rels;
   const byId = new Map(N.map((n, i) => [n.id, i]));
-  const KIND = { concept: 'Concept', strategy: 'Strategy', person: 'Person', book: 'Book', mathbook: 'Math book', paper: 'Paper',
+  const KIND = { concept: 'Concept', strategy: 'Strategy', setup: 'Setup (codified)', person: 'Person', book: 'Book', mathbook: 'Math book', paper: 'Paper',
     media: 'Video / episode', podcast: 'Podcast', channel: 'Channel', course: 'Course', track: 'Study track',
     framework: 'Framework', synthesis: 'Synthesis', formula: 'Formula sheet',
     philosophy: 'Philosophy', principle: 'Principle', hypothesis: 'Hypothesis', question: 'Open question' };

@@ -25,6 +25,7 @@ Claude (Projects, Claude Code, or the API) and mapped with
 | 07 | [`07_concepts/`](07_concepts/) | 69 atomic concept notes across layers L0–L8: the graph's backbone | complete (v1) |
 | 08 | [`08_synthesis/`](08_synthesis/) | Unified analysis→execution framework, idea-lineage map, consensus & conflicts, pre-trade checklist | complete (v1) |
 | 09 | [`09_knowledge-graph/`](09_knowledge-graph/) | graphify output: `graph.html`, `graph.json`, `GRAPH_REPORT.md`, wiki | generated |
+| 10 | [`10_sniper-lab/`](10_sniper-lab/) | Codified sniper entries backtested out-of-sample after costs (crypto, forex, gold), small-account venues, precise-entry reading list, the paper scanner | computed |
 
 ## Start here
 

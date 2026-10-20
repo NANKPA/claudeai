@@ -98,12 +98,14 @@ def test_setups_produce_trades(prepared):
 def test_prepare_is_causal():
     df = _walk(4000)
     full = prepare(df, htf="1h")
-    cols = ["atr", "ema20", "ema50", "htf_ema20", "htf_ema50", "pdh", "pdl", "vwap", "vwap_sd", "htf_dir", "regime", "session"]
-    for cut in (1700, 2333, 3999):
+    cols = ["atr", "ema20", "ema50", "htf_ema20", "htf_ema50", "pdh", "pdl", "vwap", "vwap_sd", "htf_dir", "regime", "session",
+            "htf_pivot_high", "htf_pivot_low", "piv_hi", "piv_lo", "adr10", "asia_hi", "asia_lo", "or_hi", "or_lo",
+            "or_closed_above_before", "or_closed_below_before", "dc20_hi", "dc20_lo", "first_half_hour_r", "ny_min"]
+    for cut in (1700, 2333, 2650, 3999):
         part = prepare(df.iloc[:cut + 1], htf="1h")
         a, b = full[cols].iloc[cut], part[cols].iloc[cut]
         for col in cols:
-            if isinstance(a[col], float):
+            if isinstance(a[col], (float, np.floating)):
                 assert a[col] == pytest.approx(b[col], rel=1e-9, nan_ok=True), (cut, col)
             else:
                 assert a[col] == b[col], (cut, col)
@@ -198,7 +200,8 @@ def _scanner(tmp_path, lab, **kw):
     a = argparse.Namespace(venue="binance", symbols=["BTCUSDT"], timeframes=["5m"], setups=sorted(SETUPS), fees="std",
                            maker=None, taker=None, slippage=None, equity=20.0, risk_pct=1.0, lot_step=0.000001,
                            min_notional=0.0, max_leverage=50.0, style="intraday", state="calm",
-                           records=str(tmp_path / "none.json"), home=str(tmp_path / "home"), once=True, report=False)
+                           records=str(tmp_path / "none.json"), home=str(tmp_path / "home"), once=True, report=False,
+                           on_take=None)
     for k, v in kw.items():
         setattr(a, k, v)
     sc = Scanner(a)
@@ -256,3 +259,39 @@ def test_scanner_state_survives_a_restart(tmp_path):
     assert sc2.state.keys() == sc.state.keys()
     _replay(sc2, df, 2200, 2400)
     assert all(v["last_time"] == df.index[2398].isoformat() for v in sc2.state.values())
+
+
+def test_prepare_is_causal_on_the_fx_day():
+    df = _walk(3000, freq="15min")
+    full = prepare(df, htf="4h", day="fx")
+    for cut in (1500, 2222, 2999):
+        part = prepare(df.iloc[:cut + 1], htf="4h", day="fx")
+        for col in ("pdh", "pdl", "adr10", "vwap", "asia_hi", "or_hi", "htf_pivot_low"):
+            assert full[col].iloc[cut] == pytest.approx(part[col].iloc[cut], rel=1e-9, nan_ok=True), (cut, col)
+
+
+def test_new_york_opening_range_follows_daylight_saving():
+    winter = prepare(_walk(3000, start="2024-01-08"), htf="1h")
+    summer = prepare(_walk(3000, start="2024-07-08"), htf="1h")
+    w = winter[winter["or_hi"].notna()].index[0]
+    su = summer[summer["or_hi"].notna()].index[0]
+    assert (w.hour, w.minute) == (15, 0) and (su.hour, su.minute) == (14, 0)      # 10:00 New York
+
+
+def test_on_take_hands_only_gated_takes_to_the_owner_code(tmp_path):
+    import json as _json
+    import sys
+    out = tmp_path / "handed.jsonl"
+    hook = f"{sys.executable} -c \"import sys; open({str(out)!r}, 'a').write(sys.stdin.read() + chr(10))\""
+    regimes = ["trend_high_vol", "trend_low_vol", "range_high_vol", "range_low_vol"]
+    lab = {f"{k}@5m@std": {"record": {"setup_id": f"{k}@5m@std", "results_r": [2.0] * 40 + [-1.0] * 30, "avg_cost_r": 0.05,
+                                      "out_of_sample": True, "source": "own", "valid_regimes": regimes,
+                                      "valid_sessions": ["asia", "london", "ny", "late"]}}
+           for k in ("sniper_ema_pullback",)}
+    sc = _scanner(tmp_path, lab=lab, on_take=hook)
+    _replay(sc, _walk(2600))
+    takes = [r for r in sc.journal.rows() if r["decision"] == "take"]
+    handed = [_json.loads(x) for x in out.read_text().splitlines()] if out.exists() else []
+    assert takes and len(handed) == len(takes)
+    assert {h["trade_id"] for h in handed} == {r["trade_id"] for r in takes}
+    assert all(h["setup"] == "sniper_ema_pullback@5m@std" and h["size"] > 0 for h in handed)

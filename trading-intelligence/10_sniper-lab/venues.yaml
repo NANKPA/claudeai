@@ -1,0 +1,147 @@
+# Venues for small accounts, read by `python -m trading_intelligence.sniper size`.
+# Transcribed from small-account-venues.md (synthesis_small_account_venues), researched 2026-10-20.
+# Fees are fractions of notional per side for the entry tier (no volume discount, no token discount).
+# Forex/CFD rows carry the spread as a per-side cost in both maker and taker (no maker rebate exists).
+# min_notional is the smallest order VALUE in USD. Fees and rules change: check the venue's own page
+# before trading, and check that the venue is legal and licensed where you live.
+# Education and research, not a recommendation of any venue.
+
+venues:
+  # ── crypto spot ──────────────────────────────────────────────────────────
+  - venue_id: binance_us_spot
+    name: "Binance.US spot"
+    kind: spot
+    maker: 0.0
+    taker: 0.0002
+    min_notional: 1.0
+    max_leverage: 1.0
+    slippage: 0.0001
+    note: "US residents only (16 states/territories excluded); one flat rate since 2026-04-22"
+  - venue_id: mexc_spot
+    name: "MEXC spot"
+    kind: spot
+    maker: 0.0
+    taker: 0.0005
+    min_notional: 1.0
+    max_leverage: 1.0
+    slippage: 0.0001
+    note: "offshore; excludes US/UK/Canada; reachable from Nigeria but not locally licensed (counterparty risk)"
+  - venue_id: okx_spot
+    name: "OKX spot (global/EEA schedule)"
+    kind: spot
+    maker: 0.0008
+    taker: 0.0010
+    min_notional: 1.0
+    max_leverage: 1.0
+    slippage: 0.0001
+    note: "regional fee schedules differ (OKX US 0.20%/0.35%)"
+  - venue_id: binance_spot
+    name: "Binance spot (global)"
+    kind: spot
+    maker: 0.0010
+    taker: 0.0010
+    min_notional: 5.0
+    max_leverage: 1.0
+    slippage: 0.0001
+    note: "fees T3; BNB payment discounts not included"
+  - venue_id: bybit_spot
+    name: "Bybit spot"
+    kind: spot
+    maker: 0.0010
+    taker: 0.0010
+    min_notional: 5.0
+    max_leverage: 1.0
+    slippage: 0.0001
+    note: "VIP 0; not for US persons; EEA users moved to Bybit EU"
+  - venue_id: kucoin_spot
+    name: "KuCoin spot"
+    kind: spot
+    maker: 0.0010
+    taker: 0.0010
+    min_notional: 1.0
+    max_leverage: 1.0
+    slippage: 0.0001
+    note: "LV0 rates; exited the US (2025)"
+  - venue_id: kraken_pro_spot
+    name: "Kraken Pro spot"
+    kind: spot
+    maker: 0.0040
+    taker: 0.0080
+    min_notional: 5.0
+    max_leverage: 1.0
+    slippage: 0.0001
+    note: "tier 1; not viable for short-term entries at small size"
+  - venue_id: coinbase_advanced
+    name: "Coinbase Advanced spot"
+    kind: spot
+    maker: 0.0060
+    taker: 0.0120
+    min_notional: 1.0
+    max_leverage: 1.0
+    slippage: 0.0001
+    note: "entry tier (T3); not viable for short-term entries"
+  # ── crypto perpetuals (leverage magnifies losses; liquidation is a real risk) ──
+  - venue_id: mexc_futures
+    name: "MEXC USDT perpetuals"
+    kind: perp
+    maker: 0.0
+    taker: 0.0002
+    min_notional: 8.2
+    max_leverage: 5.0
+    slippage: 0.0001
+    note: "venue lists up to 500x; capped here at 5x for sizing; 1 contract = 0.0001 BTC; not for US/UK persons"
+  - venue_id: hyperliquid_perp
+    name: "Hyperliquid perpetuals"
+    kind: perp
+    maker: 0.00015
+    taker: 0.00045
+    min_notional: 10.0
+    max_leverage: 5.0
+    slippage: 0.0001
+    note: "self-custody; venue lists 40x on BTC; capped here at 5x"
+  - venue_id: bybit_perp
+    name: "Bybit USDT perpetuals"
+    kind: perp
+    maker: 0.0002
+    taker: 0.00055
+    min_notional: 5.0
+    max_leverage: 5.0
+    slippage: 0.0001
+    note: "VIP 0; minimum order not verified; not for US persons; UK retail cannot use crypto derivatives"
+  # ── forex and gold ───────────────────────────────────────────────────────
+  - venue_id: oanda_us
+    name: "OANDA US (spread-only)"
+    kind: cfd
+    maker: 0.0000625
+    taker: 0.0000625
+    min_notional: 1.2
+    max_leverage: 50.0
+    slippage: 0.00002
+    note: "US residents; EUR/USD 1.4 pips listed; size in single units"
+  - venue_id: icmarkets_raw
+    name: "IC Markets Raw Spread"
+    kind: cfd
+    maker: 0.0000355
+    taker: 0.0000355
+    min_notional: 1150.0
+    max_leverage: 30.0
+    slippage: 0.00001
+    note: "0.1 pip average + $3.50 per lot per side; minimum 0.01 lot (1,000 units) is too big for tight risk on $20"
+  - venue_id: exness_std_cent
+    name: "Exness Standard Cent"
+    kind: cfd
+    maker: 0.0000455
+    taker: 0.0000455
+    min_notional: 11.5
+    max_leverage: 30.0
+    slippage: 0.00002
+    note: "cent account: 0.01 cent lot = 10 units; spreads 'from' 0.2-0.3 pips, about 1 pip assumed typical; offshore entity"
+  - venue_id: roboforex_procent
+    name: "RoboForex ProCent"
+    kind: cfd
+    maker: 0.000059
+    taker: 0.000059
+    min_notional: 11.5
+    max_leverage: 30.0
+    slippage: 0.00002
+    note: "cent account; spreads from 1.3 pips; Belize entity; not for US/EU/UK clients"

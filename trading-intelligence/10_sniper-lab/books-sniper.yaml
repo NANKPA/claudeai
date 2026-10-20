@@ -1,0 +1,225 @@
+# Sniper-lab reading list: books NOT already in 05_books-top-100/books.yaml.
+# Companion to 10_sniper-lab/reading-list.md (id: synthesis_sniper_reading_list),
+# which explains why each book matters for a bot that takes precise entries,
+# lists the in-KB books to read alongside, and gives the non-book sources
+# (ICT 2022 mentorship, academic papers on intraday patterns).
+#
+# Fields follow books.yaml: id, title, author, year, category, covers (concept ids),
+# key_idea (one-sentence paraphrase, Claude's words, T5). Extra fields:
+# publisher, format, source (where the bibliographic facts were read, 2026-10-20).
+# Education, not financial advice. Nothing here is a win-rate or P&L claim.
+
+books:
+  # --- Price action and precise entries -------------------------------------
+  - id: book_trading_price_action_trends
+    title: "Trading Price Action Trends: Technical Analysis of Price Charts Bar by Bar for the Serious Trader"
+    author: "Al Brooks"
+    year: 2011
+    publisher: "Wiley"
+    format: book
+    category: price_action
+    covers: [concept_price_action, concept_trend_following, concept_market_structure, concept_moving_averages, concept_trade_execution]
+    key_idea: "Treats every 5-minute bar as evidence of who controls the market and enters with a trend on its pullbacks, typically the second attempt to resume, rather than predicting turns."
+    source: "https://tenlong.com.tw/products/9781118066515"
+
+  - id: book_trading_price_action_trading_ranges
+    title: "Trading Price Action Trading Ranges: Technical Analysis of Price Charts Bar by Bar for the Serious Trader"
+    author: "Al Brooks"
+    year: 2012
+    publisher: "Wiley"
+    format: book
+    category: price_action
+    covers: [concept_price_action, concept_breakout_trading, concept_mean_reversion, concept_support_resistance, concept_market_regimes, concept_expectancy, concept_risk_reward_r_multiples]
+    key_idea: "Inside a range most breakout attempts fail, so the edges are faded and breakouts are taken only on strong follow-through, with every trade checked against probability times reward versus the chance of loss times risk."
+    source: "https://www.oreilly.com/library/view/-/9781118172339/"
+
+  - id: book_trading_price_action_reversals
+    title: "Trading Price Action Reversals: Technical Analysis of Price Charts Bar by Bar for the Serious Trader"
+    author: "Al Brooks"
+    year: 2012
+    publisher: "Wiley"
+    format: book
+    category: price_action
+    covers: [concept_price_action, concept_liquidity_sweep_reversal, concept_market_structure, concept_trendlines, concept_chart_patterns]
+    key_idea: "Most reversal attempts against a trend fail; a tradeable reversal usually needs a trendline break first and then a failed test of the old extreme before a signal bar is taken."
+    source: "https://oreilly.com/library/view/trading-price-action/9781118172308"
+
+  - id: book_forex_price_action_scalping
+    title: "Forex Price Action Scalping: An In-Depth Look into the Field of Professional Scalping"
+    author: "Bob Volman"
+    year: 2011
+    publisher: "Light Tower Publishing"
+    format: book
+    category: price_action
+    covers: [concept_scalping, concept_price_action, concept_breakout_trading, concept_support_resistance, concept_moving_averages, concept_trade_execution]
+    key_idea: "Scalps EUR/USD on a 70-tick chart with a fixed small bracket, entering only when a tight build-up of bars near a short moving average breaks, and names a small set of break patterns precise enough to code."
+    source: "https://www.goodreads.com/book/show/13269524-forex-price-action-scalping"
+
+  - id: book_understanding_price_action
+    title: "Understanding Price Action: Practical Analysis of the 5-Minute Time Frame"
+    author: "Bob Volman"
+    year: 2014
+    publisher: "Light Tower Publishing"
+    format: book
+    category: price_action
+    covers: [concept_price_action, concept_scalping, concept_support_resistance, concept_breakout_trading, concept_market_structure, concept_trade_management]
+    key_idea: "Walks through six consecutive months of annotated 5-minute EUR/USD charts to train when a setup has real pressure behind it and, just as often, when to skip it."
+    source: "https://www.abebooks.com/Understanding-Price-Action-Practical-Analysis-5-Minute/30325842905/bd"
+
+  - id: book_ytc_price_action_trader
+    title: "YTC Price Action Trader"
+    author: "Lance Beggs"
+    year: 2012   # earliest dated mention found (forum post, 2012); original release year not confirmed
+    publisher: "Your Trading Coach (self-published)"
+    format: e-book course (six PDF volumes)
+    category: price_action
+    covers: [concept_price_action, concept_multi_timeframe_analysis, concept_support_resistance, concept_market_structure, concept_trading_plan, concept_trade_management, concept_trading_journal_review]
+    key_idea: "A top-down process in which higher-timeframe structure and levels decide where to look and lower-timeframe swing strength or weakness decides when to enter, wrapped in a written plan and a review loop."
+    source: "https://nexusfi.com/showthread.php?p=233556"
+
+  - id: book_trading_by_the_minute
+    title: "Trading by the Minute"
+    author: "Joe Ross"
+    year: 1997
+    publisher: "Ross Trading International"
+    format: book
+    category: day_trading
+    covers: [concept_price_action, concept_market_structure, concept_breakout_trading, concept_trade_management]
+    key_idea: "Sorts intraday signals into major, minor and intermediate classes and gives explicit rules for the initial stop and for the stop that protects open profit."
+    source: "https://abebooks.com/9789768108258/Trading-Minute-Ross-Joe-9768108258/plp"
+
+  # --- Intraday playbooks ---------------------------------------------------
+  - id: book_how_to_day_trade_for_a_living
+    title: "How to Day Trade for a Living"
+    author: "Andrew Aziz"
+    year: 2016
+    publisher: "Self-published"
+    format: book
+    category: day_trading
+    covers: [concept_vwap, concept_breakout_trading, concept_support_resistance, concept_moving_averages, concept_position_sizing, concept_risk_reward_r_multiples]
+    key_idea: "A beginner's day-trading framework for US stocks: trade only the few names with unusual activity that day, fix the risk per trade in advance, and use a short list of intraday setups."
+    source: "https://www.goodreads.com/book/show/31808862"
+
+  - id: book_logical_trader
+    title: "The Logical Trader: Applying a Method to the Madness"
+    author: "Mark B. Fisher"
+    year: 2002
+    publisher: "Wiley"
+    format: book
+    category: day_trading
+    covers: [concept_breakout_trading, concept_pivot_points, concept_trading_sessions_killzones, concept_market_structure, concept_position_sizing, concept_trading_psychology]
+    key_idea: "The ACD method: mark the opening range, enter only when price clears it by a set offset, stop at a reference level on the other side, and use a daily pivot range to size and filter the trade."
+    source: "https://nexusfi.com/a/strategies/acd-trading-method"
+
+  - id: book_the_playbook
+    title: "The PlayBook: An Inside Look at How to Think Like a Professional Trader"
+    author: "Mike Bellafiore"
+    year: 2013
+    publisher: "FT Press"
+    format: book
+    category: day_trading
+    covers: [concept_trading_plan, concept_trading_journal_review, concept_trade_execution, concept_support_resistance, concept_breakout_trading, concept_trade_management]
+    key_idea: "Write each setup down as a play, with its context, intraday levels, entry, exit and sizing, then review it after the session; this is the prop-desk version of a strategy spec."
+    source: "https://ptgmedia.pearsoncmg.com/images/9780132937641/samplepages/0132937646.pdf"
+
+  - id: book_volume_profile_insiders_guide
+    title: "Volume Profile: The Insider's Guide to Trading"
+    author: "Trader Dale"
+    year: 2018
+    publisher: "Independently published"
+    format: book
+    category: auction_market_theory
+    covers: [concept_volume_profile, concept_auction_market_theory, concept_support_resistance, concept_order_flow, concept_liquidity]
+    key_idea: "Reads volume-at-price to find where large participants built positions and places resting entries at those zones with the stop just beyond them."
+    source: "https://ebay.it/itm/363344849625"
+
+  # --- Systematic short-term trading and entry/exit research -----------------
+  - id: book_short_term_trading_strategies_that_work
+    title: "Short Term Trading Strategies That Work"
+    author: "Larry Connors & Cesar Alvarez"
+    year: 2008
+    publisher: "TradingMarkets"
+    format: book
+    category: quant_algorithmic
+    covers: [concept_mean_reversion, concept_oscillators_momentum, concept_moving_averages, concept_backtesting, concept_market_regimes]
+    key_idea: "Buys sharp short-term pullbacks, such as an extreme 2-period RSI, only while price is above its long-term average, and exits on the first snap-back; the claim that stops hurt this style is a hypothesis to test."
+    source: "https://www.abebooks.com/Short-Term-Trading-Strategies-Work-Larry/31620720826/bd"
+
+  - id: book_entry_exit_confessions
+    title: "Entry and Exit Confessions of a Champion Trader: 52 Ways a Professional Speculator Gets In and Out of the Stock, Futures and Forex Markets"
+    author: "Kevin J. Davey"
+    year: 2019
+    publisher: "Independently published"
+    format: book
+    category: quant_algorithmic
+    covers: [concept_backtesting, concept_trade_execution, concept_trade_management, concept_breakout_trading, concept_overfitting_validation]
+    key_idea: "Treats entries and exits as separate parts to be tested one at a time, giving 41 entries and 11 exits in code, so an entry's raw edge can be checked before any exit is added."
+    source: "https://www.goodreads.com/work/editions/70058912-entry-and-exit-confessions-of-a-champion-trader-52-ways-a-professional"
+
+  - id: book_machine_trading
+    title: "Machine Trading: Deploying Computer Algorithms to Conquer the Markets"
+    author: "Ernest P. Chan"
+    year: 2017
+    publisher: "Wiley"
+    format: book
+    category: quant_algorithmic
+    covers: [concept_market_microstructure, concept_order_flow, concept_time_series_statistics, concept_machine_learning_finance, concept_backtesting, concept_mean_reversion]
+    key_idea: "A practitioner's tour of algorithmic strategies with code, including a chapter on intraday trading and market microstructure and one on bitcoin."
+    source: "https://www.wiley-vch.de/en/areas-interest/finance-economics-law/machine-trading-978-1-119-21960-6"
+
+  # --- Validation -----------------------------------------------------------
+  - id: book_evaluation_optimization_trading_strategies
+    title: "The Evaluation and Optimization of Trading Strategies (2nd ed.)"
+    author: "Robert Pardo"
+    year: 2008
+    publisher: "Wiley"
+    format: book
+    category: quant_algorithmic
+    covers: [concept_backtesting, concept_overfitting_validation, concept_performance_metrics, concept_trading_plan]
+    key_idea: "Walk-forward analysis: optimise on one window, trade the next unseen window, roll forward, and judge a strategy by how much of its in-sample result survives."
+    source: "https://www.wiley-vch.de/en/areas-interest/finance-economics-law/the-evaluation-and-optimization-of-trading-strategies-978-0-470-12801-5"
+
+  - id: book_testing_tuning_trading_systems
+    title: "Testing and Tuning Market Trading Systems: Algorithms in C++"
+    author: "Timothy Masters"
+    year: 2018
+    publisher: "Apress"
+    format: book
+    category: quant_algorithmic
+    covers: [concept_backtesting, concept_overfitting_validation, concept_performance_metrics, concept_time_series_statistics, concept_probabilistic_thinking]
+    key_idea: "Statistical tests, among them walk-forward, cross-validation and Monte Carlo permutation tests, that ask whether a backtest result could have come from luck or from choosing the best of many tries."
+    source: "https://www.abebooks.com/Testing-Tuning-Market-Trading-Systems-Timothy/32234804369/bd"
+
+  # --- Small-account risk, stops and sizing ---------------------------------
+  - id: book_leveraged_trading
+    title: "Leveraged Trading: A Professional Approach to Trading FX, Stocks on Margin, CFDs, Spread Bets and Futures for All Traders"
+    author: "Robert Carver"
+    year: 2019
+    publisher: "Harriman House"
+    format: book
+    category: risk_money_management
+    covers: [concept_leverage_margin, concept_position_sizing, concept_volatility, concept_risk_of_ruin_drawdown, concept_trade_execution, concept_trend_following]
+    key_idea: "Leverage magnifies both losses and costs, so a small trader should start with one simple, volatility-sized rule on one instrument and trade only as often as costs allow."
+    source: "https://www.panmacmillan.com/authors/robert-carver/leveraged-trading/9780857197221"
+
+  - id: book_maximum_adverse_excursion
+    title: "Maximum Adverse Excursion: Analyzing Price Fluctuations for Trading Management"
+    author: "John Sweeney"
+    year: 1997
+    publisher: "Wiley"
+    format: book
+    category: risk_money_management
+    covers: [concept_trade_management, concept_risk_reward_r_multiples, concept_backtesting, concept_position_sizing]
+    key_idea: "Record how far each trade moved against you before it closed; winners and losers tend to separate on that measure, so its distribution shows where a stop belongs."
+    source: "https://www.wiley-vch.de/en/areas-interest/finance-economics-law/maximum-adverse-excursion-978-0-471-14152-5"
+
+  - id: book_the_trading_game
+    title: "The Trading Game: Playing by the Numbers to Make Millions"
+    author: "Ryan Jones"
+    year: 1999
+    publisher: "Wiley"
+    format: book
+    category: risk_money_management
+    covers: [concept_position_sizing, concept_risk_of_ruin_drawdown, concept_kelly_criterion_optimal_f, concept_leverage_margin]
+    key_idea: "Fixed-ratio sizing adds one unit only after a fixed profit per unit already traded, a scheme built for small accounts that cannot trade fractions of the minimum size."
+    source: "https://www.adaptrade.com/MSA/fixratio.htm"

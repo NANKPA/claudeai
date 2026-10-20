@@ -38,7 +38,7 @@ LAYERS = [
     ("L8", "Review", "Is the edge real, and still working?"),
 ]
 FAMILY = {  # kind -> (family, shape)
-    "concept": ("idea", "dot"), "strategy": ("idea", "diamond"), "formula": ("idea", "hexagon"),
+    "concept": ("idea", "dot"), "strategy": ("idea", "diamond"), "setup": ("idea", "triangle"), "formula": ("idea", "hexagon"),
     "framework": ("idea", "hexagon"), "synthesis": ("idea", "hexagon"), "course": ("idea", "square"),
     "track": ("idea", "square"), "person": ("person", "dot"),
     "book": ("source", "square"), "mathbook": ("source", "square"), "paper": ("source", "square"),
@@ -57,6 +57,7 @@ PARTITION_INFO = {
     "06_mathematics-foundations": ("Mathematics foundations", "complete"),
     "07_concepts": ("Concepts", "complete"),
     "08_synthesis": ("Synthesis", "complete"),
+    "10_sniper-lab": ("Sniper lab", "complete"),
 }
 PARTITION_NOTE = {
     "00_philosophy": "The owner's philosophy and the root of the map: 21 sections, 12 principles, their links to the graph, a real-data evidence lab, hypotheses, the decision protocol and the journal.",
@@ -69,6 +70,7 @@ PARTITION_NOTE = {
     "07_concepts": "Atomic notes on every layer, the backbone of the graph.",
     "08_synthesis": "Unified framework, lineage map, consensus and conflicts, checklist.",
     "00_framework": "Ontology, note schema, source tiers, learning path.",
+    "10_sniper-lab": "Codified sniper entries backtested in-sample vs out-of-sample on crypto, forex and gold, the small-account venue table, and the precise-entry reading list.",
 }
 
 

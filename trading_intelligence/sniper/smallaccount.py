@@ -41,6 +41,7 @@ def load_venues(path: Path = VENUES_FILE) -> dict[str, Venue]:
     if path.exists():
         data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
         for v in data.get("venues", []):
+            v = {**v, "id": v.get("venue_id") or v.get("id")}       # venue_id keeps venues out of the knowledge graph
             out[v["id"]] = Venue(**{k: v[k] for k in Venue.__dataclass_fields__ if k in v})
     if not out:     # generic fee levels until a venue table exists
         out = {"generic_std": Venue("generic_std", "Typical retail spot (0.08% maker / 0.10% taker)", "spot", 0.0008, 0.0010, 5.0),

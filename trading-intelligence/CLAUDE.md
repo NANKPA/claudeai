@@ -45,6 +45,14 @@ base disagrees with it, say so plainly, cite the source, and present it as a
 challenge for the owner to weigh (as `extensions.md` does). Suggestions for the
 owner are always marked as suggestions.
 
+## Automated and "sniper" entries
+
+For questions about precise entries, scalping, trading every day, small accounts, venues or a trading
+bot, start from `10_sniper-lab/README.md`. `backtest-report.md` holds the measured, out-of-sample
+results after costs for every codified setup. Quote those numbers, not the playbooks' claims. A setup
+is only tradable when its own record passes the gate (`trading_intelligence/gate.py`).
+`small-account-venues.md` covers costs and minimum orders for any account size.
+
 ## How to answer
 
 1. **Start from the philosophy.** Name the sections and principles the question

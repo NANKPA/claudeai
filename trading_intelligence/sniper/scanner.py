@@ -13,7 +13,8 @@ Two books are kept, so the evidence grows whatever the gate decides:
 - account: only the gate's "take" decisions, sized by Gate 6 for the paper equity (any amount).
   Outcomes are written back into the journal row of the decision.
 
-Nothing here sends an order to a venue. The operator's state for Gate 0 is read from `state.txt` in the
+Nothing here sends an order to a venue. `--on-take "command"` hands each gated TAKE (and only those) to
+your own execution code as JSON on stdin, after its journal row is written. The operator's state for Gate 0 is read from `state.txt` in the
 scanner's home folder on every pass (default "calm"): write "tired" there and risk halves, write
 "frustrated" and the gate stands aside.
 """
@@ -36,7 +37,7 @@ from ..journal import Journal
 from . import records as rec
 from .backtest import Book, Costs
 from .feeds import INTERVAL_SECONDS, latest, recent
-from .lab import FEES, HTF, OUT as LAB_OUT
+from .lab import FEES, HTF, OUT as LAB_OUT, market_of, setups_for
 from .setups import SETUPS, Signal, prepare
 
 HOME = Path(os.environ.get("TI_SNIPER_HOME", Path.home() / ".trading-intelligence" / "sniper-paper"))
@@ -48,7 +49,9 @@ ACCOUNT_COLS = ["exit_time", "trade_id", "key", "symbol", "session", "net_r", "r
 
 
 def _venue_symbol(venue: str, sym: str) -> str:
-    """BTCUSDT -> the venue's spelling."""
+    """BTCUSDT / EURUSD -> the venue's spelling."""
+    if venue == "yahoo":
+        return {"XAUUSD": "GC=F", "XAGUSD": "SI=F"}.get(sym, f"{sym}=X")
     base, quote = sym[:-4], sym[-4:]
     return {"coinbase": f"{base}-{'USD' if quote == 'USDT' else quote}", "okx": f"{base}-{quote}",
             "kucoin": f"{base}-{quote}"}.get(venue, sym)
@@ -72,6 +75,12 @@ def _append(path: Path, cols: list[str], row: dict) -> None:
         os.fsync(f.fileno())
 
 
+def point_value(symbol: str, price: float) -> float:
+    """Account currency (USD) per 1.0 price move per unit. USD-base pairs (USDJPY ...) pay in the quote
+    currency, so one unit is worth 1/price dollars per 1.0 move."""
+    return 1.0 / price if market_of(symbol) == "fx" and symbol.startswith("USD") else 1.0
+
+
 # ── the paper account ───────────────────────────────────────────────────────
 class PaperAccount:
     def __init__(self, home: Path, equity0: float):
@@ -86,7 +95,8 @@ class PaperAccount:
         return float(r[-1]["equity"]) if r else self.equity0
 
     def state(self, key: str, session: str, now: datetime, open_risk_pct: float, emotional_state: str,
-              base_risk_pct: float, lot_step: float, min_notional: float, style: str) -> G.AccountState:
+              base_risk_pct: float, lot_step: float, min_notional: float, style: str,
+              point_value: float = 1.0) -> G.AccountState:
         rows = self.rows()
         eq = [self.equity0] + [float(r["equity"]) for r in rows]
         peak = max(eq)
@@ -106,7 +116,7 @@ class PaperAccount:
                 break
         losses = [t for t, r in today_rows if float(r["net_r"]) < 0]
         mins = (now - max(losses)).total_seconds() / 60 if losses else None
-        return G.AccountState(equity=eq[-1], emotional_state=emotional_state, point_value=1.0, lot_step=lot_step,
+        return G.AccountState(equity=eq[-1], emotional_state=emotional_state, point_value=point_value, lot_step=lot_step,
                               min_order_notional=min_notional, base_risk_pct=base_risk_pct, trading_style=style,
                               realized_today_r=realized_today, realized_week_r=realized_week,
                               consecutive_losses_setup_session=streak,
@@ -116,7 +126,7 @@ class PaperAccount:
 
     def book_trade(self, tr: dict, tag: dict) -> dict:
         risk_per_unit = abs(tr["entry"] - tr["stop"])
-        pnl = tag["size"] * risk_per_unit * tr["net_r"]
+        pnl = tag["size"] * risk_per_unit * tr["net_r"] * tag.get("point_value", 1.0)
         row = {"exit_time": pd.Timestamp(tr["exit_time"]).isoformat(), "trade_id": tag["trade_id"], "key": tag["key"],
                "symbol": tr["symbol"], "session": tr["session"], "net_r": round(tr["net_r"], 5),
                "risk_pct": tag["risk_pct"], "size": tag["size"], "pnl": round(pnl, 6), "equity": round(self.equity() + pnl, 6)}
@@ -241,9 +251,12 @@ class Scanner:
                 except Exception as e:  # noqa: BLE001 - one market's outage must not stop the others
                     log.append(f"{sym} {tf}: data error {e}")
                     continue
-                d = prepare(df, htf=HTF[tf])
+                mk = market_of(sym)
+                d = prepare(df, htf=HTF[tf], day="fx" if mk == "fx" else "utc")
+                allowed = {S.id for S in setups_for(mk, tf)}
                 for setup_id in self.a.setups:
-                    log += self.step(d, sym, tf, setup_id, forward)
+                    if setup_id in allowed:
+                        log += self.step(d, sym, tf, setup_id, forward)
         self.save()
         return log
 
@@ -269,7 +282,7 @@ class Scanner:
         if new_i and book.flat:
             i = new_i[-1]
             S = SETUPS[setup_id]
-            sig = S(tf=tf, htf=HTF[tf]).signal_at(d, i)
+            sig = S(tf=tf, htf=HTF[tf], symbol=sym).signal_at(d, i)
             if sig is not None:
                 out.append(self.decide(sig, book, key, sym, tf, S.derived_from, forward))
         st = _dump_book(book)
@@ -281,17 +294,37 @@ class Scanner:
         now = datetime.now(timezone.utc)
         t = proposal(sig, key, sym, tf, self.costs, derived_from)
         setup = setup_record(key, self.lab, forward)
+        pv = point_value(sym, sig.entry)
         acct = self.account.state(key, sig.session, now, self.open_risk(), self.operator_state(), self.a.risk_pct,
-                                  self.a.lot_step, self.a.min_notional, self.a.style)
+                                  self.a.lot_step, self.a.min_notional, self.a.style, point_value=pv)
         d = self.gate.evaluate(t, setup, acct)
         tid = self.journal.record_decision(d)
         take = d.action == "take"
         book.submit(sig, tag={"trade_id": tid, "key": key, "account": take, "size": d.position_size if take else 0,
-                              "risk_pct": d.risk_pct if take else 0})
+                              "risk_pct": d.risk_pct if take else 0, "point_value": pv})
+        if take and self.a.on_take:
+            self.hand_off(sig, tid, key, sym, tf, d)
         why = next((g.detail for g in d.gates if g.status == "fail"), d.gates[-1].detail if d.gates else "")
         size = f" size {d.position_size:g} risk {d.risk_pct:.2f}%" if take else ""
         return (f"{sig.time:%Y-%m-%d %H:%M} {key} {sym} {sig.side} {sig.order} @ {sig.entry:.6g} stop {sig.stop:.6g} "
                 f"target {sig.target:.6g} [{sig.regime}/{sig.session}] -> {d.action.upper()}{size}: {why}")
+
+    def hand_off(self, sig: Signal, tid: str, key: str, sym: str, tf: str, d: G.Decision) -> None:
+        """Pass a gated TAKE to the owner's own execution code (`--on-take "command"`): the trade as JSON
+        on stdin. Called only after the journal row is written (Section XVI). A failure is journaled."""
+        import shlex
+        import subprocess
+        payload = {"trade_id": tid, "setup": key, "symbol": sym, "timeframe": tf, "side": sig.side, "order": sig.order,
+                   "entry": sig.entry, "stop": sig.stop, "target": sig.target, "size": d.position_size,
+                   "risk_pct": d.risk_pct, "expiry_bars": sig.expiry_bars, "max_hold_bars": sig.max_hold_bars,
+                   "est_ev_r": d.est_ev_r, "decided_at": d.journal_row.get("decided_at"), "paper": False}
+        try:
+            r = subprocess.run(shlex.split(self.a.on_take), input=json.dumps(payload), text=True, capture_output=True,
+                               timeout=60)
+            if r.returncode != 0:
+                raise RuntimeError(f"exit {r.returncode}: {r.stderr.strip()[:300]}")
+        except Exception as e:  # noqa: BLE001 - never crash the scan; record it
+            self.journal.record_outcome(tid, lesson=f"on-take hand-off failed: {e}")
 
     def unfilled(self, tag: dict, key: str, sym: str, t) -> str:
         """The order expired, price left without it, or a market order's open gapped past the stop."""
@@ -340,11 +373,13 @@ def report(home: Path, equity0: float) -> str:
 
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(prog="sniper scan")
-    ap.add_argument("--venue", default="binance", help="candle source: binance (public data API), coinbase, kraken, okx, kucoin")
+    ap.add_argument("--venue", default="binance", help="candle source: binance (public data API), coinbase, kraken, okx, "
+                                                       "kucoin; yahoo for forex and gold (EURUSD, XAUUSD ...)")
     ap.add_argument("--symbols", nargs="+", default=["BTCUSDT", "ETHUSDT", "SOLUSDT"])
     ap.add_argument("--timeframes", nargs="+", default=["15m", "1h"])
     ap.add_argument("--setups", nargs="+", default=sorted(SETUPS))
-    ap.add_argument("--fees", default="std", help="fee level whose backtest records the gate reads (std / low)")
+    ap.add_argument("--fees", default="std", help="cost level whose backtest records the gate reads: std / low (crypto), "
+                                                   "fx_std / fx_raw (forex and gold)")
     ap.add_argument("--maker", type=float, default=None, help="override maker fee (fraction, e.g. 0.0002)")
     ap.add_argument("--taker", type=float, default=None)
     ap.add_argument("--slippage", type=float, default=None)
@@ -357,6 +392,8 @@ def main(argv=None) -> int:
     ap.add_argument("--state", default="calm", help="operator state for Gate 0 if state.txt is absent")
     ap.add_argument("--records", default=str(LAB_OUT / "records.json"))
     ap.add_argument("--home", default=str(HOME))
+    ap.add_argument("--on-take", default=None, help="command that receives each gated TAKE as JSON on stdin "
+                                                     "(your bot's own order code); never called for skips or waits")
     ap.add_argument("--once", action="store_true")
     ap.add_argument("--report", action="store_true")
     a = ap.parse_args(argv)

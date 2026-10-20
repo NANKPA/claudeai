@@ -70,6 +70,7 @@ FILE_TYPE_BY_KIND = {
     "formula": "concept",
     "concept": "concept",
     "strategy": "concept",
+    "setup": "concept",
     "person": "concept",
     "philosophy": "rationale",
     "principle": "rationale",
@@ -98,6 +99,9 @@ ID_PREFIX_KIND = {
     "principle_": "principle",
     "hypothesis_": "hypothesis",
     "question_": "question",
+    "sniper_": "setup",            # codified, backtested entries (10_sniper-lab)
+    "trend_": "setup",
+    "lit_": "setup",
 }
 
 ID_RE = re.compile(r"^[a-z0-9_]+$")

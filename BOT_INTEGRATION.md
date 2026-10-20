@@ -101,6 +101,32 @@ What the gate enforces (from `trading-intelligence/00_philosophy/decision-protoc
 | 3 | Regime and session tagged and not "unclear". Every required condition present, and today's regime/session among those the record was measured in. Unresolved arguments against → wait. A price-vs-value gap alone is not evidence. | P4, P6 |
 | 4 | Own out-of-sample record: n ≥ 30 and mean − 1 SE > 0 for a 2. Any 0 → skip; any 1 → wait. | P1, P5, P6 |
 | 5 | `cost_price` required. This trade's EV, using gross win and loss with the win capped at the target, minus this trade's own cost in R, must be > 0. | P5 |
-| 6 | Fixed-fractional size: full base risk only when mean − 2 SE > 0, otherwise half. ¼ Kelly from the conservative win rate as a ceiling. Heat ≤ 2%. Rounded down. | P9 |
+| 6 | Fixed-fractional size: full base risk only when mean − 2 SE > 0, otherwise half. ¼ Kelly from the conservative win rate as a ceiling. Heat ≤ 2%. Rounded down. A leverage cap cuts the size (less risk); an order below the venue's minimum (`min_order_notional`) is a skip. | P9 |
 
 Run the tests: `python -m pytest -q trading_intelligence/tests tools/philosophy/tests`.
+
+## The sniper engine: scan, gate, paper-trade
+
+The package also contains a scanner that finds the setups by itself and runs each one through the gate
+(`trading_intelligence/sniper`, results in `trading-intelligence/10_sniper-lab/`):
+
+```bash
+python -m trading_intelligence.sniper size --equity 20 --risk-pct 1        # any account size: cost in R per venue
+python -m trading_intelligence.sniper scan --equity 20 --risk-pct 1 --fees low --min-notional 1   # crypto, loops
+python -m trading_intelligence.sniper scan --venue yahoo --symbols EURUSD XAUUSD --timeframes 1h 4h \
+       --fees fx_std --lot-step 10 --min-notional 11.5 --max-leverage 30                          # forex / gold
+python -m trading_intelligence.sniper scan --report                        # forward (shadow) and account results
+```
+
+- Every signal is journaled (`~/.trading-intelligence/sniper-paper/journal.csv`, the owner's template) with
+  the gate's decision and reasons. Every signal is also followed on paper with the backtest's fill rules
+  (`forward.csv`): that forward record is added to the setup's evidence, so a setup that starts working
+  in new data can earn its way through Gate 4.
+- Only gate **takes** reach the paper account (`account.csv`), sized by Gate 6 for your equity.
+- Gate 0 reads your state from `~/.trading-intelligence/sniper-paper/state.txt` on every pass: write
+  `tired` and risk halves, `frustrated` and it stands aside.
+- **To trade for real**, pass `--on-take "python my_bot_order.py"`: the scanner calls your own order code
+  with the trade as JSON on stdin, only for gate takes, after the journal row is written. Broker keys
+  stay in your bot, on your machine, never in this repo.
+- Run the scanner with `--once` from cron or Task Scheduler instead of the loop if you prefer.
+

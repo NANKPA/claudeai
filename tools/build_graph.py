@@ -177,7 +177,7 @@ def label_communities(G, communities: dict[int, list[str]]) -> dict[int, str]:
         name = next((lbl for anchor, lbl in ANCHOR_LABELS if anchor in mset), None)
         if name is None:
             ranked = sorted(
-                (m for m in members if G.nodes[m].get("kind") in ("concept", "strategy", "course", "channel", "podcast", "synthesis", "framework", "track")),
+                (m for m in members if G.nodes[m].get("kind") in ("concept", "strategy", "setup", "course", "channel", "podcast", "synthesis", "framework", "track")),
                 key=lambda m: -G.degree(m),
             ) or sorted(members, key=lambda m: -G.degree(m))
             parts = [G.nodes[m].get("label", m).split(" (")[0].split(" — ")[-1] if G.nodes[m].get("kind") == "track"

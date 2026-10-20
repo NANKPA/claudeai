@@ -89,6 +89,104 @@ def binance_history(symbol: str = "BTCUSDT", interval: str = "5m", start: str = 
     return df[~df.index.duplicated(keep="last")]
 
 
+# Dukascopy's public datafeed: one LZMA file of 1-minute BID candles per day, no account needed.
+# Records are big-endian (seconds from midnight, open, close, low, high as integers scaled by the
+# point size, volume as float). Months in the URL are 0-based.
+DUKA_POINT = {"EURUSD": 1e5, "GBPUSD": 1e5, "AUDUSD": 1e5, "USDCHF": 1e5, "USDCAD": 1e5, "NZDUSD": 1e5,
+              "EURGBP": 1e5, "USDJPY": 1e3, "EURJPY": 1e3, "GBPJPY": 1e3, "XAUUSD": 1e3, "XAGUSD": 1e3}
+
+
+_DUKA_LOCK = __import__("threading").Lock()
+_DUKA_LAST = [0.0]
+DUKA_MIN_INTERVAL = float(os.environ.get("TI_DUKA_MIN_INTERVAL", "0.35"))   # seconds between requests: be polite
+
+
+def _duka_get(url: str) -> bytes | None:
+    """GET with pacing and patient backoff (the free datafeed answers 429 when hurried). None on 404."""
+    for attempt in range(9):
+        with _DUKA_LOCK:
+            wait = _DUKA_LAST[0] + DUKA_MIN_INTERVAL - time.time()
+            if wait > 0:
+                time.sleep(wait)
+            _DUKA_LAST[0] = time.time()
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, headers=_UA), timeout=60) as r:
+                return r.read()
+        except urllib.error.HTTPError as e:
+            if e.code == 404:
+                return None
+            time.sleep(min(5 * 2 ** attempt, 90) if e.code == 429 else min(2 ** attempt, 30))
+        except OSError:
+            time.sleep(min(2 ** attempt, 30))
+    raise RuntimeError(f"dukascopy unreachable: {url}")
+
+
+def _duka_decode(raw: bytes, symbol: str, t0: pd.Timestamp) -> pd.DataFrame | None:
+    import lzma
+    import struct
+    if not raw:
+        return None
+    data = lzma.decompress(raw)
+    rows = [struct.unpack(">5if", data[k:k + 24]) for k in range(0, len(data) - len(data) % 24, 24)]
+    df = pd.DataFrame(rows, columns=["s", "open", "close", "low", "high", "volume"])
+    df = df[df["volume"] > 0]                                  # weekend and holiday filler rows
+    if df.empty:
+        return None
+    df.index = t0 + pd.to_timedelta(df["s"], unit="s")
+    out = df[["open", "high", "low", "close"]] / DUKA_POINT[symbol]
+    out["volume"] = df["volume"]
+    return out
+
+
+def _duka_day(symbol: str, day: pd.Timestamp) -> pd.DataFrame | None:
+    url = (f"https://datafeed.dukascopy.com/datafeed/{symbol}/{day.year}/{day.month - 1:02d}/{day.day:02d}/"
+           "BID_candles_min_1.bi5")
+    return _duka_decode(_duka_get(url), symbol, day)
+
+
+def _duka_month_hours(symbol: str, mth: pd.Period) -> pd.DataFrame | None:
+    url = f"https://datafeed.dukascopy.com/datafeed/{symbol}/{mth.year}/{mth.month - 1:02d}/BID_candles_hour_1.bi5"
+    return _duka_decode(_duka_get(url), symbol, pd.Timestamp(mth.start_time, tz="UTC"))
+
+
+def dukascopy_history(symbol: str = "EURUSD", interval: str = "15m", start: str = "2022-01", end: str | None = None,
+                      workers: int = 3) -> pd.DataFrame:
+    """Forex and metals history from Dukascopy (BID candles), cached per month under TI_CANDLE_CACHE."""
+    from concurrent.futures import ThreadPoolExecutor
+    now = datetime.now(timezone.utc)
+    end = end or f"{now.year if now.month > 1 else now.year - 1}-{(now.month - 1) or 12:02d}"
+    months = pd.period_range(start, end, freq="M")
+    hourly = INTERVAL_SECONDS.get(interval, 86400) >= 3600         # 1h and above: one file per month
+    base = "1h" if hourly else "1m"
+    parts = []
+    for mth in months:
+        path = CACHE / "dukascopy" / symbol / base / f"{symbol}-{base}-{mth}.csv.gz"
+        if not path.exists():
+            if hourly:
+                frames = [f for f in [_duka_month_hours(symbol, mth)] if f is not None]
+            else:
+                days = [d for d in pd.date_range(mth.start_time, mth.end_time.normalize(), freq="D", tz="UTC")
+                        if d.weekday() != 5]
+                with ThreadPoolExecutor(max_workers=workers) as ex:
+                    frames = [f for f in ex.map(lambda d: _duka_day(symbol, d), days) if f is not None]
+            if not frames:
+                continue
+            m = pd.concat(frames).sort_index()
+            path.parent.mkdir(parents=True, exist_ok=True)
+            m.to_csv(path, compression="gzip")
+        m = pd.read_csv(path, index_col=0, parse_dates=True)
+        if m.index.tz is None:
+            m.index = m.index.tz_localize("UTC")
+        parts.append(m)
+    if not parts:
+        raise RuntimeError(f"no dukascopy history for {symbol} {start}..{end}")
+    df = pd.concat(parts).sort_index()
+    df = df[~df.index.duplicated(keep="last")]
+    if interval == base:
+        return df
+    return resample(df, {"5m": "5min", "15m": "15min", "30m": "30min"}.get(interval, interval))
+
+
 # ── live (closed candles only) ──────────────────────────────────────────────
 def _closed(df: pd.DataFrame, interval: str) -> pd.DataFrame:
     now = pd.Timestamp.now(tz="UTC")
@@ -119,7 +217,9 @@ def latest(venue: str, symbol: str, interval: str = "5m", limit: int = 300) -> p
         data = json.loads(_get(f"https://data-api.binance.vision/api/v3/klines?symbol={symbol}&interval={interval}&limit={min(limit, 1000)}"))
         df = _frame([[r[0], r[1], r[2], r[3], r[4], r[5]] for r in data], "ms")
     elif v == "yahoo":
-        rng = "5d" if sec < 3600 else "60d"
+        if interval == "4h":                                   # Yahoo has no 4h bars: build them from 1h
+            return _closed(resample(latest("yahoo", symbol, "1h", limit=100000), "4h"), "4h").tail(limit)
+        rng = "7d" if sec < 300 else "60d" if sec < 3600 else "730d"
         res = json.loads(_get(f"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}?interval={interval}&range={rng}"))
         r = res["chart"]["result"][0]
         q = r["indicators"]["quote"][0]
