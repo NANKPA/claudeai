@@ -92,12 +92,12 @@ class SetupRecord:
             n = len(r)
             mean = sum(r) / n
             sd = math.sqrt(sum((x - mean) ** 2 for x in r) / (n - 1)) if n > 1 else float("nan")
-            if self.effective_n is not None:
-                n_eff = int(_finite_nonneg("effective_n", self.effective_n))
-                n = max(min(n, n_eff), 1)
             wins = [x for x in r if x > 0]
             losses = [-x for x in r if x <= 0]
-            p = len(wins) / n
+            p = len(wins) / n                     # the win rate always uses every trade
+            if self.effective_n is not None:      # correlated trades: fewer independent observations for n and SE only
+                n_eff = int(_finite_nonneg("effective_n", self.effective_n))
+                n = max(min(n, n_eff), 1)
             c = float(self.avg_cost_r)
             w_net = sum(wins) / len(wins) if wins else 0.0
             l_net = sum(losses) / len(losses) if losses else 0.0

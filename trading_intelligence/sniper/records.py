@@ -47,9 +47,11 @@ def build_record(trades: pd.DataFrame, setup_key: str, split_date: str, min_cell
         rec = {"setup_id": setup_key, "results_r": [round(float(x), 5) for x in oos_f["net_r"]],
                "avg_cost_r": round(float(oos_f["cost_r"].mean()), 5), "out_of_sample": True, "source": "own",
                "valid_regimes": regimes, "valid_sessions": sessions}
-        if st.get("se") and st.get("se_day") and st["se_day"] > st["se"]:
-            rec["effective_n"] = int(st["n"] * (st["se"] / st["se_day"]) ** 2)   # design effect of same-day clustering
-    return {"setup_key": setup_key, "split_date": split_date, "valid_regimes": regimes, "valid_sessions": sessions,
+        if effective_n(st) < st["n"]:
+            rec["effective_n"] = effective_n(st)                                 # design effect of same-day clustering
+    oos_end = pd.Timestamp(oos_t["signal_time"].max()).isoformat() if len(oos_t) else None
+    return {"setup_key": setup_key, "split_date": split_date, "oos_end": oos_end, "valid_regimes": regimes,
+            "valid_sessions": sessions,
             "is": stats(is_f), "is_unfiltered": stats(is_t), "oos": stats(oos_f), "oos_unfiltered": stats(oos_t),
             "record": rec}
 
@@ -65,7 +67,8 @@ def stats(t: pd.DataFrame) -> dict:
     # trades on the same day (and across correlated coins) are not independent: cluster the SE by day
     dev = pd.Series(r - r.mean(), index=pd.to_datetime(t["signal_time"]).dt.floor("D").to_numpy())
     g = dev.groupby(level=0).sum().to_numpy()
-    se_day = float(np.sqrt((g ** 2).sum()) / n) if len(g) > 1 else float("nan")
+    G = len(g)                                # cluster-robust SE of the mean, with the G/(G-1) small-sample factor
+    se_day = float(np.sqrt((g ** 2).sum() * G / (G - 1)) / n) if G > 1 else float("nan")
     return {"n": n, "per_day": round(n / days, 3), "win_rate": round(float((r > 0).mean()), 4),
             "se_day": round(se_day, 4) if math.isfinite(se_day) else None,
             "t_day": round(float(r.mean()) / se_day, 2) if math.isfinite(se_day) and se_day > 0 else None,
@@ -98,12 +101,22 @@ def deflated_best(entries: list[dict], key: str = "oos") -> dict:
     from .._paths import ensure_tools_on_path
     ensure_tools_on_path()
     import edge_lab as el  # type: ignore
-    srs = [e[key].get("sharpe_per_trade") for e in entries if e[key].get("n", 0) >= 30 and e[key].get("sharpe_per_trade") is not None]
+    ok = [e for e in entries if effective_n(e[key]) >= 30 and e[key].get("sharpe_per_trade") is not None]
+    srs = [e[key]["sharpe_per_trade"] for e in ok]
     trials = max(len(entries), len(srs))
     if len(srs) < 2:
         return {"trials": trials, "judged": len(srs)}
-    best = max((e for e in entries if e[key].get("sharpe_per_trade") is not None and e[key].get("n", 0) >= 30),
-               key=lambda e: e[key]["sharpe_per_trade"])
-    dsr = el.deflated_sharpe_ratio(best[key]["sharpe_per_trade"], best[key]["n"], 0.0, 3.0, trials, float(np.var(srs)))
+    best = max(ok, key=lambda e: e[key]["sharpe_per_trade"])
+    n_eff = effective_n(best[key])            # same-day trades are not independent observations
+    dsr = el.deflated_sharpe_ratio(best[key]["sharpe_per_trade"], n_eff, 0.0, 3.0, trials, float(np.var(srs)))
     return {"trials": trials, "judged": len(srs), "best": best["setup_key"], "best_sharpe_per_trade": best[key]["sharpe_per_trade"],
-            "best_n": best[key]["n"], "deflated_sharpe_prob": round(float(dsr), 4)}
+            "best_n": best[key]["n"], "best_effective_n": n_eff, "deflated_sharpe_prob": round(float(dsr), 4)}
+
+
+def effective_n(st: dict) -> int:
+    """n shrunk by the day clustering: n x (SE per trade / SE clustered by day)^2 when clustering widens the SE."""
+    n = int(st.get("n", 0) or 0)
+    se, se_day = st.get("se"), st.get("se_day")
+    if n and se and se_day and se_day > se:
+        return int(n * (se / se_day) ** 2)
+    return n

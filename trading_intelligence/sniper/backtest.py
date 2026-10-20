@@ -11,8 +11,9 @@ Rules (each chosen to understate results rather than flatter them):
   fills beyond the stop (a gap) exits at once at the fill price.
 - On later bars, if the stop and the target are both inside one bar, the STOP is assumed first; a bar
   that opens beyond the stop exits at that open.
-- Prices from BID candles (forex): buy-side triggers (a long's limit entry, a short's stop and target)
-  need the ask, so they trigger only `trigger_spread` (a fraction of price) further.
+- Prices from BID candles (forex): every buy pays the ask = bid x (1 + `trigger_spread`), every sell gets
+  the bid. A long enters on the ask and exits on the bid; a short enters on the bid and exits on the ask.
+  So the spread is paid inside the prices, once per round trip, and is NOT also charged as a fee.
 - Stop and time exits pay taker fees plus slippage; resting entries and target exits pay maker fees.
 - One position or pending order per setup per market at a time.
 Each trade is returned in R of the PLANNED risk (signal entry to stop), the risk the gate sizes on,
@@ -64,74 +65,85 @@ class Book:
         if self.pending is not None:
             self.pending, self.tag = None, None
 
-    def _levels(self, s: Signal) -> tuple[int, float, float]:
-        """side, and the stop and target levels as the BID must print them (buy-side orders need the ask)."""
-        side = 1 if s.side == "long" else -1
-        sp = self.trigger_spread
-        if side == 1:
-            return side, s.stop, s.target
-        return side, s.stop * (1 - sp), s.target * (1 - sp)
+    def _bars(self, side: int, o: float, h: float, l: float, c: float):
+        """The bar as the ENTRY sees it and as the EXIT sees it. Candles are bid (forex) or last-trade
+        (crypto, spread 0). A buy pays the ask = bid x (1 + spread), a sell gets the bid: a long enters
+        on the ask and exits on the bid; a short enters on the bid and exits on the ask."""
+        a = 1 + self.trigger_spread
+        ask, bid = (o * a, h * a, l * a, c * a), (o, h, l, c)
+        return (ask, bid) if side == 1 else (bid, ask)
 
     def on_bar(self, t, o: float, h: float, l: float, c: float) -> list[dict]:
         self.k += 1
         k, out = self.k, []
+        a = 1 + self.trigger_spread
         if self.pos is None and self.pending is not None and self.pending["sig"].order == "market":
             s = self.pending["sig"]
             self.pending = None
             side = 1 if s.side == "long" else -1
-            if (o - s.stop) * side > 0 and (s.target - o) * side > 0:      # gapped past stop or target: no trade
-                self.pos = {"sig": s, "fill_k": k, "entry_time": t, "entry": o, "maker": False, "mae": 0.0, "mfe": 0.0}
+            (eo, _, _, _), (xo, _, _, _) = self._bars(side, o, h, l, c)
+            if (xo - s.stop) * side > 0 and (s.target - xo) * side > 0:    # gapped past stop or target: no trade
+                self.pos = {"sig": s, "fill_k": k, "entry_time": t, "entry": eo, "maker": False, "mae": 0.0, "mfe": 0.0}
             else:
                 self.tag = None
         # ── manage the open position on this bar (including the bar it filled on) ──
         if self.pos is not None:
             pos = self.pos
             s = pos["sig"]
-            side, stop, target = self._levels(s)
+            side = 1 if s.side == "long" else -1
+            _, (xo, xh, xl, xc) = self._bars(side, o, h, l, c)
             fill_bar = k == pos["fill_k"]
             exit_px = reason = None
-            hit_stop = (l <= stop) if side == 1 else (h >= stop)
+            hit_stop = (xl <= s.stop) if side == 1 else (xh >= s.stop)
             if hit_stop:
-                gap = (o < stop) if side == 1 else (o > stop)
-                exit_px, reason = (o if gap and not fill_bar else s.stop), "stop"
+                gap = (xo < s.stop) if side == 1 else (xo > s.stop)
+                exit_px, reason = (xo if gap and not fill_bar else s.stop), "stop"
             elif fill_bar:
-                if (c - target) * side >= 0:                       # closed beyond the target after the fill
+                if (xc - s.target) * side >= 0:                    # closed beyond the target after the fill
                     exit_px, reason = s.target, "target"
             else:
-                hit_tgt = (h >= target) if side == 1 else (l <= target)
+                hit_tgt = (xh >= s.target) if side == 1 else (xl <= s.target)
                 if hit_tgt:
-                    gap = (o > target) if side == 1 else (o < target)
-                    exit_px, reason = (o if gap else s.target), "target"
-            pos["mae"] = min(pos["mae"], ((l if side == 1 else h) - pos["entry"]) * side)
-            pos["mfe"] = max(pos["mfe"], ((h if side == 1 else l) - pos["entry"]) * side)
+                    gap = (xo > s.target) if side == 1 else (xo < s.target)
+                    exit_px, reason = (xo if gap else s.target), "target"
+            pos["mae"] = min(pos["mae"], ((xl if side == 1 else xh) - pos["entry"]) * side)
+            pos["mfe"] = max(pos["mfe"], ((xh if side == 1 else xl) - pos["entry"]) * side)
             if exit_px is None and k - pos["fill_k"] >= s.max_hold_bars:
-                exit_px, reason = c, "time"
+                exit_px, reason = xc, "time"
             if exit_px is not None:
                 out.append(self._finish(t, exit_px, reason))
         # ── work the resting limit order on this bar ────────────────────────
         elif self.pending is not None:
             s, last = self.pending["sig"], self.pending["last_k"]
-            side, stop, target = self._levels(s)
-            trig = s.entry * (1 - self.trigger_spread) if side == 1 else s.entry
-            through = (l < trig) if side == 1 else (h > trig)
+            side = 1 if s.side == "long" else -1
+            (eo, eh, el, ec), (xo, xh, xl, xc) = self._bars(side, o, h, l, c)
+            through = (el < s.entry) if side == 1 else (eh > s.entry)
             if through:
-                fill = min(o, s.entry) if side == 1 else max(o, s.entry)
+                fill = min(eo, s.entry) if side == 1 else max(eo, s.entry)
+                now = fill / a if side == 1 else fill * a          # what an immediate exit would get at the fill
                 self.pos = {"sig": s, "fill_k": k, "entry_time": t, "entry": fill, "maker": True,
-                            "mae": min(0.0, ((l if side == 1 else h) - fill) * side), "mfe": max(0.0, (c - fill) * side)}
+                            "mae": min(0.0, ((xl if side == 1 else xh) - fill) * side), "mfe": max(0.0, (xc - fill) * side)}
                 self.pending = None
-                hit_stop = (l <= stop) if side == 1 else (h >= stop)
-                beyond = (fill - s.stop) * side <= 0                 # filled at or past the stop (a gap)
-                if beyond:
-                    out.append(self._finish(t, fill, "stop"))
-                elif hit_stop:                                       # filled and stopped in the same bar
+                hit_stop = (xl <= s.stop) if side == 1 else (xh >= s.stop)
+                if (now - s.stop) * side <= 0:                     # filled at or past the stop (a gap): out at once
+                    out.append(self._finish(t, now, "stop"))
+                elif hit_stop:                                     # filled and stopped in the same bar
                     out.append(self._finish(t, s.stop, "stop"))
-                elif (c - target) * side >= 0:                       # filled, then closed beyond the target
+                elif (xc - s.target) * side >= 0:                  # filled, then closed beyond the target
                     out.append(self._finish(t, s.target, "target"))
             else:
-                ran = (h >= target) if side == 1 else (l <= target)
+                ran = (xh >= s.target) if side == 1 else (xl <= s.target)
                 if ran or k >= last:
                     self.pending, self.tag = None, None
         return out
+
+    def force_exit(self, t, price: float, reason: str) -> dict | None:
+        """Close an open position at `price` (a hole in the data: the bars that would have managed it are
+        missing). A pending order is simply dropped. Returns the closed trade, if there was one."""
+        if self.pos is not None:
+            return self._finish(t, price, reason)
+        self.pending, self.tag = None, None
+        return None
 
     def _finish(self, t, exit_px: float, reason: str) -> dict:
         tr = _close(self.pos, self.k, t, exit_px, reason, self.costs, self.symbol)

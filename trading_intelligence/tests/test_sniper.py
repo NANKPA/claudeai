@@ -377,3 +377,122 @@ def test_breakeven_win_rates_are_exact():
     assert p * (2 - c_mk) - (1 - p) * (1 + c_mx) == pytest.approx(0, abs=2e-3)
     q = pl["breakeven_win_rate_taker"]
     assert q * (2 - c_tk) - (1 - q) * (1 + c_tk) == pytest.approx(0, abs=2e-3)
+
+
+# ── forex pricing: buys at the ask, sells at the bid, the spread paid once ──────────────────────────
+def test_forex_long_limit_pays_the_spread_once():
+    from trading_intelligence.sniper.lab import FEES, FX_SPREAD
+    c, sp = FEES["fx_std"], FX_SPREAD["fx_std"]
+    b = Book(c, trigger_spread=sp)
+    b.on_bar(0, 1.1006, 1.1006, 1.1006, 1.1006)
+    b.submit(_sig(entry=1.1000, stop=1.0994, target=1.1012))
+    b.on_bar(1, 1.1004, 1.1006, 1.0998, 1.1001)              # ask low 1.09993 < 1.1000: filled at the limit
+    out = b.on_bar(2, 1.1000, 1.1002, 1.0993, 1.0995)        # bid trades the stop
+    tr = out[0]
+    risk = 1.1000 - 1.0994
+    assert tr["entry"] == 1.1000 and tr["gross_r"] == pytest.approx(-1.0)
+    assert tr["net_r"] == pytest.approx(-1.0 - 1.0994 * c.slippage / risk)    # only the stop's slippage on top
+
+
+def test_forex_long_market_entry_pays_the_ask():
+    from trading_intelligence.sniper.lab import FEES, FX_SPREAD
+    c, sp = FEES["fx_std"], FX_SPREAD["fx_std"]
+    b = Book(c, trigger_spread=sp)
+    b.on_bar(0, 1.1000, 1.1000, 1.1000, 1.1000)
+    b.submit(_sig(order="market", entry=1.1000, stop=1.0994, target=1.1012))
+    out = b.on_bar(1, 1.1000, 1.1001, 1.0993, 1.0995)
+    tr = out[0]
+    assert tr["entry"] == pytest.approx(1.1000 * (1 + sp))
+    assert tr["gross_r"] == pytest.approx((1.0994 - 1.1000 * (1 + sp)) / 0.0006)
+
+
+def test_forex_limit_does_not_fill_below_its_price_when_the_ask_opened_above():
+    b = Book(Costs(0, 0, 0), trigger_spread=0.00012)
+    b.on_bar(0, 1.1006, 1.1006, 1.1006, 1.1006)
+    b.submit(_sig(entry=1.1000, stop=1.0990, target=1.1020))
+    b.on_bar(1, 1.0999, 1.1003, 1.0995, 1.1001)              # bid open below the limit, ask open above it
+    assert b.pos["entry"] == 1.1000
+
+
+def test_forex_short_gap_through_the_stop_exits_at_the_ask():
+    b = Book(Costs(0, 0, 0), trigger_spread=0.001)
+    b.on_bar(0, 99, 99, 99, 99)
+    b.submit(_sig(side="short", entry=100, stop=101, target=98, order="limit"))
+    b.on_bar(1, 99.9, 100.2, 99.9, 100.0)                     # sells at 100
+    out = b.on_bar(2, 101.5, 101.6, 101.4, 101.5)              # gaps above the stop: buys back at the ask open
+    assert out[0]["exit"] == pytest.approx(101.5 * 1.001) and out[0]["gross_r"] < -1.5
+
+
+# ── scanner: restart, data holes, quotes, overrides, forward evidence ────────────────────────────────
+def _passing_lab(key="sniper_ema_pullback@5m@std", **extra):
+    regimes = ["trend_high_vol", "trend_low_vol", "range_high_vol", "range_low_vol"]
+    return {key: {"record": {"setup_id": key, "results_r": [2.0] * 40 + [-1.0] * 30, "avg_cost_r": 0.05,
+                             "out_of_sample": True, "source": "own", "valid_regimes": regimes,
+                             "valid_sessions": ["asia", "london", "ny", "late"]}, **extra}}
+
+
+def test_a_take_journaled_before_a_crash_is_restored_bars_later(tmp_path):
+    df = _walk(2500)
+    sc = _scanner(tmp_path, lab=_passing_lab(), setups=["sniper_ema_pullback"])
+    _replay(sc, df, 2250, 2350)
+    takes = [r for r in sc.journal.rows() if r["decision"] == "take"]
+    assert takes
+    # simulate a crash right after the LAST take was journaled: books.json forgets it and is behind by bars
+    tid = takes[-1]["trade_id"]
+    stamp = pd.Timestamp(tid.rsplit("-", 1)[1], tz="UTC")
+    sc2 = _scanner(tmp_path, lab=_passing_lab(), setups=["sniper_ema_pullback"])
+    for k in sc2.state:
+        sc2.state[k] = {"k": 0, "pending": None, "pos": None, "tag": None,
+                        "last_time": (stamp - pd.Timedelta("5min")).isoformat()}
+    end = df.index.get_loc(stamp) + 4                         # the restart sees the signal bar plus 3 more
+    sc2.frames[("BTCUSDT", "5m")] = df.iloc[:end]
+    sc2.candles = lambda sym, tf, _d=df.iloc[:end]: _d
+    sc2.pass_once()
+    st = next(iter(sc2.state.values()))
+    assert st["tag"] is not None and st["tag"]["trade_id"] == tid and st["tag"]["account"]
+
+
+def test_a_hole_in_crypto_data_closes_the_position_at_the_first_bar_after_it(tmp_path):
+    df = _walk(2600)
+    sc = _scanner(tmp_path, lab={}, setups=["sniper_ema_pullback"])
+    end = 2250
+    while True:                                               # run until the shadow book holds a position
+        sc.frames[("BTCUSDT", "5m")] = df.iloc[:end]
+        sc.candles = lambda sym, tf, _d=df.iloc[:end]: _d
+        sc.pass_once()
+        end += 1
+        if next(iter(sc.state.values())).get("pos"):
+            break
+    holed = pd.concat([df.iloc[:end], df.iloc[end + 30:end + 40]])   # 30 bars missing
+    sc.candles = lambda sym, tf, _d=holed: _d
+    sc.pass_once()
+    fwd = pd.read_csv(tmp_path / "home" / "forward.csv")
+    assert "data_gap" in set(fwd["exit_reason"])
+
+
+def test_scanner_refuses_non_usd_crypto_and_honours_slippage_alone(tmp_path):
+    from trading_intelligence.sniper.scanner import point_value
+    with pytest.raises(ValueError):
+        point_value("ETHBTC", 0.05)
+    assert point_value("BTCUSDT", 1.0) == 1.0 and point_value("BTC-USD", 1.0) == 1.0
+    sc = _scanner(tmp_path, lab={}, slippage=0.0009)
+    assert sc.costs.slippage == 0.0009
+
+
+def test_forward_trades_already_inside_the_lab_period_are_not_counted_twice():
+    from trading_intelligence.sniper.scanner import setup_record
+    lab = _passing_lab(oos_end="2024-06-01T00:00:00+00:00")
+    key = next(iter(lab))
+    fwd = [{"key": key, "regime": "trend_low_vol", "session": "ny", "net_r": "1.0", "cost_r": "0.05",
+            "signal_time": t} for t in ("2024-05-01T00:00:00+00:00", "2024-07-01T00:00:00+00:00")]
+    rec_ = setup_record(key, lab, fwd)
+    assert len(rec_.results_r) == 71                          # only the July trade is new evidence
+
+
+def test_forward_file_from_an_older_version_is_set_aside(tmp_path):
+    from trading_intelligence.sniper.scanner import FORWARD_COLS, _append
+    f = tmp_path / "forward.csv"
+    f.write_text("key,net_r\nold,1.0\n")
+    _append(f, FORWARD_COLS, {"uid": "u1", "key": "k", "net_r": 0.5})
+    assert f.read_text().splitlines()[0] == ",".join(FORWARD_COLS)
+    assert list(tmp_path.glob("forward.old-*.csv"))

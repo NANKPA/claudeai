@@ -333,3 +333,7 @@ def test_effective_n_shrinks_the_record_for_correlated_trades():
     assert run(s=full).action == "take"
     d = run(s={**full, "effective_n": 12})               # the same trades, but only 12 independent days
     assert d.action == "wait" and "n = 12" in d.explain()
+    st = SetupRecord(**{**full, "effective_n": 12}).stats()
+    assert st["p"] == pytest.approx(0.5) and st["n"] == 12   # the win rate is not inflated by the smaller n
+    d2 = run(s={**full, "effective_n": 35})
+    assert d2.action == "take" and d2.est_win_prob == pytest.approx(0.5)

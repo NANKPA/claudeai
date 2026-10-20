@@ -26,17 +26,20 @@ from .feeds import DUKA_POINT, INTERVAL_SECONDS, binance_history, dukascopy_hist
 from .setups import SETUPS, prepare
 
 HTF = {"5m": "1h", "15m": "4h", "30m": "4h", "1h": "1D", "4h": "1D"}
-FX_TRIGGER_SPREAD = 0.00012     # bid candles: buy-side orders need the ask, about 1.3 pips on EUR/USD higher
 # Per-side costs as a fraction of price. Crypto: exchange fees (maker for resting limits, taker plus
-# slippage for market orders and stops). Forex and gold: half the spread plus commission on every fill
-# (no maker rebate), slippage on stops. See 10_sniper-lab/small-account-venues.md for the sources.
+# slippage for market orders and stops); the candles are trade prices, so there is no separate spread.
+# Forex and gold: the candles are BID prices; buys pay the ask (bid + FX_SPREAD) inside the simulation,
+# so each forex cost level is its own simulation and its fees are the commission only.
+# See 10_sniper-lab/small-account-venues.md for the sources.
 FEES = {
     "std": Costs(maker_fee=0.0008, taker_fee=0.0010, slippage=0.0002),     # typical lowest retail crypto tier
     "low": Costs(maker_fee=0.0000, taker_fee=0.0005, slippage=0.0001),     # zero-maker crypto venue (MEXC spot level)
     "ultra": Costs(maker_fee=0.0000, taker_fee=0.0002, slippage=0.0001),   # the cheapest found (Binance.US spot, US only)
-    "fx_std": Costs(maker_fee=0.00006, taker_fee=0.00006, slippage=0.00002),   # spread-only, ~1.4 pips EUR/USD round trip
-    "fx_raw": Costs(maker_fee=0.00004, taker_fee=0.00004, slippage=0.00001),   # raw spread + commission, ~0.8-0.9 pips
+    # forex/gold: the spread is paid in the prices (FX_SPREAD below), so the fees hold only commission
+    "fx_std": Costs(maker_fee=0.0, taker_fee=0.0, slippage=0.00002),             # spread-only account (~1.3-1.4 pips)
+    "fx_raw": Costs(maker_fee=0.000032, taker_fee=0.000032, slippage=0.00001),   # raw spread + $3.50/lot/side commission
 }
+FX_SPREAD = {"fx_std": 0.00012, "fx_raw": 0.000015}    # the spread as a fraction of price: ~1.3 pips and ~0.15 pip EUR/USD
 FEE_MARKET = {"std": "crypto", "low": "crypto", "ultra": "crypto", "fx_std": "fx", "fx_raw": "fx"}
 CRYPTO = ["BTCUSDT", "ETHUSDT", "SOLUSDT", "BNBUSDT", "XRPUSDT"]
 FX = ["EURUSD", "GBPUSD", "USDJPY", "XAUUSD"]
@@ -81,7 +84,7 @@ def _job_key(start, end, only) -> str:
     h = hashlib.sha1(repr((start, end, sorted(only or []))).encode())
     for f in ("setups.py", "backtest.py", "feeds.py"):
         h.update((here / f).read_bytes())
-    h.update(repr(sorted(FEES.items())).encode() + repr(FX_TRIGGER_SPREAD).encode())
+    h.update(repr(sorted(FEES.items())).encode() + repr(sorted(FX_SPREAD.items())).encode())
     return h.hexdigest()[:10]
 
 
@@ -98,10 +101,16 @@ def _job(args) -> pd.DataFrame:
     df = history(symbol, tf, start, end)
     d = prepare(df, htf=HTF[tf], day="fx" if mk == "fx" else "utc")
     base = FEES["fx_std" if mk == "fx" else "std"]
-    spread = FX_TRIGGER_SPREAD if mk == "fx" else 0.0
-    parts = [run(d, S(tf=tf, htf=HTF[tf], symbol=symbol), base, symbol, prepared=True, trigger_spread=spread)
-             for S in setups_for(mk, tf) if not only or S.id in only]
-    parts = [x for x in parts if not x.empty]
+    sims = [(lvl, FEES[lvl], FX_SPREAD[lvl]) for lvl in FX_SPREAD] if mk == "fx" else [("std", base, 0.0)]
+    parts = []
+    for lvl, costs, spread in sims:
+        for S in setups_for(mk, tf):
+            if only and S.id not in only:
+                continue
+            x = run(d, S(tf=tf, htf=HTF[tf], symbol=symbol), costs, symbol, prepared=True, trigger_spread=spread)
+            if not x.empty:
+                x["sim"] = lvl
+                parts.append(x)
     t = pd.concat(parts, ignore_index=True) if parts else pd.DataFrame()
     if not t.empty:
         t["timeframe"] = tf
@@ -150,8 +159,14 @@ def main(argv=None) -> int:
     rows, entries = [], []
     if "market" not in trades.columns:
         trades["market"] = trades["symbol"].map(market_of)
+    if "sim" not in trades.columns:
+        trades["sim"] = "std"
+    trades["sim"] = trades["sim"].fillna("std")
     for fee_name, costs in FEES.items():
-        tf_all = recost(trades[trades["market"] == FEE_MARKET[fee_name]], costs)
+        mk = FEE_MARKET[fee_name]
+        # crypto levels are re-priced from one simulation; each forex level is its own simulation (its spread)
+        sel = (trades["market"] == mk) & ((trades["sim"] == fee_name) if mk == "fx" else True)
+        tf_all = recost(trades[sel], costs)
         if tf_all.empty:
             continue
         for (setup, tf), g in tf_all.groupby(["setup", "timeframe"]):
@@ -192,7 +207,7 @@ def main(argv=None) -> int:
 
 def write_report(summary: pd.DataFrame, entries: list[dict], deflated: dict, a, out: Path) -> None:
     pooled = summary[summary["scope"] == "pooled"].sort_values(["market", "fees", "timeframe", "setup"])
-    passing = [e for e in entries if e["oos"].get("n", 0) >= 30 and e["oos"].get("se")
+    passing = [e for e in entries if rec.effective_n(e["oos"]) >= 30 and e["oos"].get("se")
                and e["oos"]["mean_net_r"] - max(e["oos"]["se"], e["oos"].get("se_day") or 0) > 0]
     when = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     syms = sorted(set(summary.get("key", pd.Series(dtype=str)).str.split(":").str[1].dropna()))
@@ -238,9 +253,11 @@ def write_report(summary: pd.DataFrame, entries: list[dict], deflated: dict, a, 
         L.append("| (none: no regime and session was positive after costs in-sample) | | | | | | | | | | |")
     L += ["", "## What passes the owner's gate", ""]
     if passing:
-        L += [f"{len(passing)} configuration(s) have n >= 30 out-of-sample trades and mean - 1 SE > 0 after costs, with "
-              "the SE clustered by day as well as per trade (Gate 4's math score of 2). The scanner's gate can take only these:", ""]
-        L += [f"- `{e['setup_key']}`: OOS n {e['oos']['n']}, {e['oos']['mean_net_r']:+.3f}R per trade (SE {e['oos']['se']:.3f}), "
+        L += [f"{len(passing)} configuration(s) have at least 30 effectively independent out-of-sample trades and mean - 1 SE "
+              "> 0 after costs, with the SE clustered by day as well as per trade (Gate 4's math score of 2). The scanner's "
+              "gate can take only these:", ""]
+        L += [f"- `{e['setup_key']}`: OOS n {e['oos']['n']} (effective {rec.effective_n(e['oos'])}), "
+              f"{e['oos']['mean_net_r']:+.3f}R per trade (SE {max(e['oos']['se'], e['oos'].get('se_day') or 0):.3f}), "
               f"{e['oos']['per_day']:.2f} trades/day, regimes {', '.join(e['valid_regimes'])}, sessions "
               f"{', '.join(e['valid_sessions'])}" for e in passing]
         L += ["", "Passing Gate 4 is necessary, not sufficient: read it together with the multiple-testing result below."]
@@ -249,8 +266,8 @@ def write_report(summary: pd.DataFrame, entries: list[dict], deflated: dict, a, 
               "every live signal from these setups until a record does; the scanner keeps following them on paper to "
               "build forward evidence."]
     L += ["", "## Multiple testing", "",
-          f"{deflated.get('trials', 0)} configurations were tried; {deflated.get('judged', 0)} had at least 30 out-of-sample "
-          "trades inside their chosen conditions. "
+          f"{deflated.get('trials', 0)} configurations were tried; {deflated.get('judged', 0)} had at least 30 effectively "
+          "independent out-of-sample trades inside their chosen conditions. "
           + (f"The best of those (`{deflated['best']}`, per-trade Sharpe {deflated['best_sharpe_per_trade']:+.3f} over "
              f"{deflated['best_n']} trades) has a deflated-Sharpe probability of {deflated['deflated_sharpe_prob']:.2f} of being "
              "real once the number of trials is counted (Bailey & López de Prado; 0.95 is the usual bar)."

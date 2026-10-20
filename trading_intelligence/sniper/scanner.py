@@ -37,7 +37,7 @@ from ..journal import Journal
 from . import records as rec
 from .backtest import Book, Costs
 from .feeds import INTERVAL_SECONDS, latest, recent
-from .lab import FEE_MARKET, FEES, FX_TRIGGER_SPREAD, HTF, OUT as LAB_OUT, market_of, setups_for
+from .lab import FEE_MARKET, FEES, FX_SPREAD, HTF, OUT as LAB_OUT, market_of, setups_for
 from .setups import SETUPS, Signal, prepare
 
 HOME = Path(os.environ.get("TI_SNIPER_HOME", Path.home() / ".trading-intelligence" / "sniper-paper"))
@@ -65,6 +65,11 @@ def _csv_rows(path: Path) -> list[dict]:
 
 
 def _append(path: Path, cols: list[str], row: dict) -> None:
+    if path.exists():
+        with path.open(newline="", encoding="utf-8") as f:
+            header = next(csv.reader(f), [])
+        if header and header != cols:          # written by an older version: keep it aside, start a new file
+            path.rename(path.with_name(f"{path.stem}.old-{int(time.time())}{path.suffix}"))
     new = not path.exists()
     with path.open("a", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=cols, extrasaction="ignore")
@@ -79,7 +84,11 @@ def point_value(symbol: str, price: float) -> float:
     """Account currency (USD) per 1.0 price move per unit. USD-base pairs (USDJPY ...) pay in the quote
     currency, so one unit is worth 1/price dollars per 1.0 move. Crosses (EURJPY, EURGBP ...) need a
     second rate and are refused."""
-    if market_of(symbol) != "fx" or symbol.endswith("USD"):
+    if market_of(symbol) != "fx":
+        if symbol.upper().replace("-", "").endswith(("USDT", "USDC", "FDUSD", "USD")):
+            return 1.0
+        raise ValueError(f"{symbol}: only crypto pairs quoted in USD or a USD stablecoin can be sized in a USD account")
+    if symbol.endswith("USD"):
         return 1.0
     if symbol.startswith("USD"):
         return 1.0 / price
@@ -178,7 +187,9 @@ def setup_record(key: str, lab: dict, forward: list[dict]) -> G.SetupRecord | No
         return None
     r = dict(e["record"])
     regimes, sessions = set(r["valid_regimes"]), set(r["valid_sessions"])
-    fwd = [x for x in forward if x["key"] == key and x["regime"] in regimes and x["session"] in sessions]
+    end = pd.Timestamp(e["oos_end"]) if e.get("oos_end") else None       # a re-run lab may already contain them
+    fwd = [x for x in forward if x["key"] == key and x["regime"] in regimes and x["session"] in sessions
+           and (end is None or pd.Timestamp(x["signal_time"]) > end)]
     if fwd:
         n0 = len(r["results_r"])
         r["results_r"] = r["results_r"] + [float(x["net_r"]) for x in fwd]
@@ -188,20 +199,26 @@ def setup_record(key: str, lab: dict, forward: list[dict]) -> G.SetupRecord | No
     return G.SetupRecord(**r)
 
 
-def proposal(sig: Signal, key: str, symbol: str, tf: str, costs: Costs, derived_from) -> G.TradeProposal:
+def trade_id_for(key: str, symbol: str, sig: Signal) -> str:
+    return f"{key}-{symbol}-{pd.Timestamp(sig.time):%Y%m%dT%H%M}"
+
+
+def proposal(sig: Signal, key: str, symbol: str, tf: str, costs: Costs, derived_from,
+             spread: float = 0.0) -> G.TradeProposal:
     entry_fee = costs.maker_fee if sig.order == "limit" else costs.taker_fee + costs.slippage
     exit_fee = costs.taker_fee + costs.slippage                          # the stop exit: the dear case
     t = sig.text
     return G.TradeProposal(
         setup_id=key, instrument=symbol, side=sig.side, entry=sig.entry, stop=sig.stop, target=sig.target,
-        cost_price=sig.entry * entry_fee + sig.stop * exit_fee, timeframe=f"{HTF[tf]}/{tf}", regime_tag=sig.regime,
+        cost_price=sig.entry * entry_fee + sig.stop * exit_fee + sig.entry * spread,   # forex: one spread per round trip
+        timeframe=f"{HTF[tf]}/{tf}", regime_tag=sig.regime,
         session=sig.session, observation=t["observation"], interpretation=t["interpretation"],
         alternative_interpretation=t["alternative_interpretation"], hypothesis=t["hypothesis"], horizon=t["horizon"],
         invalidation=t["invalidation"], explanation=t["explanation"], undermined_by=t["undermined_by"],
         required_conditions=list(sig.conditions), conditions_present=dict(sig.conditions),
         evidence_for=[f"signal at the close of the {tf} bar opened {pd.Timestamp(sig.time):%Y-%m-%d %H:%M} UTC",
                       f"codified from {', '.join(derived_from)}"],
-        trade_id=f"{key}-{symbol}-{pd.Timestamp(sig.time):%Y%m%dT%H%M}")      # one decision per signal, restart-safe
+        trade_id=trade_id_for(key, symbol, sig))                                 # one decision per signal, restart-safe
 
 
 # ── the scan ────────────────────────────────────────────────────────────────
@@ -211,7 +228,7 @@ class Scanner:
         self.home = Path(a.home)
         self.home.mkdir(parents=True, exist_ok=True)
         self.costs = FEES[a.fees] if a.fees in FEES else Costs()
-        if a.maker is not None or a.taker is not None:
+        if a.maker is not None or a.taker is not None or a.slippage is not None:
             self.costs = Costs(maker_fee=a.maker if a.maker is not None else self.costs.maker_fee,
                                taker_fee=a.taker if a.taker is not None else self.costs.taker_fee,
                                slippage=a.slippage if a.slippage is not None else self.costs.slippage)
@@ -223,6 +240,7 @@ class Scanner:
                              "markets; scan them separately with their own --fees")
         for x in a.symbols:
             point_value(x, 1.0)                                  # refuse crosses up front
+        self.spread = FX_SPREAD.get(a.fees, 0.0) if a.fees in FEE_MARKET and FEE_MARKET[a.fees] == "fx" else 0.0
         self.lab = rec.load(a.records) if Path(a.records).exists() else {}
         limits_file = os.environ.get("TI_LIMITS_FILE")
         base = G.Limits(**json.loads(Path(limits_file).read_text(encoding="utf-8"))) if limits_file else G.Limits()
@@ -260,9 +278,19 @@ class Scanner:
             self.frames[key] = df[df.index >= df.index[-1] - keep]
         return self.frames[key]
 
-    def open_risk(self) -> float:
-        return sum(float(b["tag"]["risk_pct"]) for b in self.state.values()
-                   if isinstance(b, dict) and b.get("tag") and b["tag"].get("account") and (b.get("pos") or b.get("pending")))
+    def open_risk(self, exclude: str | None = None) -> float:
+        """Risk still open in OTHER books (the book being decided is flat by construction)."""
+        return sum(float(b["tag"]["risk_pct"]) for k, b in self.state.items()
+                   if k != exclude and isinstance(b, dict) and b.get("tag") and b["tag"].get("account")
+                   and (b.get("pos") or b.get("pending")))
+
+    def journaled(self, trade_id: str) -> dict | None:
+        return next((r for r in self.journal.rows() if r["trade_id"] == trade_id), None)
+
+    def restored_tag(self, row: dict, key: str, pv: float) -> dict:
+        take = row["decision"] == "take"
+        return {"trade_id": row["trade_id"], "key": key, "account": take, "size": float(row["position_size"] or 0),
+                "risk_pct": float(row["risk_pct"] or 0), "point_value": pv}
 
     def pass_once(self) -> list[str]:
         log = []
@@ -291,7 +319,7 @@ class Scanner:
         skey = f"{setup_id}|{sym}|{tf}"
         st = self.state.get(skey, {})
         mk = market_of(sym)
-        book = _load_book(st, self.costs, sym, FX_TRIGGER_SPREAD if mk == "fx" else 0.0)
+        book = _load_book(st, self.costs, sym, self.spread if mk == "fx" else 0.0)
         last = pd.Timestamp(st["last_time"]) if st.get("last_time") else None
         idx = d.index
         new_i = [i for i in range(len(d)) if last is None or idx[i] > last]
@@ -302,7 +330,18 @@ class Scanner:
         S = SETUPS[setup_id]
         setup = S(tf=tf, htf=HTF[tf], symbol=sym)
         step = pd.Timedelta(seconds=INTERVAL_SECONDS[tf])
+        prev = last
         for n, i in enumerate(new_i):
+            # a hole in 24/7 crypto data: the bars that would have managed the position are missing, so it is
+            # closed at the first bar after the hole (forex closes at weekends; its gaps are real market gaps)
+            if mk == "crypto" and prev is not None and idx[i] - prev > step * 1.5 and not book.flat:
+                tag = book.tag
+                tr = book.force_exit(idx[i], o[i], "data_gap")
+                if tr is not None:
+                    out.append(self.closed(tr, key, tf, skey, idx[i]))
+                elif tag:
+                    out.append(self.unfilled(tag, key, sym, idx[i]))
+            prev = idx[i]
             tag = book.tag
             closed = book.on_bar(idx[i], o[i], h[i], l[i], c[i])
             for tr in closed:
@@ -313,30 +352,33 @@ class Scanner:
                 sig = setup.signal_at(d, i)
                 if sig is not None:
                     if n == len(new_i) - 1:
-                        out.append(self.decide(sig, book, key, sym, tf, S.derived_from, forward))
-                    else:                                  # a missed bar: follow it on paper, never trade it
-                        book.submit(sig, tag={"trade_id": "", "key": key, "account": False, "size": 0, "risk_pct": 0,
-                                              "point_value": 1.0, "shadow_only": True})
+                        out.append(self.decide(sig, book, key, sym, tf, S.derived_from, forward, skey))
+                    else:                                  # a missed bar: follow it on paper, never trade it now
+                        tid = trade_id_for(key, sym, sig)
+                        row = self.journaled(tid)          # unless it was decided live before a crash: restore that
+                        tag = (self.restored_tag(row, key, point_value(sym, sig.entry)) if row is not None else
+                               {"trade_id": "", "key": key, "account": False, "size": 0, "risk_pct": 0,
+                                "point_value": 1.0, "shadow_only": True})
+                        book.submit(sig, tag=tag)
         st = _dump_book(book)
         st["last_time"] = idx[new_i[-1]].isoformat() if new_i else (last.isoformat() if last is not None else None)
         self.state[skey] = st
         return [x for x in out if x]
 
-    def decide(self, sig: Signal, book: Book, key: str, sym: str, tf: str, derived_from, forward) -> str:
+    def decide(self, sig: Signal, book: Book, key: str, sym: str, tf: str, derived_from, forward,
+               skey: str | None = None) -> str:
         now = datetime.now(timezone.utc)
-        t = proposal(sig, key, sym, tf, self.costs, derived_from)
-        setup = setup_record(key, self.lab, forward)
+        mk = market_of(sym)
+        t = proposal(sig, key, sym, tf, self.costs, derived_from, spread=self.spread if mk == "fx" else 0.0)
         pv = point_value(sym, sig.entry)
-        acct = self.account.state(key, sig.session, now, self.open_risk(), self.operator_state(), self.a.risk_pct,
-                                  self.a.lot_step, self.a.min_notional, self.a.style, point_value=pv)
-        d = self.gate.evaluate(t, setup, acct)
-        prior = next((r for r in self.journal.rows() if r["trade_id"] == t.trade_id), None)
+        prior = self.journaled(t.trade_id)
         if prior is not None:                     # decided before a crash: restore the order, never hand off twice
-            take = prior["decision"] == "take"
-            book.submit(sig, tag={"trade_id": t.trade_id, "key": key, "account": take,
-                                  "size": float(prior["position_size"] or 0), "risk_pct": float(prior["risk_pct"] or 0),
-                                  "point_value": pv})
+            book.submit(sig, tag=self.restored_tag(prior, key, pv))
             return f"{sig.time:%Y-%m-%d %H:%M} {key} {sym}: decision already journaled ({prior['decision']}), order restored"
+        setup = setup_record(key, self.lab, forward)
+        acct = self.account.state(key, sig.session, now, self.open_risk(exclude=skey), self.operator_state(),
+                                  self.a.risk_pct, self.a.lot_step, self.a.min_notional, self.a.style, point_value=pv)
+        d = self.gate.evaluate(t, setup, acct)
         tid = self.journal.record_decision(d)
         take = d.action == "take"
         book.submit(sig, tag={"trade_id": tid, "key": key, "account": take, "size": d.position_size if take else 0,
@@ -386,13 +428,13 @@ class Scanner:
         msg = f"{pd.Timestamp(tr['exit_time']):%Y-%m-%d %H:%M} closed {key} {tr['symbol']} {tr['exit_reason']} {tr['net_r']:+.2f}R"
         if tag.get("account"):
             acc = self.account.book_trade(tr, tag, closed_at)
-            if acc is None:
-                return msg + " (already booked)"
             self.journal.record_outcome(tag["trade_id"], executed_per_plan="yes (paper)", exit_reason=tr["exit_reason"],
                                         result_r=round(tr["net_r"], 4), cost_r=round(tr["cost_r"], 4),
                                         mae_r=round(tr["mae_r"], 4), mfe_r=round(tr["mfe_r"], 4),
-                                        outcome_within_expected="yes" if tr["exit_reason"] in ("stop", "target") else "time exit")
-            msg += f" | account pnl {acc['pnl']:+.4f} equity {acc['equity']:.4f}"
+                                        outcome_within_expected="yes" if tr["exit_reason"] in ("stop", "target") else
+                                        "data gap: closed at the first bar after missing data" if tr["exit_reason"] == "data_gap"
+                                        else "time exit")
+            msg += (" (already booked)" if acc is None else f" | account pnl {acc['pnl']:+.4f} equity {acc['equity']:.4f}")
         return msg
 
 
@@ -436,12 +478,14 @@ def main(argv=None) -> int:
     ap.add_argument("--style", default="intraday", choices=["intraday", "swing"])
     ap.add_argument("--state", default="calm", help="operator state for Gate 0 if state.txt is absent")
     ap.add_argument("--records", default=str(LAB_OUT / "records.json"))
-    ap.add_argument("--home", default=str(HOME))
+    ap.add_argument("--home", default=None, help=f"state folder (default {HOME}/<fees>, one per cost level, so a "
+                                                 "crypto and a forex scanner never share books)")
     ap.add_argument("--on-take", default=None, help="command that receives each gated TAKE as JSON on stdin "
                                                      "(your bot's own order code); never called for skips or waits")
     ap.add_argument("--once", action="store_true")
     ap.add_argument("--report", action="store_true")
     a = ap.parse_args(argv)
+    a.home = a.home or str(HOME / a.fees)
     if a.report:
         print(report(Path(a.home), a.equity))
         return 0
