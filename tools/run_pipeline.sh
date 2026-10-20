@@ -21,6 +21,7 @@ if [[ "${1:-}" == "--scrape" ]]; then
   python3 tools/philosophy/studies.py                                         # evidence lab on Yahoo daily data
 fi
 
+python3 tools/link_media.py                                                   # videos -> people -> playbooks
 python3 tools/render_registries.py
 python3 tools/philosophy/merge_blueprint.py                                   # philosophy links -> blueprint.yaml
 python3 tools/build_graph.py

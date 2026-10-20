@@ -105,7 +105,8 @@ scraped_media:
   duration_s: 5010
   query: Chart Fanatics trading strategy
   query_group: podcasts_episodes
-  covers: []
+  covers:
+  - strategy_marci_silfrain_measured_move
   speaker_ids:
   - person_marci_silfrain
   verification: scraped
@@ -224,6 +225,7 @@ scraped_media:
   query_group: podcasts_episodes
   covers:
   - concept_performance_metrics
+  - strategy_tg_capital_trident
   speaker_ids:
   - person_tg_capital
   verification: scraped
@@ -617,6 +619,7 @@ scraped_media:
   query_group: podcasts_episodes
   covers:
   - concept_smart_money_concepts
+  - strategy_nbb_trader_po3_ote_adr
   speaker_ids:
   - person_nbb_trader
   verification: scraped
@@ -652,7 +655,9 @@ scraped_media:
   - concept_prop_firm_risk_rules
   - concept_edge
   - concept_smart_money_concepts
-  speaker_ids: []
+  - strategy_jadecap_liquidity_volatility
+  speaker_ids:
+  - person_jadecap
   verification: scraped
   views_as_of: '2026-10-11'
 - id: media_yt_acogfvl6lk8
@@ -731,7 +736,8 @@ scraped_media:
   duration_s: 5554
   query: Words of Rizdom trading podcast
   query_group: podcasts_episodes
-  covers: []
+  covers:
+  - strategy_umar_ashraf_5_stage
   speaker_ids:
   - person_umar_ashraf
   verification: scraped
@@ -1065,7 +1071,8 @@ scraped_media:
   duration_s: 12418
   query: TraderLion podcast US Investing Championship
   query_group: podcasts_episodes
-  covers: []
+  covers:
+  - strategy_clement_ang_price_cycle
   speaker_ids:
   - person_clement_ang
   verification: scraped

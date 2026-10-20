@@ -24,3 +24,6 @@ claudeai-local-data.tar.gz
 # Python packaging
 *.egg-info/
 build/
+
+# Sniper lab: per-trade backtest log (regenerate with `python -m trading_intelligence.sniper lab`)
+trading-intelligence/10_sniper-lab/backtests/trades.csv.gz

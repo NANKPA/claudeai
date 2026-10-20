@@ -174,7 +174,8 @@ scraped_media:
   tab: videos
   featured_in:
   - channel_chart_fanatics
-  covers: []
+  covers:
+  - strategy_ted_zhang_stage_analysis
   speaker_ids:
   - person_ted_zhang
   status: catalog-only
@@ -206,6 +207,9 @@ scraped_media:
   covers:
   - concept_order_flow
   - concept_scalping
+  - strategy_carmine_rosato_lvn
+  - strategy_carmine_rosato_orderflow_masterclass
+  - strategy_fabio_valentini_amt_order_flow
   speaker_ids:
   - person_carmine_rosato
   - person_fabio_valentini
@@ -264,7 +268,8 @@ scraped_media:
   tab: videos
   featured_in:
   - channel_chart_fanatics
-  covers: []
+  covers:
+  - strategy_marci_silfrain_measured_move
   speaker_ids:
   - person_marci_silfrain
   status: catalog-only
@@ -345,8 +350,10 @@ scraped_media:
   tab: videos
   featured_in:
   - channel_chart_fanatics
-  covers: []
-  speaker_ids: []
+  covers:
+  - strategy_anthony_crudele_futures_trend
+  speaker_ids:
+  - person_anthony_crudele
   status: catalog-only
 - id: media_cf_q_mdvlz1sh4
   type: media
@@ -563,6 +570,7 @@ scraped_media:
   - channel_chart_fanatics
   covers:
   - concept_performance_metrics
+  - strategy_tg_capital_trident
   speaker_ids:
   - person_tg_capital
   status: catalog-only
@@ -578,6 +586,7 @@ scraped_media:
   - channel_chart_fanatics
   covers:
   - concept_smart_money_concepts
+  - strategy_tanja_amd_futures
   speaker_ids:
   - person_tanja_trades
   status: catalog-only
@@ -591,7 +600,8 @@ scraped_media:
   tab: videos
   featured_in:
   - channel_chart_fanatics
-  covers: []
+  covers:
+  - strategy_tori_trendline_4h
   speaker_ids:
   - person_tori_trades
   status: catalog-only
@@ -631,7 +641,8 @@ scraped_media:
   tab: videos
   featured_in:
   - channel_chart_fanatics
-  covers: []
+  covers:
+  - strategy_umar_ashraf_5_stage
   speaker_ids:
   - person_umar_ashraf
   status: catalog-only
@@ -648,6 +659,8 @@ scraped_media:
   covers:
   - concept_fair_value_gap
   - concept_chart_patterns
+  - strategy_carmine_rosato_lvn
+  - strategy_carmine_rosato_orderflow_masterclass
   speaker_ids:
   - person_carmine_rosato
   status: catalog-only
@@ -676,7 +689,9 @@ scraped_media:
   - channel_chart_fanatics
   covers:
   - concept_prop_firm_risk_rules
-  speaker_ids: []
+  - strategy_jadecap_liquidity_volatility
+  speaker_ids:
+  - person_jadecap
   status: catalog-only
 - id: media_cf_hnurp9z1bms
   type: media
@@ -3447,8 +3462,10 @@ scraped_media:
   tab: shorts
   featured_in:
   - channel_chart_fanatics
-  covers: []
-  speaker_ids: []
+  covers:
+  - strategy_dhesi_liquidity_inversion
+  speaker_ids:
+  - person_dhesi
   status: catalog-only
 - id: media_cf_8pi6kgoeyv4
   type: media
@@ -11135,6 +11152,7 @@ scraped_media:
   - channel_chart_fanatics
   covers:
   - concept_trading_psychology
+  - strategy_jared_tendler_psychology
   speaker_ids:
   - person_jared_tendler
   status: catalog-only
@@ -12156,7 +12174,9 @@ scraped_media:
   covers:
   - concept_prop_firm_risk_rules
   - concept_smart_money_concepts
-  speaker_ids: []
+  - strategy_nbb_trader_po3_ote_adr
+  speaker_ids:
+  - person_nbb_trader
   status: catalog-only
 - id: media_cf_i03xsdci7ni
   type: media
@@ -12805,6 +12825,7 @@ scraped_media:
   - channel_chart_fanatics
   covers:
   - concept_trendlines
+  - strategy_tori_trendline_4h
   speaker_ids:
   - person_tori_trades
   status: catalog-only
@@ -12818,7 +12839,8 @@ scraped_media:
   tab: shorts
   featured_in:
   - channel_chart_fanatics
-  covers: []
+  covers:
+  - strategy_tori_trendline_4h
   speaker_ids:
   - person_tori_trades
   status: catalog-only
@@ -13067,8 +13089,10 @@ scraped_media:
   tab: shorts
   featured_in:
   - channel_chart_fanatics
-  covers: []
-  speaker_ids: []
+  covers:
+  - strategy_vincent_desiano_break_retest
+  speaker_ids:
+  - person_vincent_desiano
   status: catalog-only
 - id: media_cf_tgwiyxm5m9y
   type: media
@@ -13160,7 +13184,8 @@ scraped_media:
   tab: shorts
   featured_in:
   - channel_chart_fanatics
-  covers: []
+  covers:
+  - strategy_umar_ashraf_5_stage
   speaker_ids:
   - person_umar_ashraf
   status: catalog-only
@@ -13174,7 +13199,8 @@ scraped_media:
   tab: shorts
   featured_in:
   - channel_chart_fanatics
-  covers: []
+  covers:
+  - strategy_umar_ashraf_5_stage
   speaker_ids:
   - person_umar_ashraf
   status: catalog-only
@@ -13514,7 +13540,8 @@ scraped_media:
   tab: shorts
   featured_in:
   - channel_chart_fanatics
-  covers: []
+  covers:
+  - strategy_trader_kane_lab_model
   speaker_ids:
   - person_trader_kane
   status: catalog-only
@@ -13610,6 +13637,7 @@ scraped_media:
   - channel_chart_fanatics
   covers:
   - concept_scalping
+  - strategy_trader_kane_lab_model
   speaker_ids:
   - person_trader_kane
   status: catalog-only

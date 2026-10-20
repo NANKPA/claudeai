@@ -1,0 +1,2486 @@
+[
+ {
+  "setup_key": "sniper_ema_pullback@15m@std",
+  "split_date": "2024-01-01",
+  "valid_regimes": [],
+  "valid_sessions": [],
+  "is": {
+   "n": 0
+  },
+  "is_unfiltered": {
+   "n": 12408,
+   "per_day": 17.073,
+   "win_rate": 0.3231,
+   "mean_net_r": -0.6762,
+   "se": 0.0144,
+   "t": -46.83,
+   "mean_gross_r": -0.0021,
+   "mean_cost_r": 0.6741,
+   "median_stop_pct": 0.00453,
+   "sum_net_r": -8390.05,
+   "sharpe_per_trade": -0.4204
+  },
+  "oos": {
+   "n": 0
+  },
+  "oos_unfiltered": {
+   "n": 16593,
+   "per_day": 16.528,
+   "win_rate": 0.3373,
+   "mean_net_r": -0.618,
+   "se": 0.0122,
+   "t": -50.54,
+   "mean_gross_r": 0.0337,
+   "mean_cost_r": 0.6517,
+   "median_stop_pct": 0.00437,
+   "sum_net_r": -10254.21,
+   "sharpe_per_trade": -0.3923
+  },
+  "record": null,
+  "setup": "sniper_ema_pullback",
+  "timeframe": "15m",
+  "fees": "std",
+  "costs": {
+   "maker_fee": 0.0008,
+   "taker_fee": 0.001,
+   "slippage": 0.0002
+  },
+  "symbols": [
+   "BTCUSDT",
+   "ETHUSDT",
+   "SOLUSDT",
+   "BNBUSDT",
+   "XRPUSDT"
+  ],
+  "period": [
+   "2022-01",
+   "latest"
+  ]
+ },
+ {
+  "setup_key": "sniper_ema_pullback@1h@std",
+  "split_date": "2024-01-01",
+  "valid_regimes": [],
+  "valid_sessions": [],
+  "is": {
+   "n": 0
+  },
+  "is_unfiltered": {
+   "n": 2831,
+   "per_day": 3.947,
+   "win_rate": 0.3278,
+   "mean_net_r": -0.3224,
+   "se": 0.0273,
+   "t": -11.83,
+   "mean_gross_r": -0.0176,
+   "mean_cost_r": 0.3048,
+   "median_stop_pct": 0.00969,
+   "sum_net_r": -912.73,
+   "sharpe_per_trade": -0.2224
+  },
+  "oos": {
+   "n": 0
+  },
+  "oos_unfiltered": {
+   "n": 3902,
+   "per_day": 3.887,
+   "win_rate": 0.3352,
+   "mean_net_r": -0.2906,
+   "se": 0.0233,
+   "t": -12.45,
+   "mean_gross_r": 0.0039,
+   "mean_cost_r": 0.2945,
+   "median_stop_pct": 0.00956,
+   "sum_net_r": -1133.98,
+   "sharpe_per_trade": -0.1993
+  },
+  "record": null,
+  "setup": "sniper_ema_pullback",
+  "timeframe": "1h",
+  "fees": "std",
+  "costs": {
+   "maker_fee": 0.0008,
+   "taker_fee": 0.001,
+   "slippage": 0.0002
+  },
+  "symbols": [
+   "BTCUSDT",
+   "ETHUSDT",
+   "SOLUSDT",
+   "BNBUSDT",
+   "XRPUSDT"
+  ],
+  "period": [
+   "2022-01",
+   "latest"
+  ]
+ },
+ {
+  "setup_key": "sniper_ema_pullback@5m@std",
+  "split_date": "2024-01-01",
+  "valid_regimes": [],
+  "valid_sessions": [],
+  "is": {
+   "n": 0
+  },
+  "is_unfiltered": {
+   "n": 37494,
+   "per_day": 51.436,
+   "win_rate": 0.3,
+   "mean_net_r": -1.1952,
+   "se": 0.0105,
+   "t": -113.58,
+   "mean_gross_r": 0.0205,
+   "mean_cost_r": 1.2158,
+   "median_stop_pct": 0.00253,
+   "sum_net_r": -44813.77,
+   "sharpe_per_trade": -0.5866
+  },
+  "oos": {
+   "n": 0
+  },
+  "oos_unfiltered": {
+   "n": 50553,
+   "per_day": 50.355,
+   "win_rate": 0.3065,
+   "mean_net_r": -1.1635,
+   "se": 0.0081,
+   "t": -143.83,
+   "mean_gross_r": 0.0349,
+   "mean_cost_r": 1.1984,
+   "median_stop_pct": 0.00242,
+   "sum_net_r": -58818.92,
+   "sharpe_per_trade": -0.6397
+  },
+  "record": null,
+  "setup": "sniper_ema_pullback",
+  "timeframe": "5m",
+  "fees": "std",
+  "costs": {
+   "maker_fee": 0.0008,
+   "taker_fee": 0.001,
+   "slippage": 0.0002
+  },
+  "symbols": [
+   "BTCUSDT",
+   "ETHUSDT",
+   "SOLUSDT",
+   "BNBUSDT",
+   "XRPUSDT"
+  ],
+  "period": [
+   "2022-01",
+   "latest"
+  ]
+ },
+ {
+  "setup_key": "sniper_fvg_retrace@15m@std",
+  "split_date": "2024-01-01",
+  "valid_regimes": [],
+  "valid_sessions": [],
+  "is": {
+   "n": 0
+  },
+  "is_unfiltered": {
+   "n": 1826,
+   "per_day": 2.515,
+   "win_rate": 0.2968,
+   "mean_net_r": -0.6957,
+   "se": 0.0388,
+   "t": -17.95,
+   "mean_gross_r": -0.0866,
+   "mean_cost_r": 0.6091,
+   "median_stop_pct": 0.00473,
+   "sum_net_r": -1270.4,
+   "sharpe_per_trade": -0.42
+  },
+  "oos": {
+   "n": 0
+  },
+  "oos_unfiltered": {
+   "n": 2702,
+   "per_day": 2.693,
+   "win_rate": 0.3261,
+   "mean_net_r": -0.6397,
+   "se": 0.0305,
+   "t": -20.95,
+   "mean_gross_r": -0.0117,
+   "mean_cost_r": 0.628,
+   "median_stop_pct": 0.00395,
+   "sum_net_r": -1728.59,
+   "sharpe_per_trade": -0.403
+  },
+  "record": null,
+  "setup": "sniper_fvg_retrace",
+  "timeframe": "15m",
+  "fees": "std",
+  "costs": {
+   "maker_fee": 0.0008,
+   "taker_fee": 0.001,
+   "slippage": 0.0002
+  },
+  "symbols": [
+   "BTCUSDT",
+   "ETHUSDT",
+   "SOLUSDT",
+   "BNBUSDT",
+   "XRPUSDT"
+  ],
+  "period": [
+   "2022-01",
+   "latest"
+  ]
+ },
+ {
+  "setup_key": "sniper_fvg_retrace@1h@std",
+  "split_date": "2024-01-01",
+  "valid_regimes": [],
+  "valid_sessions": [
+   "london"
+  ],
+  "is": {
+   "n": 0
+  },
+  "is_unfiltered": {
+   "n": 473,
+   "per_day": 0.664,
+   "win_rate": 0.3488,
+   "mean_net_r": -0.1807,
+   "se": 0.0678,
+   "t": -2.67,
+   "mean_gross_r": 0.0588,
+   "mean_cost_r": 0.2396,
+   "median_stop_pct": 0.00994,
+   "sum_net_r": -85.48,
+   "sharpe_per_trade": -0.1226
+  },
+  "oos": {
+   "n": 0
+  },
+  "oos_unfiltered": {
+   "n": 671,
+   "per_day": 0.67,
+   "win_rate": 0.3308,
+   "mean_net_r": -0.2559,
+   "se": 0.0559,
+   "t": -4.58,
+   "mean_gross_r": -0.0058,
+   "mean_cost_r": 0.2501,
+   "median_stop_pct": 0.00937,
+   "sum_net_r": -171.74,
+   "sharpe_per_trade": -0.1768
+  },
+  "record": null,
+  "setup": "sniper_fvg_retrace",
+  "timeframe": "1h",
+  "fees": "std",
+  "costs": {
+   "maker_fee": 0.0008,
+   "taker_fee": 0.001,
+   "slippage": 0.0002
+  },
+  "symbols": [
+   "BTCUSDT",
+   "ETHUSDT",
+   "SOLUSDT",
+   "BNBUSDT",
+   "XRPUSDT"
+  ],
+  "period": [
+   "2022-01",
+   "latest"
+  ]
+ },
+ {
+  "setup_key": "sniper_fvg_retrace@5m@std",
+  "split_date": "2024-01-01",
+  "valid_regimes": [],
+  "valid_sessions": [],
+  "is": {
+   "n": 0
+  },
+  "is_unfiltered": {
+   "n": 6146,
+   "per_day": 8.433,
+   "win_rate": 0.275,
+   "mean_net_r": -1.5824,
+   "se": 0.0569,
+   "t": -27.8,
+   "mean_gross_r": -0.0616,
+   "mean_cost_r": 1.5208,
+   "median_stop_pct": 0.00229,
+   "sum_net_r": -9725.31,
+   "sharpe_per_trade": -0.3546
+  },
+  "oos": {
+   "n": 0
+  },
+  "oos_unfiltered": {
+   "n": 9958,
+   "per_day": 9.921,
+   "win_rate": 0.2798,
+   "mean_net_r": -1.5005,
+   "se": 0.0289,
+   "t": -51.9,
+   "mean_gross_r": -0.0545,
+   "mean_cost_r": 1.446,
+   "median_stop_pct": 0.00192,
+   "sum_net_r": -14941.81,
+   "sharpe_per_trade": -0.5201
+  },
+  "record": null,
+  "setup": "sniper_fvg_retrace",
+  "timeframe": "5m",
+  "fees": "std",
+  "costs": {
+   "maker_fee": 0.0008,
+   "taker_fee": 0.001,
+   "slippage": 0.0002
+  },
+  "symbols": [
+   "BTCUSDT",
+   "ETHUSDT",
+   "SOLUSDT",
+   "BNBUSDT",
+   "XRPUSDT"
+  ],
+  "period": [
+   "2022-01",
+   "latest"
+  ]
+ },
+ {
+  "setup_key": "sniper_orb_retest@15m@std",
+  "split_date": "2024-01-01",
+  "valid_regimes": [],
+  "valid_sessions": [],
+  "is": {
+   "n": 0
+  },
+  "is_unfiltered": {
+   "n": 2155,
+   "per_day": 2.968,
+   "win_rate": 0.3262,
+   "mean_net_r": -0.763,
+   "se": 0.0429,
+   "t": -17.79,
+   "mean_gross_r": 0.0194,
+   "mean_cost_r": 0.7824,
+   "median_stop_pct": 0.00337,
+   "sum_net_r": -1644.22,
+   "sharpe_per_trade": -0.3833
+  },
+  "oos": {
+   "n": 0
+  },
+  "oos_unfiltered": {
+   "n": 3056,
+   "per_day": 3.05,
+   "win_rate": 0.3161,
+   "mean_net_r": -0.683,
+   "se": 0.03,
+   "t": -22.77,
+   "mean_gross_r": -0.0101,
+   "mean_cost_r": 0.6729,
+   "median_stop_pct": 0.00372,
+   "sum_net_r": -2087.27,
+   "sharpe_per_trade": -0.4118
+  },
+  "record": null,
+  "setup": "sniper_orb_retest",
+  "timeframe": "15m",
+  "fees": "std",
+  "costs": {
+   "maker_fee": 0.0008,
+   "taker_fee": 0.001,
+   "slippage": 0.0002
+  },
+  "symbols": [
+   "BTCUSDT",
+   "ETHUSDT",
+   "SOLUSDT",
+   "BNBUSDT",
+   "XRPUSDT"
+  ],
+  "period": [
+   "2022-01",
+   "latest"
+  ]
+ },
+ {
+  "setup_key": "sniper_orb_retest@5m@std",
+  "split_date": "2024-01-01",
+  "valid_regimes": [],
+  "valid_sessions": [],
+  "is": {
+   "n": 0
+  },
+  "is_unfiltered": {
+   "n": 2556,
+   "per_day": 3.511,
+   "win_rate": 0.3302,
+   "mean_net_r": -0.7217,
+   "se": 0.0324,
+   "t": -22.25,
+   "mean_gross_r": 0.0143,
+   "mean_cost_r": 0.736,
+   "median_stop_pct": 0.00344,
+   "sum_net_r": -1844.61,
+   "sharpe_per_trade": -0.44
+  },
+  "oos": {
+   "n": 0
+  },
+  "oos_unfiltered": {
+   "n": 3588,
+   "per_day": 3.577,
+   "win_rate": 0.3183,
+   "mean_net_r": -0.696,
+   "se": 0.0258,
+   "t": -26.94,
+   "mean_gross_r": -0.0314,
+   "mean_cost_r": 0.6646,
+   "median_stop_pct": 0.00377,
+   "sum_net_r": -2497.17,
+   "sharpe_per_trade": -0.4498
+  },
+  "record": null,
+  "setup": "sniper_orb_retest",
+  "timeframe": "5m",
+  "fees": "std",
+  "costs": {
+   "maker_fee": 0.0008,
+   "taker_fee": 0.001,
+   "slippage": 0.0002
+  },
+  "symbols": [
+   "BTCUSDT",
+   "ETHUSDT",
+   "SOLUSDT",
+   "BNBUSDT",
+   "XRPUSDT"
+  ],
+  "period": [
+   "2022-01",
+   "latest"
+  ]
+ },
+ {
+  "setup_key": "sniper_ote_retrace@15m@std",
+  "split_date": "2024-01-01",
+  "valid_regimes": [],
+  "valid_sessions": [],
+  "is": {
+   "n": 0
+  },
+  "is_unfiltered": {
+   "n": 2235,
+   "per_day": 3.072,
+   "win_rate": 0.3163,
+   "mean_net_r": -0.333,
+   "se": 0.0317,
+   "t": -10.51,
+   "mean_gross_r": -0.0193,
+   "mean_cost_r": 0.3137,
+   "median_stop_pct": 0.00779,
+   "sum_net_r": -744.24,
+   "sharpe_per_trade": -0.2224
+  },
+  "oos": {
+   "n": 0
+  },
+  "oos_unfiltered": {
+   "n": 3265,
+   "per_day": 3.257,
+   "win_rate": 0.3167,
+   "mean_net_r": -0.3133,
+   "se": 0.0262,
+   "t": -11.96,
+   "mean_gross_r": -0.0045,
+   "mean_cost_r": 0.3088,
+   "median_stop_pct": 0.00722,
+   "sum_net_r": -1022.94,
+   "sharpe_per_trade": -0.2093
+  },
+  "record": null,
+  "setup": "sniper_ote_retrace",
+  "timeframe": "15m",
+  "fees": "std",
+  "costs": {
+   "maker_fee": 0.0008,
+   "taker_fee": 0.001,
+   "slippage": 0.0002
+  },
+  "symbols": [
+   "BTCUSDT",
+   "ETHUSDT",
+   "SOLUSDT",
+   "BNBUSDT",
+   "XRPUSDT"
+  ],
+  "period": [
+   "2022-01",
+   "latest"
+  ]
+ },
+ {
+  "setup_key": "sniper_ote_retrace@1h@std",
+  "split_date": "2024-01-01",
+  "valid_regimes": [],
+  "valid_sessions": [],
+  "is": {
+   "n": 0
+  },
+  "is_unfiltered": {
+   "n": 564,
+   "per_day": 0.786,
+   "win_rate": 0.3103,
+   "mean_net_r": -0.2275,
+   "se": 0.0594,
+   "t": -3.83,
+   "mean_gross_r": -0.0826,
+   "mean_cost_r": 0.145,
+   "median_stop_pct": 0.01659,
+   "sum_net_r": -128.33,
+   "sharpe_per_trade": -0.1612
+  },
+  "oos": {
+   "n": 0
+  },
+  "oos_unfiltered": {
+   "n": 771,
+   "per_day": 0.77,
+   "win_rate": 0.3126,
+   "mean_net_r": -0.1872,
+   "se": 0.0523,
+   "t": -3.58,
+   "mean_gross_r": -0.0448,
+   "mean_cost_r": 0.1424,
+   "median_stop_pct": 0.01512,
+   "sum_net_r": -144.37,
+   "sharpe_per_trade": -0.1288
+  },
+  "record": null,
+  "setup": "sniper_ote_retrace",
+  "timeframe": "1h",
+  "fees": "std",
+  "costs": {
+   "maker_fee": 0.0008,
+   "taker_fee": 0.001,
+   "slippage": 0.0002
+  },
+  "symbols": [
+   "BTCUSDT",
+   "ETHUSDT",
+   "SOLUSDT",
+   "BNBUSDT",
+   "XRPUSDT"
+  ],
+  "period": [
+   "2022-01",
+   "latest"
+  ]
+ },
+ {
+  "setup_key": "sniper_ote_retrace@5m@std",
+  "split_date": "2024-01-01",
+  "valid_regimes": [],
+  "valid_sessions": [],
+  "is": {
+   "n": 0
+  },
+  "is_unfiltered": {
+   "n": 6484,
+   "per_day": 8.897,
+   "win_rate": 0.3092,
+   "mean_net_r": -0.5843,
+   "se": 0.0196,
+   "t": -29.77,
+   "mean_gross_r": -0.0182,
+   "mean_cost_r": 0.5661,
+   "median_stop_pct": 0.00437,
+   "sum_net_r": -3788.66,
+   "sharpe_per_trade": -0.3697
+  },
+  "oos": {
+   "n": 0
+  },
+  "oos_unfiltered": {
+   "n": 9720,
+   "per_day": 9.688,
+   "win_rate": 0.3068,
+   "mean_net_r": -0.5792,
+   "se": 0.0158,
+   "t": -36.74,
+   "mean_gross_r": -0.0138,
+   "mean_cost_r": 0.5654,
+   "median_stop_pct": 0.00402,
+   "sum_net_r": -5629.8,
+   "sharpe_per_trade": -0.3727
+  },
+  "record": null,
+  "setup": "sniper_ote_retrace",
+  "timeframe": "5m",
+  "fees": "std",
+  "costs": {
+   "maker_fee": 0.0008,
+   "taker_fee": 0.001,
+   "slippage": 0.0002
+  },
+  "symbols": [
+   "BTCUSDT",
+   "ETHUSDT",
+   "SOLUSDT",
+   "BNBUSDT",
+   "XRPUSDT"
+  ],
+  "period": [
+   "2022-01",
+   "latest"
+  ]
+ },
+ {
+  "setup_key": "sniper_sweep_reclaim@15m@std",
+  "split_date": "2024-01-01",
+  "valid_regimes": [],
+  "valid_sessions": [],
+  "is": {
+   "n": 0
+  },
+  "is_unfiltered": {
+   "n": 5999,
+   "per_day": 8.248,
+   "win_rate": 0.3492,
+   "mean_net_r": -0.4971,
+   "se": 0.0199,
+   "t": -24.93,
+   "mean_gross_r": 0.0504,
+   "mean_cost_r": 0.5474,
+   "median_stop_pct": 0.00535,
+   "sum_net_r": -2981.82,
+   "sharpe_per_trade": -0.3219
+  },
+  "oos": {
+   "n": 0
+  },
+  "oos_unfiltered": {
+   "n": 9004,
+   "per_day": 8.972,
+   "win_rate": 0.3322,
+   "mean_net_r": -0.6402,
+   "se": 0.0164,
+   "t": -38.97,
+   "mean_gross_r": -0.0034,
+   "mean_cost_r": 0.6369,
+   "median_stop_pct": 0.00459,
+   "sum_net_r": -5764.69,
+   "sharpe_per_trade": -0.4107
+  },
+  "record": null,
+  "setup": "sniper_sweep_reclaim",
+  "timeframe": "15m",
+  "fees": "std",
+  "costs": {
+   "maker_fee": 0.0008,
+   "taker_fee": 0.001,
+   "slippage": 0.0002
+  },
+  "symbols": [
+   "BTCUSDT",
+   "ETHUSDT",
+   "SOLUSDT",
+   "BNBUSDT",
+   "XRPUSDT"
+  ],
+  "period": [
+   "2022-01",
+   "latest"
+  ]
+ },
+ {
+  "setup_key": "sniper_sweep_reclaim@1h@std",
+  "split_date": "2024-01-01",
+  "valid_regimes": [],
+  "valid_sessions": [],
+  "is": {
+   "n": 0
+  },
+  "is_unfiltered": {
+   "n": 3240,
+   "per_day": 4.513,
+   "win_rate": 0.3627,
+   "mean_net_r": -0.2183,
+   "se": 0.026,
+   "t": -8.4,
+   "mean_gross_r": 0.0745,
+   "mean_cost_r": 0.2927,
+   "median_stop_pct": 0.00987,
+   "sum_net_r": -707.18,
+   "sharpe_per_trade": -0.1477
+  },
+  "oos": {
+   "n": 0
+  },
+  "oos_unfiltered": {
+   "n": 4866,
+   "per_day": 4.849,
+   "win_rate": 0.3296,
+   "mean_net_r": -0.3484,
+   "se": 0.021,
+   "t": -16.61,
+   "mean_gross_r": -0.0124,
+   "mean_cost_r": 0.336,
+   "median_stop_pct": 0.00861,
+   "sum_net_r": -1695.33,
+   "sharpe_per_trade": -0.2381
+  },
+  "record": null,
+  "setup": "sniper_sweep_reclaim",
+  "timeframe": "1h",
+  "fees": "std",
+  "costs": {
+   "maker_fee": 0.0008,
+   "taker_fee": 0.001,
+   "slippage": 0.0002
+  },
+  "symbols": [
+   "BTCUSDT",
+   "ETHUSDT",
+   "SOLUSDT",
+   "BNBUSDT",
+   "XRPUSDT"
+  ],
+  "period": [
+   "2022-01",
+   "latest"
+  ]
+ },
+ {
+  "setup_key": "sniper_sweep_reclaim@5m@std",
+  "split_date": "2024-01-01",
+  "valid_regimes": [],
+  "valid_sessions": [],
+  "is": {
+   "n": 0
+  },
+  "is_unfiltered": {
+   "n": 9462,
+   "per_day": 12.989,
+   "win_rate": 0.3307,
+   "mean_net_r": -0.8857,
+   "se": 0.0176,
+   "t": -50.3,
+   "mean_gross_r": 0.0496,
+   "mean_cost_r": 0.9353,
+   "median_stop_pct": 0.00322,
+   "sum_net_r": -8380.43,
+   "sharpe_per_trade": -0.5171
+  },
+  "oos": {
+   "n": 0
+  },
+  "oos_unfiltered": {
+   "n": 14588,
+   "per_day": 14.541,
+   "win_rate": 0.3105,
+   "mean_net_r": -1.0922,
+   "se": 0.015,
+   "t": -73.02,
+   "mean_gross_r": 0.031,
+   "mean_cost_r": 1.1232,
+   "median_stop_pct": 0.0027,
+   "sum_net_r": -15932.73,
+   "sharpe_per_trade": -0.6046
+  },
+  "record": null,
+  "setup": "sniper_sweep_reclaim",
+  "timeframe": "5m",
+  "fees": "std",
+  "costs": {
+   "maker_fee": 0.0008,
+   "taker_fee": 0.001,
+   "slippage": 0.0002
+  },
+  "symbols": [
+   "BTCUSDT",
+   "ETHUSDT",
+   "SOLUSDT",
+   "BNBUSDT",
+   "XRPUSDT"
+  ],
+  "period": [
+   "2022-01",
+   "latest"
+  ]
+ },
+ {
+  "setup_key": "sniper_vwap_reversion@15m@std",
+  "split_date": "2024-01-01",
+  "valid_regimes": [],
+  "valid_sessions": [],
+  "is": {
+   "n": 0
+  },
+  "is_unfiltered": {
+   "n": 1061,
+   "per_day": 1.477,
+   "win_rate": 0.3129,
+   "mean_net_r": -0.7186,
+   "se": 0.0509,
+   "t": -14.11,
+   "mean_gross_r": -0.0752,
+   "mean_cost_r": 0.6434,
+   "median_stop_pct": 0.00516,
+   "sum_net_r": -762.45,
+   "sharpe_per_trade": -0.4332
+  },
+  "oos": {
+   "n": 0
+  },
+  "oos_unfiltered": {
+   "n": 1624,
+   "per_day": 1.619,
+   "win_rate": 0.3374,
+   "mean_net_r": -0.6109,
+   "se": 0.0409,
+   "t": -14.93,
+   "mean_gross_r": 0.0307,
+   "mean_cost_r": 0.6415,
+   "median_stop_pct": 0.00468,
+   "sum_net_r": -992.06,
+   "sharpe_per_trade": -0.3705
+  },
+  "record": null,
+  "setup": "sniper_vwap_reversion",
+  "timeframe": "15m",
+  "fees": "std",
+  "costs": {
+   "maker_fee": 0.0008,
+   "taker_fee": 0.001,
+   "slippage": 0.0002
+  },
+  "symbols": [
+   "BTCUSDT",
+   "ETHUSDT",
+   "SOLUSDT",
+   "BNBUSDT",
+   "XRPUSDT"
+  ],
+  "period": [
+   "2022-01",
+   "latest"
+  ]
+ },
+ {
+  "setup_key": "sniper_vwap_reversion@1h@std",
+  "split_date": "2024-01-01",
+  "valid_regimes": [],
+  "valid_sessions": [],
+  "is": {
+   "n": 0
+  },
+  "is_unfiltered": {
+   "n": 186,
+   "per_day": 0.274,
+   "win_rate": 0.4032,
+   "mean_net_r": -0.312,
+   "se": 0.1081,
+   "t": -2.89,
+   "mean_gross_r": 0.1014,
+   "mean_cost_r": 0.4134,
+   "median_stop_pct": 0.00726,
+   "sum_net_r": -58.04,
+   "sharpe_per_trade": -0.2116
+  },
+  "oos": {
+   "n": 0
+  },
+  "oos_unfiltered": {
+   "n": 265,
+   "per_day": 0.277,
+   "win_rate": 0.3358,
+   "mean_net_r": -0.5899,
+   "se": 0.0818,
+   "t": -7.21,
+   "mean_gross_r": -0.1474,
+   "mean_cost_r": 0.4425,
+   "median_stop_pct": 0.00616,
+   "sum_net_r": -156.31,
+   "sharpe_per_trade": -0.4429
+  },
+  "record": null,
+  "setup": "sniper_vwap_reversion",
+  "timeframe": "1h",
+  "fees": "std",
+  "costs": {
+   "maker_fee": 0.0008,
+   "taker_fee": 0.001,
+   "slippage": 0.0002
+  },
+  "symbols": [
+   "BTCUSDT",
+   "ETHUSDT",
+   "SOLUSDT",
+   "BNBUSDT",
+   "XRPUSDT"
+  ],
+  "period": [
+   "2022-01",
+   "latest"
+  ]
+ },
+ {
+  "setup_key": "sniper_vwap_reversion@5m@std",
+  "split_date": "2024-01-01",
+  "valid_regimes": [],
+  "valid_sessions": [],
+  "is": {
+   "n": 0
+  },
+  "is_unfiltered": {
+   "n": 3499,
+   "per_day": 4.842,
+   "win_rate": 0.2632,
+   "mean_net_r": -1.0258,
+   "se": 0.0387,
+   "t": -26.52,
+   "mean_gross_r": -0.0384,
+   "mean_cost_r": 0.9873,
+   "median_stop_pct": 0.00371,
+   "sum_net_r": -3589.11,
+   "sharpe_per_trade": -0.4483
+  },
+  "oos": {
+   "n": 0
+  },
+  "oos_unfiltered": {
+   "n": 5174,
+   "per_day": 5.154,
+   "win_rate": 0.2739,
+   "mean_net_r": -0.9951,
+   "se": 0.0279,
+   "t": -35.67,
+   "mean_gross_r": 0.0024,
+   "mean_cost_r": 0.9976,
+   "median_stop_pct": 0.00323,
+   "sum_net_r": -5148.78,
+   "sharpe_per_trade": -0.496
+  },
+  "record": null,
+  "setup": "sniper_vwap_reversion",
+  "timeframe": "5m",
+  "fees": "std",
+  "costs": {
+   "maker_fee": 0.0008,
+   "taker_fee": 0.001,
+   "slippage": 0.0002
+  },
+  "symbols": [
+   "BTCUSDT",
+   "ETHUSDT",
+   "SOLUSDT",
+   "BNBUSDT",
+   "XRPUSDT"
+  ],
+  "period": [
+   "2022-01",
+   "latest"
+  ]
+ },
+ {
+  "setup_key": "sniper_ema_pullback@15m@low",
+  "split_date": "2024-01-01",
+  "valid_regimes": [],
+  "valid_sessions": [],
+  "is": {
+   "n": 0
+  },
+  "is_unfiltered": {
+   "n": 12408,
+   "per_day": 17.073,
+   "win_rate": 0.332,
+   "mean_net_r": -0.3014,
+   "se": 0.0138,
+   "t": -21.92,
+   "mean_gross_r": -0.0021,
+   "mean_cost_r": 0.2993,
+   "median_stop_pct": 0.00453,
+   "sum_net_r": -3740.14,
+   "sharpe_per_trade": -0.1968
+  },
+  "oos": {
+   "n": 0
+  },
+  "oos_unfiltered": {
+   "n": 16593,
+   "per_day": 16.528,
+   "win_rate": 0.3444,
+   "mean_net_r": -0.2538,
+   "se": 0.0119,
+   "t": -21.36,
+   "mean_gross_r": 0.0337,
+   "mean_cost_r": 0.2875,
+   "median_stop_pct": 0.00437,
+   "sum_net_r": -4211.45,
+   "sharpe_per_trade": -0.1659
+  },
+  "record": null,
+  "setup": "sniper_ema_pullback",
+  "timeframe": "15m",
+  "fees": "low",
+  "costs": {
+   "maker_fee": 0.0,
+   "taker_fee": 0.0005,
+   "slippage": 0.0001
+  },
+  "symbols": [
+   "BTCUSDT",
+   "ETHUSDT",
+   "SOLUSDT",
+   "BNBUSDT",
+   "XRPUSDT"
+  ],
+  "period": [
+   "2022-01",
+   "latest"
+  ]
+ },
+ {
+  "setup_key": "sniper_ema_pullback@1h@low",
+  "split_date": "2024-01-01",
+  "valid_regimes": [],
+  "valid_sessions": [],
+  "is": {
+   "n": 0
+  },
+  "is_unfiltered": {
+   "n": 2831,
+   "per_day": 3.947,
+   "win_rate": 0.3313,
+   "mean_net_r": -0.1531,
+   "se": 0.0271,
+   "t": -5.64,
+   "mean_gross_r": -0.0176,
+   "mean_cost_r": 0.1355,
+   "median_stop_pct": 0.00969,
+   "sum_net_r": -433.35,
+   "sharpe_per_trade": -0.1061
+  },
+  "oos": {
+   "n": 0
+  },
+  "oos_unfiltered": {
+   "n": 3902,
+   "per_day": 3.887,
+   "win_rate": 0.336,
+   "mean_net_r": -0.1263,
+   "se": 0.0234,
+   "t": -5.4,
+   "mean_gross_r": 0.0039,
+   "mean_cost_r": 0.1302,
+   "median_stop_pct": 0.00956,
+   "sum_net_r": -492.63,
+   "sharpe_per_trade": -0.0864
+  },
+  "record": null,
+  "setup": "sniper_ema_pullback",
+  "timeframe": "1h",
+  "fees": "low",
+  "costs": {
+   "maker_fee": 0.0,
+   "taker_fee": 0.0005,
+   "slippage": 0.0001
+  },
+  "symbols": [
+   "BTCUSDT",
+   "ETHUSDT",
+   "SOLUSDT",
+   "BNBUSDT",
+   "XRPUSDT"
+  ],
+  "period": [
+   "2022-01",
+   "latest"
+  ]
+ },
+ {
+  "setup_key": "sniper_ema_pullback@5m@low",
+  "split_date": "2024-01-01",
+  "valid_regimes": [],
+  "valid_sessions": [],
+  "is": {
+   "n": 0
+  },
+  "is_unfiltered": {
+   "n": 37494,
+   "per_day": 51.436,
+   "win_rate": 0.3334,
+   "mean_net_r": -0.5175,
+   "se": 0.0088,
+   "t": -58.7,
+   "mean_gross_r": 0.0205,
+   "mean_cost_r": 0.5381,
+   "median_stop_pct": 0.00253,
+   "sum_net_r": -19405.02,
+   "sharpe_per_trade": -0.3031
+  },
+  "oos": {
+   "n": 0
+  },
+  "oos_unfiltered": {
+   "n": 50553,
+   "per_day": 50.355,
+   "win_rate": 0.3427,
+   "mean_net_r": -0.493,
+   "se": 0.0073,
+   "t": -67.52,
+   "mean_gross_r": 0.0349,
+   "mean_cost_r": 0.5279,
+   "median_stop_pct": 0.00242,
+   "sum_net_r": -24924.03,
+   "sharpe_per_trade": -0.3003
+  },
+  "record": null,
+  "setup": "sniper_ema_pullback",
+  "timeframe": "5m",
+  "fees": "low",
+  "costs": {
+   "maker_fee": 0.0,
+   "taker_fee": 0.0005,
+   "slippage": 0.0001
+  },
+  "symbols": [
+   "BTCUSDT",
+   "ETHUSDT",
+   "SOLUSDT",
+   "BNBUSDT",
+   "XRPUSDT"
+  ],
+  "period": [
+   "2022-01",
+   "latest"
+  ]
+ },
+ {
+  "setup_key": "sniper_fvg_retrace@15m@low",
+  "split_date": "2024-01-01",
+  "valid_regimes": [],
+  "valid_sessions": [],
+  "is": {
+   "n": 0
+  },
+  "is_unfiltered": {
+   "n": 1826,
+   "per_day": 2.515,
+   "win_rate": 0.3094,
+   "mean_net_r": -0.2247,
+   "se": 0.0345,
+   "t": -6.5,
+   "mean_gross_r": -0.0866,
+   "mean_cost_r": 0.138,
+   "median_stop_pct": 0.00473,
+   "sum_net_r": -410.26,
+   "sharpe_per_trade": -0.1522
+  },
+  "oos": {
+   "n": 0
+  },
+  "oos_unfiltered": {
+   "n": 2702,
+   "per_day": 2.693,
+   "win_rate": 0.3298,
+   "mean_net_r": -0.1496,
+   "se": 0.0291,
+   "t": -5.14,
+   "mean_gross_r": -0.0117,
+   "mean_cost_r": 0.1379,
+   "median_stop_pct": 0.00395,
+   "sum_net_r": -404.27,
+   "sharpe_per_trade": -0.0989
+  },
+  "record": null,
+  "setup": "sniper_fvg_retrace",
+  "timeframe": "15m",
+  "fees": "low",
+  "costs": {
+   "maker_fee": 0.0,
+   "taker_fee": 0.0005,
+   "slippage": 0.0001
+  },
+  "symbols": [
+   "BTCUSDT",
+   "ETHUSDT",
+   "SOLUSDT",
+   "BNBUSDT",
+   "XRPUSDT"
+  ],
+  "period": [
+   "2022-01",
+   "latest"
+  ]
+ },
+ {
+  "setup_key": "sniper_fvg_retrace@1h@low",
+  "split_date": "2024-01-01",
+  "valid_regimes": [
+   "trend_high_vol"
+  ],
+  "valid_sessions": [
+   "late",
+   "london"
+  ],
+  "is": {
+   "n": 79,
+   "per_day": 0.114,
+   "win_rate": 0.443,
+   "mean_net_r": 0.2905,
+   "se": 0.1702,
+   "t": 1.71,
+   "mean_gross_r": 0.3248,
+   "mean_cost_r": 0.0342,
+   "median_stop_pct": 0.01244,
+   "sum_net_r": 22.95,
+   "sharpe_per_trade": 0.192
+  },
+  "is_unfiltered": {
+   "n": 473,
+   "per_day": 0.664,
+   "win_rate": 0.3531,
+   "mean_net_r": 0.0074,
+   "se": 0.0675,
+   "t": 0.11,
+   "mean_gross_r": 0.0588,
+   "mean_cost_r": 0.0514,
+   "median_stop_pct": 0.00994,
+   "sum_net_r": 3.51,
+   "sharpe_per_trade": 0.005
+  },
+  "oos": {
+   "n": 111,
+   "per_day": 0.115,
+   "win_rate": 0.2793,
+   "mean_net_r": -0.2049,
+   "se": 0.1309,
+   "t": -1.57,
+   "mean_gross_r": -0.1622,
+   "mean_cost_r": 0.0427,
+   "median_stop_pct": 0.012,
+   "sum_net_r": -22.74,
+   "sharpe_per_trade": -0.1486
+  },
+  "oos_unfiltered": {
+   "n": 671,
+   "per_day": 0.67,
+   "win_rate": 0.3353,
+   "mean_net_r": -0.0604,
+   "se": 0.0557,
+   "t": -1.08,
+   "mean_gross_r": -0.0058,
+   "mean_cost_r": 0.0546,
+   "median_stop_pct": 0.00937,
+   "sum_net_r": -40.51,
+   "sharpe_per_trade": -0.0418
+  },
+  "record": {
+   "setup_id": "sniper_fvg_retrace@1h@low",
+   "results_r": [
+    2.0,
+    2.0,
+    2.0,
+    -1.09671,
+    -1.0641,
+    -1.04293,
+    2.0,
+    -1.08698,
+    -1.09617,
+    -1.02133,
+    -1.05841,
+    -1.03435,
+    -1.10819,
+    -1.07032,
+    -1.16331,
+    2.0,
+    2.0,
+    -1.06683,
+    -1.05091,
+    -1.08864,
+    2.0,
+    2.0,
+    -1.06116,
+    -1.04336,
+    -1.04785,
+    -1.12297,
+    -1.06415,
+    -1.04561,
+    -1.11487,
+    -1.13694,
+    -1.0361,
+    -1.08019,
+    -1.10927,
+    -1.08545,
+    -1.05471,
+    2.0,
+    2.0,
+    -1.04634,
+    -1.03522,
+    2.0,
+    2.0,
+    -1.01847,
+    2.0,
+    -1.06807,
+    -1.05624,
+    -1.03145,
+    -1.08646,
+    2.0,
+    2.0,
+    2.0,
+    2.0,
+    -1.03343,
+    2.0,
+    -1.02041,
+    -1.02825,
+    -1.01649,
+    -1.0248,
+    -1.02067,
+    2.0,
+    -1.05086,
+    -1.07566,
+    2.0,
+    -1.0405,
+    -1.03557,
+    -1.04066,
+    -1.04133,
+    -1.03206,
+    -1.05069,
+    -1.06267,
+    -1.03993,
+    -1.03877,
+    -1.05768,
+    2.0,
+    -1.02285,
+    -1.07208,
+    -1.01774,
+    -1.03312,
+    -1.0335,
+    -1.06842,
+    -1.09906,
+    2.0,
+    -1.07895,
+    -1.09752,
+    -1.0895,
+    2.0,
+    -1.08595,
+    -1.07067,
+    -1.12681,
+    -1.07202,
+    -1.05575,
+    2.0,
+    -1.11641,
+    -1.05059,
+    2.0,
+    2.0,
+    -1.01939,
+    2.0,
+    -1.02934,
+    -1.03787,
+    -1.01799,
+    -1.04721,
+    2.0,
+    2.0,
+    -1.04076,
+    -1.04454,
+    -1.04336,
+    -1.05725,
+    -1.07183,
+    2.0,
+    -1.03816,
+    2.0
+   ],
+   "avg_cost_r": 0.04273,
+   "out_of_sample": true,
+   "source": "own",
+   "valid_regimes": [
+    "trend_high_vol"
+   ],
+   "valid_sessions": [
+    "late",
+    "london"
+   ]
+  },
+  "setup": "sniper_fvg_retrace",
+  "timeframe": "1h",
+  "fees": "low",
+  "costs": {
+   "maker_fee": 0.0,
+   "taker_fee": 0.0005,
+   "slippage": 0.0001
+  },
+  "symbols": [
+   "BTCUSDT",
+   "ETHUSDT",
+   "SOLUSDT",
+   "BNBUSDT",
+   "XRPUSDT"
+  ],
+  "period": [
+   "2022-01",
+   "latest"
+  ]
+ },
+ {
+  "setup_key": "sniper_fvg_retrace@5m@low",
+  "split_date": "2024-01-01",
+  "valid_regimes": [],
+  "valid_sessions": [],
+  "is": {
+   "n": 0
+  },
+  "is_unfiltered": {
+   "n": 6146,
+   "per_day": 8.433,
+   "win_rate": 0.3116,
+   "mean_net_r": -0.4147,
+   "se": 0.026,
+   "t": -15.92,
+   "mean_gross_r": -0.0616,
+   "mean_cost_r": 0.3531,
+   "median_stop_pct": 0.00229,
+   "sum_net_r": -2548.89,
+   "sharpe_per_trade": -0.2031
+  },
+  "oos": {
+   "n": 0
+  },
+  "oos_unfiltered": {
+   "n": 9958,
+   "per_day": 9.921,
+   "win_rate": 0.3149,
+   "mean_net_r": -0.3869,
+   "se": 0.0177,
+   "t": -21.89,
+   "mean_gross_r": -0.0545,
+   "mean_cost_r": 0.3324,
+   "median_stop_pct": 0.00192,
+   "sum_net_r": -3852.6,
+   "sharpe_per_trade": -0.2193
+  },
+  "record": null,
+  "setup": "sniper_fvg_retrace",
+  "timeframe": "5m",
+  "fees": "low",
+  "costs": {
+   "maker_fee": 0.0,
+   "taker_fee": 0.0005,
+   "slippage": 0.0001
+  },
+  "symbols": [
+   "BTCUSDT",
+   "ETHUSDT",
+   "SOLUSDT",
+   "BNBUSDT",
+   "XRPUSDT"
+  ],
+  "period": [
+   "2022-01",
+   "latest"
+  ]
+ },
+ {
+  "setup_key": "sniper_orb_retest@15m@low",
+  "split_date": "2024-01-01",
+  "valid_regimes": [],
+  "valid_sessions": [],
+  "is": {
+   "n": 0
+  },
+  "is_unfiltered": {
+   "n": 2155,
+   "per_day": 2.968,
+   "win_rate": 0.336,
+   "mean_net_r": -0.1507,
+   "se": 0.0346,
+   "t": -4.36,
+   "mean_gross_r": 0.0194,
+   "mean_cost_r": 0.1701,
+   "median_stop_pct": 0.00337,
+   "sum_net_r": -324.7,
+   "sharpe_per_trade": -0.0939
+  },
+  "oos": {
+   "n": 0
+  },
+  "oos_unfiltered": {
+   "n": 3056,
+   "per_day": 3.05,
+   "win_rate": 0.323,
+   "mean_net_r": -0.157,
+   "se": 0.0292,
+   "t": -5.38,
+   "mean_gross_r": -0.0101,
+   "mean_cost_r": 0.1469,
+   "median_stop_pct": 0.00372,
+   "sum_net_r": -479.78,
+   "sharpe_per_trade": -0.0974
+  },
+  "record": null,
+  "setup": "sniper_orb_retest",
+  "timeframe": "15m",
+  "fees": "low",
+  "costs": {
+   "maker_fee": 0.0,
+   "taker_fee": 0.0005,
+   "slippage": 0.0001
+  },
+  "symbols": [
+   "BTCUSDT",
+   "ETHUSDT",
+   "SOLUSDT",
+   "BNBUSDT",
+   "XRPUSDT"
+  ],
+  "period": [
+   "2022-01",
+   "latest"
+  ]
+ },
+ {
+  "setup_key": "sniper_orb_retest@5m@low",
+  "split_date": "2024-01-01",
+  "valid_regimes": [],
+  "valid_sessions": [],
+  "is": {
+   "n": 0
+  },
+  "is_unfiltered": {
+   "n": 2556,
+   "per_day": 3.511,
+   "win_rate": 0.3427,
+   "mean_net_r": -0.1419,
+   "se": 0.0301,
+   "t": -4.72,
+   "mean_gross_r": 0.0143,
+   "mean_cost_r": 0.1562,
+   "median_stop_pct": 0.00344,
+   "sum_net_r": -362.58,
+   "sharpe_per_trade": -0.0933
+  },
+  "oos": {
+   "n": 0
+  },
+  "oos_unfiltered": {
+   "n": 3588,
+   "per_day": 3.577,
+   "win_rate": 0.3311,
+   "mean_net_r": -0.1777,
+   "se": 0.0248,
+   "t": -7.17,
+   "mean_gross_r": -0.0314,
+   "mean_cost_r": 0.1463,
+   "median_stop_pct": 0.00377,
+   "sum_net_r": -637.41,
+   "sharpe_per_trade": -0.1197
+  },
+  "record": null,
+  "setup": "sniper_orb_retest",
+  "timeframe": "5m",
+  "fees": "low",
+  "costs": {
+   "maker_fee": 0.0,
+   "taker_fee": 0.0005,
+   "slippage": 0.0001
+  },
+  "symbols": [
+   "BTCUSDT",
+   "ETHUSDT",
+   "SOLUSDT",
+   "BNBUSDT",
+   "XRPUSDT"
+  ],
+  "period": [
+   "2022-01",
+   "latest"
+  ]
+ },
+ {
+  "setup_key": "sniper_ote_retrace@15m@low",
+  "split_date": "2024-01-01",
+  "valid_regimes": [],
+  "valid_sessions": [],
+  "is": {
+   "n": 0
+  },
+  "is_unfiltered": {
+   "n": 2235,
+   "per_day": 3.072,
+   "win_rate": 0.319,
+   "mean_net_r": -0.092,
+   "se": 0.0314,
+   "t": -2.93,
+   "mean_gross_r": -0.0193,
+   "mean_cost_r": 0.0727,
+   "median_stop_pct": 0.00779,
+   "sum_net_r": -205.63,
+   "sharpe_per_trade": -0.0621
+  },
+  "oos": {
+   "n": 0
+  },
+  "oos_unfiltered": {
+   "n": 3265,
+   "per_day": 3.257,
+   "win_rate": 0.3231,
+   "mean_net_r": -0.0747,
+   "se": 0.0262,
+   "t": -2.85,
+   "mean_gross_r": -0.0045,
+   "mean_cost_r": 0.0702,
+   "median_stop_pct": 0.00722,
+   "sum_net_r": -244.03,
+   "sharpe_per_trade": -0.0498
+  },
+  "record": null,
+  "setup": "sniper_ote_retrace",
+  "timeframe": "15m",
+  "fees": "low",
+  "costs": {
+   "maker_fee": 0.0,
+   "taker_fee": 0.0005,
+   "slippage": 0.0001
+  },
+  "symbols": [
+   "BTCUSDT",
+   "ETHUSDT",
+   "SOLUSDT",
+   "BNBUSDT",
+   "XRPUSDT"
+  ],
+  "period": [
+   "2022-01",
+   "latest"
+  ]
+ },
+ {
+  "setup_key": "sniper_ote_retrace@1h@low",
+  "split_date": "2024-01-01",
+  "valid_regimes": [
+   "trend_high_vol"
+  ],
+  "valid_sessions": [
+   "london"
+  ],
+  "is": {
+   "n": 49,
+   "per_day": 0.069,
+   "win_rate": 0.3878,
+   "mean_net_r": 0.2179,
+   "se": 0.2193,
+   "t": 0.99,
+   "mean_gross_r": 0.2398,
+   "mean_cost_r": 0.022,
+   "median_stop_pct": 0.02206,
+   "sum_net_r": 10.67,
+   "sharpe_per_trade": 0.1419
+  },
+  "is_unfiltered": {
+   "n": 564,
+   "per_day": 0.786,
+   "win_rate": 0.3121,
+   "mean_net_r": -0.118,
+   "se": 0.0592,
+   "t": -1.99,
+   "mean_gross_r": -0.0826,
+   "mean_cost_r": 0.0354,
+   "median_stop_pct": 0.01659,
+   "sum_net_r": -66.54,
+   "sharpe_per_trade": -0.0839
+  },
+  "oos": {
+   "n": 64,
+   "per_day": 0.069,
+   "win_rate": 0.2344,
+   "mean_net_r": -0.4086,
+   "se": 0.1445,
+   "t": -2.83,
+   "mean_gross_r": -0.3801,
+   "mean_cost_r": 0.0285,
+   "median_stop_pct": 0.02214,
+   "sum_net_r": -26.15,
+   "sharpe_per_trade": -0.3533
+  },
+  "oos_unfiltered": {
+   "n": 771,
+   "per_day": 0.77,
+   "win_rate": 0.3152,
+   "mean_net_r": -0.0778,
+   "se": 0.0525,
+   "t": -1.48,
+   "mean_gross_r": -0.0448,
+   "mean_cost_r": 0.033,
+   "median_stop_pct": 0.01512,
+   "sum_net_r": -59.99,
+   "sharpe_per_trade": -0.0534
+  },
+  "record": {
+   "setup_id": "sniper_ote_retrace@1h@low",
+   "results_r": [
+    -1.02534,
+    0.88836,
+    2.24503,
+    1.05987,
+    -1.01903,
+    -0.08677,
+    -1.07052,
+    -1.03663,
+    -1.06923,
+    -1.07117,
+    -1.04162,
+    -1.06155,
+    -1.02603,
+    -1.03629,
+    -1.01761,
+    0.81524,
+    -1.02464,
+    -1.02743,
+    2.23541,
+    -1.03785,
+    -1.02824,
+    2.24128,
+    -1.0309,
+    -1.03116,
+    2.25701,
+    -1.01024,
+    -1.01283,
+    -1.01995,
+    -1.01831,
+    2.24438,
+    0.80645,
+    -1.02378,
+    -1.01842,
+    -1.02094,
+    -1.05392,
+    -1.02145,
+    -1.02099,
+    -1.03126,
+    0.08742,
+    -1.01876,
+    -1.04463,
+    -1.02731,
+    -1.04839,
+    -1.03838,
+    -1.00811,
+    2.23799,
+    -1.04165,
+    -1.02746,
+    -1.05444,
+    -1.05145,
+    -1.04686,
+    -1.04666,
+    -1.04755,
+    -1.03232,
+    -1.02428,
+    -1.13595,
+    2.24098,
+    0.04894,
+    2.26606,
+    -1.01416,
+    -1.0222,
+    -0.04179,
+    -1.01794,
+    0.96115
+   ],
+   "avg_cost_r": 0.02852,
+   "out_of_sample": true,
+   "source": "own",
+   "valid_regimes": [
+    "trend_high_vol"
+   ],
+   "valid_sessions": [
+    "london"
+   ]
+  },
+  "setup": "sniper_ote_retrace",
+  "timeframe": "1h",
+  "fees": "low",
+  "costs": {
+   "maker_fee": 0.0,
+   "taker_fee": 0.0005,
+   "slippage": 0.0001
+  },
+  "symbols": [
+   "BTCUSDT",
+   "ETHUSDT",
+   "SOLUSDT",
+   "BNBUSDT",
+   "XRPUSDT"
+  ],
+  "period": [
+   "2022-01",
+   "latest"
+  ]
+ },
+ {
+  "setup_key": "sniper_ote_retrace@5m@low",
+  "split_date": "2024-01-01",
+  "valid_regimes": [],
+  "valid_sessions": [],
+  "is": {
+   "n": 0
+  },
+  "is_unfiltered": {
+   "n": 6484,
+   "per_day": 8.897,
+   "win_rate": 0.3216,
+   "mean_net_r": -0.149,
+   "se": 0.0189,
+   "t": -7.88,
+   "mean_gross_r": -0.0182,
+   "mean_cost_r": 0.1308,
+   "median_stop_pct": 0.00437,
+   "sum_net_r": -966.23,
+   "sharpe_per_trade": -0.0978
+  },
+  "oos": {
+   "n": 0
+  },
+  "oos_unfiltered": {
+   "n": 9720,
+   "per_day": 9.688,
+   "win_rate": 0.3177,
+   "mean_net_r": -0.1427,
+   "se": 0.0156,
+   "t": -9.16,
+   "mean_gross_r": -0.0138,
+   "mean_cost_r": 0.1289,
+   "median_stop_pct": 0.00402,
+   "sum_net_r": -1386.86,
+   "sharpe_per_trade": -0.0929
+  },
+  "record": null,
+  "setup": "sniper_ote_retrace",
+  "timeframe": "5m",
+  "fees": "low",
+  "costs": {
+   "maker_fee": 0.0,
+   "taker_fee": 0.0005,
+   "slippage": 0.0001
+  },
+  "symbols": [
+   "BTCUSDT",
+   "ETHUSDT",
+   "SOLUSDT",
+   "BNBUSDT",
+   "XRPUSDT"
+  ],
+  "period": [
+   "2022-01",
+   "latest"
+  ]
+ },
+ {
+  "setup_key": "sniper_sweep_reclaim@15m@low",
+  "split_date": "2024-01-01",
+  "valid_regimes": [],
+  "valid_sessions": [],
+  "is": {
+   "n": 0
+  },
+  "is_unfiltered": {
+   "n": 5999,
+   "per_day": 8.248,
+   "win_rate": 0.3581,
+   "mean_net_r": -0.1925,
+   "se": 0.0195,
+   "t": -9.85,
+   "mean_gross_r": 0.0504,
+   "mean_cost_r": 0.2428,
+   "median_stop_pct": 0.00535,
+   "sum_net_r": -1154.55,
+   "sharpe_per_trade": -0.1271
+  },
+  "oos": {
+   "n": 0
+  },
+  "oos_unfiltered": {
+   "n": 9004,
+   "per_day": 8.972,
+   "win_rate": 0.3387,
+   "mean_net_r": -0.2875,
+   "se": 0.0159,
+   "t": -18.12,
+   "mean_gross_r": -0.0034,
+   "mean_cost_r": 0.2842,
+   "median_stop_pct": 0.00459,
+   "sum_net_r": -2588.81,
+   "sharpe_per_trade": -0.191
+  },
+  "record": null,
+  "setup": "sniper_sweep_reclaim",
+  "timeframe": "15m",
+  "fees": "low",
+  "costs": {
+   "maker_fee": 0.0,
+   "taker_fee": 0.0005,
+   "slippage": 0.0001
+  },
+  "symbols": [
+   "BTCUSDT",
+   "ETHUSDT",
+   "SOLUSDT",
+   "BNBUSDT",
+   "XRPUSDT"
+  ],
+  "period": [
+   "2022-01",
+   "latest"
+  ]
+ },
+ {
+  "setup_key": "sniper_sweep_reclaim@1h@low",
+  "split_date": "2024-01-01",
+  "valid_regimes": [
+   "range_high_vol",
+   "range_low_vol"
+  ],
+  "valid_sessions": [
+   "asia"
+  ],
+  "is": {
+   "n": 176,
+   "per_day": 0.257,
+   "win_rate": 0.3466,
+   "mean_net_r": -0.0853,
+   "se": 0.1127,
+   "t": -0.76,
+   "mean_gross_r": 0.0473,
+   "mean_cost_r": 0.1326,
+   "median_stop_pct": 0.00994,
+   "sum_net_r": -15.01,
+   "sharpe_per_trade": -0.0571
+  },
+  "is_unfiltered": {
+   "n": 3240,
+   "per_day": 4.513,
+   "win_rate": 0.3645,
+   "mean_net_r": -0.0543,
+   "se": 0.0259,
+   "t": -2.09,
+   "mean_gross_r": 0.0745,
+   "mean_cost_r": 0.1288,
+   "median_stop_pct": 0.00987,
+   "sum_net_r": -175.89,
+   "sharpe_per_trade": -0.0368
+  },
+  "oos": {
+   "n": 220,
+   "per_day": 0.229,
+   "win_rate": 0.3909,
+   "mean_net_r": 0.0187,
+   "se": 0.1027,
+   "t": 0.18,
+   "mean_gross_r": 0.1706,
+   "mean_cost_r": 0.1518,
+   "median_stop_pct": 0.00826,
+   "sum_net_r": 4.12,
+   "sharpe_per_trade": 0.0123
+  },
+  "oos_unfiltered": {
+   "n": 4866,
+   "per_day": 4.849,
+   "win_rate": 0.3319,
+   "mean_net_r": -0.162,
+   "se": 0.0209,
+   "t": -7.75,
+   "mean_gross_r": -0.0124,
+   "mean_cost_r": 0.1496,
+   "median_stop_pct": 0.00861,
+   "sum_net_r": -788.27,
+   "sharpe_per_trade": -0.1112
+  },
+  "record": {
+   "setup_id": "sniper_sweep_reclaim@1h@low",
+   "results_r": [
+    -1.24369,
+    -1.14971,
+    1.9801,
+    -1.12226,
+    -1.12988,
+    1.9313,
+    1.88353,
+    -1.0786,
+    1.95203,
+    1.88517,
+    -1.31797,
+    1.91128,
+    -1.10109,
+    -1.238,
+    -1.26907,
+    -1.19288,
+    1.86317,
+    1.95032,
+    -1.48844,
+    -1.19849,
+    1.84427,
+    -1.7076,
+    -1.14673,
+    -1.114,
+    1.62113,
+    1.90248,
+    -1.31986,
+    1.95224,
+    -1.75493,
+    1.70281,
+    -1.37529,
+    1.81107,
+    1.91954,
+    -1.37076,
+    -1.25081,
+    -1.21105,
+    -1.29867,
+    1.97503,
+    -1.108,
+    1.93288,
+    -1.11218,
+    -1.15674,
+    -1.15528,
+    1.94363,
+    1.93671,
+    1.94461,
+    1.90702,
+    1.87771,
+    1.9383,
+    -1.12754,
+    -1.11771,
+    1.84343,
+    1.93384,
+    -1.19682,
+    -1.0659,
+    -1.16878,
+    -1.17764,
+    1.96298,
+    -1.06354,
+    1.96358,
+    -1.06912,
+    -1.11554,
+    1.94036,
+    -1.0716,
+    -1.22363,
+    -1.16387,
+    -1.26149,
+    1.94807,
+    -1.26428,
+    -1.11848,
+    -1.33517,
+    -1.1088,
+    -1.27902,
+    2.45216,
+    1.96589,
+    1.96221,
+    1.97316,
+    -1.05844,
+    1.93817,
+    -1.1795,
+    -1.09223,
+    1.91059,
+    1.95988,
+    1.95414,
+    -1.10581,
+    -1.04718,
+    -1.08899,
+    -1.06427,
+    -1.06533,
+    -1.18348,
+    -1.05044,
+    -1.12227,
+    1.94436,
+    -1.16573,
+    1.95927,
+    -1.03542,
+    1.97472,
+    1.93726,
+    1.88921,
+    -1.03101,
+    0.60217,
+    -1.14,
+    1.96183,
+    -1.08458,
+    1.9265,
+    -1.11613,
+    -1.0637,
+    -1.33705,
+    1.94018,
+    -1.1453,
+    -1.27496,
+    -1.15902,
+    -1.11623,
+    -1.12624,
+    -1.10017,
+    -1.06027,
+    1.93827,
+    1.97883,
+    1.87295,
+    1.92389,
+    -1.16303,
+    -1.15163,
+    1.89157,
+    1.82961,
+    1.84981,
+    -1.22948,
+    1.73807,
+    -1.13265,
+    1.91514,
+    1.96549,
+    -1.10652,
+    -1.07516,
+    -1.19983,
+    1.82608,
+    -1.22987,
+    1.92731,
+    1.87699,
+    -1.09371,
+    -1.16304,
+    1.88524,
+    -1.14066,
+    -1.26925,
+    -1.08408,
+    -1.22574,
+    -1.13805,
+    1.98776,
+    -1.25632,
+    -1.39876,
+    1.92905,
+    1.95385,
+    1.83806,
+    1.9042,
+    -1.40665,
+    -1.16138,
+    -1.21237,
+    1.94282,
+    -1.53196,
+    -1.33734,
+    -1.13084,
+    -1.24907,
+    -1.3162,
+    -1.28403,
+    0.69655,
+    -1.60111,
+    -1.13837,
+    1.85249,
+    -1.19965,
+    1.92101,
+    -1.1813,
+    1.84286,
+    1.9118,
+    -1.35013,
+    3.59299,
+    -1.41712,
+    1.84257,
+    1.81139,
+    -1.07071,
+    -1.18123,
+    -1.06158,
+    -1.44631,
+    -0.27965,
+    1.936,
+    -1.10988,
+    1.9705,
+    -1.04625,
+    -1.05608,
+    -1.12595,
+    1.90281,
+    -1.11677,
+    -1.26667,
+    -1.28151,
+    -1.06245,
+    -1.21167,
+    -1.18022,
+    -1.11392,
+    1.95662,
+    -1.02654,
+    -1.09179,
+    -1.12021,
+    -1.14588,
+    1.92273,
+    1.91556,
+    0.91531,
+    -1.64685,
+    -1.28446,
+    1.94402,
+    1.96877,
+    -1.09868,
+    -1.10345,
+    1.94565,
+    -1.16485,
+    1.98272,
+    -1.35212,
+    -1.16089,
+    -1.12631,
+    -1.472,
+    -1.28658,
+    1.84866,
+    -1.05336,
+    -1.06782
+   ],
+   "avg_cost_r": 0.15183,
+   "out_of_sample": true,
+   "source": "own",
+   "valid_regimes": [
+    "range_high_vol",
+    "range_low_vol"
+   ],
+   "valid_sessions": [
+    "asia"
+   ]
+  },
+  "setup": "sniper_sweep_reclaim",
+  "timeframe": "1h",
+  "fees": "low",
+  "costs": {
+   "maker_fee": 0.0,
+   "taker_fee": 0.0005,
+   "slippage": 0.0001
+  },
+  "symbols": [
+   "BTCUSDT",
+   "ETHUSDT",
+   "SOLUSDT",
+   "BNBUSDT",
+   "XRPUSDT"
+  ],
+  "period": [
+   "2022-01",
+   "latest"
+  ]
+ },
+ {
+  "setup_key": "sniper_sweep_reclaim@5m@low",
+  "split_date": "2024-01-01",
+  "valid_regimes": [],
+  "valid_sessions": [],
+  "is": {
+   "n": 0
+  },
+  "is_unfiltered": {
+   "n": 9462,
+   "per_day": 12.989,
+   "win_rate": 0.3539,
+   "mean_net_r": -0.365,
+   "se": 0.0163,
+   "t": -22.41,
+   "mean_gross_r": 0.0496,
+   "mean_cost_r": 0.4146,
+   "median_stop_pct": 0.00322,
+   "sum_net_r": -3453.61,
+   "sharpe_per_trade": -0.2303
+  },
+  "oos": {
+   "n": 0
+  },
+  "oos_unfiltered": {
+   "n": 14588,
+   "per_day": 14.541,
+   "win_rate": 0.3451,
+   "mean_net_r": -0.4649,
+   "se": 0.0134,
+   "t": -34.64,
+   "mean_gross_r": 0.031,
+   "mean_cost_r": 0.4959,
+   "median_stop_pct": 0.0027,
+   "sum_net_r": -6781.67,
+   "sharpe_per_trade": -0.2868
+  },
+  "record": null,
+  "setup": "sniper_sweep_reclaim",
+  "timeframe": "5m",
+  "fees": "low",
+  "costs": {
+   "maker_fee": 0.0,
+   "taker_fee": 0.0005,
+   "slippage": 0.0001
+  },
+  "symbols": [
+   "BTCUSDT",
+   "ETHUSDT",
+   "SOLUSDT",
+   "BNBUSDT",
+   "XRPUSDT"
+  ],
+  "period": [
+   "2022-01",
+   "latest"
+  ]
+ },
+ {
+  "setup_key": "sniper_vwap_reversion@15m@low",
+  "split_date": "2024-01-01",
+  "valid_regimes": [],
+  "valid_sessions": [],
+  "is": {
+   "n": 0
+  },
+  "is_unfiltered": {
+   "n": 1061,
+   "per_day": 1.477,
+   "win_rate": 0.3233,
+   "mean_net_r": -0.368,
+   "se": 0.0478,
+   "t": -7.7,
+   "mean_gross_r": -0.0752,
+   "mean_cost_r": 0.2928,
+   "median_stop_pct": 0.00516,
+   "sum_net_r": -390.43,
+   "sharpe_per_trade": -0.2364
+  },
+  "oos": {
+   "n": 0
+  },
+  "oos_unfiltered": {
+   "n": 1624,
+   "per_day": 1.619,
+   "win_rate": 0.3504,
+   "mean_net_r": -0.2582,
+   "se": 0.04,
+   "t": -6.46,
+   "mean_gross_r": 0.0307,
+   "mean_cost_r": 0.2888,
+   "median_stop_pct": 0.00468,
+   "sum_net_r": -419.25,
+   "sharpe_per_trade": -0.1603
+  },
+  "record": null,
+  "setup": "sniper_vwap_reversion",
+  "timeframe": "15m",
+  "fees": "low",
+  "costs": {
+   "maker_fee": 0.0,
+   "taker_fee": 0.0005,
+   "slippage": 0.0001
+  },
+  "symbols": [
+   "BTCUSDT",
+   "ETHUSDT",
+   "SOLUSDT",
+   "BNBUSDT",
+   "XRPUSDT"
+  ],
+  "period": [
+   "2022-01",
+   "latest"
+  ]
+ },
+ {
+  "setup_key": "sniper_vwap_reversion@1h@low",
+  "split_date": "2024-01-01",
+  "valid_regimes": [],
+  "valid_sessions": [],
+  "is": {
+   "n": 0
+  },
+  "is_unfiltered": {
+   "n": 186,
+   "per_day": 0.274,
+   "win_rate": 0.4086,
+   "mean_net_r": -0.0758,
+   "se": 0.1068,
+   "t": -0.71,
+   "mean_gross_r": 0.1014,
+   "mean_cost_r": 0.1772,
+   "median_stop_pct": 0.00726,
+   "sum_net_r": -14.1,
+   "sharpe_per_trade": -0.052
+  },
+  "oos": {
+   "n": 0
+  },
+  "oos_unfiltered": {
+   "n": 265,
+   "per_day": 0.277,
+   "win_rate": 0.3358,
+   "mean_net_r": -0.3456,
+   "se": 0.0801,
+   "t": -4.31,
+   "mean_gross_r": -0.1474,
+   "mean_cost_r": 0.1983,
+   "median_stop_pct": 0.00616,
+   "sum_net_r": -91.59,
+   "sharpe_per_trade": -0.265
+  },
+  "record": null,
+  "setup": "sniper_vwap_reversion",
+  "timeframe": "1h",
+  "fees": "low",
+  "costs": {
+   "maker_fee": 0.0,
+   "taker_fee": 0.0005,
+   "slippage": 0.0001
+  },
+  "symbols": [
+   "BTCUSDT",
+   "ETHUSDT",
+   "SOLUSDT",
+   "BNBUSDT",
+   "XRPUSDT"
+  ],
+  "period": [
+   "2022-01",
+   "latest"
+  ]
+ },
+ {
+  "setup_key": "sniper_vwap_reversion@5m@low",
+  "split_date": "2024-01-01",
+  "valid_regimes": [],
+  "valid_sessions": [],
+  "is": {
+   "n": 0
+  },
+  "is_unfiltered": {
+   "n": 3499,
+   "per_day": 4.842,
+   "win_rate": 0.3075,
+   "mean_net_r": -0.4971,
+   "se": 0.0309,
+   "t": -16.1,
+   "mean_gross_r": -0.0384,
+   "mean_cost_r": 0.4587,
+   "median_stop_pct": 0.00371,
+   "sum_net_r": -1739.35,
+   "sharpe_per_trade": -0.2721
+  },
+  "oos": {
+   "n": 0
+  },
+  "oos_unfiltered": {
+   "n": 5174,
+   "per_day": 5.154,
+   "win_rate": 0.3094,
+   "mean_net_r": -0.4638,
+   "se": 0.0251,
+   "t": -18.51,
+   "mean_gross_r": 0.0024,
+   "mean_cost_r": 0.4663,
+   "median_stop_pct": 0.00323,
+   "sum_net_r": -2399.87,
+   "sharpe_per_trade": -0.2574
+  },
+  "record": null,
+  "setup": "sniper_vwap_reversion",
+  "timeframe": "5m",
+  "fees": "low",
+  "costs": {
+   "maker_fee": 0.0,
+   "taker_fee": 0.0005,
+   "slippage": 0.0001
+  },
+  "symbols": [
+   "BTCUSDT",
+   "ETHUSDT",
+   "SOLUSDT",
+   "BNBUSDT",
+   "XRPUSDT"
+  ],
+  "period": [
+   "2022-01",
+   "latest"
+  ]
+ }
+]

@@ -158,6 +158,7 @@ class AccountState:
     emotional_state: str | None = None         # REQUIRED: tags from the journal vocabulary, e.g. "calm,focused"
     point_value: float = 1.0                   # account currency per 1.0 price move per unit of size
     lot_step: float = 1.0                      # sizes are rounded DOWN to a multiple of this
+    min_order_notional: float = 0.0            # the venue's smallest order value (size x price x point_value)
     base_risk_pct: float = 0.5                 # percent of equity at risk per trade, set at the monthly review
     step_back_when_amber: bool = False         # Gate 0: amber means step back instead of half risk
     trading_style: str = "intraday"            # "intraday" (pause in minutes) or "swing" (pause until the next session)
@@ -185,7 +186,7 @@ class Limits:
     kelly_fraction_cap: float = 0.25
     pause_after_loss_min: float = 15.0
     max_base_risk_pct: float | None = None     # optional cap on base risk (shown as a warning when it binds)
-    max_leverage: float | None = None          # optional cap on notional / equity
+    max_leverage: float | None = None          # optional cap on notional / equity (size is cut down to it)
 
     def __post_init__(self):
         for f in fields(self):
@@ -560,8 +561,19 @@ class PhilosophyGate:
             gates.append(GateResult("6 Size", "fail", f"rounded size would risk {actual:.3f}% > budget {risk:.3f}%", [P[9]]))
             return "skip"
         if L.max_leverage is not None and not size * entry * point_value <= L.max_leverage * equity:
-            gates.append(GateResult("6 Leverage", "fail", f"notional {size * entry * point_value:,.0f} exceeds "
-                                    f"{L.max_leverage:g}x equity", [P[9]]))
+            capped = math.floor(L.max_leverage * equity / (entry * point_value) / lot_step + 1e-9) * lot_step
+            gates.append(GateResult("6 Leverage", "warn", f"notional {size * entry * point_value:,.2f} would exceed "
+                                    f"{L.max_leverage:g}x equity: size cut to {capped:g} (less risk than budgeted)", [P[9]]))
+            size = capped
+            actual = size * stop_dist * point_value / equity * 100
+            if not size > 0:
+                gates.append(GateResult("6 Size", "fail", "the leverage cap leaves no size", [P[9]]))
+                return "skip"
+        min_notional = _finite_nonneg("min_order_notional", acct.min_order_notional)
+        if size * entry * point_value < min_notional:
+            gates.append(GateResult("6 Venue minimum", "fail", f"order value {size * entry * point_value:,.2f} is below the "
+                                    f"venue minimum {min_notional:,.2f}: this account cannot express this stop at this risk "
+                                    "(widen the timeframe, or use a venue with smaller minimums)", [P[9]]))
             return "skip"
         d.position_size = round(size, 8)
         d.risk_pct = round(actual, 4)

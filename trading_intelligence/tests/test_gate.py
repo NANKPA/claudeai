@@ -310,3 +310,18 @@ def test_exceptions_never_escape():
     assert d.action == "wait"
     d = PhilosophyGate().evaluate(proposal(), SetupRecord(**{**GOOD_SETUP, "setup_id": "other"}), account())
     assert d.action == "skip" and "0 Inputs" in d.explain()
+
+
+def test_leverage_cap_cuts_size_instead_of_skipping():
+    # $20 account, 1% risk = $0.20; stop 2.0 -> 0.1 units = $10 notional; cap at 0.25x = $5 -> 0.05 units
+    d = run(a=account(equity=20.0, base_risk_pct=1.0, lot_step=0.001), limits=Limits(max_leverage=0.25))
+    assert d.action == "take", d.explain()
+    assert d.position_size == pytest.approx(0.05) and d.risk_pct == pytest.approx(0.5)
+    assert any(g.gate == "6 Leverage" and g.status == "warn" for g in d.gates)
+
+
+def test_order_below_venue_minimum_skips():
+    a = account(equity=20.0, base_risk_pct=1.0, lot_step=0.001, min_order_notional=5.0)
+    assert run(a=a).action == "take"                                    # 0.1 units x 100 = $10 >= $5
+    d = run(a=a, limits=Limits(max_leverage=0.2))                       # cut to $4 < $5
+    assert d.action == "skip" and any(g.gate == "6 Venue minimum" for g in d.gates)
