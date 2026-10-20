@@ -80,6 +80,7 @@ class SetupRecord:
     source: str = "own"                     # "own" (your backtest/journal) or "claimed" (someone else's numbers: T4)
     valid_regimes: list[str] | None = None  # regimes the record was measured in; today's must be one of them
     valid_sessions: list[str] | None = None
+    effective_n: int | None = None          # correlated trades (same day, several markets) count as fewer: SE and n use it
 
     def stats(self) -> dict:
         """Gross win/loss in R, cost in R, mean NET R, sd, n and win rate, after validation."""
@@ -91,6 +92,9 @@ class SetupRecord:
             n = len(r)
             mean = sum(r) / n
             sd = math.sqrt(sum((x - mean) ** 2 for x in r) / (n - 1)) if n > 1 else float("nan")
+            if self.effective_n is not None:
+                n_eff = int(_finite_nonneg("effective_n", self.effective_n))
+                n = max(min(n, n_eff), 1)
             wins = [x for x in r if x > 0]
             losses = [-x for x in r if x <= 0]
             p = len(wins) / n

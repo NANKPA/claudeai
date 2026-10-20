@@ -43,9 +43,12 @@ def build_record(trades: pd.DataFrame, setup_key: str, split_date: str, min_cell
     oos_f = oos_t[oos_t["regime"].isin(regimes) & oos_t["session"].isin(sessions)]
     rec = None
     if regimes and sessions and len(oos_f):
+        st = stats(oos_f)
         rec = {"setup_id": setup_key, "results_r": [round(float(x), 5) for x in oos_f["net_r"]],
                "avg_cost_r": round(float(oos_f["cost_r"].mean()), 5), "out_of_sample": True, "source": "own",
                "valid_regimes": regimes, "valid_sessions": sessions}
+        if st.get("se") and st.get("se_day") and st["se_day"] > st["se"]:
+            rec["effective_n"] = int(st["n"] * (st["se"] / st["se_day"]) ** 2)   # design effect of same-day clustering
     return {"setup_key": setup_key, "split_date": split_date, "valid_regimes": regimes, "valid_sessions": sessions,
             "is": stats(is_f), "is_unfiltered": stats(is_t), "oos": stats(oos_f), "oos_unfiltered": stats(oos_t),
             "record": rec}
@@ -59,7 +62,13 @@ def stats(t: pd.DataFrame) -> dict:
     sd = float(r.std(ddof=1)) if n > 1 else float("nan")
     se = sd / math.sqrt(n) if n > 1 else float("nan")
     days = max((t["exit_time"].max() - t["entry_time"].min()).total_seconds() / 86400, 1.0)
+    # trades on the same day (and across correlated coins) are not independent: cluster the SE by day
+    dev = pd.Series(r - r.mean(), index=pd.to_datetime(t["signal_time"]).dt.floor("D").to_numpy())
+    g = dev.groupby(level=0).sum().to_numpy()
+    se_day = float(np.sqrt((g ** 2).sum()) / n) if len(g) > 1 else float("nan")
     return {"n": n, "per_day": round(n / days, 3), "win_rate": round(float((r > 0).mean()), 4),
+            "se_day": round(se_day, 4) if math.isfinite(se_day) else None,
+            "t_day": round(float(r.mean()) / se_day, 2) if math.isfinite(se_day) and se_day > 0 else None,
             "mean_net_r": round(float(r.mean()), 4), "se": round(se, 4) if math.isfinite(se) else None,
             "t": round(float(r.mean()) / se, 2) if se and math.isfinite(se) and se > 0 else None,
             "mean_gross_r": round(float(t["gross_r"].mean()), 4), "mean_cost_r": round(float(t["cost_r"].mean()), 4),

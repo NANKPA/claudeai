@@ -1,0 +1,963 @@
+# Chart Fanatics videos linked to concepts and playbooks from their TITLES (transcripts are not
+# available from the cloud). Each link was proposed by one reader and kept only if an independent
+# skeptic, reading the same title, could not refute it: 310 proposed, 245 kept (2026-10-20).
+# Links are INFERRED (trailing '?'); the reason quotes the title words that justify each one.
+# Curated file: re-running the catalog scraper does not touch it. When transcripts arrive, the
+# scraper's own tagging adds content links on top.
+video_title_links:
+- id: media_cf_0juaispfqje
+  covers:
+  - concept_liquidity?
+  link_reason: '"How To AVOID Getting Swept Out" refers to liquidity sweeps of stops.'
+- id: media_cf_0m7eqqj4rta
+  covers:
+  - concept_auction_market_theory?
+  link_reason: '"How To Trade The Market Auction" names auction market theory.'
+- id: media_cf_0p1zichzzc8
+  covers:
+  - concept_trade_execution?
+  link_reason: '"MOST Traders Enter TOO Early" is about entry timing/confirmation.'
+- id: media_cf_1anqlvizao8
+  covers:
+  - concept_trade_execution?
+  link_reason: '"WHY Confirmation Matters MORE Than BIAS" is about waiting for confirmation before entering.'
+- id: media_cf_1fzsup8mony
+  covers:
+  - concept_price_action?
+  link_reason: '"Price Is All That MATTERS" states the price-action (naked chart) view.'
+- id: media_cf_1h108qwrpom
+  covers:
+  - concept_multi_timeframe_analysis?
+  link_reason: '"Higher Time Frames Are The WAY" names the higher timeframes (HTF), part of multi-timeframe analysis.'
+- id: media_cf_1stdgr87mqq
+  covers:
+  - strategy_ted_zhang_stage_analysis?
+  link_reason: '"Managing Over $30M Using Stage Analysis" names Ted Zhang''s distinctive Stage Analysis method.'
+- id: media_cf_1x4tohhptjw
+  covers:
+  - concept_order_flow?
+  link_reason: '"The ONE Trading Indicator That Exposes ALL Market Orders" describes an order-flow tool (footprint/delta) that shows market orders.'
+- id: media_cf_2_6ivzjtbgy
+  covers:
+  - concept_risk_reward_r_multiples?
+  - concept_trade_execution?
+  link_reason: '"The Entry TRICK That Can TRANSFORM Your RR" names entry technique and RR (risk:reward).'
+- id: media_cf_2venfw7lea8
+  covers:
+  - concept_trade_execution?
+  link_reason: '"How 7 Figure Traders Time Entries" is about entry timing and triggers.'
+- id: media_cf_35cyqdz_ej8
+  covers:
+  - concept_scalping?
+  link_reason: '"1-Minute Market Maker Trading Strategy" names a 1-minute scalping approach.'
+- id: media_cf_3_9nf2ulfyg
+  covers:
+  - concept_liquidity?
+  link_reason: '"2 Liquidity Points Is ALL You NEED" names liquidity points directly.'
+- id: media_cf_3et_vvqbcee
+  covers:
+  - concept_trade_execution?
+  link_reason: Title names a "Simple Entry Trading Technique", which is about entries (trade execution).
+- id: media_cf_3w6f_nlggvk
+  covers:
+  - concept_edge?
+  link_reason: '"How To BUILD An Edge" names building a trading edge.'
+- id: media_cf_48b7etwqqra
+  covers:
+  - concept_trade_execution?
+  link_reason: '"The Confirmation Traders NEED To WAIT FOR" refers to waiting for a confirmation entry.'
+- id: media_cf_4bgkllwgpvo
+  covers:
+  - concept_volatility?
+  - concept_market_sentiment?
+  link_reason: '"Wall Street''s EXACT Formula To Measure FEAR" refers to the VIX fear gauge, which covers both volatility and market sentiment.'
+- id: media_cf_4ec7p3plxcs
+  covers:
+  - concept_fundamental_macro_analysis?
+  link_reason: '"as markets price Iran risk" is about markets pricing geopolitical and macro risk.'
+- id: media_cf_4sgqkgb010m
+  covers:
+  - concept_options_greeks?
+  link_reason: Title says "Options Trading Strategy", which names options.
+- id: media_cf_4tpy07kqvuu
+  covers:
+  - concept_order_flow?
+  link_reason: '"How Trap Buyers Get Caught" names trapped traders, an order-flow concept.'
+- id: media_cf_59_a2svzfwy
+  covers:
+  - concept_risk_reward_r_multiples?
+  link_reason: '"PRINTS High RR Trades" names RR (risk:reward).'
+- id: media_cf_5_ffuf378jw
+  covers:
+  - concept_trade_management?
+  link_reason: '"Get Stopped Out BEFORE The Move" is about stop-loss placement and stops being hunted before the real move.'
+- id: media_cf_5ama76mguf8
+  covers:
+  - concept_breakout_trading?
+  - concept_trade_execution?
+  link_reason: '"How PRO Traders Enter Trendline Breaks" is about entries (execution) on breaks.'
+- id: media_cf_5dxdg8l75zw
+  covers:
+  - concept_probabilistic_thinking?
+  link_reason: '"One BAD Trade Can Teach You The WRONG Lesson" is about judging by outcome rather than process (resulting).'
+- id: media_cf_5vwy54lt3k8
+  covers:
+  - concept_order_flow?
+  link_reason: '"WHY Orderflow Trading Is The BEST" names order flow directly.'
+- id: media_cf_5xgp0iiwj0w
+  covers:
+  - concept_trade_management?
+  link_reason: '"WHY Taking PROFIT Early WINS" is about take-profit decisions, a trade management topic.'
+- id: media_cf_5zzhh7id3nu
+  covers:
+  - concept_breakout_trading?
+  link_reason: '"Why Breakdowns Trap Retail Traders" is about false breakdowns/breakouts.'
+- id: media_cf_6bdv__yuq0s
+  covers:
+  - concept_options_greeks?
+  link_reason: '"Options Trading for Beginners ... FREE Course" names options and matches Usman Ashraf''s "Options Fundamentals for Beginners" playbook.'
+- id: media_cf_6jynzcxzlfs
+  covers:
+  - concept_trade_execution?
+  link_reason: '"Most Traders Enter TOO Early" is about entry timing and confirmation.'
+- id: media_cf_747acils69o
+  covers:
+  - concept_risk_reward_r_multiples?
+  link_reason: '"Catch 9R Trades" names an R-multiple outcome.'
+- id: media_cf_7nssobxtgg0
+  covers:
+  - concept_liquidity?
+  link_reason: '"Your Stop Loss Is EXACTLY Where They Want It" refers to resting stops being targeted as liquidity.'
+- id: media_cf_7q7_ei1xqoi
+  covers:
+  - concept_trading_sessions_killzones?
+  link_reason: '"DON''T Trade Pre Market" is about which market hours/session to trade.'
+- id: media_cf_7wrkfjwpntu
+  covers:
+  - concept_scalping?
+  link_reason: '"How To Profitably Scalp Trade" names scalping.'
+- id: media_cf_8cmxz5rqiui
+  covers:
+  - concept_liquidity?
+  link_reason: '"The Liquidity Model EVERY Trader SHOULD Understand" names liquidity explicitly.'
+- id: media_cf_8hxt9wq_ud0
+  covers:
+  - strategy_jared_tendler_psychology?
+  link_reason: '"Master The Mental Game of Trading" is Jared Tendler''s signature method and book title, and his playbook is the Mental Game playbook.'
+- id: media_cf_8omtuiixr0u
+  covers:
+  - concept_trade_management?
+  link_reason: '"MOST Traders GUESS Their Exits... PROS Plan Them" is about planning exits (trade management) ahead of time (trading plan).'
+- id: media_cf_8wn8pfzvoge
+  covers:
+  - concept_edge?
+  link_reason: '"Actually Having An Edge" names trading edge.'
+- id: media_cf_9e9abbupwka
+  covers:
+  - concept_risk_reward_r_multiples?
+  link_reason: '"The 1:10 RR Model" names a risk:reward ratio.'
+- id: media_cf_9vzecobh38m
+  covers:
+  - concept_liquidity_sweep_reversal?
+  link_reason: '"The BEST Entries Happen BELOW The LOWS" describes buying after lows are swept, i.e. a liquidity sweep / stop-hunt reversal.'
+- id: media_cf_9zxqnk2lbwe
+  covers:
+  - concept_breakout_trading?
+  - concept_support_resistance?
+  - strategy_vincent_desiano_break_retest?
+  link_reason: '"Break & Retest Trading Masterclass with Scarface Trades" names the break-and-retest method and Scarface Trades, Vincent Desiano''s handle.'
+- id: media_cf__6kwbvurm3k
+  covers:
+  - concept_risk_reward_r_multiples?
+  link_reason: '"The 1:12 RR Setup" names a risk:reward ratio.'
+- id: media_cf__axxol2jvhw
+  covers:
+  - concept_trade_execution?
+  link_reason: '"THIS Confirmation SIGNAL" refers to confirmation entries.'
+- id: media_cf__n1tggewlbk
+  covers:
+  - concept_trade_execution?
+  link_reason: '"ELITE Execution Strategy" names trade execution.'
+- id: media_cf__n6uqhszdqi
+  covers:
+  - concept_trade_management?
+  link_reason: '"RUIN A Winning Trade" is about mismanaging an open winner, i.e. trade management.'
+- id: media_cf__nrsoaiyqhm
+  covers:
+  - concept_chart_patterns?
+  link_reason: '"Make MILLIONS Using THIS Chart Pattern" names a chart pattern.'
+- id: media_cf__o03cnliblo
+  covers:
+  - concept_auction_market_theory?
+  link_reason: '"Use Simple Market Averages to Trade the Auction" names moving averages and auction market theory.'
+- id: media_cf__o8_gjvsvo4
+  covers:
+  - concept_trade_execution?
+  link_reason: Title is about a specific "Entry That Trading Institutions LOVE", which is an entry and execution topic.
+- id: media_cf__vrj_tvq7mw
+  covers:
+  - concept_trade_management?
+  link_reason: '"Before Placing Your TP" names take-profit placement, a trade management topic.'
+- id: media_cf__xeenvtizoq
+  covers:
+  - concept_trading_psychology?
+  link_reason: '"The MORE You Trade The WORSE You Become" is about overtrading, a discipline and psychology issue.'
+- id: media_cf_a9_5n3rllve
+  covers:
+  - concept_risk_reward_r_multiples?
+  link_reason: '"THIS High RR Strategy" names high risk:reward.'
+- id: media_cf_aaq3iqha3uq
+  covers:
+  - concept_edge?
+  link_reason: '"THIS Is The REAL Edge In Trading" names trading edge.'
+- id: media_cf_adknlqoghki
+  covers:
+  - concept_trade_execution?
+  link_reason: Title says "His Secret Entry Trick", which is about entry execution.
+- id: media_cf_adx8px7ymew
+  covers:
+  - concept_news_trading?
+  link_reason: '"Trade This Simple Method Next Time There''s News" is explicitly about news trading.'
+- id: media_cf_agt_cwfawuk
+  covers:
+  - concept_trade_execution?
+  link_reason: Title says "REVEALS His Entry Method", which is about entry execution.
+- id: media_cf_ajdwq8dmcx0
+  covers:
+  - concept_trading_psychology?
+  link_reason: '"MOST Traders Chase But Professionals Wait" is about FOMO versus patience and discipline.'
+- id: media_cf_aohcksurxbw
+  covers:
+  - concept_amd_power_of_three?
+  link_reason: '"The AMD ICT Trading Strategy" names AMD (accumulation, manipulation, distribution / Power of Three).'
+- id: media_cf_aqt6ognyh90
+  covers:
+  - concept_trading_sessions_killzones?
+  link_reason: '"Why Price Reverses After The Open" is about time-of-day behavior at the session open.'
+- id: media_cf_asyfr4eoogm
+  covers:
+  - concept_liquidity?
+  link_reason: '"Liquidity Cheat Code" names liquidity.'
+- id: media_cf_azqrkca24vk
+  covers:
+  - concept_market_regimes?
+  link_reason: '"Trades CHOP" refers to trading a choppy / ranging market regime.'
+- id: media_cf_b3btthhknlg
+  covers:
+  - concept_trading_sessions_killzones?
+  link_reason: '"They Trade At The WRONG Time" is about the time of day you trade.'
+- id: media_cf_b4ggj6stzws
+  covers:
+  - concept_liquidity?
+  link_reason: '"The Market ISN''T Hunting Your STOP LOSS" is about stop hunts, which is the stop-pool liquidity concept.'
+- id: media_cf_bb7y5cyqaxu
+  covers:
+  - concept_trend_following?
+  link_reason: '"Momentum Traders Stay on the RIGHT Side of the Move" is about trading with the trend or momentum.'
+- id: media_cf_bchjnasgmms
+  covers:
+  - concept_trading_sessions_killzones?
+  link_reason: '"The BEST Time To Trade The Market" is about the time of day you trade.'
+- id: media_cf_bkt6svtxmo0
+  covers:
+  - concept_liquidity?
+  link_reason: '"The Liquidity Concept MOST Traders Are MISSING" names liquidity explicitly.'
+- id: media_cf_bkziqdled6u
+  covers:
+  - concept_trade_execution?
+  link_reason: '"The Entry Strategy That Made MILLIONS" names an entry strategy (trade execution).'
+- id: media_cf_bu4kshfqyyw
+  covers:
+  - concept_trade_execution?
+  link_reason: '"Overcomplicate Their Entries" names entries as the topic.'
+- id: media_cf_bx48xu2je_a
+  covers:
+  - concept_risk_reward_r_multiples?
+  link_reason: Title says "1:7 Risk To Reward Trade", which names risk:reward.
+- id: media_cf_by6e_ml__ac
+  covers:
+  - concept_trade_execution?
+  link_reason: '"WAIT For The Breakout To CONFIRM" refers to confirmation entries.'
+- id: media_cf_c0_6abzp_fm
+  covers:
+  - concept_trading_plan?
+  link_reason: '"Your Trading Day Starts BEFORE The Open" describes a pre-market routine, part of the trading plan.'
+- id: media_cf_c7ukk66uc4o
+  covers:
+  - concept_chart_patterns?
+  link_reason: '"THIS Chart Pattern Will FIX Your Trading" names chart patterns directly.'
+- id: media_cf_cajaizmkfrs
+  covers:
+  - concept_risk_reward_r_multiples?
+  link_reason: '"Hit 9R Trades CONSISTENTLY" names an R-multiple (9R).'
+- id: media_cf_cmkoaopbcl4
+  covers:
+  - concept_chart_patterns?
+  link_reason: '"Pattern Trading Is A SCAM" names pattern trading (classical chart patterns).'
+- id: media_cf_cpgtza0xeza
+  covers:
+  - concept_trade_execution?
+  link_reason: Title says "His Secret Entry Formula", which is about entry execution.
+- id: media_cf_crhidoppcza
+  covers:
+  - concept_trend_following?
+  - concept_trade_execution?
+  link_reason: '"The ONLY Smart Way To Enter A Trend" names entering a trend (trend following plus entry execution).'
+- id: media_cf_crxpxxpcnns
+  covers:
+  - concept_news_trading?
+  link_reason: '"The SECRET To Trading News" names news trading directly.'
+- id: media_cf_csy2wy5_jq4
+  covers:
+  - concept_mean_reversion?
+  link_reason: '"Counter Trend Traders Blow Accounts" names counter-trend (fade) trading and blowing accounts (ruin).'
+- id: media_cf_cxgxkvgs23c
+  covers:
+  - concept_liquidity?
+  link_reason: '"Trade The DRAW On Liquidity" names liquidity as the price target.'
+- id: media_cf_cybgqa_nuzm
+  covers:
+  - concept_market_regimes?
+  link_reason: '"SURVIVE Choppy Markets" is about trading choppy, ranging market conditions.'
+- id: media_cf_dc4jc2icrxe
+  covers:
+  - concept_trade_management?
+  link_reason: '"MOST Traders Get Stopped Out" is about stop-loss placement.'
+- id: media_cf_dprhxqeu8ag
+  covers:
+  - concept_performance_metrics?
+  link_reason: '"Transform Your WR" names win rate, a performance metric.'
+- id: media_cf_dquhz6vadow
+  covers:
+  - concept_trade_execution?
+  link_reason: '"How To Get The BEST Trade Entries" is explicitly about entry execution.'
+- id: media_cf_dw45qcwdvrc
+  covers:
+  - concept_trading_psychology?
+  link_reason: '"Adapt THIS Mindset" names trader mindset/psychology.'
+- id: media_cf_ectrllyvhxu
+  covers:
+  - concept_mean_reversion?
+  link_reason: '"Gap Up Short Trading Strategy" means shorting a gap up, which is a fade, the vocabulary''s alias for mean reversion.'
+- id: media_cf_ed6mombvmti
+  covers:
+  - concept_trading_psychology?
+  link_reason: Title says "Never Reach The Zone", the 'trading in the zone' mental state, which is psychology.
+- id: media_cf_edifm5qithe
+  covers:
+  - concept_trading_sessions_killzones?
+  link_reason: '"Trade This Specific Time Everyday" is about a time-of-day edge (sessions / kill zones).'
+- id: media_cf_ejkc8rt8seo
+  covers:
+  - concept_options_greeks?
+  link_reason: Title says "MASTER Option Trading", which names options.
+- id: media_cf_eociqkoecq4
+  covers:
+  - concept_liquidity?
+  link_reason: '"How Liquidity WORKS" names liquidity.'
+- id: media_cf_epndnpic4ns
+  covers:
+  - concept_order_flow?
+  link_reason: '"EVERY Trader NEEDS Orderflow" names order flow directly.'
+- id: media_cf_expywhqt86m
+  covers:
+  - concept_chart_patterns?
+  link_reason: '"THIS Chart Pattern Makes MILLIONS" names a chart pattern.'
+- id: media_cf_ez_l7zovyrw
+  covers:
+  - concept_trend_following?
+  link_reason: '"Master The TREND Trading Futures" names trend trading.'
+- id: media_cf_f1w2ftazr8i
+  covers:
+  - concept_trade_execution?
+  link_reason: '"THIS Entry Strategy" names trade entries/execution.'
+- id: media_cf_f41dpj6xllm
+  covers:
+  - concept_trend_following?
+  link_reason: '"STOP Fighting The Trend" names trading with the trend.'
+- id: media_cf_fcnqwcrghnc
+  covers:
+  - concept_trade_execution?
+  link_reason: '"SIMPLE Pullback Entry" names an entry technique.'
+- id: media_cf_fj1lnrzxgto
+  covers:
+  - concept_multi_timeframe_analysis?
+  link_reason: '"How To CORRECTLY Use The Lower Timeframes" names the lower timeframes (LTF), part of multi-timeframe analysis.'
+- id: media_cf_fubsxzvk_de
+  covers:
+  - strategy_clement_ang_price_cycle?
+  link_reason: '"Clement placing ... in the US Investing Championships" names Clement (Ang), the author of the Price Cycle playbook.'
+- id: media_cf_fwddqdm_zru
+  covers:
+  - concept_trading_plan?
+  link_reason: '"The BEST Traders ADAPT Their Plan" names the trading plan.'
+- id: media_cf_fyowzx1xjxw
+  covers:
+  - concept_trade_management?
+  link_reason: '"How PROS Manage Winners" names trade management.'
+- id: media_cf_gg9cq9ig02q
+  covers:
+  - concept_trading_sessions_killzones?
+  link_reason: '"STOP Trading At The WRONG Time Of Day" is about the time-of-day / session edge.'
+- id: media_cf_gjz_k2v2ide
+  covers:
+  - concept_trade_execution?
+  link_reason: '"The Confirmation MOST Traders MISS" is about the entry confirmation trigger, part of trade execution.'
+- id: media_cf_glkjxyocrqu
+  covers:
+  - concept_trade_management?
+  link_reason: '"How To Scale In WITHOUT Increasing RISK" names scaling in (trade management) while keeping risk fixed (position sizing).'
+- id: media_cf_gwhgtpqn7su
+  covers:
+  - concept_trade_execution?
+  link_reason: Title names a "Simple Trade Entry Model", which is about entries (trade execution).
+- id: media_cf_h1j5x7ecx6a
+  covers:
+  - concept_risk_of_ruin_drawdown?
+  link_reason: '"Geometric Losses KILL Accounts" refers to drawdown recovery math, where losses compound and destroy accounts.'
+- id: media_cf_h_mo02_ujke
+  covers:
+  - concept_news_trading?
+  link_reason: '"How To Trade Around Trump News" is explicitly about news trading.'
+- id: media_cf_hdzguzekc_8
+  covers:
+  - concept_edge?
+  link_reason: '"Develop The ULTIMATE EDGE" names developing a trading edge.'
+- id: media_cf_hepul_nkllo
+  covers:
+  - concept_trade_execution?
+  link_reason: '"Get The BEST Short Entries" names entries as the topic.'
+- id: media_cf_hns3dllzgqu
+  covers:
+  - concept_trading_psychology?
+  link_reason: '"The Mental Shift That Separates Winning Traders" is about trading mindset.'
+- id: media_cf_hqjbgkutr80
+  covers:
+  - concept_trade_management?
+  link_reason: '"MOST Traders Scale Out WRONG" names scaling out, a trade-management technique.'
+- id: media_cf_hvfu_pyhrnm
+  covers:
+  - concept_liquidity?
+  link_reason: '"THIS Liquidity Strategy" names liquidity.'
+- id: media_cf_hvyf6frvcca
+  covers:
+  - concept_order_flow?
+  link_reason: '"His EXACT OrderFlow Strategy" names order flow.'
+- id: media_cf_i2fs7iz4k6w
+  covers:
+  - concept_scalping?
+  link_reason: Title says "If You Scalp", which names scalping.
+- id: media_cf_ibrq6sdl8co
+  covers:
+  - concept_support_resistance?
+  link_reason: '"Draw Levels WRONG" refers to drawing support/resistance levels.'
+- id: media_cf_igzvt0obpzs
+  covers:
+  - concept_trade_management?
+  link_reason: '"WHY You Should Exit Traders EARLY" is about exits and taking profit.'
+- id: media_cf_ij_7cfraxkc
+  covers:
+  - concept_liquidity?
+  link_reason: '"The Liquidity TRAP Most Traders FALL For" names liquidity.'
+- id: media_cf_ijknyfdyrpc
+  covers:
+  - concept_support_resistance?
+  link_reason: '"THESE Levels Made Him MILLIONS" refers to price levels, meaning key support and resistance levels.'
+- id: media_cf_ivhamax7koe
+  covers:
+  - concept_trade_execution?
+  link_reason: '"MOST Traders Enter TOO EARLY" is about entry timing, which is trade execution.'
+- id: media_cf_ivtlj_nffsa
+  covers:
+  - concept_liquidity_sweep_reversal?
+  link_reason: '"Buy BELOW The Lows, NOT Above Them" describes buying a sweep of the lows (stop-hunt reversal).'
+- id: media_cf_j5t2cyg8ngo
+  covers:
+  - concept_liquidity?
+  - concept_trade_execution?
+  link_reason: '"Think Liquidity Is The Entry" names liquidity and contrasts it with the entry, which is a trade-execution topic.'
+- id: media_cf_j_vkw1ogpv0
+  covers:
+  - concept_liquidity?
+  link_reason: '"START Trading Liquidity" names liquidity directly.'
+- id: media_cf_jcmj9s2fcyq
+  covers:
+  - concept_scalping?
+  link_reason: '"The 15 Second Chart" names a sub-minute chart, which is scalping.'
+- id: media_cf_jcnfooonfys
+  covers:
+  - concept_order_flow?
+  link_reason: '"Orderflow Is The ONLY Way To Be PROFITABLE" names order flow (one-word spelling).'
+- id: media_cf_je7ymbsg1ne
+  covers:
+  - concept_smart_money_concepts?
+  link_reason: '"THIS Market Maker Model" names the ICT Market Maker Model, which is a Smart Money Concepts model.'
+- id: media_cf_jjgxgtwjzi4
+  covers:
+  - concept_market_regimes?
+  link_reason: '"Where MOST Traders Get CHOPPED Up" refers to choppy/ranging market conditions.'
+- id: media_cf_jlugbuokkiy
+  covers:
+  - concept_liquidity?
+  link_reason: '"The ONLY Liquidity Video" names liquidity.'
+- id: media_cf_jugpel_o3ik
+  covers:
+  - concept_trading_psychology?
+  link_reason: Title says "Profitable Trading Isn't Luck, It's Psychology".
+- id: media_cf_jz7ybunqzlq
+  covers:
+  - concept_trade_execution?
+  link_reason: Title says "REVEALS His ENTRY METHOD", which is about entry execution.
+- id: media_cf_k32abuyakxg
+  covers:
+  - concept_trade_execution?
+  link_reason: '"How To Catch Sniper Entires [entries]" is explicitly about entry execution.'
+- id: media_cf_k_ndswfdjsg
+  covers:
+  - concept_trading_psychology?
+  link_reason: '"HOW To FIX Your Emotions" names emotions, which is trading psychology.'
+- id: media_cf_kakeey6rwio
+  covers:
+  - concept_trade_execution?
+  link_reason: Title says "Get PERFECT Trade Entires" (Entries), which is about entry execution.
+- id: media_cf_kheq5g55dq4
+  covers:
+  - concept_scalping?
+  link_reason: '"The 1-Minute Strategy" names a 1-minute scalping approach.'
+- id: media_cf_kkbjrcexwts
+  covers:
+  - concept_trade_execution?
+  link_reason: Title says "The Perfect Entry Technique In Trading", which is about entry execution.
+- id: media_cf_kkttckr_3ew
+  covers:
+  - concept_order_flow?
+  link_reason: '"ICT & Orderflow Futures Trading Strategy" names order flow, and the ICT plus order flow pairing is the method of Abraham Perez''s ICT & Order Flow playbook.'
+- id: media_cf_kneiufggah0
+  covers:
+  - concept_trade_management?
+  link_reason: '"SHOULDN''T Be In A Trade For Longer Than 15 Minutes" is about how long to hold a trade, which is trade management.'
+- id: media_cf_ksjf5vxfwfi
+  covers:
+  - concept_liquidity?
+  link_reason: '"Market Makers AREN''T Hunting You" addresses the stop-hunt idea, which belongs to the liquidity (stop pools, stop hunt) concept.'
+- id: media_cf_lgsdgyvzrkk
+  covers:
+  - concept_liquidity?
+  link_reason: Title names a "Simple Liquidity Trading Strategy".
+- id: media_cf_lii2orgcr4s
+  covers:
+  - concept_trade_execution?
+  link_reason: '"Most Traders Wait For Confirmation... he''s ALREADY In" is about when to enter, confirmation entry versus early entry.'
+- id: media_cf_liquidity_trap
+  covers:
+  - concept_liquidity?
+  link_reason: '"Liquidity TRAP Trading Strategy" names liquidity as the topic.'
+- id: media_cf_mencbj_kkb4
+  covers:
+  - concept_wyckoff_method?
+  link_reason: '"HOW To SPOT Accumulation vs Distribution" names the Wyckoff accumulation and distribution phases.'
+- id: media_cf_mfufchfag1m
+  covers:
+  - concept_risk_reward_r_multiples?
+  link_reason: '"RR That Makes MILLIONS" names RR (risk:reward).'
+- id: media_cf_mj1finozo2a
+  covers:
+  - concept_trading_psychology?
+  link_reason: Title is about "No Emotion" traders failing, so it is about emotions and psychology.
+- id: media_cf_mkgzdipkcxg
+  covers:
+  - concept_expectancy?
+  link_reason: '"You DON''T Need A HIGH Win Rate To Make Money" is the classic expectancy point that win rate alone does not decide profitability.'
+- id: media_cf_mmi8qgxnm_c
+  covers:
+  - concept_probabilistic_thinking?
+  link_reason: '"EVERY Trader MUST Understand Variance" names the spread of outcomes, a probabilistic-thinking topic.'
+- id: media_cf_mmixobv0f4w
+  covers:
+  - concept_candlestick_patterns?
+  link_reason: '"How MILLIONAIRE Traders Read Candles" is about candlestick reading.'
+- id: media_cf_mrt24iaspgy
+  covers:
+  - concept_trade_management?
+  link_reason: Title says "HOW To Manage Your Trade The RIGHT Way", which is trade management.
+- id: media_cf_nbahz5ipqcc
+  covers:
+  - concept_order_flow?
+  link_reason: '"Aggressive Buyers" is order-flow language for market buy orders lifting the offer.'
+- id: media_cf_nevm0kk3wmy
+  covers:
+  - concept_liquidity?
+  link_reason: '"Liquidity EXPLAINED in 30 Seconds" names liquidity directly.'
+- id: media_cf_ngchsfcl3te
+  covers:
+  - concept_trade_management?
+  link_reason: '"How EXPERTS Add To Positions" is about scaling in and pyramiding, part of trade management.'
+- id: media_cf_nkky8oakbfe
+  covers:
+  - concept_candlestick_patterns?
+  link_reason: '"THESE Candles Can Make You MILLIONS" names candlesticks as the topic.'
+- id: media_cf_nlynh6xhxfi
+  covers:
+  - concept_market_microstructure?
+  link_reason: '"How Smart Money Hides Their Orders" is about hidden orders in the order book (microstructure).'
+- id: media_cf_nmhywubr2xc
+  covers:
+  - concept_liquidity?
+  link_reason: '"7 Figure Liquidity HACK" names liquidity as the topic.'
+- id: media_cf_nmwki_bqui4
+  covers:
+  - concept_trade_execution?
+  link_reason: '"Most Traders MISS This Entry" names entries as the topic.'
+- id: media_cf_npkpg7fwkp4
+  covers:
+  - concept_trade_execution?
+  link_reason: '"Most Traders MISS The BEST Entries" is about trade entries/execution.'
+- id: media_cf_nsfelk1kvxk
+  covers:
+  - concept_trend_following?
+  link_reason: '"Trade WITH The Trend" names trend following.'
+- id: media_cf_nsyz8srwjzc
+  covers:
+  - concept_liquidity?
+  link_reason: '"The Liquidity TRAP" names liquidity explicitly.'
+- id: media_cf_o_tnadk9e5g
+  covers:
+  - concept_liquidity?
+  link_reason: '"THIS Liquidity Strategy" names liquidity as the topic.'
+- id: media_cf_oauhio8woz8
+  covers:
+  - concept_liquidity?
+  link_reason: '"Market Makers AREN''T Hunting You" is about the idea of stop hunting, which falls under liquidity and stop pools.'
+- id: media_cf_obsljovj780
+  covers:
+  - concept_trade_execution?
+  link_reason: '"Get SNIPER Accurate Trading Entries" is explicitly about entry execution.'
+- id: media_cf_ohg4oqfnv3g
+  covers:
+  - concept_trade_management?
+  link_reason: '"Why Your SL Always Gets HIT" names the stop loss (SL).'
+- id: media_cf_oj756ggwmzi
+  covers:
+  - concept_trade_management?
+  link_reason: '"Manage Your Trades Like A Pro Trader" names trade management.'
+- id: media_cf_onbgsi30vay
+  covers:
+  - concept_trade_execution?
+  link_reason: '"Use This Simple CONFIRMATION to Win More Trades" refers to confirmation entries (trade execution).'
+- id: media_cf_owbomehkhju
+  covers:
+  - concept_edge?
+  link_reason: '"Retail Traders CAN Have An Edge" names trading edge directly.'
+- id: media_cf_ox9l20blsn4
+  covers:
+  - concept_market_sentiment?
+  link_reason: '"Trade AGAINST The Crowd" describes contrarian positioning against crowd sentiment.'
+- id: media_cf_pclngwdlcrc
+  covers:
+  - concept_auction_market_theory?
+  link_reason: '"Trade Value Shifts" names value migration, a core Auction Market Theory idea (balance, imbalance, value).'
+- id: media_cf_phztaycy2es
+  covers:
+  - concept_trading_psychology?
+  link_reason: '"Psychology ISN''T Your Trading PROBLEM" names trading psychology as the topic.'
+- id: media_cf_pjpg2w52n5i
+  covers:
+  - concept_edge?
+  link_reason: '"THIS Is What A REAL Edge Is" names trading edge.'
+- id: media_cf_pk_kjwracke
+  covers:
+  - concept_trade_execution?
+  link_reason: '"THIS One Candle CONFIRMS Breakouts" names a candle used as a confirmation signal.'
+- id: media_cf_pmoo_zf45ta
+  covers:
+  - concept_trading_psychology?
+  link_reason: '"Don''t Panic When Price Moves Against Them" is about emotional control.'
+- id: media_cf_pskvelr0siq
+  covers:
+  - concept_liquidity?
+  link_reason: '"SIMPLE Liquidity Strategy" names liquidity.'
+- id: media_cf_pxvp6_knwpw
+  covers:
+  - concept_trade_management?
+  link_reason: '"CUT The Trade When The Idea BREAKS" is about exiting a trade on invalidation, which is trade management (stops/exits).'
+- id: media_cf_pzmra1plrda
+  covers:
+  - concept_market_regimes?
+  link_reason: '"Get Chopped Up In Ranges" is about ranging market regimes.'
+- id: media_cf_pznzl_4_pto
+  covers:
+  - concept_trade_execution?
+  link_reason: '"The Entry Price MOST Traders Get WRONG" is about entry execution.'
+- id: media_cf_q2al3tmmhdc
+  covers:
+  - concept_wyckoff_method?
+  link_reason: '"How PROS Spot Accumulation vs Distribution" names the Wyckoff accumulation and distribution phases.'
+- id: media_cf_q9e2ot6axqi
+  covers:
+  - concept_edge?
+  link_reason: '"Reveals The TRUE EDGE" names the trading-edge concept.'
+- id: media_cf_q_ax7ujqf6w
+  covers:
+  - concept_candlestick_patterns?
+  link_reason: '"THIS Candle Pattern" names a candlestick pattern directly.'
+- id: media_cf_qceck78bho0
+  covers:
+  - concept_price_action?
+  link_reason: '"Trading Price ONLY Is NOT Enough" is about the limits of pure price action trading.'
+- id: media_cf_qfuqplcztue
+  covers:
+  - concept_risk_reward_r_multiples?
+  link_reason: '"The 1:10 Trade Management Strategy" names a 1:10 risk:reward ratio.'
+- id: media_cf_qicrckwhfj4
+  covers:
+  - strategy_marco_trades_liquidity_grab?
+  link_reason: '"Chart Fanatics x MARCO" names Marco (Marco Trades), the author of the Liquidity Grab playbook.'
+- id: media_cf_qrrcfedmjym
+  covers:
+  - concept_liquidity?
+  link_reason: '"Your Stop Loss Is EXACTLY Where Institutions Want It" refers to stop pools that institutions target, i.e. liquidity.'
+- id: media_cf_quvb04xk48k
+  covers:
+  - concept_options_greeks?
+  link_reason: Title says "Understand The GREEKS", which names the options Greeks.
+- id: media_cf_r4pld_yye68
+  covers:
+  - concept_trading_psychology?
+  link_reason: '"EVERY Trader NEEDS This Mindset" clearly points to trading psychology.'
+- id: media_cf_rfve7mnr__e
+  covers:
+  - concept_order_flow?
+  link_reason: '"The A+ Orderflow Setup EXPLAINED" names order flow explicitly.'
+- id: media_cf_roobfoes3co
+  covers:
+  - concept_market_regimes?
+  link_reason: '"Get DESTROYED In Ranges" names ranging markets, a market-regime topic.'
+- id: media_cf_rsketshswjk
+  covers:
+  - concept_trade_management?
+  link_reason: '"AVOID Getting Stopped Out INSTANTLY" is about stop-loss placement, part of trade management.'
+- id: media_cf_rtwdlnbw4ai
+  covers:
+  - concept_prop_firm_risk_rules?
+  link_reason: '"The Prop Game" refers to prop-firm trading.'
+- id: media_cf_rvndlg_jg5i
+  covers:
+  - concept_trade_execution?
+  link_reason: '"Where & When To Enter" names the entry location and timing (trade execution).'
+- id: media_cf_rxrnaywcmgu
+  covers:
+  - concept_trend_following?
+  link_reason: '"MOST Trend Traders Are Getting TRAPPED" names trend traders, meaning trend following.'
+- id: media_cf_sar8z2go3ki
+  covers:
+  - concept_options_greeks?
+  link_reason: Title says "MASTER Options Trading", which names options.
+- id: media_cf_smsqqtbxjc0
+  covers:
+  - concept_breakout_trading?
+  - concept_support_resistance?
+  link_reason: '"Break And Retest Trading Strategy" names a breakout followed by a level retest, which is Vincent Desiano''s Break & Retest playbook.'
+- id: media_cf_snexzy6ye8i
+  covers:
+  - concept_market_regimes?
+  link_reason: '"LOSE Money In CHOPPY Markets" names choppy (ranging) market conditions, a market-regime topic.'
+- id: media_cf_t5md7lktbg8
+  covers:
+  - concept_trade_execution?
+  link_reason: '"Broke Down His ELITE Entry Model" names an entry model.'
+- id: media_cf_t_djsnbmv00
+  covers:
+  - concept_liquidity?
+  link_reason: '"The ONE Liquidity Trading Pattern" names liquidity as the topic.'
+- id: media_cf_t_fhifmihdo
+  covers:
+  - concept_trade_management?
+  link_reason: '"REMOVE Risk As SOON As You Can" is about moving the stop to breakeven or de-risking, part of trade management.'
+- id: media_cf_tg_capital
+  covers:
+  - concept_risk_reward_r_multiples?
+  link_reason: '"(1:20+ RR)" names a risk:reward ratio.'
+- id: media_cf_tm0puu_lbze
+  covers:
+  - concept_options_greeks?
+  link_reason: '"WHAT Options Traders REALLY Care About" names options trading.'
+- id: media_cf_tos9dypi_ew
+  covers:
+  - strategy_tori_trendline_4h?
+  link_reason: '"Using Tori Trade''s Simple Trading Strategy" names the playbook author, Tori Trades.'
+- id: media_cf_twmnp8svqmi
+  covers:
+  - concept_options_greeks?
+  link_reason: '"This Will Save Your Options Trading" names options trading.'
+- id: media_cf_tyftskksaby
+  covers:
+  - concept_news_trading?
+  link_reason: '"Trading Trump''s Tweets" names trading on news events.'
+- id: media_cf_tyhtetarss4
+  covers:
+  - strategy_naoufel_taief_algorithmic?
+  link_reason: '"Master ALGO Trading ... (NO Coding)" names the distinctive method of Naoufel Taief''s No-Code Algorithmic Strategy playbook.'
+- id: media_cf_u8v_uhrefpo
+  covers:
+  - concept_support_resistance?
+  link_reason: '"You''re Drawing Zones WRONG" refers to drawing support/resistance zones.'
+- id: media_cf_ubt_0gbpp9m
+  covers:
+  - concept_liquidity?
+  link_reason: '"BEST Liquidity Trap Trader" names liquidity explicitly.'
+- id: media_cf_ued4nwuutzu
+  covers:
+  - strategy_okala_80_20_nasdaq?
+  link_reason: '"The 80/20 Reversal" names the distinctive method of Okala''s 80/20 Nasdaq strategy (reactions at 20 and 80 price endings).'
+- id: media_cf_uf7zswzp3by
+  covers:
+  - concept_market_structure?
+  link_reason: '"Read Trend Structure" refers to swing/market structure.'
+- id: media_cf_uhkrrqo1gqm
+  covers:
+  - concept_order_flow?
+  link_reason: '"Trading using OrderFlow (Full Masterclass)" names order flow and matches Carmine Rosato''s "Order Flow Masterclass" playbook.'
+- id: media_cf_ukj1ytgfdd8
+  covers:
+  - concept_liquidity?
+  link_reason: '"Liquidity Traders Get THIS Wrong" names liquidity.'
+- id: media_cf_uotw_smkezo
+  covers:
+  - concept_trade_management?
+  link_reason: '"Risk Management RULE That PROTECTS Winning Trades" refers to protecting open winners with stops, breakeven or trailing.'
+- id: media_cf_uub_mmgqmey
+  covers:
+  - concept_trade_execution?
+  link_reason: '"THIS Entry Strategy" names entries as the topic.'
+- id: media_cf_uxqvyunjju0
+  covers:
+  - concept_liquidity?
+  link_reason: Title says "Master Trading Liquidity In ONLY 3 Steps", which names liquidity.
+- id: media_cf_vj6eefqc4re
+  covers:
+  - concept_overfitting_validation?
+  link_reason: '"HOW To VALIDATE Your Strategy" names strategy and edge validation, which is done by backtesting.'
+- id: media_cf_vnl_ejwwtwy
+  covers:
+  - concept_liquidity?
+  link_reason: '"Liquidity Traders Get This Wrong" names liquidity.'
+- id: media_cf_vo5izoukgr4
+  covers:
+  - concept_multi_timeframe_analysis?
+  link_reason: '"Trading using ONLY 2 Timeframes" is about multi-timeframe analysis.'
+- id: media_cf_vp7hhpcciii
+  covers:
+  - concept_support_resistance?
+  link_reason: '"STOP Waiting For PERFECT Levels" is about price levels, i.e. support/resistance.'
+- id: media_cf_w57faelgdso
+  covers:
+  - concept_candlestick_patterns?
+  link_reason: '"How MILLIONAIRE Traders Read Candles" is about candlestick reading.'
+- id: media_cf_w5jggy0_jfm
+  covers:
+  - concept_order_flow?
+  link_reason: '"Orderflow Trader Makes $3000 LIVE Trading" names order flow. The keyword matcher missed the one-word spelling.'
+- id: media_cf_wbjxfbvsl84
+  covers:
+  - concept_trading_plan?
+  link_reason: '"Mechanical Trading WILL Make You PROFITABLE" refers to trading by fixed, pre-written rules.'
+- id: media_cf_wind72rumrg
+  covers:
+  - concept_trading_sessions_killzones?
+  link_reason: '"The REAL Market Opening Time Traders Need To KNOW" is about market hours and session timing.'
+- id: media_cf_wuccj1vr1iu
+  covers:
+  - concept_risk_reward_r_multiples?
+  link_reason: '"Turns 1:2 INTO 1:10" names risk:reward ratios / R-multiples.'
+- id: media_cf_x_z4crmfqns
+  covers:
+  - concept_trade_execution?
+  link_reason: '"Where Smart Traders Enter (Not At Highs)" is about entry location.'
+- id: media_cf_xeatqqgxz9m
+  covers:
+  - concept_order_flow?
+  link_reason: '"The BEST Trades Start With TRAPPED Traders" names trapped traders, which is an order-flow idea and Trader Yush''s distinctive trapped-buyers-and-sellers method.'
+- id: media_cf_xggjn4t3shy
+  covers:
+  - concept_trade_execution?
+  link_reason: Title says "Perfect Trading Entries Using This ICT Strategy", which is about entry execution.
+- id: media_cf_xlurcy5cho8
+  covers:
+  - concept_liquidity?
+  link_reason: '"The TRUTH About Liquidity" names liquidity.'
+- id: media_cf_xveo_1vc0h0
+  covers:
+  - concept_trade_execution?
+  link_reason: '"How To CATCH The BEST Entries" is about entry execution.'
+- id: media_cf_xvu8egafojg
+  covers:
+  - concept_auction_market_theory?
+  link_reason: '"Value Areas Are Where The MOST Moneys MADE" names value areas, a core auction market theory / market profile idea of value.'
+- id: media_cf_xvx_fgw5jey
+  covers:
+  - concept_overfitting_validation?
+  link_reason: '"Your Backtest Means NOTHING Until It SURVIVES A Monte Carlo Test" is about robustness and edge validation of a backtest.'
+- id: media_cf_xwktkny6cck
+  covers:
+  - concept_support_resistance?
+  link_reason: '"Identifying Key Trading Levels" names key levels (support/resistance).'
+- id: media_cf_xychcvw8a3y
+  covers:
+  - concept_trade_execution?
+  link_reason: '"Broke Down His ELITE Entry Model" names an entry model.'
+- id: media_cf_ycfpfmharma
+  covers:
+  - concept_trading_psychology?
+  link_reason: '"Pro Traders DON''T Chase Big Moves" is about FOMO and discipline.'
+- id: media_cf_ypm9oocqk_o
+  covers:
+  - concept_trading_plan?
+  link_reason: '"How Pros Plan Trades BEFORE The Open" names pre-market trade planning.'
+- id: media_cf_ywvgecj01ew
+  covers:
+  - concept_trading_psychology?
+  link_reason: '"Traders MUST Adapt To THIS Mindset" names mindset, which is trading psychology.'
+- id: media_cf_yxqm8bzl2rk
+  covers:
+  - concept_trading_psychology?
+  link_reason: Title says "The Emotional TRAP That Blows Up Accounts", which names emotions (psychology) and blowing up accounts (ruin).
+- id: media_cf_z1kguqyi9xo
+  covers:
+  - concept_market_regimes?
+  link_reason: '"How A MILLIONAIRE Trader Trades CHOP" names choppy, ranging market conditions.'
+- id: media_cf_z22me9yttjm
+  covers:
+  - concept_options_greeks?
+  link_reason: Title says "SIMPLE Options Trading Strategy", which names options.
+- id: media_cf_z5p35acclik
+  covers:
+  - concept_position_sizing?
+  link_reason: '"WHY Trading SMALLER Can Actually Make You MORE Money" names smaller position size.'
+- id: media_cf_z_tasf5wzms
+  covers:
+  - concept_trade_execution?
+  link_reason: Title says "Waiting For Candle Closes Is KILLING Your Trades", which is about waiting for confirmation before entering.
+- id: media_cf_zbt7jqqzixg
+  covers:
+  - concept_trade_management?
+  link_reason: '"HOW To MANAGE Trades Like A PROFESSIONAL" names trade management directly.'
+- id: media_cf_zeqiir_l8ey
+  covers:
+  - concept_liquidity?
+  link_reason: '"Make MILLIONS Leveraging Liquidity" names liquidity directly.'
+- id: media_cf_zhup_b6dbla
+  covers:
+  - concept_trading_sessions_killzones?
+  link_reason: '"MAKE MONEY At Market Open" is about trading a specific session time, the open.'
+- id: media_cf_zpveeycakto
+  covers:
+  - concept_trading_psychology?
+  link_reason: Title says "How To Master Your Mind", which is trading psychology.
+- id: media_cf_zyymg7pbnrc
+  covers:
+  - concept_market_regimes?
+  link_reason: '"AVOID Getting CHOPPED By Markets" refers to choppy, ranging market conditions, which is the trend-vs-range regime topic.'
+- id: media_cf_zzsj16qbgf4
+  covers:
+  - concept_trading_psychology?
+  link_reason: '"STOPS Traders From OVERTRADING" names overtrading, a discipline problem.'

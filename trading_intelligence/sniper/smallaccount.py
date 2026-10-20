@@ -73,7 +73,8 @@ def plan(equity: float, risk_pct: float, stop_pct: float, v: Venue, price: float
             "meets_minimum": notional >= v.min_notional and notional > 0,
             "cost_r_maker": round(c_maker, 3), "cost_r_stop_out": round(c_mixed, 3), "cost_r_taker": round(c_taker, 3),
             "breakeven_win_rate_taker": round((1 + c_taker) / (1 + rr), 3),
-            "breakeven_win_rate_maker": round((1 + (c_maker + c_mixed) / 2) / (1 + rr), 3)}
+            # limit in and out: a win nets rr - c_maker, a loss costs 1 + c_mixed (stopped out at market)
+            "breakeven_win_rate_maker": round((1 + c_mixed) / (1 + rr + c_mixed - c_maker), 3)}
 
 
 def min_stop_for(cost_r: float, v: Venue, taker: bool = True) -> float:

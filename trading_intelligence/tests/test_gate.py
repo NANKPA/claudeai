@@ -325,3 +325,11 @@ def test_order_below_venue_minimum_skips():
     assert run(a=a).action == "take"                                    # 0.1 units x 100 = $10 >= $5
     d = run(a=a, limits=Limits(max_leverage=0.2))                       # cut to $4 < $5
     assert d.action == "skip" and any(g.gate == "6 Venue minimum" for g in d.gates)
+
+
+def test_effective_n_shrinks_the_record_for_correlated_trades():
+    res = [2.0] * 20 + [-1.0] * 20                       # n = 40, mean +0.5R
+    full = dict(setup_id="sweep-v1", results_r=res, avg_cost_r=0.0)
+    assert run(s=full).action == "take"
+    d = run(s={**full, "effective_n": 12})               # the same trades, but only 12 independent days
+    assert d.action == "wait" and "n = 12" in d.explain()

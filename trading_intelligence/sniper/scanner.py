@@ -37,14 +37,14 @@ from ..journal import Journal
 from . import records as rec
 from .backtest import Book, Costs
 from .feeds import INTERVAL_SECONDS, latest, recent
-from .lab import FEES, HTF, OUT as LAB_OUT, market_of, setups_for
+from .lab import FEE_MARKET, FEES, FX_TRIGGER_SPREAD, HTF, OUT as LAB_OUT, market_of, setups_for
 from .setups import SETUPS, Signal, prepare
 
 HOME = Path(os.environ.get("TI_SNIPER_HOME", Path.home() / ".trading-intelligence" / "sniper-paper"))
 HISTORY_DAYS = {"5m": 35, "15m": 60, "1h": 150}
-FORWARD_COLS = ["key", "trade_id", "account", "timeframe", "setup", "symbol", "side", "order", "signal_time", "entry_time",
-                "exit_time", "entry", "stop", "target", "exit", "exit_reason", "stop_pct", "gross_r", "cost_r", "net_r",
-                "mae_r", "mfe_r", "bars_held", "regime", "session"]
+FORWARD_COLS = ["uid", "key", "trade_id", "account", "timeframe", "setup", "symbol", "side", "order", "signal_time",
+                "entry_time", "exit_time", "plan_entry", "entry", "stop", "target", "exit", "exit_reason", "stop_pct", "gross_r",
+                "cost_r", "net_r", "mae_r", "mfe_r", "bars_held", "regime", "session"]
 ACCOUNT_COLS = ["exit_time", "trade_id", "key", "symbol", "session", "net_r", "risk_pct", "size", "pnl", "equity"]
 
 
@@ -77,8 +77,13 @@ def _append(path: Path, cols: list[str], row: dict) -> None:
 
 def point_value(symbol: str, price: float) -> float:
     """Account currency (USD) per 1.0 price move per unit. USD-base pairs (USDJPY ...) pay in the quote
-    currency, so one unit is worth 1/price dollars per 1.0 move."""
-    return 1.0 / price if market_of(symbol) == "fx" and symbol.startswith("USD") else 1.0
+    currency, so one unit is worth 1/price dollars per 1.0 move. Crosses (EURJPY, EURGBP ...) need a
+    second rate and are refused."""
+    if market_of(symbol) != "fx" or symbol.endswith("USD"):
+        return 1.0
+    if symbol.startswith("USD"):
+        return 1.0 / price
+    raise ValueError(f"{symbol}: only pairs quoted in USD, or with USD as the base, can be sized in a USD account")
 
 
 # ── the paper account ───────────────────────────────────────────────────────
@@ -124,10 +129,13 @@ class PaperAccount:
                               open_risk_pct=open_risk_pct, minutes_since_last_loss=mins,
                               loss_this_session=any(float(r["net_r"]) < 0 and r["session"] == session for _, r in today_rows))
 
-    def book_trade(self, tr: dict, tag: dict) -> dict:
-        risk_per_unit = abs(tr["entry"] - tr["stop"])
+    def book_trade(self, tr: dict, tag: dict, closed_at) -> dict | None:
+        """Book a closed gated trade once (a restart after a crash must not book it twice)."""
+        if any(r["trade_id"] == tag["trade_id"] for r in self.rows()):
+            return None
+        risk_per_unit = abs(tr["plan_entry"] - tr["stop"])
         pnl = tag["size"] * risk_per_unit * tr["net_r"] * tag.get("point_value", 1.0)
-        row = {"exit_time": pd.Timestamp(tr["exit_time"]).isoformat(), "trade_id": tag["trade_id"], "key": tag["key"],
+        row = {"exit_time": pd.Timestamp(closed_at).isoformat(), "trade_id": tag["trade_id"], "key": tag["key"],
                "symbol": tr["symbol"], "session": tr["session"], "net_r": round(tr["net_r"], 5),
                "risk_pct": tag["risk_pct"], "size": tag["size"], "pnl": round(pnl, 6), "equity": round(self.equity() + pnl, 6)}
         _append(self.path, ACCOUNT_COLS, row)
@@ -147,12 +155,12 @@ def _dump_book(b: Book) -> dict:
     return {"k": b.k, "pending": pend, "pos": pos, "tag": b.tag}
 
 
-def _load_book(d: dict, costs: Costs, symbol: str) -> Book:
+def _load_book(d: dict, costs: Costs, symbol: str, trigger_spread: float = 0.0) -> Book:
     def sig(x):
         x = dict(x)
         x["time"] = pd.Timestamp(x["time"])
         return Signal(**x)
-    b = Book(costs, symbol)
+    b = Book(costs, symbol, trigger_spread)
     b.k, b.tag = d.get("k", -1), d.get("tag")
     if d.get("pending"):
         b.pending = {"sig": sig(d["pending"]["sig"]), "last_k": d["pending"]["last_k"]}
@@ -175,6 +183,8 @@ def setup_record(key: str, lab: dict, forward: list[dict]) -> G.SetupRecord | No
         n0 = len(r["results_r"])
         r["results_r"] = r["results_r"] + [float(x["net_r"]) for x in fwd]
         r["avg_cost_r"] = (r["avg_cost_r"] * n0 + sum(float(x["cost_r"]) for x in fwd)) / (n0 + len(fwd))
+        if r.get("effective_n") is not None and n0:                 # forward trades are clustered alike
+            r["effective_n"] = int(r["effective_n"] + len(fwd) * r["effective_n"] / n0)
     return G.SetupRecord(**r)
 
 
@@ -190,7 +200,8 @@ def proposal(sig: Signal, key: str, symbol: str, tf: str, costs: Costs, derived_
         invalidation=t["invalidation"], explanation=t["explanation"], undermined_by=t["undermined_by"],
         required_conditions=list(sig.conditions), conditions_present=dict(sig.conditions),
         evidence_for=[f"signal at the close of the {tf} bar opened {pd.Timestamp(sig.time):%Y-%m-%d %H:%M} UTC",
-                      f"codified from {', '.join(derived_from)}"])
+                      f"codified from {', '.join(derived_from)}"],
+        trade_id=f"{key}-{symbol}-{pd.Timestamp(sig.time):%Y%m%dT%H%M}")      # one decision per signal, restart-safe
 
 
 # ── the scan ────────────────────────────────────────────────────────────────
@@ -204,6 +215,14 @@ class Scanner:
             self.costs = Costs(maker_fee=a.maker if a.maker is not None else self.costs.maker_fee,
                                taker_fee=a.taker if a.taker is not None else self.costs.taker_fee,
                                slippage=a.slippage if a.slippage is not None else self.costs.slippage)
+        if a.maker is not None or a.taker is not None or a.slippage is not None:
+            print(f"note: costs overridden for pricing; the gate still reads the '{a.fees}' backtest records")
+        wrong = [x for x in a.symbols if a.fees in FEE_MARKET and market_of(x) != FEE_MARKET[a.fees]]
+        if wrong:
+            raise SystemExit(f"--fees {a.fees} is a {FEE_MARKET[a.fees]} cost level, but {wrong} are not {FEE_MARKET[a.fees]} "
+                             "markets; scan them separately with their own --fees")
+        for x in a.symbols:
+            point_value(x, 1.0)                                  # refuse crosses up front
         self.lab = rec.load(a.records) if Path(a.records).exists() else {}
         limits_file = os.environ.get("TI_LIMITS_FILE")
         base = G.Limits(**json.loads(Path(limits_file).read_text(encoding="utf-8"))) if limits_file else G.Limits()
@@ -214,6 +233,7 @@ class Scanner:
         self.state_path = self.home / "books.json"
         self.state = json.loads(self.state_path.read_text()) if self.state_path.exists() else {}
         self.frames: dict[tuple[str, str], pd.DataFrame] = {}
+        self.seen = {r.get("uid") for r in _csv_rows(self.home / "forward.csv")}
 
     def save(self) -> None:
         tmp = self.state_path.with_suffix(".tmp")
@@ -231,6 +251,9 @@ class Scanner:
             self.frames[key] = recent(self.a.venue, vs, tf, HISTORY_DAYS.get(tf, 60))
         else:
             new = latest(self.a.venue, vs, tf, limit=300)
+            step = pd.Timedelta(seconds=INTERVAL_SECONDS[tf])
+            if len(new) and new.index[0] > self.frames[key].index[-1] + step:      # a hole (sleep, outage): refetch
+                new = recent(self.a.venue, vs, tf, HISTORY_DAYS.get(tf, 60))
             df = pd.concat([self.frames[key], new]).sort_index()
             df = df[~df.index.duplicated(keep="last")]
             keep = pd.Timedelta(days=HISTORY_DAYS.get(tf, 60))
@@ -257,14 +280,18 @@ class Scanner:
                 for setup_id in self.a.setups:
                     if setup_id in allowed:
                         log += self.step(d, sym, tf, setup_id, forward)
-        self.save()
+                        self.save()                      # after every book: a crash loses at most one step
         return log
 
     def step(self, d: pd.DataFrame, sym: str, tf: str, setup_id: str, forward: list[dict]) -> list[str]:
+        """Process every closed bar not seen yet, in order, with the backtest's rules: manage the book on
+        each bar, and when it is flat follow any signal on that bar (shadow). Only a signal on the LATEST
+        bar is live: it goes through the gate and the journal, and a take can be handed off."""
         out = []
         skey = f"{setup_id}|{sym}|{tf}"
         st = self.state.get(skey, {})
-        book = _load_book(st, self.costs, sym)
+        mk = market_of(sym)
+        book = _load_book(st, self.costs, sym, FX_TRIGGER_SPREAD if mk == "fx" else 0.0)
         last = pd.Timestamp(st["last_time"]) if st.get("last_time") else None
         idx = d.index
         new_i = [i for i in range(len(d)) if last is None or idx[i] > last]
@@ -272,19 +299,24 @@ class Scanner:
             new_i = new_i[-1:]                            # first sight of this market: start from the latest bar
         o, h, l, c = (d[k].to_numpy() for k in ("open", "high", "low", "close"))
         key = f"{setup_id}@{tf}@{self.a.fees}"
-        for i in new_i:
+        S = SETUPS[setup_id]
+        setup = S(tf=tf, htf=HTF[tf], symbol=sym)
+        step = pd.Timedelta(seconds=INTERVAL_SECONDS[tf])
+        for n, i in enumerate(new_i):
             tag = book.tag
             closed = book.on_bar(idx[i], o[i], h[i], l[i], c[i])
             for tr in closed:
-                out.append(self.closed(tr, key, tf))
+                out.append(self.closed(tr, key, tf, skey, idx[i] + step))
             if tag and book.tag is None and not closed and book.pos is None:
                 out.append(self.unfilled(tag, key, sym, idx[i]))
-        if new_i and book.flat:
-            i = new_i[-1]
-            S = SETUPS[setup_id]
-            sig = S(tf=tf, htf=HTF[tf], symbol=sym).signal_at(d, i)
-            if sig is not None:
-                out.append(self.decide(sig, book, key, sym, tf, S.derived_from, forward))
+            if book.flat:
+                sig = setup.signal_at(d, i)
+                if sig is not None:
+                    if n == len(new_i) - 1:
+                        out.append(self.decide(sig, book, key, sym, tf, S.derived_from, forward))
+                    else:                                  # a missed bar: follow it on paper, never trade it
+                        book.submit(sig, tag={"trade_id": "", "key": key, "account": False, "size": 0, "risk_pct": 0,
+                                              "point_value": 1.0, "shadow_only": True})
         st = _dump_book(book)
         st["last_time"] = idx[new_i[-1]].isoformat() if new_i else (last.isoformat() if last is not None else None)
         self.state[skey] = st
@@ -298,6 +330,13 @@ class Scanner:
         acct = self.account.state(key, sig.session, now, self.open_risk(), self.operator_state(), self.a.risk_pct,
                                   self.a.lot_step, self.a.min_notional, self.a.style, point_value=pv)
         d = self.gate.evaluate(t, setup, acct)
+        prior = next((r for r in self.journal.rows() if r["trade_id"] == t.trade_id), None)
+        if prior is not None:                     # decided before a crash: restore the order, never hand off twice
+            take = prior["decision"] == "take"
+            book.submit(sig, tag={"trade_id": t.trade_id, "key": key, "account": take,
+                                  "size": float(prior["position_size"] or 0), "risk_pct": float(prior["risk_pct"] or 0),
+                                  "point_value": pv})
+            return f"{sig.time:%Y-%m-%d %H:%M} {key} {sym}: decision already journaled ({prior['decision']}), order restored"
         tid = self.journal.record_decision(d)
         take = d.action == "take"
         book.submit(sig, tag={"trade_id": tid, "key": key, "account": take, "size": d.position_size if take else 0,
@@ -334,15 +373,21 @@ class Scanner:
             return f"{pd.Timestamp(t):%Y-%m-%d %H:%M} {key} {sym}: gated order not filled, cancelled"
         return ""
 
-    def closed(self, tr: dict, key: str, tf: str) -> str:
+    def closed(self, tr: dict, key: str, tf: str, skey: str, closed_at) -> str:
         tag = tr.pop("tag", None) or {}
-        row = {**tr, "key": key, "trade_id": tag.get("trade_id", ""), "account": bool(tag.get("account")), "timeframe": tf}
+        uid = f"{skey}|{pd.Timestamp(tr['signal_time']).isoformat()}"
+        row = {**tr, "uid": uid, "key": key, "trade_id": tag.get("trade_id", ""), "account": bool(tag.get("account")),
+               "timeframe": tf}
         for k in ("signal_time", "entry_time", "exit_time"):
             row[k] = pd.Timestamp(row[k]).isoformat()
-        _append(self.home / "forward.csv", FORWARD_COLS, row)
+        if uid not in self.seen:                  # a restart after a crash must not count a trade twice
+            _append(self.home / "forward.csv", FORWARD_COLS, row)
+            self.seen.add(uid)
         msg = f"{pd.Timestamp(tr['exit_time']):%Y-%m-%d %H:%M} closed {key} {tr['symbol']} {tr['exit_reason']} {tr['net_r']:+.2f}R"
         if tag.get("account"):
-            acc = self.account.book_trade(tr, tag)
+            acc = self.account.book_trade(tr, tag, closed_at)
+            if acc is None:
+                return msg + " (already booked)"
             self.journal.record_outcome(tag["trade_id"], executed_per_plan="yes (paper)", exit_reason=tr["exit_reason"],
                                         result_r=round(tr["net_r"], 4), cost_r=round(tr["cost_r"], 4),
                                         mae_r=round(tr["mae_r"], 4), mfe_r=round(tr["mfe_r"], 4),

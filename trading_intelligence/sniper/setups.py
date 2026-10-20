@@ -72,8 +72,9 @@ def prepare(df: pd.DataFrame, htf: str = "1h", vol_window_days: int = 30, day: s
     right_l = h["low"][::-1].shift(1).rolling(3).min()[::-1]
     piv = pd.DataFrame({"htf_pivot_high": h["high"].where((h["high"] > left_h) & (h["high"] >= right_h)),
                         "htf_pivot_low": h["low"].where((h["low"] < left_l) & (h["low"] <= right_l))})
-    piv.index = piv.index + 4 * pd.Timedelta(htf)
-    piv = piv.dropna(how="all").groupby(level=0).last().ffill()
+    # known at the CLOSE of the third HTF bar after the pivot (the actual bar: weekends and outages skip bins)
+    piv.index = (pd.Series(h.index, index=h.index).shift(-3) + pd.Timedelta(htf)).to_numpy()
+    piv = piv[piv.index.notna()].dropna(how="all").groupby(level=0).last().ffill()
     d = d.join(hv.reindex(d.index, method="ffill"))
     d = d.join(piv.reindex(d.index, method="ffill"))
     # the trading day, New York clock
@@ -565,8 +566,9 @@ class AsiaLondonJudas(Setup):
         lows = d["low"].iloc[i - nb + 1:i + 1].to_numpy()
         highs = d["high"].iloc[i - nb + 1:i + 1].to_numpy()
         mins = d["ny_min"].iloc[i - nb + 1:i + 1].to_numpy()
-        hold = max(int((p["flat_by"] - m) // self.step_min), 1)
         expiry = max(min(p["expiry"], int((p["london"][1] - m) // self.step_min)), 1)
+        # the hold counts from the fill, which can come up to `expiry` bars later: flat by 11:00 at the latest
+        hold = max(int((p["flat_by"] - m) // self.step_min) - expiry, 1)
         j = int(lows.argmin())
         if (lows[j] < alo - p["sweep_atr"] * atr and p["london"][0] <= mins[j] < p["london"][1]
                 and c > alo + p["return_atr"] * atr and cp <= alo + p["return_atr"] * atr):

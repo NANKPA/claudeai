@@ -25,7 +25,8 @@ from .backtest import Costs, run
 from .feeds import DUKA_POINT, INTERVAL_SECONDS, binance_history, dukascopy_history
 from .setups import SETUPS, prepare
 
-HTF = {"5m": "1h", "15m": "4h", "1h": "1D", "4h": "1D"}
+HTF = {"5m": "1h", "15m": "4h", "30m": "4h", "1h": "1D", "4h": "1D"}
+FX_TRIGGER_SPREAD = 0.00012     # bid candles: buy-side orders need the ask, about 1.3 pips on EUR/USD higher
 # Per-side costs as a fraction of price. Crypto: exchange fees (maker for resting limits, taker plus
 # slippage for market orders and stops). Forex and gold: half the spread plus commission on every fill
 # (no maker rebate), slippage on stops. See 10_sniper-lab/small-account-venues.md for the sources.
@@ -67,17 +68,28 @@ def recost(trades: pd.DataFrame, c: Costs) -> pd.DataFrame:
         return t
     entry_fee = t["order"].map({"limit": c.maker_fee, "market": c.taker_fee + c.slippage}).astype(float)
     exit_fee = (t["exit_reason"] == "target").map({True: c.maker_fee, False: c.taker_fee + c.slippage})
-    risk = (t["entry"] - t["stop"]).abs()
+    risk = (t["plan_entry"] - t["stop"]).abs()
     t["cost_r"] = (t["entry"] * entry_fee + t["exit"] * exit_fee) / risk
     t["net_r"] = t["gross_r"] - t["cost_r"]
     return t
+
+
+def _job_key(start, end, only) -> str:
+    """Saved job results are reused only for the same period, setups and engine code."""
+    import hashlib
+    here = Path(__file__).parent
+    h = hashlib.sha1(repr((start, end, sorted(only or []))).encode())
+    for f in ("setups.py", "backtest.py", "feeds.py"):
+        h.update((here / f).read_bytes())
+    h.update(repr(sorted(FEES.items())).encode() + repr(FX_TRIGGER_SPREAD).encode())
+    return h.hexdigest()[:10]
 
 
 def _job(args) -> pd.DataFrame:
     """One market x timeframe. Saved under <out>/jobs/ as soon as it finishes, so an interrupted grid
     resumes where it stopped (delete the folder, or pass --fresh, to recompute)."""
     symbol, tf, start, end, only, jobdir = args
-    path = Path(jobdir) / f"{symbol}_{tf}.csv.gz"
+    path = Path(jobdir) / f"{symbol}_{tf}_{_job_key(start, end, only)}.csv.gz"
     if path.exists():
         t = pd.read_csv(path, parse_dates=["signal_time", "entry_time", "exit_time"])
         print(f"  {symbol} {tf}: {len(t)} trades (saved)", flush=True)
@@ -86,7 +98,8 @@ def _job(args) -> pd.DataFrame:
     df = history(symbol, tf, start, end)
     d = prepare(df, htf=HTF[tf], day="fx" if mk == "fx" else "utc")
     base = FEES["fx_std" if mk == "fx" else "std"]
-    parts = [run(d, S(tf=tf, htf=HTF[tf], symbol=symbol), base, symbol, prepared=True)
+    spread = FX_TRIGGER_SPREAD if mk == "fx" else 0.0
+    parts = [run(d, S(tf=tf, htf=HTF[tf], symbol=symbol), base, symbol, prepared=True, trigger_spread=spread)
              for S in setups_for(mk, tf) if not only or S.id in only]
     parts = [x for x in parts if not x.empty]
     t = pd.concat(parts, ignore_index=True) if parts else pd.DataFrame()
@@ -180,7 +193,7 @@ def main(argv=None) -> int:
 def write_report(summary: pd.DataFrame, entries: list[dict], deflated: dict, a, out: Path) -> None:
     pooled = summary[summary["scope"] == "pooled"].sort_values(["market", "fees", "timeframe", "setup"])
     passing = [e for e in entries if e["oos"].get("n", 0) >= 30 and e["oos"].get("se")
-               and e["oos"]["mean_net_r"] - e["oos"]["se"] > 0]
+               and e["oos"]["mean_net_r"] - max(e["oos"]["se"], e["oos"].get("se_day") or 0) > 0]
     when = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     syms = sorted(set(summary.get("key", pd.Series(dtype=str)).str.split(":").str[1].dropna()))
     L = ["---", "id: synthesis_sniper_backtests", "type: synthesis",
@@ -214,19 +227,19 @@ def write_report(summary: pd.DataFrame, entries: list[dict], deflated: dict, a, 
     L += ["", "## Inside the conditions chosen in-sample (the record the gate reads)", "",
           "Only regimes and sessions that were positive after costs in-sample (at least 20 trades each) are kept; the "
           "out-of-sample trades inside them are the evidence.", "",
-          "| Setup | TF | Costs | Allowed regimes | Allowed sessions | IS n | IS net R | OOS n | OOS net R | OOS t |",
-          "|---|---|---|---|---|---|---|---|---|---|"]
+          "| Setup | TF | Costs | Allowed regimes | Allowed sessions | IS n | IS net R | OOS n | OOS net R | OOS t | OOS t (by day) |",
+          "|---|---|---|---|---|---|---|---|---|---|---|"]
     chosen = pooled[pooled["is_n"].fillna(0) > 0]
     for _, r in chosen.iterrows():
         L.append(f"| {r['setup']} | {r['timeframe']} | {r['fees']} | {r.get('valid_regimes') or '-'} | "
                  f"{r.get('valid_sessions') or '-'} | {int(r.get('is_n') or 0)} | {_f(r.get('is_mean_net_r'))} | "
-                 f"{int(r.get('oos_n') or 0)} | {_f(r.get('oos_mean_net_r'))} | {_f(r.get('oos_t'), 2)} |")
+                 f"{int(r.get('oos_n') or 0)} | {_f(r.get('oos_mean_net_r'))} | {_f(r.get('oos_t'), 2)} | {_f(r.get('oos_t_day'), 2)} |")
     if chosen.empty:
-        L.append("| (none: no regime and session was positive after costs in-sample) | | | | | | | | | |")
+        L.append("| (none: no regime and session was positive after costs in-sample) | | | | | | | | | | |")
     L += ["", "## What passes the owner's gate", ""]
     if passing:
-        L += [f"{len(passing)} configuration(s) have n >= 30 out-of-sample trades and mean - 1 SE > 0 after costs "
-              "(Gate 4's math score of 2). The scanner's gate can take only these:", ""]
+        L += [f"{len(passing)} configuration(s) have n >= 30 out-of-sample trades and mean - 1 SE > 0 after costs, with "
+              "the SE clustered by day as well as per trade (Gate 4's math score of 2). The scanner's gate can take only these:", ""]
         L += [f"- `{e['setup_key']}`: OOS n {e['oos']['n']}, {e['oos']['mean_net_r']:+.3f}R per trade (SE {e['oos']['se']:.3f}), "
               f"{e['oos']['per_day']:.2f} trades/day, regimes {', '.join(e['valid_regimes'])}, sessions "
               f"{', '.join(e['valid_sessions'])}" for e in passing]
