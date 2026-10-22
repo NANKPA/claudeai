@@ -25,10 +25,12 @@ tar -xzf claudeai-local-data.tar.gz
 This restores:
 - `trading-intelligence/01_chart-fanatics/raw/playbooks/` (the 47 first-party playbook pages)
 - `trading-intelligence/02_podcasts-interviews/raw/` (4,460 podcast episode files)
+- `trading-intelligence/*/*.candidates.json` (the search results the top-100 lists were ranked from)
 - `tools/philosophy/data/` (cached Yahoo daily data for the evidence lab)
-- `dist/` (the Claude bundles and the explorer page)
 
-They are git-ignored on purpose (third-party text and re-downloadable data); keep them local.
+They are git-ignored on purpose, because the repository is public and these are third-party text or
+data; keep them local. Everything else is in git, including `dist/` (the Claude bundles and the
+explorer page) and the sniper lab's full per-trade backtest log.
 
 ## 3. Install the tools
 

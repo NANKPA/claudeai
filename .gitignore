@@ -3,8 +3,8 @@
 trading-intelligence/*/raw/**
 !trading-intelligence/*/raw/.gitkeep
 
-# Build output (regenerate with tools/bundle_for_claude.py)
-dist/
+# Build output (dist/: the Claude bundles and the map) is committed so it can be downloaded directly;
+# regenerate with tools/bundle_for_claude.py and tools/build_explorer.py
 
 # Python / graphify caches
 __pycache__/
@@ -25,8 +25,7 @@ claudeai-local-data.tar.gz
 *.egg-info/
 build/
 
-# Sniper lab: per-trade backtest log (regenerate with `python -m trading_intelligence.sniper lab`)
-trading-intelligence/10_sniper-lab/backtests/trades.csv.gz
+# Sniper lab: the combined per-trade log (backtests/trades.csv.gz) is committed; partial runs are not
 trading-intelligence/10_sniper-lab/backtests/*/jobs/
 trading-intelligence/10_sniper-lab/backtests/jobs/
 trading-intelligence/10_sniper-lab/backtests/*/trades.csv.gz
