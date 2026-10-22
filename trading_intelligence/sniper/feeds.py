@@ -284,6 +284,24 @@ def recent(venue: str, symbol: str, interval: str = "5m", days: float = 35) -> p
     return _closed(df[~df.index.duplicated(keep="last")], interval)
 
 
+def export_candles(df: pd.DataFrame, folder: str | os.PathLike, symbol: str, interval: str) -> Path:
+    """Write a bot's candles where `scan --venue csv --csv-dir <folder>` reads them.
+
+    `df`: index = bar OPEN time (timezone-aware, or naive UTC), columns open/high/low/close[/volume].
+    Broker platforms often stamp bars in SERVER time (MetaTrader: commonly UTC+2/+3); convert to UTC
+    first. Only closed bars are read by the scanner, so it is safe to include the forming bar."""
+    out = df[["open", "high", "low", "close"]].copy()
+    out["volume"] = df["volume"] if "volume" in df else 0.0
+    idx = pd.DatetimeIndex(out.index)
+    out.index = idx.tz_localize("UTC") if idx.tz is None else idx.tz_convert("UTC")
+    path = Path(folder) / f"{symbol}_{interval}.csv"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_suffix(".tmp")
+    out.rename_axis("time").reset_index().to_csv(tmp, index=False)
+    os.replace(tmp, path)                       # atomic: the scanner never reads a half-written file
+    return path
+
+
 def resample(df: pd.DataFrame, rule: str) -> pd.DataFrame:
     """Higher-timeframe bars (labelled by their OPEN time)."""
     agg = {"open": "first", "high": "max", "low": "min", "close": "last", "volume": "sum"}

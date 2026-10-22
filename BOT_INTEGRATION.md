@@ -135,3 +135,55 @@ python -m trading_intelligence.sniper scan --report                        # for
   stay in your bot, on your machine, never in this repo.
 - Run the scanner with `--once` from cron or Task Scheduler instead of the loop if you prefer.
 
+## Connect the sniper scanner to your bot (step by step)
+
+The scanner runs next to your bot as its own process. Your bot gives it candles; it gives your bot
+gate-approved trades. Your bot keeps its broker connection and keys.
+
+```
+your bot ──(closed candles, CSV)──▶ sniper scan ──(PhilosophyGate: take?)──▶ --on-take script ──▶ your bot's order code
+                                          │
+                                          └── journal.csv, forward.csv, account.csv (paper evidence)
+```
+
+1. **Install** into the Python your bot uses:
+   `python -m pip install "trading-intelligence[mcp] @ git+https://github.com/NANKPA/claudeai.git"`
+2. **Candles out of the bot** (forex and gold): after each closed bar, call
+   `trading_intelligence.sniper.feeds.export_candles(df, "<folder>", "EURUSD", "1h")`. Use your broker's
+   symbol names mapped to EURUSD, GBPUSD, USDJPY and XAUUSD. Convert the bar times to UTC first; MetaTrader
+   stamps bars in server time. Crypto needs no export, because the scanner reads Binance's public data.
+3. **Trades into the bot:** copy `examples/on_take_template.py`
+   (`cp "$(python -m trading_intelligence --where)/examples/on_take_template.py" ti_on_take.py`).
+   Make its `place_order()` call your bot's own order function. It stays a dry run until `TI_LIVE=1`.
+4. **Start the scanners**, one per market, paper first:
+   ```bash
+   python -m trading_intelligence.sniper scan --venue csv --csv-dir <folder> \
+          --symbols EURUSD GBPUSD USDJPY XAUUSD --timeframes 1h 4h --fees fx_raw \
+          --equity <your balance> --risk-pct 0.5 --lot-step <your broker's unit step> \
+          --min-notional <smallest order value> --max-leverage <your cap> --on-take "python ti_on_take.py"
+   python -m trading_intelligence.sniper scan --fees low --equity <balance> --min-notional 1 --on-take "python ti_on_take.py"
+   ```
+   Use `--fees fx_std` on a spread-only or cent account and `fx_raw` on a raw-spread + commission account.
+   For crypto, use `low` for a zero-maker venue, `ultra` for Binance.US and `std` otherwise.
+5. **Check it:** `python -m trading_intelligence.sniper scan --report --fees fx_raw` shows the forward and
+   paper results, and `~/.trading-intelligence/on_take.log` shows every hand-off (dry run or sent).
+6. **Go live only on evidence.** Leave `TI_LIVE` unset until the scanner has handed off trades whose
+   records passed on forward trades alone. Then set `TI_LIVE=1` for the `--on-take` process.
+
+**A prompt for your bot's local Claude session** (it can see your bot's code; this repository cannot):
+
+> Connect the trading intelligence's sniper scanner to this bot, following "Connect the sniper scanner
+> to your bot" in BOT_INTEGRATION.md of https://github.com/NANKPA/claudeai:
+> 1. Install `trading-intelligence[mcp]` from that repository into this bot's Python, and add the MCP
+>    server: `claude mcp add trading-intelligence -- python -m trading_intelligence`.
+> 2. Find where this bot receives closed candles for EURUSD, GBPUSD, USDJPY and XAUUSD. After each closed
+>    1h and 4h bar, call `trading_intelligence.sniper.feeds.export_candles` into a `candles/` folder, with
+>    the times converted to UTC.
+> 3. Copy `examples/on_take_template.py` to `ti_on_take.py` and wire `place_order()` to this bot's
+>    existing order function: same symbol mapping, size in the broker's units, stop and target attached,
+>    limit orders expiring after `expiry_bars`, and positions closed after `max_hold_bars`. Keep it a dry
+>    run (no `TI_LIVE`).
+> 4. Start the scanner in paper mode with `--venue csv --csv-dir candles --on-take "python ti_on_take.py"`,
+>    using my account's balance, unit step, minimum order and cost level. Show me the first pass and the
+>    report. Do not set `TI_LIVE=1` until I say so.
+
