@@ -1,0 +1,212 @@
+{
+  "key": "awwwards-fashion",
+  "group": "design",
+  "pages": {
+    "home": {
+      "url": "https://www.awwwards.com/websites/fashion/",
+      "status": 200,
+      "finalUrl": "https://www.awwwards.com/websites/fashion/",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/awwwards-fashion__home__1440.jpg",
+        "screenshots/awwwards-fashion__home__390.jpg"
+      ],
+      "data": {
+        "header": {
+          "tag": "HEADER",
+          "position": "relative",
+          "top": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "backdrop": "none",
+          "height": 54,
+          "zIndex": "auto",
+          "sticky": false,
+          "transparent": true,
+          "glass": false
+        },
+        "nav": [
+          "Awwwards",
+          "Directory",
+          "Academy New",
+          "Jobs",
+          "Market",
+          "Search",
+          "Be Pro",
+          "Submit Website"
+        ],
+        "hero": {
+          "video": false,
+          "images": 63,
+          "height": 4781,
+          "vh": 531,
+          "text": "Awards Category Tag Technology Country Font Color 1 Reset fi",
+          "carousel": false
+        },
+        "productLinkCount": 0,
+        "filterSort": {
+          "filterEls": 1185,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [],
+          "sizeGuide": false,
+          "accordions": [],
+          "deliveryCopy": [],
+          "crossSell": [],
+          "addToCart": [],
+          "stickyColumn": false
+        },
+        "footer": {
+          "headings": [],
+          "linkCount": 22,
+          "newsletter": false
+        },
+        "fonts": [
+          {
+            "value": "Inter Tight",
+            "count": 2532
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(34, 34, 34)",
+            "count": 2098
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 374
+          },
+          {
+            "value": "rgb(255, 240, 131)",
+            "count": 19
+          },
+          {
+            "value": "rgb(167, 167, 167)",
+            "count": 15
+          },
+          {
+            "value": "rgb(114, 105, 150)",
+            "count": 14
+          },
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 8
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgb(34, 34, 34)",
+            "count": 23
+          },
+          {
+            "value": "rgb(248, 248, 248)",
+            "count": 17
+          },
+          {
+            "value": "rgb(237, 237, 237)",
+            "count": 8
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 4
+          },
+          {
+            "value": "rgba(0, 0, 0, 0.7)",
+            "count": 1
+          },
+          {
+            "value": "rgb(180, 38, 37)",
+            "count": 1
+          }
+        ],
+        "headingSample": [
+          {
+            "text": "Fashion",
+            "font": "\"Inter Tight\"",
+            "size": "14px",
+            "weight": "600",
+            "tracking": "normal",
+            "transform": "none"
+          }
+        ],
+        "bodyFont": {
+          "family": "\"Inter Tight\"",
+          "size": "14px"
+        },
+        "libraries": [],
+        "scriptHosts": [
+          "www.googletagmanager.com",
+          "www.youtube.com",
+          "snap.licdn.com",
+          "www.google-analytics.com",
+          "www.gstatic.com",
+          "connect.facebook.net",
+          "tracker.metricool.com",
+          "assets.awwwards.com",
+          "www.google.com"
+        ],
+        "motion": {
+          "runningAnimations": 4,
+          "marquee": true,
+          "videoCount": 0,
+          "transitionsOnLinks": 192,
+          "cssScrollSnap": false,
+          "reducedMotionQuery": false
+        },
+        "headings": [
+          "Fashion",
+          "Ruler Digital Agency",
+          "Strictly Studio",
+          "neverdone",
+          "SMI - Digital",
+          "ARRAY",
+          "coi",
+          "8b AI Website Builder",
+          "EGO55",
+          "Domaine Public",
+          "Studio Almond",
+          "Sixjuly design studio",
+          "coi",
+          "Decimal",
+          "Designatives",
+          "Shabir Hussain",
+          "LayerTwo",
+          "Cake Agency | Shopify Partner",
+          "Shakuro",
+          "Anastasiya Viachorka",
+          "Studio Almond",
+          "NUUNI",
+          "Merci Michel",
+          "Made In Evolve",
+          "Southmates",
+          "AUGE EXPERIENCE",
+          "José Luis Muñoz · VANMOTION",
+          "Airnauts",
+          "MONOGRID",
+          "Arc Marumo",
+          "Artem Markovsky",
+          "index"
+        ],
+        "title": "Best Fashion websites | Web Design Inspiration",
+        "h1": "Fashion",
+        "bodyTextSample": "The Creative Pass Watch all courses for just $12/month The Creative Pass Watch all courses for just $12/month The Creative Pass Watch all courses for just $12/month The Creative Pass Watch all courses for just $12/month The Creative Pass Watch all courses for just $12/month The Creative Pass Watch all courses for just $12/month The Creative Pass Watch all courses for just $12/month The Creative Pass Watch all courses for just $12/month The Creative Pass Watch all courses for just $12/month The Creative Pass Watch all courses for just $12/month The Creative Pass Watch all courses for just $12/m"
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": false,
+        "bgAfterScroll": "rgba(0, 0, 0, 0.7)",
+        "backdropAfterScroll": "none",
+        "transform": "matrix(1, 0, 0, 1, -1440, -900)"
+      },
+      "cart": {
+        "type": "none",
+        "text": "The Creative Pass  Watch all courses for just $12/month\nThe Creative Pass  Watch all courses for just $12/month\nThe Creative Pass  Watch all courses for just $12/month\nThe Creative Pass  Watch all courses for just $12/month\nThe Creative Pass  Watch all courses for just $12/month\nThe Creative Pass  Watch all courses for just $12/month\nThe Creative Pass  Watch all courses for just $12/month\nThe Crea",
+        "opened_via": "[aria-label*='cart' i]:visible",
+        "navigated": false
+      },
+      "mobile": {
+        "nav_burger": true,
+        "bottomBar": false
+      }
+    }
+  }
+}

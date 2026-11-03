@@ -1,0 +1,598 @@
+{
+  "key": "essentials",
+  "group": "store",
+  "pages": {
+    "home": {
+      "url": "https://fearofgod.com/collections/essentials",
+      "status": 200,
+      "finalUrl": "https://fearofgod.com/collections/essentials",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/essentials__home__1440.jpg",
+        "screenshots/essentials__home__390.jpg"
+      ],
+      "data": {
+        "header": {
+          "tag": "HEADER",
+          "position": "sticky",
+          "top": "-1px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "backdrop": "none",
+          "height": 46,
+          "zIndex": "8",
+          "sticky": true,
+          "transparent": true,
+          "glass": false
+        },
+        "nav": [
+          "FEATURED",
+          "COLLECTIONS",
+          "MENS",
+          "WOMENS",
+          "KIDS",
+          "SEARCH",
+          "ACCOUNT",
+          "BAG"
+        ],
+        "hero": {
+          "video": false,
+          "images": 95,
+          "height": 11313,
+          "vh": 1257,
+          "text": "ESSENTIALS SKIP TO RESULTS LIST 828 ITEMS FILTER & SORT Rips",
+          "carousel": true
+        },
+        "productCard": {
+          "classes": "card-gallery card-gallery-ARnpONVdVTlR4WkhjQ__card-gallery spacing-style border-style",
+          "imageRatio": 0.75,
+          "imagesInCard": 2,
+          "hoverSwapLikely": true,
+          "quickAdd": false,
+          "swatches": false,
+          "badges": [],
+          "text": ""
+        },
+        "productLinkCount": 144,
+        "filterSort": {
+          "filterEls": 0,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [
+            "Email",
+            "",
+            "Sign up"
+          ],
+          "sizeGuide": false,
+          "accordions": [
+            "FEATURED",
+            "COLLECTIONS",
+            "MENS",
+            "WOMENS",
+            "KIDS",
+            "UNITED STATES (USD $) REGION AND LANGUAGE SELECTOR",
+            "Footer"
+          ],
+          "deliveryCopy": [],
+          "crossSell": [],
+          "addToCart": [],
+          "stickyColumn": false
+        },
+        "footer": {
+          "headings": [
+            "Join the Conversation",
+            "Footer"
+          ],
+          "linkCount": 6,
+          "newsletter": true
+        },
+        "fonts": [
+          {
+            "value": "HelveticaNeueLTPro-Cn",
+            "count": 1198
+          },
+          {
+            "value": "Optima",
+            "count": 195
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 1338
+          },
+          {
+            "value": "rgb(117, 117, 117)",
+            "count": 48
+          },
+          {
+            "value": "rgba(0, 0, 0, 0.7)",
+            "count": 6
+          },
+          {
+            "value": "rgb(97, 97, 97)",
+            "count": 1
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 52
+          }
+        ],
+        "headingSample": [
+          {
+            "text": "ESSENTIALS",
+            "font": "Optima, \"Optima Nova LT\", \"Gill Sans\", sans-serif",
+            "size": "32px",
+            "weight": "400",
+            "tracking": "normal",
+            "transform": "none"
+          }
+        ],
+        "bodyFont": {
+          "family": "HelveticaNeueLTPro-Cn, Helvetica, Arial, sans-serif",
+          "size": "14px"
+        },
+        "libraries": [
+          "Shopify",
+          "Klaviyo"
+        ],
+        "scriptHosts": [
+          "beacon.riskified.com",
+          "",
+          "crossborder-integration.global-e.com",
+          "shopify-widget.route.com",
+          "www.googletagmanager.com",
+          "a64b2710149d.cdn4.forter.com",
+          "connect.facebook.net",
+          "cdn.cookielaw.org",
+          "fearofgod.com",
+          "shop.app",
+          "cdn.shopify.com",
+          "static.klaviyo.com",
+          "static-tracking.klaviyo.com",
+          "assets.tvscipixel.com",
+          "shopify-gtm-suite.getelevar.com"
+        ],
+        "motion": {
+          "runningAnimations": 1,
+          "marquee": false,
+          "videoCount": 0,
+          "transitionsOnLinks": 200,
+          "cssScrollSnap": true,
+          "reducedMotionQuery": true
+        },
+        "headings": [
+          "ESSENTIALS"
+        ],
+        "title": "Fear of God ESSENTIALS - New Releases",
+        "h1": "ESSENTIALS",
+        "bodyTextSample": "SKIP TO CONTENT FEATURED COLLECTIONS MENS WOMENS KIDS SEARCH ACCOUNT BAG ESSENTIALS SKIP TO RESULTS LIST 828 ITEMS FILTER & SORT Ripstop Modern Mockneck Pullover ESSENTIALS Ripstop Modern Mockneck Pullover $ 210 Ripstop Classic Track Pant ESSENTIALS Ripstop Classic Track Pant $ 195 Panelled Modern Tee ESSENTIALS Panelled Modern Tee $ 100 Vest ESSENTIALS Vest $ 160 Signature Lounge Sweatpant ESSENTIALS Signature Lounge Sweatpant $ 160 Signature Lounge Half Zip Hoodie ESSENTIALS Signature Lounge Half Zip Hoodie $ 190 Panelled Modern Tee ESSENTIALS Panelled Modern Tee $ 100 Classic Half Raglan Ho"
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": true,
+        "bgAfterScroll": "rgba(0, 0, 0, 0)",
+        "backdropAfterScroll": "none",
+        "transform": "none"
+      },
+      "cart": {
+        "type": "not found"
+      },
+      "mobile": {
+        "nav_burger": true,
+        "bottomBar": false
+      }
+    },
+    "collection": {
+      "url": "https://fearofgod.com/collections/essentials#MainContent",
+      "status": 200,
+      "finalUrl": "https://fearofgod.com/collections/essentials#MainContent",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/essentials__collection__1440.jpg",
+        "screenshots/essentials__collection__390.jpg"
+      ],
+      "data": {
+        "header": {
+          "tag": "HEADER",
+          "position": "sticky",
+          "top": "-1px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "backdrop": "none",
+          "height": 46,
+          "zIndex": "8",
+          "sticky": true,
+          "transparent": true,
+          "glass": false
+        },
+        "nav": [
+          "FEATURED",
+          "COLLECTIONS",
+          "MENS",
+          "WOMENS",
+          "KIDS",
+          "SEARCH",
+          "ACCOUNT",
+          "BAG"
+        ],
+        "hero": {
+          "video": false,
+          "images": 95,
+          "height": 11313,
+          "vh": 1257,
+          "text": "ESSENTIALS SKIP TO RESULTS LIST 828 ITEMS FILTER & SORT Rips",
+          "carousel": true
+        },
+        "productCard": {
+          "classes": "card-gallery card-gallery-ARnpONVdVTlR4WkhjQ__card-gallery spacing-style border-style",
+          "imageRatio": 0.75,
+          "imagesInCard": 2,
+          "hoverSwapLikely": true,
+          "quickAdd": false,
+          "swatches": false,
+          "badges": [],
+          "text": ""
+        },
+        "productLinkCount": 144,
+        "filterSort": {
+          "filterEls": 0,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [
+            "Email",
+            "",
+            "Sign up"
+          ],
+          "sizeGuide": false,
+          "accordions": [
+            "FEATURED",
+            "COLLECTIONS",
+            "MENS",
+            "WOMENS",
+            "KIDS",
+            "UNITED STATES (USD $) REGION AND LANGUAGE SELECTOR",
+            "Footer"
+          ],
+          "deliveryCopy": [],
+          "crossSell": [],
+          "addToCart": [],
+          "stickyColumn": false
+        },
+        "footer": {
+          "headings": [
+            "Join the Conversation",
+            "Footer"
+          ],
+          "linkCount": 6,
+          "newsletter": true
+        },
+        "fonts": [
+          {
+            "value": "HelveticaNeueLTPro-Cn",
+            "count": 1201
+          },
+          {
+            "value": "Optima",
+            "count": 195
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 1341
+          },
+          {
+            "value": "rgb(117, 117, 117)",
+            "count": 48
+          },
+          {
+            "value": "rgba(0, 0, 0, 0.7)",
+            "count": 6
+          },
+          {
+            "value": "rgb(97, 97, 97)",
+            "count": 1
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 52
+          }
+        ],
+        "headingSample": [
+          {
+            "text": "ESSENTIALS",
+            "font": "Optima, \"Optima Nova LT\", \"Gill Sans\", sans-serif",
+            "size": "32px",
+            "weight": "400",
+            "tracking": "normal",
+            "transform": "none"
+          }
+        ],
+        "bodyFont": {
+          "family": "HelveticaNeueLTPro-Cn, Helvetica, Arial, sans-serif",
+          "size": "14px"
+        },
+        "libraries": [
+          "Shopify",
+          "Klaviyo"
+        ],
+        "scriptHosts": [
+          "beacon.riskified.com",
+          "",
+          "crossborder-integration.global-e.com",
+          "shopify-widget.route.com",
+          "www.googletagmanager.com",
+          "a64b2710149d.cdn4.forter.com",
+          "connect.facebook.net",
+          "cdn.cookielaw.org",
+          "fearofgod.com",
+          "shop.app",
+          "cdn.shopify.com",
+          "static.klaviyo.com",
+          "static-tracking.klaviyo.com",
+          "assets.tvscipixel.com",
+          "shopify-gtm-suite.getelevar.com"
+        ],
+        "motion": {
+          "runningAnimations": 1,
+          "marquee": false,
+          "videoCount": 0,
+          "transitionsOnLinks": 200,
+          "cssScrollSnap": true,
+          "reducedMotionQuery": true
+        },
+        "headings": [
+          "ESSENTIALS"
+        ],
+        "title": "Fear of God ESSENTIALS - New Releases",
+        "h1": "ESSENTIALS",
+        "bodyTextSample": "SKIP TO CONTENT FEATURED COLLECTIONS MENS WOMENS KIDS SEARCH ACCOUNT BAG ESSENTIALS SKIP TO RESULTS LIST 828 ITEMS FILTER & SORT Ripstop Modern Mockneck Pullover ESSENTIALS Ripstop Modern Mockneck Pullover $ 210 Ripstop Classic Track Pant ESSENTIALS Ripstop Classic Track Pant $ 195 Panelled Modern Tee ESSENTIALS Panelled Modern Tee $ 100 Vest ESSENTIALS Vest $ 160 Signature Lounge Sweatpant ESSENTIALS Signature Lounge Sweatpant $ 160 Signature Lounge Half Zip Hoodie ESSENTIALS Signature Lounge Half Zip Hoodie $ 190 Panelled Modern Tee ESSENTIALS Panelled Modern Tee $ 100 Classic Half Raglan Ho"
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": true,
+        "bgAfterScroll": "rgba(0, 0, 0, 0)",
+        "backdropAfterScroll": "none",
+        "transform": "none"
+      },
+      "mobile": {
+        "nav_burger": true,
+        "bottomBar": false
+      }
+    },
+    "product": {
+      "url": "https://fearofgod.com/products/essentials-modern-mockneck-pullover-rw01629-night-sea",
+      "status": 200,
+      "finalUrl": "https://fearofgod.com/products/essentials-modern-mockneck-pullover-rw01629-night-sea",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/essentials__product__1440.jpg",
+        "screenshots/essentials__product__390.jpg"
+      ],
+      "data": {
+        "header": {
+          "tag": "HEADER",
+          "position": "sticky",
+          "top": "-1px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "backdrop": "none",
+          "height": 46,
+          "zIndex": "8",
+          "sticky": true,
+          "transparent": true,
+          "glass": false
+        },
+        "nav": [
+          "FEATURED",
+          "COLLECTIONS",
+          "MENS",
+          "WOMENS",
+          "KIDS",
+          "SEARCH",
+          "ACCOUNT",
+          "BAG"
+        ],
+        "hero": {
+          "video": false,
+          "images": 26,
+          "height": 3568,
+          "vh": 396,
+          "text": "SKIP TO PRODUCT INFORMATION ESSENTIALS Ripstop Modern Mockne",
+          "carousel": false
+        },
+        "productCard": {
+          "classes": "\n    product-details\n     sticky-content--desktop\n    ",
+          "imageRatio": null,
+          "imagesInCard": 1,
+          "hoverSwapLikely": false,
+          "quickAdd": true,
+          "swatches": true,
+          "badges": [
+            "Night Sea",
+            "MORE COLORS"
+          ],
+          "text": "ESSENTIALS Ripstop Modern Mockneck Pullover $ 210 Color NIGH"
+        },
+        "productLinkCount": 18,
+        "filterSort": {
+          "filterEls": 0,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [
+            "SEARCH",
+            "BAG",
+            "",
+            "XS",
+            "",
+            "S",
+            "",
+            "M",
+            "",
+            "L",
+            "",
+            "XL"
+          ],
+          "sizeGuide": true,
+          "accordions": [
+            "FEATURED",
+            "COLLECTIONS",
+            "MENS",
+            "WOMENS",
+            "KIDS",
+            "Size SELECT SIZE",
+            "DETAILS",
+            "SHIPPING POLICY",
+            "SHARE",
+            "UNITED STATES (USD $) REGION AND LANGUAGE SELECTOR",
+            "Footer"
+          ],
+          "deliveryCopy": [
+            "SHIPPING POLICY"
+          ],
+          "crossSell": [
+            "SIMILAR STYLES"
+          ],
+          "addToCart": [
+            "ADD TO CART ADDED TO CART"
+          ],
+          "stickyColumn": true
+        },
+        "footer": {
+          "headings": [
+            "Join the Conversation",
+            "Footer"
+          ],
+          "linkCount": 6,
+          "newsletter": true
+        },
+        "fonts": [
+          {
+            "value": "HelveticaNeueLTPro-Cn",
+            "count": 463
+          },
+          {
+            "value": "Optima",
+            "count": 24
+          },
+          {
+            "value": "HelveticaNeueLTPro-LtCn",
+            "count": 2
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 470
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 7
+          },
+          {
+            "value": "rgba(0, 0, 0, 0.7)",
+            "count": 6
+          },
+          {
+            "value": "rgb(117, 117, 117)",
+            "count": 4
+          },
+          {
+            "value": "rgba(0, 0, 0, 0.6)",
+            "count": 2
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 24
+          },
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 3
+          },
+          {
+            "value": "rgba(20, 20, 20, 0.6)",
+            "count": 1
+          }
+        ],
+        "headingSample": [
+          {
+            "text": "Ripstop Modern Mockneck Pullover",
+            "font": "Optima, \"Optima Nova LT\", \"Gill Sans\", sans-serif",
+            "size": "24px",
+            "weight": "400",
+            "tracking": "normal",
+            "transform": "none"
+          },
+          {
+            "text": "SIMILAR STYLES",
+            "font": "HelveticaNeueLTPro-Cn, Helvetica, Arial, sans-serif",
+            "size": "12px",
+            "weight": "400",
+            "tracking": "1.8px",
+            "transform": "uppercase"
+          }
+        ],
+        "bodyFont": {
+          "family": "HelveticaNeueLTPro-Cn, Helvetica, Arial, sans-serif",
+          "size": "14px"
+        },
+        "libraries": [
+          "Shopify",
+          "Klaviyo"
+        ],
+        "scriptHosts": [
+          "beacon.riskified.com",
+          "",
+          "crossborder-integration.global-e.com",
+          "shopify-widget.route.com",
+          "www.googletagmanager.com",
+          "a64b2710149d.cdn4.forter.com",
+          "connect.facebook.net",
+          "cdn.cookielaw.org",
+          "fearofgod.com",
+          "shop.app",
+          "cdn.shopify.com",
+          "static.klaviyo.com",
+          "static-tracking.klaviyo.com",
+          "a.klaviyo.com",
+          "assets.tvscipixel.com",
+          "shopify-gtm-suite.getelevar.com"
+        ],
+        "motion": {
+          "runningAnimations": 1,
+          "marquee": false,
+          "videoCount": 0,
+          "transitionsOnLinks": 139,
+          "cssScrollSnap": true,
+          "reducedMotionQuery": true
+        },
+        "headings": [
+          "Ripstop Modern Mockneck Pullover",
+          "SIMILAR STYLES",
+          "RECENTLY VIEWED"
+        ],
+        "title": "Ripstop Modern Mockneck Pullover – Fear of God",
+        "h1": "Ripstop Modern Mockneck Pullover",
+        "bodyTextSample": "SKIP TO CONTENT FEATURED COLLECTIONS MENS WOMENS KIDS SEARCH ACCOUNT BAG SKIP TO PRODUCT INFORMATION ESSENTIALS Ripstop Modern Mockneck Pullover $ 210 Color NIGHT SEA MORE COLORS Size SELECT SIZE SIZE CHART ADD TO CART ADDED TO CART The Modern Mockneck Pullover is made from sporty nylon ripstop, offering compelling texture with sportswear performance. An embroidered FGE graphic accents the front and FOG embroidered graphic is branded across the back. Functional details include a mockneck, side pockets, and elastic cuffs and waistband. An Essentials label at the back completes the design. ALL S"
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": true,
+        "bgAfterScroll": "rgba(0, 0, 0, 0)",
+        "backdropAfterScroll": "none",
+        "transform": "none"
+      },
+      "cart": {
+        "type": "not found"
+      },
+      "mobile": {
+        "nav_burger": true,
+        "bottomBar": false
+      }
+    }
+  }
+}

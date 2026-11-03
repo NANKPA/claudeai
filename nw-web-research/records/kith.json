@@ -1,0 +1,640 @@
+{
+  "key": "kith",
+  "group": "store",
+  "pages": {
+    "home": {
+      "url": "https://kith.com/",
+      "status": 200,
+      "finalUrl": "https://kith.com/",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/kith__home__1440.jpg",
+        "screenshots/kith__home__390.jpg"
+      ],
+      "data": {
+        "header": {
+          "tag": "S-HEADER",
+          "position": "fixed",
+          "top": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "backdrop": "none",
+          "height": 59,
+          "zIndex": "2",
+          "sticky": true,
+          "transparent": true,
+          "glass": false
+        },
+        "nav": [
+          "NEW",
+          "MENS",
+          "WOMENS",
+          "KIDS",
+          "Kith",
+          "HOSPITALITY",
+          "Translation missing: en.accessibility.search",
+          "0"
+        ],
+        "hero": {
+          "video": true,
+          "images": 194,
+          "height": 6626,
+          "vh": 736,
+          "text": "Monday Program™ | Kith for TUMI 2026 Kith and TUMI reprise t",
+          "carousel": true
+        },
+        "productCard": {
+          "classes": "product-card__image relative block",
+          "imageRatio": 1,
+          "imagesInCard": 2,
+          "hoverSwapLikely": true,
+          "quickAdd": false,
+          "swatches": false,
+          "badges": [],
+          "text": ""
+        },
+        "productLinkCount": 43,
+        "filterSort": {
+          "filterEls": 0,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [],
+          "sizeGuide": false,
+          "accordions": [
+            "NEW",
+            "MENS",
+            "WOMENS",
+            "KIDS",
+            "HOSPITALITY",
+            "Translation missing: en.accessibility.search",
+            "0",
+            "TEXT WITH US"
+          ],
+          "deliveryCopy": [],
+          "crossSell": [],
+          "addToCart": [],
+          "stickyColumn": false
+        },
+        "footer": {
+          "headings": [
+            "JOIN OUR LIST",
+            "LEARN",
+            "KITH",
+            "POLICIES",
+            "FOLLOW US"
+          ],
+          "linkCount": 49,
+          "newsletter": true
+        },
+        "fonts": [
+          {
+            "value": "proxima-nova",
+            "count": 31
+          },
+          {
+            "value": "Arial",
+            "count": 3
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 33
+          },
+          {
+            "value": "rgb(51, 51, 51)",
+            "count": 1
+          }
+        ],
+        "bgColours": [],
+        "headingSample": [
+          {
+            "text": "Monday Program™ | Kith for TUMI 2026",
+            "font": "Georgia, serif",
+            "size": "28px",
+            "weight": "400",
+            "tracking": "1.4px",
+            "transform": "none"
+          },
+          {
+            "text": "Kith for the New York Yankees 2026",
+            "font": "Georgia, serif",
+            "size": "28px",
+            "weight": "400",
+            "tracking": "1.4px",
+            "transform": "none"
+          },
+          {
+            "text": "K-Tech Fall 2026",
+            "font": "Georgia, serif",
+            "size": "28px",
+            "weight": "400",
+            "tracking": "1.4px",
+            "transform": "none"
+          }
+        ],
+        "bodyFont": {
+          "family": "proxima-nova, sans-serif",
+          "size": "12px"
+        },
+        "libraries": [
+          "Swiper",
+          "Shopify",
+          "Klaviyo"
+        ],
+        "scriptHosts": [
+          "www.googletagmanager.com",
+          "connect.facebook.net",
+          "kith.com",
+          "shop.app",
+          "cdn.shopify.com",
+          "api.consentjs.datagrail.io",
+          "dashboard.heatmap.com",
+          "static.klaviyo.com",
+          "static-tracking.klaviyo.com",
+          "app.kiwisizing.com"
+        ],
+        "motion": {
+          "runningAnimations": 0,
+          "marquee": false,
+          "videoCount": 1,
+          "transitionsOnLinks": 0,
+          "cssScrollSnap": false,
+          "reducedMotionQuery": false
+        },
+        "headings": [
+          "Monday Program™ | Kith for TUMI 2026",
+          "Kith for the New York Yankees 2026",
+          "K-Tech Fall 2026",
+          "Kith Women Winter 2026 | Echoes of the City Campaign",
+          "Kith Winter 2026",
+          "Giorgio Armani & Kith Fall/Winter 2026: Dreams of the Dune",
+          "Kith Women | Hold the Line",
+          "Kith Kids Fall 2026",
+          "JOIN OUR LIST",
+          "LEARN",
+          "KITH",
+          "POLICIES",
+          "FOLLOW US"
+        ],
+        "title": "Kith – Homepage",
+        "h1": "Skip to content NEW MENS WOMENS KIDS HOSPITALITY 0 Monday Pr",
+        "bodyTextSample": "Skip to content NEW MENS WOMENS KIDS HOSPITALITY 0 Monday Program™ | Kith for TUMI 2026 Kith and TUMI reprise their collaboration to present three new colorways and logo treatments on the 19 Degree Aluminum Carry-On, alongside three accompanying accessories—the Cigar, Sunglasses, and Watch Cases. SHOP NOW LEARN MORE Kith for the New York Yankees 2026 Commemorative apparel, accessories, and collectibles, celebrating the 30th anniversary of the Yankees 1996 World Series victory, finished with signature iconography. SHOP NOW A CLOSER LOOK K-Tech Fall 2026 K-Tech presents its Fall 2026 assortment,"
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": true,
+        "bgAfterScroll": "rgb(255, 255, 255)",
+        "backdropAfterScroll": "none",
+        "transform": "none"
+      },
+      "cart": {
+        "type": "drawer",
+        "width": 1440,
+        "freeShippingBar": false,
+        "upsells": true,
+        "text": "Skip to content NEW MENS WOMENS KIDS HOSPITALITY 0 Your Cart (0) Your cart is empty. Continue shopping. Sign In to see your cart or create an account. Recommended For You KITH ARCH LAUREL 3-PACK COTTON CREW SOCKS Color: Multi $40.00 ADD TO BAG KITH CORDUROY NOLAN TRUCKER HAT Color: Nocturnal $55.00 ADD TO BAG Monday Program™ | Kith for TUMI 2026 Kith and TUMI reprise their collaboration to present",
+        "opened_via": "button[aria-label*='cart' i]:visible",
+        "navigated": false
+      },
+      "mobile": {
+        "nav_burger": true,
+        "bottomBar": false
+      }
+    },
+    "collection": {
+      "url": "https://kith.com/collections/kith-winter-2026",
+      "status": 200,
+      "finalUrl": "https://kith.com/collections/kith-winter-2026",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/kith__collection__1440.jpg",
+        "screenshots/kith__collection__390_part1.jpg",
+        "screenshots/kith__collection__390_part2.jpg"
+      ],
+      "data": {
+        "header": {
+          "tag": "S-HEADER",
+          "position": "sticky",
+          "top": "0px",
+          "bg": "rgb(255, 255, 255)",
+          "backdrop": "none",
+          "height": 59,
+          "zIndex": "2",
+          "sticky": true,
+          "transparent": false,
+          "glass": false
+        },
+        "nav": [
+          "NEW",
+          "MENS",
+          "WOMENS",
+          "KIDS",
+          "Kith",
+          "HOSPITALITY",
+          "Translation missing: en.accessibility.search",
+          "0"
+        ],
+        "hero": {
+          "video": false,
+          "images": 1945,
+          "height": 41611,
+          "vh": 4623,
+          "text": "Kith Winter 2026 &Kin Winter 2026 Suiting made with Giorgio ",
+          "carousel": false
+        },
+        "productCard": {
+          "classes": "product-card__image relative block",
+          "imageRatio": 1,
+          "imagesInCard": 2,
+          "hoverSwapLikely": true,
+          "quickAdd": false,
+          "swatches": false,
+          "badges": [],
+          "text": ""
+        },
+        "productLinkCount": 833,
+        "filterSort": {
+          "filterEls": 0,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [],
+          "sizeGuide": false,
+          "accordions": [
+            "NEW",
+            "MENS",
+            "WOMENS",
+            "KIDS",
+            "HOSPITALITY",
+            "Translation missing: en.accessibility.search",
+            "0",
+            "Open Filter/Sort",
+            "TEXT WITH US"
+          ],
+          "deliveryCopy": [
+            "The Bristol Loafer returns with updated studded details and Vibram tooling, alongside the Laddow Shearling, the suede Rossendale Inverno, an",
+            "8th St by Ronnie Fieg for Clarks Originals returns for Winter with the Bristol Loafer, crafted from premium leather and suede and finished w",
+            "Explore the 40 Below Shearling, crafted from premium nubuck and finished with a warm shearling lining, defining branding details, and cold-w",
+            "Discover the accessories assortment from the Winter 2026 collection, blending cold-weather functionality with upscale wardrobing. Kith Monog"
+          ],
+          "crossSell": [],
+          "addToCart": [],
+          "stickyColumn": false
+        },
+        "footer": {
+          "headings": [
+            "JOIN OUR LIST",
+            "LEARN",
+            "KITH",
+            "POLICIES",
+            "FOLLOW US"
+          ],
+          "linkCount": 49,
+          "newsletter": true
+        },
+        "fonts": [
+          {
+            "value": "proxima-nova",
+            "count": 31
+          },
+          {
+            "value": "Arial",
+            "count": 3
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(51, 51, 51)",
+            "count": 34
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 1
+          }
+        ],
+        "headingSample": [
+          {
+            "text": "Kith Winter 2026",
+            "font": "Georgia, serif",
+            "size": "18px",
+            "weight": "400",
+            "tracking": "0.9px",
+            "transform": "none"
+          },
+          {
+            "text": "&Kin Winter 2026",
+            "font": "Georgia, serif",
+            "size": "18px",
+            "weight": "400",
+            "tracking": "0.9px",
+            "transform": "none"
+          },
+          {
+            "text": "Kith Winter 2026",
+            "font": "Georgia, serif",
+            "size": "18px",
+            "weight": "400",
+            "tracking": "0.9px",
+            "transform": "none"
+          }
+        ],
+        "bodyFont": {
+          "family": "proxima-nova, sans-serif",
+          "size": "12px"
+        },
+        "libraries": [
+          "Swiper",
+          "Shopify",
+          "Klaviyo"
+        ],
+        "scriptHosts": [
+          "www.googletagmanager.com",
+          "connect.facebook.net",
+          "kith.com",
+          "shop.app",
+          "cdn.shopify.com",
+          "api.consentjs.datagrail.io",
+          "dashboard.heatmap.com",
+          "static.klaviyo.com",
+          "static-tracking.klaviyo.com",
+          "app.kiwisizing.com"
+        ],
+        "motion": {
+          "runningAnimations": 0,
+          "marquee": false,
+          "videoCount": 0,
+          "transitionsOnLinks": 0,
+          "cssScrollSnap": false,
+          "reducedMotionQuery": false
+        },
+        "headings": [
+          "Kith Winter 2026",
+          "&Kin Winter 2026",
+          "Kith Winter 2026",
+          "Kith 101 for SEVEN BY SEVEN",
+          "Kith Classics for adidas Originals Winter 2026",
+          "8th St by Ronnie Fieg for Clarks Originals Winter 2026",
+          "Ronnie Fieg for Timberland Winter 2026",
+          "Kith Winter 2026 Accessories",
+          "Kith Palette",
+          "Kith Classics",
+          "Kit Harington for Kith Winter 2026",
+          "Lookbook",
+          "A Closer Look",
+          "Ronnie Fieg for Timberland",
+          "Kith Classics for adidas Originals",
+          "8th St by Ronnie Fieg for Clarks Originals",
+          "&Kin Winter 2026",
+          "Kith Winter 2026",
+          "Kith Classics for adidas Originals Winter 2026",
+          "8th St by Ronnie Fieg for Clarks Originals Winter 2026",
+          "Ronnie Fieg for Timberland Winter 2026",
+          "Kith Winter 2026 Accessories",
+          "JOIN OUR LIST",
+          "LEARN",
+          "KITH",
+          "POLICIES",
+          "FOLLOW US"
+        ],
+        "title": "Kith Winter 2026",
+        "h1": "Kith Winter 2026",
+        "bodyTextSample": "Skip to content NEW MENS WOMENS KIDS HOSPITALITY 0 Kith Winter 2026 &Kin Winter 2026 Suiting made with Giorgio Armani, paired with detailed outerwear, new cardigan silhouettes, and relaxed pants crafted from ponyhair leather, merino wool, cashmere, and more. Kith Winter 2026 Elevated apparel, seasonal accessories, footwear, and the new Kith Palette Program, designed with SEVEN BY SEVEN, adidas, Timberland, and Clarks Originals. Kith 101 for SEVEN BY SEVEN A special partnership with Japanese menswear brand SEVEN BY SEVEN, reimagining workwear-inspired apparel and accessories through intricate d"
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": true,
+        "bgAfterScroll": "rgb(255, 255, 255)",
+        "backdropAfterScroll": "none",
+        "transform": "none"
+      },
+      "mobile": {
+        "nav_burger": true,
+        "bottomBar": false
+      }
+    },
+    "product": {
+      "url": "https://kith.com/collections/kith-winter-2026/products/khma010202-3088",
+      "status": 200,
+      "finalUrl": "https://kith.com/collections/kith-winter-2026/products/khma010202-3088",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/kith__product__1440.jpg",
+        "screenshots/kith__product__390.jpg"
+      ],
+      "data": {
+        "header": {
+          "tag": "S-HEADER",
+          "position": "sticky",
+          "top": "0px",
+          "bg": "rgb(255, 255, 255)",
+          "backdrop": "none",
+          "height": 59,
+          "zIndex": "2",
+          "sticky": true,
+          "transparent": false,
+          "glass": false
+        },
+        "nav": [
+          "NEW",
+          "MENS",
+          "WOMENS",
+          "KIDS",
+          "Kith",
+          "HOSPITALITY",
+          "Translation missing: en.accessibility.search",
+          "0"
+        ],
+        "hero": {
+          "video": false,
+          "images": 69,
+          "height": 5167,
+          "vh": 574,
+          "text": "Skip to product information HOME MENS KITH WINTER 2026 Kith ",
+          "carousel": true
+        },
+        "productCard": {
+          "classes": "product__information w-full p-sm mx-auto top-[var(--header-height)] tabletl:sticky tabletl:max-w-[80ch] tabletl:px-md de",
+          "imageRatio": 1,
+          "imagesInCard": 2,
+          "hoverSwapLikely": true,
+          "quickAdd": true,
+          "swatches": true,
+          "badges": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+          ],
+          "text": "Kith Winter 2026 &Kin Deer Print Ponyhair Vail Jacket $2,250"
+        },
+        "productLinkCount": 13,
+        "filterSort": {
+          "filterEls": 0,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "sizeGuide": true,
+          "accordions": [
+            "NEW",
+            "MENS",
+            "WOMENS",
+            "KIDS",
+            "HOSPITALITY",
+            "Translation missing: en.accessibility.search",
+            "0",
+            "VIEW SIZE GUIDE",
+            "TEXT WITH US"
+          ],
+          "deliveryCopy": [
+            "SHIPPING & RETURNS"
+          ],
+          "crossSell": [
+            "Complete The Look"
+          ],
+          "addToCart": [
+            "ADD TO CART",
+            "ADD TO CART"
+          ],
+          "stickyColumn": true
+        },
+        "footer": {
+          "headings": [
+            "JOIN OUR LIST",
+            "LEARN",
+            "KITH",
+            "POLICIES",
+            "FOLLOW US"
+          ],
+          "linkCount": 49,
+          "newsletter": true
+        },
+        "fonts": [
+          {
+            "value": "proxima-nova",
+            "count": 31
+          },
+          {
+            "value": "Arial",
+            "count": 3
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(51, 51, 51)",
+            "count": 34
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 1
+          }
+        ],
+        "headingSample": [
+          {
+            "text": "&Kin Deer Print Ponyhair Vail Jacket",
+            "font": "Georgia, serif",
+            "size": "18px",
+            "weight": "400",
+            "tracking": "0.9px",
+            "transform": "none"
+          },
+          {
+            "text": "Complete The Look",
+            "font": "Georgia, serif",
+            "size": "18px",
+            "weight": "400",
+            "tracking": "0.9px",
+            "transform": "none"
+          },
+          {
+            "text": "Related Products",
+            "font": "Georgia, serif",
+            "size": "18px",
+            "weight": "400",
+            "tracking": "0.9px",
+            "transform": "none"
+          }
+        ],
+        "bodyFont": {
+          "family": "proxima-nova, sans-serif",
+          "size": "12px"
+        },
+        "libraries": [
+          "Swiper",
+          "Shopify",
+          "Klaviyo"
+        ],
+        "scriptHosts": [
+          "7ce243a1e1a2.cdn4.forter.com",
+          "media.9gtb.com",
+          "searchanise-ef84.kxcdn.com",
+          "config.gorgias.chat",
+          "cdn.shopify.com",
+          "crossborder-integration.global-e.com",
+          "www.googletagmanager.com",
+          "connect.facebook.net",
+          "kith.com",
+          "shop.app",
+          "api.consentjs.datagrail.io",
+          "dashboard.heatmap.com",
+          "static.klaviyo.com",
+          "static-tracking.klaviyo.com",
+          "webservices.global-e.com",
+          "ajax.aspnetcdn.com",
+          "app.kiwisizing.com"
+        ],
+        "motion": {
+          "runningAnimations": 0,
+          "marquee": false,
+          "videoCount": 0,
+          "transitionsOnLinks": 0,
+          "cssScrollSnap": false,
+          "reducedMotionQuery": false
+        },
+        "headings": [
+          "&Kin Deer Print Ponyhair Vail Jacket",
+          "Complete The Look",
+          "Related Products",
+          "JOIN OUR LIST",
+          "LEARN",
+          "KITH",
+          "POLICIES",
+          "FOLLOW US"
+        ],
+        "title": "&Kin Deer Print Ponyhair Vail Jacket - Nougat – Kith",
+        "h1": "&Kin Deer Print Ponyhair Vail Jacket",
+        "bodyTextSample": "Skip to content NEW MENS WOMENS KIDS HOSPITALITY 0 Skip to product information HOME MENS KITH WINTER 2026 Kith Winter 2026 &Kin Deer Print Ponyhair Vail Jacket $2,250.00 COLOR: NOUGAT SIZE: VIEW SIZE GUIDE Size XS S M L XL XXL SELECT A SIZE Limited to 2 units per customer This product will ship in approximately 3-4 weeks. DESCRIPTION SIZE & FIT SHIPPING & RETURNS Editor's Note: The &Kin Deer Print Ponyhair Vail Jacket is crafted of all-over printed cowskin leather ponyhair, featuring a diamond-quilted lining, shearling collar, and a two-way zip-front closure. It is complete with secure zippere"
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": true,
+        "bgAfterScroll": "rgb(255, 255, 255)",
+        "backdropAfterScroll": "none",
+        "transform": "none"
+      },
+      "cart": {
+        "type": "drawer",
+        "width": 1440,
+        "freeShippingBar": false,
+        "upsells": true,
+        "text": "Skip to content NEW MENS WOMENS KIDS HOSPITALITY 0 Your Cart (0) Your cart is empty. Continue shopping. Sign In to see your cart or create an account. Recommended For You KITH ARCH LAUREL 3-PACK COTTON CREW SOCKS Color: Multi $40.00 ADD TO BAG KITH CORDUROY NOLAN TRUCKER HAT Color: Nocturnal $55.00 ADD TO BAG Skip to product information HOME MENS KITH WINTER 2026 Kith Winter 2026 &Kin Deer Print P",
+        "opened_via": "button[aria-label*='cart' i]:visible",
+        "navigated": false
+      },
+      "mobile": {
+        "nav_burger": true,
+        "bottomBar": false
+      }
+    }
+  }
+}

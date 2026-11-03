@@ -1,0 +1,815 @@
+{
+  "key": "dairyboy",
+  "group": "store",
+  "pages": {
+    "home": {
+      "url": "https://dairyboy.com/",
+      "status": 200,
+      "finalUrl": "https://dairyboy.com/",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/dairyboy__home__1440.jpg",
+        "screenshots/dairyboy__home__390.jpg"
+      ],
+      "data": {
+        "header": {
+          "tag": "COMPONENT-HEADER",
+          "position": "fixed",
+          "top": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "backdrop": "none",
+          "height": 111,
+          "zIndex": "100",
+          "sticky": true,
+          "transparent": true,
+          "glass": false
+        },
+        "nav": [
+          "Previous announcement",
+          "Visit us",
+          "Next announcement",
+          "Cart",
+          "SHOP ALL",
+          "BEST SELLERS",
+          "HOME",
+          "DB SPORT",
+          "TOPS",
+          "Sweatshirts & Hoodies",
+          "Sweaters",
+          "Shirts",
+          "Tanks",
+          "Outerwear",
+          "BOTTOMS",
+          "Sweatpants",
+          "Pants",
+          "Shorts",
+          "Skirts & Dresses",
+          "LOUNGEWEAR",
+          "Sleep Sets",
+          "Sleep Tops",
+          "Sleep Bottoms",
+          "Robes",
+          "Intimates",
+          "ACCESSORIES",
+          "Hats",
+          "Hair Accessories",
+          "Socks",
+          "Bags & Totes",
+          "Phone Cases",
+          "Keychains",
+          "EVERGREEN Shop the collection",
+          "PLAYFUL TRADITIONS Shop the collection"
+        ],
+        "hero": {
+          "video": false,
+          "images": 2,
+          "height": 802,
+          "vh": 89,
+          "text": "",
+          "carousel": false
+        },
+        "productCard": {
+          "classes": "product-card-media flex layout--center",
+          "imageRatio": null,
+          "imagesInCard": 2,
+          "hoverSwapLikely": true,
+          "quickAdd": false,
+          "swatches": false,
+          "badges": [
+            "Trending",
+            "Trending"
+          ],
+          "text": "Trending"
+        },
+        "productLinkCount": 20,
+        "filterSort": {
+          "filterEls": 0,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [],
+          "sizeGuide": false,
+          "accordions": [
+            "Cart"
+          ],
+          "deliveryCopy": [
+            "Free shipping on all domestic orders $175+",
+            "SHIPPING POLICY",
+            "RETURN POLICY",
+            "MAKE A RETURN"
+          ],
+          "crossSell": [],
+          "addToCart": [],
+          "stickyColumn": true
+        },
+        "footer": {
+          "headings": [
+            "Sign Up for Updates"
+          ],
+          "linkCount": 10,
+          "newsletter": true
+        },
+        "fonts": [
+          {
+            "value": "Monument Grotesk",
+            "count": 603
+          },
+          {
+            "value": "GT Alpina",
+            "count": 90
+          },
+          {
+            "value": "minimal-fa",
+            "count": 25
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 480
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 112
+          },
+          {
+            "value": "rgb(46, 26, 14)",
+            "count": 60
+          },
+          {
+            "value": "rgb(232, 230, 213)",
+            "count": 43
+          },
+          {
+            "value": "rgb(58, 58, 58)",
+            "count": 20
+          },
+          {
+            "value": "rgb(75, 68, 50)",
+            "count": 2
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgba(0, 0, 0, 0.8)",
+            "count": 25
+          },
+          {
+            "value": "rgb(46, 26, 14)",
+            "count": 4
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 4
+          },
+          {
+            "value": "color(srgb 0 0 0 / 0.1)",
+            "count": 2
+          },
+          {
+            "value": "rgba(255, 255, 255, 0.6)",
+            "count": 2
+          },
+          {
+            "value": "rgb(232, 232, 232)",
+            "count": 1
+          }
+        ],
+        "headingSample": [
+          {
+            "text": "HOME SWEET HOME",
+            "font": "\"Monument Grotesk\", sans-serif",
+            "size": "17px",
+            "weight": "500",
+            "tracking": "1px",
+            "transform": "uppercase"
+          },
+          {
+            "text": "PLAYFUL TRADITIONS",
+            "font": "\"Monument Grotesk\", sans-serif",
+            "size": "17px",
+            "weight": "500",
+            "tracking": "1px",
+            "transform": "uppercase"
+          },
+          {
+            "text": "NEW ARRIVALS",
+            "font": "\"Monument Grotesk\", sans-serif",
+            "size": "17px",
+            "weight": "500",
+            "tracking": "1px",
+            "transform": "uppercase"
+          }
+        ],
+        "bodyFont": {
+          "family": "\"Monument Grotesk\", sans-serif",
+          "size": "15px"
+        },
+        "libraries": [
+          "Shopify",
+          "Klaviyo"
+        ],
+        "scriptHosts": [
+          "www.googletagmanager.com",
+          "connect.facebook.net",
+          "scripts.clarity.ms",
+          "adsagentclientafd-b7hqhjdrf3fpeqh2.b01.azurefd.net",
+          "www.clarity.ms",
+          "dairyboy.com",
+          "static.shopmy.us",
+          "shop.app",
+          "cdn.shopify.com",
+          "static.klaviyo.com",
+          "d3hw6dc1ow8pp2.cloudfront.net",
+          "cdn-static.okendo.io",
+          "assets.visually.io",
+          "eu.acsbapp.com",
+          "static-tracking.klaviyo.com",
+          "shopify-widget.route.com",
+          "foursixty.com"
+        ],
+        "motion": {
+          "runningAnimations": 1,
+          "marquee": false,
+          "videoCount": 0,
+          "transitionsOnLinks": 39,
+          "cssScrollSnap": true,
+          "reducedMotionQuery": true
+        },
+        "headings": [
+          "TOPS",
+          "BOTTOMS",
+          "LOUNGEWEAR",
+          "ACCESSORIES",
+          "HOME SWEET HOME",
+          "PLAYFUL TRADITIONS",
+          "NEW ARRIVALS",
+          "ACCESSORIES",
+          "EVERGREEN",
+          "AS SEEN ON @DAIRYBOY",
+          "Sign Up for Updates"
+        ],
+        "title": "Dairy Boy",
+        "h1": "",
+        "bodyTextSample": "Accessibility Screen-Reader Guide, Feedback, and Issue Reporting | New window Free shipping on all domestic orders $175+ Visit us at our home on Nantucket ♡ SHOP ALL BEST SELLERS HOME DB SPORT TOPS Sweatshirts & Hoodies Sweaters Shirts Tanks Outerwear BOTTOMS Sweatpants Pants Shorts Skirts & Dresses LOUNGEWEAR Sleep Sets Sleep Tops Sleep Bottoms Robes Intimates ACCESSORIES Hats Hair Accessories Socks Bags & Totes Phone Cases Keychains EVERGREEN Shop the collection PLAYFUL TRADITIONS Shop the collection NEW ARRIVALS HOME SWEET HOME Shop the collection PLAYFUL TRADITIONS Shop the collection NEW "
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": true,
+        "bgAfterScroll": "rgba(0, 0, 0, 0)",
+        "backdropAfterScroll": "none",
+        "transform": "none"
+      },
+      "cart": {
+        "type": "drawer",
+        "width": 240,
+        "freeShippingBar": false,
+        "upsells": false,
+        "text": "EVERGREEN Shop the collection",
+        "opened_via": "button[aria-label*='cart' i]:visible",
+        "navigated": true
+      },
+      "mobile": {
+        "nav_burger": true,
+        "bottomBar": false
+      }
+    },
+    "collection": {
+      "url": "https://dairyboy.com/collections/best-sellers",
+      "status": 200,
+      "finalUrl": "https://dairyboy.com/collections/best-sellers",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/dairyboy__collection__1440.jpg",
+        "screenshots/dairyboy__collection__390.jpg"
+      ],
+      "data": {
+        "header": {
+          "tag": "COMPONENT-HEADER",
+          "position": "fixed",
+          "top": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "backdrop": "none",
+          "height": 111,
+          "zIndex": "100",
+          "sticky": true,
+          "transparent": true,
+          "glass": false
+        },
+        "nav": [
+          "Previous announcement",
+          "Visit us",
+          "Next announcement",
+          "Cart",
+          "SHOP ALL",
+          "BEST SELLERS",
+          "HOME",
+          "DB SPORT",
+          "TOPS",
+          "Sweatshirts & Hoodies",
+          "Sweaters",
+          "Shirts",
+          "Tanks",
+          "Outerwear",
+          "BOTTOMS",
+          "Sweatpants",
+          "Pants",
+          "Shorts",
+          "Skirts & Dresses",
+          "LOUNGEWEAR",
+          "Sleep Sets",
+          "Sleep Tops",
+          "Sleep Bottoms",
+          "Robes",
+          "Intimates",
+          "ACCESSORIES",
+          "Hats",
+          "Hair Accessories",
+          "Socks",
+          "Bags & Totes",
+          "Phone Cases",
+          "Keychains",
+          "EVERGREEN Shop the collection",
+          "PLAYFUL TRADITIONS Shop the collection"
+        ],
+        "hero": {
+          "video": false,
+          "images": 19,
+          "height": 817,
+          "vh": 91,
+          "text": "FILTER & SORT Trending The Fisherman's Daughter Sweater in B",
+          "carousel": false
+        },
+        "productCard": {
+          "classes": "product-card-media flex layout--center",
+          "imageRatio": null,
+          "imagesInCard": 2,
+          "hoverSwapLikely": true,
+          "quickAdd": false,
+          "swatches": false,
+          "badges": [
+            "Trending",
+            "Trending"
+          ],
+          "text": "Trending"
+        },
+        "productLinkCount": 32,
+        "filterSort": {
+          "filterEls": 54,
+          "sortEls": [
+            ""
+          ]
+        },
+        "pdp": {
+          "sizeButtons": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "sizeGuide": false,
+          "accordions": [
+            "Cart"
+          ],
+          "deliveryCopy": [
+            "Free shipping on all domestic orders $175+",
+            "SHIPPING POLICY",
+            "RETURN POLICY",
+            "MAKE A RETURN"
+          ],
+          "crossSell": [],
+          "addToCart": [],
+          "stickyColumn": false
+        },
+        "footer": {
+          "headings": [
+            "Sign Up for Updates"
+          ],
+          "linkCount": 10,
+          "newsletter": true
+        },
+        "fonts": [
+          {
+            "value": "Monument Grotesk",
+            "count": 561
+          },
+          {
+            "value": "GT Alpina",
+            "count": 82
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 484
+          },
+          {
+            "value": "rgb(46, 26, 14)",
+            "count": 90
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 48
+          },
+          {
+            "value": "rgb(58, 58, 58)",
+            "count": 20
+          },
+          {
+            "value": "rgb(38, 38, 44)",
+            "count": 1
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgb(241, 241, 241)",
+            "count": 7
+          },
+          {
+            "value": "rgb(46, 26, 14)",
+            "count": 5
+          },
+          {
+            "value": "color(srgb 0 0 0 / 0.1)",
+            "count": 5
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 5
+          },
+          {
+            "value": "rgba(255, 255, 255, 0.6)",
+            "count": 2
+          },
+          {
+            "value": "rgb(238, 238, 238)",
+            "count": 1
+          }
+        ],
+        "headingSample": [
+          {
+            "text": "Sign Up for Updates",
+            "font": "\"GT Alpina\", serif",
+            "size": "18px",
+            "weight": "400",
+            "tracking": "normal",
+            "transform": "none"
+          },
+          {
+            "text": "",
+            "font": "\"GT Alpina\", serif",
+            "size": "15px",
+            "weight": "400",
+            "tracking": "normal",
+            "transform": "none"
+          },
+          {
+            "text": "",
+            "font": "\"Monument Grotesk\", sans-serif",
+            "size": "13px",
+            "weight": "500",
+            "tracking": "1px",
+            "transform": "uppercase"
+          }
+        ],
+        "bodyFont": {
+          "family": "\"Monument Grotesk\", sans-serif",
+          "size": "15px"
+        },
+        "libraries": [
+          "Shopify",
+          "Klaviyo"
+        ],
+        "scriptHosts": [
+          "shopify-extension.getredo.com",
+          "cdn.rebuyengine.com",
+          "media.9gtb.com",
+          "config.gorgias.chat",
+          "shopify-widget.route.com",
+          "static.shareasale.com",
+          "scripts.clarity.ms",
+          "www.googletagmanager.com",
+          "connect.facebook.net",
+          "adsagentclientafd-b7hqhjdrf3fpeqh2.b01.azurefd.net",
+          "www.clarity.ms",
+          "dairyboy.com",
+          "static.shopmy.us",
+          "shop.app",
+          "cdn.shopify.com",
+          "static.klaviyo.com",
+          "d3hw6dc1ow8pp2.cloudfront.net",
+          "cdn-static.okendo.io",
+          "static-tracking.klaviyo.com",
+          "assets.visually.io",
+          "eu.acsbapp.com"
+        ],
+        "motion": {
+          "runningAnimations": 4,
+          "marquee": false,
+          "videoCount": 0,
+          "transitionsOnLinks": 45,
+          "cssScrollSnap": true,
+          "reducedMotionQuery": true
+        },
+        "headings": [
+          "TOPS",
+          "BOTTOMS",
+          "LOUNGEWEAR",
+          "ACCESSORIES",
+          "Sign Up for Updates"
+        ],
+        "title": "Best Sellers | Dairy Boy",
+        "h1": "",
+        "bodyTextSample": "Accessibility Screen-Reader Guide, Feedback, and Issue Reporting | New window Free shipping on all domestic orders $175+ Visit us at our home on Nantucket ♡ SHOP ALL BEST SELLERS HOME DB SPORT TOPS Sweatshirts & Hoodies Sweaters Shirts Tanks Outerwear BOTTOMS Sweatpants Pants Shorts Skirts & Dresses LOUNGEWEAR Sleep Sets Sleep Tops Sleep Bottoms Robes Intimates ACCESSORIES Hats Hair Accessories Socks Bags & Totes Phone Cases Keychains EVERGREEN Shop the collection PLAYFUL TRADITIONS Shop the collection FILTER & SORT Trending The Fisherman's Daughter Sweater in Bluepoint $108 Mia Lace Tank in S"
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": true,
+        "bgAfterScroll": "rgba(0, 0, 0, 0)",
+        "backdropAfterScroll": "none",
+        "transform": "none"
+      },
+      "mobile": {
+        "nav_burger": true,
+        "bottomBar": false
+      }
+    },
+    "product": {
+      "url": "https://dairyboy.com/products/the-fishermans-daughter-sweater-bluepoint",
+      "status": 200,
+      "finalUrl": "https://dairyboy.com/products/the-fishermans-daughter-sweater-bluepoint",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/dairyboy__product__1440.jpg",
+        "screenshots/dairyboy__product__390.jpg"
+      ],
+      "data": {
+        "header": {
+          "tag": "COMPONENT-HEADER",
+          "position": "fixed",
+          "top": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "backdrop": "none",
+          "height": 111,
+          "zIndex": "100",
+          "sticky": true,
+          "transparent": true,
+          "glass": false
+        },
+        "nav": [
+          "Previous announcement",
+          "Visit us",
+          "Next announcement",
+          "Cart",
+          "SHOP ALL",
+          "BEST SELLERS",
+          "HOME",
+          "DB SPORT",
+          "TOPS",
+          "Sweatshirts & Hoodies",
+          "Sweaters",
+          "Shirts",
+          "Tanks",
+          "Outerwear",
+          "BOTTOMS",
+          "Sweatpants",
+          "Pants",
+          "Shorts",
+          "Skirts & Dresses",
+          "LOUNGEWEAR",
+          "Sleep Sets",
+          "Sleep Tops",
+          "Sleep Bottoms",
+          "Robes",
+          "Intimates",
+          "ACCESSORIES",
+          "Hats",
+          "Hair Accessories",
+          "Socks",
+          "Bags & Totes",
+          "Phone Cases",
+          "Keychains",
+          "EVERGREEN Shop the collection",
+          "PLAYFUL TRADITIONS Shop the collection"
+        ],
+        "hero": {
+          "video": false,
+          "images": 39,
+          "height": 1735,
+          "vh": 193,
+          "text": "SWEATERS MODEL: Thalita is 5'9\" in a small THE FISHERMAN'S D",
+          "carousel": true
+        },
+        "productCard": {
+          "classes": "product-card-media flex layout--center",
+          "imageRatio": null,
+          "imagesInCard": 2,
+          "hoverSwapLikely": true,
+          "quickAdd": false,
+          "swatches": false,
+          "badges": [
+            "Trending",
+            "Trending"
+          ],
+          "text": "Trending"
+        },
+        "productLinkCount": 65,
+        "filterSort": {
+          "filterEls": 0,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [],
+          "sizeGuide": true,
+          "accordions": [
+            "Cart",
+            "SIZE GUIDE",
+            "+4 more"
+          ],
+          "deliveryCopy": [
+            "Free shipping on all domestic orders $175+",
+            "Our beloved fish sweater returns in our classic colors. Made in our Coastal Cotton Knit and finished with a special garment wash for an even",
+            "SHIPPING POLICY",
+            "RETURN POLICY",
+            "MAKE A RETURN"
+          ],
+          "crossSell": [
+            "COMPLETE THE LOOK",
+            "You may also like"
+          ],
+          "addToCart": [],
+          "stickyColumn": true
+        },
+        "footer": {
+          "headings": [
+            "Sign Up for Updates"
+          ],
+          "linkCount": 10,
+          "newsletter": true
+        },
+        "fonts": [
+          {
+            "value": "Monument Grotesk",
+            "count": 1025
+          },
+          {
+            "value": "GT Alpina",
+            "count": 244
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 1049
+          },
+          {
+            "value": "rgb(46, 26, 14)",
+            "count": 130
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 53
+          },
+          {
+            "value": "rgb(58, 58, 58)",
+            "count": 20
+          },
+          {
+            "value": "color(srgb 0.765686 0.765686 0.765686)",
+            "count": 12
+          },
+          {
+            "value": "rgb(44, 62, 80)",
+            "count": 3
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 15
+          },
+          {
+            "value": "rgb(241, 241, 241)",
+            "count": 13
+          },
+          {
+            "value": "rgba(255, 255, 255, 0.6)",
+            "count": 12
+          },
+          {
+            "value": "rgb(46, 26, 14)",
+            "count": 6
+          },
+          {
+            "value": "color(srgb 0 0 0 / 0.1)",
+            "count": 5
+          },
+          {
+            "value": "rgb(229, 229, 235)",
+            "count": 3
+          }
+        ],
+        "headingSample": [
+          {
+            "text": "THE FISHERMAN'S DAUGHTER SWEATER",
+            "font": "\"GT Alpina\", serif",
+            "size": "22px",
+            "weight": "400",
+            "tracking": "2px",
+            "transform": "uppercase"
+          },
+          {
+            "text": "COMPLETE THE LOOK",
+            "font": "\"Monument Grotesk\", sans-serif",
+            "size": "18px",
+            "weight": "500",
+            "tracking": "1px",
+            "transform": "uppercase"
+          },
+          {
+            "text": "Sign Up for Updates",
+            "font": "\"GT Alpina\", serif",
+            "size": "18px",
+            "weight": "400",
+            "tracking": "normal",
+            "transform": "none"
+          }
+        ],
+        "bodyFont": {
+          "family": "\"Monument Grotesk\", sans-serif",
+          "size": "15px"
+        },
+        "libraries": [
+          "Shopify",
+          "Klaviyo"
+        ],
+        "scriptHosts": [
+          "scripts.clarity.ms",
+          "www.googletagmanager.com",
+          "connect.facebook.net",
+          "www.clarity.ms",
+          "adsagentclientafd-b7hqhjdrf3fpeqh2.b01.azurefd.net",
+          "dairyboy.com",
+          "static.shopmy.us",
+          "shop.app",
+          "cdn.shopify.com",
+          "static.klaviyo.com",
+          "d3hw6dc1ow8pp2.cloudfront.net",
+          "cdn-static.okendo.io",
+          "static-tracking.klaviyo.com",
+          "assets.visually.io",
+          "eu.acsbapp.com",
+          "shopify-widget.route.com"
+        ],
+        "motion": {
+          "runningAnimations": 3,
+          "marquee": false,
+          "videoCount": 1,
+          "transitionsOnLinks": 61,
+          "cssScrollSnap": true,
+          "reducedMotionQuery": true
+        },
+        "headings": [
+          "TOPS",
+          "BOTTOMS",
+          "LOUNGEWEAR",
+          "ACCESSORIES",
+          "THE FISHERMAN'S DAUGHTER SWEATER",
+          "COLOR: BLUEPOINT",
+          "SELECT SIZE:",
+          "COMPLETE THE LOOK",
+          "You may also like",
+          "Sign Up for Updates"
+        ],
+        "title": "The Fisherman's Daughter Sweater - Bluepoint | Dairy Boy",
+        "h1": "THE FISHERMAN'S DAUGHTER SWEATER",
+        "bodyTextSample": "Accessibility Screen-Reader Guide, Feedback, and Issue Reporting | New window Free shipping on all domestic orders $175+ Visit us at our home on Nantucket ♡ SHOP ALL BEST SELLERS HOME DB SPORT TOPS Sweatshirts & Hoodies Sweaters Shirts Tanks Outerwear BOTTOMS Sweatpants Pants Shorts Skirts & Dresses LOUNGEWEAR Sleep Sets Sleep Tops Sleep Bottoms Robes Intimates ACCESSORIES Hats Hair Accessories Socks Bags & Totes Phone Cases Keychains EVERGREEN Shop the collection PLAYFUL TRADITIONS Shop the collection SWEATERS MODEL: Thalita is 5'9\" in a small THE FISHERMAN'S DAUGHTER SWEATER $108 129 REVIEWS"
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": true,
+        "bgAfterScroll": "rgba(0, 0, 0, 0)",
+        "backdropAfterScroll": "none",
+        "transform": "none"
+      },
+      "cart": {
+        "type": "drawer",
+        "width": 240,
+        "freeShippingBar": false,
+        "upsells": false,
+        "text": "EVERGREEN Shop the collection",
+        "opened_via": "button[aria-label*='cart' i]:visible",
+        "navigated": true
+      },
+      "mobile": {
+        "nav_burger": true,
+        "bottomBar": false
+      }
+    }
+  }
+}

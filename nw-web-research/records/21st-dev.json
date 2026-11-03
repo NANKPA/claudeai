@@ -1,0 +1,224 @@
+{
+  "key": "21st-dev",
+  "group": "design",
+  "pages": {
+    "home": {
+      "url": "https://21st.dev/",
+      "status": 200,
+      "finalUrl": "https://21st.dev/",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/21st-dev__home__1440.jpg",
+        "screenshots/21st-dev__home__390.jpg"
+      ],
+      "data": {
+        "header": {
+          "tag": "HEADER",
+          "position": "sticky",
+          "top": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "backdrop": "none",
+          "height": 56,
+          "zIndex": "50",
+          "sticky": true,
+          "transparent": true,
+          "glass": false
+        },
+        "nav": [
+          "21st home",
+          "Library",
+          "Product",
+          "Pricing",
+          "Search ⌘K",
+          "Log in",
+          "Get 21st free"
+        ],
+        "hero": {
+          "video": true,
+          "images": 50,
+          "height": 1755,
+          "vh": 195,
+          "text": "Just copy-paste real designs. Find components, copy prompts,",
+          "carousel": false
+        },
+        "productLinkCount": 0,
+        "filterSort": {
+          "filterEls": 14,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [],
+          "sizeGuide": false,
+          "accordions": [
+            "Library",
+            "Product"
+          ],
+          "deliveryCopy": [],
+          "crossSell": [],
+          "addToCart": [],
+          "stickyColumn": false
+        },
+        "footer": {
+          "headings": [],
+          "linkCount": 108,
+          "newsletter": false
+        },
+        "fonts": [
+          {
+            "value": "Inter",
+            "count": 1083
+          },
+          {
+            "value": "General Sans",
+            "count": 394
+          },
+          {
+            "value": "ui-monospace",
+            "count": 117
+          },
+          {
+            "value": "-apple-system",
+            "count": 114
+          },
+          {
+            "value": "ui-rounded",
+            "count": 8
+          }
+        ],
+        "textColours": [
+          {
+            "value": "oklch(0.975 0.002 286)",
+            "count": 966
+          },
+          {
+            "value": "oklch(0.68 0.008 286)",
+            "count": 209
+          },
+          {
+            "value": "oklch(0.485 0.291 264.121)",
+            "count": 94
+          },
+          {
+            "value": "oklab(0.975 0.000551275 -0.00192252 / 0.6)",
+            "count": 78
+          },
+          {
+            "value": "rgb(146, 146, 147)",
+            "count": 31
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 30
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "oklch(0.975 0.002 286 / 0.05)",
+            "count": 33
+          },
+          {
+            "value": "oklab(0.975 0.000551275 -0.00192252 / 0.14)",
+            "count": 8
+          },
+          {
+            "value": "oklch(1 0 0)",
+            "count": 8
+          },
+          {
+            "value": "oklch(0.115 0.002 286)",
+            "count": 6
+          },
+          {
+            "value": "oklch(0.975 0.002 286 / 0.08)",
+            "count": 6
+          },
+          {
+            "value": "oklch(0.158 0.003 286)",
+            "count": 6
+          }
+        ],
+        "headingSample": [
+          {
+            "text": "Just copy-paste real designs.",
+            "font": "Inter, \"Inter Fallback\", system-ui, sans-serif",
+            "size": "84.96px",
+            "weight": "700",
+            "tracking": "-4.248px",
+            "transform": "none"
+          },
+          {
+            "text": "Used by 4,547,402 builders. From indie makers to the world's",
+            "font": "Inter, \"Inter Fallback\", system-ui, sans-serif",
+            "size": "44px",
+            "weight": "500",
+            "tracking": "-0.968px",
+            "transform": "none"
+          },
+          {
+            "text": "More than components",
+            "font": "Inter, \"Inter Fallback\", system-ui, sans-serif",
+            "size": "46px",
+            "weight": "700",
+            "tracking": "-2.07px",
+            "transform": "none"
+          }
+        ],
+        "bodyFont": {
+          "family": "\"General Sans\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-s",
+          "size": "16px"
+        },
+        "libraries": [
+          "NextJS"
+        ],
+        "scriptHosts": [
+          "static.ads-twitter.com",
+          "connect.facebook.net",
+          "www.googletagmanager.com",
+          "21st.dev",
+          "clerk.21st.dev",
+          "cdn.tolt.io"
+        ],
+        "motion": {
+          "runningAnimations": 9,
+          "marquee": false,
+          "videoCount": 5,
+          "transitionsOnLinks": 121,
+          "cssScrollSnap": true,
+          "reducedMotionQuery": true
+        },
+        "headings": [
+          "Just copy-paste real designs.",
+          "Top today",
+          "New & noteworthy",
+          "Categories",
+          "Heroes that move",
+          "UI that ships",
+          "Used by 4,547,402 builders. From indie makers to the world's",
+          "Startups:",
+          "More than components",
+          "354 templates",
+          "958 themes",
+          "350 shaders",
+          "29,000 icons",
+          "138 apps"
+        ],
+        "title": "React Components, Templates & Themes — 12,000+ Crafted UI | 21st",
+        "h1": "Just copy-paste real designs.",
+        "bodyTextSample": "Library Product Pricing Search ⌘K Log in Get 21st free Just copy-paste real designs. Find components, copy prompts, and ship polished UI with your AI agent. Get 21st free Browse components Search ⌘ K Home Explore Components Themes Templates Apps New Icons New Video New Bookmarks Publish Top today The most saved components of the day View all 1 2 3 4 5 6 7 8 New & noteworthy The best components of the last month View all Categories All components Heroes and motion Animated heroes Hero sections 1.2K Shaders 593 Backgrounds 527 Gradients Footers UI components Buttons 1.7K AI chats 313 Cards & gri"
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": true,
+        "bgAfterScroll": "rgba(0, 0, 0, 0)",
+        "backdropAfterScroll": "none",
+        "transform": "none"
+      },
+      "cart": {
+        "type": "not found"
+      },
+      "mobile": {
+        "nav_burger": true,
+        "bottomBar": false
+      }
+    }
+  }
+}

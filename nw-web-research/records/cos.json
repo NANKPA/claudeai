@@ -1,0 +1,80 @@
+{
+  "key": "cos",
+  "group": "store",
+  "pages": {
+    "home": {
+      "url": "https://www.cos.com/en-gb/",
+      "status": 403,
+      "finalUrl": "https://www.cos.com/en-gb/",
+      "blocked": true,
+      "screenshots": [
+        "screenshots/cos__home__1440.jpg",
+        "screenshots/cos__home__390.jpg"
+      ],
+      "data": {
+        "productLinkCount": 0,
+        "filterSort": {
+          "filterEls": 0,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [],
+          "sizeGuide": false,
+          "accordions": [],
+          "deliveryCopy": [],
+          "crossSell": [],
+          "addToCart": [],
+          "stickyColumn": false
+        },
+        "fonts": [
+          {
+            "value": "Times New Roman",
+            "count": 3
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 3
+          }
+        ],
+        "bgColours": [],
+        "headingSample": [
+          {
+            "text": "Access Denied",
+            "font": "\"Times New Roman\"",
+            "size": "32px",
+            "weight": "700",
+            "tracking": "normal",
+            "transform": "none"
+          }
+        ],
+        "bodyFont": {
+          "family": "\"Times New Roman\"",
+          "size": "16px"
+        },
+        "libraries": [],
+        "scriptHosts": [],
+        "motion": {
+          "runningAnimations": 0,
+          "marquee": false,
+          "videoCount": 0,
+          "transitionsOnLinks": 0,
+          "cssScrollSnap": false,
+          "reducedMotionQuery": false
+        },
+        "headings": [
+          "Access Denied"
+        ],
+        "title": "Access Denied",
+        "h1": "Access Denied",
+        "bodyTextSample": "Access Denied You don't have permission to access \"http://www.cos.com/en-gb/\" on this server. Reference #18.1f847b5c.1793708143.6df5a831 https://errors.edgesuite.net/18.1f847b5c.1793708143.6df5a831"
+      },
+      "headerOnScroll": null,
+      "mobile": {
+        "nav_burger": false,
+        "bottomBar": false
+      }
+    }
+  }
+}

@@ -1,0 +1,720 @@
+{
+  "key": "acnestudios",
+  "group": "store",
+  "pages": {
+    "home": {
+      "url": "https://www.acnestudios.com/uk/en/home",
+      "status": 200,
+      "finalUrl": "https://www.acnestudios.com/uk/en/home",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/acnestudios__home__1440.jpg",
+        "screenshots/acnestudios__home__390.jpg"
+      ],
+      "data": {
+        "header": {
+          "tag": "HEADER",
+          "position": "sticky",
+          "top": "0px",
+          "bg": "rgb(255, 255, 255)",
+          "backdrop": "none",
+          "height": 60,
+          "zIndex": "101",
+          "sticky": true,
+          "transparent": false,
+          "glass": false
+        },
+        "nav": [
+          "WOMAN",
+          "MAN",
+          "DENIM",
+          "BAGS",
+          "SCARVES",
+          "SEARCH",
+          "HELP",
+          "ACCOUNT",
+          "00"
+        ],
+        "hero": {
+          "video": false,
+          "images": 5,
+          "height": 1080,
+          "vh": 120,
+          "text": "ACNE STUDIOS WOMEN'S OUTERWEAR WOMEN'S OUTERWEAR > SHOP MEN'",
+          "carousel": false
+        },
+        "productCard": {
+          "classes": "",
+          "imageRatio": null,
+          "imagesInCard": 1,
+          "hoverSwapLikely": false,
+          "quickAdd": false,
+          "swatches": false,
+          "badges": [],
+          "text": "Powered by OneTrust Opens in a new Tab"
+        },
+        "productLinkCount": 1,
+        "filterSort": {
+          "filterEls": 0,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [
+            "Next"
+          ],
+          "sizeGuide": false,
+          "accordions": [],
+          "deliveryCopy": [
+            "FREE SHIPPING & RETURNS",
+            "Fast delivery and easy returns or exchanges on all orders",
+            "Register a return",
+            "SHIPPING TO UNITED KINGDOM (ENGLISH)"
+          ],
+          "crossSell": [],
+          "addToCart": [],
+          "stickyColumn": true
+        },
+        "footer": {
+          "headings": [
+            "NEWSLETTER",
+            "CONTACT US",
+            "HELP",
+            "CLIENT SERVICES",
+            "COMPANY"
+          ],
+          "linkCount": 25,
+          "newsletter": true
+        },
+        "fonts": [
+          {
+            "value": "Helvetica Now Text",
+            "count": 243
+          },
+          {
+            "value": "Helvetica Monospaced Pro",
+            "count": 21
+          },
+          {
+            "value": "Helvetica Now Micro",
+            "count": 2
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 193
+          },
+          {
+            "value": "rgb(0, 24, 168)",
+            "count": 60
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 6
+          },
+          {
+            "value": "rgb(242, 242, 242)",
+            "count": 2
+          },
+          {
+            "value": "rgb(107, 107, 107)",
+            "count": 2
+          },
+          {
+            "value": "rgb(0, 119, 1)",
+            "count": 2
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 4
+          },
+          {
+            "value": "rgb(247, 247, 247)",
+            "count": 1
+          }
+        ],
+        "headingSample": [
+          {
+            "text": "ACNE STUDIOS",
+            "font": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+            "size": "12px",
+            "weight": "400",
+            "tracking": "0.3px",
+            "transform": "uppercase"
+          },
+          {
+            "text": "DISCOVER MORE",
+            "font": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+            "size": "12px",
+            "weight": "400",
+            "tracking": "0.3px",
+            "transform": "uppercase"
+          },
+          {
+            "text": "NEWS",
+            "font": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+            "size": "12px",
+            "weight": "400",
+            "tracking": "0.3px",
+            "transform": "uppercase"
+          }
+        ],
+        "bodyFont": {
+          "family": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+          "size": "12px"
+        },
+        "libraries": [
+          "jQuery"
+        ],
+        "scriptHosts": [
+          "beacon.riskified.com",
+          "eu3-api.eng.bloomreach.com",
+          "analytics.tiktok.com",
+          "connect.facebook.net",
+          "sgtm.acnestudios.com",
+          "www.googletagmanager.com",
+          "www.gstatic.com",
+          "www.acnestudios.com",
+          "cdn.cookielaw.org",
+          "www.recaptcha.net",
+          "cdn.portal-backend.prod.qualibooth.com",
+          "tag.dema.ai",
+          "rum.corewebvitals.io",
+          "cdn.cquotient.com",
+          "static.cloudflareinsights.com",
+          "tracker.dema.ai"
+        ],
+        "motion": {
+          "runningAnimations": 0,
+          "marquee": false,
+          "videoCount": 0,
+          "transitionsOnLinks": 0,
+          "cssScrollSnap": true,
+          "reducedMotionQuery": false
+        },
+        "headings": [
+          "ACNE STUDIOS",
+          "DISCOVER MORE",
+          "NEWS",
+          "NEWSLETTER",
+          "CONTACT US",
+          "HELP",
+          "CLIENT SERVICES",
+          "COMPANY"
+        ],
+        "title": "Acne Studios - Shop the official site",
+        "h1": "ACNE STUDIOS",
+        "bodyTextSample": "Skip to navigation Skip to main content Skip to footer WOMAN MAN DENIM BAGS SCARVES SEARCH HELP ACCOUNT 00 ACNE STUDIOS WOMEN'S OUTERWEAR WOMEN'S OUTERWEAR > SHOP MEN'S OUTERWEAR MEN'S OUTERWEAR > SHOP BAGS BAGS > SHOP DENIM DENIM > SHOP WOMEN'S NEW ARRIVALS WOMEN'S NEW ARRIVALS > SHOP MEN'S NEW ARRIVALS MEN'S NEW ARRIVALS > SHOP DISCOVER MORE WOMEN'S JEANS BAGS OUTERWEAR MEN'S JEANS NEWS The latest from Acne Studios. New editions of Acne Paper, books, exhibitions, store openings and collaborations — the cultural happenings of the house. To celebrate three decades, intimate portraits by Nan Go"
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": true,
+        "bgAfterScroll": "rgb(255, 255, 255)",
+        "backdropAfterScroll": "none",
+        "transform": "none"
+      },
+      "cart": {
+        "type": "drawer",
+        "width": 1440,
+        "freeShippingBar": false,
+        "upsells": false,
+        "text": "CLOSE ALL BAGS View all All Bag Lines FAMILY Camero Multipocket Musubi STYLE View all Top Handle Bags Shoulder Bags Backpacks Crossbody Bags Totes Micro Bags Small Leather Goods",
+        "opened_via": "button[aria-label*='bag' i]:visible",
+        "navigated": true
+      },
+      "mobile": {
+        "nav_burger": true,
+        "bottomBar": false
+      }
+    },
+    "collection": {
+      "url": "https://www.acnestudios.com/uk/en/woman/clothing/",
+      "status": 200,
+      "finalUrl": "https://www.acnestudios.com/uk/en/woman/clothing/",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/acnestudios__collection__1440.jpg",
+        "screenshots/acnestudios__collection__390.jpg"
+      ],
+      "data": {
+        "header": {
+          "tag": "HEADER",
+          "position": "sticky",
+          "top": "0px",
+          "bg": "rgb(255, 255, 255)",
+          "backdrop": "none",
+          "height": 60,
+          "zIndex": "101",
+          "sticky": true,
+          "transparent": false,
+          "glass": false
+        },
+        "nav": [
+          "WOMAN",
+          "MAN",
+          "DENIM",
+          "BAGS",
+          "SCARVES",
+          "SEARCH",
+          "HELP",
+          "ACCOUNT",
+          "00"
+        ],
+        "hero": {
+          "video": false,
+          "images": 166,
+          "height": 4428,
+          "vh": 492,
+          "text": "Clothing Jeans Outerwear Sweatshirts Knitwear Trousers T-shi",
+          "carousel": true
+        },
+        "productCard": {
+          "classes": "",
+          "imageRatio": null,
+          "imagesInCard": 1,
+          "hoverSwapLikely": false,
+          "quickAdd": false,
+          "swatches": false,
+          "badges": [],
+          "text": "Powered by OneTrust Opens in a new Tab"
+        },
+        "productLinkCount": 1,
+        "filterSort": {
+          "filterEls": 1,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [],
+          "sizeGuide": false,
+          "accordions": [],
+          "deliveryCopy": [
+            "FREE SHIPPING & RETURNS",
+            "Fast delivery and easy returns or exchanges on all orders",
+            "Register a return",
+            "SHIPPING TO UNITED KINGDOM (ENGLISH)"
+          ],
+          "crossSell": [],
+          "addToCart": [],
+          "stickyColumn": false
+        },
+        "footer": {
+          "headings": [
+            "NEWSLETTER",
+            "CONTACT US",
+            "HELP",
+            "CLIENT SERVICES",
+            "COMPANY"
+          ],
+          "linkCount": 25,
+          "newsletter": true
+        },
+        "fonts": [
+          {
+            "value": "Helvetica Now Text",
+            "count": 836
+          },
+          {
+            "value": "Helvetica Monospaced Pro",
+            "count": 57
+          },
+          {
+            "value": "Helvetica Now Micro",
+            "count": 2
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 489
+          },
+          {
+            "value": "rgb(0, 24, 168)",
+            "count": 322
+          },
+          {
+            "value": "rgb(107, 107, 107)",
+            "count": 74
+          },
+          {
+            "value": "rgb(242, 242, 242)",
+            "count": 4
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 3
+          },
+          {
+            "value": "rgb(0, 119, 1)",
+            "count": 2
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgb(242, 242, 242)",
+            "count": 48
+          },
+          {
+            "value": "rgb(247, 247, 247)",
+            "count": 38
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 8
+          },
+          {
+            "value": "rgb(194, 194, 194)",
+            "count": 1
+          },
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 1
+          }
+        ],
+        "headingSample": [
+          {
+            "text": "WOMEN'S CLOTHING",
+            "font": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+            "size": "12px",
+            "weight": "400",
+            "tracking": "0.3px",
+            "transform": "uppercase"
+          },
+          {
+            "text": "CROPPED LEATHER TRENCH COAT",
+            "font": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+            "size": "12px",
+            "weight": "400",
+            "tracking": "0.3px",
+            "transform": "uppercase"
+          },
+          {
+            "text": "LEATHER BIKER JACKET",
+            "font": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+            "size": "12px",
+            "weight": "400",
+            "tracking": "0.3px",
+            "transform": "uppercase"
+          }
+        ],
+        "bodyFont": {
+          "family": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+          "size": "12px"
+        },
+        "libraries": [
+          "jQuery"
+        ],
+        "scriptHosts": [
+          "beacon.riskified.com",
+          "www.gstatic.com",
+          "www.googletagmanager.com",
+          "sgtm.acnestudios.com",
+          "www.acnestudios.com",
+          "cdn.cookielaw.org",
+          "www.recaptcha.net",
+          "cdn.cquotient.com",
+          "static.cloudflareinsights.com"
+        ],
+        "motion": {
+          "runningAnimations": 0,
+          "marquee": false,
+          "videoCount": 0,
+          "transitionsOnLinks": 0,
+          "cssScrollSnap": true,
+          "reducedMotionQuery": false
+        },
+        "headings": [
+          "WOMEN'S CLOTHING",
+          "CROPPED LEATHER TRENCH COAT",
+          "LEATHER BIKER JACKET",
+          "LEATHER BLOUSON JACKET",
+          "LEATHER BLOUSON",
+          "SHEARLING BOMBER JACKET",
+          "SUEDE BOMBER JACKET",
+          "CROPPED LEATHER TRENCH COAT",
+          "LEATHER SHEARLING DUFFLE COAT",
+          "LEATHER BOMBER JACKET",
+          "SHEARLING BIKER JACKET",
+          "LEATHER TRENCH COAT",
+          "LEATHER BIKER JACKET",
+          "LEATHER BIKER JACKET",
+          "LEATHER BOMBER JACKET",
+          "LEATHER LOGO BLOUSON",
+          "LIGHTWEIGHT NYLON JACKET",
+          "JACKET WITH WHITE 1996 LOGO",
+          "CASHMERE JACKET WITH HOOD",
+          "SHINY DOWN JACKET",
+          "LIGHTWEIGHT NYLON JACKET",
+          "WASHED CANVAS BLOUSON JACKET",
+          "CROPPED DENIM JACKET",
+          "LAYERED TWILL JACKET",
+          "CASHMERE JACKET WITH HOOD",
+          "WOOL JACKET",
+          "TECHNICAL JACKET WITH LOGO",
+          "WAXED CANVAS BLOUSON JACKET",
+          "SATIN-WOOL BOMBER JACKET",
+          "NEWSLETTER",
+          "CONTACT US",
+          "HELP",
+          "CLIENT SERVICES",
+          "COMPANY"
+        ],
+        "title": "Acne Studios - Clothing",
+        "h1": "WOMEN'S CLOTHING",
+        "bodyTextSample": "Skip to navigation Skip to main content Skip to footer WOMAN MAN DENIM BAGS SCARVES SEARCH HELP ACCOUNT 00 Clothing Jeans Outerwear Sweatshirts Knitwear Trousers T-shirts Shirts & Blouses Dresses Suit Jackets Shorts Skirts WOMEN'S CLOTHING 389 items FILTER CROPPED LEATHER TRENCH COAT CROPPED LEATHER TRENCH COAT CURRENT COLOUR: DARK BROWN PRICE: £2,300. £2,300 , 2 Colours LEATHER BIKER JACKET LEATHER BIKER JACKET CURRENT COLOUR: BLACK PRICE: £2,400. £2,400 LEATHER BLOUSON JACKET LEATHER BLOUSON JACKET CURRENT COLOUR: DARK BROWN PRICE: £2,100. £2,100 , 2 Colours LEATHER BLOUSON LEATHER BLOUSON C"
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": true,
+        "bgAfterScroll": "rgb(255, 255, 255)",
+        "backdropAfterScroll": "none",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      "mobile": {
+        "nav_burger": true,
+        "bottomBar": false
+      }
+    },
+    "product": {
+      "url": "https://www.acnestudios.com/uk/en/cropped-leather-trench-coat-dark-brown/A70196-ADM.html?g=woman",
+      "status": 200,
+      "finalUrl": "https://www.acnestudios.com/uk/en/cropped-leather-trench-coat-dark-brown/A70196-ADM.html?g=woman",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/acnestudios__product__1440.jpg",
+        "screenshots/acnestudios__product__390.jpg"
+      ],
+      "data": {
+        "header": {
+          "tag": "HEADER",
+          "position": "sticky",
+          "top": "0px",
+          "bg": "rgb(255, 255, 255)",
+          "backdrop": "none",
+          "height": 60,
+          "zIndex": "101",
+          "sticky": true,
+          "transparent": false,
+          "glass": false
+        },
+        "nav": [
+          "WOMAN",
+          "MAN",
+          "DENIM",
+          "BAGS",
+          "SCARVES",
+          "SEARCH",
+          "HELP",
+          "ACCOUNT",
+          "00"
+        ],
+        "hero": {
+          "video": false,
+          "images": 20,
+          "height": 8371,
+          "vh": 930,
+          "text": "Clothing Outerwear Cropped leather trench coat CROPPED LEATH",
+          "carousel": true
+        },
+        "productCard": {
+          "classes": "",
+          "imageRatio": null,
+          "imagesInCard": 1,
+          "hoverSwapLikely": false,
+          "quickAdd": false,
+          "swatches": false,
+          "badges": [],
+          "text": "Powered by OneTrust Opens in a new Tab"
+        },
+        "productLinkCount": 1,
+        "filterSort": {
+          "filterEls": 0,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [],
+          "sizeGuide": true,
+          "accordions": [
+            "PRODUCT DESCRIPTION SHOW MORE"
+          ],
+          "deliveryCopy": [
+            "FREE DELIVERY & RETURNS ENTER POSTAL CODE",
+            "Estimated delivery within 2-4 business days. Incl. import duties.",
+            "FREE SHIPPING & RETURNS",
+            "Fast delivery and easy returns or exchanges on all orders",
+            "Register a return",
+            "SHIPPING TO UNITED KINGDOM (ENGLISH)"
+          ],
+          "crossSell": [
+            "RECOMMENDED"
+          ],
+          "addToCart": [
+            "ADD TO BAG"
+          ],
+          "stickyColumn": false
+        },
+        "footer": {
+          "headings": [
+            "NEWSLETTER",
+            "CONTACT US",
+            "HELP",
+            "CLIENT SERVICES",
+            "COMPANY"
+          ],
+          "linkCount": 25,
+          "newsletter": true
+        },
+        "fonts": [
+          {
+            "value": "Helvetica Now Text",
+            "count": 301
+          },
+          {
+            "value": "Helvetica Monospaced Pro",
+            "count": 37
+          },
+          {
+            "value": "Helvetica Now Micro",
+            "count": 3
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 170
+          },
+          {
+            "value": "rgba(0, 0, 0, 0)",
+            "count": 85
+          },
+          {
+            "value": "rgb(0, 24, 168)",
+            "count": 68
+          },
+          {
+            "value": "rgb(107, 107, 107)",
+            "count": 8
+          },
+          {
+            "value": "rgb(242, 242, 242)",
+            "count": 4
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 3
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 19
+          },
+          {
+            "value": "rgb(247, 247, 247)",
+            "count": 7
+          },
+          {
+            "value": "rgb(242, 242, 242)",
+            "count": 1
+          },
+          {
+            "value": "rgb(245, 245, 245)",
+            "count": 1
+          },
+          {
+            "value": "rgb(0, 24, 168)",
+            "count": 1
+          }
+        ],
+        "headingSample": [
+          {
+            "text": "CROPPED LEATHER TRENCH COAT",
+            "font": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+            "size": "12px",
+            "weight": "400",
+            "tracking": "0.3px",
+            "transform": "uppercase"
+          },
+          {
+            "text": "Current colour: Dark brown",
+            "font": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+            "size": "12px",
+            "weight": "400",
+            "tracking": "0.3px",
+            "transform": "none"
+          },
+          {
+            "text": "Other colours",
+            "font": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+            "size": "12px",
+            "weight": "400",
+            "tracking": "0.3px",
+            "transform": "none"
+          }
+        ],
+        "bodyFont": {
+          "family": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+          "size": "12px"
+        },
+        "libraries": [
+          "jQuery"
+        ],
+        "scriptHosts": [
+          "beacon.riskified.com",
+          "www.gstatic.com",
+          "www.googletagmanager.com",
+          "sgtm.acnestudios.com",
+          "www.acnestudios.com",
+          "cdn.cookielaw.org",
+          "www.recaptcha.net",
+          "cdn.cquotient.com",
+          "static.cloudflareinsights.com"
+        ],
+        "motion": {
+          "runningAnimations": 3,
+          "marquee": false,
+          "videoCount": 0,
+          "transitionsOnLinks": 0,
+          "cssScrollSnap": true,
+          "reducedMotionQuery": false
+        },
+        "headings": [
+          "CROPPED LEATHER TRENCH COAT",
+          "Current colour: Dark brown",
+          "Other colours",
+          "Size",
+          "Product description",
+          "Product details",
+          "Product information",
+          "RECOMMENDED",
+          "NEWSLETTER",
+          "CONTACT US",
+          "HELP",
+          "CLIENT SERVICES",
+          "COMPANY"
+        ],
+        "title": "Acne Studios - Cropped leather trench coat - Dark brown",
+        "h1": "CROPPED LEATHER TRENCH COAT",
+        "bodyTextSample": "Skip to navigation Skip to main content Skip to footer WOMAN MAN DENIM BAGS SCARVES SEARCH HELP ACCOUNT 00 Clothing Outerwear Cropped leather trench coat CROPPED LEATHER TRENCH COAT PRICE: £2,300. £2,300 Current colour: Dark brown Other colours Size guide Size 32 34 36 38 40 42 ADD TO BAG WISHLIST FREE DELIVERY & RETURNS ENTER POSTAL CODE Estimated delivery within 2-4 business days. Incl. import duties. COMPLIMENTARY GIFTWRAPPING Available at checkout PICK UP IN STORE Available for pick up within 1-2 business days Product description Double-breasted trench coat crafted from full-grain leather "
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": true,
+        "bgAfterScroll": "rgb(255, 255, 255)",
+        "backdropAfterScroll": "none",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      "cart": {
+        "type": "drawer",
+        "width": 1440,
+        "freeShippingBar": false,
+        "upsells": false,
+        "text": "CLOSE ALL BAGS View all All Bag Lines FAMILY Camero Multipocket Musubi STYLE View all Top Handle Bags Shoulder Bags Backpacks Crossbody Bags Totes Micro Bags Small Leather Goods",
+        "opened_via": "button[aria-label*='bag' i]:visible",
+        "navigated": true
+      },
+      "mobile": {
+        "nav_burger": true,
+        "bottomBar": false
+      }
+    }
+  }
+}

@@ -1,0 +1,687 @@
+{
+  "key": "palace",
+  "group": "store",
+  "pages": {
+    "home": {
+      "url": "https://shop.palaceskateboards.com/",
+      "status": 200,
+      "finalUrl": "https://palaceskateboards.com/collections/all",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/palace__home__1440.jpg",
+        "screenshots/palace__home__390.jpg"
+      ],
+      "data": {
+        "header": {
+          "tag": "NAV",
+          "position": "sticky",
+          "top": "0px",
+          "bg": "rgb(255, 255, 255)",
+          "backdrop": "none",
+          "height": 139,
+          "zIndex": "30",
+          "sticky": true,
+          "transparent": false,
+          "glass": false
+        },
+        "nav": [
+          "ALL",
+          "NEW",
+          "JACKETS",
+          "KNITWEAR",
+          "SHIRTING",
+          "TOPS",
+          "BOTTOMS",
+          "SHORTS",
+          "TRACKSUITS",
+          "HOODS",
+          "SWEATSHIRTS",
+          "LONGSLEEVES",
+          "T-SHIRTS",
+          "HATS",
+          "UNDERWEAR",
+          "FOOTWEAR",
+          "BAGS",
+          "ACCESSORIES",
+          "HARDWARE"
+        ],
+        "hero": {
+          "video": false,
+          "images": 60,
+          "height": 2575,
+          "vh": 286,
+          "text": "ALL NEW JACKETS KNITWEAR SHIRTING TOPS BOTTOMS SHORTS TRACKS",
+          "carousel": false
+        },
+        "productCard": {
+          "classes": "",
+          "imageRatio": 1,
+          "imagesInCard": 1,
+          "hoverSwapLikely": false,
+          "quickAdd": false,
+          "swatches": false,
+          "badges": [],
+          "text": "PALACE NIKE MANOR PLACE JACKET BLACK SOLD OUT"
+        },
+        "productLinkCount": 60,
+        "filterSort": {
+          "filterEls": 60,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [],
+          "sizeGuide": false,
+          "accordions": [
+            "WEB SHOP",
+            "SHOPS",
+            "ADVICE",
+            "CART",
+            "FILTER"
+          ],
+          "deliveryCopy": [
+            "DELIVERY INFORMATION",
+            "RETURNS INFORMATION"
+          ],
+          "crossSell": [],
+          "addToCart": [],
+          "stickyColumn": false
+        },
+        "footer": {
+          "headings": [
+            "DO WATCH THAT",
+            "BORING STUFF",
+            "WEB SHOPS",
+            "MANOR PLACE",
+            "MAILING LIST",
+            "© PALACE SKATEBOARDS LIMITED 2026"
+          ],
+          "linkCount": 15,
+          "newsletter": true
+        },
+        "fonts": [
+          {
+            "value": "Neue Helvetica W01",
+            "count": 1283
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 1232
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 26
+          },
+          {
+            "value": "rgb(196, 196, 196)",
+            "count": 18
+          },
+          {
+            "value": "rgb(154, 154, 154)",
+            "count": 4
+          },
+          {
+            "value": "rgb(59, 59, 59)",
+            "count": 2
+          },
+          {
+            "value": "rgb(101, 101, 101)",
+            "count": 1
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgb(245, 245, 245)",
+            "count": 60
+          },
+          {
+            "value": "oklab(0 0 0 / 0)",
+            "count": 60
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 3
+          },
+          {
+            "value": "rgb(228, 228, 228)",
+            "count": 3
+          },
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 2
+          }
+        ],
+        "headingSample": [],
+        "bodyFont": {
+          "family": "\"Neue Helvetica W01\", \"Helvetica Neue\", Helvetica, Arial, ui-sans-serif, sans-se",
+          "size": "16px"
+        },
+        "libraries": [
+          "Shopify"
+        ],
+        "scriptHosts": [
+          "www.googletagmanager.com",
+          "cdn.shopify.com"
+        ],
+        "motion": {
+          "runningAnimations": 0,
+          "marquee": false,
+          "videoCount": 0,
+          "transitionsOnLinks": 37,
+          "cssScrollSnap": true,
+          "reducedMotionQuery": false
+        },
+        "headings": [
+          "PALACE NIKE MANOR PLACE JACKET BLACK",
+          "PALACE NIKE MANOR PLACE TRACK JOGGER BLACK",
+          "PALACE NIKE MANOR PLACE JACKET TEAL",
+          "PALACE NIKE MANOR PLACE TRACK JOGGER TEAL",
+          "PALACE NIKE MANOR PLACE TRACKSUIT JACKET BLACK",
+          "PALACE NIKE MANOR PLACE SHORT BLACK",
+          "PALACE NIKE MANOR PLACE TRACKSUIT JACKET TEAL",
+          "PALACE NIKE MANOR PLACE SHORT TEAL",
+          "PALACE NIKE MANOR PLACE PANELLED HOOD BLACK",
+          "PALACE NIKE MANOR PLACE PANELLED HOOD TEAL",
+          "PALACE NIKE TRI-SWOOSH HOOD BLACK",
+          "PALACE NIKE TRI-SWOOSH HOOD GREY",
+          "PALACE NIKE TRI-SWOOSH HOOD WHITE",
+          "PALACE NIKE MANOR PLACE LONGSLEEVE JERSEY ORANGE",
+          "PALACE NIKE MANOR PLACE JERSEY TEAL",
+          "PALACE NIKE MANOR PLACE JERSEY BLACK",
+          "PALACE NIKE MANOR PLACE T-SHIRT TEAL",
+          "PALACE NIKE MANOR PLACE T-SHIRT BLACK",
+          "PALACE NIKE TRI-SWOOSH T-SHIRT GREY",
+          "PALACE NIKE TRI-SWOOSH T-SHIRT WHITE",
+          "PALACE NIKE TRI-SWOOSH T-SHIRT BLACK",
+          "PALACE NIKE MANOR PLACE RUNNING HAT TEAL",
+          "PALACE NIKE MANOR PLACE RUNNING HAT BLACK",
+          "PALACE NIKE MANOR PLACE BEANIE TEAL",
+          "PALACE NIKE MANOR PLACE BEANIE BLACK",
+          "SHEEPSKIN FLYING JACKET BROWN",
+          "PALACE AVIREX JACKET BLACK",
+          "BETTY BOOP VARSITY JACKET BROWN",
+          "BETTY BOOP VARSITY JACKET NAVY",
+          "CARAVAGGIO JACKET",
+          "PALACE SOUTH2 WEST8 RIVER TREK JACKET OLIVE CAMO",
+          "DASCAR JACKET REALTREE EDGE BLUE",
+          "DASCAR JACKET REALTREE EDGE CHERRY",
+          "DASCAR JACKET BLACK",
+          "10 OZ HOODED CANVAS JACKET BROWN",
+          "10 OZ HOODED CANVAS JACKET BLACK",
+          "10 OZ HOODED CANVAS JACKET NAVY / BLUE",
+          "DANKE JACKET REALTREE APX",
+          "DANKE JACKET BLACK",
+          "DANKE JACKET NAVY",
+          "BIG RIPSTOP PUFFA JACKET BLACK",
+          "BIG RIPSTOP PUFFA JACKET OLIVE",
+          "BIG RIPSTOP PUFFA JACKET BLACK WATCH",
+          "BIG RIPSTOP PUFFA JACKET NAVY",
+          "HIGHWAY TO HEAVEN JACKET PINK",
+          "HIGHWAY TO HEAVEN JACKET BLACK",
+          "PERTEX SQUARED JACKET ARMY GREEN",
+          "PERTEX SQUARED JACKET BLACK",
+          "PERTEX SQUARED JACKET NAVY",
+          "PERTEX TRI NET JACKET GREEN",
+          "PERTEX TRI NET JACKET BLACK",
+          "PERTEX TRI NET JACKET BLUE",
+          "RECON JACKET BLACK",
+          "RECON JACKET NAVY",
+          "RECON JACKET REALTREE XTREME",
+          "BIG RIPSTOP JACKET NAVY",
+          "BIG RIPSTOP JACKET ARMY OLIVE",
+          "BIG RIPSTOP JACKET BLACK",
+          "POLARTEC 200 HOODED JACKET FUZZY PINK",
+          "POLARTEC 200 HOODED JACKET BLACK"
+        ],
+        "title": "ALL | PALACE SKATEBOARDS",
+        "h1": "WEB SHOP SHOPS ADVICE CART ALL NEW JACKETS KNITWEAR SHIRTING",
+        "bodyTextSample": "WEB SHOP SHOPS ADVICE CART ALL NEW JACKETS KNITWEAR SHIRTING TOPS BOTTOMS SHORTS TRACKSUITS HOODS SWEATSHIRTS LONGSLEEVES T-SHIRTS HATS UNDERWEAR FOOTWEAR BAGS ACCESSORIES HARDWARE PALACE NIKE MANOR PLACE JACKET BLACK SOLD OUT ADD TO CART PALACE NIKE MANOR PLACE TRACK JOGGER BLACK £158 PALACE NIKE MANOR PLACE JACKET TEAL SOLD OUT ADD TO CART PALACE NIKE MANOR PLACE TRACK JOGGER TEAL £158 PALACE NIKE MANOR PLACE TRACKSUIT JACKET BLACK SOLD OUT ADD TO CART PALACE NIKE MANOR PLACE SHORT BLACK £108 PALACE NIKE MANOR PLACE TRACKSUIT JACKET TEAL SOLD OUT ADD TO CART PALACE NIKE MANOR PLACE SHORT TEA"
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": true,
+        "bgAfterScroll": "rgba(0, 0, 0, 0)",
+        "backdropAfterScroll": "none",
+        "transform": "none"
+      },
+      "cart": {
+        "type": "page",
+        "text": "WEB SHOP\nSHOPS\nADVICE\nCART\n\nYOUR CART IS CURRENTLY EMPTY.\n\nCONTINUE SHOPPING\nDO WATCH THAT\nINSTAGRAM\nTIKTOK\nAPPLE MUSIC\nYOUTUBE\nWECHAT\nBORING STUFF\nDELIVERY INFORMATION\nRETURNS INFORMATION\nTERMS & CONDITIONS\nTERMS OF USE\nPRIVACY POLICY\nMODERN SLAVERY STATEMENT\nCOOKIE PREFERENCES\nWEB SHOPS\nAUSTRALIA SHOP\nCANADA SHOP\nEUROPE SHOP\nJAPAN SHOP\nKOREA SHOP\nUSA SHOP\nWECHAT MINI PROGRAM\nWORLD SHOP\nMANOR PLA",
+        "opened_via": "a[href*='/cart']:visible",
+        "navigated": true
+      },
+      "mobile": {
+        "nav_burger": true,
+        "bottomBar": false
+      }
+    },
+    "collection": {
+      "url": "https://palaceskateboards.com/collections/all",
+      "status": 200,
+      "finalUrl": "https://palaceskateboards.com/collections/all",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/palace__collection__1440.jpg",
+        "screenshots/palace__collection__390.jpg"
+      ],
+      "data": {
+        "header": {
+          "tag": "NAV",
+          "position": "sticky",
+          "top": "0px",
+          "bg": "rgb(255, 255, 255)",
+          "backdrop": "none",
+          "height": 139,
+          "zIndex": "30",
+          "sticky": true,
+          "transparent": false,
+          "glass": false
+        },
+        "nav": [
+          "ALL",
+          "NEW",
+          "JACKETS",
+          "KNITWEAR",
+          "SHIRTING",
+          "TOPS",
+          "BOTTOMS",
+          "SHORTS",
+          "TRACKSUITS",
+          "HOODS",
+          "SWEATSHIRTS",
+          "LONGSLEEVES",
+          "T-SHIRTS",
+          "HATS",
+          "UNDERWEAR",
+          "FOOTWEAR",
+          "BAGS",
+          "ACCESSORIES",
+          "HARDWARE"
+        ],
+        "hero": {
+          "video": false,
+          "images": 60,
+          "height": 2575,
+          "vh": 286,
+          "text": "ALL NEW JACKETS KNITWEAR SHIRTING TOPS BOTTOMS SHORTS TRACKS",
+          "carousel": false
+        },
+        "productCard": {
+          "classes": "",
+          "imageRatio": 1,
+          "imagesInCard": 1,
+          "hoverSwapLikely": false,
+          "quickAdd": false,
+          "swatches": false,
+          "badges": [],
+          "text": "PALACE NIKE MANOR PLACE JACKET BLACK SOLD OUT"
+        },
+        "productLinkCount": 60,
+        "filterSort": {
+          "filterEls": 60,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [],
+          "sizeGuide": false,
+          "accordions": [
+            "WEB SHOP",
+            "SHOPS",
+            "ADVICE",
+            "CART",
+            "FILTER"
+          ],
+          "deliveryCopy": [
+            "DELIVERY INFORMATION",
+            "RETURNS INFORMATION"
+          ],
+          "crossSell": [],
+          "addToCart": [],
+          "stickyColumn": false
+        },
+        "footer": {
+          "headings": [
+            "DO WATCH THAT",
+            "BORING STUFF",
+            "WEB SHOPS",
+            "MANOR PLACE",
+            "MAILING LIST",
+            "© PALACE SKATEBOARDS LIMITED 2026"
+          ],
+          "linkCount": 15,
+          "newsletter": true
+        },
+        "fonts": [
+          {
+            "value": "Neue Helvetica W01",
+            "count": 1283
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 1232
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 26
+          },
+          {
+            "value": "rgb(196, 196, 196)",
+            "count": 18
+          },
+          {
+            "value": "rgb(154, 154, 154)",
+            "count": 4
+          },
+          {
+            "value": "rgb(59, 59, 59)",
+            "count": 2
+          },
+          {
+            "value": "rgb(101, 101, 101)",
+            "count": 1
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgb(245, 245, 245)",
+            "count": 60
+          },
+          {
+            "value": "oklab(0 0 0 / 0)",
+            "count": 60
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 3
+          },
+          {
+            "value": "rgb(228, 228, 228)",
+            "count": 3
+          },
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 2
+          }
+        ],
+        "headingSample": [],
+        "bodyFont": {
+          "family": "\"Neue Helvetica W01\", \"Helvetica Neue\", Helvetica, Arial, ui-sans-serif, sans-se",
+          "size": "16px"
+        },
+        "libraries": [
+          "Shopify"
+        ],
+        "scriptHosts": [
+          "www.googletagmanager.com",
+          "cdn.shopify.com"
+        ],
+        "motion": {
+          "runningAnimations": 0,
+          "marquee": false,
+          "videoCount": 0,
+          "transitionsOnLinks": 37,
+          "cssScrollSnap": true,
+          "reducedMotionQuery": false
+        },
+        "headings": [
+          "PALACE NIKE MANOR PLACE JACKET BLACK",
+          "PALACE NIKE MANOR PLACE TRACK JOGGER BLACK",
+          "PALACE NIKE MANOR PLACE JACKET TEAL",
+          "PALACE NIKE MANOR PLACE TRACK JOGGER TEAL",
+          "PALACE NIKE MANOR PLACE TRACKSUIT JACKET BLACK",
+          "PALACE NIKE MANOR PLACE SHORT BLACK",
+          "PALACE NIKE MANOR PLACE TRACKSUIT JACKET TEAL",
+          "PALACE NIKE MANOR PLACE SHORT TEAL",
+          "PALACE NIKE MANOR PLACE PANELLED HOOD BLACK",
+          "PALACE NIKE MANOR PLACE PANELLED HOOD TEAL",
+          "PALACE NIKE TRI-SWOOSH HOOD BLACK",
+          "PALACE NIKE TRI-SWOOSH HOOD GREY",
+          "PALACE NIKE TRI-SWOOSH HOOD WHITE",
+          "PALACE NIKE MANOR PLACE LONGSLEEVE JERSEY ORANGE",
+          "PALACE NIKE MANOR PLACE JERSEY TEAL",
+          "PALACE NIKE MANOR PLACE JERSEY BLACK",
+          "PALACE NIKE MANOR PLACE T-SHIRT TEAL",
+          "PALACE NIKE MANOR PLACE T-SHIRT BLACK",
+          "PALACE NIKE TRI-SWOOSH T-SHIRT GREY",
+          "PALACE NIKE TRI-SWOOSH T-SHIRT WHITE",
+          "PALACE NIKE TRI-SWOOSH T-SHIRT BLACK",
+          "PALACE NIKE MANOR PLACE RUNNING HAT TEAL",
+          "PALACE NIKE MANOR PLACE RUNNING HAT BLACK",
+          "PALACE NIKE MANOR PLACE BEANIE TEAL",
+          "PALACE NIKE MANOR PLACE BEANIE BLACK",
+          "SHEEPSKIN FLYING JACKET BROWN",
+          "PALACE AVIREX JACKET BLACK",
+          "BETTY BOOP VARSITY JACKET BROWN",
+          "BETTY BOOP VARSITY JACKET NAVY",
+          "CARAVAGGIO JACKET",
+          "PALACE SOUTH2 WEST8 RIVER TREK JACKET OLIVE CAMO",
+          "DASCAR JACKET REALTREE EDGE BLUE",
+          "DASCAR JACKET REALTREE EDGE CHERRY",
+          "DASCAR JACKET BLACK",
+          "10 OZ HOODED CANVAS JACKET BROWN",
+          "10 OZ HOODED CANVAS JACKET BLACK",
+          "10 OZ HOODED CANVAS JACKET NAVY / BLUE",
+          "DANKE JACKET REALTREE APX",
+          "DANKE JACKET BLACK",
+          "DANKE JACKET NAVY",
+          "BIG RIPSTOP PUFFA JACKET BLACK",
+          "BIG RIPSTOP PUFFA JACKET OLIVE",
+          "BIG RIPSTOP PUFFA JACKET BLACK WATCH",
+          "BIG RIPSTOP PUFFA JACKET NAVY",
+          "HIGHWAY TO HEAVEN JACKET PINK",
+          "HIGHWAY TO HEAVEN JACKET BLACK",
+          "PERTEX SQUARED JACKET ARMY GREEN",
+          "PERTEX SQUARED JACKET BLACK",
+          "PERTEX SQUARED JACKET NAVY",
+          "PERTEX TRI NET JACKET GREEN",
+          "PERTEX TRI NET JACKET BLACK",
+          "PERTEX TRI NET JACKET BLUE",
+          "RECON JACKET BLACK",
+          "RECON JACKET NAVY",
+          "RECON JACKET REALTREE XTREME",
+          "BIG RIPSTOP JACKET NAVY",
+          "BIG RIPSTOP JACKET ARMY OLIVE",
+          "BIG RIPSTOP JACKET BLACK",
+          "POLARTEC 200 HOODED JACKET FUZZY PINK",
+          "POLARTEC 200 HOODED JACKET BLACK"
+        ],
+        "title": "ALL | PALACE SKATEBOARDS",
+        "h1": "WEB SHOP SHOPS ADVICE CART ALL NEW JACKETS KNITWEAR SHIRTING",
+        "bodyTextSample": "WEB SHOP SHOPS ADVICE CART ALL NEW JACKETS KNITWEAR SHIRTING TOPS BOTTOMS SHORTS TRACKSUITS HOODS SWEATSHIRTS LONGSLEEVES T-SHIRTS HATS UNDERWEAR FOOTWEAR BAGS ACCESSORIES HARDWARE PALACE NIKE MANOR PLACE JACKET BLACK SOLD OUT ADD TO CART PALACE NIKE MANOR PLACE TRACK JOGGER BLACK £158 PALACE NIKE MANOR PLACE JACKET TEAL SOLD OUT ADD TO CART PALACE NIKE MANOR PLACE TRACK JOGGER TEAL £158 PALACE NIKE MANOR PLACE TRACKSUIT JACKET BLACK SOLD OUT ADD TO CART PALACE NIKE MANOR PLACE SHORT BLACK £108 PALACE NIKE MANOR PLACE TRACKSUIT JACKET TEAL SOLD OUT ADD TO CART PALACE NIKE MANOR PLACE SHORT TEA"
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": true,
+        "bgAfterScroll": "rgba(0, 0, 0, 0)",
+        "backdropAfterScroll": "none",
+        "transform": "none"
+      },
+      "mobile": {
+        "nav_burger": true,
+        "bottomBar": false
+      }
+    },
+    "product": {
+      "url": "https://palaceskateboards.com/products/pfa1tngj938i",
+      "status": 200,
+      "finalUrl": "https://palaceskateboards.com/products/pfa1tngj938i",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/palace__product__1440.jpg",
+        "screenshots/palace__product__390.jpg"
+      ],
+      "data": {
+        "header": {
+          "tag": "HEADER",
+          "position": "fixed",
+          "top": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "backdrop": "none",
+          "height": 80,
+          "zIndex": "220",
+          "sticky": true,
+          "transparent": true,
+          "glass": false
+        },
+        "nav": [
+          "Palace Skateboards home",
+          "WEB SHOP",
+          "SHOPS",
+          "ADVICE",
+          "CART"
+        ],
+        "hero": {
+          "video": false,
+          "images": 11,
+          "height": 6705,
+          "vh": 745,
+          "text": "BACK PALACE NIKE MANOR PLACE JACKET BLACK SOLD OUT THIS SHIT",
+          "carousel": false
+        },
+        "productCard": {
+          "classes": "group bg-grey-050 overflow-hidden relative max-w-13 hover:cursor-pointer",
+          "imageRatio": 1,
+          "imagesInCard": 1,
+          "hoverSwapLikely": false,
+          "quickAdd": false,
+          "swatches": false,
+          "badges": [],
+          "text": ""
+        },
+        "productLinkCount": 2,
+        "filterSort": {
+          "filterEls": 0,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [],
+          "sizeGuide": true,
+          "accordions": [
+            "WEB SHOP",
+            "SHOPS",
+            "ADVICE",
+            "CART"
+          ],
+          "deliveryCopy": [
+            "DELIVERY INFORMATION",
+            "RETURNS INFORMATION"
+          ],
+          "crossSell": [],
+          "addToCart": [],
+          "stickyColumn": true
+        },
+        "footer": {
+          "headings": [
+            "DO WATCH THAT",
+            "BORING STUFF",
+            "WEB SHOPS",
+            "MANOR PLACE",
+            "MAILING LIST",
+            "© PALACE SKATEBOARDS LIMITED 2026"
+          ],
+          "linkCount": 15,
+          "newsletter": true
+        },
+        "fonts": [
+          {
+            "value": "Neue Helvetica W01",
+            "count": 200
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 152
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 26
+          },
+          {
+            "value": "rgb(154, 154, 154)",
+            "count": 19
+          },
+          {
+            "value": "rgb(59, 59, 59)",
+            "count": 2
+          },
+          {
+            "value": "rgb(101, 101, 101)",
+            "count": 1
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgb(245, 245, 245)",
+            "count": 10
+          },
+          {
+            "value": "rgb(228, 228, 228)",
+            "count": 3
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 2
+          },
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 1
+          }
+        ],
+        "headingSample": [
+          {
+            "text": "PALACE NIKE MANOR PLACE JACKET BLACK",
+            "font": "\"Neue Helvetica W01\", \"Helvetica Neue\", Helvetica, Arial, ui",
+            "size": "24px",
+            "weight": "700",
+            "tracking": "normal",
+            "transform": "uppercase"
+          }
+        ],
+        "bodyFont": {
+          "family": "\"Neue Helvetica W01\", \"Helvetica Neue\", Helvetica, Arial, ui-sans-serif, sans-se",
+          "size": "16px"
+        },
+        "libraries": [
+          "Shopify"
+        ],
+        "scriptHosts": [
+          "www.googletagmanager.com",
+          "cdn.shopify.com"
+        ],
+        "motion": {
+          "runningAnimations": 0,
+          "marquee": false,
+          "videoCount": 0,
+          "transitionsOnLinks": 18,
+          "cssScrollSnap": false,
+          "reducedMotionQuery": false
+        },
+        "headings": [
+          "PALACE NIKE MANOR PLACE JACKET BLACK",
+          "MAILING LIST"
+        ],
+        "title": "PALACE NIKE MANOR PLACE JACKET BLACK | PALACE SKATEBOARDS",
+        "h1": "PALACE NIKE MANOR PLACE JACKET BLACK",
+        "bodyTextSample": "WEB SHOP SHOPS ADVICE CART BACK PALACE NIKE MANOR PLACE JACKET BLACK SOLD OUT THIS SHIT BANGS LIKE YOUR MUM MODEL IS 182CM WEARING SIZE LARGE TECHNICAL DETAILS SIZE CHART DO WATCH THAT INSTAGRAM TIKTOK APPLE MUSIC YOUTUBE WECHAT BORING STUFF DELIVERY INFORMATION RETURNS INFORMATION TERMS & CONDITIONS TERMS OF USE PRIVACY POLICY MODERN SLAVERY STATEMENT COOKIE PREFERENCES WEB SHOPS AUSTRALIA SHOP CANADA SHOP EUROPE SHOP JAPAN SHOP KOREA SHOP USA SHOP WECHAT MINI PROGRAM WORLD SHOP MANOR PLACE VISIT SITE BOOK SKATEPARK BOOK FOOTBALL EVENTS MAILING LIST MAILING LIST Email address AGREE TO OUR PRI"
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": true,
+        "bgAfterScroll": "rgba(0, 0, 0, 0)",
+        "backdropAfterScroll": "none",
+        "transform": "none"
+      },
+      "cart": {
+        "type": "page",
+        "text": "WEB SHOP\nSHOPS\nADVICE\nCART\n\nYOUR CART IS CURRENTLY EMPTY.\n\nCONTINUE SHOPPING\nDO WATCH THAT\nINSTAGRAM\nTIKTOK\nAPPLE MUSIC\nYOUTUBE\nWECHAT\nBORING STUFF\nDELIVERY INFORMATION\nRETURNS INFORMATION\nTERMS & CONDITIONS\nTERMS OF USE\nPRIVACY POLICY\nMODERN SLAVERY STATEMENT\nCOOKIE PREFERENCES\nWEB SHOPS\nAUSTRALIA SHOP\nCANADA SHOP\nEUROPE SHOP\nJAPAN SHOP\nKOREA SHOP\nUSA SHOP\nWECHAT MINI PROGRAM\nWORLD SHOP\nMANOR PLA",
+        "opened_via": "a[href*='/cart']:visible",
+        "navigated": true
+      },
+      "mobile": {
+        "nav_burger": true,
+        "bottomBar": false
+      }
+    }
+  }
+}

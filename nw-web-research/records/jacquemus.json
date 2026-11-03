@@ -1,0 +1,87 @@
+{
+  "key": "jacquemus",
+  "group": "store",
+  "pages": {
+    "home": {
+      "url": "https://www.jacquemus.com/",
+      "status": 403,
+      "finalUrl": "https://www.jacquemus.com/",
+      "blocked": true,
+      "screenshots": [
+        "screenshots/jacquemus__home__1440.jpg",
+        "screenshots/jacquemus__home__390.jpg"
+      ],
+      "data": {
+        "header": {
+          "tag": "HEADER",
+          "position": "static",
+          "top": "auto",
+          "bg": "rgba(0, 0, 0, 0)",
+          "backdrop": "none",
+          "height": 30,
+          "zIndex": "auto",
+          "sticky": false,
+          "transparent": true,
+          "glass": false
+        },
+        "nav": [],
+        "productLinkCount": 0,
+        "filterSort": {
+          "filterEls": 0,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [],
+          "sizeGuide": false,
+          "accordions": [],
+          "deliveryCopy": [],
+          "crossSell": [],
+          "addToCart": [],
+          "stickyColumn": false
+        },
+        "fonts": [
+          {
+            "value": "Futura PTT",
+            "count": 15
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 15
+          }
+        ],
+        "bgColours": [],
+        "headingSample": [],
+        "bodyFont": {
+          "family": "\"Futura PTT\", \"Helvetica Neue\", Arial, sans-serif",
+          "size": "10px"
+        },
+        "libraries": [],
+        "scriptHosts": [],
+        "motion": {
+          "runningAnimations": 0,
+          "marquee": false,
+          "videoCount": 0,
+          "transitionsOnLinks": 0,
+          "cssScrollSnap": false,
+          "reducedMotionQuery": false
+        },
+        "headings": [],
+        "title": "Our website is currently undergoing brief maintenance.",
+        "h1": "Our website is currently undergoing brief maintenance. Our w",
+        "bodyTextSample": "Our website is currently undergoing brief maintenance. Our website is currently undergoing brief maintenance. You will be able to resume your shopping shortly. Thank you for your patience."
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": true,
+        "bgAfterScroll": "rgba(0, 0, 0, 0)",
+        "backdropAfterScroll": "none",
+        "transform": "none"
+      },
+      "mobile": {
+        "nav_burger": false,
+        "bottomBar": false
+      }
+    }
+  }
+}

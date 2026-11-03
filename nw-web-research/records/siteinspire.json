@@ -1,0 +1,191 @@
+{
+  "key": "siteinspire",
+  "group": "design",
+  "pages": {
+    "home": {
+      "url": "https://www.siteinspire.com/",
+      "status": 200,
+      "finalUrl": "https://www.siteinspire.com/",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/siteinspire__home__1440.jpg",
+        "screenshots/siteinspire__home__390.jpg"
+      ],
+      "data": {
+        "header": {
+          "tag": "DIV",
+          "position": "static",
+          "top": "auto",
+          "bg": "lab(98.26 0 0)",
+          "backdrop": "none",
+          "height": 344,
+          "zIndex": "auto",
+          "sticky": false,
+          "transparent": false,
+          "glass": false
+        },
+        "nav": [
+          "Subscribe to the weekly edit",
+          "Toggle filter",
+          "Popular Categories",
+          "Styles",
+          "Types",
+          "Subjects",
+          "Platforms",
+          "Agencies & Consultancies 2,407",
+          "Typographic 2,105",
+          "Design & Art Direction 1,945",
+          "Portfolio 1,444",
+          "Web & Interactive Design 910",
+          "E-Commerce 890",
+          "Minimal 847",
+          "Fashion 799",
+          "Grid Layout 672",
+          "Unusual Layout 671",
+          "Art 491",
+          "Photography 479"
+        ],
+        "hero": {
+          "video": false,
+          "images": 0,
+          "height": 344,
+          "vh": 38,
+          "text": "A showcase of the web’s finest design + talent Subscribe to ",
+          "carousel": false
+        },
+        "productLinkCount": 0,
+        "filterSort": {
+          "filterEls": 39,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [],
+          "sizeGuide": false,
+          "accordions": [
+            "Subscribe",
+            "Subscribe to the weekly edit"
+          ],
+          "deliveryCopy": [
+            "Delivered every week, unsubscribe at any time."
+          ],
+          "crossSell": [],
+          "addToCart": [],
+          "stickyColumn": false
+        },
+        "footer": {
+          "headings": [],
+          "linkCount": 18,
+          "newsletter": false
+        },
+        "fonts": [
+          {
+            "value": "fontSctoGroteskA",
+            "count": 1308
+          }
+        ],
+        "textColours": [
+          {
+            "value": "lab(8.30603 0.618205 -2.16572)",
+            "count": 1042
+          },
+          {
+            "value": "lab(47.8878 1.65477 -5.77283)",
+            "count": 183
+          },
+          {
+            "value": "rgba(0, 0, 0, 0)",
+            "count": 41
+          },
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 13
+          },
+          {
+            "value": "lab(2.51107 0.242703 -0.886115)",
+            "count": 13
+          },
+          {
+            "value": "lab(65.6464 1.53497 -5.42429)",
+            "count": 8
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "lab(96.1634 0.0993311 -0.364041)",
+            "count": 137
+          },
+          {
+            "value": "lab(98.26 0 0)",
+            "count": 41
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 3
+          },
+          {
+            "value": "lab(8.30603 0.618205 -2.16572)",
+            "count": 2
+          },
+          {
+            "value": "lab(55.4814 75.0732 48.8528)",
+            "count": 1
+          },
+          {
+            "value": "color(srgb 0.0937771 0.0938016 0.105832 / 0.18)",
+            "count": 1
+          }
+        ],
+        "headingSample": [
+          {
+            "text": "A showcase of the web’s finest design + talent",
+            "font": "fontSctoGroteskA, \"fontSctoGroteskA Fallback\"",
+            "size": "24px",
+            "weight": "400",
+            "tracking": "-0.4px",
+            "transform": "none"
+          }
+        ],
+        "bodyFont": {
+          "family": "fontSctoGroteskA, \"fontSctoGroteskA Fallback\"",
+          "size": "14px"
+        },
+        "libraries": [
+          "NextJS"
+        ],
+        "scriptHosts": [
+          "www.google-analytics.com",
+          "www.googletagmanager.com",
+          "www.siteinspire.com",
+          "analytics.ahrefs.com"
+        ],
+        "motion": {
+          "runningAnimations": 0,
+          "marquee": false,
+          "videoCount": 0,
+          "transitionsOnLinks": 149,
+          "cssScrollSnap": false,
+          "reducedMotionQuery": true
+        },
+        "headings": [
+          "A showcase of the web’s finest design + talent"
+        ],
+        "title": "Best Website Design Inspiration | Siteinspire",
+        "h1": "A showcase of the web’s finest design + talent",
+        "bodyTextSample": "Skip to main content Websites Profiles About Subscribe Sign In A showcase of the web’s finest design + talent Subscribe to the weekly edit Popular Categories Styles Types Subjects Platforms Agencies & Consultancies 2,407 Typographic 2,105 Design & Art Direction 1,945 Portfolio 1,444 Web & Interactive Design 910 E-Commerce 890 Minimal 847 Fashion 799 Grid Layout 672 Unusual Layout 671 Art 491 Photography 479 Blond 5 days ago Engine / BLOND David McGillivray 18 days ago Royal Sites Ireland a month ago Estd SIHA a month ago Allan Pooley Mobbin The world's largest mobile & web design reference lib"
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": true,
+        "bgAfterScroll": "rgb(255, 255, 255)",
+        "backdropAfterScroll": "none",
+        "transform": "none"
+      },
+      "cart": {
+        "type": "not found"
+      },
+      "mobile": {
+        "nav_burger": true,
+        "bottomBar": false
+      }
+    }
+  }
+}

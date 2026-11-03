@@ -1,0 +1,6557 @@
+{
+ "rows": [
+  {
+   "site": "21st-dev",
+   "group": "design",
+   "page": "home",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "sticky h56 transparent",
+   "headerOnScroll": {
+    "visibleAfterScroll": true,
+    "bgAfterScroll": "rgba(0, 0, 0, 0)",
+    "backdropAfterScroll": "none",
+    "transform": "none"
+   },
+   "nav": [
+    "21st home",
+    "Library",
+    "Product",
+    "Pricing",
+    "Search ⌘K",
+    "Log in",
+    "Get 21st free"
+   ],
+   "hero": {
+    "video": true,
+    "images": 50,
+    "height": 1755,
+    "vh": 195,
+    "text": "Just copy-paste real designs. Find components, copy prompts,",
+    "carousel": false
+   },
+   "card": null,
+   "filters": {
+    "filterEls": 14,
+    "sortEls": []
+   },
+   "pdp": null,
+   "cart": {
+    "type": "not found"
+   },
+   "footer": {
+    "headings": [],
+    "linkCount": 108,
+    "newsletter": false
+   },
+   "fonts": [
+    "Inter",
+    "General Sans",
+    "ui-monospace",
+    "-apple-system"
+   ],
+   "heading": {
+    "text": "Just copy-paste real designs.",
+    "font": "Inter, \"Inter Fallback\", system-ui, sans-serif",
+    "size": "84.96px",
+    "weight": "700",
+    "tracking": "-4.248px",
+    "transform": "none"
+   },
+   "textColours": [
+    "oklch(0.975 0.002 286)",
+    "oklch(0.68 0.008 286)",
+    "oklch(0.485 0.291 264.121)",
+    "oklab(0.975 0.000551275 -0.00192252 / 0.6)"
+   ],
+   "bg": [
+    "oklch(0.975 0.002 286 / 0.05)",
+    "oklab(0.975 0.000551275 -0.00192252 / 0.14)",
+    "oklch(1 0 0)",
+    "oklch(0.115 0.002 286)"
+   ],
+   "libraries": [
+    "NextJS"
+   ],
+   "motion": {
+    "runningAnimations": 9,
+    "marquee": false,
+    "videoCount": 5,
+    "transitionsOnLinks": 121,
+    "cssScrollSnap": true,
+    "reducedMotionQuery": true
+   },
+   "mobile": {
+    "nav_burger": true,
+    "bottomBar": false
+   },
+   "headings": [
+    "Just copy-paste real designs.",
+    "Top today",
+    "New & noteworthy",
+    "Categories",
+    "Heroes that move",
+    "UI that ships",
+    "Used by 4,547,402 builders. From indie makers to the world's",
+    "Startups:",
+    "More than components",
+    "354 templates",
+    "958 themes",
+    "350 shaders",
+    "29,000 icons",
+    "138 apps"
+   ]
+  },
+  {
+   "site": "3dwebsites",
+   "group": "design",
+   "page": "home",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": [
+    "390: TimeoutError: Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://3dwebsites.design/\", waiting until \"domcontentloaded\"\n"
+   ],
+   "header": null,
+   "headerOnScroll": null,
+   "nav": [
+    "3DW",
+    "Submit",
+    "Inspiration",
+    "Tools",
+    "About"
+   ],
+   "hero": {},
+   "card": null,
+   "filters": {
+    "filterEls": 0,
+    "sortEls": []
+   },
+   "pdp": null,
+   "cart": {
+    "type": "not found"
+   },
+   "footer": null,
+   "fonts": [
+    "ui-sans-serif",
+    "IBM Plex Mono",
+    "Space Grotesk"
+   ],
+   "heading": {
+    "text": "3DW",
+    "font": "\"Space Grotesk\", \"Libre Baskerville\"",
+    "size": "20px",
+    "weight": "700",
+    "tracking": "normal",
+    "transform": "none"
+   },
+   "textColours": [
+    "rgb(229, 231, 235)",
+    "rgb(255, 255, 255)",
+    "rgb(9, 9, 11)",
+    "rgb(82, 82, 91)"
+   ],
+   "bg": [
+    "rgb(39, 39, 42)",
+    "rgb(9, 9, 11)",
+    "rgb(229, 231, 235)",
+    "rgb(24, 24, 27)"
+   ],
+   "libraries": [],
+   "motion": {
+    "runningAnimations": 0,
+    "marquee": false,
+    "videoCount": 0,
+    "transitionsOnLinks": 0,
+    "cssScrollSnap": false,
+    "reducedMotionQuery": false
+   },
+   "mobile": null,
+   "headings": [
+    "3DW",
+    "Explore the magic of 3D design for the web",
+    "Deeo Studio",
+    "Nico Escovilla",
+    "Eshan Singh",
+    "Fundamental",
+    "Modal",
+    "Airvoir",
+    "Sphinx",
+    "Tim Quirino",
+    "Weblab",
+    "Festina",
+    "William Le",
+    "Monolith Studio",
+    "Grainient supply",
+    "Artemii Lebedev",
+    "Paradigm",
+    "Grok ventures"
+   ]
+  },
+  {
+   "site": "abtest-design",
+   "group": "design",
+   "page": "home",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": null,
+   "headerOnScroll": null,
+   "nav": [],
+   "hero": {},
+   "card": null,
+   "filters": {
+    "filterEls": 0,
+    "sortEls": []
+   },
+   "pdp": null,
+   "cart": {
+    "type": "drawer",
+    "width": 350,
+    "freeShippingBar": false,
+    "upsells": false,
+    "text": "Curated collection of A/B test results from best-in-class apps Powered by Submit test Categories Paywall & free trial Onboarding Checkout & sales User engagement & retention Monetization awareness Referral Misc Share feedback",
+    "opened_via": "a:has-text('Cart'):visible",
+    "navigated": true
+   },
+   "footer": null,
+   "fonts": [
+    "sans-serif",
+    "M Saans Medium",
+    "Instrument Sans",
+    "M Saans SemiBold"
+   ],
+   "heading": {
+    "text": "Showing pricing options upfront",
+    "font": "\"M Saans Medium\", \"M Saans Medium Placeholder\", sans-serif",
+    "size": "16px",
+    "weight": "570",
+    "tracking": "normal",
+    "transform": "none"
+   },
+   "textColours": [
+    "rgb(0, 0, 238)",
+    "rgb(116, 116, 116)",
+    "rgb(0, 0, 0)",
+    "rgb(41, 118, 255)"
+   ],
+   "bg": [
+    "rgb(255, 255, 255)",
+    "rgb(0, 0, 0)"
+   ],
+   "libraries": [
+    "FramerMotion",
+    "Framer"
+   ],
+   "motion": {
+    "runningAnimations": 1,
+    "marquee": false,
+    "videoCount": 0,
+    "transitionsOnLinks": 0,
+    "cssScrollSnap": false,
+    "reducedMotionQuery": false
+   },
+   "mobile": {
+    "nav_burger": false,
+    "bottomBar": false
+   },
+   "headings": [
+    "Showing pricing options upfront",
+    "VEED",
+    "•",
+    "+15% trial conversion",
+    "How your free trial works",
+    "Blinkist",
+    "•",
+    "+23% trial signups",
+    "30-Day Guest Pass",
+    "Headspace",
+    "•",
+    "+7% new signups",
+    "Clearer pricing estimate",
+    "Uber",
+    "•",
+    "double-digit increase in rides per user",
+    "Decoupling streaks from daily goals",
+    "Duolingo",
+    "•",
+    "+40% learners on a streak",
+    "Onboarding with multi-intent queries",
+    "Headspace",
+    "•",
+    "+10% free trial conversion",
+    "Streamlining checkout process"
+   ]
+  },
+  {
+   "site": "acnestudios",
+   "group": "store",
+   "page": "home",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "sticky h60 rgb(255, 255, 255)",
+   "headerOnScroll": {
+    "visibleAfterScroll": true,
+    "bgAfterScroll": "rgb(255, 255, 255)",
+    "backdropAfterScroll": "none",
+    "transform": "none"
+   },
+   "nav": [
+    "WOMAN",
+    "MAN",
+    "DENIM",
+    "BAGS",
+    "SCARVES",
+    "SEARCH",
+    "HELP",
+    "ACCOUNT",
+    "00"
+   ],
+   "hero": {
+    "video": false,
+    "images": 5,
+    "height": 1080,
+    "vh": 120,
+    "text": "ACNE STUDIOS WOMEN'S OUTERWEAR WOMEN'S OUTERWEAR > SHOP MEN'",
+    "carousel": false
+   },
+   "card": {
+    "imageRatio": null,
+    "hoverSwapLikely": false,
+    "quickAdd": false,
+    "swatches": false,
+    "badges": []
+   },
+   "filters": {
+    "filterEls": 0,
+    "sortEls": []
+   },
+   "pdp": null,
+   "cart": {
+    "type": "drawer",
+    "width": 1440,
+    "freeShippingBar": false,
+    "upsells": false,
+    "text": "CLOSE ALL BAGS View all All Bag Lines FAMILY Camero Multipocket Musubi STYLE View all Top Handle Bags Shoulder Bags Backpacks Crossbody Bags Totes Micro Bags Small Leather Goods",
+    "opened_via": "button[aria-label*='bag' i]:visible",
+    "navigated": true
+   },
+   "footer": {
+    "headings": [
+     "NEWSLETTER",
+     "CONTACT US",
+     "HELP",
+     "CLIENT SERVICES",
+     "COMPANY"
+    ],
+    "linkCount": 25,
+    "newsletter": true
+   },
+   "fonts": [
+    "Helvetica Now Text",
+    "Helvetica Monospaced Pro",
+    "Helvetica Now Micro"
+   ],
+   "heading": {
+    "text": "ACNE STUDIOS",
+    "font": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+    "size": "12px",
+    "weight": "400",
+    "tracking": "0.3px",
+    "transform": "uppercase"
+   },
+   "textColours": [
+    "rgb(0, 0, 0)",
+    "rgb(0, 24, 168)",
+    "rgb(255, 255, 255)",
+    "rgb(242, 242, 242)"
+   ],
+   "bg": [
+    "rgb(255, 255, 255)",
+    "rgb(247, 247, 247)"
+   ],
+   "libraries": [
+    "jQuery"
+   ],
+   "motion": {
+    "runningAnimations": 0,
+    "marquee": false,
+    "videoCount": 0,
+    "transitionsOnLinks": 0,
+    "cssScrollSnap": true,
+    "reducedMotionQuery": false
+   },
+   "mobile": {
+    "nav_burger": true,
+    "bottomBar": false
+   },
+   "headings": [
+    "ACNE STUDIOS",
+    "DISCOVER MORE",
+    "NEWS",
+    "NEWSLETTER",
+    "CONTACT US",
+    "HELP",
+    "CLIENT SERVICES",
+    "COMPANY"
+   ]
+  },
+  {
+   "site": "acnestudios",
+   "group": "store",
+   "page": "collection",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "sticky h60 rgb(255, 255, 255)",
+   "headerOnScroll": {
+    "visibleAfterScroll": true,
+    "bgAfterScroll": "rgb(255, 255, 255)",
+    "backdropAfterScroll": "none",
+    "transform": "matrix(1, 0, 0, 1, 0, 0)"
+   },
+   "nav": [
+    "WOMAN",
+    "MAN",
+    "DENIM",
+    "BAGS",
+    "SCARVES",
+    "SEARCH",
+    "HELP",
+    "ACCOUNT",
+    "00"
+   ],
+   "hero": {
+    "video": false,
+    "images": 166,
+    "height": 4428,
+    "vh": 492,
+    "text": "Clothing Jeans Outerwear Sweatshirts Knitwear Trousers T-shi",
+    "carousel": true
+   },
+   "card": {
+    "imageRatio": null,
+    "hoverSwapLikely": false,
+    "quickAdd": false,
+    "swatches": false,
+    "badges": []
+   },
+   "filters": {
+    "filterEls": 1,
+    "sortEls": []
+   },
+   "pdp": null,
+   "cart": null,
+   "footer": {
+    "headings": [
+     "NEWSLETTER",
+     "CONTACT US",
+     "HELP",
+     "CLIENT SERVICES",
+     "COMPANY"
+    ],
+    "linkCount": 25,
+    "newsletter": true
+   },
+   "fonts": [
+    "Helvetica Now Text",
+    "Helvetica Monospaced Pro",
+    "Helvetica Now Micro"
+   ],
+   "heading": {
+    "text": "WOMEN'S CLOTHING",
+    "font": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+    "size": "12px",
+    "weight": "400",
+    "tracking": "0.3px",
+    "transform": "uppercase"
+   },
+   "textColours": [
+    "rgb(0, 0, 0)",
+    "rgb(0, 24, 168)",
+    "rgb(107, 107, 107)",
+    "rgb(242, 242, 242)"
+   ],
+   "bg": [
+    "rgb(242, 242, 242)",
+    "rgb(247, 247, 247)",
+    "rgb(255, 255, 255)",
+    "rgb(194, 194, 194)"
+   ],
+   "libraries": [
+    "jQuery"
+   ],
+   "motion": {
+    "runningAnimations": 0,
+    "marquee": false,
+    "videoCount": 0,
+    "transitionsOnLinks": 0,
+    "cssScrollSnap": true,
+    "reducedMotionQuery": false
+   },
+   "mobile": {
+    "nav_burger": true,
+    "bottomBar": false
+   },
+   "headings": [
+    "WOMEN'S CLOTHING",
+    "CROPPED LEATHER TRENCH COAT",
+    "LEATHER BIKER JACKET",
+    "LEATHER BLOUSON JACKET",
+    "LEATHER BLOUSON",
+    "SHEARLING BOMBER JACKET",
+    "SUEDE BOMBER JACKET",
+    "CROPPED LEATHER TRENCH COAT",
+    "LEATHER SHEARLING DUFFLE COAT",
+    "LEATHER BOMBER JACKET",
+    "SHEARLING BIKER JACKET",
+    "LEATHER TRENCH COAT",
+    "LEATHER BIKER JACKET",
+    "LEATHER BIKER JACKET",
+    "LEATHER BOMBER JACKET",
+    "LEATHER LOGO BLOUSON",
+    "LIGHTWEIGHT NYLON JACKET",
+    "JACKET WITH WHITE 1996 LOGO",
+    "CASHMERE JACKET WITH HOOD",
+    "SHINY DOWN JACKET",
+    "LIGHTWEIGHT NYLON JACKET",
+    "WASHED CANVAS BLOUSON JACKET",
+    "CROPPED DENIM JACKET",
+    "LAYERED TWILL JACKET",
+    "CASHMERE JACKET WITH HOOD"
+   ]
+  },
+  {
+   "site": "acnestudios",
+   "group": "store",
+   "page": "product",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "sticky h60 rgb(255, 255, 255)",
+   "headerOnScroll": {
+    "visibleAfterScroll": true,
+    "bgAfterScroll": "rgb(255, 255, 255)",
+    "backdropAfterScroll": "none",
+    "transform": "matrix(1, 0, 0, 1, 0, 0)"
+   },
+   "nav": [
+    "WOMAN",
+    "MAN",
+    "DENIM",
+    "BAGS",
+    "SCARVES",
+    "SEARCH",
+    "HELP",
+    "ACCOUNT",
+    "00"
+   ],
+   "hero": {
+    "video": false,
+    "images": 20,
+    "height": 8371,
+    "vh": 930,
+    "text": "Clothing Outerwear Cropped leather trench coat CROPPED LEATH",
+    "carousel": true
+   },
+   "card": {
+    "imageRatio": null,
+    "hoverSwapLikely": false,
+    "quickAdd": false,
+    "swatches": false,
+    "badges": []
+   },
+   "filters": {
+    "filterEls": 0,
+    "sortEls": []
+   },
+   "pdp": {
+    "sizeButtons": [],
+    "sizeGuide": true,
+    "accordions": [
+     "PRODUCT DESCRIPTION SHOW MORE"
+    ],
+    "deliveryCopy": [
+     "FREE DELIVERY & RETURNS ENTER POSTAL CODE",
+     "Estimated delivery within 2-4 business days. Incl. import duties.",
+     "FREE SHIPPING & RETURNS",
+     "Fast delivery and easy returns or exchanges on all orders",
+     "Register a return",
+     "SHIPPING TO UNITED KINGDOM (ENGLISH)"
+    ],
+    "crossSell": [
+     "RECOMMENDED"
+    ],
+    "addToCart": [
+     "ADD TO BAG"
+    ],
+    "stickyColumn": false
+   },
+   "cart": {
+    "type": "drawer",
+    "width": 1440,
+    "freeShippingBar": false,
+    "upsells": false,
+    "text": "CLOSE ALL BAGS View all All Bag Lines FAMILY Camero Multipocket Musubi STYLE View all Top Handle Bags Shoulder Bags Backpacks Crossbody Bags Totes Micro Bags Small Leather Goods",
+    "opened_via": "button[aria-label*='bag' i]:visible",
+    "navigated": true
+   },
+   "footer": {
+    "headings": [
+     "NEWSLETTER",
+     "CONTACT US",
+     "HELP",
+     "CLIENT SERVICES",
+     "COMPANY"
+    ],
+    "linkCount": 25,
+    "newsletter": true
+   },
+   "fonts": [
+    "Helvetica Now Text",
+    "Helvetica Monospaced Pro",
+    "Helvetica Now Micro"
+   ],
+   "heading": {
+    "text": "CROPPED LEATHER TRENCH COAT",
+    "font": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+    "size": "12px",
+    "weight": "400",
+    "tracking": "0.3px",
+    "transform": "uppercase"
+   },
+   "textColours": [
+    "rgb(0, 0, 0)",
+    "rgba(0, 0, 0, 0)",
+    "rgb(0, 24, 168)",
+    "rgb(107, 107, 107)"
+   ],
+   "bg": [
+    "rgb(255, 255, 255)",
+    "rgb(247, 247, 247)",
+    "rgb(242, 242, 242)",
+    "rgb(245, 245, 245)"
+   ],
+   "libraries": [
+    "jQuery"
+   ],
+   "motion": {
+    "runningAnimations": 3,
+    "marquee": false,
+    "videoCount": 0,
+    "transitionsOnLinks": 0,
+    "cssScrollSnap": true,
+    "reducedMotionQuery": false
+   },
+   "mobile": {
+    "nav_burger": true,
+    "bottomBar": false
+   },
+   "headings": [
+    "CROPPED LEATHER TRENCH COAT",
+    "Current colour: Dark brown",
+    "Other colours",
+    "Size",
+    "Product description",
+    "Product details",
+    "Product information",
+    "RECOMMENDED",
+    "NEWSLETTER",
+    "CONTACT US",
+    "HELP",
+    "CLIENT SERVICES",
+    "COMPANY"
+   ]
+  },
+  {
+   "site": "aimeleondore",
+   "group": "store",
+   "page": "home",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "fixed h61 transparent",
+   "headerOnScroll": {
+    "visibleAfterScroll": true,
+    "bgAfterScroll": "rgba(0, 0, 0, 0)",
+    "backdropAfterScroll": "none",
+    "transform": "none"
+   },
+   "nav": [
+    "Main menu. Press the Enter key to show submenu.",
+    "Close menu",
+    "MEN",
+    "ALL PRODUCTS",
+    "NEW ARRIVALS",
+    "TEES & POLOS",
+    "SWEATSHIRTS",
+    "SHIRTING",
+    "SWEATERS",
+    "PANTS",
+    "SWEATPANTS",
+    "SHORTS",
+    "SWIM",
+    "OUTERWEAR"
+   ],
+   "hero": {
+    "video": false,
+    "images": 2,
+    "height": 901,
+    "vh": 100,
+    "text": "",
+    "carousel": false
+   },
+   "card": null,
+   "filters": {
+    "filterEls": 0,
+    "sortEls": []
+   },
+   "pdp": null,
+   "cart": {
+    "type": "not found"
+   },
+   "footer": {
+    "headings": [],
+    "linkCount": 8,
+    "newsletter": true
+   },
+   "fonts": [
+    "Sohne",
+    "DIN W01 Regular"
+   ],
+   "heading": {
+    "text": "Aimé Leon Dore EU",
+    "font": "Sohne, Arial, sans-serif",
+    "size": "17px",
+    "weight": "400",
+    "tracking": "0.6px",
+    "transform": "none"
+   },
+   "textColours": [
+    "rgb(255, 255, 255)",
+    "rgb(24, 24, 24)",
+    "rgba(196, 196, 196, 0.7)",
+    "rgb(69, 69, 69)"
+   ],
+   "bg": [
+    "rgb(255, 255, 255)",
+    "rgba(24, 24, 24, 0.7)",
+    "rgb(247, 247, 247)",
+    "rgba(24, 24, 24, 0.8)"
+   ],
+   "libraries": [
+    "Swiper",
+    "Shopify",
+    "jQuery",
+    "Klaviyo"
+   ],
+   "motion": {
+    "runningAnimations": 0,
+    "marquee": false,
+    "videoCount": 0,
+    "transitionsOnLinks": 66,
+    "cssScrollSnap": false,
+    "reducedMotionQuery": true
+   },
+   "mobile": {
+    "nav_burger": true,
+    "bottomBar": false
+   },
+   "headings": [
+    "Aimé Leon Dore EU"
+   ]
+  },
+  {
+   "site": "aimeleondore",
+   "group": "store",
+   "page": "collection",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "fixed h61 rgb(255, 255, 255)",
+   "headerOnScroll": {
+    "visibleAfterScroll": true,
+    "bgAfterScroll": "rgb(255, 255, 255)",
+    "backdropAfterScroll": "none",
+    "transform": "none"
+   },
+   "nav": [
+    "Main menu. Press the Enter key to show submenu.",
+    "Close menu",
+    "MEN",
+    "ALL PRODUCTS",
+    "NEW ARRIVALS",
+    "TEES & POLOS",
+    "SWEATSHIRTS",
+    "SHIRTING",
+    "SWEATERS",
+    "PANTS",
+    "SWEATPANTS",
+    "SHORTS",
+    "SWIM",
+    "OUTERWEAR"
+   ],
+   "hero": {
+    "video": false,
+    "images": 334,
+    "height": 8170,
+    "vh": 908,
+    "text": "Men • Shop All Sort: Recommended Refine Wool Herringbone Ove",
+    "carousel": true
+   },
+   "card": {
+    "imageRatio": 0.8,
+    "hoverSwapLikely": true,
+    "quickAdd": false,
+    "swatches": false,
+    "badges": []
+   },
+   "filters": {
+    "filterEls": 56,
+    "sortEls": [
+     "",
+     "Sort: Recommended",
+     "Sort: Recommended",
+     "",
+     ""
+    ]
+   },
+   "pdp": null,
+   "cart": null,
+   "footer": {
+    "headings": [],
+    "linkCount": 8,
+    "newsletter": true
+   },
+   "fonts": [
+    "Sohne",
+    "DIN W01 Regular"
+   ],
+   "heading": null,
+   "textColours": [
+    "rgb(24, 24, 24)",
+    "rgb(255, 255, 255)",
+    "rgba(196, 196, 196, 0.7)",
+    "rgb(196, 196, 196)"
+   ],
+   "bg": [
+    "rgb(255, 255, 255)",
+    "rgb(51, 51, 51)",
+    "rgba(24, 24, 24, 0.6)",
+    "rgba(24, 24, 24, 0.7)"
+   ],
+   "libraries": [
+    "Swiper",
+    "Shopify",
+    "jQuery",
+    "Klaviyo"
+   ],
+   "motion": {
+    "runningAnimations": 4,
+    "marquee": false,
+    "videoCount": 0,
+    "transitionsOnLinks": 156,
+    "cssScrollSnap": false,
+    "reducedMotionQuery": true
+   },
+   "mobile": {
+    "nav_burger": true,
+    "bottomBar": false
+   },
+   "headings": [
+    "SHIPPING COUNTRY SUCCESSFULLY UPDATED.",
+    "Wool Herringbone Overcoat",
+    "Suede Overshirt",
+    "Bayard Chambray Shirt",
+    "Plaid Tweed Tie",
+    "Saint George Corduroy Hat",
+    "Saint George Corduroy Hat",
+    "Yarn Dyed Plaid Overshirt",
+    "Yarn Dyed Plaid Overshirt",
+    "NY Highlanders Wool Tote Bag",
+    "NY Highlanders Wool Tote Bag",
+    "Wool Script Scarf",
+    "Wool Script Scarf",
+    "Denim Carpenter Pant",
+    "Denim Carpenter Pant",
+    "Denim Carpenter Pant",
+    "Camo Fatigue Pant",
+    "Wakayama Gloves",
+    "Wakayama Gloves",
+    "Plaid Wool Hunting Hat",
+    "Plaid Wool Hunting Hat",
+    "Alpaca Wool Quarter Zip Sweater",
+    "Alpaca Wool Quarter Zip Sweater",
+    "Suede Lug Sole Derby",
+    "Suede Lug Sole Derby"
+   ]
+  },
+  {
+   "site": "aimeleondore",
+   "group": "store",
+   "page": "product",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "fixed h61 rgb(255, 255, 255)",
+   "headerOnScroll": {
+    "visibleAfterScroll": true,
+    "bgAfterScroll": "rgb(255, 255, 255)",
+    "backdropAfterScroll": "none",
+    "transform": "none"
+   },
+   "nav": [
+    "Main menu. Press the Enter key to show submenu.",
+    "Close menu",
+    "MEN",
+    "ALL PRODUCTS",
+    "NEW ARRIVALS",
+    "TEES & POLOS",
+    "SWEATSHIRTS",
+    "SHIRTING",
+    "SWEATERS",
+    "PANTS",
+    "SWEATPANTS",
+    "SHORTS",
+    "SWIM",
+    "OUTERWEAR"
+   ],
+   "hero": {
+    "video": false,
+    "images": 241,
+    "height": 983,
+    "vh": 109,
+    "text": "Wool Herringbone Overcoat Lek 136,500 Product Details Sizing",
+    "carousel": true
+   },
+   "card": {
+    "imageRatio": null,
+    "hoverSwapLikely": false,
+    "quickAdd": false,
+    "swatches": false,
+    "badges": []
+   },
+   "filters": {
+    "filterEls": 0,
+    "sortEls": []
+   },
+   "pdp": {
+    "sizeButtons": [
+     "MEN",
+     "WOMEN",
+     "Sizing",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    "sizeGuide": false,
+    "accordions": [
+     "Main menu. Press the Enter key to show submenu.",
+     "MEN",
+     "WOMEN",
+     "Product Details",
+     "Sizing",
+     "Shop the Look",
+     "Delivery and Returns",
+     "Select Size"
+    ],
+    "deliveryCopy": [
+     "Delivery and Returns",
+     "SHIPPING TO: AL / L ALL"
+    ],
+    "crossSell": [
+     "YOU MAY ALSO LIKE"
+    ],
+    "addToCart": [
+     "ADD TO BAG"
+    ],
+    "stickyColumn": true
+   },
+   "cart": {
+    "type": "not found"
+   },
+   "footer": {
+    "headings": [],
+    "linkCount": 8,
+    "newsletter": true
+   },
+   "fonts": [
+    "Sohne",
+    "DIN W01 Regular"
+   ],
+   "heading": {
+    "text": "Wool Herringbone Overcoat",
+    "font": "Sohne, Arial, sans-serif",
+    "size": "12px",
+    "weight": "400",
+    "tracking": "0.6px",
+    "transform": "none"
+   },
+   "textColours": [
+    "rgb(24, 24, 24)",
+    "rgb(255, 255, 255)",
+    "rgb(0, 0, 0)",
+    "rgba(196, 196, 196, 0.7)"
+   ],
+   "bg": [
+    "rgb(255, 255, 255)",
+    "rgb(24, 24, 24)",
+    "rgba(24, 24, 24, 0.75)",
+    "rgba(24, 24, 24, 0.7)"
+   ],
+   "libraries": [
+    "Swiper",
+    "Shopify",
+    "jQuery",
+    "Klaviyo"
+   ],
+   "motion": {
+    "runningAnimations": 0,
+    "marquee": false,
+    "videoCount": 0,
+    "transitionsOnLinks": 123,
+    "cssScrollSnap": false,
+    "reducedMotionQuery": true
+   },
+   "mobile": {
+    "nav_burger": true,
+    "bottomBar": false
+   },
+   "headings": [
+    "Wool Herringbone Overcoat",
+    "Full-Zip Pavilion Cashmere Hoodie",
+    "Pavilion Cashmere Sweatpant",
+    "The Esco Tee",
+    "ALD / New Era Mets Wool Hat",
+    "YOU MAY ALSO LIKE"
+   ]
+  },
+  {
+   "site": "annnimate",
+   "group": "design",
+   "page": "home",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "fixed h72 transparent",
+   "headerOnScroll": {
+    "visibleAfterScroll": true,
+    "bgAfterScroll": "rgba(0, 0, 0, 0)",
+    "backdropAfterScroll": "none",
+    "transform": "matrix(1, 0, 0, 1, 0, 0)"
+   },
+   "nav": [
+    "by Good Fella",
+    "Library Library",
+    "Kits Kits New",
+    "Learn Learn",
+    "Docs Docs",
+    "Pricing Pricing",
+    "Get access Get access",
+    "Library",
+    "Buttons",
+    "Scroll",
+    "UI Components",
+    "Experimental",
+    "Shaders",
+    "Menus"
+   ],
+   "hero": {
+    "video": false,
+    "images": 0,
+    "height": 900,
+    "vh": 100,
+    "text": "The same GSAP animations we build for Coca-Cola and Powerade",
+    "carousel": false
+   },
+   "card": null,
+   "filters": {
+    "filterEls": 0,
+    "sortEls": []
+   },
+   "pdp": null,
+   "cart": {
+    "type": "not found"
+   },
+   "footer": {
+    "headings": [],
+    "linkCount": 65,
+    "newsletter": true
+   },
+   "fonts": [
+    "aktivGrotesk"
+   ],
+   "heading": {
+    "text": "",
+    "font": "aktivGrotesk, \"aktivGrotesk Fallback\", geistSans, \"geistSans",
+    "size": "59.298px",
+    "weight": "500",
+    "tracking": "-2.07543px",
+    "transform": "none"
+   },
+   "textColours": [
+    "rgb(238, 238, 238)",
+    "rgb(20, 19, 20)",
+    "rgb(255, 255, 255)",
+    "rgb(129, 128, 129)"
+   ],
+   "bg": [
+    "rgb(51, 51, 51)",
+    "rgb(253, 85, 29)",
+    "oklab(0.949113 0.0000431836 0.0000190735 / 0.12)",
+    "rgb(20, 19, 20)"
+   ],
+   "libraries": [
+    "NextJS"
+   ],
+   "motion": {
+    "runningAnimations": 3,
+    "marquee": false,
+    "videoCount": 0,
+    "transitionsOnLinks": 134,
+    "cssScrollSnap": false,
+    "reducedMotionQuery": true
+   },
+   "mobile": {
+    "nav_burger": true,
+    "bottomBar": false
+   },
+   "headings": [
+    "Motion that wins the pitch",
+    "Your AI agent gets it right",
+    "React, Vue or plain HTML",
+    "\"A bit slower?\" One slider",
+    "Code you don't need to check",
+    "A new one every week"
+   ]
+  },
+  {
+   "site": "awwwards-ecommerce",
+   "group": "design",
+   "page": "home",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "relative h54 transparent",
+   "headerOnScroll": {
+    "visibleAfterScroll": false,
+    "bgAfterScroll": "rgba(0, 0, 0, 0.7)",
+    "backdropAfterScroll": "none",
+    "transform": "matrix(1, 0, 0, 1, -1440, -900)"
+   },
+   "nav": [
+    "Awwwards",
+    "Directory",
+    "Academy New",
+    "Jobs",
+    "Market",
+    "Search",
+    "Be Pro",
+    "Submit Website"
+   ],
+   "hero": {
+    "video": false,
+    "images": 126,
+    "height": 9127,
+    "vh": 1014,
+    "text": "Awards Category Tag Technology Country Font Color 1 Reset fi",
+    "carousel": false
+   },
+   "card": null,
+   "filters": {
+    "filterEls": 1350,
+    "sortEls": []
+   },
+   "pdp": null,
+   "cart": {
+    "type": "page",
+    "text": "The Creative Pass  Watch all courses for just €11.50/month\nThe Creative Pass  Watch all courses for just €11.50/month\nThe Creative Pass  Watch all courses for just €11.50/month\nThe Creative Pass  Watch all courses for just €11.50/month\nThe Creative Pass  Watch all courses for just €11.50/month\nThe Creative Pass  Watch all courses for just €11.50/month\nThe Creative Pass  Watch all courses for just ",
+    "opened_via": "[aria-label*='cart' i]:visible",
+    "navigated": true
+   },
+   "footer": {
+    "headings": [],
+    "linkCount": 22,
+    "newsletter": false
+   },
+   "fonts": [
+    "Inter Tight"
+   ],
+   "heading": {
+    "text": "E-Commerce",
+    "font": "\"Inter Tight\"",
+    "size": "14px",
+    "weight": "600",
+    "tracking": "normal",
+    "transform": "none"
+   },
+   "textColours": [
+    "rgb(34, 34, 34)",
+    "rgb(255, 255, 255)",
+    "rgb(255, 240, 131)",
+    "rgb(114, 105, 150)"
+   ],
+   "bg": [
+    "rgb(34, 34, 34)",
+    "rgb(248, 248, 248)",
+    "rgb(255, 255, 255)",
+    "rgb(237, 237, 237)"
+   ],
+   "libraries": [],
+   "motion": {
+    "runningAnimations": 4,
+    "marquee": true,
+    "videoCount": 0,
+    "transitionsOnLinks": 192,
+    "cssScrollSnap": false,
+    "reducedMotionQuery": false
+   },
+   "mobile": {
+    "nav_burger": true,
+    "bottomBar": false
+   },
+   "headings": [
+    "E-Commerce",
+    "Patrick David",
+    "Teacher",
+    "Ruler Digital Agency",
+    "Miligram",
+    "humansaucer",
+    "The Brink Agency",
+    "OXVO",
+    "Olya Black",
+    "ARRAY",
+    "Tattoo Digital",
+    "coi",
+    "SUM Design",
+    "Qream",
+    "Brucira",
+    "adi-vrskic",
+    "Guillaume Azadian",
+    "Nethype",
+    "Casa Media",
+    "mistercodybrown",
+    "Domaine Public",
+    "65 Creative Studio",
+    "Izak.studio",
+    "gregory-gamarra",
+    "Studio Almond"
+   ]
+  },
+  {
+   "site": "awwwards-fashion",
+   "group": "design",
+   "page": "home",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "relative h54 transparent",
+   "headerOnScroll": {
+    "visibleAfterScroll": false,
+    "bgAfterScroll": "rgba(0, 0, 0, 0.7)",
+    "backdropAfterScroll": "none",
+    "transform": "matrix(1, 0, 0, 1, -1440, -900)"
+   },
+   "nav": [
+    "Awwwards",
+    "Directory",
+    "Academy New",
+    "Jobs",
+    "Market",
+    "Search",
+    "Be Pro",
+    "Submit Website"
+   ],
+   "hero": {
+    "video": false,
+    "images": 63,
+    "height": 4781,
+    "vh": 531,
+    "text": "Awards Category Tag Technology Country Font Color 1 Reset fi",
+    "carousel": false
+   },
+   "card": null,
+   "filters": {
+    "filterEls": 1185,
+    "sortEls": []
+   },
+   "pdp": null,
+   "cart": {
+    "type": "none",
+    "text": "The Creative Pass  Watch all courses for just $12/month\nThe Creative Pass  Watch all courses for just $12/month\nThe Creative Pass  Watch all courses for just $12/month\nThe Creative Pass  Watch all courses for just $12/month\nThe Creative Pass  Watch all courses for just $12/month\nThe Creative Pass  Watch all courses for just $12/month\nThe Creative Pass  Watch all courses for just $12/month\nThe Crea",
+    "opened_via": "[aria-label*='cart' i]:visible",
+    "navigated": false
+   },
+   "footer": {
+    "headings": [],
+    "linkCount": 22,
+    "newsletter": false
+   },
+   "fonts": [
+    "Inter Tight"
+   ],
+   "heading": {
+    "text": "Fashion",
+    "font": "\"Inter Tight\"",
+    "size": "14px",
+    "weight": "600",
+    "tracking": "normal",
+    "transform": "none"
+   },
+   "textColours": [
+    "rgb(34, 34, 34)",
+    "rgb(255, 255, 255)",
+    "rgb(255, 240, 131)",
+    "rgb(167, 167, 167)"
+   ],
+   "bg": [
+    "rgb(34, 34, 34)",
+    "rgb(248, 248, 248)",
+    "rgb(237, 237, 237)",
+    "rgb(255, 255, 255)"
+   ],
+   "libraries": [],
+   "motion": {
+    "runningAnimations": 4,
+    "marquee": true,
+    "videoCount": 0,
+    "transitionsOnLinks": 192,
+    "cssScrollSnap": false,
+    "reducedMotionQuery": false
+   },
+   "mobile": {
+    "nav_burger": true,
+    "bottomBar": false
+   },
+   "headings": [
+    "Fashion",
+    "Ruler Digital Agency",
+    "Strictly Studio",
+    "neverdone",
+    "SMI - Digital",
+    "ARRAY",
+    "coi",
+    "8b AI Website Builder",
+    "EGO55",
+    "Domaine Public",
+    "Studio Almond",
+    "Sixjuly design studio",
+    "coi",
+    "Decimal",
+    "Designatives",
+    "Shabir Hussain",
+    "LayerTwo",
+    "Cake Agency | Shopify Partner",
+    "Shakuro",
+    "Anastasiya Viachorka",
+    "Studio Almond",
+    "NUUNI",
+    "Merci Michel",
+    "Made In Evolve",
+    "Southmates"
+   ]
+  },
+  {
+   "site": "corteiz",
+   "group": "store",
+   "page": "home",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": null,
+   "headerOnScroll": null,
+   "nav": [
+    "NEW",
+    "CLASSICS",
+    "COMBOS",
+    "T-SHIRTS",
+    "TOPS / JERSEYS",
+    "SWEATSHIRTS",
+    "JACKETS",
+    "KNITWEAR",
+    "BOTTOMS",
+    "SHORTS",
+    "DENIM",
+    "HATS",
+    "BAGS",
+    "ACCESSORIES"
+   ],
+   "hero": {
+    "video": false,
+    "images": 132,
+    "height": 10361,
+    "vh": 1151,
+    "text": "BOLO™ DOWN JACKET [TRIPLE BLACK] Regular price £250.00 BOLO™",
+    "carousel": false
+   },
+   "card": {
+    "imageRatio": 1,
+    "hoverSwapLikely": true,
+    "quickAdd": false,
+    "swatches": false,
+    "badges": []
+   },
+   "filters": {
+    "filterEls": 0,
+    "sortEls": []
+   },
+   "pdp": null,
+   "cart": {
+    "type": "drawer",
+    "width": 1440,
+    "freeShippingBar": false,
+    "upsells": false,
+    "text": "YOUR CART 0 ITEMS Your cart is empty",
+    "opened_via": "a[href*='/cart']:visible",
+    "navigated": false
+   },
+   "footer": {
+    "headings": [],
+    "linkCount": 7,
+    "newsletter": true
+   },
+   "fonts": [
+    "Courier New"
+   ],
+   "heading": {
+    "text": "YOUR CART",
+    "font": "\"Courier New\", courier, serif",
+    "size": "14px",
+    "weight": "700",
+    "tracking": "normal",
+    "transform": "uppercase"
+   },
+   "textColours": [
+    "rgb(255, 213, 0)",
+    "rgb(162, 0, 0)",
+    "rgb(128, 128, 128)"
+   ],
+   "bg": [
+    "rgb(162, 0, 0)",
+    "rgba(0, 0, 0, 0.4)",
+    "rgb(25, 25, 25)"
+   ],
+   "libraries": [
+    "Shopify",
+    "jQuery",
+    "Klaviyo"
+   ],
+   "motion": {
+    "runningAnimations": 0,
+    "marquee": false,
+    "videoCount": 0,
+    "transitionsOnLinks": 0,
+    "cssScrollSnap": true,
+    "reducedMotionQuery": true
+   },
+   "mobile": {
+    "nav_burger": false,
+    "bottomBar": false
+   },
+   "headings": [
+    "YOUR CART",
+    "CRTZRTW"
+   ]
+  },
+  {
+   "site": "corteiz",
+   "group": "store",
+   "page": "collection",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": null,
+   "headerOnScroll": {
+    "visibleAfterScroll": false,
+    "bgAfterScroll": "rgba(0, 0, 0, 0)",
+    "backdropAfterScroll": "none",
+    "transform": "none"
+   },
+   "nav": [
+    "NEW",
+    "CLASSICS",
+    "COMBOS",
+    "T-SHIRTS",
+    "TOPS / JERSEYS",
+    "SWEATSHIRTS",
+    "JACKETS",
+    "KNITWEAR",
+    "BOTTOMS",
+    "SHORTS",
+    "DENIM",
+    "HATS",
+    "BAGS",
+    "ACCESSORIES"
+   ],
+   "hero": {
+    "video": false,
+    "images": 68,
+    "height": 5247,
+    "vh": 583,
+    "text": "23.10.26 ELITEWORK™ APEX SHELL JACKET [BLACK/GREEN] Regular ",
+    "carousel": false
+   },
+   "card": {
+    "imageRatio": 1,
+    "hoverSwapLikely": true,
+    "quickAdd": false,
+    "swatches": false,
+    "badges": []
+   },
+   "filters": {
+    "filterEls": 0,
+    "sortEls": []
+   },
+   "pdp": null,
+   "cart": null,
+   "footer": {
+    "headings": [],
+    "linkCount": 7,
+    "newsletter": true
+   },
+   "fonts": [
+    "Courier New"
+   ],
+   "heading": {
+    "text": "YOUR CART",
+    "font": "\"Courier New\", courier, serif",
+    "size": "14px",
+    "weight": "700",
+    "tracking": "normal",
+    "transform": "uppercase"
+   },
+   "textColours": [
+    "rgb(255, 213, 0)",
+    "rgb(162, 0, 0)",
+    "rgb(128, 128, 128)"
+   ],
+   "bg": [
+    "rgb(162, 0, 0)",
+    "rgba(0, 0, 0, 0.4)",
+    "rgb(25, 25, 25)"
+   ],
+   "libraries": [
+    "Shopify",
+    "jQuery",
+    "Klaviyo"
+   ],
+   "motion": {
+    "runningAnimations": 0,
+    "marquee": false,
+    "videoCount": 0,
+    "transitionsOnLinks": 0,
+    "cssScrollSnap": true,
+    "reducedMotionQuery": true
+   },
+   "mobile": {
+    "nav_burger": false,
+    "bottomBar": false
+   },
+   "headings": [
+    "YOUR CART",
+    "23.10.26"
+   ]
+  },
+  {
+   "site": "corteiz",
+   "group": "store",
+   "page": "product",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": null,
+   "headerOnScroll": null,
+   "nav": [
+    "NEW",
+    "CLASSICS",
+    "COMBOS",
+    "T-SHIRTS",
+    "TOPS / JERSEYS",
+    "SWEATSHIRTS",
+    "JACKETS",
+    "KNITWEAR",
+    "BOTTOMS",
+    "SHORTS",
+    "DENIM",
+    "HATS",
+    "BAGS",
+    "ACCESSORIES"
+   ],
+   "hero": {
+    "video": false,
+    "images": 16,
+    "height": 573,
+    "vh": 64,
+    "text": "Previous Next ELITEWORK™ APEX SHELL JACKET [BLACK/GREEN] Reg",
+    "carousel": true
+   },
+   "card": null,
+   "filters": {
+    "filterEls": 0,
+    "sortEls": []
+   },
+   "pdp": {
+    "sizeButtons": [],
+    "sizeGuide": true,
+    "accordions": [
+     "DETAILS",
+     "SIZE GUIDE",
+     "SHIPPING POLICY"
+    ],
+    "deliveryCopy": [
+     "SHIPPING POLICY",
+     "SHIPPING POLICY"
+    ],
+    "crossSell": [],
+    "addToCart": [],
+    "stickyColumn": false
+   },
+   "cart": {
+    "type": "drawer",
+    "width": 1440,
+    "freeShippingBar": false,
+    "upsells": false,
+    "text": "YOUR CART 0 ITEMS Your cart is empty",
+    "opened_via": "a[href*='/cart']:visible",
+    "navigated": false
+   },
+   "footer": {
+    "headings": [],
+    "linkCount": 7,
+    "newsletter": true
+   },
+   "fonts": [
+    "Courier New"
+   ],
+   "heading": {
+    "text": "YOUR CART",
+    "font": "\"Courier New\", courier, serif",
+    "size": "14px",
+    "weight": "700",
+    "tracking": "normal",
+    "transform": "uppercase"
+   },
+   "textColours": [
+    "rgb(255, 213, 0)",
+    "rgb(162, 0, 0)",
+    "rgb(128, 128, 128)"
+   ],
+   "bg": [
+    "rgba(255, 213, 0, 0.1)",
+    "rgb(162, 0, 0)",
+    "rgba(0, 0, 0, 0.4)",
+    "rgb(25, 25, 25)"
+   ],
+   "libraries": [
+    "Shopify",
+    "jQuery",
+    "Klaviyo"
+   ],
+   "motion": {
+    "runningAnimations": 4,
+    "marquee": false,
+    "videoCount": 0,
+    "transitionsOnLinks": 7,
+    "cssScrollSnap": false,
+    "reducedMotionQuery": true
+   },
+   "mobile": {
+    "nav_burger": false,
+    "bottomBar": false
+   },
+   "headings": [
+    "YOUR CART",
+    "ELITEWORK™ APEX SHELL JACKET [BLACK/GREEN]"
+   ]
+  },
+  {
+   "site": "cos",
+   "group": "store",
+   "page": "home",
+   "status": 403,
+   "blocked": true,
+   "skipped": null,
+   "errors": null,
+   "header": null,
+   "headerOnScroll": null,
+   "nav": [],
+   "hero": {},
+   "card": null,
+   "filters": {
+    "filterEls": 0,
+    "sortEls": []
+   },
+   "pdp": null,
+   "cart": null,
+   "footer": null,
+   "fonts": [
+    "Times New Roman"
+   ],
+   "heading": {
+    "text": "Access Denied",
+    "font": "\"Times New Roman\"",
+    "size": "32px",
+    "weight": "700",
+    "tracking": "normal",
+    "transform": "none"
+   },
+   "textColours": [
+    "rgb(0, 0, 0)"
+   ],
+   "bg": [],
+   "libraries": [],
+   "motion": {
+    "runningAnimations": 0,
+    "marquee": false,
+    "videoCount": 0,
+    "transitionsOnLinks": 0,
+    "cssScrollSnap": false,
+    "reducedMotionQuery": false
+   },
+   "mobile": {
+    "nav_burger": false,
+    "bottomBar": false
+   },
+   "headings": [
+    "Access Denied"
+   ]
+  },
+  {
+   "site": "cpfm",
+   "group": "store",
+   "page": "home",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "static h76 transparent",
+   "headerOnScroll": {
+    "visibleAfterScroll": true,
+    "bgAfterScroll": "rgba(0, 0, 0, 0)",
+    "backdropAfterScroll": "none",
+    "transform": "none"
+   },
+   "nav": [
+    "https://cactusplantfleamarket.com/",
+    "cart",
+    "Close cart"
+   ],
+   "hero": {
+    "video": false,
+    "images": 7,
+    "height": 442,
+    "vh": 49,
+    "text": "camo beaded bandana $90 USD sold out white boxer brief $60 U",
+    "carousel": true
+   },
+   "card": null,
+   "filters": {
+    "filterEls": 0,
+    "sortEls": []
+   },
+   "pdp": null,
+   "cart": {
+    "type": "drawer",
+    "width": 1440,
+    "freeShippingBar": false,
+    "upsells": false,
+    "text": "your cart is empty i accept the terms of use and privacy policy. i understand all sales are final. shipping & taxes calculated at checkout total $0 USD checkout",
+    "opened_via": "button[aria-label*='cart' i]:visible",
+    "navigated": false
+   },
+   "footer": {
+    "headings": [],
+    "linkCount": 2,
+    "newsletter": false
+   },
+   "fonts": [
+    "hv-mono",
+    "ocr-a",
+    "Kosugi Maru"
+   ],
+   "heading": {
+    "text": "https://cactusplantfleamarket.com/",
+    "font": "ocr-a",
+    "size": "18px",
+    "weight": "400",
+    "tracking": "normal",
+    "transform": "none"
+   },
+   "textColours": [
+    "rgb(0, 0, 0)",
+    "rgb(255, 255, 255)"
+   ],
+   "bg": [
+    "rgba(0, 0, 0, 0.15)",
+    "rgb(0, 0, 0)",
+    "rgb(255, 255, 255)",
+    "rgb(36, 31, 32)"
+   ],
+   "libraries": [
+    "Swiper",
+    "Shopify",
+    "Klaviyo"
+   ],
+   "motion": {
+    "runningAnimations": 8,
+    "marquee": false,
+    "videoCount": 0,
+    "transitionsOnLinks": 0,
+    "cssScrollSnap": false,
+    "reducedMotionQuery": false
+   },
+   "mobile": {
+    "nav_burger": false,
+    "bottomBar": true
+   },
+   "headings": [
+    "https://cactusplantfleamarket.com/",
+    "camo beaded bandana",
+    "white boxer brief",
+    "grey boxer brief",
+    "cpfm brown tube socks"
+   ]
+  },
+  {
+   "site": "dairyboy",
+   "group": "store",
+   "page": "home",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "fixed h111 transparent",
+   "headerOnScroll": {
+    "visibleAfterScroll": true,
+    "bgAfterScroll": "rgba(0, 0, 0, 0)",
+    "backdropAfterScroll": "none",
+    "transform": "none"
+   },
+   "nav": [
+    "Previous announcement",
+    "Visit us",
+    "Next announcement",
+    "Cart",
+    "SHOP ALL",
+    "BEST SELLERS",
+    "HOME",
+    "DB SPORT",
+    "TOPS",
+    "Sweatshirts & Hoodies",
+    "Sweaters",
+    "Shirts",
+    "Tanks",
+    "Outerwear"
+   ],
+   "hero": {
+    "video": false,
+    "images": 2,
+    "height": 802,
+    "vh": 89,
+    "text": "",
+    "carousel": false
+   },
+   "card": {
+    "imageRatio": null,
+    "hoverSwapLikely": true,
+    "quickAdd": false,
+    "swatches": false,
+    "badges": [
+     "Trending",
+     "Trending"
+    ]
+   },
+   "filters": {
+    "filterEls": 0,
+    "sortEls": []
+   },
+   "pdp": null,
+   "cart": {
+    "type": "drawer",
+    "width": 240,
+    "freeShippingBar": false,
+    "upsells": false,
+    "text": "EVERGREEN Shop the collection",
+    "opened_via": "button[aria-label*='cart' i]:visible",
+    "navigated": true
+   },
+   "footer": {
+    "headings": [
+     "Sign Up for Updates"
+    ],
+    "linkCount": 10,
+    "newsletter": true
+   },
+   "fonts": [
+    "Monument Grotesk",
+    "GT Alpina",
+    "minimal-fa"
+   ],
+   "heading": {
+    "text": "HOME SWEET HOME",
+    "font": "\"Monument Grotesk\", sans-serif",
+    "size": "17px",
+    "weight": "500",
+    "tracking": "1px",
+    "transform": "uppercase"
+   },
+   "textColours": [
+    "rgb(0, 0, 0)",
+    "rgb(255, 255, 255)",
+    "rgb(46, 26, 14)",
+    "rgb(232, 230, 213)"
+   ],
+   "bg": [
+    "rgba(0, 0, 0, 0.8)",
+    "rgb(46, 26, 14)",
+    "rgb(255, 255, 255)",
+    "color(srgb 0 0 0 / 0.1)"
+   ],
+   "libraries": [
+    "Shopify",
+    "Klaviyo"
+   ],
+   "motion": {
+    "runningAnimations": 1,
+    "marquee": false,
+    "videoCount": 0,
+    "transitionsOnLinks": 39,
+    "cssScrollSnap": true,
+    "reducedMotionQuery": true
+   },
+   "mobile": {
+    "nav_burger": true,
+    "bottomBar": false
+   },
+   "headings": [
+    "TOPS",
+    "BOTTOMS",
+    "LOUNGEWEAR",
+    "ACCESSORIES",
+    "HOME SWEET HOME",
+    "PLAYFUL TRADITIONS",
+    "NEW ARRIVALS",
+    "ACCESSORIES",
+    "EVERGREEN",
+    "AS SEEN ON @DAIRYBOY",
+    "Sign Up for Updates"
+   ]
+  },
+  {
+   "site": "dairyboy",
+   "group": "store",
+   "page": "collection",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "fixed h111 transparent",
+   "headerOnScroll": {
+    "visibleAfterScroll": true,
+    "bgAfterScroll": "rgba(0, 0, 0, 0)",
+    "backdropAfterScroll": "none",
+    "transform": "none"
+   },
+   "nav": [
+    "Previous announcement",
+    "Visit us",
+    "Next announcement",
+    "Cart",
+    "SHOP ALL",
+    "BEST SELLERS",
+    "HOME",
+    "DB SPORT",
+    "TOPS",
+    "Sweatshirts & Hoodies",
+    "Sweaters",
+    "Shirts",
+    "Tanks",
+    "Outerwear"
+   ],
+   "hero": {
+    "video": false,
+    "images": 19,
+    "height": 817,
+    "vh": 91,
+    "text": "FILTER & SORT Trending The Fisherman's Daughter Sweater in B",
+    "carousel": false
+   },
+   "card": {
+    "imageRatio": null,
+    "hoverSwapLikely": true,
+    "quickAdd": false,
+    "swatches": false,
+    "badges": [
+     "Trending",
+     "Trending"
+    ]
+   },
+   "filters": {
+    "filterEls": 54,
+    "sortEls": [
+     ""
+    ]
+   },
+   "pdp": null,
+   "cart": null,
+   "footer": {
+    "headings": [
+     "Sign Up for Updates"
+    ],
+    "linkCount": 10,
+    "newsletter": true
+   },
+   "fonts": [
+    "Monument Grotesk",
+    "GT Alpina"
+   ],
+   "heading": {
+    "text": "Sign Up for Updates",
+    "font": "\"GT Alpina\", serif",
+    "size": "18px",
+    "weight": "400",
+    "tracking": "normal",
+    "transform": "none"
+   },
+   "textColours": [
+    "rgb(0, 0, 0)",
+    "rgb(46, 26, 14)",
+    "rgb(255, 255, 255)",
+    "rgb(58, 58, 58)"
+   ],
+   "bg": [
+    "rgb(241, 241, 241)",
+    "rgb(46, 26, 14)",
+    "color(srgb 0 0 0 / 0.1)",
+    "rgb(255, 255, 255)"
+   ],
+   "libraries": [
+    "Shopify",
+    "Klaviyo"
+   ],
+   "motion": {
+    "runningAnimations": 4,
+    "marquee": false,
+    "videoCount": 0,
+    "transitionsOnLinks": 45,
+    "cssScrollSnap": true,
+    "reducedMotionQuery": true
+   },
+   "mobile": {
+    "nav_burger": true,
+    "bottomBar": false
+   },
+   "headings": [
+    "TOPS",
+    "BOTTOMS",
+    "LOUNGEWEAR",
+    "ACCESSORIES",
+    "Sign Up for Updates"
+   ]
+  },
+  {
+   "site": "dairyboy",
+   "group": "store",
+   "page": "product",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "fixed h111 transparent",
+   "headerOnScroll": {
+    "visibleAfterScroll": true,
+    "bgAfterScroll": "rgba(0, 0, 0, 0)",
+    "backdropAfterScroll": "none",
+    "transform": "none"
+   },
+   "nav": [
+    "Previous announcement",
+    "Visit us",
+    "Next announcement",
+    "Cart",
+    "SHOP ALL",
+    "BEST SELLERS",
+    "HOME",
+    "DB SPORT",
+    "TOPS",
+    "Sweatshirts & Hoodies",
+    "Sweaters",
+    "Shirts",
+    "Tanks",
+    "Outerwear"
+   ],
+   "hero": {
+    "video": false,
+    "images": 39,
+    "height": 1735,
+    "vh": 193,
+    "text": "SWEATERS MODEL: Thalita is 5'9\" in a small THE FISHERMAN'S D",
+    "carousel": true
+   },
+   "card": {
+    "imageRatio": null,
+    "hoverSwapLikely": true,
+    "quickAdd": false,
+    "swatches": false,
+    "badges": [
+     "Trending",
+     "Trending"
+    ]
+   },
+   "filters": {
+    "filterEls": 0,
+    "sortEls": []
+   },
+   "pdp": {
+    "sizeButtons": [],
+    "sizeGuide": true,
+    "accordions": [
+     "Cart",
+     "SIZE GUIDE",
+     "+4 more"
+    ],
+    "deliveryCopy": [
+     "Free shipping on all domestic orders $175+",
+     "Our beloved fish sweater returns in our classic colors. Made in our Coastal Cotton Knit and finished with a special garment wash for an even",
+     "SHIPPING POLICY",
+     "RETURN POLICY",
+     "MAKE A RETURN"
+    ],
+    "crossSell": [
+     "COMPLETE THE LOOK",
+     "You may also like"
+    ],
+    "addToCart": [],
+    "stickyColumn": true
+   },
+   "cart": {
+    "type": "drawer",
+    "width": 240,
+    "freeShippingBar": false,
+    "upsells": false,
+    "text": "EVERGREEN Shop the collection",
+    "opened_via": "button[aria-label*='cart' i]:visible",
+    "navigated": true
+   },
+   "footer": {
+    "headings": [
+     "Sign Up for Updates"
+    ],
+    "linkCount": 10,
+    "newsletter": true
+   },
+   "fonts": [
+    "Monument Grotesk",
+    "GT Alpina"
+   ],
+   "heading": {
+    "text": "THE FISHERMAN'S DAUGHTER SWEATER",
+    "font": "\"GT Alpina\", serif",
+    "size": "22px",
+    "weight": "400",
+    "tracking": "2px",
+    "transform": "uppercase"
+   },
+   "textColours": [
+    "rgb(0, 0, 0)",
+    "rgb(46, 26, 14)",
+    "rgb(255, 255, 255)",
+    "rgb(58, 58, 58)"
+   ],
+   "bg": [
+    "rgb(255, 255, 255)",
+    "rgb(241, 241, 241)",
+    "rgba(255, 255, 255, 0.6)",
+    "rgb(46, 26, 14)"
+   ],
+   "libraries": [
+    "Shopify",
+    "Klaviyo"
+   ],
+   "motion": {
+    "runningAnimations": 3,
+    "marquee": false,
+    "videoCount": 1,
+    "transitionsOnLinks": 61,
+    "cssScrollSnap": true,
+    "reducedMotionQuery": true
+   },
+   "mobile": {
+    "nav_burger": true,
+    "bottomBar": false
+   },
+   "headings": [
+    "TOPS",
+    "BOTTOMS",
+    "LOUNGEWEAR",
+    "ACCESSORIES",
+    "THE FISHERMAN'S DAUGHTER SWEATER",
+    "COLOR: BLUEPOINT",
+    "SELECT SIZE:",
+    "COMPLETE THE LOOK",
+    "You may also like",
+    "Sign Up for Updates"
+   ]
+  },
+  {
+   "site": "dqnamo-kitchen",
+   "group": "design",
+   "page": "home",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": null,
+   "headerOnScroll": null,
+   "nav": [
+    "Home",
+    "Twitter",
+    "GitHub",
+    "Book a project call",
+    "Email JP",
+    "Toggle dark mode"
+   ],
+   "hero": {
+    "video": false,
+    "images": 3,
+    "height": 1824,
+    "vh": 203,
+    "text": "dqnamo's Kitchen Components, interface studies, and small ex",
+    "carousel": false
+   },
+   "card": null,
+   "filters": {
+    "filterEls": 12,
+    "sortEls": []
+   },
+   "pdp": null,
+   "cart": {
+    "type": "not found"
+   },
+   "footer": null,
+   "fonts": [
+    "Inter",
+    "JetBrains Mono",
+    "Pirata One"
+   ],
+   "heading": {
+    "text": "dqnamo's",
+    "font": "Inter, \"Inter Fallback\"",
+    "size": "16px",
+    "weight": "400",
+    "tracking": "normal",
+    "transform": "none"
+   },
+   "textColours": [
+    "rgb(32, 32, 32)",
+    "rgb(35, 38, 45)",
+    "rgb(141, 141, 141)",
+    "rgb(131, 131, 131)"
+   ],
+   "bg": [
+    "rgb(255, 255, 255)",
+    "rgb(249, 249, 249)",
+    "rgb(252, 252, 252)",
+    "rgb(29, 29, 27)"
+   ],
+   "libraries": [
+    "NextJS"
+   ],
+   "motion": {
+    "runningAnimations": 7,
+    "marquee": false,
+    "videoCount": 0,
+    "transitionsOnLinks": 20,
+    "cssScrollSnap": false,
+    "reducedMotionQuery": true
+   },
+   "mobile": {
+    "nav_burger": false,
+    "bottomBar": true
+   },
+   "headings": [
+    "dqnamo's",
+    "Tactile Button",
+    "Scramble Text",
+    "Receipt Printer",
+    "Cassette Audio Player",
+    "Hold to Confirm",
+    "Magnetic Drop Zone",
+    "Dynamic Button",
+    "Playing Cards",
+    "Ticket",
+    "Stamp",
+    "Scroll Fade List",
+    "Advanced Model Selector",
+    "Animated Signature",
+    "Logo Trace Loader",
+    "Iridescent Foil"
+   ]
+  },
+  {
+   "site": "entireworld",
+   "group": "store",
+   "page": "home",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "absolute h229 transparent",
+   "headerOnScroll": {
+    "visibleAfterScroll": true,
+    "bgAfterScroll": "rgba(0, 0, 0, 0)",
+    "backdropAfterScroll": "none",
+    "transform": "none"
+   },
+   "nav": [
+    "SKIP TO CONTENT",
+    "ABOUT",
+    "CONTACT",
+    "Instagram",
+    "Instagram"
+   ],
+   "hero": {
+    "video": false,
+    "images": 17,
+    "height": 1981,
+    "vh": 220,
+    "text": "BRAND MARKS MONOGRAMS LOGOTYPES LOCKUPS & ENCLOSURES FITTED ",
+    "carousel": false
+   },
+   "card": null,
+   "filters": {
+    "filterEls": 0,
+    "sortEls": []
+   },
+   "pdp": null,
+   "cart": {
+    "type": "not found"
+   },
+   "footer": {
+    "headings": [],
+    "linkCount": 1,
+    "newsletter": false
+   },
+   "fonts": [
+    "Epilogue",
+    "Dela Gothic One"
+   ],
+   "heading": null,
+   "textColours": [
+    "rgb(255, 255, 255)",
+    "rgb(0, 0, 0)",
+    "rgb(239, 63, 45)",
+    "rgb(255, 242, 0)"
+   ],
+   "bg": [
+    "rgb(239, 63, 45)",
+    "rgb(0, 0, 0)",
+    "rgb(255, 242, 0)"
+   ],
+   "libraries": [],
+   "motion": {
+    "runningAnimations": 0,
+    "marquee": false,
+    "videoCount": 0,
+    "transitionsOnLinks": 4,
+    "cssScrollSnap": false,
+    "reducedMotionQuery": false
+   },
+   "mobile": {
+    "nav_burger": true,
+    "bottomBar": false
+   },
+   "headings": [
+    "BRAND MARKS",
+    "MONOGRAMS",
+    "LOGOTYPES",
+    "LOCKUPS & ENCLOSURES",
+    "FITTED HATS",
+    "CLINK ROOM PROMOS",
+    "PRINT WORK",
+    "CROQUET CAFE",
+    "THE JONES GROUP",
+    "LOLLY ESTATES",
+    "BIRDIE CONSTRUCTION",
+    "SOUL SAUCE",
+    "SINKERS",
+    "THE BAND BOX",
+    "VINYL TAP",
+    "TWO BITS",
+    "LOCKELAND TABLE"
+   ]
+  },
+  {
+   "site": "essentials",
+   "group": "store",
+   "page": "home",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "sticky h46 transparent",
+   "headerOnScroll": {
+    "visibleAfterScroll": true,
+    "bgAfterScroll": "rgba(0, 0, 0, 0)",
+    "backdropAfterScroll": "none",
+    "transform": "none"
+   },
+   "nav": [
+    "FEATURED",
+    "COLLECTIONS",
+    "MENS",
+    "WOMENS",
+    "KIDS",
+    "SEARCH",
+    "ACCOUNT",
+    "BAG"
+   ],
+   "hero": {
+    "video": false,
+    "images": 95,
+    "height": 11313,
+    "vh": 1257,
+    "text": "ESSENTIALS SKIP TO RESULTS LIST 828 ITEMS FILTER & SORT Rips",
+    "carousel": true
+   },
+   "card": {
+    "imageRatio": 0.75,
+    "hoverSwapLikely": true,
+    "quickAdd": false,
+    "swatches": false,
+    "badges": []
+   },
+   "filters": {
+    "filterEls": 0,
+    "sortEls": []
+   },
+   "pdp": null,
+   "cart": {
+    "type": "not found"
+   },
+   "footer": {
+    "headings": [
+     "Join the Conversation",
+     "Footer"
+    ],
+    "linkCount": 6,
+    "newsletter": true
+   },
+   "fonts": [
+    "HelveticaNeueLTPro-Cn",
+    "Optima"
+   ],
+   "heading": {
+    "text": "ESSENTIALS",
+    "font": "Optima, \"Optima Nova LT\", \"Gill Sans\", sans-serif",
+    "size": "32px",
+    "weight": "400",
+    "tracking": "normal",
+    "transform": "none"
+   },
+   "textColours": [
+    "rgb(0, 0, 0)",
+    "rgb(117, 117, 117)",
+    "rgba(0, 0, 0, 0.7)",
+    "rgb(97, 97, 97)"
+   ],
+   "bg": [
+    "rgb(255, 255, 255)"
+   ],
+   "libraries": [
+    "Shopify",
+    "Klaviyo"
+   ],
+   "motion": {
+    "runningAnimations": 1,
+    "marquee": false,
+    "videoCount": 0,
+    "transitionsOnLinks": 200,
+    "cssScrollSnap": true,
+    "reducedMotionQuery": true
+   },
+   "mobile": {
+    "nav_burger": true,
+    "bottomBar": false
+   },
+   "headings": [
+    "ESSENTIALS"
+   ]
+  },
+  {
+   "site": "essentials",
+   "group": "store",
+   "page": "collection",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "sticky h46 transparent",
+   "headerOnScroll": {
+    "visibleAfterScroll": true,
+    "bgAfterScroll": "rgba(0, 0, 0, 0)",
+    "backdropAfterScroll": "none",
+    "transform": "none"
+   },
+   "nav": [
+    "FEATURED",
+    "COLLECTIONS",
+    "MENS",
+    "WOMENS",
+    "KIDS",
+    "SEARCH",
+    "ACCOUNT",
+    "BAG"
+   ],
+   "hero": {
+    "video": false,
+    "images": 95,
+    "height": 11313,
+    "vh": 1257,
+    "text": "ESSENTIALS SKIP TO RESULTS LIST 828 ITEMS FILTER & SORT Rips",
+    "carousel": true
+   },
+   "card": {
+    "imageRatio": 0.75,
+    "hoverSwapLikely": true,
+    "quickAdd": false,
+    "swatches": false,
+    "badges": []
+   },
+   "filters": {
+    "filterEls": 0,
+    "sortEls": []
+   },
+   "pdp": null,
+   "cart": null,
+   "footer": {
+    "headings": [
+     "Join the Conversation",
+     "Footer"
+    ],
+    "linkCount": 6,
+    "newsletter": true
+   },
+   "fonts": [
+    "HelveticaNeueLTPro-Cn",
+    "Optima"
+   ],
+   "heading": {
+    "text": "ESSENTIALS",
+    "font": "Optima, \"Optima Nova LT\", \"Gill Sans\", sans-serif",
+    "size": "32px",
+    "weight": "400",
+    "tracking": "normal",
+    "transform": "none"
+   },
+   "textColours": [
+    "rgb(0, 0, 0)",
+    "rgb(117, 117, 117)",
+    "rgba(0, 0, 0, 0.7)",
+    "rgb(97, 97, 97)"
+   ],
+   "bg": [
+    "rgb(255, 255, 255)"
+   ],
+   "libraries": [
+    "Shopify",
+    "Klaviyo"
+   ],
+   "motion": {
+    "runningAnimations": 1,
+    "marquee": false,
+    "videoCount": 0,
+    "transitionsOnLinks": 200,
+    "cssScrollSnap": true,
+    "reducedMotionQuery": true
+   },
+   "mobile": {
+    "nav_burger": true,
+    "bottomBar": false
+   },
+   "headings": [
+    "ESSENTIALS"
+   ]
+  },
+  {
+   "site": "essentials",
+   "group": "store",
+   "page": "product",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "sticky h46 transparent",
+   "headerOnScroll": {
+    "visibleAfterScroll": true,
+    "bgAfterScroll": "rgba(0, 0, 0, 0)",
+    "backdropAfterScroll": "none",
+    "transform": "none"
+   },
+   "nav": [
+    "FEATURED",
+    "COLLECTIONS",
+    "MENS",
+    "WOMENS",
+    "KIDS",
+    "SEARCH",
+    "ACCOUNT",
+    "BAG"
+   ],
+   "hero": {
+    "video": false,
+    "images": 26,
+    "height": 3568,
+    "vh": 396,
+    "text": "SKIP TO PRODUCT INFORMATION ESSENTIALS Ripstop Modern Mockne",
+    "carousel": false
+   },
+   "card": {
+    "imageRatio": null,
+    "hoverSwapLikely": false,
+    "quickAdd": true,
+    "swatches": true,
+    "badges": [
+     "Night Sea",
+     "MORE COLORS"
+    ]
+   },
+   "filters": {
+    "filterEls": 0,
+    "sortEls": []
+   },
+   "pdp": {
+    "sizeButtons": [
+     "SEARCH",
+     "BAG",
+     "",
+     "XS",
+     "",
+     "S",
+     "",
+     "M",
+     "",
+     "L",
+     "",
+     "XL"
+    ],
+    "sizeGuide": true,
+    "accordions": [
+     "FEATURED",
+     "COLLECTIONS",
+     "MENS",
+     "WOMENS",
+     "KIDS",
+     "Size SELECT SIZE",
+     "DETAILS",
+     "SHIPPING POLICY",
+     "SHARE",
+     "UNITED STATES (USD $) REGION AND LANGUAGE SELECTOR",
+     "Footer"
+    ],
+    "deliveryCopy": [
+     "SHIPPING POLICY"
+    ],
+    "crossSell": [
+     "SIMILAR STYLES"
+    ],
+    "addToCart": [
+     "ADD TO CART ADDED TO CART"
+    ],
+    "stickyColumn": true
+   },
+   "cart": {
+    "type": "not found"
+   },
+   "footer": {
+    "headings": [
+     "Join the Conversation",
+     "Footer"
+    ],
+    "linkCount": 6,
+    "newsletter": true
+   },
+   "fonts": [
+    "HelveticaNeueLTPro-Cn",
+    "Optima",
+    "HelveticaNeueLTPro-LtCn"
+   ],
+   "heading": {
+    "text": "Ripstop Modern Mockneck Pullover",
+    "font": "Optima, \"Optima Nova LT\", \"Gill Sans\", sans-serif",
+    "size": "24px",
+    "weight": "400",
+    "tracking": "normal",
+    "transform": "none"
+   },
+   "textColours": [
+    "rgb(0, 0, 0)",
+    "rgb(255, 255, 255)",
+    "rgba(0, 0, 0, 0.7)",
+    "rgb(117, 117, 117)"
+   ],
+   "bg": [
+    "rgb(255, 255, 255)",
+    "rgb(0, 0, 0)",
+    "rgba(20, 20, 20, 0.6)"
+   ],
+   "libraries": [
+    "Shopify",
+    "Klaviyo"
+   ],
+   "motion": {
+    "runningAnimations": 1,
+    "marquee": false,
+    "videoCount": 0,
+    "transitionsOnLinks": 139,
+    "cssScrollSnap": true,
+    "reducedMotionQuery": true
+   },
+   "mobile": {
+    "nav_burger": true,
+    "bottomBar": false
+   },
+   "headings": [
+    "Ripstop Modern Mockneck Pullover",
+    "SIMILAR STYLES",
+    "RECENTLY VIEWED"
+   ]
+  },
+  {
+   "site": "fearofgod",
+   "group": "store",
+   "page": "home",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "absolute h46 transparent",
+   "headerOnScroll": {
+    "visibleAfterScroll": false,
+    "bgAfterScroll": "rgba(0, 0, 0, 0)",
+    "backdropAfterScroll": "none",
+    "transform": "matrix(1, 0, 0, 1, 0, -47)"
+   },
+   "nav": [
+    "FEATURED",
+    "COLLECTIONS",
+    "MENS",
+    "WOMENS",
+    "KIDS",
+    "SEARCH",
+    "ACCOUNT",
+    "BAG"
+   ],
+   "hero": {
+    "video": false,
+    "images": 2,
+    "height": 900,
+    "vh": 100,
+    "text": "DISCOVER SHOP",
+    "carousel": false
+   },
+   "card": null,
+   "filters": {
+    "filterEls": 0,
+    "sortEls": []
+   },
+   "pdp": null,
+   "cart": {
+    "type": "drawer",
+    "width": 576,
+    "freeShippingBar": false,
+    "upsells": false,
+    "text": "BAG YOU DON'T HAVE ANY ITEMS IN YOUR CART.",
+    "opened_via": "button[aria-label*='cart' i]:visible",
+    "navigated": false
+   },
+   "footer": {
+    "headings": [
+     "Join the Conversation",
+     "Footer"
+    ],
+    "linkCount": 6,
+    "newsletter": true
+   },
+   "fonts": [
+    "HelveticaNeueLTPro-Cn",
+    "Optima"
+   ],
+   "heading": {
+    "text": "Fear of God",
+    "font": "Optima, \"Optima Nova LT\", \"Gill Sans\", sans-serif",
+    "size": "32px",
+    "weight": "400",
+    "tracking": "normal",
+    "transform": "none"
+   },
+   "textColours": [
+    "rgb(0, 0, 0)",
+    "rgb(255, 255, 255)",
+    "rgb(118, 118, 118)"
+   ],
+   "bg": [
+    "rgb(0, 0, 0)",
+    "rgb(255, 255, 255)",
+    "rgba(255, 255, 255, 0.78)"
+   ],
+   "libraries": [
+    "Shopify",
+    "Klaviyo"
+   ],
+   "motion": {
+    "runningAnimations": 0,
+    "marquee": false,
+    "videoCount": 0,
+    "transitionsOnLinks": 125,
+    "cssScrollSnap": false,
+    "reducedMotionQuery": true
+   },
+   "mobile": {
+    "nav_burger": true,
+    "bottomBar": false
+   },
+   "headings": [
+    "Fear of God"
+   ]
+  },
+  {
+   "site": "fearofgod",
+   "group": "store",
+   "page": "collection",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "sticky h46 transparent",
+   "headerOnScroll": {
+    "visibleAfterScroll": true,
+    "bgAfterScroll": "rgba(0, 0, 0, 0)",
+    "backdropAfterScroll": "none",
+    "transform": "none"
+   },
+   "nav": [
+    "FEATURED",
+    "COLLECTIONS",
+    "MENS",
+    "WOMENS",
+    "KIDS",
+    "SEARCH",
+    "ACCOUNT",
+    "BAG"
+   ],
+   "hero": {
+    "video": false,
+    "images": 96,
+    "height": 11313,
+    "vh": 1257,
+    "text": "New Releases General SKIP TO RESULTS LIST 232 ITEMS FILTER &",
+    "carousel": true
+   },
+   "card": {
+    "imageRatio": 0.75,
+    "hoverSwapLikely": true,
+    "quickAdd": false,
+    "swatches": false,
+    "badges": []
+   },
+   "filters": {
+    "filterEls": 0,
+    "sortEls": []
+   },
+   "pdp": null,
+   "cart": null,
+   "footer": {
+    "headings": [
+     "Join the Conversation",
+     "Footer"
+    ],
+    "linkCount": 6,
+    "newsletter": true
+   },
+   "fonts": [
+    "HelveticaNeueLTPro-Cn",
+    "Optima"
+   ],
+   "heading": {
+    "text": "New Releases General",
+    "font": "Optima, \"Optima Nova LT\", \"Gill Sans\", sans-serif",
+    "size": "32px",
+    "weight": "400",
+    "tracking": "normal",
+    "transform": "none"
+   },
+   "textColours": [
+    "rgb(0, 0, 0)",
+    "rgb(117, 117, 117)",
+    "rgba(0, 0, 0, 0.7)",
+    "rgb(97, 97, 97)"
+   ],
+   "bg": [
+    "rgb(255, 255, 255)"
+   ],
+   "libraries": [
+    "Shopify",
+    "Klaviyo"
+   ],
+   "motion": {
+    "runningAnimations": 1,
+    "marquee": false,
+    "videoCount": 0,
+    "transitionsOnLinks": 200,
+    "cssScrollSnap": true,
+    "reducedMotionQuery": true
+   },
+   "mobile": {
+    "nav_burger": true,
+    "bottomBar": false
+   },
+   "headings": [
+    "New Releases General"
+   ]
+  },
+  {
+   "site": "fearofgod",
+   "group": "store",
+   "page": "product",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "sticky h46 transparent",
+   "headerOnScroll": {
+    "visibleAfterScroll": true,
+    "bgAfterScroll": "rgba(0, 0, 0, 0)",
+    "backdropAfterScroll": "none",
+    "transform": "none"
+   },
+   "nav": [
+    "FEATURED",
+    "COLLECTIONS",
+    "MENS",
+    "WOMENS",
+    "KIDS",
+    "SEARCH",
+    "ACCOUNT",
+    "BAG"
+   ],
+   "hero": {
+    "video": false,
+    "images": 20,
+    "height": 2972,
+    "vh": 330,
+    "text": "SKIP TO PRODUCT INFORMATION FEAR OF GOD Double Weave Cotton ",
+    "carousel": false
+   },
+   "card": {
+    "imageRatio": 0.75,
+    "hoverSwapLikely": true,
+    "quickAdd": false,
+    "swatches": false,
+    "badges": []
+   },
+   "filters": {
+    "filterEls": 0,
+    "sortEls": []
+   },
+   "pdp": {
+    "sizeButtons": [
+     "SEARCH",
+     "BAG",
+     "",
+     "XS",
+     "",
+     "S",
+     "",
+     "M",
+     "",
+     "L",
+     "",
+     "XL"
+    ],
+    "sizeGuide": true,
+    "accordions": [
+     "FEATURED",
+     "COLLECTIONS",
+     "MENS",
+     "WOMENS",
+     "KIDS",
+     "Size SELECT SIZE",
+     "DETAILS",
+     "SHIPPING POLICY",
+     "SHARE",
+     "GHANA (USD $) REGION AND LANGUAGE SELECTOR",
+     "Footer"
+    ],
+    "deliveryCopy": [
+     "SHIPPING POLICY"
+    ],
+    "crossSell": [
+     "SIMILAR STYLES"
+    ],
+    "addToCart": [
+     "ADD TO CART ADDED TO CART"
+    ],
+    "stickyColumn": true
+   },
+   "cart": {
+    "type": "not found"
+   },
+   "footer": {
+    "headings": [
+     "Join the Conversation",
+     "Footer"
+    ],
+    "linkCount": 6,
+    "newsletter": true
+   },
+   "fonts": [
+    "HelveticaNeueLTPro-Cn",
+    "Optima",
+    "HelveticaNeueLTPro-LtCn"
+   ],
+   "heading": {
+    "text": "Double Weave Cotton Wool Shawl Overcoat",
+    "font": "Optima, \"Optima Nova LT\", \"Gill Sans\", sans-serif",
+    "size": "24px",
+    "weight": "400",
+    "tracking": "normal",
+    "transform": "none"
+   },
+   "textColours": [
+    "rgb(0, 0, 0)",
+    "rgba(0, 0, 0, 0.7)",
+    "rgb(255, 255, 255)",
+    "rgb(117, 117, 117)"
+   ],
+   "bg": [
+    "rgb(255, 255, 255)",
+    "rgb(0, 0, 0)",
+    "rgba(20, 20, 20, 0.6)"
+   ],
+   "libraries": [
+    "Shopify",
+    "Klaviyo"
+   ],
+   "motion": {
+    "runningAnimations": 1,
+    "marquee": false,
+    "videoCount": 0,
+    "transitionsOnLinks": 131,
+    "cssScrollSnap": true,
+    "reducedMotionQuery": true
+   },
+   "mobile": {
+    "nav_burger": true,
+    "bottomBar": false
+   },
+   "headings": [
+    "Double Weave Cotton Wool Shawl Overcoat",
+    "SIMILAR STYLES",
+    "RECENTLY VIEWED"
+   ]
+  },
+  {
+   "site": "godly",
+   "group": "design",
+   "page": "home",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": [
+    "390: TimeoutError: Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://godly.website/\", waiting until \"domcontentloaded\"\n"
+   ],
+   "header": null,
+   "headerOnScroll": null,
+   "nav": [
+    "Design",
+    "Launch Videos new",
+    "Websites",
+    "OG Images",
+    "App Screenshots",
+    "App Icons",
+    "Tools",
+    "Skills",
+    "Jobs"
+   ],
+   "hero": {
+    "video": true,
+    "images": 52,
+    "height": 1638,
+    "vh": 182,
+    "text": "3 slides 3 3 slides 3 Sponsor Design jobs Post a job pen.dev",
+    "carousel": false
+   },
+   "card": null,
+   "filters": {
+    "filterEls": 0,
+    "sortEls": []
+   },
+   "pdp": null,
+   "cart": {
+    "type": "not found"
+   },
+   "footer": {
+    "headings": [],
+    "linkCount": 2,
+    "newsletter": false
+   },
+   "fonts": [
+    "Inter"
+   ],
+   "heading": {
+    "text": "Browse",
+    "font": "Inter, ui-sans-serif, system-ui, sans-serif",
+    "size": "13px",
+    "weight": "400",
+    "tracking": "normal",
+    "transform": "none"
+   },
+   "textColours": [
+    "rgb(11, 11, 11)",
+    "oklch(1 0 0)",
+    "oklch(0 0 0 / 0.486)",
+    "oklch(0.15 0 0)"
+   ],
+   "bg": [
+    "oklch(0 0 0 / 0.447)",
+    "oklch(0.97 0 0)",
+    "oklch(0 0 0 / 0.063)",
+    "oklch(1 0 0)"
+   ],
+   "libraries": [],
+   "motion": {
+    "runningAnimations": 3,
+    "marquee": false,
+    "videoCount": 17,
+    "transitionsOnLinks": 37,
+    "cssScrollSnap": false,
+    "reducedMotionQuery": false
+   },
+   "mobile": null,
+   "headings": [
+    "Browse",
+    "Resources",
+    "Design",
+    "Design jobs"
+   ]
+  },
+  {
+   "site": "gsap-showcase",
+   "group": "design",
+   "page": "home",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "relative h77 rgb(14, 16, 15)",
+   "headerOnScroll": {
+    "visibleAfterScroll": false,
+    "bgAfterScroll": "rgba(0, 0, 0, 0)",
+    "backdropAfterScroll": "none",
+    "transform": "none"
+   },
+   "nav": [
+    "Tools",
+    "Showcase",
+    "Community",
+    "Learn GSAP",
+    "Docs",
+    "Demos",
+    "Login/Create Account",
+    "My Account",
+    "Get GSAP"
+   ],
+   "hero": {
+    "video": false,
+    "images": 0,
+    "height": 248,
+    "vh": 28,
+    "text": "",
+    "carousel": false
+   },
+   "card": null,
+   "filters": {
+    "filterEls": 6,
+    "sortEls": []
+   },
+   "pdp": null,
+   "cart": {
+    "type": "none",
+    "text": "UT::--:--\nFPS::--\nPRESENCE::ON\nBooking::Q1’27\nC\nO\nAbout\nLab\nWriting\nStudio\nContact\n⌘K\nCarter Ogunsola, Creative Developer & Brand Engineer\nSelected work\nClay\nW/CLAY\n2026\nHelion\nW/OFF+BRAND\n2026\nScott Snyder\nW/WILLIE\n2025\nHeva 2025\nW/BALKY STUDIO\n2025\nABCAU\nW/BALKY STUDIO\n2026\nPNY\nW/J.BERRY\n2025\nHamilton AI\nW/BALKY STUDIO\n2025\nVesyl\nW/BONDIR\n2023\nVana 2024\nW/BALKY STUDIO\n2024\nVana X Team\nW/BALKY ST",
+    "opened_via": "a[href*='/cart']:visible",
+    "navigated": true
+   },
+   "footer": {
+    "headings": [
+     "GSAP",
+     "Scroll",
+     "SVG",
+     "UI",
+     "Text",
+     "Other",
+     "Connect"
+    ],
+    "linkCount": 41,
+    "newsletter": true
+   },
+   "fonts": [
+    "Mori"
+   ],
+   "heading": {
+    "text": "GSAP",
+    "font": "Mori, Arial, Helvetica, \"Segoe UI\", Roboto, \"Open Sans\", san",
+    "size": "16px",
+    "weight": "600",
+    "tracking": "normal",
+    "transform": "none"
+   },
+   "textColours": [
+    "rgb(124, 124, 111)",
+    "rgb(14, 16, 15)",
+    "rgb(255, 252, 225)",
+    "rgb(187, 186, 166)"
+   ],
+   "bg": [
+    "rgb(14, 16, 15)",
+    "rgb(255, 252, 225)"
+   ],
+   "libraries": [
+    "GSAP"
+   ],
+   "motion": {
+    "runningAnimations": 0,
+    "marquee": true,
+    "videoCount": 6,
+    "transitionsOnLinks": 96,
+    "cssScrollSnap": true,
+    "reducedMotionQuery": true
+   },
+   "mobile": {
+    "nav_burger": false,
+    "bottomBar": false
+   },
+   "headings": [
+    "GSAP",
+    "Scroll",
+    "SVG",
+    "UI",
+    "Text",
+    "Other",
+    "GSAP",
+    "Connect"
+   ]
+  },
+  {
+   "site": "guestinresidence",
+   "group": "store",
+   "page": "home",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "sticky h60 transparent",
+   "headerOnScroll": {
+    "visibleAfterScroll": true,
+    "bgAfterScroll": "rgba(0, 0, 0, 0)",
+    "backdropAfterScroll": "none",
+    "transform": "none"
+   },
+   "nav": [
+    "WOMEN",
+    "MEN",
+    "OUR DENIM",
+    "EDITS",
+    "Guest In Residence",
+    "(US $) CHANGE COUNTRY AND CURRENCY",
+    "SHOP PRODUCTS AND COLLECTIONS",
+    "Close",
+    "Naviation link to Care Guide",
+    "Naviation link to Discover GIR",
+    "Naviation link to Our Ethics",
+    "SIGN IN",
+    "OUR STORES",
+    "Cart 0 0 items"
+   ],
+   "hero": {
+    "video": false,
+    "images": 4,
+    "height": 900,
+    "vh": 100,
+    "text": "",
+    "carousel": false
+   },
+   "card": {
+    "imageRatio": 0.75,
+    "hoverSwapLikely": true,
+    "quickAdd": false,
+    "swatches": false,
+    "badges": []
+   },
+   "filters": {
+    "filterEls": 0,
+    "sortEls": []
+   },
+   "pdp": null,
+   "cart": {
+    "type": "not found"
+   },
+   "footer": {
+    "headings": [
+     "SUPPORT",
+     "MORE INFO"
+    ],
+    "linkCount": 20,
+    "newsletter": true
+   },
+   "fonts": [
+    "SF Mono",
+    "Favorite-Book",
+    "Favorit-BookMono",
+    "Favorit-Book"
+   ],
+   "heading": {
+    "text": "Guest In Residence",
+    "font": "Favorite-Book",
+    "size": "24px",
+    "weight": "700",
+    "tracking": "normal",
+    "transform": "none"
+   },
+   "textColours": [
+    "rgb(0, 0, 0)",
+    "rgba(0, 0, 0, 0)",
+    "rgb(255, 255, 255)",
+    "rgb(52, 52, 52)"
+   ],
+   "bg": [
+    "rgb(255, 255, 255)",
+    "rgb(245, 168, 0)",
+    "rgb(0, 0, 0)",
+    "rgba(0, 0, 0, 0.3)"
+   ],
+   "libraries": [
+    "Swiper",
+    "Shopify",
+    "jQuery",
+    "Klaviyo"
+   ],
+   "motion": {
+    "runningAnimations": 3,
+    "marquee": false,
+    "videoCount": 4,
+    "transitionsOnLinks": 2,
+    "cssScrollSnap": true,
+    "reducedMotionQuery": true
+   },
+   "mobile": {
+    "nav_burger": true,
+    "bottomBar": true
+   },
+   "headings": [
+    "Guest In Residence",
+    "NEW ARRIVALS",
+    "WESTERN CODED",
+    "SUPPORT",
+    "MORE INFO"
+   ]
+  },
+  {
+   "site": "guestinresidence",
+   "group": "store",
+   "page": "collection",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "sticky h60 transparent",
+   "headerOnScroll": {
+    "visibleAfterScroll": true,
+    "bgAfterScroll": "rgba(0, 0, 0, 0)",
+    "backdropAfterScroll": "none",
+    "transform": "none"
+   },
+   "nav": [
+    "WOMEN",
+    "MEN",
+    "OUR DENIM",
+    "EDITS",
+    "(US $) CHANGE COUNTRY AND CURRENCY",
+    "SHOP PRODUCTS AND COLLECTIONS",
+    "Close",
+    "Naviation link to Care Guide",
+    "Naviation link to Discover GIR",
+    "Naviation link to Our Ethics",
+    "SIGN IN",
+    "OUR STORES",
+    "Cart 0 0 items"
+   ],
+   "hero": {
+    "video": true,
+    "images": 1119,
+    "height": 23070,
+    "vh": 2563,
+    "text": "Collection Filters NEW ARRIVALS DENIM TOPS & SWEATERS TEES C",
+    "carousel": true
+   },
+   "card": {
+    "imageRatio": null,
+    "hoverSwapLikely": true,
+    "quickAdd": false,
+    "swatches": false,
+    "badges": [
+     "100% CASHMERE"
+    ]
+   },
+   "filters": {
+    "filterEls": 5,
+    "sortEls": []
+   },
+   "pdp": null,
+   "cart": null,
+   "footer": {
+    "headings": [
+     "SUPPORT",
+     "MORE INFO"
+    ],
+    "linkCount": 20,
+    "newsletter": true
+   },
+   "fonts": [
+    "SF Mono",
+    "Favorite-Book",
+    "Favorite-Book-Mono",
+    "Favorite-Bold"
+   ],
+   "heading": {
+    "text": "",
+    "font": "Favorite-Book",
+    "size": "12px",
+    "weight": "400",
+    "tracking": "normal",
+    "transform": "none"
+   },
+   "textColours": [
+    "rgb(0, 0, 0)",
+    "rgba(0, 0, 0, 0)",
+    "rgb(57, 52, 53)",
+    "rgb(255, 255, 255)"
+   ],
+   "bg": [
+    "rgb(255, 255, 255)",
+    "rgb(0, 0, 0)",
+    "rgb(245, 168, 0)",
+    "rgba(0, 0, 0, 0.3)"
+   ],
+   "libraries": [
+    "Swiper",
+    "Shopify",
+    "jQuery",
+    "Klaviyo"
+   ],
+   "motion": {
+    "runningAnimations": 1,
+    "marquee": false,
+    "videoCount": 8,
+    "transitionsOnLinks": 2,
+    "cssScrollSnap": true,
+    "reducedMotionQuery": true
+   },
+   "mobile": {
+    "nav_burger": true,
+    "bottomBar": false
+   },
+   "headings": [
+    "Collection Filters",
+    "SUPPORT",
+    "MORE INFO"
+   ]
+  },
+  {
+   "site": "guestinresidence",
+   "group": "store",
+   "page": "product",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "sticky h60 transparent",
+   "headerOnScroll": {
+    "visibleAfterScroll": true,
+    "bgAfterScroll": "rgba(0, 0, 0, 0)",
+    "backdropAfterScroll": "none",
+    "transform": "none"
+   },
+   "nav": [
+    "WOMEN",
+    "MEN",
+    "OUR DENIM",
+    "EDITS",
+    "(US $) CHANGE COUNTRY AND CURRENCY",
+    "SHOP PRODUCTS AND COLLECTIONS",
+    "Close",
+    "Naviation link to Care Guide",
+    "Naviation link to Discover GIR",
+    "Naviation link to Our Ethics",
+    "SIGN IN",
+    "OUR STORES",
+    "Cart 0 0 items"
+   ],
+   "hero": {
+    "video": false,
+    "images": 16,
+    "height": 5453,
+    "vh": 606,
+    "text": "ONLY 1 LEFT EVERYDAY JEAN RATED 5.0 OUT OF 5 STARS 3 REVIEWS",
+    "carousel": true
+   },
+   "card": {
+    "imageRatio": 0.8,
+    "hoverSwapLikely": false,
+    "quickAdd": false,
+    "swatches": false,
+    "badges": []
+   },
+   "filters": {
+    "filterEls": 0,
+    "sortEls": [
+     "",
+     "",
+     "Most Recent Oldest Most Helpful Photos & Videos Highest Rati"
+    ]
+   },
+   "pdp": {
+    "sizeButtons": [
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    "sizeGuide": true,
+    "accordions": [
+     "WOMEN",
+     "MEN",
+     "OUR DENIM",
+     "EDITS",
+     "(US $) CHANGE COUNTRY AND CURRENCY",
+     "SEARCH",
+     "SELECT SIZE",
+     "CHECK IN-STORE AVAILABILITY",
+     "DETAILS",
+     "Search Countries"
+    ],
+    "deliveryCopy": [
+     "FREE GLOBAL SHIPPING & RETURNS",
+     "SHIPPING & RETURNS",
+     "U.S. RETURNS & EXCHANGES",
+     "INTERNATIONAL RETURNS",
+     "SHIPPING & RETURNS POLICY"
+    ],
+    "crossSell": [],
+    "addToCart": [
+     "ADD TO BAG"
+    ],
+    "stickyColumn": true
+   },
+   "cart": {
+    "type": "drawer",
+    "width": 1440,
+    "freeShippingBar": false,
+    "upsells": true,
+    "text": "Accessibility Screen-Reader Guide, Feedback, and Issue Reporting | New window Skip to content SIGN UP FOR 10% OFF YOUR FIRST ORDER WOMEN MEN OUR DENIM EDITS (US $) CHANGE COUNTRY AND CURRENCY SEARCH SIGN IN OUR STORES Cart 0 0 items SHOPPING BAG (0) YOUR SHOPPING BAG IS CURRENTLY EMPTY. START SHOPPING ONLY 1 LEFT EVERYDAY JEAN RATED 5.0 OUT OF 5 STARS 3 REVIEWS CLICK TO SCROLL TO REVIEWS Regular p",
+    "opened_via": "a[href*='/cart']:visible",
+    "navigated": false
+   },
+   "footer": {
+    "headings": [
+     "SUPPORT",
+     "MORE INFO"
+    ],
+    "linkCount": 20,
+    "newsletter": true
+   },
+   "fonts": [
+    "SF Mono",
+    "Favorite-Book",
+    "Favorite-Book-Mono",
+    "Favorit-BookMono"
+   ],
+   "heading": {
+    "text": "",
+    "font": "Favorite-Book",
+    "size": "12px",
+    "weight": "400",
+    "tracking": "normal",
+    "transform": "none"
+   },
+   "textColours": [
+    "rgb(0, 0, 0)",
+    "rgb(57, 52, 53)",
+    "rgb(157, 156, 155)",
+    "rgb(255, 255, 255)"
+   ],
+   "bg": [
+    "rgb(255, 255, 255)",
+    "rgb(0, 0, 0)",
+    "rgb(245, 245, 245)",
+    "rgb(245, 168, 0)"
+   ],
+   "libraries": [
+    "Swiper",
+    "Shopify",
+    "jQuery",
+    "Klaviyo"
+   ],
+   "motion": {
+    "runningAnimations": 1,
+    "marquee": false,
+    "videoCount": 0,
+    "transitionsOnLinks": 2,
+    "cssScrollSnap": false,
+    "reducedMotionQuery": true
+   },
+   "mobile": {
+    "nav_burger": true,
+    "bottomBar": false
+   },
+   "headings": [
+    "EVERYDAY JEAN",
+    "DETAILS",
+    "STYLE WITH",
+    "SUPPORT",
+    "MORE INFO"
+   ]
+  },
+  {
+   "site": "jacquemus",
+   "group": "store",
+   "page": "home",
+   "status": 403,
+   "blocked": true,
+   "skipped": null,
+   "errors": null,
+   "header": "static h30 transparent",
+   "headerOnScroll": {
+    "visibleAfterScroll": true,
+    "bgAfterScroll": "rgba(0, 0, 0, 0)",
+    "backdropAfterScroll": "none",
+    "transform": "none"
+   },
+   "nav": [],
+   "hero": {},
+   "card": null,
+   "filters": {
+    "filterEls": 0,
+    "sortEls": []
+   },
+   "pdp": null,
+   "cart": null,
+   "footer": null,
+   "fonts": [
+    "Futura PTT"
+   ],
+   "heading": null,
+   "textColours": [
+    "rgb(0, 0, 0)"
+   ],
+   "bg": [],
+   "libraries": [],
+   "motion": {
+    "runningAnimations": 0,
+    "marquee": false,
+    "videoCount": 0,
+    "transitionsOnLinks": 0,
+    "cssScrollSnap": false,
+    "reducedMotionQuery": false
+   },
+   "mobile": {
+    "nav_burger": false,
+    "bottomBar": false
+   },
+   "headings": []
+  },
+  {
+   "site": "kith",
+   "group": "store",
+   "page": "home",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "fixed h59 transparent",
+   "headerOnScroll": {
+    "visibleAfterScroll": true,
+    "bgAfterScroll": "rgb(255, 255, 255)",
+    "backdropAfterScroll": "none",
+    "transform": "none"
+   },
+   "nav": [
+    "NEW",
+    "MENS",
+    "WOMENS",
+    "KIDS",
+    "Kith",
+    "HOSPITALITY",
+    "Translation missing: en.accessibility.search",
+    "0"
+   ],
+   "hero": {
+    "video": true,
+    "images": 194,
+    "height": 6626,
+    "vh": 736,
+    "text": "Monday Program™ | Kith for TUMI 2026 Kith and TUMI reprise t",
+    "carousel": true
+   },
+   "card": {
+    "imageRatio": 1,
+    "hoverSwapLikely": true,
+    "quickAdd": false,
+    "swatches": false,
+    "badges": []
+   },
+   "filters": {
+    "filterEls": 0,
+    "sortEls": []
+   },
+   "pdp": null,
+   "cart": {
+    "type": "drawer",
+    "width": 1440,
+    "freeShippingBar": false,
+    "upsells": true,
+    "text": "Skip to content NEW MENS WOMENS KIDS HOSPITALITY 0 Your Cart (0) Your cart is empty. Continue shopping. Sign In to see your cart or create an account. Recommended For You KITH ARCH LAUREL 3-PACK COTTON CREW SOCKS Color: Multi $40.00 ADD TO BAG KITH CORDUROY NOLAN TRUCKER HAT Color: Nocturnal $55.00 ADD TO BAG Monday Program™ | Kith for TUMI 2026 Kith and TUMI reprise their collaboration to present",
+    "opened_via": "button[aria-label*='cart' i]:visible",
+    "navigated": false
+   },
+   "footer": {
+    "headings": [
+     "JOIN OUR LIST",
+     "LEARN",
+     "KITH",
+     "POLICIES",
+     "FOLLOW US"
+    ],
+    "linkCount": 49,
+    "newsletter": true
+   },
+   "fonts": [
+    "proxima-nova",
+    "Arial"
+   ],
+   "heading": {
+    "text": "Monday Program™ | Kith for TUMI 2026",
+    "font": "Georgia, serif",
+    "size": "28px",
+    "weight": "400",
+    "tracking": "1.4px",
+    "transform": "none"
+   },
+   "textColours": [
+    "rgb(255, 255, 255)",
+    "rgb(51, 51, 51)"
+   ],
+   "bg": [],
+   "libraries": [
+    "Swiper",
+    "Shopify",
+    "Klaviyo"
+   ],
+   "motion": {
+    "runningAnimations": 0,
+    "marquee": false,
+    "videoCount": 1,
+    "transitionsOnLinks": 0,
+    "cssScrollSnap": false,
+    "reducedMotionQuery": false
+   },
+   "mobile": {
+    "nav_burger": true,
+    "bottomBar": false
+   },
+   "headings": [
+    "Monday Program™ | Kith for TUMI 2026",
+    "Kith for the New York Yankees 2026",
+    "K-Tech Fall 2026",
+    "Kith Women Winter 2026 | Echoes of the City Campaign",
+    "Kith Winter 2026",
+    "Giorgio Armani & Kith Fall/Winter 2026: Dreams of the Dune",
+    "Kith Women | Hold the Line",
+    "Kith Kids Fall 2026",
+    "JOIN OUR LIST",
+    "LEARN",
+    "KITH",
+    "POLICIES",
+    "FOLLOW US"
+   ]
+  },
+  {
+   "site": "kith",
+   "group": "store",
+   "page": "collection",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "sticky h59 rgb(255, 255, 255)",
+   "headerOnScroll": {
+    "visibleAfterScroll": true,
+    "bgAfterScroll": "rgb(255, 255, 255)",
+    "backdropAfterScroll": "none",
+    "transform": "none"
+   },
+   "nav": [
+    "NEW",
+    "MENS",
+    "WOMENS",
+    "KIDS",
+    "Kith",
+    "HOSPITALITY",
+    "Translation missing: en.accessibility.search",
+    "0"
+   ],
+   "hero": {
+    "video": false,
+    "images": 1945,
+    "height": 41611,
+    "vh": 4623,
+    "text": "Kith Winter 2026 &Kin Winter 2026 Suiting made with Giorgio ",
+    "carousel": false
+   },
+   "card": {
+    "imageRatio": 1,
+    "hoverSwapLikely": true,
+    "quickAdd": false,
+    "swatches": false,
+    "badges": []
+   },
+   "filters": {
+    "filterEls": 0,
+    "sortEls": []
+   },
+   "pdp": null,
+   "cart": null,
+   "footer": {
+    "headings": [
+     "JOIN OUR LIST",
+     "LEARN",
+     "KITH",
+     "POLICIES",
+     "FOLLOW US"
+    ],
+    "linkCount": 49,
+    "newsletter": true
+   },
+   "fonts": [
+    "proxima-nova",
+    "Arial"
+   ],
+   "heading": {
+    "text": "Kith Winter 2026",
+    "font": "Georgia, serif",
+    "size": "18px",
+    "weight": "400",
+    "tracking": "0.9px",
+    "transform": "none"
+   },
+   "textColours": [
+    "rgb(51, 51, 51)"
+   ],
+   "bg": [
+    "rgb(255, 255, 255)"
+   ],
+   "libraries": [
+    "Swiper",
+    "Shopify",
+    "Klaviyo"
+   ],
+   "motion": {
+    "runningAnimations": 0,
+    "marquee": false,
+    "videoCount": 0,
+    "transitionsOnLinks": 0,
+    "cssScrollSnap": false,
+    "reducedMotionQuery": false
+   },
+   "mobile": {
+    "nav_burger": true,
+    "bottomBar": false
+   },
+   "headings": [
+    "Kith Winter 2026",
+    "&Kin Winter 2026",
+    "Kith Winter 2026",
+    "Kith 101 for SEVEN BY SEVEN",
+    "Kith Classics for adidas Originals Winter 2026",
+    "8th St by Ronnie Fieg for Clarks Originals Winter 2026",
+    "Ronnie Fieg for Timberland Winter 2026",
+    "Kith Winter 2026 Accessories",
+    "Kith Palette",
+    "Kith Classics",
+    "Kit Harington for Kith Winter 2026",
+    "Lookbook",
+    "A Closer Look",
+    "Ronnie Fieg for Timberland",
+    "Kith Classics for adidas Originals",
+    "8th St by Ronnie Fieg for Clarks Originals",
+    "&Kin Winter 2026",
+    "Kith Winter 2026",
+    "Kith Classics for adidas Originals Winter 2026",
+    "8th St by Ronnie Fieg for Clarks Originals Winter 2026",
+    "Ronnie Fieg for Timberland Winter 2026",
+    "Kith Winter 2026 Accessories",
+    "JOIN OUR LIST",
+    "LEARN",
+    "KITH"
+   ]
+  },
+  {
+   "site": "kith",
+   "group": "store",
+   "page": "product",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "sticky h59 rgb(255, 255, 255)",
+   "headerOnScroll": {
+    "visibleAfterScroll": true,
+    "bgAfterScroll": "rgb(255, 255, 255)",
+    "backdropAfterScroll": "none",
+    "transform": "none"
+   },
+   "nav": [
+    "NEW",
+    "MENS",
+    "WOMENS",
+    "KIDS",
+    "Kith",
+    "HOSPITALITY",
+    "Translation missing: en.accessibility.search",
+    "0"
+   ],
+   "hero": {
+    "video": false,
+    "images": 69,
+    "height": 5167,
+    "vh": 574,
+    "text": "Skip to product information HOME MENS KITH WINTER 2026 Kith ",
+    "carousel": true
+   },
+   "card": {
+    "imageRatio": 1,
+    "hoverSwapLikely": true,
+    "quickAdd": true,
+    "swatches": true,
+    "badges": [
+     "XS",
+     "S",
+     "M",
+     "L",
+     "XL"
+    ]
+   },
+   "filters": {
+    "filterEls": 0,
+    "sortEls": []
+   },
+   "pdp": {
+    "sizeButtons": [
+     "XS",
+     "S",
+     "M",
+     "L",
+     "XL",
+     "XXL"
+    ],
+    "sizeGuide": true,
+    "accordions": [
+     "NEW",
+     "MENS",
+     "WOMENS",
+     "KIDS",
+     "HOSPITALITY",
+     "Translation missing: en.accessibility.search",
+     "0",
+     "VIEW SIZE GUIDE",
+     "TEXT WITH US"
+    ],
+    "deliveryCopy": [
+     "SHIPPING & RETURNS"
+    ],
+    "crossSell": [
+     "Complete The Look"
+    ],
+    "addToCart": [
+     "ADD TO CART",
+     "ADD TO CART"
+    ],
+    "stickyColumn": true
+   },
+   "cart": {
+    "type": "drawer",
+    "width": 1440,
+    "freeShippingBar": false,
+    "upsells": true,
+    "text": "Skip to content NEW MENS WOMENS KIDS HOSPITALITY 0 Your Cart (0) Your cart is empty. Continue shopping. Sign In to see your cart or create an account. Recommended For You KITH ARCH LAUREL 3-PACK COTTON CREW SOCKS Color: Multi $40.00 ADD TO BAG KITH CORDUROY NOLAN TRUCKER HAT Color: Nocturnal $55.00 ADD TO BAG Skip to product information HOME MENS KITH WINTER 2026 Kith Winter 2026 &Kin Deer Print P",
+    "opened_via": "button[aria-label*='cart' i]:visible",
+    "navigated": false
+   },
+   "footer": {
+    "headings": [
+     "JOIN OUR LIST",
+     "LEARN",
+     "KITH",
+     "POLICIES",
+     "FOLLOW US"
+    ],
+    "linkCount": 49,
+    "newsletter": true
+   },
+   "fonts": [
+    "proxima-nova",
+    "Arial"
+   ],
+   "heading": {
+    "text": "&Kin Deer Print Ponyhair Vail Jacket",
+    "font": "Georgia, serif",
+    "size": "18px",
+    "weight": "400",
+    "tracking": "0.9px",
+    "transform": "none"
+   },
+   "textColours": [
+    "rgb(51, 51, 51)"
+   ],
+   "bg": [
+    "rgb(255, 255, 255)"
+   ],
+   "libraries": [
+    "Swiper",
+    "Shopify",
+    "Klaviyo"
+   ],
+   "motion": {
+    "runningAnimations": 0,
+    "marquee": false,
+    "videoCount": 0,
+    "transitionsOnLinks": 0,
+    "cssScrollSnap": false,
+    "reducedMotionQuery": false
+   },
+   "mobile": {
+    "nav_burger": true,
+    "bottomBar": false
+   },
+   "headings": [
+    "&Kin Deer Print Ponyhair Vail Jacket",
+    "Complete The Look",
+    "Related Products",
+    "JOIN OUR LIST",
+    "LEARN",
+    "KITH",
+    "POLICIES",
+    "FOLLOW US"
+   ]
+  },
+  {
+   "site": "kokonutui",
+   "group": "design",
+   "page": "home",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": null,
+   "headerOnScroll": null,
+   "nav": [
+    "Backgrounds components",
+    "Cards components",
+    "Navigation components",
+    "Inputs components",
+    "AI components",
+    "Media components",
+    "Texts components",
+    "Buttons components",
+    "AI Input Selector",
+    "AI Input Search",
+    "AI State Loading",
+    "Apple Activity Card",
+    "Magnet Button",
+    "Wheel Picker"
+   ],
+   "hero": {
+    "video": false,
+    "images": 16,
+    "height": 7550,
+    "vh": 839,
+    "text": "Kokonut UI Component catalog React, Tailwind CSS, Motion Fre",
+    "carousel": false
+   },
+   "card": null,
+   "filters": {
+    "filterEls": 70,
+    "sortEls": []
+   },
+   "pdp": null,
+   "cart": {
+    "type": "drawer",
+    "width": 268,
+    "freeShippingBar": true,
+    "upsells": false,
+    "text": "Kokonut UI Search Ctrl K Installation Agents Changelog Templates PRO Pro components PRO Backgrounds 7 new BG-01 Dot Field BG-02 Background Paths BG-03 Shape Hero BG-04 Wind BG-05 Topo Background BG-06 Drape Background BG-07 Halftone Background BG-08 Ink Background BG-09 Caustics Background BG-10 Rain Glass Background Rhythm Hero PRO Dither Reveal Hero PRO Cards 10 new CD-01 Flick Card CD-02 Throw ",
+    "opened_via": "a[href*='/cart']:visible",
+    "navigated": true
+   },
+   "footer": {
+    "headings": [
+     "Components",
+     "Popular",
+     "Docs",
+     "Kokonut UI Pro",
+     "Community"
+    ],
+    "linkCount": 29,
+    "newsletter": false
+   },
+   "fonts": [
+    "Geist",
+    "Geist Mono",
+    "ui-monospace",
+    "ui-sans-serif"
+   ],
+   "heading": {
+    "text": "Components that feel right.",
+    "font": "Geist, \"Geist Fallback\"",
+    "size": "124px",
+    "weight": "600",
+    "tracking": "-7.44px",
+    "transform": "none"
+   },
+   "textColours": [
+    "rgb(10, 10, 10)",
+    "oklab(0 0 0 / 0.6)",
+    "oklab(0 0 0 / 0.7)",
+    "lab(8.30603 0.618205 -2.16572)"
+   ],
+   "bg": [
+    "rgb(255, 255, 255)",
+    "oklab(0 0 0 / 0.13)",
+    "lab(8.30603 0.618205 -2.16572)",
+    "oklab(0.999994 0.0000455678 0.0000200868 / 0.2)"
+   ],
+   "libraries": [
+    "NextJS"
+   ],
+   "motion": {
+    "runningAnimations": 32,
+    "marquee": false,
+    "videoCount": 0,
+    "transitionsOnLinks": 152,
+    "cssScrollSnap": false,
+    "reducedMotionQuery": true
+   },
+   "mobile": {
+    "nav_burger": false,
+    "bottomBar": false
+   },
+   "headings": [
+    "Components that feel right.",
+    "Animated React components",
+    "All components",
+    "Backgrounds BG",
+    "Cards CD",
+    "Navigation NV",
+    "Inputs IN",
+    "AI AI",
+    "Media MD",
+    "Texts TX",
+    "Buttons BT",
+    "How to install",
+    "What developers say",
+    "Kokonut UI Pro",
+    "Components",
+    "Popular",
+    "Docs",
+    "Kokonut UI Pro",
+    "Community"
+   ]
+  },
+  {
+   "site": "land-book",
+   "group": "design",
+   "page": "home",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "sticky h61 transparent",
+   "headerOnScroll": {
+    "visibleAfterScroll": true,
+    "bgAfterScroll": "rgba(0, 0, 0, 0)",
+    "backdropAfterScroll": "none",
+    "transform": "none"
+   },
+   "nav": [
+    "Landbook Home",
+    "Websites",
+    "Experts",
+    "Templates",
+    "Sign in",
+    "Get Pro",
+    "Sign up"
+   ],
+   "hero": {
+    "video": false,
+    "images": 83,
+    "height": 7516,
+    "vh": 835,
+    "text": "Websites Sections Mobile Motion OG Images Headlines Landbook",
+    "carousel": false
+   },
+   "card": null,
+   "filters": {
+    "filterEls": 4,
+    "sortEls": []
+   },
+   "pdp": null,
+   "cart": {
+    "type": "not found"
+   },
+   "footer": {
+    "headings": [],
+    "linkCount": 12,
+    "newsletter": false
+   },
+   "fonts": [
+    "Inter",
+    "system-ui"
+   ],
+   "heading": {
+    "text": "Landbook - website design inspiration gallery",
+    "font": "Inter, system-ui, -apple-system, \"Helvetica Neue\", \"Segoe UI",
+    "size": "24.5px",
+    "weight": "600",
+    "tracking": "normal",
+    "transform": "none"
+   },
+   "textColours": [
+    "rgb(43, 42, 42)",
+    "rgb(1, 124, 110)",
+    "rgb(98, 97, 95)",
+    "rgb(255, 255, 255)"
+   ],
+   "bg": [
+    "rgb(208, 207, 182)",
+    "rgb(150, 224, 220)",
+    "rgb(153, 151, 202)",
+    "rgb(212, 211, 189)"
+   ],
+   "libraries": [],
+   "motion": {
+    "runningAnimations": 42,
+    "marquee": false,
+    "videoCount": 0,
+    "transitionsOnLinks": 104,
+    "cssScrollSnap": false,
+    "reducedMotionQuery": true
+   },
+   "mobile": {
+    "nav_burger": true,
+    "bottomBar": false
+   },
+   "headings": [
+    "Landbook - website design inspiration gallery"
+   ]
+  },
+  {
+   "site": "lawsofux",
+   "group": "design",
+   "page": "home",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "relative h394 transparent",
+   "headerOnScroll": {
+    "visibleAfterScroll": false,
+    "bgAfterScroll": "rgba(0, 0, 0, 0)",
+    "backdropAfterScroll": "none",
+    "transform": "none"
+   },
+   "nav": [
+    "Check it out →"
+   ],
+   "hero": {
+    "video": false,
+    "images": 0,
+    "height": 5551,
+    "vh": 617,
+    "text": "Laws of UX Laws of UX is a collection of best practices that",
+    "carousel": false
+   },
+   "card": null,
+   "filters": {
+    "filterEls": 0,
+    "sortEls": []
+   },
+   "pdp": null,
+   "cart": {
+    "type": "not found"
+   },
+   "footer": {
+    "headings": [],
+    "linkCount": 3,
+    "newsletter": false
+   },
+   "fonts": [
+    "IBM Plex Sans",
+    "IBM Plex Mono"
+   ],
+   "heading": {
+    "text": "Laws of UX",
+    "font": "\"IBM Plex Sans\", Arial, sans-serif",
+    "size": "61.8772px",
+    "weight": "700",
+    "tracking": "normal",
+    "transform": "none"
+   },
+   "textColours": [
+    "rgb(6, 15, 19)",
+    "rgb(26, 60, 77)"
+   ],
+   "bg": [
+    "rgb(237, 237, 233)",
+    "rgb(233, 84, 68)",
+    "rgb(207, 187, 40)",
+    "rgb(41, 122, 163)"
+   ],
+   "libraries": [],
+   "motion": {
+    "runningAnimations": 0,
+    "marquee": false,
+    "videoCount": 0,
+    "transitionsOnLinks": 53,
+    "cssScrollSnap": false,
+    "reducedMotionQuery": true
+   },
+   "mobile": {
+    "nav_burger": false,
+    "bottomBar": true
+   },
+   "headings": [
+    "Laws of UX",
+    "Aesthetic-Usability Effect",
+    "Choice Overload",
+    "Chunking",
+    "Cognitive Bias",
+    "Cognitive Load",
+    "Doherty Threshold",
+    "Fitts’s Law",
+    "Flow",
+    "Goal-Gradient Effect",
+    "Hick’s Law",
+    "Jakob’s Law",
+    "Law of Common Region",
+    "Law of Proximity",
+    "Law of Prägnanz",
+    "Law of Similarity",
+    "Law of Uniform Connectedness",
+    "Mental Model",
+    "Miller’s Law",
+    "Occam’s Razor",
+    "Paradox of the Active User",
+    "Pareto Principle",
+    "Parkinson’s Law",
+    "Peak-End Rule",
+    "Postel’s Law"
+   ]
+  },
+  {
+   "site": "lenis",
+   "group": "design",
+   "page": "home",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "fixed h56 oklab(0 0 0 / 0.5) glass",
+   "headerOnScroll": {
+    "visibleAfterScroll": true,
+    "bgAfterScroll": "oklab(0 0 0 / 0.5)",
+    "backdropAfterScroll": "blur(10px)",
+    "transform": "none"
+   },
+   "nav": [],
+   "hero": {
+    "video": false,
+    "images": 0,
+    "height": 900,
+    "vh": 100,
+    "text": "",
+    "carousel": false
+   },
+   "card": null,
+   "filters": {
+    "filterEls": 0,
+    "sortEls": []
+   },
+   "pdp": null,
+   "cart": {
+    "type": "not found"
+   },
+   "footer": {
+    "headings": [],
+    "linkCount": 8,
+    "newsletter": false
+   },
+   "fonts": [
+    "Anton",
+    "Roboto",
+    "Panchang",
+    "monospace"
+   ],
+   "heading": {
+    "text": "SMOOTH SCROLL",
+    "font": "Panchang, sans-serif",
+    "size": "52px",
+    "weight": "700",
+    "tracking": "normal",
+    "transform": "uppercase"
+   },
+   "textColours": [
+    "rgb(239, 239, 239)",
+    "rgb(0, 0, 0)",
+    "rgb(140, 140, 140)",
+    "rgb(255, 152, 162)"
+   ],
+   "bg": [
+    "rgb(255, 152, 162)",
+    "rgba(239, 239, 239, 0.8)",
+    "rgb(0, 0, 0)",
+    "oklab(0 0 0 / 0.5)"
+   ],
+   "libraries": [
+    "Lenis",
+    "NextJS"
+   ],
+   "motion": {
+    "runningAnimations": 4,
+    "marquee": false,
+    "videoCount": 16,
+    "transitionsOnLinks": 48,
+    "cssScrollSnap": false,
+    "reducedMotionQuery": true
+   },
+   "mobile": {
+    "nav_burger": true,
+    "bottomBar": false
+   },
+   "headings": [
+    "SMOOTH SCROLL",
+    "THE SMOOTH SCROLL LIBRARY BY DARKROOM.ENGINEERING",
+    "WHY SMOOTH SCROLL?",
+    "CREATE MORE IMMERSIVE INTERFACES",
+    "ONE FEEL, EVERY INPUT",
+    "MAKE YOUR ANIMATIONS FLAWLESS",
+    "SHIP IT IN A SINGLE LINE",
+    "SO WE BUILT WEB SCROLLING",
+    "ENTER LENIS",
+    "AS IT SHOULD BE"
+   ]
+  },
+  {
+   "site": "nocta",
+   "group": "store",
+   "page": "home",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "fixed h85 transparent",
+   "headerOnScroll": {
+    "visibleAfterScroll": true,
+    "bgAfterScroll": "rgba(0, 0, 0, 0)",
+    "backdropAfterScroll": "none",
+    "transform": "none"
+   },
+   "nav": [
+    "Shop",
+    "Archive",
+    "Search",
+    "Account",
+    "Cart ( 0 )"
+   ],
+   "hero": {
+    "video": false,
+    "images": 24,
+    "height": 6032,
+    "vh": 670,
+    "text": "Fall '26 Cardinal Stock Cardinal Stock FA26 in Cool Work Blu",
+    "carousel": true
+   },
+   "card": {
+    "imageRatio": 0.8,
+    "hoverSwapLikely": false,
+    "quickAdd": false,
+    "swatches": false,
+    "badges": []
+   },
+   "filters": {
+    "filterEls": 0,
+    "sortEls": []
+   },
+   "pdp": null,
+   "cart": {
+    "type": "drawer",
+    "width": 1440,
+    "freeShippingBar": false,
+    "upsells": false,
+    "text": "SKIP TO CONTENT Shop Archive Search Account Cart ( 0 ) CART (0) Continue shopping Your cart is empty CONTINUE SHOPPING Copyright ©2026 NOCTA. All rights reserved. NEVER MISS A DROP Subscribe and get the latest news. TOP SIZE GUIDE PRIVACY TERMS FAQ TERMS OF SERVICE REFUND POLICY INSTAGRAM TWITTER FACEBOOK",
+    "opened_via": "a[href*='/cart']:visible",
+    "navigated": true
+   },
+   "footer": {
+    "headings": [
+     "NEVER MISS A DROP"
+    ],
+    "linkCount": 18,
+    "newsletter": true
+   },
+   "fonts": [
+    "Assistant",
+    "Instrument Sans",
+    "Arial"
+   ],
+   "heading": {
+    "text": "Fall '26 Cardinal Stock",
+    "font": "\"Instrument Sans\", sans-serif",
+    "size": "12px",
+    "weight": "400",
+    "tracking": "0.28px",
+    "transform": "none"
+   },
+   "textColours": [
+    "rgb(255, 255, 255)",
+    "rgba(255, 255, 255, 0.75)",
+    "rgba(18, 18, 18, 0.75)",
+    "rgb(0, 0, 238)"
+   ],
+   "bg": [
+    "rgba(0, 0, 0, 0.4)",
+    "rgb(0, 0, 0)",
+    "rgba(0, 0, 0, 0.5)"
+   ],
+   "libraries": [
+    "Swiper",
+    "Shopify",
+    "jQuery",
+    "Klaviyo"
+   ],
+   "motion": {
+    "runningAnimations": 0,
+    "marquee": false,
+    "videoCount": 0,
+    "transitionsOnLinks": 0,
+    "cssScrollSnap": false,
+    "reducedMotionQuery": true
+   },
+   "mobile": {
+    "nav_burger": true,
+    "bottomBar": false
+   },
+   "headings": [
+    "Fall '26 Cardinal Stock",
+    "Kevin Durant Basketball Collection",
+    "Spring '26 Cardinal Stock",
+    "NOCTA in Association with CODE",
+    "Montrose Nocta Fleece Hoodie",
+    "Easy Money LS Base Layer Top",
+    "Easy Money Cutoff Tee",
+    "Montrose Lightweight Basketball Jersey",
+    "Easy Money 2-in-1 Basketball Shorts",
+    "Easy Money Jersey Basketball Shorts"
+   ]
+  },
+  {
+   "site": "nocta",
+   "group": "store",
+   "page": "collection",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "fixed h125 transparent",
+   "headerOnScroll": {
+    "visibleAfterScroll": true,
+    "bgAfterScroll": "rgba(0, 0, 0, 0)",
+    "backdropAfterScroll": "none",
+    "transform": "none"
+   },
+   "nav": [
+    "Shop",
+    "Archive",
+    "Search",
+    "Account",
+    "Cart ( 0 )"
+   ],
+   "hero": {
+    "video": false,
+    "images": 67,
+    "height": 9953,
+    "vh": 1106,
+    "text": "ALL FILTER SIZECOLORIN STOCKPRICE CLEAR ALL S M L XL XXL 26/",
+    "carousel": false
+   },
+   "card": {
+    "imageRatio": 0.8,
+    "hoverSwapLikely": false,
+    "quickAdd": false,
+    "swatches": false,
+    "badges": []
+   },
+   "filters": {
+    "filterEls": 8,
+    "sortEls": []
+   },
+   "pdp": null,
+   "cart": null,
+   "footer": {
+    "headings": [],
+    "linkCount": 18,
+    "newsletter": true
+   },
+   "fonts": [
+    "Assistant",
+    "Instrument Sans",
+    "Swiss721BT"
+   ],
+   "heading": null,
+   "textColours": [
+    "rgb(255, 255, 255)",
+    "rgba(255, 255, 255, 0.75)",
+    "rgba(18, 18, 18, 0.75)",
+    "rgb(0, 0, 238)"
+   ],
+   "bg": [
+    "rgba(0, 0, 0, 0.4)",
+    "rgb(0, 0, 0)",
+    "rgb(245, 237, 9)"
+   ],
+   "libraries": [
+    "Swiper",
+    "Shopify",
+    "jQuery",
+    "Klaviyo"
+   ],
+   "motion": {
+    "runningAnimations": 0,
+    "marquee": false,
+    "videoCount": 0,
+    "transitionsOnLinks": 9,
+    "cssScrollSnap": false,
+    "reducedMotionQuery": true
+   },
+   "mobile": {
+    "nav_burger": true,
+    "bottomBar": false
+   },
+   "headings": [
+    "26/27 Home Jersey",
+    "26/27 Match Home Jersey",
+    "26/27 Match Home Jersey – Long Sleeves",
+    "26/27 Home Shorts",
+    "26/27 Away Jersey",
+    "26/27 Match Away Jersey",
+    "26/27 Away Shorts",
+    "26/27 Third Jersey",
+    "26/27 Third Match Jersey",
+    "26/27 Third Shorts",
+    "26/27 Fourth Jersey",
+    "26/27 Fourth Match Jersey",
+    "26/27 Goalkeeper Home Jersey",
+    "26/27 Goalkeeper Match Home Jersey",
+    "26/27 Goalkeeper Away Jersey",
+    "26/27 Goalkeeper Match Away Jersey",
+    "26/27 VFC Travel Lion Statue Tee – Long Sleeves",
+    "26/27 VFC Pre-Match Jersey",
+    "26/27 Reflections All-Over Tee",
+    "26/27 VFC Travel Lion Statue Tee White",
+    "26/27 VFC Travel Lion Statue Tee Dark Grey",
+    "26/27 VFC Travel Polo Black",
+    "26/27 VFC Travel Polo Cream",
+    "26/27 VFC Travel Shorts",
+    "Sidewinder Sling"
+   ]
+  },
+  {
+   "site": "nocta",
+   "group": "store",
+   "page": "product",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "fixed h85 transparent",
+   "headerOnScroll": {
+    "visibleAfterScroll": true,
+    "bgAfterScroll": "rgba(0, 0, 0, 0)",
+    "backdropAfterScroll": "none",
+    "transform": "none"
+   },
+   "nav": [
+    "Shop",
+    "Archive",
+    "Search",
+    "Account",
+    "Cart ( 0 )"
+   ],
+   "hero": {
+    "video": false,
+    "images": 50,
+    "height": 2208,
+    "vh": 245,
+    "text": "ALL / ALL TOPS / BEST SELLERS / HOME KIT / IN STOCK / JERSEY",
+    "carousel": true
+   },
+   "card": {
+    "imageRatio": null,
+    "hoverSwapLikely": false,
+    "quickAdd": false,
+    "swatches": false,
+    "badges": []
+   },
+   "filters": {
+    "filterEls": 0,
+    "sortEls": []
+   },
+   "pdp": {
+    "sizeButtons": [
+     "S",
+     "M",
+     "L",
+     "XL",
+     "XXL"
+    ],
+    "sizeGuide": true,
+    "accordions": [
+     "Shop"
+    ],
+    "deliveryCopy": [],
+    "crossSell": [
+     "COMPLETE THE LOOK",
+     "YOU MAY ALSO LIKE"
+    ],
+    "addToCart": [],
+    "stickyColumn": true
+   },
+   "cart": {
+    "type": "drawer",
+    "width": 1440,
+    "freeShippingBar": false,
+    "upsells": false,
+    "text": "SKIP TO CONTENT Shop Archive Search Account Cart ( 0 ) CART (0) Continue shopping Your cart is empty CONTINUE SHOPPING Copyright ©2026 NOCTA. All rights reserved. NEVER MISS A DROP Subscribe and get the latest news. TOP SIZE GUIDE PRIVACY TERMS FAQ TERMS OF SERVICE REFUND POLICY INSTAGRAM TWITTER FACEBOOK",
+    "opened_via": "a[href*='/cart']:visible",
+    "navigated": true
+   },
+   "footer": {
+    "headings": [
+     "NEVER MISS A DROP"
+    ],
+    "linkCount": 18,
+    "newsletter": true
+   },
+   "fonts": [
+    "Instrument Sans",
+    "Assistant",
+    "Arial"
+   ],
+   "heading": null,
+   "textColours": [
+    "rgb(255, 255, 255)",
+    "rgba(18, 18, 18, 0.75)",
+    "rgba(255, 255, 255, 0.75)",
+    "rgb(0, 0, 238)"
+   ],
+   "bg": [
+    "rgba(0, 0, 0, 0.4)",
+    "rgb(0, 0, 0)"
+   ],
+   "libraries": [
+    "Swiper",
+    "Shopify",
+    "jQuery",
+    "Klaviyo"
+   ],
+   "motion": {
+    "runningAnimations": 0,
+    "marquee": false,
+    "videoCount": 0,
+    "transitionsOnLinks": 0,
+    "cssScrollSnap": false,
+    "reducedMotionQuery": true
+   },
+   "mobile": {
+    "nav_burger": true,
+    "bottomBar": false
+   },
+   "headings": []
+  },
+  {
+   "site": "palace",
+   "group": "store",
+   "page": "home",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "sticky h139 rgb(255, 255, 255)",
+   "headerOnScroll": {
+    "visibleAfterScroll": true,
+    "bgAfterScroll": "rgba(0, 0, 0, 0)",
+    "backdropAfterScroll": "none",
+    "transform": "none"
+   },
+   "nav": [
+    "ALL",
+    "NEW",
+    "JACKETS",
+    "KNITWEAR",
+    "SHIRTING",
+    "TOPS",
+    "BOTTOMS",
+    "SHORTS",
+    "TRACKSUITS",
+    "HOODS",
+    "SWEATSHIRTS",
+    "LONGSLEEVES",
+    "T-SHIRTS",
+    "HATS"
+   ],
+   "hero": {
+    "video": false,
+    "images": 60,
+    "height": 2575,
+    "vh": 286,
+    "text": "ALL NEW JACKETS KNITWEAR SHIRTING TOPS BOTTOMS SHORTS TRACKS",
+    "carousel": false
+   },
+   "card": {
+    "imageRatio": 1,
+    "hoverSwapLikely": false,
+    "quickAdd": false,
+    "swatches": false,
+    "badges": []
+   },
+   "filters": {
+    "filterEls": 60,
+    "sortEls": []
+   },
+   "pdp": null,
+   "cart": {
+    "type": "page",
+    "text": "WEB SHOP\nSHOPS\nADVICE\nCART\n\nYOUR CART IS CURRENTLY EMPTY.\n\nCONTINUE SHOPPING\nDO WATCH THAT\nINSTAGRAM\nTIKTOK\nAPPLE MUSIC\nYOUTUBE\nWECHAT\nBORING STUFF\nDELIVERY INFORMATION\nRETURNS INFORMATION\nTERMS & CONDITIONS\nTERMS OF USE\nPRIVACY POLICY\nMODERN SLAVERY STATEMENT\nCOOKIE PREFERENCES\nWEB SHOPS\nAUSTRALIA SHOP\nCANADA SHOP\nEUROPE SHOP\nJAPAN SHOP\nKOREA SHOP\nUSA SHOP\nWECHAT MINI PROGRAM\nWORLD SHOP\nMANOR PLA",
+    "opened_via": "a[href*='/cart']:visible",
+    "navigated": true
+   },
+   "footer": {
+    "headings": [
+     "DO WATCH THAT",
+     "BORING STUFF",
+     "WEB SHOPS",
+     "MANOR PLACE",
+     "MAILING LIST",
+     "© PALACE SKATEBOARDS LIMITED 2026"
+    ],
+    "linkCount": 15,
+    "newsletter": true
+   },
+   "fonts": [
+    "Neue Helvetica W01"
+   ],
+   "heading": null,
+   "textColours": [
+    "rgb(0, 0, 0)",
+    "rgb(255, 255, 255)",
+    "rgb(196, 196, 196)",
+    "rgb(154, 154, 154)"
+   ],
+   "bg": [
+    "rgb(245, 245, 245)",
+    "oklab(0 0 0 / 0)",
+    "rgb(255, 255, 255)",
+    "rgb(228, 228, 228)"
+   ],
+   "libraries": [
+    "Shopify"
+   ],
+   "motion": {
+    "runningAnimations": 0,
+    "marquee": false,
+    "videoCount": 0,
+    "transitionsOnLinks": 37,
+    "cssScrollSnap": true,
+    "reducedMotionQuery": false
+   },
+   "mobile": {
+    "nav_burger": true,
+    "bottomBar": false
+   },
+   "headings": [
+    "PALACE NIKE MANOR PLACE JACKET BLACK",
+    "PALACE NIKE MANOR PLACE TRACK JOGGER BLACK",
+    "PALACE NIKE MANOR PLACE JACKET TEAL",
+    "PALACE NIKE MANOR PLACE TRACK JOGGER TEAL",
+    "PALACE NIKE MANOR PLACE TRACKSUIT JACKET BLACK",
+    "PALACE NIKE MANOR PLACE SHORT BLACK",
+    "PALACE NIKE MANOR PLACE TRACKSUIT JACKET TEAL",
+    "PALACE NIKE MANOR PLACE SHORT TEAL",
+    "PALACE NIKE MANOR PLACE PANELLED HOOD BLACK",
+    "PALACE NIKE MANOR PLACE PANELLED HOOD TEAL",
+    "PALACE NIKE TRI-SWOOSH HOOD BLACK",
+    "PALACE NIKE TRI-SWOOSH HOOD GREY",
+    "PALACE NIKE TRI-SWOOSH HOOD WHITE",
+    "PALACE NIKE MANOR PLACE LONGSLEEVE JERSEY ORANGE",
+    "PALACE NIKE MANOR PLACE JERSEY TEAL",
+    "PALACE NIKE MANOR PLACE JERSEY BLACK",
+    "PALACE NIKE MANOR PLACE T-SHIRT TEAL",
+    "PALACE NIKE MANOR PLACE T-SHIRT BLACK",
+    "PALACE NIKE TRI-SWOOSH T-SHIRT GREY",
+    "PALACE NIKE TRI-SWOOSH T-SHIRT WHITE",
+    "PALACE NIKE TRI-SWOOSH T-SHIRT BLACK",
+    "PALACE NIKE MANOR PLACE RUNNING HAT TEAL",
+    "PALACE NIKE MANOR PLACE RUNNING HAT BLACK",
+    "PALACE NIKE MANOR PLACE BEANIE TEAL",
+    "PALACE NIKE MANOR PLACE BEANIE BLACK"
+   ]
+  },
+  {
+   "site": "palace",
+   "group": "store",
+   "page": "collection",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "sticky h139 rgb(255, 255, 255)",
+   "headerOnScroll": {
+    "visibleAfterScroll": true,
+    "bgAfterScroll": "rgba(0, 0, 0, 0)",
+    "backdropAfterScroll": "none",
+    "transform": "none"
+   },
+   "nav": [
+    "ALL",
+    "NEW",
+    "JACKETS",
+    "KNITWEAR",
+    "SHIRTING",
+    "TOPS",
+    "BOTTOMS",
+    "SHORTS",
+    "TRACKSUITS",
+    "HOODS",
+    "SWEATSHIRTS",
+    "LONGSLEEVES",
+    "T-SHIRTS",
+    "HATS"
+   ],
+   "hero": {
+    "video": false,
+    "images": 60,
+    "height": 2575,
+    "vh": 286,
+    "text": "ALL NEW JACKETS KNITWEAR SHIRTING TOPS BOTTOMS SHORTS TRACKS",
+    "carousel": false
+   },
+   "card": {
+    "imageRatio": 1,
+    "hoverSwapLikely": false,
+    "quickAdd": false,
+    "swatches": false,
+    "badges": []
+   },
+   "filters": {
+    "filterEls": 60,
+    "sortEls": []
+   },
+   "pdp": null,
+   "cart": null,
+   "footer": {
+    "headings": [
+     "DO WATCH THAT",
+     "BORING STUFF",
+     "WEB SHOPS",
+     "MANOR PLACE",
+     "MAILING LIST",
+     "© PALACE SKATEBOARDS LIMITED 2026"
+    ],
+    "linkCount": 15,
+    "newsletter": true
+   },
+   "fonts": [
+    "Neue Helvetica W01"
+   ],
+   "heading": null,
+   "textColours": [
+    "rgb(0, 0, 0)",
+    "rgb(255, 255, 255)",
+    "rgb(196, 196, 196)",
+    "rgb(154, 154, 154)"
+   ],
+   "bg": [
+    "rgb(245, 245, 245)",
+    "oklab(0 0 0 / 0)",
+    "rgb(255, 255, 255)",
+    "rgb(228, 228, 228)"
+   ],
+   "libraries": [
+    "Shopify"
+   ],
+   "motion": {
+    "runningAnimations": 0,
+    "marquee": false,
+    "videoCount": 0,
+    "transitionsOnLinks": 37,
+    "cssScrollSnap": true,
+    "reducedMotionQuery": false
+   },
+   "mobile": {
+    "nav_burger": true,
+    "bottomBar": false
+   },
+   "headings": [
+    "PALACE NIKE MANOR PLACE JACKET BLACK",
+    "PALACE NIKE MANOR PLACE TRACK JOGGER BLACK",
+    "PALACE NIKE MANOR PLACE JACKET TEAL",
+    "PALACE NIKE MANOR PLACE TRACK JOGGER TEAL",
+    "PALACE NIKE MANOR PLACE TRACKSUIT JACKET BLACK",
+    "PALACE NIKE MANOR PLACE SHORT BLACK",
+    "PALACE NIKE MANOR PLACE TRACKSUIT JACKET TEAL",
+    "PALACE NIKE MANOR PLACE SHORT TEAL",
+    "PALACE NIKE MANOR PLACE PANELLED HOOD BLACK",
+    "PALACE NIKE MANOR PLACE PANELLED HOOD TEAL",
+    "PALACE NIKE TRI-SWOOSH HOOD BLACK",
+    "PALACE NIKE TRI-SWOOSH HOOD GREY",
+    "PALACE NIKE TRI-SWOOSH HOOD WHITE",
+    "PALACE NIKE MANOR PLACE LONGSLEEVE JERSEY ORANGE",
+    "PALACE NIKE MANOR PLACE JERSEY TEAL",
+    "PALACE NIKE MANOR PLACE JERSEY BLACK",
+    "PALACE NIKE MANOR PLACE T-SHIRT TEAL",
+    "PALACE NIKE MANOR PLACE T-SHIRT BLACK",
+    "PALACE NIKE TRI-SWOOSH T-SHIRT GREY",
+    "PALACE NIKE TRI-SWOOSH T-SHIRT WHITE",
+    "PALACE NIKE TRI-SWOOSH T-SHIRT BLACK",
+    "PALACE NIKE MANOR PLACE RUNNING HAT TEAL",
+    "PALACE NIKE MANOR PLACE RUNNING HAT BLACK",
+    "PALACE NIKE MANOR PLACE BEANIE TEAL",
+    "PALACE NIKE MANOR PLACE BEANIE BLACK"
+   ]
+  },
+  {
+   "site": "palace",
+   "group": "store",
+   "page": "product",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "fixed h80 transparent",
+   "headerOnScroll": {
+    "visibleAfterScroll": true,
+    "bgAfterScroll": "rgba(0, 0, 0, 0)",
+    "backdropAfterScroll": "none",
+    "transform": "none"
+   },
+   "nav": [
+    "Palace Skateboards home",
+    "WEB SHOP",
+    "SHOPS",
+    "ADVICE",
+    "CART"
+   ],
+   "hero": {
+    "video": false,
+    "images": 11,
+    "height": 6705,
+    "vh": 745,
+    "text": "BACK PALACE NIKE MANOR PLACE JACKET BLACK SOLD OUT THIS SHIT",
+    "carousel": false
+   },
+   "card": {
+    "imageRatio": 1,
+    "hoverSwapLikely": false,
+    "quickAdd": false,
+    "swatches": false,
+    "badges": []
+   },
+   "filters": {
+    "filterEls": 0,
+    "sortEls": []
+   },
+   "pdp": {
+    "sizeButtons": [],
+    "sizeGuide": true,
+    "accordions": [
+     "WEB SHOP",
+     "SHOPS",
+     "ADVICE",
+     "CART"
+    ],
+    "deliveryCopy": [
+     "DELIVERY INFORMATION",
+     "RETURNS INFORMATION"
+    ],
+    "crossSell": [],
+    "addToCart": [],
+    "stickyColumn": true
+   },
+   "cart": {
+    "type": "page",
+    "text": "WEB SHOP\nSHOPS\nADVICE\nCART\n\nYOUR CART IS CURRENTLY EMPTY.\n\nCONTINUE SHOPPING\nDO WATCH THAT\nINSTAGRAM\nTIKTOK\nAPPLE MUSIC\nYOUTUBE\nWECHAT\nBORING STUFF\nDELIVERY INFORMATION\nRETURNS INFORMATION\nTERMS & CONDITIONS\nTERMS OF USE\nPRIVACY POLICY\nMODERN SLAVERY STATEMENT\nCOOKIE PREFERENCES\nWEB SHOPS\nAUSTRALIA SHOP\nCANADA SHOP\nEUROPE SHOP\nJAPAN SHOP\nKOREA SHOP\nUSA SHOP\nWECHAT MINI PROGRAM\nWORLD SHOP\nMANOR PLA",
+    "opened_via": "a[href*='/cart']:visible",
+    "navigated": true
+   },
+   "footer": {
+    "headings": [
+     "DO WATCH THAT",
+     "BORING STUFF",
+     "WEB SHOPS",
+     "MANOR PLACE",
+     "MAILING LIST",
+     "© PALACE SKATEBOARDS LIMITED 2026"
+    ],
+    "linkCount": 15,
+    "newsletter": true
+   },
+   "fonts": [
+    "Neue Helvetica W01"
+   ],
+   "heading": {
+    "text": "PALACE NIKE MANOR PLACE JACKET BLACK",
+    "font": "\"Neue Helvetica W01\", \"Helvetica Neue\", Helvetica, Arial, ui",
+    "size": "24px",
+    "weight": "700",
+    "tracking": "normal",
+    "transform": "uppercase"
+   },
+   "textColours": [
+    "rgb(0, 0, 0)",
+    "rgb(255, 255, 255)",
+    "rgb(154, 154, 154)",
+    "rgb(59, 59, 59)"
+   ],
+   "bg": [
+    "rgb(245, 245, 245)",
+    "rgb(228, 228, 228)",
+    "rgb(255, 255, 255)",
+    "rgb(0, 0, 0)"
+   ],
+   "libraries": [
+    "Shopify"
+   ],
+   "motion": {
+    "runningAnimations": 0,
+    "marquee": false,
+    "videoCount": 0,
+    "transitionsOnLinks": 18,
+    "cssScrollSnap": false,
+    "reducedMotionQuery": false
+   },
+   "mobile": {
+    "nav_burger": true,
+    "bottomBar": false
+   },
+   "headings": [
+    "PALACE NIKE MANOR PLACE JACKET BLACK",
+    "MAILING LIST"
+   ]
+  },
+  {
+   "site": "prada",
+   "group": "store",
+   "page": "home",
+   "status": null,
+   "blocked": null,
+   "skipped": null,
+   "errors": [
+    "1440: Error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.prada.com/gb/en.html\nCall log:\n  - navigating to \"https://www.prada.com/gb/en.html\", waiting until \"domcontentloaded\"\n",
+    "390: Error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.prada.com/gb/en.html\nCall log:\n  - navigating to \"https://www.prada.com/gb/en.html\", waiting until \"domcontentloaded\"\n"
+   ],
+   "header": null,
+   "headerOnScroll": null,
+   "nav": [],
+   "hero": {},
+   "card": null,
+   "filters": null,
+   "pdp": null,
+   "cart": null,
+   "footer": null,
+   "fonts": [],
+   "heading": null,
+   "textColours": [],
+   "bg": [],
+   "libraries": null,
+   "motion": {},
+   "mobile": null,
+   "headings": []
+  },
+  {
+   "site": "rauno",
+   "group": "design",
+   "page": "home",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": null,
+   "headerOnScroll": null,
+   "nav": [],
+   "hero": {
+    "video": false,
+    "images": 0,
+    "height": 6108,
+    "vh": 679,
+    "text": "",
+    "carousel": false
+   },
+   "card": null,
+   "filters": {
+    "filterEls": 0,
+    "sortEls": []
+   },
+   "pdp": null,
+   "cart": {
+    "type": "not found"
+   },
+   "footer": null,
+   "fonts": [
+    "X"
+   ],
+   "heading": {
+    "text": "Rauno Freiberg is an Estonian interaction designer working w",
+    "font": "X, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Ox",
+    "size": "32px",
+    "weight": "500",
+    "tracking": "normal",
+    "transform": "none"
+   },
+   "textColours": [
+    "rgb(0, 0, 0)",
+    "rgb(23, 23, 23)",
+    "rgb(111, 111, 111)"
+   ],
+   "bg": [
+    "rgb(143, 143, 143)",
+    "rgb(255, 255, 255)",
+    "rgb(255, 255, 2)",
+    "color(display-p3 0.99 0.4 0.02)"
+   ],
+   "libraries": [
+    "React",
+    "NextJS"
+   ],
+   "motion": {
+    "runningAnimations": 7,
+    "marquee": false,
+    "videoCount": 0,
+    "transitionsOnLinks": 3,
+    "cssScrollSnap": false,
+    "reducedMotionQuery": false
+   },
+   "mobile": {
+    "nav_burger": false,
+    "bottomBar": false
+   },
+   "headings": [
+    "Rauno Freiberg is an Estonian interaction designer working w",
+    "DD",
+    "Craft",
+    "Projects"
+   ]
+  },
+  {
+   "site": "refactoringui",
+   "group": "design",
+   "page": "home",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": null,
+   "headerOnScroll": {
+    "visibleAfterScroll": false,
+    "bgAfterScroll": "rgba(0, 0, 0, 0)",
+    "backdropAfterScroll": "none",
+    "transform": "none"
+   },
+   "nav": [],
+   "hero": {
+    "video": false,
+    "images": 2,
+    "height": 2842,
+    "vh": 316,
+    "text": "“I know this looks terrible, but I have no idea why.” Hi! I’",
+    "carousel": false
+   },
+   "card": null,
+   "filters": {
+    "filterEls": 0,
+    "sortEls": []
+   },
+   "pdp": null,
+   "cart": {
+    "type": "not found"
+   },
+   "footer": {
+    "headings": [],
+    "linkCount": 0,
+    "newsletter": false
+   },
+   "fonts": [
+    "Inter var",
+    "Fira Code VF"
+   ],
+   "heading": {
+    "text": "Make your ideas look awesome, without relying on a designer.",
+    "font": "\"Inter var\", ui-sans-serif, system-ui, -apple-system, BlinkM",
+    "size": "64px",
+    "weight": "400",
+    "tracking": "-3.2px",
+    "transform": "none"
+   },
+   "textColours": [
+    "oklch(0.446 0.043 257.281)",
+    "oklch(0.869 0.022 252.894)",
+    "oklch(0.704 0.04 256.788)",
+    "oklch(0.208 0.042 265.755)"
+   ],
+   "bg": [
+    "rgb(255, 255, 255)",
+    "oklch(0.208 0.042 265.755)",
+    "oklab(0.999994 0.0000455678 0.0000200868 / 0.05)",
+    "oklab(0.999994 0.0000455678 0.0000200868 / 0.3)"
+   ],
+   "libraries": [],
+   "motion": {
+    "runningAnimations": 0,
+    "marquee": false,
+    "videoCount": 3,
+    "transitionsOnLinks": 0,
+    "cssScrollSnap": true,
+    "reducedMotionQuery": false
+   },
+   "mobile": {
+    "nav_burger": false,
+    "bottomBar": false
+   },
+   "headings": [
+    "Make your ideas look awesome, without relying on a designer.",
+    "“I know this looks terrible, but I have no idea why.”",
+    "Design with tactics, not talent.",
+    "Most design courses are missing the mark.",
+    "What we’ve put together",
+    "The Book",
+    "Video tutorials",
+    "The Component Gallery",
+    "Color Palettes",
+    "Font Suggestions",
+    "Custom illustrated icons",
+    "Get Refactoring UI today.",
+    "The Complete Package",
+    "The Essentials",
+    "Over 20,000 people are already using Refactoring UI to make ",
+    "Frequently asked questions"
+   ]
+  },
+  {
+   "site": "represent",
+   "group": "store",
+   "page": "home",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "fixed h46 transparent",
+   "headerOnScroll": {
+    "visibleAfterScroll": true,
+    "bgAfterScroll": "rgba(0, 0, 0, 0)",
+    "backdropAfterScroll": "none",
+    "transform": "none"
+   },
+   "nav": [
+    "Represent",
+    "247",
+    "Luxury British Streetwear | Official Global Store® | REPRESE",
+    "Retail",
+    "The Vault",
+    "Prestige",
+    "GH / USD",
+    "Wishlist",
+    "Search",
+    "Account",
+    "Cart Toggle"
+   ],
+   "hero": {
+    "video": false,
+    "images": 4,
+    "height": 900,
+    "vh": 100,
+    "text": "British Luxury Menswear Represent DISCOVER DISCOVER FW26 DRO",
+    "carousel": false
+   },
+   "card": {
+    "imageRatio": 0.75,
+    "hoverSwapLikely": true,
+    "quickAdd": true,
+    "swatches": false,
+    "badges": []
+   },
+   "filters": {
+    "filterEls": 1,
+    "sortEls": []
+   },
+   "pdp": null,
+   "cart": {
+    "type": "drawer",
+    "width": 1440,
+    "freeShippingBar": false,
+    "upsells": false,
+    "text": "Represent Clo uses cookies to ensure you receive the best browsing experience. Click ‘Accept & Close’ to confirm or click ‘Preferences’ to tailor your cookie usage. View Privacy Policy PREFERENCES ACCEPT & CLOSE Skip to content Represent 247 Luxury British Streetwear | Official Global Store® | REPRESENT Retail The Vault Prestige GH / USD 2 unread notifications Account Your Cart Is Empty. 0 EXPLORE",
+    "opened_via": "a[href*='/cart']:visible",
+    "navigated": false
+   },
+   "footer": {
+    "headings": [
+     "Join Represent Prestige Loyalty",
+     "Country"
+    ],
+    "linkCount": 23,
+    "newsletter": false
+   },
+   "fonts": [
+    "STKBureau"
+   ],
+   "heading": {
+    "text": "Luxury British Streetwear | Official Global Store® | REPRESE",
+    "font": "STKBureau, sans-serif",
+    "size": "12px",
+    "weight": "400",
+    "tracking": "0.133333px",
+    "transform": "none"
+   },
+   "textColours": [
+    "rgb(0, 0, 0)",
+    "rgb(255, 255, 255)",
+    "rgba(87, 87, 87, 0.8)",
+    "rgb(87, 87, 87)"
+   ],
+   "bg": [
+    "rgb(255, 255, 255)",
+    "rgb(247, 247, 247)",
+    "rgba(0, 0, 0, 0.3)",
+    "rgb(0, 0, 0)"
+   ],
+   "libraries": [
+    "GSAP",
+    "Swiper",
+    "Shopify",
+    "Alpine",
+    "Lottie",
+    "Klaviyo"
+   ],
+   "motion": {
+    "runningAnimations": 0,
+    "marquee": false,
+    "videoCount": 1,
+    "transitionsOnLinks": 109,
+    "cssScrollSnap": true,
+    "reducedMotionQuery": true
+   },
+   "mobile": {
+    "nav_burger": true,
+    "bottomBar": false
+   },
+   "headings": [
+    "Luxury British Streetwear | Official Global Store® | REPRESE",
+    "British Luxury Menswear Represent",
+    "On A Mission 247 Activewear",
+    "Join Represent Prestige Loyalty",
+    "Country"
+   ]
+  },
+  {
+   "site": "represent",
+   "group": "store",
+   "page": "collection",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "fixed h46 transparent",
+   "headerOnScroll": {
+    "visibleAfterScroll": true,
+    "bgAfterScroll": "rgba(0, 0, 0, 0)",
+    "backdropAfterScroll": "none",
+    "transform": "none"
+   },
+   "nav": [
+    "Represent",
+    "247",
+    "THE VAULT - IS CLOSED | SIGN UP FOR SALE DETAILS | REPRESENT",
+    "Retail",
+    "The Vault",
+    "Prestige",
+    "GH / USD",
+    "Wishlist",
+    "Search",
+    "Account",
+    "Cart Toggle"
+   ],
+   "hero": {
+    "video": true,
+    "images": 2,
+    "height": 900,
+    "vh": 100,
+    "text": "THE VAULT IS CLOSED SIGN UP TO PRESTIGE FOR EARLY ACCESS",
+    "carousel": false
+   },
+   "card": {
+    "imageRatio": 0.75,
+    "hoverSwapLikely": true,
+    "quickAdd": true,
+    "swatches": false,
+    "badges": []
+   },
+   "filters": {
+    "filterEls": 1,
+    "sortEls": []
+   },
+   "pdp": null,
+   "cart": null,
+   "footer": {
+    "headings": [
+     "Join Represent Prestige Loyalty",
+     "Country"
+    ],
+    "linkCount": 23,
+    "newsletter": false
+   },
+   "fonts": [],
+   "heading": {
+    "text": "Join Represent Prestige Loyalty",
+    "font": "STKBureau, sans-serif",
+    "size": "12px",
+    "weight": "500",
+    "tracking": "normal",
+    "transform": "capitalize"
+   },
+   "textColours": [],
+   "bg": [],
+   "libraries": [
+    "GSAP",
+    "Swiper",
+    "Shopify",
+    "Alpine",
+    "Lottie",
+    "Klaviyo"
+   ],
+   "motion": {
+    "runningAnimations": 0,
+    "marquee": false,
+    "videoCount": 2,
+    "transitionsOnLinks": 110,
+    "cssScrollSnap": false,
+    "reducedMotionQuery": true
+   },
+   "mobile": {
+    "nav_burger": true,
+    "bottomBar": false
+   },
+   "headings": [
+    "THE VAULT IS CLOSED",
+    "Join Represent Prestige Loyalty",
+    "Country"
+   ]
+  },
+  {
+   "site": "represent",
+   "group": "store",
+   "page": "product",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "fixed h46 transparent",
+   "headerOnScroll": {
+    "visibleAfterScroll": false,
+    "bgAfterScroll": "rgba(0, 0, 0, 0)",
+    "backdropAfterScroll": "none",
+    "transform": "matrix(1, 0, 0, 1, 0, -46)"
+   },
+   "nav": [
+    "Represent",
+    "247",
+    "Jet Black Initial Stripe Cap | Accessories | REPRESENT",
+    "Retail",
+    "The Vault",
+    "Prestige",
+    "GH / USD",
+    "Wishlist",
+    "Search",
+    "Account",
+    "Cart Toggle"
+   ],
+   "hero": {
+    "video": true,
+    "images": 13,
+    "height": 900,
+    "vh": 100,
+    "text": "1 / 4 Initial Stripe Cap - Jet Black $95 Colour 2 Jet Black ",
+    "carousel": true
+   },
+   "card": {
+    "imageRatio": null,
+    "hoverSwapLikely": true,
+    "quickAdd": true,
+    "swatches": true,
+    "badges": [
+     "0",
+     "Add to Wishlist",
+     "Remove from Wishlist",
+     "Restocked",
+     "YOU MAY ALSO LIKE SUGGESTED T-SHIRTS HOODIES Represent Owner"
+    ]
+   },
+   "filters": {
+    "filterEls": 1,
+    "sortEls": []
+   },
+   "pdp": {
+    "sizeButtons": [],
+    "sizeGuide": false,
+    "accordions": [
+     "2 unread notifications",
+     "Shipping & Returns",
+     "Client Services Live Chat Support Hub Track Order Make A Ret",
+     "Company About Careers Reviews Shipping Returns Press & Partn",
+     "Social Instagram Facebook TikTok YouTube X",
+     "Download App IOS Android"
+    ],
+    "deliveryCopy": [
+     "Free shipping over $300. Duties & Taxes Calculated at Checkout.",
+     "Shipping & Returns",
+     "Make A Return",
+     "Shipping",
+     "Returns",
+     "Shipping & Returns Policy"
+    ],
+    "crossSell": [
+     "YOU MAY ALSO LIKE"
+    ],
+    "addToCart": [
+     "Add to cart",
+     "Add to cart",
+     "Add to cart"
+    ],
+    "stickyColumn": true
+   },
+   "cart": {
+    "type": "none",
+    "text": "Skip to content\nRepresent\n247\nJet Black Initial Stripe Cap | Accessories | REPRESENT\nRetail\nThe Vault\nPrestige\nGH / USD\n2\nunread notifications\nAccount\n1\n/\n4\nInitial Stripe Cap\n- Jet Black\n$95\nColour \n2\nJet Black\nAdd to Wishlist\nADD TO CART\nADD TO CART\n\nFree shipping over $300. Duties & Taxes Calculated at Checkout.\n\nEarn 85 Prestige Points\nProduct Details\nShipping & Returns\nHome  Initial Stripe Ca",
+    "opened_via": "button[aria-label*='cart' i]:visible",
+    "navigated": false
+   },
+   "footer": {
+    "headings": [
+     "Join Represent Prestige Loyalty",
+     "Country"
+    ],
+    "linkCount": 23,
+    "newsletter": false
+   },
+   "fonts": [],
+   "heading": {
+    "text": "Initial Stripe Cap - Jet Black",
+    "font": "STKBureau, sans-serif",
+    "size": "12px",
+    "weight": "500",
+    "tracking": "0.133333px",
+    "transform": "none"
+   },
+   "textColours": [],
+   "bg": [],
+   "libraries": [
+    "GSAP",
+    "Swiper",
+    "Shopify",
+    "Vue",
+    "Alpine",
+    "Lottie",
+    "Klaviyo"
+   ],
+   "motion": {
+    "runningAnimations": 0,
+    "marquee": false,
+    "videoCount": 2,
+    "transitionsOnLinks": 110,
+    "cssScrollSnap": false,
+    "reducedMotionQuery": true
+   },
+   "mobile": {
+    "nav_burger": true,
+    "bottomBar": false
+   },
+   "headings": [
+    "Initial Stripe Cap - Jet Black",
+    "STYLE WITH",
+    "Waffle T-Shirt",
+    "Tech Cargo Pant",
+    "Season Cargo Pant",
+    "Initial Stripe Cap",
+    "Represent Owners Club Hoodie",
+    "The Work Jacket",
+    "Riot Puffer",
+    "Trucker Jacket",
+    "Initial Tape Pant",
+    "Initial Stripe Cap",
+    "247 DNA T-Shirt 2.0",
+    "Team 247 Oversized Tank",
+    "247 Race Half Tight",
+    "247 Race Short",
+    "Represent X Oasis Owners Club T-Shirt",
+    "247 On A Mission T-Shirt",
+    "Los Angeles Dodgers x Represent 47 Cap",
+    "247 Aero Shorts",
+    "Represent Owners Club T-Shirt",
+    "247 Pant",
+    "Join Represent Prestige Loyalty",
+    "Country"
+   ]
+  },
+  {
+   "site": "siteinspire",
+   "group": "design",
+   "page": "home",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "static h344 lab(98.26 0 0)",
+   "headerOnScroll": {
+    "visibleAfterScroll": true,
+    "bgAfterScroll": "rgb(255, 255, 255)",
+    "backdropAfterScroll": "none",
+    "transform": "none"
+   },
+   "nav": [
+    "Subscribe to the weekly edit",
+    "Toggle filter",
+    "Popular Categories",
+    "Styles",
+    "Types",
+    "Subjects",
+    "Platforms",
+    "Agencies & Consultancies 2,407",
+    "Typographic 2,105",
+    "Design & Art Direction 1,945",
+    "Portfolio 1,444",
+    "Web & Interactive Design 910",
+    "E-Commerce 890",
+    "Minimal 847"
+   ],
+   "hero": {
+    "video": false,
+    "images": 0,
+    "height": 344,
+    "vh": 38,
+    "text": "A showcase of the web’s finest design + talent Subscribe to ",
+    "carousel": false
+   },
+   "card": null,
+   "filters": {
+    "filterEls": 39,
+    "sortEls": []
+   },
+   "pdp": null,
+   "cart": {
+    "type": "not found"
+   },
+   "footer": {
+    "headings": [],
+    "linkCount": 18,
+    "newsletter": false
+   },
+   "fonts": [
+    "fontSctoGroteskA"
+   ],
+   "heading": {
+    "text": "A showcase of the web’s finest design + talent",
+    "font": "fontSctoGroteskA, \"fontSctoGroteskA Fallback\"",
+    "size": "24px",
+    "weight": "400",
+    "tracking": "-0.4px",
+    "transform": "none"
+   },
+   "textColours": [
+    "lab(8.30603 0.618205 -2.16572)",
+    "lab(47.8878 1.65477 -5.77283)",
+    "rgba(0, 0, 0, 0)",
+    "rgb(0, 0, 0)"
+   ],
+   "bg": [
+    "lab(96.1634 0.0993311 -0.364041)",
+    "lab(98.26 0 0)",
+    "rgb(255, 255, 255)",
+    "lab(8.30603 0.618205 -2.16572)"
+   ],
+   "libraries": [
+    "NextJS"
+   ],
+   "motion": {
+    "runningAnimations": 0,
+    "marquee": false,
+    "videoCount": 0,
+    "transitionsOnLinks": 149,
+    "cssScrollSnap": false,
+    "reducedMotionQuery": true
+   },
+   "mobile": {
+    "nav_burger": true,
+    "bottomBar": false
+   },
+   "headings": [
+    "A showcase of the web’s finest design + talent"
+   ]
+  },
+  {
+   "site": "ssense",
+   "group": "store",
+   "page": "home",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "fixed h55 rgb(255, 255, 255)",
+   "headerOnScroll": {
+    "visibleAfterScroll": true,
+    "bgAfterScroll": "rgb(255, 255, 255)",
+    "backdropAfterScroll": "none",
+    "transform": "none"
+   },
+   "nav": [
+    "MENSWEAR",
+    "WOMENSWEAR",
+    "EVERYTHING ELSE",
+    "SALE",
+    "SEARCH",
+    "ENGLISH",
+    "LOGIN",
+    "WISHLIST",
+    "BAG (0)"
+   ],
+   "hero": {
+    "video": false,
+    "images": 28,
+    "height": 4361,
+    "vh": 485,
+    "text": "Fashion18 EMERGING DESIGNERS WHO ARE SHAPING THE FUTURE OF F",
+    "carousel": true
+   },
+   "card": null,
+   "filters": {
+    "filterEls": 0,
+    "sortEls": []
+   },
+   "pdp": null,
+   "cart": {
+    "type": "none",
+    "text": "www.ssense.com\nPerforming security verification\n\nThis website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot.\n\nRay ID: a54b368e4e7b0338\nPerformance and Security by Cloudflare\nPrivacy",
+    "opened_via": "a:has-text('Bag'):visible",
+    "navigated": true
+   },
+   "footer": {
+    "headings": [],
+    "linkCount": 30,
+    "newsletter": false
+   },
+   "fonts": [
+    "JHA Times Now",
+    "Favorit SSENSE Inter",
+    "Favorit SSENSE Inter1"
+   ],
+   "heading": {
+    "text": "LOOKSMAXXING AND THE QUANTIFICATION OF CULTURE",
+    "font": "\"Favorit SSENSE Inter1\"",
+    "size": "95px",
+    "weight": "400",
+    "tracking": "-4.5px",
+    "transform": "uppercase"
+   },
+   "textColours": [
+    "rgb(51, 51, 51)",
+    "rgb(0, 0, 0)",
+    "rgb(136, 136, 136)"
+   ],
+   "bg": [
+    "rgb(244, 244, 244)",
+    "rgb(255, 255, 255)"
+   ],
+   "libraries": [],
+   "motion": {
+    "runningAnimations": 0,
+    "marquee": false,
+    "videoCount": 0,
+    "transitionsOnLinks": 0,
+    "cssScrollSnap": false,
+    "reducedMotionQuery": false
+   },
+   "mobile": {
+    "nav_burger": true,
+    "bottomBar": false
+   },
+   "headings": [
+    "LOOKSMAXXING AND THE QUANTIFICATION OF CULTURE",
+    "When did everything become math?"
+   ]
+  },
+  {
+   "site": "ssense",
+   "group": "store",
+   "page": "collection",
+   "status": 403,
+   "blocked": true,
+   "skipped": null,
+   "errors": null,
+   "header": null,
+   "headerOnScroll": null,
+   "nav": [],
+   "hero": {},
+   "card": null,
+   "filters": {
+    "filterEls": 0,
+    "sortEls": []
+   },
+   "pdp": null,
+   "cart": null,
+   "footer": {
+    "headings": [],
+    "linkCount": 2,
+    "newsletter": false
+   },
+   "fonts": [
+    "system-ui",
+    "monospace"
+   ],
+   "heading": {
+    "text": "www.ssense.com",
+    "font": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Ro",
+    "size": "40px",
+    "weight": "600",
+    "tracking": "normal",
+    "transform": "none"
+   },
+   "textColours": [
+    "rgb(49, 49, 49)",
+    "rgb(0, 0, 238)"
+   ],
+   "bg": [],
+   "libraries": [],
+   "motion": {
+    "runningAnimations": 0,
+    "marquee": false,
+    "videoCount": 0,
+    "transitionsOnLinks": 0,
+    "cssScrollSnap": false,
+    "reducedMotionQuery": true
+   },
+   "mobile": {
+    "nav_burger": false,
+    "bottomBar": false
+   },
+   "headings": [
+    "www.ssense.com",
+    "Performing security verification"
+   ]
+  },
+  {
+   "site": "stussy",
+   "group": "store",
+   "page": "home",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "fixed h54 transparent",
+   "headerOnScroll": {
+    "visibleAfterScroll": true,
+    "bgAfterScroll": "rgba(0, 0, 0, 0)",
+    "backdropAfterScroll": "none",
+    "transform": "none"
+   },
+   "nav": [
+    "Stüssy homepage",
+    "NEW ARRIVALS",
+    "TEES",
+    "OUTERWEAR",
+    "BEANIES",
+    "HEADWEAR",
+    "KNITS",
+    "SWEATS",
+    "TOPS & SHIRTS",
+    "BOTTOMS",
+    "DENIM",
+    "SWIMWEAR",
+    "SUNGLASSES",
+    "ACCESSORIES"
+   ],
+   "hero": {
+    "video": false,
+    "images": 4,
+    "height": 900,
+    "vh": 100,
+    "text": "",
+    "carousel": false
+   },
+   "card": null,
+   "filters": {
+    "filterEls": 0,
+    "sortEls": []
+   },
+   "pdp": null,
+   "cart": {
+    "type": "drawer",
+    "width": 1440,
+    "freeShippingBar": false,
+    "upsells": false,
+    "text": "SKIP TO CONTENT NEW ARRIVALS TEES OUTERWEAR BEANIES HEADWEAR KNITS SWEATS TOPS & SHIRTS BOTTOMS DENIM SWIMWEAR SUNGLASSES ACCESSORIES ARCHIVE CHAPTERS SUPPORT ACCOUNT NEWSLETTER LEGAL US / $ © 2026 STÜSSY FREE STANDARD SHIPPING IN US ON ORDERS OVER $200 USD - HIDE SEARCH BAG SHOPPING BAG CLOSE YOU HAVE NO ITEMS IN YOUR SHOPPING BAG. FREE STANDARD SHIPPING IN US FOR ORDERS OVER $200 USD. EXCLUSIONS",
+    "opened_via": "button[aria-label*='bag' i]:visible",
+    "navigated": false
+   },
+   "footer": {
+    "headings": [],
+    "linkCount": 0,
+    "newsletter": false
+   },
+   "fonts": [
+    "HelveticaNeue"
+   ],
+   "heading": {
+    "text": "",
+    "font": "HelveticaNeue, sans-serif",
+    "size": "0px",
+    "weight": "500",
+    "tracking": "normal",
+    "transform": "uppercase"
+   },
+   "textColours": [
+    "rgb(0, 0, 0)"
+   ],
+   "bg": [
+    "rgb(255, 255, 255)",
+    "rgb(0, 0, 0)"
+   ],
+   "libraries": [
+    "Swiper",
+    "Shopify",
+    "Vue"
+   ],
+   "motion": {
+    "runningAnimations": 0,
+    "marquee": true,
+    "videoCount": 0,
+    "transitionsOnLinks": 0,
+    "cssScrollSnap": false,
+    "reducedMotionQuery": false
+   },
+   "mobile": {
+    "nav_burger": true,
+    "bottomBar": false
+   },
+   "headings": []
+  },
+  {
+   "site": "stussy",
+   "group": "store",
+   "page": "collection",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "fixed h54 transparent",
+   "headerOnScroll": {
+    "visibleAfterScroll": true,
+    "bgAfterScroll": "rgba(0, 0, 0, 0)",
+    "backdropAfterScroll": "none",
+    "transform": "none"
+   },
+   "nav": [
+    "Stüssy homepage",
+    "NEW ARRIVALS",
+    "TEES",
+    "OUTERWEAR",
+    "BEANIES",
+    "HEADWEAR",
+    "KNITS",
+    "SWEATS",
+    "TOPS & SHIRTS",
+    "BOTTOMS",
+    "DENIM",
+    "SWIMWEAR",
+    "SUNGLASSES",
+    "ACCESSORIES"
+   ],
+   "hero": {
+    "video": false,
+    "images": 418,
+    "height": 14653,
+    "vh": 1628,
+    "text": "NEW ARRIVALS | CALIFORNIA SPORTSWEAR | STÜSSY DOWN PARKA MIC",
+    "carousel": true
+   },
+   "card": {
+    "imageRatio": 0.8,
+    "hoverSwapLikely": true,
+    "quickAdd": false,
+    "swatches": false,
+    "badges": []
+   },
+   "filters": {
+    "filterEls": 1,
+    "sortEls": []
+   },
+   "pdp": null,
+   "cart": null,
+   "footer": {
+    "headings": [],
+    "linkCount": 0,
+    "newsletter": false
+   },
+   "fonts": [
+    "HelveticaNeue"
+   ],
+   "heading": {
+    "text": "NEW ARRIVALS | CALIFORNIA SPORTSWEAR | STÜSSY",
+    "font": "HelveticaNeue, sans-serif",
+    "size": "10px",
+    "weight": "500",
+    "tracking": "normal",
+    "transform": "uppercase"
+   },
+   "textColours": [
+    "rgb(0, 0, 0)",
+    "rgb(117, 117, 117)"
+   ],
+   "bg": [
+    "rgb(255, 255, 255)",
+    "rgb(0, 0, 0)"
+   ],
+   "libraries": [
+    "Swiper",
+    "Shopify",
+    "Vue"
+   ],
+   "motion": {
+    "runningAnimations": 0,
+    "marquee": true,
+    "videoCount": 0,
+    "transitionsOnLinks": 0,
+    "cssScrollSnap": true,
+    "reducedMotionQuery": false
+   },
+   "mobile": {
+    "nav_burger": true,
+    "bottomBar": false
+   },
+   "headings": [
+    "NEW ARRIVALS | CALIFORNIA SPORTSWEAR | STÜSSY"
+   ]
+  },
+  {
+   "site": "stussy",
+   "group": "store",
+   "page": "product",
+   "status": 200,
+   "blocked": false,
+   "skipped": null,
+   "errors": null,
+   "header": "fixed h54 transparent",
+   "headerOnScroll": {
+    "visibleAfterScroll": true,
+    "bgAfterScroll": "rgba(0, 0, 0, 0)",
+    "backdropAfterScroll": "none",
+    "transform": "none"
+   },
+   "nav": [
+    "Stüssy homepage",
+    "NEW ARRIVALS",
+    "TEES",
+    "OUTERWEAR",
+    "BEANIES",
+    "HEADWEAR",
+    "KNITS",
+    "SWEATS",
+    "TOPS & SHIRTS",
+    "BOTTOMS",
+    "DENIM",
+    "SWIMWEAR",
+    "SUNGLASSES",
+    "ACCESSORIES"
+   ],
+   "hero": {
+    "video": false,
+    "images": 28,
+    "height": 4090,
+    "vh": 454,
+    "text": "SKIP TO PRODUCT INFORMATION DOWN PARKA MICRO RIPSTOP $350 JE",
+    "carousel": false
+   },
+   "card": {
+    "imageRatio": 0.8,
+    "hoverSwapLikely": false,
+    "quickAdd": false,
+    "swatches": false,
+    "badges": []
+   },
+   "filters": {
+    "filterEls": 0,
+    "sortEls": []
+   },
+   "pdp": {
+    "sizeButtons": [
+     "XS",
+     "S",
+     "M",
+     "L",
+     "XL",
+     "XXL",
+     "",
+     ""
+    ],
+    "sizeGuide": true,
+    "accordions": [
+     "NEWSLETTER",
+     "US / $",
+     "BAG",
+     "PRODUCT DETAILS",
+     "SIZE GUIDE",
+     "SHIPPING & RETURNS"
+    ],
+    "deliveryCopy": [
+     "FREE STANDARD SHIPPING IN US ON ORDERS OVER $200 USD",
+     "SHIPPING & RETURNS",
+     "FREE STANDARD SHIPPING IN US FOR ORDERS OVER $200 USD. EXCLUSIONS APPLY."
+    ],
+    "crossSell": [],
+    "addToCart": [
+     "ADD TO BAG"
+    ],
+    "stickyColumn": true
+   },
+   "cart": {
+    "type": "drawer",
+    "width": 1440,
+    "freeShippingBar": false,
+    "upsells": true,
+    "text": "SKIP TO CONTENT NEW ARRIVALS TEES OUTERWEAR BEANIES HEADWEAR KNITS SWEATS TOPS & SHIRTS BOTTOMS DENIM SWIMWEAR SUNGLASSES ACCESSORIES ARCHIVE CHAPTERS SUPPORT ACCOUNT NEWSLETTER LEGAL US / $ © 2026 STÜSSY FREE STANDARD SHIPPING IN US ON ORDERS OVER $200 USD - HIDE SEARCH BAG SKIP TO PRODUCT INFORMATION DOWN PARKA MICRO RIPSTOP $350 JET BLACK SELECT SIZE XS S M L XL XXL NOTIFY ME WHEN AVAILABLE ADD",
+    "opened_via": "button[aria-label*='bag' i]:visible",
+    "navigated": false
+   },
+   "footer": {
+    "headings": [],
+    "linkCount": 0,
+    "newsletter": false
+   },
+   "fonts": [
+    "HelveticaNeue"
+   ],
+   "heading": {
+    "text": "DOWN PARKA MICRO RIPSTOP",
+    "font": "HelveticaNeue, sans-serif",
+    "size": "10px",
+    "weight": "500",
+    "tracking": "normal",
+    "transform": "uppercase"
+   },
+   "textColours": [
+    "rgb(0, 0, 0)",
+    "rgb(117, 117, 117)",
+    "rgb(255, 255, 255)"
+   ],
+   "bg": [
+    "rgb(251, 250, 248)",
+    "rgb(0, 0, 0)",
+    "rgb(255, 255, 255)"
+   ],
+   "libraries": [
+    "Swiper",
+    "Shopify",
+    "Vue"
+   ],
+   "motion": {
+    "runningAnimations": 0,
+    "marquee": true,
+    "videoCount": 0,
+    "transitionsOnLinks": 0,
+    "cssScrollSnap": false,
+    "reducedMotionQuery": false
+   },
+   "mobile": {
+    "nav_burger": true,
+    "bottomBar": false
+   },
+   "headings": [
+    "DOWN PARKA MICRO RIPSTOP",
+    "PRODUCT DETAILS",
+    "SIZE GUIDE",
+    "SHIPPING & RETURNS"
+   ]
+  }
+ ],
+ "libraryCounts": [
+  [
+   "Shopify",
+   12
+  ],
+  [
+   "Klaviyo",
+   10
+  ],
+  [
+   "NextJS",
+   7
+  ],
+  [
+   "Swiper",
+   7
+  ],
+  [
+   "jQuery",
+   5
+  ],
+  [
+   "GSAP",
+   2
+  ],
+  [
+   "FramerMotion",
+   1
+  ],
+  [
+   "Framer",
+   1
+  ],
+  [
+   "Lenis",
+   1
+  ],
+  [
+   "React",
+   1
+  ],
+  [
+   "Alpine",
+   1
+  ],
+  [
+   "Lottie",
+   1
+  ],
+  [
+   "Vue",
+   1
+  ]
+ ],
+ "fontCounts": [
+  [
+   "Inter",
+   4
+  ],
+  [
+   "IBM Plex Mono",
+   2
+  ],
+  [
+   "Inter Tight",
+   2
+  ],
+  [
+   "HelveticaNeueLTPro-Cn",
+   2
+  ],
+  [
+   "Optima",
+   2
+  ],
+  [
+   "General Sans",
+   1
+  ],
+  [
+   "ui-sans-serif",
+   1
+  ],
+  [
+   "sans-serif",
+   1
+  ],
+  [
+   "M Saans Medium",
+   1
+  ],
+  [
+   "Helvetica Now Text",
+   1
+  ],
+  [
+   "Helvetica Monospaced Pro",
+   1
+  ],
+  [
+   "Sohne",
+   1
+  ],
+  [
+   "DIN W01 Regular",
+   1
+  ],
+  [
+   "aktivGrotesk",
+   1
+  ],
+  [
+   "Courier New",
+   1
+  ],
+  [
+   "Times New Roman",
+   1
+  ],
+  [
+   "hv-mono",
+   1
+  ],
+  [
+   "ocr-a",
+   1
+  ],
+  [
+   "Monument Grotesk",
+   1
+  ],
+  [
+   "GT Alpina",
+   1
+  ],
+  [
+   "JetBrains Mono",
+   1
+  ],
+  [
+   "Epilogue",
+   1
+  ],
+  [
+   "Dela Gothic One",
+   1
+  ],
+  [
+   "Mori",
+   1
+  ],
+  [
+   "SF Mono",
+   1
+  ],
+  [
+   "Favorite-Book",
+   1
+  ],
+  [
+   "Futura PTT",
+   1
+  ],
+  [
+   "proxima-nova",
+   1
+  ],
+  [
+   "Arial",
+   1
+  ],
+  [
+   "Geist",
+   1
+  ],
+  [
+   "Geist Mono",
+   1
+  ],
+  [
+   "system-ui",
+   1
+  ],
+  [
+   "IBM Plex Sans",
+   1
+  ],
+  [
+   "Anton",
+   1
+  ],
+  [
+   "Roboto",
+   1
+  ],
+  [
+   "Assistant",
+   1
+  ],
+  [
+   "Instrument Sans",
+   1
+  ],
+  [
+   "Neue Helvetica W01",
+   1
+  ],
+  [
+   "X",
+   1
+  ],
+  [
+   "Inter var",
+   1
+  ]
+ ]
+}

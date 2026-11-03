@@ -1,0 +1,160 @@
+{
+  "key": "3dwebsites",
+  "group": "design",
+  "pages": {
+    "home": {
+      "url": "https://3dwebsites.design/",
+      "status": 200,
+      "finalUrl": "https://3dwebsites.design/",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/3dwebsites__home__1440.jpg"
+      ],
+      "data": {
+        "nav": [
+          "3DW",
+          "Submit",
+          "Inspiration",
+          "Tools",
+          "About"
+        ],
+        "productLinkCount": 0,
+        "filterSort": {
+          "filterEls": 0,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [],
+          "sizeGuide": false,
+          "accordions": [],
+          "deliveryCopy": [],
+          "crossSell": [],
+          "addToCart": [],
+          "stickyColumn": false
+        },
+        "fonts": [
+          {
+            "value": "ui-sans-serif",
+            "count": 111
+          },
+          {
+            "value": "IBM Plex Mono",
+            "count": 41
+          },
+          {
+            "value": "Space Grotesk",
+            "count": 7
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(229, 231, 235)",
+            "count": 141
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 5
+          },
+          {
+            "value": "rgb(9, 9, 11)",
+            "count": 5
+          },
+          {
+            "value": "rgb(82, 82, 91)",
+            "count": 3
+          },
+          {
+            "value": "rgb(156, 163, 175)",
+            "count": 2
+          },
+          {
+            "value": "rgb(17, 24, 39)",
+            "count": 2
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgb(39, 39, 42)",
+            "count": 2
+          },
+          {
+            "value": "rgb(9, 9, 11)",
+            "count": 1
+          },
+          {
+            "value": "rgb(229, 231, 235)",
+            "count": 1
+          },
+          {
+            "value": "rgb(24, 24, 27)",
+            "count": 1
+          }
+        ],
+        "headingSample": [
+          {
+            "text": "3DW",
+            "font": "\"Space Grotesk\", \"Libre Baskerville\"",
+            "size": "20px",
+            "weight": "700",
+            "tracking": "normal",
+            "transform": "none"
+          },
+          {
+            "text": "Explore the magic of 3D design for the web",
+            "font": "\"Space Grotesk\", \"Libre Baskerville\"",
+            "size": "30px",
+            "weight": "400",
+            "tracking": "normal",
+            "transform": "none"
+          }
+        ],
+        "bodyFont": {
+          "family": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Se",
+          "size": "16px"
+        },
+        "libraries": [],
+        "scriptHosts": [
+          "analytics.eu.umami.is"
+        ],
+        "motion": {
+          "runningAnimations": 0,
+          "marquee": false,
+          "videoCount": 0,
+          "transitionsOnLinks": 0,
+          "cssScrollSnap": false,
+          "reducedMotionQuery": false
+        },
+        "headings": [
+          "3DW",
+          "Explore the magic of 3D design for the web",
+          "Deeo Studio",
+          "Nico Escovilla",
+          "Eshan Singh",
+          "Fundamental",
+          "Modal",
+          "Airvoir",
+          "Sphinx",
+          "Tim Quirino",
+          "Weblab",
+          "Festina",
+          "William Le",
+          "Monolith Studio",
+          "Grainient supply",
+          "Artemii Lebedev",
+          "Paradigm",
+          "Grok ventures"
+        ],
+        "title": "3D Websites - Design inspiration",
+        "h1": "3DW",
+        "bodyTextSample": "3DW Submit Inspiration Tools About Explore the magic of 3D design for the web Email Subscribe to receive a weekly digest via email Frames.so Sponsor Deeo Studio Nico Escovilla Eshan Singh Fundamental Modal Airvoir Sphinx Tim Quirino Weblab Festina William Le Monolith Studio Grainient supply Artemii Lebedev Paradigm Grok ventures Page 1 of 3 Prev Next"
+      },
+      "headerOnScroll": null,
+      "cart": {
+        "type": "not found"
+      },
+      "errors": [
+        "390: TimeoutError: Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://3dwebsites.design/\", waiting until \"domcontentloaded\"\n"
+      ]
+    }
+  }
+}

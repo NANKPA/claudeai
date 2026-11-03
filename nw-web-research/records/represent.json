@@ -1,0 +1,652 @@
+{
+  "key": "represent",
+  "group": "store",
+  "pages": {
+    "home": {
+      "url": "https://representclo.com/",
+      "status": 200,
+      "finalUrl": "https://row.representclo.com/",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/represent__home__1440.jpg",
+        "screenshots/represent__home__390.jpg"
+      ],
+      "data": {
+        "header": {
+          "tag": "HEADER-NAVIGATION",
+          "position": "fixed",
+          "top": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "backdrop": "none",
+          "height": 46,
+          "zIndex": "40",
+          "sticky": true,
+          "transparent": true,
+          "glass": false
+        },
+        "nav": [
+          "Represent",
+          "247",
+          "Luxury British Streetwear | Official Global Store® | REPRESE",
+          "Retail",
+          "The Vault",
+          "Prestige",
+          "GH / USD",
+          "Wishlist",
+          "Search",
+          "Account",
+          "Cart Toggle"
+        ],
+        "hero": {
+          "video": false,
+          "images": 4,
+          "height": 900,
+          "vh": 100,
+          "text": "British Luxury Menswear Represent DISCOVER DISCOVER FW26 DRO",
+          "carousel": false
+        },
+        "productCard": {
+          "classes": "flex flex-col w-full group",
+          "imageRatio": 0.75,
+          "imagesInCard": 2,
+          "hoverSwapLikely": true,
+          "quickAdd": true,
+          "swatches": false,
+          "badges": [],
+          "text": ""
+        },
+        "productLinkCount": 9,
+        "filterSort": {
+          "filterEls": 1,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [],
+          "sizeGuide": false,
+          "accordions": [
+            "Notifications",
+            "Client Services Live Chat Support Hub Track Order Make A Ret",
+            "Company About Careers Reviews Shipping Returns Press & Partn",
+            "Social Instagram Facebook TikTok YouTube X",
+            "Download App IOS Android"
+          ],
+          "deliveryCopy": [
+            "Make A Return",
+            "Shipping",
+            "Returns",
+            "Shipping & Returns Policy"
+          ],
+          "crossSell": [],
+          "addToCart": [
+            "Add to cart",
+            "Add to cart",
+            "Add to cart"
+          ],
+          "stickyColumn": false
+        },
+        "footer": {
+          "headings": [
+            "Join Represent Prestige Loyalty",
+            "Country"
+          ],
+          "linkCount": 23,
+          "newsletter": false
+        },
+        "fonts": [
+          {
+            "value": "STKBureau",
+            "count": 439
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 289
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 140
+          },
+          {
+            "value": "rgba(87, 87, 87, 0.8)",
+            "count": 6
+          },
+          {
+            "value": "rgb(87, 87, 87)",
+            "count": 4
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 8
+          },
+          {
+            "value": "rgb(247, 247, 247)",
+            "count": 7
+          },
+          {
+            "value": "rgba(0, 0, 0, 0.3)",
+            "count": 4
+          },
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 3
+          },
+          {
+            "value": "rgba(0, 0, 0, 0.4)",
+            "count": 3
+          },
+          {
+            "value": "rgba(0, 0, 0, 0.2)",
+            "count": 1
+          }
+        ],
+        "headingSample": [
+          {
+            "text": "Luxury British Streetwear | Official Global Store® | REPRESE",
+            "font": "STKBureau, sans-serif",
+            "size": "12px",
+            "weight": "400",
+            "tracking": "0.133333px",
+            "transform": "none"
+          },
+          {
+            "text": "British Luxury Menswear Represent",
+            "font": "STKBureau, sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "tracking": "0.133333px",
+            "transform": "none"
+          },
+          {
+            "text": "On A Mission 247 Activewear",
+            "font": "STKBureau, sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "tracking": "0.133333px",
+            "transform": "none"
+          }
+        ],
+        "bodyFont": {
+          "family": "STKBureau, sans-serif",
+          "size": "16px"
+        },
+        "libraries": [
+          "GSAP",
+          "Swiper",
+          "Shopify",
+          "Alpine",
+          "Lottie",
+          "Klaviyo"
+        ],
+        "scriptHosts": [
+          "cdn.shopify.com",
+          "sdk.loyaltylion.net",
+          "staticw2.yotpo.com",
+          "row.representclo.com",
+          "shop.app",
+          "static.klaviyo.com",
+          "cdn.attn.tv",
+          "wisepops.net",
+          "cdn-widgetsrepository.yotpo.com",
+          "client.prod.mplat-ppcprotect.com",
+          "cdn.ometria.com",
+          "static-tracking.klaviyo.com",
+          "widget.set1.io",
+          "www.googletagmanager.com",
+          "chat.digitalgenius.com",
+          "pixel.marqo-ep.ai"
+        ],
+        "motion": {
+          "runningAnimations": 0,
+          "marquee": false,
+          "videoCount": 1,
+          "transitionsOnLinks": 109,
+          "cssScrollSnap": true,
+          "reducedMotionQuery": true
+        },
+        "headings": [
+          "Luxury British Streetwear | Official Global Store® | REPRESE",
+          "British Luxury Menswear Represent",
+          "On A Mission 247 Activewear",
+          "Join Represent Prestige Loyalty",
+          "Country"
+        ],
+        "title": "Luxury British Streetwear | Official Global Store® | REPRESENT",
+        "h1": "Luxury British Streetwear | Official Global Store® | REPRESE",
+        "bodyTextSample": "Skip to content Represent 247 Luxury British Streetwear | Official Global Store® | REPRESENT Retail The Vault Prestige GH / USD Account British Luxury Menswear Represent DISCOVER DISCOVER FW26 DROP 2 FW26 DROP 2 On A Mission 247 Activewear EXPLORE EXPLORE 247 FW26 DROP 2 247 FW26 DROP 2 Join Represent Prestige Loyalty Unlock 10% Off Your First Purchase Plus More Rewards And Benefits SIGN UP Client Services Live Chat Support Hub Track Order Make A Return Stockists Company About Careers Reviews Shipping Returns Press & Partnerships Social Instagram Facebook TikTok YouTube X Country GHANA GH / US"
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": true,
+        "bgAfterScroll": "rgba(0, 0, 0, 0)",
+        "backdropAfterScroll": "none",
+        "transform": "none"
+      },
+      "cart": {
+        "type": "drawer",
+        "width": 1440,
+        "freeShippingBar": false,
+        "upsells": false,
+        "text": "Represent Clo uses cookies to ensure you receive the best browsing experience. Click ‘Accept & Close’ to confirm or click ‘Preferences’ to tailor your cookie usage. View Privacy Policy PREFERENCES ACCEPT & CLOSE Skip to content Represent 247 Luxury British Streetwear | Official Global Store® | REPRESENT Retail The Vault Prestige GH / USD 2 unread notifications Account Your Cart Is Empty. 0 EXPLORE",
+        "opened_via": "a[href*='/cart']:visible",
+        "navigated": false
+      },
+      "mobile": {
+        "nav_burger": true,
+        "bottomBar": false
+      }
+    },
+    "collection": {
+      "url": "https://row.representclo.com/collections/vault",
+      "status": 200,
+      "finalUrl": "https://row.representclo.com/collections/vault",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/represent__collection__1440.jpg",
+        "screenshots/represent__collection__390.jpg"
+      ],
+      "data": {
+        "header": {
+          "tag": "HEADER-NAVIGATION",
+          "position": "fixed",
+          "top": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "backdrop": "none",
+          "height": 46,
+          "zIndex": "40",
+          "sticky": true,
+          "transparent": true,
+          "glass": false
+        },
+        "nav": [
+          "Represent",
+          "247",
+          "THE VAULT - IS CLOSED | SIGN UP FOR SALE DETAILS | REPRESENT",
+          "Retail",
+          "The Vault",
+          "Prestige",
+          "GH / USD",
+          "Wishlist",
+          "Search",
+          "Account",
+          "Cart Toggle"
+        ],
+        "hero": {
+          "video": true,
+          "images": 2,
+          "height": 900,
+          "vh": 100,
+          "text": "THE VAULT IS CLOSED SIGN UP TO PRESTIGE FOR EARLY ACCESS",
+          "carousel": false
+        },
+        "productCard": {
+          "classes": "flex flex-col w-full group",
+          "imageRatio": 0.75,
+          "imagesInCard": 2,
+          "hoverSwapLikely": true,
+          "quickAdd": true,
+          "swatches": false,
+          "badges": [],
+          "text": ""
+        },
+        "productLinkCount": 9,
+        "filterSort": {
+          "filterEls": 1,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [],
+          "sizeGuide": false,
+          "accordions": [
+            "2 unread notifications",
+            "Client Services Live Chat Support Hub Track Order Make A Ret",
+            "Company About Careers Reviews Shipping Returns Press & Partn",
+            "Social Instagram Facebook TikTok YouTube X",
+            "Download App IOS Android"
+          ],
+          "deliveryCopy": [
+            "Make A Return",
+            "Shipping",
+            "Returns",
+            "Shipping & Returns Policy"
+          ],
+          "crossSell": [],
+          "addToCart": [
+            "Add to cart",
+            "Add to cart",
+            "Add to cart"
+          ],
+          "stickyColumn": false
+        },
+        "footer": {
+          "headings": [
+            "Join Represent Prestige Loyalty",
+            "Country"
+          ],
+          "linkCount": 23,
+          "newsletter": false
+        },
+        "fonts": [],
+        "textColours": [],
+        "bgColours": [],
+        "headingSample": [
+          {
+            "text": "Join Represent Prestige Loyalty",
+            "font": "STKBureau, sans-serif",
+            "size": "12px",
+            "weight": "500",
+            "tracking": "normal",
+            "transform": "capitalize"
+          },
+          {
+            "text": "Country",
+            "font": "STKBureau, sans-serif",
+            "size": "12px",
+            "weight": "500",
+            "tracking": "normal",
+            "transform": "capitalize"
+          },
+          {
+            "text": "",
+            "font": "STKBureau, sans-serif",
+            "size": "12px",
+            "weight": "500",
+            "tracking": "normal",
+            "transform": "none"
+          }
+        ],
+        "bodyFont": {
+          "family": "STKBureau, sans-serif",
+          "size": "16px"
+        },
+        "libraries": [
+          "GSAP",
+          "Swiper",
+          "Shopify",
+          "Alpine",
+          "Lottie",
+          "Klaviyo"
+        ],
+        "scriptHosts": [
+          "redirectify.app",
+          "cdn-scripts.signifyd.com",
+          "swymv3premium-01.azureedge.net",
+          "analytics.tiktok.com",
+          "connect.facebook.net",
+          "www.googletagmanager.com",
+          "cdn.tkrconnector.com",
+          "tags.srv.stackadapt.com",
+          "tags.creativecdn.com",
+          "cdn.shopify.com",
+          "sdk.loyaltylion.net",
+          "staticw2.yotpo.com",
+          "row.representclo.com",
+          "d5yoctgpv4cpx.cloudfront.net",
+          "shop.app",
+          "cdn-widgetsrepository.yotpo.com",
+          "static.klaviyo.com",
+          "cdn.attn.tv",
+          "wisepops.net",
+          "client.prod.mplat-ppcprotect.com",
+          "cdn.ometria.com",
+          "widget.set1.io",
+          "static-tracking.klaviyo.com",
+          "chat.digitalgenius.com",
+          "googleads.g.doubleclick.net"
+        ],
+        "motion": {
+          "runningAnimations": 0,
+          "marquee": false,
+          "videoCount": 2,
+          "transitionsOnLinks": 110,
+          "cssScrollSnap": false,
+          "reducedMotionQuery": true
+        },
+        "headings": [
+          "THE VAULT IS CLOSED",
+          "Join Represent Prestige Loyalty",
+          "Country"
+        ],
+        "title": "THE VAULT - IS CLOSED | SIGN UP FOR SALE DETAILS | REPRESENT",
+        "h1": "Skip to content Represent 247 THE VAULT - IS CLOSED | SIGN U",
+        "bodyTextSample": "Skip to content Represent 247 THE VAULT - IS CLOSED | SIGN UP FOR SALE DETAILS | REPRESENT Retail The Vault Prestige GH / USD 2 unread notifications Account THE VAULT IS CLOSED SIGN UP TO PRESTIGE FOR EARLY ACCESS Join Represent Prestige Loyalty Unlock 10% Off Your First Purchase Plus More Rewards And Benefits SIGN UP Client Services Live Chat Support Hub Track Order Make A Return Stockists Company About Careers Reviews Shipping Returns Press & Partnerships Social Instagram Facebook TikTok YouTube X Country GHANA GH / USD $ | English Download App IOS Android Terms & Conditions Privacy Policy S"
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": true,
+        "bgAfterScroll": "rgba(0, 0, 0, 0)",
+        "backdropAfterScroll": "none",
+        "transform": "none"
+      },
+      "mobile": {
+        "nav_burger": true,
+        "bottomBar": false
+      }
+    },
+    "product": {
+      "url": "https://row.representclo.com/products/initial-stripe-cap-jet-black",
+      "status": 200,
+      "finalUrl": "https://row.representclo.com/products/initial-stripe-cap-jet-black",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/represent__product__1440.jpg",
+        "screenshots/represent__product__390.jpg"
+      ],
+      "data": {
+        "header": {
+          "tag": "HEADER-NAVIGATION",
+          "position": "fixed",
+          "top": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "backdrop": "none",
+          "height": 46,
+          "zIndex": "40",
+          "sticky": true,
+          "transparent": true,
+          "glass": false
+        },
+        "nav": [
+          "Represent",
+          "247",
+          "Jet Black Initial Stripe Cap | Accessories | REPRESENT",
+          "Retail",
+          "The Vault",
+          "Prestige",
+          "GH / USD",
+          "Wishlist",
+          "Search",
+          "Account",
+          "Cart Toggle"
+        ],
+        "hero": {
+          "video": true,
+          "images": 13,
+          "height": 900,
+          "vh": 100,
+          "text": "1 / 4 Initial Stripe Cap - Jet Black $95 Colour 2 Jet Black ",
+          "carousel": true
+        },
+        "productCard": {
+          "classes": "font-display product- swym-ready swym-represent-row/main-null swym-represent-row/main-null-icontext swym-buttons-loaded",
+          "imageRatio": null,
+          "imagesInCard": 156,
+          "hoverSwapLikely": true,
+          "quickAdd": true,
+          "swatches": true,
+          "badges": [
+            "0",
+            "Add to Wishlist",
+            "Remove from Wishlist",
+            "Restocked",
+            "YOU MAY ALSO LIKE SUGGESTED T-SHIRTS HOODIES Represent Owner"
+          ],
+          "text": "Skip to content Represent 247 Jet Black Initial Stripe Cap |"
+        },
+        "productLinkCount": 67,
+        "filterSort": {
+          "filterEls": 1,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [],
+          "sizeGuide": false,
+          "accordions": [
+            "2 unread notifications",
+            "Shipping & Returns",
+            "Client Services Live Chat Support Hub Track Order Make A Ret",
+            "Company About Careers Reviews Shipping Returns Press & Partn",
+            "Social Instagram Facebook TikTok YouTube X",
+            "Download App IOS Android"
+          ],
+          "deliveryCopy": [
+            "Free shipping over $300. Duties & Taxes Calculated at Checkout.",
+            "Shipping & Returns",
+            "Make A Return",
+            "Shipping",
+            "Returns",
+            "Shipping & Returns Policy"
+          ],
+          "crossSell": [
+            "YOU MAY ALSO LIKE"
+          ],
+          "addToCart": [
+            "Add to cart",
+            "Add to cart",
+            "Add to cart"
+          ],
+          "stickyColumn": true
+        },
+        "footer": {
+          "headings": [
+            "Join Represent Prestige Loyalty",
+            "Country"
+          ],
+          "linkCount": 23,
+          "newsletter": false
+        },
+        "fonts": [],
+        "textColours": [],
+        "bgColours": [],
+        "headingSample": [
+          {
+            "text": "Initial Stripe Cap - Jet Black",
+            "font": "STKBureau, sans-serif",
+            "size": "12px",
+            "weight": "500",
+            "tracking": "0.133333px",
+            "transform": "none"
+          },
+          {
+            "text": "STYLE WITH",
+            "font": "STKBureau, sans-serif",
+            "size": "12px",
+            "weight": "700",
+            "tracking": "0.133333px",
+            "transform": "uppercase"
+          },
+          {
+            "text": "Join Represent Prestige Loyalty",
+            "font": "STKBureau, sans-serif",
+            "size": "12px",
+            "weight": "500",
+            "tracking": "normal",
+            "transform": "capitalize"
+          }
+        ],
+        "bodyFont": {
+          "family": "STKBureau, sans-serif",
+          "size": "16px"
+        },
+        "libraries": [
+          "GSAP",
+          "Swiper",
+          "Shopify",
+          "Vue",
+          "Alpine",
+          "Lottie",
+          "Klaviyo"
+        ],
+        "scriptHosts": [
+          "redirectify.app",
+          "cdn-scripts.signifyd.com",
+          "swymv3premium-01.azureedge.net",
+          "connect.facebook.net",
+          "www.googletagmanager.com",
+          "analytics.tiktok.com",
+          "cdn.tkrconnector.com",
+          "tags.srv.stackadapt.com",
+          "tags.creativecdn.com",
+          "cdn.shopify.com",
+          "staticw2.yotpo.com",
+          "sdk.loyaltylion.net",
+          "row.representclo.com",
+          "shop.app",
+          "static.klaviyo.com",
+          "wisepops.net",
+          "cdn-widgetsrepository.yotpo.com",
+          "cdn.attn.tv",
+          "cdn.ometria.com",
+          "client.prod.mplat-ppcprotect.com",
+          "static-tracking.klaviyo.com",
+          "widget.set1.io",
+          "widget-git-feat-anti-bracketing-getkleep.vercel.app",
+          "chat.digitalgenius.com",
+          "googleads.g.doubleclick.net"
+        ],
+        "motion": {
+          "runningAnimations": 0,
+          "marquee": false,
+          "videoCount": 2,
+          "transitionsOnLinks": 110,
+          "cssScrollSnap": false,
+          "reducedMotionQuery": true
+        },
+        "headings": [
+          "Initial Stripe Cap - Jet Black",
+          "STYLE WITH",
+          "Waffle T-Shirt",
+          "Tech Cargo Pant",
+          "Season Cargo Pant",
+          "Initial Stripe Cap",
+          "Represent Owners Club Hoodie",
+          "The Work Jacket",
+          "Riot Puffer",
+          "Trucker Jacket",
+          "Initial Tape Pant",
+          "Initial Stripe Cap",
+          "247 DNA T-Shirt 2.0",
+          "Team 247 Oversized Tank",
+          "247 Race Half Tight",
+          "247 Race Short",
+          "Represent X Oasis Owners Club T-Shirt",
+          "247 On A Mission T-Shirt",
+          "Los Angeles Dodgers x Represent 47 Cap",
+          "247 Aero Shorts",
+          "Represent Owners Club T-Shirt",
+          "247 Pant",
+          "Join Represent Prestige Loyalty",
+          "Country"
+        ],
+        "title": "Jet Black Initial Stripe Cap | Accessories | REPRESENT",
+        "h1": "Initial Stripe Cap - Jet Black",
+        "bodyTextSample": "Skip to content Represent 247 Jet Black Initial Stripe Cap | Accessories | REPRESENT Retail The Vault Prestige GH / USD 2 unread notifications Account 1 / 4 Initial Stripe Cap - Jet Black $95 Colour 2 Jet Black Add to Wishlist ADD TO CART ADD TO CART Free shipping over $300. Duties & Taxes Calculated at Checkout. Earn 85 Prestige Points Product Details Shipping & Returns Home Initial Stripe Cap A staple silhouette, the Initial Stripe Cap is designed with statement embroidery throughout. Crafted from structured cotton twill, this cap features a 3D ‘R’ Initial at the front, with contrast stripe "
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": false,
+        "bgAfterScroll": "rgba(0, 0, 0, 0)",
+        "backdropAfterScroll": "none",
+        "transform": "matrix(1, 0, 0, 1, 0, -46)"
+      },
+      "cart": {
+        "type": "none",
+        "text": "Skip to content\nRepresent\n247\nJet Black Initial Stripe Cap | Accessories | REPRESENT\nRetail\nThe Vault\nPrestige\nGH / USD\n2\nunread notifications\nAccount\n1\n/\n4\nInitial Stripe Cap\n- Jet Black\n$95\nColour \n2\nJet Black\nAdd to Wishlist\nADD TO CART\nADD TO CART\n\nFree shipping over $300. Duties & Taxes Calculated at Checkout.\n\nEarn 85 Prestige Points\nProduct Details\nShipping & Returns\nHome  Initial Stripe Ca",
+        "opened_via": "button[aria-label*='cart' i]:visible",
+        "navigated": false
+      },
+      "mobile": {
+        "nav_burger": true,
+        "bottomBar": false
+      }
+    }
+  }
+}

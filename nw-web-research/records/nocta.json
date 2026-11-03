@@ -1,0 +1,665 @@
+{
+  "key": "nocta",
+  "group": "store",
+  "pages": {
+    "home": {
+      "url": "https://www.nocta.com/",
+      "status": 200,
+      "finalUrl": "https://www.nocta.com/en-gh",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/nocta__home__1440.jpg",
+        "screenshots/nocta__home__390.jpg"
+      ],
+      "data": {
+        "header": {
+          "tag": "DIV",
+          "position": "fixed",
+          "top": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "backdrop": "none",
+          "height": 85,
+          "zIndex": "999996",
+          "sticky": true,
+          "transparent": true,
+          "glass": false
+        },
+        "nav": [
+          "Shop",
+          "Archive",
+          "Search",
+          "Account",
+          "Cart ( 0 )"
+        ],
+        "hero": {
+          "video": false,
+          "images": 24,
+          "height": 6032,
+          "vh": 670,
+          "text": "Fall '26 Cardinal Stock Cardinal Stock FA26 in Cool Work Blu",
+          "carousel": true
+        },
+        "productCard": {
+          "classes": "card__media",
+          "imageRatio": 0.8,
+          "imagesInCard": 1,
+          "hoverSwapLikely": false,
+          "quickAdd": false,
+          "swatches": false,
+          "badges": [],
+          "text": ""
+        },
+        "productLinkCount": 12,
+        "filterSort": {
+          "filterEls": 0,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL",
+            "S",
+            "M"
+          ],
+          "sizeGuide": true,
+          "accordions": [
+            "Shop"
+          ],
+          "deliveryCopy": [],
+          "crossSell": [],
+          "addToCart": [],
+          "stickyColumn": true
+        },
+        "footer": {
+          "headings": [
+            "NEVER MISS A DROP"
+          ],
+          "linkCount": 18,
+          "newsletter": true
+        },
+        "fonts": [
+          {
+            "value": "Assistant",
+            "count": 304
+          },
+          {
+            "value": "Instrument Sans",
+            "count": 153
+          },
+          {
+            "value": "Arial",
+            "count": 47
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 273
+          },
+          {
+            "value": "rgba(255, 255, 255, 0.75)",
+            "count": 125
+          },
+          {
+            "value": "rgba(18, 18, 18, 0.75)",
+            "count": 60
+          },
+          {
+            "value": "rgb(0, 0, 238)",
+            "count": 28
+          },
+          {
+            "value": "rgb(128, 128, 128)",
+            "count": 12
+          },
+          {
+            "value": "rgb(196, 196, 196)",
+            "count": 5
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgba(0, 0, 0, 0.4)",
+            "count": 18
+          },
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 15
+          },
+          {
+            "value": "rgba(0, 0, 0, 0.5)",
+            "count": 12
+          }
+        ],
+        "headingSample": [
+          {
+            "text": "Fall '26 Cardinal Stock",
+            "font": "\"Instrument Sans\", sans-serif",
+            "size": "12px",
+            "weight": "400",
+            "tracking": "0.28px",
+            "transform": "none"
+          },
+          {
+            "text": "Kevin Durant Basketball Collection",
+            "font": "\"Instrument Sans\", sans-serif",
+            "size": "12px",
+            "weight": "400",
+            "tracking": "0.28px",
+            "transform": "none"
+          },
+          {
+            "text": "Spring '26 Cardinal Stock",
+            "font": "\"Instrument Sans\", sans-serif",
+            "size": "12px",
+            "weight": "400",
+            "tracking": "0.28px",
+            "transform": "none"
+          }
+        ],
+        "bodyFont": {
+          "family": "Assistant, sans-serif",
+          "size": "14px"
+        },
+        "libraries": [
+          "Swiper",
+          "Shopify",
+          "jQuery",
+          "Klaviyo"
+        ],
+        "scriptHosts": [
+          "connect.facebook.net",
+          "www.googletagmanager.com",
+          "justone.ai",
+          "www.nocta.com",
+          "code.jquery.com",
+          "shop.app",
+          "cdn.shopify.com",
+          "unpkg.com",
+          "cdn.intelligems.io",
+          "static.klaviyo.com",
+          "limits.minmaxify.com",
+          "static-tracking.klaviyo.com",
+          "googleads.g.doubleclick.net"
+        ],
+        "motion": {
+          "runningAnimations": 0,
+          "marquee": false,
+          "videoCount": 0,
+          "transitionsOnLinks": 0,
+          "cssScrollSnap": false,
+          "reducedMotionQuery": true
+        },
+        "headings": [
+          "Fall '26 Cardinal Stock",
+          "Kevin Durant Basketball Collection",
+          "Spring '26 Cardinal Stock",
+          "NOCTA in Association with CODE",
+          "Montrose Nocta Fleece Hoodie",
+          "Easy Money LS Base Layer Top",
+          "Easy Money Cutoff Tee",
+          "Montrose Lightweight Basketball Jersey",
+          "Easy Money 2-in-1 Basketball Shorts",
+          "Easy Money Jersey Basketball Shorts"
+        ],
+        "title": "NOCTA | Official Site",
+        "h1": "SKIP TO CONTENT Shop Archive Search Account Cart ( 0 ) Fall ",
+        "bodyTextSample": "SKIP TO CONTENT Shop Archive Search Account Cart ( 0 ) Fall '26 Cardinal Stock Cardinal Stock FA26 in Cool Work Blue, Core Black & Grey restocked. SHOP NEW Kevin Durant Basketball Collection On and off court performance apparel SHOP BASKETBALL COLLECTION CARDINAL STOCK SU26 SHOP COLLECTION Spring '26 Cardinal Stock The latest Cardinal Stock collection featuring NOCTA Exclusive Butterfly fleece and Moss Gradient color-ways, alongside the ‘Love You Forever’ White/Icy Gum Air Force 1 SHOP CARDINAL STOCK NOCTA in Association with CODE Code began as a precision experiment inside Nike — Tony Spackma"
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": true,
+        "bgAfterScroll": "rgba(0, 0, 0, 0)",
+        "backdropAfterScroll": "none",
+        "transform": "none"
+      },
+      "cart": {
+        "type": "drawer",
+        "width": 1440,
+        "freeShippingBar": false,
+        "upsells": false,
+        "text": "SKIP TO CONTENT Shop Archive Search Account Cart ( 0 ) CART (0) Continue shopping Your cart is empty CONTINUE SHOPPING Copyright ©2026 NOCTA. All rights reserved. NEVER MISS A DROP Subscribe and get the latest news. TOP SIZE GUIDE PRIVACY TERMS FAQ TERMS OF SERVICE REFUND POLICY INSTAGRAM TWITTER FACEBOOK",
+        "opened_via": "a[href*='/cart']:visible",
+        "navigated": true
+      },
+      "mobile": {
+        "nav_burger": true,
+        "bottomBar": false
+      }
+    },
+    "collection": {
+      "url": "https://www.nocta.com/en-gh/collections/shop-all?filter.v.availability=1",
+      "status": 200,
+      "finalUrl": "https://www.nocta.com/en-gh/collections/shop-all?filter.v.availability=1",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/nocta__collection__1440.jpg",
+        "screenshots/nocta__collection__390.jpg"
+      ],
+      "data": {
+        "header": {
+          "tag": "DIV",
+          "position": "fixed",
+          "top": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "backdrop": "none",
+          "height": 125,
+          "zIndex": "999996",
+          "sticky": true,
+          "transparent": true,
+          "glass": false
+        },
+        "nav": [
+          "Shop",
+          "Archive",
+          "Search",
+          "Account",
+          "Cart ( 0 )"
+        ],
+        "hero": {
+          "video": false,
+          "images": 67,
+          "height": 9953,
+          "vh": 1106,
+          "text": "ALL FILTER SIZECOLORIN STOCKPRICE CLEAR ALL S M L XL XXL 26/",
+          "carousel": false
+        },
+        "productCard": {
+          "classes": "card__media",
+          "imageRatio": 0.8,
+          "imagesInCard": 1,
+          "hoverSwapLikely": false,
+          "quickAdd": false,
+          "swatches": false,
+          "badges": [],
+          "text": ""
+        },
+        "productLinkCount": 80,
+        "filterSort": {
+          "filterEls": 8,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL",
+            "S",
+            "M"
+          ],
+          "sizeGuide": false,
+          "accordions": [
+            "Shop"
+          ],
+          "deliveryCopy": [
+            "Free shipping on orders above $210"
+          ],
+          "crossSell": [],
+          "addToCart": [],
+          "stickyColumn": false
+        },
+        "footer": {
+          "headings": [],
+          "linkCount": 18,
+          "newsletter": true
+        },
+        "fonts": [
+          {
+            "value": "Assistant",
+            "count": 568
+          },
+          {
+            "value": "Instrument Sans",
+            "count": 466
+          },
+          {
+            "value": "Swiss721BT",
+            "count": 1
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 622
+          },
+          {
+            "value": "rgba(255, 255, 255, 0.75)",
+            "count": 311
+          },
+          {
+            "value": "rgba(18, 18, 18, 0.75)",
+            "count": 55
+          },
+          {
+            "value": "rgb(0, 0, 238)",
+            "count": 44
+          },
+          {
+            "value": "rgb(196, 196, 196)",
+            "count": 2
+          },
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 1
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgba(0, 0, 0, 0.4)",
+            "count": 106
+          },
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 26
+          },
+          {
+            "value": "rgb(245, 237, 9)",
+            "count": 1
+          }
+        ],
+        "headingSample": [],
+        "bodyFont": {
+          "family": "Assistant, sans-serif",
+          "size": "14px"
+        },
+        "libraries": [
+          "Swiper",
+          "Shopify",
+          "jQuery",
+          "Klaviyo"
+        ],
+        "scriptHosts": [
+          "7ce243a1e1a2.cdn4.forter.com",
+          "cdn.rebuyengine.com",
+          "cdn.shopify.com",
+          "crossborder-integration.global-e.com",
+          "static-us.afterpay.com",
+          "cdn-scripts.signifyd.com",
+          "cdn.commoninja.com",
+          "www.googletagmanager.com",
+          "connect.facebook.net",
+          "justone.ai",
+          "www.nocta.com",
+          "code.jquery.com",
+          "shop.app",
+          "unpkg.com",
+          "cdn.intelligems.io",
+          "static.klaviyo.com",
+          "limits.minmaxify.com",
+          "static-tracking.klaviyo.com",
+          "bzrcdn.openai.com",
+          "googleads.g.doubleclick.net",
+          "webservices.global-e.com",
+          "imgs.signifyd.com"
+        ],
+        "motion": {
+          "runningAnimations": 0,
+          "marquee": false,
+          "videoCount": 0,
+          "transitionsOnLinks": 9,
+          "cssScrollSnap": false,
+          "reducedMotionQuery": true
+        },
+        "headings": [
+          "26/27 Home Jersey",
+          "26/27 Match Home Jersey",
+          "26/27 Match Home Jersey – Long Sleeves",
+          "26/27 Home Shorts",
+          "26/27 Away Jersey",
+          "26/27 Match Away Jersey",
+          "26/27 Away Shorts",
+          "26/27 Third Jersey",
+          "26/27 Third Match Jersey",
+          "26/27 Third Shorts",
+          "26/27 Fourth Jersey",
+          "26/27 Fourth Match Jersey",
+          "26/27 Goalkeeper Home Jersey",
+          "26/27 Goalkeeper Match Home Jersey",
+          "26/27 Goalkeeper Away Jersey",
+          "26/27 Goalkeeper Match Away Jersey",
+          "26/27 VFC Travel Lion Statue Tee – Long Sleeves",
+          "26/27 VFC Pre-Match Jersey",
+          "26/27 Reflections All-Over Tee",
+          "26/27 VFC Travel Lion Statue Tee White",
+          "26/27 VFC Travel Lion Statue Tee Dark Grey",
+          "26/27 VFC Travel Polo Black",
+          "26/27 VFC Travel Polo Cream",
+          "26/27 VFC Travel Shorts",
+          "Sidewinder Sling",
+          "NORTHSTAR GLOVES",
+          "NOCTA Fleece CS Hoodie",
+          "NOCTA Fleece CS Crew",
+          "Core NOCTA Big Body CS Tee",
+          "Montrose Big Body Tee",
+          "Northstar Nylon Track Pant",
+          "NOCTA Fleece CS Crew",
+          "NOCTA Fleece CS Hoodie",
+          "Northstar Nylon Track Jacket",
+          "Cardinal Fleece Shorts",
+          "NOCTA Fleece CS Sweatpant EC",
+          "Northstar Nylon Track Pant",
+          "NOCTA Fleece CS Crew",
+          "NOCTA Fleece CS Hoodie",
+          "Core NOCTA Big Body CS Tee"
+        ],
+        "title": "Shop ALL Apparel, Sneakers & Products | NOCTA",
+        "h1": "SKIP TO CONTENT Free shipping on orders above $210 Shop Arch",
+        "bodyTextSample": "SKIP TO CONTENT Free shipping on orders above $210 Shop Archive Search Account Cart ( 0 ) ALL FILTER SIZECOLORIN STOCKPRICE CLEAR ALL S M L XL XXL 26/27 Home Jersey Regular price $147.00 USD S M L XL XXL 26/27 Match Home Jersey Regular price $147.00 USD S M L XL XXL 26/27 Match Home Jersey – Long Sleeves Regular price $171.00 USD S M L XL XXL 26/27 Home Shorts Regular price $61.00 USD S M L XL XXL 26/27 Away Jersey Regular price $147.00 USD S M L XL XXL 26/27 Match Away Jersey Regular price $147.00 USD S M L XL XXL 26/27 Away Shorts Regular price $61.00 USD S M L XL XXL 26/27 Third Jersey Regu"
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": true,
+        "bgAfterScroll": "rgba(0, 0, 0, 0)",
+        "backdropAfterScroll": "none",
+        "transform": "none"
+      },
+      "mobile": {
+        "nav_burger": true,
+        "bottomBar": false
+      }
+    },
+    "product": {
+      "url": "https://www.nocta.com/en-gh/products/26-27-home-jersey",
+      "status": 200,
+      "finalUrl": "https://www.nocta.com/en-gh/products/26-27-home-jersey",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/nocta__product__1440.jpg",
+        "screenshots/nocta__product__390.jpg"
+      ],
+      "data": {
+        "header": {
+          "tag": "DIV",
+          "position": "fixed",
+          "top": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "backdrop": "none",
+          "height": 85,
+          "zIndex": "999996",
+          "sticky": true,
+          "transparent": true,
+          "glass": false
+        },
+        "nav": [
+          "Shop",
+          "Archive",
+          "Search",
+          "Account",
+          "Cart ( 0 )"
+        ],
+        "hero": {
+          "video": false,
+          "images": 50,
+          "height": 2208,
+          "vh": 245,
+          "text": "ALL / ALL TOPS / BEST SELLERS / HOME KIT / IN STOCK / JERSEY",
+          "carousel": true
+        },
+        "productCard": {
+          "classes": "modal-recommendation-details-content product-modal-content ",
+          "imageRatio": null,
+          "imagesInCard": 1,
+          "hoverSwapLikely": false,
+          "quickAdd": false,
+          "swatches": false,
+          "badges": [],
+          "text": "26/27 Home Jersey Regular price $147.00 USD Unit price / per"
+        },
+        "productLinkCount": 41,
+        "filterSort": {
+          "filterEls": 0,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ],
+          "sizeGuide": true,
+          "accordions": [
+            "Shop"
+          ],
+          "deliveryCopy": [],
+          "crossSell": [
+            "COMPLETE THE LOOK",
+            "YOU MAY ALSO LIKE"
+          ],
+          "addToCart": [],
+          "stickyColumn": true
+        },
+        "footer": {
+          "headings": [
+            "NEVER MISS A DROP"
+          ],
+          "linkCount": 18,
+          "newsletter": true
+        },
+        "fonts": [
+          {
+            "value": "Instrument Sans",
+            "count": 815
+          },
+          {
+            "value": "Assistant",
+            "count": 742
+          },
+          {
+            "value": "Arial",
+            "count": 49
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 1437
+          },
+          {
+            "value": "rgba(18, 18, 18, 0.75)",
+            "count": 60
+          },
+          {
+            "value": "rgba(255, 255, 255, 0.75)",
+            "count": 59
+          },
+          {
+            "value": "rgb(0, 0, 238)",
+            "count": 40
+          },
+          {
+            "value": "rgb(128, 128, 128)",
+            "count": 4
+          },
+          {
+            "value": "rgb(196, 196, 196)",
+            "count": 3
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgba(0, 0, 0, 0.4)",
+            "count": 201
+          },
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 12
+          }
+        ],
+        "headingSample": [],
+        "bodyFont": {
+          "family": "Assistant, sans-serif",
+          "size": "14px"
+        },
+        "libraries": [
+          "Swiper",
+          "Shopify",
+          "jQuery",
+          "Klaviyo"
+        ],
+        "scriptHosts": [
+          "www.googletagmanager.com",
+          "justone.ai",
+          "connect.facebook.net",
+          "www.nocta.com",
+          "code.jquery.com",
+          "shop.app",
+          "cdn.shopify.com",
+          "unpkg.com",
+          "cdn.intelligems.io",
+          "static.klaviyo.com",
+          "limits.minmaxify.com",
+          "static-tracking.klaviyo.com",
+          "bzrcdn.openai.com",
+          "googleads.g.doubleclick.net",
+          "js.squarecdn.com"
+        ],
+        "motion": {
+          "runningAnimations": 0,
+          "marquee": false,
+          "videoCount": 0,
+          "transitionsOnLinks": 0,
+          "cssScrollSnap": false,
+          "reducedMotionQuery": true
+        },
+        "headings": [],
+        "title": "26/27 Home Jersey – NOCTA",
+        "h1": "SKIP TO CONTENT Shop Archive Search Account Cart ( 0 ) ALL /",
+        "bodyTextSample": "SKIP TO CONTENT Shop Archive Search Account Cart ( 0 ) ALL / ALL TOPS / BEST SELLERS / HOME KIT / IN STOCK / JERSEYS / NEW RELEASES / VENEZIA 26-27 Details Inspired by the flags that fill every matchday, the 26/27 Home Jersey is defined by ArancioNeroVerde. A bold orange and green band defines the front of the jersey and is reimagined across the back, creating a complete expression of the Club's identity from every angle. Built using the same lightweight technical construction worn on the pitch, it combines a cream Venezia wordmark, tonal Venezia Football Club jacquard woven into the black bas"
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": true,
+        "bgAfterScroll": "rgba(0, 0, 0, 0)",
+        "backdropAfterScroll": "none",
+        "transform": "none"
+      },
+      "cart": {
+        "type": "drawer",
+        "width": 1440,
+        "freeShippingBar": false,
+        "upsells": false,
+        "text": "SKIP TO CONTENT Shop Archive Search Account Cart ( 0 ) CART (0) Continue shopping Your cart is empty CONTINUE SHOPPING Copyright ©2026 NOCTA. All rights reserved. NEVER MISS A DROP Subscribe and get the latest news. TOP SIZE GUIDE PRIVACY TERMS FAQ TERMS OF SERVICE REFUND POLICY INSTAGRAM TWITTER FACEBOOK",
+        "opened_via": "a[href*='/cart']:visible",
+        "navigated": true
+      },
+      "mobile": {
+        "nav_burger": true,
+        "bottomBar": false
+      }
+    }
+  }
+}

@@ -1,0 +1,592 @@
+{
+  "key": "stussy",
+  "group": "store",
+  "pages": {
+    "home": {
+      "url": "https://www.stussy.com/",
+      "status": 200,
+      "finalUrl": "https://www.stussy.com/",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/stussy__home__1440.jpg",
+        "screenshots/stussy__home__390.jpg"
+      ],
+      "data": {
+        "header": {
+          "tag": "HEADER",
+          "position": "fixed",
+          "top": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "backdrop": "none",
+          "height": 54,
+          "zIndex": "5",
+          "sticky": true,
+          "transparent": true,
+          "glass": false
+        },
+        "nav": [
+          "Stüssy homepage",
+          "NEW ARRIVALS",
+          "TEES",
+          "OUTERWEAR",
+          "BEANIES",
+          "HEADWEAR",
+          "KNITS",
+          "SWEATS",
+          "TOPS & SHIRTS",
+          "BOTTOMS",
+          "DENIM",
+          "SWIMWEAR",
+          "SUNGLASSES",
+          "ACCESSORIES",
+          "ARCHIVE",
+          "CHAPTERS",
+          "SUPPORT",
+          "ACCOUNT",
+          "NEWSLETTER",
+          "LEGAL",
+          "US / $",
+          "HIDE",
+          "SEARCH",
+          "BAG"
+        ],
+        "hero": {
+          "video": false,
+          "images": 4,
+          "height": 900,
+          "vh": 100,
+          "text": "",
+          "carousel": false
+        },
+        "productLinkCount": 0,
+        "filterSort": {
+          "filterEls": 0,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [],
+          "sizeGuide": false,
+          "accordions": [
+            "NEWSLETTER",
+            "US / $",
+            "BAG"
+          ],
+          "deliveryCopy": [
+            "FREE STANDARD SHIPPING IN US ON ORDERS OVER $200 USD"
+          ],
+          "crossSell": [],
+          "addToCart": [],
+          "stickyColumn": false
+        },
+        "footer": {
+          "headings": [],
+          "linkCount": 0,
+          "newsletter": false
+        },
+        "fonts": [
+          {
+            "value": "HelveticaNeue",
+            "count": 88
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 88
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 3
+          },
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 1
+          }
+        ],
+        "headingSample": [
+          {
+            "text": "",
+            "font": "HelveticaNeue, sans-serif",
+            "size": "0px",
+            "weight": "500",
+            "tracking": "normal",
+            "transform": "uppercase"
+          }
+        ],
+        "bodyFont": {
+          "family": "HelveticaNeue, sans-serif",
+          "size": "10px"
+        },
+        "libraries": [
+          "Swiper",
+          "Shopify",
+          "Vue"
+        ],
+        "scriptHosts": [
+          "d23dclunsivw3h.cloudfront.net",
+          "cdn.shopify.com",
+          "crossborder-integration.global-e.com",
+          "cdn-scripts.signifyd.com",
+          "www.gstatic.com",
+          "www.googletagmanager.com",
+          "www.stussy.com",
+          "shop.app",
+          "shopify.privy.com",
+          "assets.visually.io",
+          "webservices.global-e.com",
+          "config.gorgias.chat",
+          "sendlane.com",
+          "www.google.com",
+          "imgs.signifyd.com"
+        ],
+        "motion": {
+          "runningAnimations": 0,
+          "marquee": true,
+          "videoCount": 0,
+          "transitionsOnLinks": 0,
+          "cssScrollSnap": false,
+          "reducedMotionQuery": false
+        },
+        "headings": [],
+        "title": "Stüssy",
+        "h1": "",
+        "bodyTextSample": "SKIP TO CONTENT NEW ARRIVALS TEES OUTERWEAR BEANIES HEADWEAR KNITS SWEATS TOPS & SHIRTS BOTTOMS DENIM SWIMWEAR SUNGLASSES ACCESSORIES ARCHIVE CHAPTERS SUPPORT ACCOUNT NEWSLETTER LEGAL US / $ © 2026 STÜSSY FREE STANDARD SHIPPING IN US ON ORDERS OVER $200 USD - HIDE SEARCH BAG"
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": true,
+        "bgAfterScroll": "rgba(0, 0, 0, 0)",
+        "backdropAfterScroll": "none",
+        "transform": "none"
+      },
+      "cart": {
+        "type": "drawer",
+        "width": 1440,
+        "freeShippingBar": false,
+        "upsells": false,
+        "text": "SKIP TO CONTENT NEW ARRIVALS TEES OUTERWEAR BEANIES HEADWEAR KNITS SWEATS TOPS & SHIRTS BOTTOMS DENIM SWIMWEAR SUNGLASSES ACCESSORIES ARCHIVE CHAPTERS SUPPORT ACCOUNT NEWSLETTER LEGAL US / $ © 2026 STÜSSY FREE STANDARD SHIPPING IN US ON ORDERS OVER $200 USD - HIDE SEARCH BAG SHOPPING BAG CLOSE YOU HAVE NO ITEMS IN YOUR SHOPPING BAG. FREE STANDARD SHIPPING IN US FOR ORDERS OVER $200 USD. EXCLUSIONS",
+        "opened_via": "button[aria-label*='bag' i]:visible",
+        "navigated": false
+      },
+      "mobile": {
+        "nav_burger": true,
+        "bottomBar": false
+      }
+    },
+    "collection": {
+      "url": "https://www.stussy.com/collections/new-arrivals",
+      "status": 200,
+      "finalUrl": "https://www.stussy.com/collections/new-arrivals",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/stussy__collection__1440.jpg",
+        "screenshots/stussy__collection__390.jpg"
+      ],
+      "data": {
+        "header": {
+          "tag": "HEADER",
+          "position": "fixed",
+          "top": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "backdrop": "none",
+          "height": 54,
+          "zIndex": "5",
+          "sticky": true,
+          "transparent": true,
+          "glass": false
+        },
+        "nav": [
+          "Stüssy homepage",
+          "NEW ARRIVALS",
+          "TEES",
+          "OUTERWEAR",
+          "BEANIES",
+          "HEADWEAR",
+          "KNITS",
+          "SWEATS",
+          "TOPS & SHIRTS",
+          "BOTTOMS",
+          "DENIM",
+          "SWIMWEAR",
+          "SUNGLASSES",
+          "ACCESSORIES",
+          "ARCHIVE",
+          "CHAPTERS",
+          "SUPPORT",
+          "ACCOUNT",
+          "NEWSLETTER",
+          "LEGAL",
+          "US / $",
+          "VIEW ALL",
+          "FILTER",
+          "HIDE",
+          "SEARCH",
+          "BAG"
+        ],
+        "hero": {
+          "video": false,
+          "images": 418,
+          "height": 14653,
+          "vh": 1628,
+          "text": "NEW ARRIVALS | CALIFORNIA SPORTSWEAR | STÜSSY DOWN PARKA MIC",
+          "carousel": true
+        },
+        "productCard": {
+          "classes": "product-card__image-wrapper-link snap-slider__track w-full relative   default-focus",
+          "imageRatio": 0.8,
+          "imagesInCard": 2,
+          "hoverSwapLikely": true,
+          "quickAdd": false,
+          "swatches": false,
+          "badges": [],
+          "text": "Jet Black DOWN PARKA MICRO RIPSTOP"
+        },
+        "productLinkCount": 682,
+        "filterSort": {
+          "filterEls": 1,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [],
+          "sizeGuide": false,
+          "accordions": [
+            "NEWSLETTER",
+            "US / $",
+            "VIEW ALL",
+            "FILTER",
+            "BAG"
+          ],
+          "deliveryCopy": [
+            "FREE STANDARD SHIPPING IN US ON ORDERS OVER $200 USD"
+          ],
+          "crossSell": [],
+          "addToCart": [],
+          "stickyColumn": false
+        },
+        "footer": {
+          "headings": [],
+          "linkCount": 0,
+          "newsletter": false
+        },
+        "fonts": [
+          {
+            "value": "HelveticaNeue",
+            "count": 2405
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 2245
+          },
+          {
+            "value": "rgb(117, 117, 117)",
+            "count": 160
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 3
+          },
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 1
+          }
+        ],
+        "headingSample": [
+          {
+            "text": "NEW ARRIVALS | CALIFORNIA SPORTSWEAR | STÜSSY",
+            "font": "HelveticaNeue, sans-serif",
+            "size": "10px",
+            "weight": "500",
+            "tracking": "normal",
+            "transform": "uppercase"
+          }
+        ],
+        "bodyFont": {
+          "family": "HelveticaNeue, sans-serif",
+          "size": "10px"
+        },
+        "libraries": [
+          "Swiper",
+          "Shopify",
+          "Vue"
+        ],
+        "scriptHosts": [
+          "d23dclunsivw3h.cloudfront.net",
+          "cdn.shopify.com",
+          "crossborder-integration.global-e.com",
+          "cdn-scripts.signifyd.com",
+          "www.gstatic.com",
+          "www.googletagmanager.com",
+          "assets.visually.io",
+          "www.stussy.com",
+          "shop.app",
+          "shopify.privy.com",
+          "webservices.global-e.com",
+          "config.gorgias.chat",
+          "sendlane.com",
+          "www.google.com",
+          "imgs.signifyd.com"
+        ],
+        "motion": {
+          "runningAnimations": 0,
+          "marquee": true,
+          "videoCount": 0,
+          "transitionsOnLinks": 0,
+          "cssScrollSnap": true,
+          "reducedMotionQuery": false
+        },
+        "headings": [
+          "NEW ARRIVALS | CALIFORNIA SPORTSWEAR | STÜSSY"
+        ],
+        "title": "New Arrivals | California Sportswear | Stüssy",
+        "h1": "NEW ARRIVALS | CALIFORNIA SPORTSWEAR | STÜSSY",
+        "bodyTextSample": "SKIP TO CONTENT NEW ARRIVALS TEES OUTERWEAR BEANIES HEADWEAR KNITS SWEATS TOPS & SHIRTS BOTTOMS DENIM SWIMWEAR SUNGLASSES ACCESSORIES ARCHIVE CHAPTERS SUPPORT ACCOUNT NEWSLETTER LEGAL US / $ © 2026 STÜSSY VIEW ALL FILTER FREE STANDARD SHIPPING IN US ON ORDERS OVER $200 USD - HIDE SEARCH BAG NEW ARRIVALS | CALIFORNIA SPORTSWEAR | STÜSSY DOWN PARKA MICRO RIPSTOP 6 COLORS $350 XS S M L XL XXL STOCK LINK CREW 3 COLORS $125 XS S M L XL XXL MIDWEIGHT PUFFER 5 COLORS $225 XS S M L XL XXL CARPENTER PANT RAW DENIM $160 26 28 30 32 34 36 38 GORE-TEX GUIDE SHELL 5 COLORS $475 XS S M L XL XXL GORE-TEX GUI"
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": true,
+        "bgAfterScroll": "rgba(0, 0, 0, 0)",
+        "backdropAfterScroll": "none",
+        "transform": "none"
+      },
+      "mobile": {
+        "nav_burger": true,
+        "bottomBar": false
+      }
+    },
+    "product": {
+      "url": "https://www.stussy.com/collections/new-arrivals/products/115685-down-parka-micro-ripstop-jet-black",
+      "status": 200,
+      "finalUrl": "https://www.stussy.com/collections/new-arrivals/products/115685-down-parka-micro-ripstop-jet-black",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/stussy__product__1440.jpg",
+        "screenshots/stussy__product__390.jpg"
+      ],
+      "data": {
+        "header": {
+          "tag": "HEADER",
+          "position": "fixed",
+          "top": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "backdrop": "none",
+          "height": 54,
+          "zIndex": "5",
+          "sticky": true,
+          "transparent": true,
+          "glass": false
+        },
+        "nav": [
+          "Stüssy homepage",
+          "NEW ARRIVALS",
+          "TEES",
+          "OUTERWEAR",
+          "BEANIES",
+          "HEADWEAR",
+          "KNITS",
+          "SWEATS",
+          "TOPS & SHIRTS",
+          "BOTTOMS",
+          "DENIM",
+          "SWIMWEAR",
+          "SUNGLASSES",
+          "ACCESSORIES",
+          "ARCHIVE",
+          "CHAPTERS",
+          "SUPPORT",
+          "ACCOUNT",
+          "NEWSLETTER",
+          "LEGAL",
+          "US / $",
+          "HIDE",
+          "SEARCH",
+          "BAG"
+        ],
+        "hero": {
+          "video": false,
+          "images": 28,
+          "height": 4090,
+          "vh": 454,
+          "text": "SKIP TO PRODUCT INFORMATION DOWN PARKA MICRO RIPSTOP $350 JE",
+          "carousel": false
+        },
+        "productCard": {
+          "classes": "product-related-colors__related block text-[0px] w-[45px] min-w-[45px] bg-gray-product-bg border border-transparent defa",
+          "imageRatio": 0.8,
+          "imagesInCard": 1,
+          "hoverSwapLikely": false,
+          "quickAdd": false,
+          "swatches": false,
+          "badges": [],
+          "text": "MICRO RIPSTOP DOWN PARKA in Sky Blue color"
+        },
+        "productLinkCount": 5,
+        "filterSort": {
+          "filterEls": 0,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL",
+            "",
+            ""
+          ],
+          "sizeGuide": true,
+          "accordions": [
+            "NEWSLETTER",
+            "US / $",
+            "BAG",
+            "PRODUCT DETAILS",
+            "SIZE GUIDE",
+            "SHIPPING & RETURNS"
+          ],
+          "deliveryCopy": [
+            "FREE STANDARD SHIPPING IN US ON ORDERS OVER $200 USD",
+            "SHIPPING & RETURNS",
+            "FREE STANDARD SHIPPING IN US FOR ORDERS OVER $200 USD. EXCLUSIONS APPLY."
+          ],
+          "crossSell": [],
+          "addToCart": [
+            "ADD TO BAG"
+          ],
+          "stickyColumn": true
+        },
+        "footer": {
+          "headings": [],
+          "linkCount": 0,
+          "newsletter": false
+        },
+        "fonts": [
+          {
+            "value": "HelveticaNeue",
+            "count": 242
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 213
+          },
+          {
+            "value": "rgb(117, 117, 117)",
+            "count": 27
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 2
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgb(251, 250, 248)",
+            "count": 6
+          },
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 3
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 3
+          }
+        ],
+        "headingSample": [
+          {
+            "text": "DOWN PARKA MICRO RIPSTOP",
+            "font": "HelveticaNeue, sans-serif",
+            "size": "10px",
+            "weight": "500",
+            "tracking": "normal",
+            "transform": "uppercase"
+          },
+          {
+            "text": "PRODUCT DETAILS",
+            "font": "HelveticaNeue, sans-serif",
+            "size": "10px",
+            "weight": "500",
+            "tracking": "normal",
+            "transform": "uppercase"
+          },
+          {
+            "text": "SIZE GUIDE",
+            "font": "HelveticaNeue, sans-serif",
+            "size": "10px",
+            "weight": "500",
+            "tracking": "normal",
+            "transform": "uppercase"
+          }
+        ],
+        "bodyFont": {
+          "family": "HelveticaNeue, sans-serif",
+          "size": "10px"
+        },
+        "libraries": [
+          "Swiper",
+          "Shopify",
+          "Vue"
+        ],
+        "scriptHosts": [
+          "d23dclunsivw3h.cloudfront.net",
+          "cdn.shopify.com",
+          "crossborder-integration.global-e.com",
+          "cdn-scripts.signifyd.com",
+          "www.gstatic.com",
+          "www.googletagmanager.com",
+          "www.stussy.com",
+          "shop.app",
+          "shopify.privy.com",
+          "assets.visually.io",
+          "webservices.global-e.com",
+          "config.gorgias.chat",
+          "sendlane.com",
+          "www.google.com",
+          "imgs.signifyd.com"
+        ],
+        "motion": {
+          "runningAnimations": 0,
+          "marquee": true,
+          "videoCount": 0,
+          "transitionsOnLinks": 0,
+          "cssScrollSnap": false,
+          "reducedMotionQuery": false
+        },
+        "headings": [
+          "DOWN PARKA MICRO RIPSTOP",
+          "PRODUCT DETAILS",
+          "SIZE GUIDE",
+          "SHIPPING & RETURNS"
+        ],
+        "title": "Down Parka Micro Ripstop - Jet Black | Outerwear | Stüssy",
+        "h1": "DOWN PARKA MICRO RIPSTOP",
+        "bodyTextSample": "SKIP TO CONTENT NEW ARRIVALS TEES OUTERWEAR BEANIES HEADWEAR KNITS SWEATS TOPS & SHIRTS BOTTOMS DENIM SWIMWEAR SUNGLASSES ACCESSORIES ARCHIVE CHAPTERS SUPPORT ACCOUNT NEWSLETTER LEGAL US / $ © 2026 STÜSSY FREE STANDARD SHIPPING IN US ON ORDERS OVER $200 USD - HIDE SEARCH BAG SKIP TO PRODUCT INFORMATION DOWN PARKA MICRO RIPSTOP $350 JET BLACK SELECT SIZE XS S M L XL XXL NOTIFY ME WHEN AVAILABLE ADD TO BAG PRODUCT DETAILS SIZE GUIDE SHIPPING & RETURNS CHAT FREE STANDARD SHIPPING IN US FOR ORDERS OVER $200 USD. EXCLUSIONS APPLY."
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": true,
+        "bgAfterScroll": "rgba(0, 0, 0, 0)",
+        "backdropAfterScroll": "none",
+        "transform": "none"
+      },
+      "cart": {
+        "type": "drawer",
+        "width": 1440,
+        "freeShippingBar": false,
+        "upsells": true,
+        "text": "SKIP TO CONTENT NEW ARRIVALS TEES OUTERWEAR BEANIES HEADWEAR KNITS SWEATS TOPS & SHIRTS BOTTOMS DENIM SWIMWEAR SUNGLASSES ACCESSORIES ARCHIVE CHAPTERS SUPPORT ACCOUNT NEWSLETTER LEGAL US / $ © 2026 STÜSSY FREE STANDARD SHIPPING IN US ON ORDERS OVER $200 USD - HIDE SEARCH BAG SKIP TO PRODUCT INFORMATION DOWN PARKA MICRO RIPSTOP $350 JET BLACK SELECT SIZE XS S M L XL XXL NOTIFY ME WHEN AVAILABLE ADD",
+        "opened_via": "button[aria-label*='bag' i]:visible",
+        "navigated": false
+      },
+      "mobile": {
+        "nav_burger": true,
+        "bottomBar": false
+      }
+    }
+  }
+}

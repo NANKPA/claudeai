@@ -1,0 +1,805 @@
+{
+  "key": "guestinresidence",
+  "group": "store",
+  "pages": {
+    "home": {
+      "url": "https://guestinresidence.com/",
+      "status": 200,
+      "finalUrl": "https://guestinresidence.com/",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/guestinresidence__home__1440.jpg",
+        "screenshots/guestinresidence__home__390.jpg"
+      ],
+      "data": {
+        "header": {
+          "tag": "DIV",
+          "position": "sticky",
+          "top": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "backdrop": "none",
+          "height": 60,
+          "zIndex": "19",
+          "sticky": true,
+          "transparent": true,
+          "glass": false
+        },
+        "nav": [
+          "WOMEN",
+          "MEN",
+          "OUR DENIM",
+          "EDITS",
+          "Guest In Residence",
+          "(US $) CHANGE COUNTRY AND CURRENCY",
+          "SHOP PRODUCTS AND COLLECTIONS",
+          "Close",
+          "Naviation link to Care Guide",
+          "Naviation link to Discover GIR",
+          "Naviation link to Our Ethics",
+          "SIGN IN",
+          "OUR STORES",
+          "Cart 0 0 items"
+        ],
+        "hero": {
+          "video": false,
+          "images": 4,
+          "height": 900,
+          "vh": 100,
+          "text": "",
+          "carousel": false
+        },
+        "productCard": {
+          "classes": "product-card-media media full-unstyled-link",
+          "imageRatio": 0.75,
+          "imagesInCard": 6,
+          "hoverSwapLikely": true,
+          "quickAdd": false,
+          "swatches": false,
+          "badges": [],
+          "text": "Grizzly Cowhide Jacket - Oatmeal/Burnt Cocoa"
+        },
+        "productLinkCount": 40,
+        "filterSort": {
+          "filterEls": 0,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [],
+          "sizeGuide": false,
+          "accordions": [
+            "WOMEN",
+            "MEN",
+            "OUR DENIM",
+            "EDITS",
+            "(US $) CHANGE COUNTRY AND CURRENCY",
+            "SEARCH",
+            "Search Countries"
+          ],
+          "deliveryCopy": [
+            "U.S. RETURNS & EXCHANGES",
+            "INTERNATIONAL RETURNS",
+            "SHIPPING & RETURNS POLICY"
+          ],
+          "crossSell": [],
+          "addToCart": [],
+          "stickyColumn": false
+        },
+        "footer": {
+          "headings": [
+            "SUPPORT",
+            "MORE INFO"
+          ],
+          "linkCount": 20,
+          "newsletter": true
+        },
+        "fonts": [
+          {
+            "value": "SF Mono",
+            "count": 217
+          },
+          {
+            "value": "Favorite-Book",
+            "count": 92
+          },
+          {
+            "value": "Favorit-BookMono",
+            "count": 9
+          },
+          {
+            "value": "Favorit-Book",
+            "count": 5
+          },
+          {
+            "value": "Favorite-Bold",
+            "count": 4
+          },
+          {
+            "value": "Arial",
+            "count": 3
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 288
+          },
+          {
+            "value": "rgba(0, 0, 0, 0)",
+            "count": 16
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 8
+          },
+          {
+            "value": "rgb(52, 52, 52)",
+            "count": 8
+          },
+          {
+            "value": "rgb(57, 52, 53)",
+            "count": 7
+          },
+          {
+            "value": "rgb(0, 0, 238)",
+            "count": 4
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 9
+          },
+          {
+            "value": "rgb(245, 168, 0)",
+            "count": 2
+          },
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 2
+          },
+          {
+            "value": "rgba(0, 0, 0, 0.3)",
+            "count": 1
+          },
+          {
+            "value": "rgba(20, 20, 20, 0.6)",
+            "count": 1
+          }
+        ],
+        "headingSample": [
+          {
+            "text": "Guest In Residence",
+            "font": "Favorite-Book",
+            "size": "24px",
+            "weight": "700",
+            "tracking": "normal",
+            "transform": "none"
+          },
+          {
+            "text": "",
+            "font": "Favorite-Book",
+            "size": "12px",
+            "weight": "400",
+            "tracking": "normal",
+            "transform": "none"
+          },
+          {
+            "text": "",
+            "font": "Favorite-Book",
+            "size": "12px",
+            "weight": "400",
+            "tracking": "normal",
+            "transform": "uppercase"
+          }
+        ],
+        "bodyFont": {
+          "family": "\"SF Mono\", Menlo, Consolas, Monaco, \"Liberation Mono\", \"Lucida Console\", monospa",
+          "size": "16px"
+        },
+        "libraries": [
+          "Swiper",
+          "Shopify",
+          "jQuery",
+          "Klaviyo"
+        ],
+        "scriptHosts": [
+          "www.clarity.ms",
+          "bat.bing.com",
+          "cdn.shopify.com",
+          "www.googletagmanager.com",
+          "rules.quantcount.com",
+          "secure.quantserve.com",
+          "acdn.adnxs.com",
+          "sneakpeek-1.s3.us-east-1.amazonaws.com",
+          "www.googleoptimize.com",
+          "www.klaviyo.com",
+          "guestinresidence.com",
+          "shop.app",
+          "static.klaviyo.com",
+          "cdn-static.okendo.io",
+          "static-tracking.klaviyo.com",
+          "js.squarecdn.com",
+          "acsbapp.com",
+          "static.shopmy.us",
+          "static.afterpay.com",
+          "backinstock.useamp.com"
+        ],
+        "motion": {
+          "runningAnimations": 3,
+          "marquee": false,
+          "videoCount": 4,
+          "transitionsOnLinks": 2,
+          "cssScrollSnap": true,
+          "reducedMotionQuery": true
+        },
+        "headings": [
+          "Guest In Residence",
+          "NEW ARRIVALS",
+          "WESTERN CODED",
+          "SUPPORT",
+          "MORE INFO"
+        ],
+        "title": "Guest In Residence Official by Gigi Hadid | 100% Cashmere",
+        "h1": "Guest In Residence",
+        "bodyTextSample": "Accessibility Screen-Reader Guide, Feedback, and Issue Reporting | New window Skip to content SIGN UP FOR 10% OFF YOUR FIRST ORDER WOMEN MEN OUR DENIM EDITS Guest In Residence (US $) CHANGE COUNTRY AND CURRENCY SEARCH SIGN IN OUR STORES Cart 0 0 items NEW ARRIVALS Grizzly Cowhide Jacket - Oatmeal/Burnt Cocoa Grizzly Sculpted Cardigan - Charcoal Jane Checker Cardigan - Reservoir/Butter Felted Zip Jacket - Carmine LOW STOCK WESTERN CODED Grizzly Frankie Jacket - Camel Collegiate Stripe Polo - Highland Combo Fisherman Henley - Butter Rodeo Cardigan - Butter Combo LOW STOCK SIGN UP FOR 10% OFF YOU"
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": true,
+        "bgAfterScroll": "rgba(0, 0, 0, 0)",
+        "backdropAfterScroll": "none",
+        "transform": "none"
+      },
+      "cart": {
+        "type": "not found"
+      },
+      "mobile": {
+        "nav_burger": true,
+        "bottomBar": true
+      }
+    },
+    "collection": {
+      "url": "https://guestinresidence.com/collections/women-new-arrivals",
+      "status": 200,
+      "finalUrl": "https://guestinresidence.com/collections/women-new-arrivals",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/guestinresidence__collection__1440.jpg",
+        "screenshots/guestinresidence__collection__390_part1.jpg",
+        "screenshots/guestinresidence__collection__390_part2.jpg"
+      ],
+      "data": {
+        "header": {
+          "tag": "DIV",
+          "position": "sticky",
+          "top": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "backdrop": "none",
+          "height": 60,
+          "zIndex": "19",
+          "sticky": true,
+          "transparent": true,
+          "glass": false
+        },
+        "nav": [
+          "WOMEN",
+          "MEN",
+          "OUR DENIM",
+          "EDITS",
+          "(US $) CHANGE COUNTRY AND CURRENCY",
+          "SHOP PRODUCTS AND COLLECTIONS",
+          "Close",
+          "Naviation link to Care Guide",
+          "Naviation link to Discover GIR",
+          "Naviation link to Our Ethics",
+          "SIGN IN",
+          "OUR STORES",
+          "Cart 0 0 items"
+        ],
+        "hero": {
+          "video": true,
+          "images": 1119,
+          "height": 23070,
+          "vh": 2563,
+          "text": "Collection Filters NEW ARRIVALS DENIM TOPS & SWEATERS TEES C",
+          "carousel": true
+        },
+        "productCard": {
+          "classes": "product-card-media media full-unstyled-link",
+          "imageRatio": null,
+          "imagesInCard": 7,
+          "hoverSwapLikely": true,
+          "quickAdd": false,
+          "swatches": false,
+          "badges": [
+            "100% CASHMERE"
+          ],
+          "text": "Grizzly Sculpted Cardigan - Cream 100% CASHMERE"
+        },
+        "productLinkCount": 392,
+        "filterSort": {
+          "filterEls": 5,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [],
+          "sizeGuide": false,
+          "accordions": [
+            "WOMEN",
+            "MEN",
+            "OUR DENIM",
+            "EDITS",
+            "(US $) CHANGE COUNTRY AND CURRENCY",
+            "SEARCH",
+            "FILTERS",
+            "SORT BY",
+            "Search Countries"
+          ],
+          "deliveryCopy": [
+            "U.S. RETURNS & EXCHANGES",
+            "INTERNATIONAL RETURNS",
+            "SHIPPING & RETURNS POLICY"
+          ],
+          "crossSell": [],
+          "addToCart": [],
+          "stickyColumn": false
+        },
+        "footer": {
+          "headings": [
+            "SUPPORT",
+            "MORE INFO"
+          ],
+          "linkCount": 20,
+          "newsletter": true
+        },
+        "fonts": [
+          {
+            "value": "SF Mono",
+            "count": 616
+          },
+          {
+            "value": "Favorite-Book",
+            "count": 148
+          },
+          {
+            "value": "Favorite-Book-Mono",
+            "count": 1
+          },
+          {
+            "value": "Favorite-Bold",
+            "count": 1
+          },
+          {
+            "value": "ABC-Favorit",
+            "count": 1
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 580
+          },
+          {
+            "value": "rgba(0, 0, 0, 0)",
+            "count": 113
+          },
+          {
+            "value": "rgb(57, 52, 53)",
+            "count": 62
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 8
+          },
+          {
+            "value": "rgb(0, 0, 238)",
+            "count": 3
+          },
+          {
+            "value": "rgb(9, 9, 9)",
+            "count": 1
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 7
+          },
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 2
+          },
+          {
+            "value": "rgb(245, 168, 0)",
+            "count": 1
+          },
+          {
+            "value": "rgba(0, 0, 0, 0.3)",
+            "count": 1
+          }
+        ],
+        "headingSample": [
+          {
+            "text": "",
+            "font": "Favorite-Book",
+            "size": "12px",
+            "weight": "400",
+            "tracking": "normal",
+            "transform": "none"
+          },
+          {
+            "text": "",
+            "font": "Favorite-Book",
+            "size": "12px",
+            "weight": "400",
+            "tracking": "normal",
+            "transform": "uppercase"
+          },
+          {
+            "text": "Collection Filters",
+            "font": "\"SF Mono\", Menlo, Consolas, Monaco, \"Liberation Mono\", \"Luci",
+            "size": "24px",
+            "weight": "700",
+            "tracking": "normal",
+            "transform": "none"
+          }
+        ],
+        "bodyFont": {
+          "family": "\"SF Mono\", Menlo, Consolas, Monaco, \"Liberation Mono\", \"Lucida Console\", monospa",
+          "size": "16px"
+        },
+        "libraries": [
+          "Swiper",
+          "Shopify",
+          "jQuery",
+          "Klaviyo"
+        ],
+        "scriptHosts": [
+          "7ce243a1e1a2.cdn4.forter.com",
+          "static.hotjar.com",
+          "dr4qe3ddw9y32.cloudfront.net",
+          "tools.luckyorange.com",
+          "cdn.giftcardpro.app",
+          "cdn.shopify.com",
+          "crossborder-integration.global-e.com",
+          "image-optimizer.salessquad.co.uk",
+          "scripts.clarity.ms",
+          "connect.facebook.net",
+          "www.googletagmanager.com",
+          "www.clarity.ms",
+          "bat.bing.com",
+          "rules.quantcount.com",
+          "secure.quantserve.com",
+          "acdn.adnxs.com",
+          "sneakpeek-1.s3.us-east-1.amazonaws.com",
+          "www.googleoptimize.com",
+          "www.klaviyo.com",
+          "guestinresidence.com",
+          "shop.app",
+          "static.klaviyo.com",
+          "cdn-static.okendo.io",
+          "static-tracking.klaviyo.com",
+          "js.squarecdn.com"
+        ],
+        "motion": {
+          "runningAnimations": 1,
+          "marquee": false,
+          "videoCount": 8,
+          "transitionsOnLinks": 2,
+          "cssScrollSnap": true,
+          "reducedMotionQuery": true
+        },
+        "headings": [
+          "Collection Filters",
+          "SUPPORT",
+          "MORE INFO"
+        ],
+        "title": "New Arrivals - Women – Guest In Residence",
+        "h1": "Accessibility Screen-Reader Guide, Feedback, and Issue Repor",
+        "bodyTextSample": "Accessibility Screen-Reader Guide, Feedback, and Issue Reporting | New window Skip to content SIGN UP FOR 10% OFF YOUR FIRST ORDER WOMEN MEN OUR DENIM EDITS (US $) CHANGE COUNTRY AND CURRENCY SEARCH SIGN IN OUR STORES Cart 0 0 items Collection Filters NEW ARRIVALS DENIM TOPS & SWEATERS TEES CARDIGANS & JACKETS DRESSES & JUMPSUITS BOTTOMS ACCESSORIES SHOP ALL FILTERS SORT BY Grizzly Sculpted Cardigan - Cream 100% CASHMERE Grizzly Cowhide Wild Rag - Cream/Burnt Sienna 100% CASHMERE Shrunken Checker Crew - Heather Grey/Sprinkle 100% CASHMERE SHRUNKEN CHECKER CREW Regular price $325 CASHMERE Grizz"
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": true,
+        "bgAfterScroll": "rgba(0, 0, 0, 0)",
+        "backdropAfterScroll": "none",
+        "transform": "none"
+      },
+      "mobile": {
+        "nav_burger": true,
+        "bottomBar": false
+      }
+    },
+    "product": {
+      "url": "https://guestinresidence.com/products/everyday-jean-pacific",
+      "status": 200,
+      "finalUrl": "https://guestinresidence.com/products/everyday-jean-pacific",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/guestinresidence__product__1440.jpg",
+        "screenshots/guestinresidence__product__390.jpg"
+      ],
+      "data": {
+        "header": {
+          "tag": "DIV",
+          "position": "sticky",
+          "top": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "backdrop": "none",
+          "height": 60,
+          "zIndex": "19",
+          "sticky": true,
+          "transparent": true,
+          "glass": false
+        },
+        "nav": [
+          "WOMEN",
+          "MEN",
+          "OUR DENIM",
+          "EDITS",
+          "(US $) CHANGE COUNTRY AND CURRENCY",
+          "SHOP PRODUCTS AND COLLECTIONS",
+          "Close",
+          "Naviation link to Care Guide",
+          "Naviation link to Discover GIR",
+          "Naviation link to Our Ethics",
+          "SIGN IN",
+          "OUR STORES",
+          "Cart 0 0 items"
+        ],
+        "hero": {
+          "video": false,
+          "images": 16,
+          "height": 5453,
+          "vh": 606,
+          "text": "ONLY 1 LEFT EVERYDAY JEAN RATED 5.0 OUT OF 5 STARS 3 REVIEWS",
+          "carousel": true
+        },
+        "productCard": {
+          "classes": "product__media media media--transparent gradient media-ratio ratio--4-5",
+          "imageRatio": 0.8,
+          "imagesInCard": 1,
+          "hoverSwapLikely": false,
+          "quickAdd": false,
+          "swatches": false,
+          "badges": [],
+          "text": ""
+        },
+        "productLinkCount": 32,
+        "filterSort": {
+          "filterEls": 0,
+          "sortEls": [
+            "",
+            "",
+            "Most Recent Oldest Most Helpful Photos & Videos Highest Rati"
+          ]
+        },
+        "pdp": {
+          "sizeButtons": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "sizeGuide": true,
+          "accordions": [
+            "WOMEN",
+            "MEN",
+            "OUR DENIM",
+            "EDITS",
+            "(US $) CHANGE COUNTRY AND CURRENCY",
+            "SEARCH",
+            "SELECT SIZE",
+            "CHECK IN-STORE AVAILABILITY",
+            "DETAILS",
+            "Search Countries"
+          ],
+          "deliveryCopy": [
+            "FREE GLOBAL SHIPPING & RETURNS",
+            "SHIPPING & RETURNS",
+            "U.S. RETURNS & EXCHANGES",
+            "INTERNATIONAL RETURNS",
+            "SHIPPING & RETURNS POLICY"
+          ],
+          "crossSell": [],
+          "addToCart": [
+            "ADD TO BAG"
+          ],
+          "stickyColumn": true
+        },
+        "footer": {
+          "headings": [
+            "SUPPORT",
+            "MORE INFO"
+          ],
+          "linkCount": 20,
+          "newsletter": true
+        },
+        "fonts": [
+          {
+            "value": "SF Mono",
+            "count": 302
+          },
+          {
+            "value": "Favorite-Book",
+            "count": 259
+          },
+          {
+            "value": "Favorite-Book-Mono",
+            "count": 45
+          },
+          {
+            "value": "Favorit-BookMono",
+            "count": 9
+          },
+          {
+            "value": "Favorite-Bold",
+            "count": 6
+          },
+          {
+            "value": "sans-serif",
+            "count": 6
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 420
+          },
+          {
+            "value": "rgb(57, 52, 53)",
+            "count": 166
+          },
+          {
+            "value": "rgb(157, 156, 155)",
+            "count": 18
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 10
+          },
+          {
+            "value": "rgba(0, 0, 0, 0)",
+            "count": 10
+          },
+          {
+            "value": "rgb(0, 0, 238)",
+            "count": 3
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 30
+          },
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 3
+          },
+          {
+            "value": "rgb(245, 245, 245)",
+            "count": 2
+          },
+          {
+            "value": "rgb(245, 168, 0)",
+            "count": 1
+          },
+          {
+            "value": "rgba(0, 0, 0, 0.3)",
+            "count": 1
+          },
+          {
+            "value": "rgba(0, 0, 0, 0.4)",
+            "count": 1
+          }
+        ],
+        "headingSample": [
+          {
+            "text": "",
+            "font": "Favorite-Book",
+            "size": "12px",
+            "weight": "400",
+            "tracking": "normal",
+            "transform": "none"
+          },
+          {
+            "text": "",
+            "font": "Favorite-Book",
+            "size": "12px",
+            "weight": "400",
+            "tracking": "normal",
+            "transform": "uppercase"
+          },
+          {
+            "text": "EVERYDAY JEAN",
+            "font": "Favorite-Bold",
+            "size": "16px",
+            "weight": "400",
+            "tracking": "normal",
+            "transform": "uppercase"
+          }
+        ],
+        "bodyFont": {
+          "family": "\"SF Mono\", Menlo, Consolas, Monaco, \"Liberation Mono\", \"Lucida Console\", monospa",
+          "size": "16px"
+        },
+        "libraries": [
+          "Swiper",
+          "Shopify",
+          "jQuery",
+          "Klaviyo"
+        ],
+        "scriptHosts": [
+          "scripts.clarity.ms",
+          "www.clarity.ms",
+          "cdn.shopify.com",
+          "www.googletagmanager.com",
+          "connect.facebook.net",
+          "bat.bing.com",
+          "rules.quantcount.com",
+          "secure.quantserve.com",
+          "acdn.adnxs.com",
+          "sneakpeek-1.s3.us-east-1.amazonaws.com",
+          "www.googleoptimize.com",
+          "www.klaviyo.com",
+          "cdn.giftcardpro.app",
+          "guestinresidence.com",
+          "shop.app",
+          "static.klaviyo.com",
+          "cdn-static.okendo.io",
+          "ship-cdn.domain-ship.prod20.narvar.com",
+          "js.squarecdn.com",
+          "acsbapp.com",
+          "static-tracking.klaviyo.com",
+          "static.shopmy.us",
+          "js.narvar.com",
+          "cdn.kustomerapp.com",
+          "static.afterpay.com"
+        ],
+        "motion": {
+          "runningAnimations": 1,
+          "marquee": false,
+          "videoCount": 0,
+          "transitionsOnLinks": 2,
+          "cssScrollSnap": false,
+          "reducedMotionQuery": true
+        },
+        "headings": [
+          "EVERYDAY JEAN",
+          "DETAILS",
+          "STYLE WITH",
+          "SUPPORT",
+          "MORE INFO"
+        ],
+        "title": "EVERYDAY JEAN - Pacific – Guest In Residence",
+        "h1": "EVERYDAY JEAN",
+        "bodyTextSample": "Accessibility Screen-Reader Guide, Feedback, and Issue Reporting | New window Skip to content SIGN UP FOR 10% OFF YOUR FIRST ORDER WOMEN MEN OUR DENIM EDITS (US $) CHANGE COUNTRY AND CURRENCY SEARCH SIGN IN OUR STORES Cart 0 0 items ONLY 1 LEFT EVERYDAY JEAN RATED 5.0 OUT OF 5 STARS 3 REVIEWS CLICK TO SCROLL TO REVIEWS Regular price $265 COLOR: PACIFIC SELECT SIZE ADD TO BAG FREE GLOBAL SHIPPING & RETURNS CHECK IN-STORE AVAILABILITY A RELAXED TAKE ON CLASSIC DENIM, THE EVERYDAY JEAN IS A WOMEN'S MID-RISE, STRAIGHT-LEG JEAN CUT FROM SOFT COTTON DENIM WITH AN EASY FIT THROUGH THE HIPS. CUFF THE "
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": true,
+        "bgAfterScroll": "rgba(0, 0, 0, 0)",
+        "backdropAfterScroll": "none",
+        "transform": "none"
+      },
+      "cart": {
+        "type": "drawer",
+        "width": 1440,
+        "freeShippingBar": false,
+        "upsells": true,
+        "text": "Accessibility Screen-Reader Guide, Feedback, and Issue Reporting | New window Skip to content SIGN UP FOR 10% OFF YOUR FIRST ORDER WOMEN MEN OUR DENIM EDITS (US $) CHANGE COUNTRY AND CURRENCY SEARCH SIGN IN OUR STORES Cart 0 0 items SHOPPING BAG (0) YOUR SHOPPING BAG IS CURRENTLY EMPTY. START SHOPPING ONLY 1 LEFT EVERYDAY JEAN RATED 5.0 OUT OF 5 STARS 3 REVIEWS CLICK TO SCROLL TO REVIEWS Regular p",
+        "opened_via": "a[href*='/cart']:visible",
+        "navigated": false
+      },
+      "mobile": {
+        "nav_burger": true,
+        "bottomBar": false
+      }
+    }
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "key": "godly",
+  "group": "design",
+  "pages": {
+    "home": {
+      "url": "https://godly.website/",
+      "status": 200,
+      "finalUrl": "https://recent.design/?ref=godly",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/godly__home__1440.jpg"
+      ],
+      "data": {
+        "nav": [
+          "Design",
+          "Launch Videos new",
+          "Websites",
+          "OG Images",
+          "App Screenshots",
+          "App Icons",
+          "Tools",
+          "Skills",
+          "Jobs"
+        ],
+        "hero": {
+          "video": true,
+          "images": 52,
+          "height": 1638,
+          "vh": 182,
+          "text": "3 slides 3 3 slides 3 Sponsor Design jobs Post a job pen.dev",
+          "carousel": false
+        },
+        "productLinkCount": 0,
+        "filterSort": {
+          "filterEls": 0,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [],
+          "sizeGuide": false,
+          "accordions": [
+            "Recent"
+          ],
+          "deliveryCopy": [],
+          "crossSell": [],
+          "addToCart": [],
+          "stickyColumn": false
+        },
+        "footer": {
+          "headings": [],
+          "linkCount": 2,
+          "newsletter": false
+        },
+        "fonts": [
+          {
+            "value": "Inter",
+            "count": 556
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(11, 11, 11)",
+            "count": 362
+          },
+          {
+            "value": "oklch(1 0 0)",
+            "count": 132
+          },
+          {
+            "value": "oklch(0 0 0 / 0.486)",
+            "count": 30
+          },
+          {
+            "value": "oklch(0.15 0 0)",
+            "count": 18
+          },
+          {
+            "value": "oklch(0 0 0 / 0.267)",
+            "count": 9
+          },
+          {
+            "value": "oklch(0.64 0.28 350)",
+            "count": 5
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "oklch(0 0 0 / 0.447)",
+            "count": 43
+          },
+          {
+            "value": "oklch(0.97 0 0)",
+            "count": 21
+          },
+          {
+            "value": "oklch(0 0 0 / 0.063)",
+            "count": 8
+          },
+          {
+            "value": "oklch(1 0 0)",
+            "count": 4
+          },
+          {
+            "value": "oklch(0.15 0 0)",
+            "count": 2
+          },
+          {
+            "value": "oklch(0.15 0 0 / 0.4)",
+            "count": 1
+          }
+        ],
+        "headingSample": [
+          {
+            "text": "Browse",
+            "font": "Inter, ui-sans-serif, system-ui, sans-serif",
+            "size": "13px",
+            "weight": "400",
+            "tracking": "normal",
+            "transform": "none"
+          },
+          {
+            "text": "Resources",
+            "font": "Inter, ui-sans-serif, system-ui, sans-serif",
+            "size": "13px",
+            "weight": "400",
+            "tracking": "normal",
+            "transform": "none"
+          },
+          {
+            "text": "Design",
+            "font": "Inter, ui-sans-serif, system-ui, sans-serif",
+            "size": "16px",
+            "weight": "500",
+            "tracking": "normal",
+            "transform": "none"
+          }
+        ],
+        "bodyFont": {
+          "family": "Inter, ui-sans-serif, system-ui, sans-serif",
+          "size": "13px"
+        },
+        "libraries": [],
+        "scriptHosts": [
+          "cdn.visitors.now",
+          "static.cloudflareinsights.com"
+        ],
+        "motion": {
+          "runningAnimations": 3,
+          "marquee": false,
+          "videoCount": 17,
+          "transitionsOnLinks": 37,
+          "cssScrollSnap": false,
+          "reducedMotionQuery": false
+        },
+        "headings": [
+          "Browse",
+          "Resources",
+          "Design",
+          "Design jobs"
+        ],
+        "title": "Recent — Design Inspiration",
+        "h1": "Design",
+        "bodyTextSample": "Log in Browse Design Launch Videos new Websites OG Images App Screenshots App Icons Resources Tools Skills Jobs © 2026 Sponsor Info Design The best design inspiration on the Internet. All Web Interface Branding Motion Illustration Posters Print Recent 3 slides 3 3 slides 3 Sponsor Design jobs Post a job pen.dev Generalist Engineer 222 product designer Paper Product Designer Paper Design Engineer MOMENT Visual Designer Blackstar UI/UX Designer See all jobs 4 slides 4 ?"
+      },
+      "headerOnScroll": null,
+      "cart": {
+        "type": "not found"
+      },
+      "errors": [
+        "390: TimeoutError: Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://godly.website/\", waiting until \"domcontentloaded\"\n"
+      ]
+    }
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "key": "kokonutui",
+  "group": "design",
+  "pages": {
+    "home": {
+      "url": "https://kokonutui.com/",
+      "status": 200,
+      "finalUrl": "https://kokonutui.com/",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/kokonutui__home__1440.jpg",
+        "screenshots/kokonutui__home__390.jpg"
+      ],
+      "data": {
+        "nav": [
+          "Backgrounds components",
+          "Cards components",
+          "Navigation components",
+          "Inputs components",
+          "AI components",
+          "Media components",
+          "Texts components",
+          "Buttons components",
+          "AI Input Selector",
+          "AI Input Search",
+          "AI State Loading",
+          "Apple Activity Card",
+          "Magnet Button",
+          "Wheel Picker",
+          "Detent Dial",
+          "Command Palette",
+          "Installation",
+          "Agents and MCP",
+          "Changelog",
+          "llms.txt",
+          "Pro components",
+          "Website templates",
+          "Pricing",
+          "GitHub",
+          "X (Twitter)",
+          "Vercel OSS Program"
+        ],
+        "hero": {
+          "video": false,
+          "images": 16,
+          "height": 7550,
+          "vh": 839,
+          "text": "Kokonut UI Component catalog React, Tailwind CSS, Motion Fre",
+          "carousel": false
+        },
+        "productLinkCount": 0,
+        "filterSort": {
+          "filterEls": 70,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [],
+          "sizeGuide": false,
+          "accordions": [
+            "Claude Opus 5.5",
+            "High",
+            "Searching the web 8s"
+          ],
+          "deliveryCopy": [],
+          "crossSell": [],
+          "addToCart": [],
+          "stickyColumn": false
+        },
+        "footer": {
+          "headings": [
+            "Components",
+            "Popular",
+            "Docs",
+            "Kokonut UI Pro",
+            "Community"
+          ],
+          "linkCount": 29,
+          "newsletter": false
+        },
+        "fonts": [
+          {
+            "value": "Geist",
+            "count": 1280
+          },
+          {
+            "value": "Geist Mono",
+            "count": 520
+          },
+          {
+            "value": "ui-monospace",
+            "count": 35
+          },
+          {
+            "value": "ui-sans-serif",
+            "count": 2
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(10, 10, 10)",
+            "count": 499
+          },
+          {
+            "value": "oklab(0 0 0 / 0.6)",
+            "count": 224
+          },
+          {
+            "value": "oklab(0 0 0 / 0.7)",
+            "count": 221
+          },
+          {
+            "value": "lab(8.30603 0.618205 -2.16572)",
+            "count": 163
+          },
+          {
+            "value": "rgb(31, 168, 52)",
+            "count": 117
+          },
+          {
+            "value": "oklab(0 0 0 / 0.35)",
+            "count": 108
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 93
+          },
+          {
+            "value": "oklab(0 0 0 / 0.13)",
+            "count": 18
+          },
+          {
+            "value": "lab(8.30603 0.618205 -2.16572)",
+            "count": 14
+          },
+          {
+            "value": "oklab(0.999994 0.0000455678 0.0000200868 / 0.2)",
+            "count": 10
+          },
+          {
+            "value": "oklab(0 0 0 / 0.06)",
+            "count": 6
+          },
+          {
+            "value": "lab(96.1634 0.0993311 -0.364041)",
+            "count": 5
+          }
+        ],
+        "headingSample": [
+          {
+            "text": "Components that feel right.",
+            "font": "Geist, \"Geist Fallback\"",
+            "size": "124px",
+            "weight": "600",
+            "tracking": "-7.44px",
+            "transform": "none"
+          },
+          {
+            "text": "Animated React components",
+            "font": "Geist, \"Geist Fallback\"",
+            "size": "48px",
+            "weight": "600",
+            "tracking": "-2.16px",
+            "transform": "none"
+          },
+          {
+            "text": "All components",
+            "font": "Geist, \"Geist Fallback\"",
+            "size": "48px",
+            "weight": "600",
+            "tracking": "-2.16px",
+            "transform": "none"
+          }
+        ],
+        "bodyFont": {
+          "family": "Geist, \"Geist Fallback\"",
+          "size": "16px"
+        },
+        "libraries": [
+          "NextJS"
+        ],
+        "scriptHosts": [
+          "kokonutui.com",
+          "static.cloudflareinsights.com"
+        ],
+        "motion": {
+          "runningAnimations": 32,
+          "marquee": false,
+          "videoCount": 0,
+          "transitionsOnLinks": 152,
+          "cssScrollSnap": false,
+          "reducedMotionQuery": true
+        },
+        "headings": [
+          "Components that feel right.",
+          "Animated React components",
+          "All components",
+          "Backgrounds BG",
+          "Cards CD",
+          "Navigation NV",
+          "Inputs IN",
+          "AI AI",
+          "Media MD",
+          "Texts TX",
+          "Buttons BT",
+          "How to install",
+          "What developers say",
+          "Kokonut UI Pro",
+          "Components",
+          "Popular",
+          "Docs",
+          "Kokonut UI Pro",
+          "Community"
+        ],
+        "title": "Kokonut UI: Free Open-Source React & Tailwind Components",
+        "h1": "Components that feel right.",
+        "bodyTextSample": "Kokonut UI Pro - 100+ components to build websites faster, works with Claude Code, Cursor and more Kokonut UI | Components Changelog Templates Testimonials 2.3K | Kokonut UI Component catalog React, Tailwind CSS, Motion Free and open source Components that feel right. Open-source React components built with Tailwind CSS, Motion and shadcn/ui. Every component on this page is live: try it, then install it with one command or one prompt. Browse 102 components Open the docs Search Ctrl K CD-04 Rings fill as it mounts Replay MOVE 479 of 800 CAL 479/800CAL EXERCISE 42 of 30 MIN 42/30MIN STAND 6 of 1"
+      },
+      "headerOnScroll": null,
+      "cart": {
+        "type": "drawer",
+        "width": 268,
+        "freeShippingBar": true,
+        "upsells": false,
+        "text": "Kokonut UI Search Ctrl K Installation Agents Changelog Templates PRO Pro components PRO Backgrounds 7 new BG-01 Dot Field BG-02 Background Paths BG-03 Shape Hero BG-04 Wind BG-05 Topo Background BG-06 Drape Background BG-07 Halftone Background BG-08 Ink Background BG-09 Caustics Background BG-10 Rain Glass Background Rhythm Hero PRO Dither Reveal Hero PRO Cards 10 new CD-01 Flick Card CD-02 Throw ",
+        "opened_via": "a[href*='/cart']:visible",
+        "navigated": true
+      },
+      "mobile": {
+        "nav_burger": false,
+        "bottomBar": false
+      }
+    }
+  }
+}

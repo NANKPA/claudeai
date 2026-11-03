@@ -1,0 +1,242 @@
+{
+  "key": "awwwards-ecommerce",
+  "group": "design",
+  "pages": {
+    "home": {
+      "url": "https://www.awwwards.com/websites/e-commerce/",
+      "status": 200,
+      "finalUrl": "https://www.awwwards.com/websites/e-commerce/",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/awwwards-ecommerce__home__1440.jpg",
+        "screenshots/awwwards-ecommerce__home__390.jpg"
+      ],
+      "data": {
+        "header": {
+          "tag": "HEADER",
+          "position": "relative",
+          "top": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "backdrop": "none",
+          "height": 54,
+          "zIndex": "auto",
+          "sticky": false,
+          "transparent": true,
+          "glass": false
+        },
+        "nav": [
+          "Awwwards",
+          "Directory",
+          "Academy New",
+          "Jobs",
+          "Market",
+          "Search",
+          "Be Pro",
+          "Submit Website"
+        ],
+        "hero": {
+          "video": false,
+          "images": 126,
+          "height": 9127,
+          "vh": 1014,
+          "text": "Awards Category Tag Technology Country Font Color 1 Reset fi",
+          "carousel": false
+        },
+        "productLinkCount": 0,
+        "filterSort": {
+          "filterEls": 1350,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [],
+          "sizeGuide": false,
+          "accordions": [],
+          "deliveryCopy": [
+            "There are many e-commerce platforms, apps, and tools to create your shopping online experience such as Magento, Shopify, or WooCommerce. The"
+          ],
+          "crossSell": [],
+          "addToCart": [],
+          "stickyColumn": false
+        },
+        "footer": {
+          "headings": [],
+          "linkCount": 22,
+          "newsletter": false
+        },
+        "fonts": [
+          {
+            "value": "Inter Tight",
+            "count": 3592
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(34, 34, 34)",
+            "count": 2812
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 708
+          },
+          {
+            "value": "rgb(255, 240, 131)",
+            "count": 25
+          },
+          {
+            "value": "rgb(114, 105, 150)",
+            "count": 22
+          },
+          {
+            "value": "rgb(167, 167, 167)",
+            "count": 15
+          },
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 8
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgb(34, 34, 34)",
+            "count": 29
+          },
+          {
+            "value": "rgb(248, 248, 248)",
+            "count": 17
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 9
+          },
+          {
+            "value": "rgb(237, 237, 237)",
+            "count": 8
+          },
+          {
+            "value": "rgba(0, 0, 0, 0.7)",
+            "count": 1
+          },
+          {
+            "value": "rgb(180, 38, 37)",
+            "count": 1
+          }
+        ],
+        "headingSample": [
+          {
+            "text": "E-Commerce",
+            "font": "\"Inter Tight\"",
+            "size": "14px",
+            "weight": "600",
+            "tracking": "normal",
+            "transform": "none"
+          }
+        ],
+        "bodyFont": {
+          "family": "\"Inter Tight\"",
+          "size": "14px"
+        },
+        "libraries": [],
+        "scriptHosts": [
+          "www.googletagmanager.com",
+          "www.youtube.com",
+          "snap.licdn.com",
+          "www.google-analytics.com",
+          "connect.facebook.net",
+          "www.gstatic.com",
+          "tracker.metricool.com",
+          "assets.awwwards.com",
+          "www.google.com"
+        ],
+        "motion": {
+          "runningAnimations": 4,
+          "marquee": true,
+          "videoCount": 0,
+          "transitionsOnLinks": 192,
+          "cssScrollSnap": false,
+          "reducedMotionQuery": false
+        },
+        "headings": [
+          "E-Commerce",
+          "Patrick David",
+          "Teacher",
+          "Ruler Digital Agency",
+          "Miligram",
+          "humansaucer",
+          "The Brink Agency",
+          "OXVO",
+          "Olya Black",
+          "ARRAY",
+          "Tattoo Digital",
+          "coi",
+          "SUM Design",
+          "Qream",
+          "Brucira",
+          "adi-vrskic",
+          "Guillaume Azadian",
+          "Nethype",
+          "Casa Media",
+          "mistercodybrown",
+          "Domaine Public",
+          "65 Creative Studio",
+          "Izak.studio",
+          "gregory-gamarra",
+          "Studio Almond",
+          "Sixjuly design studio",
+          "coi",
+          "Studio Almond",
+          "timur-kurbanov",
+          "Byass Group",
+          "Double Play",
+          "Decimal",
+          "binaery ™",
+          "Hello-World",
+          "Shabir Hussain",
+          "Studio Almond",
+          "escolhadigital",
+          "Studio Almond",
+          "Studio Almond",
+          "Cake Agency | Shopify Partner",
+          "Studio Almond",
+          "The New Face",
+          "Manufactur",
+          "Studio Almond",
+          "Studio Almond",
+          "Lee Holmes",
+          "joelgobin",
+          "Panagora",
+          "Made In Evolve",
+          "League Design Agency",
+          "Digital Darts",
+          "bev-c",
+          "Airnauts",
+          "Electronic Materials Office®",
+          "Skywire",
+          "zhenlong.design",
+          "abinesh-adhikari",
+          "cltdev.com",
+          "Vasav Prajapati",
+          "dinesh-revunuru"
+        ],
+        "title": "E-commerce Websites Examples",
+        "h1": "E-Commerce",
+        "bodyTextSample": "The Creative Pass Watch all courses for just €11.50/month The Creative Pass Watch all courses for just €11.50/month The Creative Pass Watch all courses for just €11.50/month The Creative Pass Watch all courses for just €11.50/month The Creative Pass Watch all courses for just €11.50/month The Creative Pass Watch all courses for just €11.50/month The Creative Pass Watch all courses for just €11.50/month The Creative Pass Watch all courses for just €11.50/month The Creative Pass Watch all courses for just €11.50/month The Creative Pass Watch all courses for just €11.50/month The Creative Pass Wa"
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": false,
+        "bgAfterScroll": "rgba(0, 0, 0, 0.7)",
+        "backdropAfterScroll": "none",
+        "transform": "matrix(1, 0, 0, 1, -1440, -900)"
+      },
+      "cart": {
+        "type": "page",
+        "text": "The Creative Pass  Watch all courses for just €11.50/month\nThe Creative Pass  Watch all courses for just €11.50/month\nThe Creative Pass  Watch all courses for just €11.50/month\nThe Creative Pass  Watch all courses for just €11.50/month\nThe Creative Pass  Watch all courses for just €11.50/month\nThe Creative Pass  Watch all courses for just €11.50/month\nThe Creative Pass  Watch all courses for just ",
+        "opened_via": "[aria-label*='cart' i]:visible",
+        "navigated": true
+      },
+      "mobile": {
+        "nav_burger": true,
+        "bottomBar": false
+      }
+    }
+  }
+}

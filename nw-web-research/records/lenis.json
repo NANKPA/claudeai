@@ -1,0 +1,193 @@
+{
+  "key": "lenis",
+  "group": "design",
+  "pages": {
+    "home": {
+      "url": "https://lenis.darkroom.engineering/",
+      "status": 200,
+      "finalUrl": "https://lenis.dev/",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/lenis__home__1440.jpg",
+        "screenshots/lenis__home__390.jpg"
+      ],
+      "data": {
+        "header": {
+          "tag": "DIV",
+          "position": "fixed",
+          "top": "0px",
+          "bg": "oklab(0 0 0 / 0.5)",
+          "backdrop": "blur(10px)",
+          "height": 56,
+          "zIndex": "9",
+          "sticky": true,
+          "transparent": false,
+          "glass": true
+        },
+        "nav": [],
+        "hero": {
+          "video": false,
+          "images": 0,
+          "height": 900,
+          "vh": 100,
+          "text": "",
+          "carousel": false
+        },
+        "productLinkCount": 0,
+        "filterSort": {
+          "filterEls": 0,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [],
+          "sizeGuide": false,
+          "accordions": [],
+          "deliveryCopy": [],
+          "crossSell": [],
+          "addToCart": [],
+          "stickyColumn": true
+        },
+        "footer": {
+          "headings": [],
+          "linkCount": 8,
+          "newsletter": false
+        },
+        "fonts": [
+          {
+            "value": "Anton",
+            "count": 188
+          },
+          {
+            "value": "Roboto",
+            "count": 89
+          },
+          {
+            "value": "Panchang",
+            "count": 16
+          },
+          {
+            "value": "monospace",
+            "count": 1
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(239, 239, 239)",
+            "count": 160
+          },
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 78
+          },
+          {
+            "value": "rgb(140, 140, 140)",
+            "count": 27
+          },
+          {
+            "value": "rgb(255, 152, 162)",
+            "count": 19
+          },
+          {
+            "value": "rgba(0, 0, 0, 0)",
+            "count": 9
+          },
+          {
+            "value": "rgb(176, 176, 176)",
+            "count": 1
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgb(255, 152, 162)",
+            "count": 14
+          },
+          {
+            "value": "rgba(239, 239, 239, 0.8)",
+            "count": 7
+          },
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 4
+          },
+          {
+            "value": "oklab(0 0 0 / 0.5)",
+            "count": 1
+          }
+        ],
+        "headingSample": [
+          {
+            "text": "SMOOTH SCROLL",
+            "font": "Panchang, sans-serif",
+            "size": "52px",
+            "weight": "700",
+            "tracking": "normal",
+            "transform": "uppercase"
+          },
+          {
+            "text": "THE SMOOTH SCROLL LIBRARY BY DARKROOM.ENGINEERING",
+            "font": "Roboto, sans-serif",
+            "size": "14px",
+            "weight": "900",
+            "tracking": "normal",
+            "transform": "uppercase"
+          },
+          {
+            "text": "WHY SMOOTH SCROLL?",
+            "font": "Anton, sans-serif",
+            "size": "96px",
+            "weight": "400",
+            "tracking": "normal",
+            "transform": "uppercase"
+          }
+        ],
+        "bodyFont": {
+          "family": "Anton, sans-serif",
+          "size": "16px"
+        },
+        "libraries": [
+          "Lenis",
+          "NextJS"
+        ],
+        "scriptHosts": [
+          "lenis.dev"
+        ],
+        "motion": {
+          "runningAnimations": 4,
+          "marquee": false,
+          "videoCount": 16,
+          "transitionsOnLinks": 48,
+          "cssScrollSnap": false,
+          "reducedMotionQuery": true
+        },
+        "headings": [
+          "SMOOTH SCROLL",
+          "THE SMOOTH SCROLL LIBRARY BY DARKROOM.ENGINEERING",
+          "WHY SMOOTH SCROLL?",
+          "CREATE MORE IMMERSIVE INTERFACES",
+          "ONE FEEL, EVERY INPUT",
+          "MAKE YOUR ANIMATIONS FLAWLESS",
+          "SHIP IT IN A SINGLE LINE",
+          "SO WE BUILT WEB SCROLLING",
+          "ENTER LENIS",
+          "AS IT SHOULD BE"
+        ],
+        "title": "Lenis – Smooth Scroll",
+        "h1": "THE SMOOTH SCROLL LIBRARY BY DARKROOM.ENGINEERING",
+        "bodyTextSample": "SHOWCASE TEMPLATES SUBMIT DOCUMENTATION SPONSOR SMOOTH SCROLL SCROLL TO EXPLORE THE SMOOTH SCROLL LIBRARY BY DARKROOM.ENGINEERING DOCUMENTATION DOCUMENTATION SHOWCASE SHOWCASE WHY SMOOTH SCROLL? Smooth scroll used to be a hard sell — hacky, heavy, inaccessible. Not anymore. Lenis settled the debate and quietly became the standard behind some of the web’s most ambitious work. Here’s what it unlocks for your sites. CREATE MORE IMMERSIVE INTERFACES Unlock the creative potential and impact of your web experiences. Smoothing the scroll pulls users into the flow of the experience that feels so subst"
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": true,
+        "bgAfterScroll": "oklab(0 0 0 / 0.5)",
+        "backdropAfterScroll": "blur(10px)",
+        "transform": "none"
+      },
+      "cart": {
+        "type": "not found"
+      },
+      "mobile": {
+        "nav_burger": true,
+        "bottomBar": false
+      }
+    }
+  }
+}

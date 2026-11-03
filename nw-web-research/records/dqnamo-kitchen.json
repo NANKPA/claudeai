@@ -1,0 +1,171 @@
+{
+  "key": "dqnamo-kitchen",
+  "group": "design",
+  "pages": {
+    "home": {
+      "url": "https://dqnamo.com/kitchen",
+      "status": 200,
+      "finalUrl": "https://www.dqnamo.com/kitchen",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/dqnamo-kitchen__home__1440.jpg",
+        "screenshots/dqnamo-kitchen__home__390.jpg"
+      ],
+      "data": {
+        "nav": [
+          "Home",
+          "Twitter",
+          "GitHub",
+          "Book a project call",
+          "Email JP",
+          "Toggle dark mode"
+        ],
+        "hero": {
+          "video": false,
+          "images": 3,
+          "height": 1824,
+          "vh": 203,
+          "text": "dqnamo's Kitchen Components, interface studies, and small ex",
+          "carousel": false
+        },
+        "productLinkCount": 0,
+        "filterSort": {
+          "filterEls": 12,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [],
+          "sizeGuide": false,
+          "accordions": [],
+          "deliveryCopy": [],
+          "crossSell": [],
+          "addToCart": [],
+          "stickyColumn": false
+        },
+        "fonts": [
+          {
+            "value": "Inter",
+            "count": 383
+          },
+          {
+            "value": "JetBrains Mono",
+            "count": 24
+          },
+          {
+            "value": "Pirata One",
+            "count": 1
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(32, 32, 32)",
+            "count": 204
+          },
+          {
+            "value": "rgb(35, 38, 45)",
+            "count": 43
+          },
+          {
+            "value": "rgb(141, 141, 141)",
+            "count": 31
+          },
+          {
+            "value": "rgb(131, 131, 131)",
+            "count": 20
+          },
+          {
+            "value": "rgb(180, 180, 180)",
+            "count": 18
+          },
+          {
+            "value": "rgb(249, 249, 249)",
+            "count": 15
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 23
+          },
+          {
+            "value": "rgb(249, 249, 249)",
+            "count": 15
+          },
+          {
+            "value": "rgb(252, 252, 252)",
+            "count": 8
+          },
+          {
+            "value": "rgb(29, 29, 27)",
+            "count": 8
+          },
+          {
+            "value": "rgb(32, 32, 32)",
+            "count": 7
+          },
+          {
+            "value": "rgb(141, 141, 141)",
+            "count": 3
+          }
+        ],
+        "headingSample": [
+          {
+            "text": "dqnamo's",
+            "font": "Inter, \"Inter Fallback\"",
+            "size": "16px",
+            "weight": "400",
+            "tracking": "normal",
+            "transform": "none"
+          }
+        ],
+        "bodyFont": {
+          "family": "Inter, \"Inter Fallback\"",
+          "size": "16px"
+        },
+        "libraries": [
+          "NextJS"
+        ],
+        "scriptHosts": [
+          "www.dqnamo.com"
+        ],
+        "motion": {
+          "runningAnimations": 7,
+          "marquee": false,
+          "videoCount": 0,
+          "transitionsOnLinks": 20,
+          "cssScrollSnap": false,
+          "reducedMotionQuery": true
+        },
+        "headings": [
+          "dqnamo's",
+          "Tactile Button",
+          "Scramble Text",
+          "Receipt Printer",
+          "Cassette Audio Player",
+          "Hold to Confirm",
+          "Magnetic Drop Zone",
+          "Dynamic Button",
+          "Playing Cards",
+          "Ticket",
+          "Stamp",
+          "Scroll Fade List",
+          "Advanced Model Selector",
+          "Animated Signature",
+          "Logo Trace Loader",
+          "Iridescent Foil"
+        ],
+        "title": "The Kitchen | dqnamo",
+        "h1": "dqnamo's",
+        "bodyTextSample": "dqnamo's Kitchen Components, interface studies, and small experiments cooked up in the kitchen. Continue Tactile Button A physical button study built from a shaped face, firm edge, and compressible depth. dqnamo.com/invite/7K4F2Q9M-X8NV 7K4F2Q9M-X8NV Regenerate Scramble Text A compact text component that reveals changed text through an encrypted scramble. PRO PLAN Annual subscription £192.00 TOTAL PAID £230.40 Receipt Printer A SaaS checkout state that prints a physical receipt when payment clears. ARCHIVE 11 One Small Step SIDE A 200769 0:03 0:13 Cassette Audio Player A tactile audio player w"
+      },
+      "headerOnScroll": null,
+      "cart": {
+        "type": "not found"
+      },
+      "mobile": {
+        "nav_burger": false,
+        "bottomBar": true
+      }
+    }
+  }
+}

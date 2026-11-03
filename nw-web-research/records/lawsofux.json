@@ -1,0 +1,204 @@
+{
+  "key": "lawsofux",
+  "group": "design",
+  "pages": {
+    "home": {
+      "url": "https://lawsofux.com/",
+      "status": 200,
+      "finalUrl": "https://lawsofux.com/",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/lawsofux__home__1440.jpg",
+        "screenshots/lawsofux__home__390.jpg"
+      ],
+      "data": {
+        "header": {
+          "tag": "HEADER",
+          "position": "relative",
+          "top": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "backdrop": "none",
+          "height": 394,
+          "zIndex": "1",
+          "sticky": false,
+          "transparent": true,
+          "glass": false
+        },
+        "nav": [
+          "Check it out →"
+        ],
+        "hero": {
+          "video": false,
+          "images": 0,
+          "height": 5551,
+          "vh": 617,
+          "text": "Laws of UX Laws of UX is a collection of best practices that",
+          "carousel": false
+        },
+        "productLinkCount": 1,
+        "filterSort": {
+          "filterEls": 0,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [],
+          "sizeGuide": false,
+          "accordions": [
+            "ENGLISH"
+          ],
+          "deliveryCopy": [],
+          "crossSell": [
+            "Similarity",
+            "similar elements as a complete picture, shape, or group, even if those elements are separated.",
+            "similar objects are present, the one that differs from the rest is most likely to be remembered."
+          ],
+          "addToCart": [],
+          "stickyColumn": false
+        },
+        "footer": {
+          "headings": [],
+          "linkCount": 3,
+          "newsletter": false
+        },
+        "fonts": [
+          {
+            "value": "IBM Plex Sans",
+            "count": 759
+          },
+          {
+            "value": "IBM Plex Mono",
+            "count": 14
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(6, 15, 19)",
+            "count": 760
+          },
+          {
+            "value": "rgb(26, 60, 77)",
+            "count": 13
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgb(237, 237, 233)",
+            "count": 33
+          },
+          {
+            "value": "rgb(233, 84, 68)",
+            "count": 4
+          },
+          {
+            "value": "rgb(207, 187, 40)",
+            "count": 3
+          },
+          {
+            "value": "rgb(41, 122, 163)",
+            "count": 2
+          },
+          {
+            "value": "rgb(48, 126, 199)",
+            "count": 2
+          },
+          {
+            "value": "rgb(166, 48, 127)",
+            "count": 2
+          }
+        ],
+        "headingSample": [
+          {
+            "text": "Laws of UX",
+            "font": "\"IBM Plex Sans\", Arial, sans-serif",
+            "size": "61.8772px",
+            "weight": "700",
+            "tracking": "normal",
+            "transform": "none"
+          },
+          {
+            "text": "Aesthetic-Usability Effect",
+            "font": "\"IBM Plex Sans\", Arial, sans-serif",
+            "size": "26.1268px",
+            "weight": "700",
+            "tracking": "normal",
+            "transform": "none"
+          },
+          {
+            "text": "Choice Overload",
+            "font": "\"IBM Plex Sans\", Arial, sans-serif",
+            "size": "26.1268px",
+            "weight": "700",
+            "tracking": "normal",
+            "transform": "none"
+          }
+        ],
+        "bodyFont": {
+          "family": "\"IBM Plex Sans\", Arial, sans-serif",
+          "size": "19.6px"
+        },
+        "libraries": [],
+        "scriptHosts": [
+          "cdn.mxpnl.com",
+          "lawsofux.com"
+        ],
+        "motion": {
+          "runningAnimations": 0,
+          "marquee": false,
+          "videoCount": 0,
+          "transitionsOnLinks": 53,
+          "cssScrollSnap": false,
+          "reducedMotionQuery": true
+        },
+        "headings": [
+          "Laws of UX",
+          "Aesthetic-Usability Effect",
+          "Choice Overload",
+          "Chunking",
+          "Cognitive Bias",
+          "Cognitive Load",
+          "Doherty Threshold",
+          "Fitts’s Law",
+          "Flow",
+          "Goal-Gradient Effect",
+          "Hick’s Law",
+          "Jakob’s Law",
+          "Law of Common Region",
+          "Law of Proximity",
+          "Law of Prägnanz",
+          "Law of Similarity",
+          "Law of Uniform Connectedness",
+          "Mental Model",
+          "Miller’s Law",
+          "Occam’s Razor",
+          "Paradox of the Active User",
+          "Pareto Principle",
+          "Parkinson’s Law",
+          "Peak-End Rule",
+          "Postel’s Law",
+          "Selective Attention",
+          "Serial Position Effect",
+          "Tesler’s Law",
+          "Von Restorff Effect",
+          "Working Memory",
+          "Zeigarnik Effect"
+        ],
+        "title": "Home | Laws of UX",
+        "h1": "Laws of UX",
+        "bodyTextSample": "Skip to main content Laws of UX ARTICLES BOOK CARDS INFO STORE DARK MODE ENGLISH Laws of UX Laws of UX is a collection of best practices that designers can consider when building user interfaces. The updated Laws of UX large format index poster is now available! Additions include Paradox of the Active User, Selective Attention, Cognitive Bias, and more. Check it out → Aesthetic-Usability Effect Users often perceive aesthetically pleasing design as design that’s more usable. Choice Overload The tendency for people to get overwhelmed when they are presented with a large number of options, often "
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": false,
+        "bgAfterScroll": "rgba(0, 0, 0, 0)",
+        "backdropAfterScroll": "none",
+        "transform": "none"
+      },
+      "cart": {
+        "type": "not found"
+      },
+      "mobile": {
+        "nav_burger": false,
+        "bottomBar": true
+      }
+    }
+  }
+}

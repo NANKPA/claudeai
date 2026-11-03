@@ -1,0 +1,184 @@
+{
+  "key": "refactoringui",
+  "group": "design",
+  "pages": {
+    "home": {
+      "url": "https://www.refactoringui.com/",
+      "status": 200,
+      "finalUrl": "https://refactoringui.com/",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/refactoringui__home__1440.jpg",
+        "screenshots/refactoringui__home__390.jpg"
+      ],
+      "data": {
+        "hero": {
+          "video": false,
+          "images": 2,
+          "height": 2842,
+          "vh": 316,
+          "text": "“I know this looks terrible, but I have no idea why.” Hi! I’",
+          "carousel": false
+        },
+        "productLinkCount": 0,
+        "filterSort": {
+          "filterEls": 0,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [],
+          "sizeGuide": false,
+          "accordions": [],
+          "deliveryCopy": [],
+          "crossSell": [],
+          "addToCart": [],
+          "stickyColumn": false
+        },
+        "footer": {
+          "headings": [],
+          "linkCount": 0,
+          "newsletter": false
+        },
+        "fonts": [
+          {
+            "value": "Inter var",
+            "count": 1140
+          },
+          {
+            "value": "Fira Code VF",
+            "count": 2
+          }
+        ],
+        "textColours": [
+          {
+            "value": "oklch(0.446 0.043 257.281)",
+            "count": 695
+          },
+          {
+            "value": "oklch(0.869 0.022 252.894)",
+            "count": 104
+          },
+          {
+            "value": "oklch(0.704 0.04 256.788)",
+            "count": 86
+          },
+          {
+            "value": "oklch(0.208 0.042 265.755)",
+            "count": 73
+          },
+          {
+            "value": "oklch(0.554 0.046 257.417)",
+            "count": 58
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 41
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 56
+          },
+          {
+            "value": "oklch(0.208 0.042 265.755)",
+            "count": 3
+          },
+          {
+            "value": "oklab(0.999994 0.0000455678 0.0000200868 / 0.05)",
+            "count": 3
+          },
+          {
+            "value": "oklab(0.999994 0.0000455678 0.0000200868 / 0.3)",
+            "count": 2
+          },
+          {
+            "value": "oklch(0.828 0.111 230.318)",
+            "count": 2
+          },
+          {
+            "value": "oklab(0.372 -0.00968297 -0.0429213 / 0.4)",
+            "count": 2
+          }
+        ],
+        "headingSample": [
+          {
+            "text": "Make your ideas look awesome, without relying on a designer.",
+            "font": "\"Inter var\", ui-sans-serif, system-ui, -apple-system, BlinkM",
+            "size": "64px",
+            "weight": "400",
+            "tracking": "-3.2px",
+            "transform": "none"
+          },
+          {
+            "text": "“I know this looks terrible, but I have no idea why.”",
+            "font": "\"Inter var\", ui-sans-serif, system-ui, -apple-system, BlinkM",
+            "size": "56px",
+            "weight": "400",
+            "tracking": "-2.8px",
+            "transform": "none"
+          },
+          {
+            "text": "What we’ve put together",
+            "font": "\"Inter var\", ui-sans-serif, system-ui, -apple-system, BlinkM",
+            "size": "56px",
+            "weight": "400",
+            "tracking": "-2.8px",
+            "transform": "none"
+          }
+        ],
+        "bodyFont": {
+          "family": "\"Inter var\", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe",
+          "size": "16px"
+        },
+        "libraries": [],
+        "scriptHosts": [
+          "cdn.usefathom.com",
+          "refactoringui.com"
+        ],
+        "motion": {
+          "runningAnimations": 0,
+          "marquee": false,
+          "videoCount": 3,
+          "transitionsOnLinks": 0,
+          "cssScrollSnap": true,
+          "reducedMotionQuery": false
+        },
+        "headings": [
+          "Make your ideas look awesome, without relying on a designer.",
+          "“I know this looks terrible, but I have no idea why.”",
+          "Design with tactics, not talent.",
+          "Most design courses are missing the mark.",
+          "What we’ve put together",
+          "The Book",
+          "Video tutorials",
+          "The Component Gallery",
+          "Color Palettes",
+          "Font Suggestions",
+          "Custom illustrated icons",
+          "Get Refactoring UI today.",
+          "The Complete Package",
+          "The Essentials",
+          "Over 20,000 people are already using Refactoring UI to make ",
+          "Frequently asked questions"
+        ],
+        "title": "Refactoring UI",
+        "h1": "Make your ideas look awesome, without relying on a designer.",
+        "bodyTextSample": "FROM THE CREATORS OF TAILWIND CSS OVER 30,000 COPIES SOLD 4.68 STARS ON GOODREADS Make your ideas look awesome, without relying on a designer. Learn how to design beautiful user interfaces by yourself using specific tactics explained from a developer’s point-of-view. Get two free chapters Buy now This is the survival kit I wish I had when I was starting out building apps. Derrick Reimer Founder of SavvyCal This book is fantastic for engineers learning how to design. Alex MacCaw Founder of Clearbit This book Refactoring UI is a no-brainer for anyone in the web industry. Justin Jackson Co-founde"
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": false,
+        "bgAfterScroll": "rgba(0, 0, 0, 0)",
+        "backdropAfterScroll": "none",
+        "transform": "none"
+      },
+      "cart": {
+        "type": "not found"
+      },
+      "mobile": {
+        "nav_burger": false,
+        "bottomBar": false
+      }
+    }
+  }
+}

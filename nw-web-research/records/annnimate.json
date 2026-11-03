@@ -1,0 +1,250 @@
+{
+  "key": "annnimate",
+  "group": "design",
+  "pages": {
+    "home": {
+      "url": "https://annnimate.com/",
+      "status": 200,
+      "finalUrl": "https://annnimate.com/",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/annnimate__home__1440.jpg",
+        "screenshots/annnimate__home__390.jpg"
+      ],
+      "data": {
+        "header": {
+          "tag": "HEADER",
+          "position": "fixed",
+          "top": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "backdrop": "none",
+          "height": 72,
+          "zIndex": "300",
+          "sticky": true,
+          "transparent": true,
+          "glass": false
+        },
+        "nav": [
+          "by Good Fella",
+          "Library Library",
+          "Kits Kits New",
+          "Learn Learn",
+          "Docs Docs",
+          "Pricing Pricing",
+          "Get access Get access",
+          "Library",
+          "Buttons",
+          "Scroll",
+          "UI Components",
+          "Experimental",
+          "Shaders",
+          "Menus",
+          "Sections",
+          "All components",
+          "Most popular",
+          "Sites built with Annnimate",
+          "Kits",
+          "Reveal",
+          "MenuNew",
+          "What a Kit is",
+          "Roadmap",
+          "Pricing",
+          "Learn",
+          "Easing",
+          "Scroll",
+          "Timeline",
+          "Text",
+          "React",
+          "Performance",
+          "Plugins",
+          "Patterns",
+          "Free tools",
+          "Comparisons",
+          "Docs",
+          "Pricing",
+          "Get access Get access"
+        ],
+        "hero": {
+          "video": false,
+          "images": 0,
+          "height": 900,
+          "vh": 100,
+          "text": "The same GSAP animations we build for Coca-Cola and Powerade",
+          "carousel": false
+        },
+        "productLinkCount": 0,
+        "filterSort": {
+          "filterEls": 0,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [
+            "Website",
+            "",
+            "Website",
+            ""
+          ],
+          "sizeGuide": false,
+          "accordions": [
+            "Library Library",
+            "Kits Kits New",
+            "Learn Learn",
+            "Library",
+            "Kits",
+            "Learn",
+            "snap",
+            "Elastic out(1, 0",
+            "01 Can I use Annnimate in commercial and client work?",
+            "02 How does Annnimate Studio pricing work?",
+            "03 What happens to components I shipped if I cancel?",
+            "04 What is Annnimate's refund policy?",
+            "05 Does Annnimate work with Next.js App Router and Nuxt?",
+            "06 Does Annnimate work with my AI agent?",
+            "07 Is there a free version of Annnimate?"
+          ],
+          "deliveryCopy": [
+            "For a studio or team shipping client work. Every seat after the first costs less.",
+            "Annnimate Studio covers as many seats as you choose, from 2 to 20, and you can add or remove seats any time. Every seat after the first cost",
+            "There is a free Starter Pack of production components in React, Vue and HTML, delivered to your inbox and free to use in any project with no"
+          ],
+          "crossSell": [
+            "Similar services are 2-3 times the cost and don't offer the level of polish that Annnimate does."
+          ],
+          "addToCart": [],
+          "stickyColumn": false
+        },
+        "footer": {
+          "headings": [],
+          "linkCount": 65,
+          "newsletter": true
+        },
+        "fonts": [
+          {
+            "value": "aktivGrotesk",
+            "count": 2519
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(238, 238, 238)",
+            "count": 1555
+          },
+          {
+            "value": "rgb(20, 19, 20)",
+            "count": 538
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 93
+          },
+          {
+            "value": "rgb(129, 128, 129)",
+            "count": 88
+          },
+          {
+            "value": "rgb(207, 206, 207)",
+            "count": 56
+          },
+          {
+            "value": "rgb(105, 104, 105)",
+            "count": 52
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgb(51, 51, 51)",
+            "count": 273
+          },
+          {
+            "value": "rgb(253, 85, 29)",
+            "count": 32
+          },
+          {
+            "value": "oklab(0.949113 0.0000431836 0.0000190735 / 0.12)",
+            "count": 28
+          },
+          {
+            "value": "rgb(20, 19, 20)",
+            "count": 22
+          },
+          {
+            "value": "oklab(0.949113 0.0000431836 0.0000190735 / 0.3)",
+            "count": 20
+          },
+          {
+            "value": "rgb(251, 70, 13)",
+            "count": 8
+          }
+        ],
+        "headingSample": [
+          {
+            "text": "",
+            "font": "aktivGrotesk, \"aktivGrotesk Fallback\", geistSans, \"geistSans",
+            "size": "59.298px",
+            "weight": "500",
+            "tracking": "-2.07543px",
+            "transform": "none"
+          },
+          {
+            "text": "",
+            "font": "aktivGrotesk, \"aktivGrotesk Fallback\", geistSans, \"geistSans",
+            "size": "30.6939px",
+            "weight": "500",
+            "tracking": "-1.07429px",
+            "transform": "none"
+          },
+          {
+            "text": "",
+            "font": "aktivGrotesk, \"aktivGrotesk Fallback\", geistSans, \"geistSans",
+            "size": "37.9102px",
+            "weight": "500",
+            "tracking": "-1.51641px",
+            "transform": "none"
+          }
+        ],
+        "bodyFont": {
+          "family": "aktivGrotesk, \"aktivGrotesk Fallback\", geistSans, \"geistSans Fallback\", -apple-s",
+          "size": "18px"
+        },
+        "libraries": [
+          "NextJS"
+        ],
+        "scriptHosts": [
+          "annnimate.com"
+        ],
+        "motion": {
+          "runningAnimations": 3,
+          "marquee": false,
+          "videoCount": 0,
+          "transitionsOnLinks": 134,
+          "cssScrollSnap": false,
+          "reducedMotionQuery": true
+        },
+        "headings": [
+          "Motion that wins the pitch",
+          "Your AI agent gets it right",
+          "React, Vue or plain HTML",
+          "\"A bit slower?\" One slider",
+          "Code you don't need to check",
+          "A new one every week"
+        ],
+        "title": "GSAP Motion Components for React & Vue | Annnimate",
+        "h1": "",
+        "bodyTextSample": "by Good Fella Library Library Kits Kits New Learn Learn Docs Docs Pricing Pricing Get access Get access Library Buttons Scroll UI Components Experimental Shaders Menus Sections All components Most popular Sites built with Annnimate Kits Reveal MenuNew What a Kit is Roadmap Pricing Learn Easing Scroll Timeline Text React Performance Plugins Patterns Free tools Comparisons Docs Pricing Get access Get access The same GSAP animations we build for Coca-Cola and Powerade, ready for React, Vue and HTML. Copy them or use your AI agent. Get access Get access Get 17 free components Get 17 free component"
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": true,
+        "bgAfterScroll": "rgba(0, 0, 0, 0)",
+        "backdropAfterScroll": "none",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      "cart": {
+        "type": "not found"
+      },
+      "mobile": {
+        "nav_burger": true,
+        "bottomBar": false
+      }
+    }
+  }
+}

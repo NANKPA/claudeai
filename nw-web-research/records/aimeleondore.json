@@ -1,0 +1,734 @@
+{
+  "key": "aimeleondore",
+  "group": "store",
+  "pages": {
+    "home": {
+      "url": "https://www.aimeleondore.com/",
+      "status": 200,
+      "finalUrl": "https://eu.aimeleondore.com/?country=AL&updateCountry=true",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/aimeleondore__home__1440.jpg",
+        "screenshots/aimeleondore__home__390.jpg"
+      ],
+      "data": {
+        "header": {
+          "tag": "HEADER",
+          "position": "fixed",
+          "top": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "backdrop": "none",
+          "height": 61,
+          "zIndex": "101",
+          "sticky": true,
+          "transparent": true,
+          "glass": false
+        },
+        "nav": [
+          "Main menu. Press the Enter key to show submenu.",
+          "Close menu",
+          "MEN",
+          "ALL PRODUCTS",
+          "NEW ARRIVALS",
+          "TEES & POLOS",
+          "SWEATSHIRTS",
+          "SHIRTING",
+          "SWEATERS",
+          "PANTS",
+          "SWEATPANTS",
+          "SHORTS",
+          "SWIM",
+          "OUTERWEAR",
+          "SUITING",
+          "FOOTWEAR",
+          "HEADWEAR",
+          "JEWELRY",
+          "BAGS & LEATHER GOODS",
+          "ACCESSORIES",
+          "WOMEN",
+          "Search form trigger. Press the Enter key to show search form",
+          "Sign in"
+        ],
+        "hero": {
+          "video": false,
+          "images": 2,
+          "height": 901,
+          "vh": 100,
+          "text": "",
+          "carousel": false
+        },
+        "productLinkCount": 0,
+        "filterSort": {
+          "filterEls": 0,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [],
+          "sizeGuide": false,
+          "accordions": [
+            "Main menu. Press the Enter key to show submenu.",
+            "MEN",
+            "WOMEN"
+          ],
+          "deliveryCopy": [
+            "SHIPPING TO:"
+          ],
+          "crossSell": [],
+          "addToCart": [],
+          "stickyColumn": false
+        },
+        "footer": {
+          "headings": [],
+          "linkCount": 8,
+          "newsletter": true
+        },
+        "fonts": [
+          {
+            "value": "Sohne",
+            "count": 182
+          },
+          {
+            "value": "DIN W01 Regular",
+            "count": 48
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 128
+          },
+          {
+            "value": "rgb(24, 24, 24)",
+            "count": 56
+          },
+          {
+            "value": "rgba(196, 196, 196, 0.7)",
+            "count": 33
+          },
+          {
+            "value": "rgb(69, 69, 69)",
+            "count": 9
+          },
+          {
+            "value": "rgb(196, 196, 196)",
+            "count": 3
+          },
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 1
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 2
+          },
+          {
+            "value": "rgba(24, 24, 24, 0.7)",
+            "count": 1
+          },
+          {
+            "value": "rgb(247, 247, 247)",
+            "count": 1
+          },
+          {
+            "value": "rgba(24, 24, 24, 0.8)",
+            "count": 1
+          },
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 1
+          },
+          {
+            "value": "rgba(24, 24, 24, 0.35)",
+            "count": 1
+          }
+        ],
+        "headingSample": [
+          {
+            "text": "Aimé Leon Dore EU",
+            "font": "Sohne, Arial, sans-serif",
+            "size": "17px",
+            "weight": "400",
+            "tracking": "0.6px",
+            "transform": "none"
+          }
+        ],
+        "bodyFont": {
+          "family": "Sohne, Arial, sans-serif",
+          "size": "12px"
+        },
+        "libraries": [
+          "Swiper",
+          "Shopify",
+          "jQuery",
+          "Klaviyo"
+        ],
+        "scriptHosts": [
+          "cdn.jsdelivr.net",
+          "eu.aimeleondore.com",
+          "cdn.shopify.com",
+          "d2wy8f7a9ursnm.cloudfront.net",
+          "static.klaviyo.com"
+        ],
+        "motion": {
+          "runningAnimations": 0,
+          "marquee": false,
+          "videoCount": 0,
+          "transitionsOnLinks": 66,
+          "cssScrollSnap": false,
+          "reducedMotionQuery": true
+        },
+        "headings": [
+          "Aimé Leon Dore EU"
+        ],
+        "title": "Aimé Leon Dore – Aimé Leon Dore EU",
+        "h1": "Aimé Leon Dore EU",
+        "bodyTextSample": "SKIP TO CONTENT MEN ALL PRODUCTS NEW ARRIVALS TEES & POLOS SWEATSHIRTS SHIRTING SWEATERS PANTS SWEATPANTS SHORTS SWIM OUTERWEAR SUITING FOOTWEAR HEADWEAR JEWELRY BAGS & LEATHER GOODS ACCESSORIES WOMEN Aimé Leon Dore EU Email address By providing your email address, you agree to our Privacy Policy (opens in a new tab) CLIENT SERVICES LEGAL & PRIVACY CAREERS (OPENS IN A NEW TAB) INSTAGRAM (OPENS IN A NEW TAB) GUARANTEE OF CONFORMITY ACCESSIBILITY SHIPPING TO: © 2026 Aimé Leon Dore EU"
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": true,
+        "bgAfterScroll": "rgba(0, 0, 0, 0)",
+        "backdropAfterScroll": "none",
+        "transform": "none"
+      },
+      "cart": {
+        "type": "not found"
+      },
+      "mobile": {
+        "nav_burger": true,
+        "bottomBar": false
+      }
+    },
+    "collection": {
+      "url": "https://eu.aimeleondore.com/collections/shop-all",
+      "status": 200,
+      "finalUrl": "https://eu.aimeleondore.com/collections/shop-all?",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/aimeleondore__collection__1440.jpg",
+        "screenshots/aimeleondore__collection__390.jpg"
+      ],
+      "data": {
+        "header": {
+          "tag": "HEADER",
+          "position": "fixed",
+          "top": "0px",
+          "bg": "rgb(255, 255, 255)",
+          "backdrop": "none",
+          "height": 61,
+          "zIndex": "101",
+          "sticky": true,
+          "transparent": false,
+          "glass": false
+        },
+        "nav": [
+          "Main menu. Press the Enter key to show submenu.",
+          "Close menu",
+          "MEN",
+          "ALL PRODUCTS",
+          "NEW ARRIVALS",
+          "TEES & POLOS",
+          "SWEATSHIRTS",
+          "SHIRTING",
+          "SWEATERS",
+          "PANTS",
+          "SWEATPANTS",
+          "SHORTS",
+          "SWIM",
+          "OUTERWEAR",
+          "SUITING",
+          "FOOTWEAR",
+          "HEADWEAR",
+          "JEWELRY",
+          "BAGS & LEATHER GOODS",
+          "ACCESSORIES",
+          "WOMEN",
+          "Home - Aimé Leon Dore EU",
+          "Search form trigger. Press the Enter key to show search form",
+          "Sign in"
+        ],
+        "hero": {
+          "video": false,
+          "images": 334,
+          "height": 8170,
+          "vh": 908,
+          "text": "Men • Shop All Sort: Recommended Refine Wool Herringbone Ove",
+          "carousel": true
+        },
+        "productCard": {
+          "classes": "plp-product ",
+          "imageRatio": 0.8,
+          "imagesInCard": 6,
+          "hoverSwapLikely": true,
+          "quickAdd": false,
+          "swatches": false,
+          "badges": [],
+          "text": "Wool Herringbone Overcoat Lek 136,500"
+        },
+        "productLinkCount": 64,
+        "filterSort": {
+          "filterEls": 56,
+          "sortEls": [
+            "",
+            "Sort: Recommended",
+            "Sort: Recommended",
+            "",
+            ""
+          ]
+        },
+        "pdp": {
+          "sizeButtons": [
+            "",
+            ""
+          ],
+          "sizeGuide": false,
+          "accordions": [
+            "Main menu. Press the Enter key to show submenu.",
+            "MEN",
+            "WOMEN",
+            "Men • Shop All",
+            "Sort: Recommended",
+            "Refine"
+          ],
+          "deliveryCopy": [
+            "SHIPPING COUNTRY SUCCESSFULLY UPDATED.",
+            "SHIPPING TO: AL / L ALL"
+          ],
+          "crossSell": [
+            "Recommended"
+          ],
+          "addToCart": [],
+          "stickyColumn": false
+        },
+        "footer": {
+          "headings": [],
+          "linkCount": 8,
+          "newsletter": true
+        },
+        "fonts": [
+          {
+            "value": "Sohne",
+            "count": 1943
+          },
+          {
+            "value": "DIN W01 Regular",
+            "count": 64
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(24, 24, 24)",
+            "count": 1875
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 72
+          },
+          {
+            "value": "rgba(196, 196, 196, 0.7)",
+            "count": 33
+          },
+          {
+            "value": "rgb(196, 196, 196)",
+            "count": 15
+          },
+          {
+            "value": "rgb(69, 69, 69)",
+            "count": 10
+          },
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 2
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 74
+          },
+          {
+            "value": "rgb(51, 51, 51)",
+            "count": 4
+          },
+          {
+            "value": "rgba(24, 24, 24, 0.6)",
+            "count": 3
+          },
+          {
+            "value": "rgba(24, 24, 24, 0.7)",
+            "count": 2
+          },
+          {
+            "value": "rgb(247, 247, 247)",
+            "count": 2
+          },
+          {
+            "value": "rgba(24, 24, 24, 0.8)",
+            "count": 1
+          }
+        ],
+        "headingSample": [],
+        "bodyFont": {
+          "family": "Sohne, Arial, sans-serif",
+          "size": "12px"
+        },
+        "libraries": [
+          "Swiper",
+          "Shopify",
+          "jQuery",
+          "Klaviyo"
+        ],
+        "scriptHosts": [
+          "7ce243a1e1a2.cdn4.forter.com",
+          "cdn.shopify.com",
+          "crossborder-integration.global-e.com",
+          "static.klaviyo.com",
+          "cdn.jsdelivr.net",
+          "eu.aimeleondore.com",
+          "d2wy8f7a9ursnm.cloudfront.net",
+          "static-tracking.klaviyo.com",
+          "webservices.global-e.com"
+        ],
+        "motion": {
+          "runningAnimations": 4,
+          "marquee": false,
+          "videoCount": 0,
+          "transitionsOnLinks": 156,
+          "cssScrollSnap": false,
+          "reducedMotionQuery": true
+        },
+        "headings": [
+          "SHIPPING COUNTRY SUCCESSFULLY UPDATED.",
+          "Wool Herringbone Overcoat",
+          "Suede Overshirt",
+          "Bayard Chambray Shirt",
+          "Plaid Tweed Tie",
+          "Saint George Corduroy Hat",
+          "Saint George Corduroy Hat",
+          "Yarn Dyed Plaid Overshirt",
+          "Yarn Dyed Plaid Overshirt",
+          "NY Highlanders Wool Tote Bag",
+          "NY Highlanders Wool Tote Bag",
+          "Wool Script Scarf",
+          "Wool Script Scarf",
+          "Denim Carpenter Pant",
+          "Denim Carpenter Pant",
+          "Denim Carpenter Pant",
+          "Camo Fatigue Pant",
+          "Wakayama Gloves",
+          "Wakayama Gloves",
+          "Plaid Wool Hunting Hat",
+          "Plaid Wool Hunting Hat",
+          "Alpaca Wool Quarter Zip Sweater",
+          "Alpaca Wool Quarter Zip Sweater",
+          "Suede Lug Sole Derby",
+          "Suede Lug Sole Derby",
+          "Dress Sock",
+          "Dress Sock",
+          "Knit Pocket Crewneck Sweater",
+          "Knit Pocket Crewneck Sweater",
+          "Mulberry Letterman Hat",
+          "Mulberry Letterman Hat",
+          "ALD / New Balance T500 Tennis Oxfords",
+          "ALD / New Balance T500 Tennis Oxfords",
+          "Woven Leather Jacket",
+          "Napa Leather Bomber Jacket",
+          "Leather Traveler Kit",
+          "Leather Traveler Kit",
+          "Field Boot",
+          "Field Boot",
+          "Nylon Quilted Unisphere Jacket",
+          "Nylon Quilted Unisphere Jacket",
+          "Fatigue Pant",
+          "Fatigue Pant",
+          "Washed Script Chino Hat",
+          "Washed Script Chino Hat",
+          "Washed Script Chino Hat",
+          "Woven Leather Tote Bag",
+          "Garment Dyed Leon Overshirt",
+          "Garment Dyed Leon Overshirt",
+          "Flocked Denim Jacket",
+          "Flocked Straight Fit Denim",
+          "GORE-TEX Down Filled Fishtail Parka",
+          "GORE-TEX Down Filled Fishtail Parka",
+          "Chainstitch '86 Half Zip Pullover",
+          "Chainstitch '86 Half Zip Pullover",
+          "ALD / Olympiacos F.C. Team Leather Jacket",
+          "ALD / Olympiacos F.C. Knit V-Neck Sweater",
+          "ALD / Olympiacos F.C. Nylon Quarter Zip Pullover",
+          "ALD / Olympiacos F.C. Nylon Quarter Zip Pullover",
+          "ALD / Olympiacos F.C. Heritage Ringer Polo"
+        ],
+        "title": "Men • Shop All | Aimé Leon Dore",
+        "h1": "SHIPPING COUNTRY SUCCESSFULLY UPDATED. SHOP AIMELEONDORE.COM",
+        "bodyTextSample": "SHIPPING COUNTRY SUCCESSFULLY UPDATED. SHOP AIMELEONDORE.COM SKIP TO CONTENT MEN ALL PRODUCTS NEW ARRIVALS TEES & POLOS SWEATSHIRTS SHIRTING SWEATERS PANTS SWEATPANTS SHORTS SWIM OUTERWEAR SUITING FOOTWEAR HEADWEAR JEWELRY BAGS & LEATHER GOODS ACCESSORIES WOMEN Men • Shop All Sort: Recommended Refine Wool Herringbone Overcoat Lek 136,500 Suede Overshirt Lek 121,300 Bayard Chambray Shirt Lek 30,400 Plaid Tweed Tie Lek 27,800 Saint George Corduroy Hat Lek 9,100 Saint George Corduroy Hat Lek 9,100 Yarn Dyed Plaid Overshirt Lek 25,300 Yarn Dyed Plaid Overshirt Lek 25,300 NY Highlanders Wool Tote B"
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": true,
+        "bgAfterScroll": "rgb(255, 255, 255)",
+        "backdropAfterScroll": "none",
+        "transform": "none"
+      },
+      "mobile": {
+        "nav_burger": true,
+        "bottomBar": false
+      }
+    },
+    "product": {
+      "url": "https://eu.aimeleondore.com/products/wool-herringbone-overcoat-2",
+      "status": 200,
+      "finalUrl": "https://eu.aimeleondore.com/products/wool-herringbone-overcoat-2",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/aimeleondore__product__1440.jpg",
+        "screenshots/aimeleondore__product__390.jpg"
+      ],
+      "data": {
+        "header": {
+          "tag": "HEADER",
+          "position": "fixed",
+          "top": "0px",
+          "bg": "rgb(255, 255, 255)",
+          "backdrop": "none",
+          "height": 61,
+          "zIndex": "101",
+          "sticky": true,
+          "transparent": false,
+          "glass": false
+        },
+        "nav": [
+          "Main menu. Press the Enter key to show submenu.",
+          "Close menu",
+          "MEN",
+          "ALL PRODUCTS",
+          "NEW ARRIVALS",
+          "TEES & POLOS",
+          "SWEATSHIRTS",
+          "SHIRTING",
+          "SWEATERS",
+          "PANTS",
+          "SWEATPANTS",
+          "SHORTS",
+          "SWIM",
+          "OUTERWEAR",
+          "SUITING",
+          "FOOTWEAR",
+          "HEADWEAR",
+          "JEWELRY",
+          "BAGS & LEATHER GOODS",
+          "ACCESSORIES",
+          "WOMEN",
+          "Home - Aimé Leon Dore EU",
+          "Search form trigger. Press the Enter key to show search form",
+          "Sign in"
+        ],
+        "hero": {
+          "video": false,
+          "images": 241,
+          "height": 983,
+          "vh": 109,
+          "text": "Wool Herringbone Overcoat Lek 136,500 Product Details Sizing",
+          "carousel": true
+        },
+        "productCard": {
+          "classes": "plp-product  upsell-toggle",
+          "imageRatio": null,
+          "imagesInCard": 1,
+          "hoverSwapLikely": false,
+          "quickAdd": false,
+          "swatches": false,
+          "badges": [],
+          "text": "Full-Zip Pavilion Cashmere Hoodie Lek 60,200 4 Colors Availa"
+        },
+        "productLinkCount": 88,
+        "filterSort": {
+          "filterEls": 0,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [
+            "MEN",
+            "WOMEN",
+            "Sizing",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "sizeGuide": false,
+          "accordions": [
+            "Main menu. Press the Enter key to show submenu.",
+            "MEN",
+            "WOMEN",
+            "Product Details",
+            "Sizing",
+            "Shop the Look",
+            "Delivery and Returns",
+            "Select Size"
+          ],
+          "deliveryCopy": [
+            "Delivery and Returns",
+            "SHIPPING TO: AL / L ALL"
+          ],
+          "crossSell": [
+            "YOU MAY ALSO LIKE"
+          ],
+          "addToCart": [
+            "ADD TO BAG"
+          ],
+          "stickyColumn": true
+        },
+        "footer": {
+          "headings": [],
+          "linkCount": 8,
+          "newsletter": true
+        },
+        "fonts": [
+          {
+            "value": "Sohne",
+            "count": 1180
+          },
+          {
+            "value": "DIN W01 Regular",
+            "count": 72
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(24, 24, 24)",
+            "count": 1020
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 93
+          },
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 93
+          },
+          {
+            "value": "rgba(196, 196, 196, 0.7)",
+            "count": 33
+          },
+          {
+            "value": "rgb(69, 69, 69)",
+            "count": 10
+          },
+          {
+            "value": "rgb(196, 196, 196)",
+            "count": 3
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 72
+          },
+          {
+            "value": "rgb(24, 24, 24)",
+            "count": 23
+          },
+          {
+            "value": "rgba(24, 24, 24, 0.75)",
+            "count": 3
+          },
+          {
+            "value": "rgba(24, 24, 24, 0.7)",
+            "count": 1
+          },
+          {
+            "value": "rgb(247, 247, 247)",
+            "count": 1
+          },
+          {
+            "value": "rgba(24, 24, 24, 0.8)",
+            "count": 1
+          }
+        ],
+        "headingSample": [
+          {
+            "text": "Wool Herringbone Overcoat",
+            "font": "Sohne, Arial, sans-serif",
+            "size": "12px",
+            "weight": "400",
+            "tracking": "0.6px",
+            "transform": "none"
+          },
+          {
+            "text": "YOU MAY ALSO LIKE",
+            "font": "Sohne, Arial, sans-serif",
+            "size": "10px",
+            "weight": "500",
+            "tracking": "1.5px",
+            "transform": "uppercase"
+          },
+          {
+            "text": "",
+            "font": "Sohne, Arial, sans-serif",
+            "size": "12px",
+            "weight": "400",
+            "tracking": "0.6px",
+            "transform": "none"
+          }
+        ],
+        "bodyFont": {
+          "family": "Sohne, Arial, sans-serif",
+          "size": "12px"
+        },
+        "libraries": [
+          "Swiper",
+          "Shopify",
+          "jQuery",
+          "Klaviyo"
+        ],
+        "scriptHosts": [
+          "cdn.jsdelivr.net",
+          "eu.aimeleondore.com",
+          "cdn.shopify.com",
+          "d2wy8f7a9ursnm.cloudfront.net",
+          "static.klaviyo.com",
+          "static-tracking.klaviyo.com",
+          "www.googletagmanager.com"
+        ],
+        "motion": {
+          "runningAnimations": 0,
+          "marquee": false,
+          "videoCount": 0,
+          "transitionsOnLinks": 123,
+          "cssScrollSnap": false,
+          "reducedMotionQuery": true
+        },
+        "headings": [
+          "Wool Herringbone Overcoat",
+          "Full-Zip Pavilion Cashmere Hoodie",
+          "Pavilion Cashmere Sweatpant",
+          "The Esco Tee",
+          "ALD / New Era Mets Wool Hat",
+          "YOU MAY ALSO LIKE"
+        ],
+        "title": "Wool Herringbone Overcoat – Aimé Leon Dore EU",
+        "h1": "Wool Herringbone Overcoat",
+        "bodyTextSample": "SKIP TO CONTENT MEN ALL PRODUCTS NEW ARRIVALS TEES & POLOS SWEATSHIRTS SHIRTING SWEATERS PANTS SWEATPANTS SHORTS SWIM OUTERWEAR SUITING FOOTWEAR HEADWEAR JEWELRY BAGS & LEATHER GOODS ACCESSORIES WOMEN Wool Herringbone Overcoat Lek 136,500 Product Details Sizing Shop the Look Full-Zip Pavilion Cashmere Hoodie Lek 60,200 Pavilion Cashmere Sweatpant Lek 55,600 The Esco Tee SOLD OUT ALD / New Era Mets Wool Hat Lek 8,100 Delivery and Returns XS S M L XL XXL Select Size ADD TO BAG YOU MAY ALSO LIKE SEE MORE Email address By providing your email address, you agree to our Privacy Policy (opens in a ne"
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": true,
+        "bgAfterScroll": "rgb(255, 255, 255)",
+        "backdropAfterScroll": "none",
+        "transform": "none"
+      },
+      "cart": {
+        "type": "not found"
+      },
+      "mobile": {
+        "nav_burger": true,
+        "bottomBar": false
+      }
+    }
+  }
+}

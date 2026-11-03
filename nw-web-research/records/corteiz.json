@@ -1,0 +1,526 @@
+{
+  "key": "corteiz",
+  "group": "store",
+  "pages": {
+    "home": {
+      "url": "https://www.corteiz.com/",
+      "status": 200,
+      "finalUrl": "https://www.corteiz.com/",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/corteiz__home__1440.jpg",
+        "screenshots/corteiz__home__390.jpg"
+      ],
+      "data": {
+        "nav": [
+          "NEW",
+          "CLASSICS",
+          "COMBOS",
+          "T-SHIRTS",
+          "TOPS / JERSEYS",
+          "SWEATSHIRTS",
+          "JACKETS",
+          "KNITWEAR",
+          "BOTTOMS",
+          "SHORTS",
+          "DENIM",
+          "HATS",
+          "BAGS",
+          "ACCESSORIES",
+          "WOMENS",
+          "Instagram",
+          "Switch to light mode",
+          "ARCHIVE",
+          "NEWSLETTER",
+          "SHIPPING POLICY",
+          "TERMS OF SERVICE"
+        ],
+        "hero": {
+          "video": false,
+          "images": 132,
+          "height": 10361,
+          "vh": 1151,
+          "text": "BOLO™ DOWN JACKET [TRIPLE BLACK] Regular price £250.00 BOLO™",
+          "carousel": false
+        },
+        "productCard": {
+          "classes": "product__image-wrapper",
+          "imageRatio": 1,
+          "imagesInCard": 2,
+          "hoverSwapLikely": true,
+          "quickAdd": false,
+          "swatches": false,
+          "badges": [],
+          "text": ""
+        },
+        "productLinkCount": 144,
+        "filterSort": {
+          "filterEls": 0,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [],
+          "sizeGuide": false,
+          "accordions": [],
+          "deliveryCopy": [
+            "SHIPPING POLICY"
+          ],
+          "crossSell": [],
+          "addToCart": [],
+          "stickyColumn": false
+        },
+        "footer": {
+          "headings": [],
+          "linkCount": 7,
+          "newsletter": true
+        },
+        "fonts": [
+          {
+            "value": "Courier New",
+            "count": 822
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(255, 213, 0)",
+            "count": 612
+          },
+          {
+            "value": "rgb(162, 0, 0)",
+            "count": 207
+          },
+          {
+            "value": "rgb(128, 128, 128)",
+            "count": 3
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgb(162, 0, 0)",
+            "count": 1
+          },
+          {
+            "value": "rgba(0, 0, 0, 0.4)",
+            "count": 1
+          },
+          {
+            "value": "rgb(25, 25, 25)",
+            "count": 1
+          }
+        ],
+        "headingSample": [
+          {
+            "text": "YOUR CART",
+            "font": "\"Courier New\", courier, serif",
+            "size": "14px",
+            "weight": "700",
+            "tracking": "normal",
+            "transform": "uppercase"
+          },
+          {
+            "text": "CRTZRTW",
+            "font": "\"Courier New\", courier, serif",
+            "size": "25px",
+            "weight": "400",
+            "tracking": "normal",
+            "transform": "uppercase"
+          }
+        ],
+        "bodyFont": {
+          "family": "\"Courier New\", courier, serif",
+          "size": "12px"
+        },
+        "libraries": [
+          "Shopify",
+          "jQuery",
+          "Klaviyo"
+        ],
+        "scriptHosts": [
+          "chimpstatic.com",
+          "tnc-app.herokuapp.com",
+          "www.corteiz.com",
+          "shop.app",
+          "cdn.shopify.com",
+          "static.klaviyo.com",
+          "limits.minmaxify.com",
+          "static-tracking.klaviyo.com",
+          "cdn.jsdelivr.net"
+        ],
+        "motion": {
+          "runningAnimations": 0,
+          "marquee": false,
+          "videoCount": 0,
+          "transitionsOnLinks": 0,
+          "cssScrollSnap": true,
+          "reducedMotionQuery": true
+        },
+        "headings": [
+          "YOUR CART",
+          "CRTZRTW"
+        ],
+        "title": "CORTEIZ – CRTZRTW",
+        "h1": "CRTZRTW",
+        "bodyTextSample": "Skip to content Search CART (0) CHECKOUT YOUR CART 0 ITEMS Your cart is empty CRTZRTW NEW CLASSICS COMBOS T-SHIRTS TOPS / JERSEYS SWEATSHIRTS JACKETS KNITWEAR BOTTOMS SHORTS DENIM HATS BAGS ACCESSORIES WOMENS Instagram ARCHIVE NEWSLETTER SHIPPING POLICY TERMS OF SERVICE BOLO™ DOWN JACKET [TRIPLE BLACK] Regular price £250.00 BOLO™ DOWN JACKET [WOODLAND CAMO] Regular price £250.00 ALCINSULATE JACKET [EMERALD] Regular price £180.00 ALCATRAZ BOMBER JACKET [SILVER] Regular price £170.00 ELITEWORK™ APEX SHELL JACKET [BLACK/GREEN] Regular price £220.00 ELITEWORK™ APEX SHELL PANT [BLACK/GREEN] Regular"
+      },
+      "headerOnScroll": null,
+      "cart": {
+        "type": "drawer",
+        "width": 1440,
+        "freeShippingBar": false,
+        "upsells": false,
+        "text": "YOUR CART 0 ITEMS Your cart is empty",
+        "opened_via": "a[href*='/cart']:visible",
+        "navigated": false
+      },
+      "mobile": {
+        "nav_burger": false,
+        "bottomBar": false
+      }
+    },
+    "collection": {
+      "url": "https://www.corteiz.com/collections/23-10-26",
+      "status": 200,
+      "finalUrl": "https://www.corteiz.com/collections/23-10-26",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/corteiz__collection__1440.jpg",
+        "screenshots/corteiz__collection__390.jpg"
+      ],
+      "data": {
+        "nav": [
+          "NEW",
+          "CLASSICS",
+          "COMBOS",
+          "T-SHIRTS",
+          "TOPS / JERSEYS",
+          "SWEATSHIRTS",
+          "JACKETS",
+          "KNITWEAR",
+          "BOTTOMS",
+          "SHORTS",
+          "DENIM",
+          "HATS",
+          "BAGS",
+          "ACCESSORIES",
+          "WOMENS",
+          "Instagram",
+          "Switch to light mode",
+          "ARCHIVE",
+          "NEWSLETTER",
+          "SHIPPING POLICY",
+          "TERMS OF SERVICE"
+        ],
+        "hero": {
+          "video": false,
+          "images": 68,
+          "height": 5247,
+          "vh": 583,
+          "text": "23.10.26 ELITEWORK™ APEX SHELL JACKET [BLACK/GREEN] Regular ",
+          "carousel": false
+        },
+        "productCard": {
+          "classes": "product__image-wrapper",
+          "imageRatio": 1,
+          "imagesInCard": 2,
+          "hoverSwapLikely": true,
+          "quickAdd": false,
+          "swatches": false,
+          "badges": [],
+          "text": ""
+        },
+        "productLinkCount": 68,
+        "filterSort": {
+          "filterEls": 0,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [],
+          "sizeGuide": false,
+          "accordions": [],
+          "deliveryCopy": [
+            "SHIPPING POLICY"
+          ],
+          "crossSell": [],
+          "addToCart": [],
+          "stickyColumn": false
+        },
+        "footer": {
+          "headings": [],
+          "linkCount": 7,
+          "newsletter": true
+        },
+        "fonts": [
+          {
+            "value": "Courier New",
+            "count": 454
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(255, 213, 0)",
+            "count": 346
+          },
+          {
+            "value": "rgb(162, 0, 0)",
+            "count": 105
+          },
+          {
+            "value": "rgb(128, 128, 128)",
+            "count": 3
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgb(162, 0, 0)",
+            "count": 1
+          },
+          {
+            "value": "rgba(0, 0, 0, 0.4)",
+            "count": 1
+          },
+          {
+            "value": "rgb(25, 25, 25)",
+            "count": 1
+          }
+        ],
+        "headingSample": [
+          {
+            "text": "YOUR CART",
+            "font": "\"Courier New\", courier, serif",
+            "size": "14px",
+            "weight": "700",
+            "tracking": "normal",
+            "transform": "uppercase"
+          },
+          {
+            "text": "23.10.26",
+            "font": "\"Courier New\", courier, serif",
+            "size": "25px",
+            "weight": "400",
+            "tracking": "normal",
+            "transform": "uppercase"
+          }
+        ],
+        "bodyFont": {
+          "family": "\"Courier New\", courier, serif",
+          "size": "12px"
+        },
+        "libraries": [
+          "Shopify",
+          "jQuery",
+          "Klaviyo"
+        ],
+        "scriptHosts": [
+          "chimpstatic.com",
+          "tnc-app.herokuapp.com",
+          "www.corteiz.com",
+          "shop.app",
+          "cdn.shopify.com",
+          "limits.minmaxify.com",
+          "static.klaviyo.com",
+          "static-tracking.klaviyo.com",
+          "cdn.jsdelivr.net"
+        ],
+        "motion": {
+          "runningAnimations": 0,
+          "marquee": false,
+          "videoCount": 0,
+          "transitionsOnLinks": 0,
+          "cssScrollSnap": true,
+          "reducedMotionQuery": true
+        },
+        "headings": [
+          "YOUR CART",
+          "23.10.26"
+        ],
+        "title": "23.10.26 – CRTZRTW",
+        "h1": "23.10.26",
+        "bodyTextSample": "Skip to content Search CART (0) CHECKOUT YOUR CART 0 ITEMS Your cart is empty NEW CLASSICS COMBOS T-SHIRTS TOPS / JERSEYS SWEATSHIRTS JACKETS KNITWEAR BOTTOMS SHORTS DENIM HATS BAGS ACCESSORIES WOMENS Instagram ARCHIVE NEWSLETTER SHIPPING POLICY TERMS OF SERVICE 23.10.26 ELITEWORK™ APEX SHELL JACKET [BLACK/GREEN] Regular price £220.00 ELITEWORK™ APEX SHELL PANT [BLACK/GREEN] Regular price £160.00 ALCINSULATE JACKET [EMERALD] Regular price £180.00 ALCATRAZ BOMBER JACKET [SILVER] Regular price £170.00 GUERILLAZ FIELD JACKET [INDIGO CAMO] Regular price £145.00 GUERILLAZ CONVERTIBLE PANT [INDIGO C"
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": false,
+        "bgAfterScroll": "rgba(0, 0, 0, 0)",
+        "backdropAfterScroll": "none",
+        "transform": "none"
+      },
+      "mobile": {
+        "nav_burger": false,
+        "bottomBar": false
+      }
+    },
+    "product": {
+      "url": "https://www.corteiz.com/collections/23-10-26/products/eliteworktm-apex-shell-jacket-black-green",
+      "status": 200,
+      "finalUrl": "https://www.corteiz.com/collections/23-10-26/products/eliteworktm-apex-shell-jacket-black-green",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/corteiz__product__1440.jpg",
+        "screenshots/corteiz__product__390.jpg"
+      ],
+      "data": {
+        "nav": [
+          "NEW",
+          "CLASSICS",
+          "COMBOS",
+          "T-SHIRTS",
+          "TOPS / JERSEYS",
+          "SWEATSHIRTS",
+          "JACKETS",
+          "KNITWEAR",
+          "BOTTOMS",
+          "SHORTS",
+          "DENIM",
+          "HATS",
+          "BAGS",
+          "ACCESSORIES",
+          "WOMENS",
+          "Instagram",
+          "Switch to light mode",
+          "ARCHIVE",
+          "NEWSLETTER",
+          "SHIPPING POLICY",
+          "TERMS OF SERVICE"
+        ],
+        "hero": {
+          "video": false,
+          "images": 16,
+          "height": 573,
+          "vh": 64,
+          "text": "Previous Next ELITEWORK™ APEX SHELL JACKET [BLACK/GREEN] Reg",
+          "carousel": true
+        },
+        "productLinkCount": 3,
+        "filterSort": {
+          "filterEls": 0,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [],
+          "sizeGuide": true,
+          "accordions": [
+            "DETAILS",
+            "SIZE GUIDE",
+            "SHIPPING POLICY"
+          ],
+          "deliveryCopy": [
+            "SHIPPING POLICY",
+            "SHIPPING POLICY"
+          ],
+          "crossSell": [],
+          "addToCart": [],
+          "stickyColumn": false
+        },
+        "footer": {
+          "headings": [],
+          "linkCount": 7,
+          "newsletter": true
+        },
+        "fonts": [
+          {
+            "value": "Courier New",
+            "count": 166
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(255, 213, 0)",
+            "count": 145
+          },
+          {
+            "value": "rgb(162, 0, 0)",
+            "count": 18
+          },
+          {
+            "value": "rgb(128, 128, 128)",
+            "count": 3
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgba(255, 213, 0, 0.1)",
+            "count": 4
+          },
+          {
+            "value": "rgb(162, 0, 0)",
+            "count": 1
+          },
+          {
+            "value": "rgba(0, 0, 0, 0.4)",
+            "count": 1
+          },
+          {
+            "value": "rgb(25, 25, 25)",
+            "count": 1
+          }
+        ],
+        "headingSample": [
+          {
+            "text": "YOUR CART",
+            "font": "\"Courier New\", courier, serif",
+            "size": "14px",
+            "weight": "700",
+            "tracking": "normal",
+            "transform": "uppercase"
+          },
+          {
+            "text": "ELITEWORK™ APEX SHELL JACKET [BLACK/GREEN]",
+            "font": "\"Courier New\", courier, serif",
+            "size": "25px",
+            "weight": "400",
+            "tracking": "normal",
+            "transform": "uppercase"
+          }
+        ],
+        "bodyFont": {
+          "family": "\"Courier New\", courier, serif",
+          "size": "12px"
+        },
+        "libraries": [
+          "Shopify",
+          "jQuery",
+          "Klaviyo"
+        ],
+        "scriptHosts": [
+          "chimpstatic.com",
+          "tnc-app.herokuapp.com",
+          "www.corteiz.com",
+          "shop.app",
+          "cdn.shopify.com",
+          "limits.minmaxify.com",
+          "static.klaviyo.com",
+          "static-tracking.klaviyo.com",
+          "cdn.jsdelivr.net"
+        ],
+        "motion": {
+          "runningAnimations": 4,
+          "marquee": false,
+          "videoCount": 0,
+          "transitionsOnLinks": 7,
+          "cssScrollSnap": false,
+          "reducedMotionQuery": true
+        },
+        "headings": [
+          "YOUR CART",
+          "ELITEWORK™ APEX SHELL JACKET [BLACK/GREEN]"
+        ],
+        "title": "ELITEWORK™ APEX SHELL JACKET [BLACK/GREEN] – CRTZRTW",
+        "h1": "ELITEWORK™ APEX SHELL JACKET [BLACK/GREEN]",
+        "bodyTextSample": "Skip to content Search CART (0) CHECKOUT YOUR CART 0 ITEMS Your cart is empty NEW CLASSICS COMBOS T-SHIRTS TOPS / JERSEYS SWEATSHIRTS JACKETS KNITWEAR BOTTOMS SHORTS DENIM HATS BAGS ACCESSORIES WOMENS Instagram ARCHIVE NEWSLETTER SHIPPING POLICY TERMS OF SERVICE Previous Next ELITEWORK™ APEX SHELL JACKET [BLACK/GREEN] Regular price £220.00 SIZE S M L XL XXL COLOUR SELECT SIZE DETAILS SIZE GUIDE SHIPPING POLICY Copyright © 2026, CRTZRTW. "
+      },
+      "headerOnScroll": null,
+      "cart": {
+        "type": "drawer",
+        "width": 1440,
+        "freeShippingBar": false,
+        "upsells": false,
+        "text": "YOUR CART 0 ITEMS Your cart is empty",
+        "opened_via": "a[href*='/cart']:visible",
+        "navigated": false
+      },
+      "mobile": {
+        "nav_burger": false,
+        "bottomBar": false
+      }
+    }
+  }
+}

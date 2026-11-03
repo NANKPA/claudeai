@@ -1,0 +1,13 @@
+{
+  "key": "prada",
+  "group": "store",
+  "pages": {
+    "home": {
+      "url": "https://www.prada.com/gb/en.html",
+      "errors": [
+        "1440: Error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.prada.com/gb/en.html\nCall log:\n  - navigating to \"https://www.prada.com/gb/en.html\", waiting until \"domcontentloaded\"\n",
+        "390: Error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.prada.com/gb/en.html\nCall log:\n  - navigating to \"https://www.prada.com/gb/en.html\", waiting until \"domcontentloaded\"\n"
+      ]
+    }
+  }
+}

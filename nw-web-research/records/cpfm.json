@@ -1,0 +1,178 @@
+{
+  "key": "cpfm",
+  "group": "store",
+  "pages": {
+    "home": {
+      "url": "https://cactusplantfleamarket.com/",
+      "status": 200,
+      "finalUrl": "https://cactusplantfleamarket.com/",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/cpfm__home__1440.jpg",
+        "screenshots/cpfm__home__390.jpg"
+      ],
+      "data": {
+        "header": {
+          "tag": "DIV",
+          "position": "static",
+          "top": "auto",
+          "bg": "rgba(0, 0, 0, 0)",
+          "backdrop": "none",
+          "height": 76,
+          "zIndex": "auto",
+          "sticky": false,
+          "transparent": true,
+          "glass": false
+        },
+        "nav": [
+          "https://cactusplantfleamarket.com/",
+          "cart",
+          "Close cart"
+        ],
+        "hero": {
+          "video": false,
+          "images": 7,
+          "height": 442,
+          "vh": 49,
+          "text": "camo beaded bandana $90 USD sold out white boxer brief $60 U",
+          "carousel": true
+        },
+        "productLinkCount": 0,
+        "filterSort": {
+          "filterEls": 0,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [],
+          "sizeGuide": false,
+          "accordions": [],
+          "deliveryCopy": [],
+          "crossSell": [],
+          "addToCart": [
+            "add to cart",
+            "add to cart"
+          ],
+          "stickyColumn": false
+        },
+        "footer": {
+          "headings": [],
+          "linkCount": 2,
+          "newsletter": false
+        },
+        "fonts": [
+          {
+            "value": "hv-mono",
+            "count": 356
+          },
+          {
+            "value": "ocr-a",
+            "count": 33
+          },
+          {
+            "value": "Kosugi Maru",
+            "count": 30
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 405
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 14
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgba(0, 0, 0, 0.15)",
+            "count": 79
+          },
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 7
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 4
+          },
+          {
+            "value": "rgb(36, 31, 32)",
+            "count": 3
+          },
+          {
+            "value": "rgba(0, 0, 0, 0.7)",
+            "count": 1
+          },
+          {
+            "value": "rgb(1, 161, 98)",
+            "count": 1
+          }
+        ],
+        "headingSample": [
+          {
+            "text": "https://cactusplantfleamarket.com/",
+            "font": "ocr-a",
+            "size": "18px",
+            "weight": "400",
+            "tracking": "normal",
+            "transform": "none"
+          }
+        ],
+        "bodyFont": {
+          "family": "hv-mono",
+          "size": "16px"
+        },
+        "libraries": [
+          "Swiper",
+          "Shopify",
+          "Klaviyo"
+        ],
+        "scriptHosts": [
+          "static.klaviyo.com",
+          "cactusplantfleamarket.com",
+          "shop.app",
+          "cdn.shopify.com",
+          "static-tracking.klaviyo.com"
+        ],
+        "motion": {
+          "runningAnimations": 8,
+          "marquee": false,
+          "videoCount": 0,
+          "transitionsOnLinks": 0,
+          "cssScrollSnap": false,
+          "reducedMotionQuery": false
+        },
+        "headings": [
+          "https://cactusplantfleamarket.com/",
+          "camo beaded bandana",
+          "white boxer brief",
+          "grey boxer brief",
+          "cpfm brown tube socks"
+        ],
+        "title": "CACTUS PLANT FLEA MARKET",
+        "h1": "https://cactusplantfleamarket.com/",
+        "bodyTextSample": "https://cactusplantfleamarket.com/ 9:18AM 0.74FT TIME HEIGHT 3:16PM 4.85FT 03 NOV 12:11PM☀️ 53°F 🌗 LAST QUARTER cart camo beaded bandana $90 USD sold out white boxer brief $60 USD SIZE size MEDIUM LARGE grey boxer brief $60 USD SIZE size MEDIUM LARGE cpfm brown tube socks $40 USD sold out by clicking \"accept\" you consent to our use of cookies. accept :) 2026 CACTUS PLANT FLEA MARKET TERMS PRIVACY POLICY"
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": true,
+        "bgAfterScroll": "rgba(0, 0, 0, 0)",
+        "backdropAfterScroll": "none",
+        "transform": "none"
+      },
+      "cart": {
+        "type": "drawer",
+        "width": 1440,
+        "freeShippingBar": false,
+        "upsells": false,
+        "text": "your cart is empty i accept the terms of use and privacy policy. i understand all sales are final. shipping & taxes calculated at checkout total $0 USD checkout",
+        "opened_via": "button[aria-label*='cart' i]:visible",
+        "navigated": false
+      },
+      "mobile": {
+        "nav_burger": false,
+        "bottomBar": true
+      }
+    }
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "key": "rauno",
+  "group": "design",
+  "pages": {
+    "home": {
+      "url": "https://rauno.me/",
+      "status": 200,
+      "finalUrl": "https://rauno.me/",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/rauno__home__1440.jpg",
+        "screenshots/rauno__home__390.jpg"
+      ],
+      "data": {
+        "hero": {
+          "video": false,
+          "images": 0,
+          "height": 6108,
+          "vh": 679,
+          "text": "",
+          "carousel": false
+        },
+        "productLinkCount": 0,
+        "filterSort": {
+          "filterEls": 0,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [],
+          "sizeGuide": false,
+          "accordions": [],
+          "deliveryCopy": [],
+          "crossSell": [],
+          "addToCart": [],
+          "stickyColumn": false
+        },
+        "fonts": [
+          {
+            "value": "X",
+            "count": 117
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 89
+          },
+          {
+            "value": "rgb(23, 23, 23)",
+            "count": 23
+          },
+          {
+            "value": "rgb(111, 111, 111)",
+            "count": 5
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgb(143, 143, 143)",
+            "count": 20
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 7
+          },
+          {
+            "value": "rgb(255, 255, 2)",
+            "count": 3
+          },
+          {
+            "value": "color(display-p3 0.99 0.4 0.02)",
+            "count": 1
+          }
+        ],
+        "headingSample": [
+          {
+            "text": "Rauno Freiberg is an Estonian interaction designer working w",
+            "font": "X, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Ox",
+            "size": "32px",
+            "weight": "500",
+            "tracking": "normal",
+            "transform": "none"
+          }
+        ],
+        "bodyFont": {
+          "family": "X, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantar",
+          "size": "16px"
+        },
+        "libraries": [
+          "React",
+          "NextJS"
+        ],
+        "scriptHosts": [
+          "rauno.me"
+        ],
+        "motion": {
+          "runningAnimations": 7,
+          "marquee": false,
+          "videoCount": 0,
+          "transitionsOnLinks": 3,
+          "cssScrollSnap": false,
+          "reducedMotionQuery": false
+        },
+        "headings": [
+          "Rauno Freiberg is an Estonian interaction designer working w",
+          "DD",
+          "Craft",
+          "Projects"
+        ],
+        "title": "Rauno Freiberg",
+        "h1": "Rauno Freiberg is an Estonian interaction designer working w",
+        "bodyTextSample": "Rauno Freiberg is an Estonian interaction designer working with Vercel and Devouring Details Devouring Details DD Craft Craft History of Software Design Projects Projects Field Notes Twitter 2023 2022 GitHub Email Copied Make it fast. Make it beautiful. Make it consistent. Make it carefully. Make it timeless. Make it soulful. Make it."
+      },
+      "headerOnScroll": null,
+      "cart": {
+        "type": "not found"
+      },
+      "mobile": {
+        "nav_burger": false,
+        "bottomBar": false
+      }
+    }
+  }
+}

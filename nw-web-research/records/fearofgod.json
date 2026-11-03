@@ -1,0 +1,594 @@
+{
+  "key": "fearofgod",
+  "group": "store",
+  "pages": {
+    "home": {
+      "url": "https://fearofgod.com/",
+      "status": 200,
+      "finalUrl": "https://fearofgod.com/en-gh",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/fearofgod__home__1440.jpg",
+        "screenshots/fearofgod__home__390.jpg"
+      ],
+      "data": {
+        "header": {
+          "tag": "HEADER-COMPONENT",
+          "position": "absolute",
+          "top": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "backdrop": "none",
+          "height": 46,
+          "zIndex": "16",
+          "sticky": false,
+          "transparent": true,
+          "glass": false
+        },
+        "nav": [
+          "FEATURED",
+          "COLLECTIONS",
+          "MENS",
+          "WOMENS",
+          "KIDS",
+          "SEARCH",
+          "ACCOUNT",
+          "BAG"
+        ],
+        "hero": {
+          "video": false,
+          "images": 2,
+          "height": 900,
+          "vh": 100,
+          "text": "DISCOVER SHOP",
+          "carousel": false
+        },
+        "productLinkCount": 0,
+        "filterSort": {
+          "filterEls": 0,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [
+            "Email",
+            "",
+            "Sign up"
+          ],
+          "sizeGuide": false,
+          "accordions": [
+            "FEATURED",
+            "COLLECTIONS",
+            "MENS",
+            "WOMENS",
+            "KIDS",
+            "GHANA (USD $) REGION AND LANGUAGE SELECTOR",
+            "Footer"
+          ],
+          "deliveryCopy": [],
+          "crossSell": [],
+          "addToCart": [],
+          "stickyColumn": false
+        },
+        "footer": {
+          "headings": [
+            "Join the Conversation",
+            "Footer"
+          ],
+          "linkCount": 6,
+          "newsletter": true
+        },
+        "fonts": [
+          {
+            "value": "HelveticaNeueLTPro-Cn",
+            "count": 276
+          },
+          {
+            "value": "Optima",
+            "count": 3
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 184
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 94
+          },
+          {
+            "value": "rgb(118, 118, 118)",
+            "count": 1
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 6
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 4
+          },
+          {
+            "value": "rgba(255, 255, 255, 0.78)",
+            "count": 1
+          }
+        ],
+        "headingSample": [
+          {
+            "text": "Fear of God",
+            "font": "Optima, \"Optima Nova LT\", \"Gill Sans\", sans-serif",
+            "size": "32px",
+            "weight": "400",
+            "tracking": "normal",
+            "transform": "none"
+          }
+        ],
+        "bodyFont": {
+          "family": "HelveticaNeueLTPro-Cn, Helvetica, Arial, sans-serif",
+          "size": "14px"
+        },
+        "libraries": [
+          "Shopify",
+          "Klaviyo"
+        ],
+        "scriptHosts": [
+          "7ce243a1e1a2.cdn4.forter.com",
+          "beacon.riskified.com",
+          "",
+          "shopify-widget.route.com",
+          "connect.facebook.net",
+          "a64b2710149d.cdn4.forter.com",
+          "cdn.cookielaw.org",
+          "fearofgod.com",
+          "shop.app",
+          "cdn.shopify.com",
+          "www.googletagmanager.com",
+          "static.klaviyo.com",
+          "static-tracking.klaviyo.com",
+          "crossborder-integration.global-e.com",
+          "web.global-e.com",
+          "googleads.g.doubleclick.net",
+          "assets.tvscipixel.com",
+          "shopify-gtm-suite.getelevar.com"
+        ],
+        "motion": {
+          "runningAnimations": 0,
+          "marquee": false,
+          "videoCount": 0,
+          "transitionsOnLinks": 125,
+          "cssScrollSnap": false,
+          "reducedMotionQuery": true
+        },
+        "headings": [
+          "Fear of God"
+        ],
+        "title": "Fear of God | Official Store",
+        "h1": "Fear of God",
+        "bodyTextSample": "SKIP TO CONTENT Fear of God FEATURED COLLECTIONS MENS WOMENS KIDS SEARCH ACCOUNT BAG DISCOVER SHOP DISCOVER SHOP DISCOVER SHOP Join the Conversation Email GHANA (USD $) REGION AND LANGUAGE SELECTOR Footer CONTACT CLIENT SERVICES LEGAL NOTICES SUPPLY CHAINS ACT EU WITHDRAWAL SOCIAL COOKIE PREFERENCES ENABLE ACCESSIBILITY OFF"
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": false,
+        "bgAfterScroll": "rgba(0, 0, 0, 0)",
+        "backdropAfterScroll": "none",
+        "transform": "matrix(1, 0, 0, 1, 0, -47)"
+      },
+      "cart": {
+        "type": "drawer",
+        "width": 576,
+        "freeShippingBar": false,
+        "upsells": false,
+        "text": "BAG YOU DON'T HAVE ANY ITEMS IN YOUR CART.",
+        "opened_via": "button[aria-label*='cart' i]:visible",
+        "navigated": false
+      },
+      "mobile": {
+        "nav_burger": true,
+        "bottomBar": false
+      }
+    },
+    "collection": {
+      "url": "https://fearofgod.com/en-gh/collections/new-releases",
+      "status": 200,
+      "finalUrl": "https://fearofgod.com/en-gh/collections/new-releases",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/fearofgod__collection__1440.jpg",
+        "screenshots/fearofgod__collection__390.jpg"
+      ],
+      "data": {
+        "header": {
+          "tag": "HEADER",
+          "position": "sticky",
+          "top": "-1px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "backdrop": "none",
+          "height": 46,
+          "zIndex": "8",
+          "sticky": true,
+          "transparent": true,
+          "glass": false
+        },
+        "nav": [
+          "FEATURED",
+          "COLLECTIONS",
+          "MENS",
+          "WOMENS",
+          "KIDS",
+          "SEARCH",
+          "ACCOUNT",
+          "BAG"
+        ],
+        "hero": {
+          "video": false,
+          "images": 96,
+          "height": 11313,
+          "vh": 1257,
+          "text": "New Releases General SKIP TO RESULTS LIST 232 ITEMS FILTER &",
+          "carousel": true
+        },
+        "productCard": {
+          "classes": "card-gallery card-gallery-ARnpONVdVTlR4WkhjQ__card-gallery spacing-style border-style",
+          "imageRatio": 0.75,
+          "imagesInCard": 2,
+          "hoverSwapLikely": true,
+          "quickAdd": false,
+          "swatches": false,
+          "badges": [],
+          "text": ""
+        },
+        "productLinkCount": 144,
+        "filterSort": {
+          "filterEls": 0,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [
+            "Email",
+            "",
+            "Sign up"
+          ],
+          "sizeGuide": false,
+          "accordions": [
+            "FEATURED",
+            "COLLECTIONS",
+            "MENS",
+            "WOMENS",
+            "KIDS",
+            "GHANA (USD $) REGION AND LANGUAGE SELECTOR",
+            "Footer"
+          ],
+          "deliveryCopy": [],
+          "crossSell": [],
+          "addToCart": [],
+          "stickyColumn": false
+        },
+        "footer": {
+          "headings": [
+            "Join the Conversation",
+            "Footer"
+          ],
+          "linkCount": 6,
+          "newsletter": true
+        },
+        "fonts": [
+          {
+            "value": "HelveticaNeueLTPro-Cn",
+            "count": 1201
+          },
+          {
+            "value": "Optima",
+            "count": 195
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 1341
+          },
+          {
+            "value": "rgb(117, 117, 117)",
+            "count": 48
+          },
+          {
+            "value": "rgba(0, 0, 0, 0.7)",
+            "count": 6
+          },
+          {
+            "value": "rgb(97, 97, 97)",
+            "count": 1
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 52
+          }
+        ],
+        "headingSample": [
+          {
+            "text": "New Releases General",
+            "font": "Optima, \"Optima Nova LT\", \"Gill Sans\", sans-serif",
+            "size": "32px",
+            "weight": "400",
+            "tracking": "normal",
+            "transform": "none"
+          }
+        ],
+        "bodyFont": {
+          "family": "HelveticaNeueLTPro-Cn, Helvetica, Arial, sans-serif",
+          "size": "14px"
+        },
+        "libraries": [
+          "Shopify",
+          "Klaviyo"
+        ],
+        "scriptHosts": [
+          "beacon.riskified.com",
+          "",
+          "crossborder-integration.global-e.com",
+          "shopify-widget.route.com",
+          "www.googletagmanager.com",
+          "a64b2710149d.cdn4.forter.com",
+          "connect.facebook.net",
+          "cdn.cookielaw.org",
+          "fearofgod.com",
+          "shop.app",
+          "cdn.shopify.com",
+          "static.klaviyo.com",
+          "static-tracking.klaviyo.com",
+          "assets.tvscipixel.com",
+          "shopify-gtm-suite.getelevar.com"
+        ],
+        "motion": {
+          "runningAnimations": 1,
+          "marquee": false,
+          "videoCount": 0,
+          "transitionsOnLinks": 200,
+          "cssScrollSnap": true,
+          "reducedMotionQuery": true
+        },
+        "headings": [
+          "New Releases General"
+        ],
+        "title": "New Releases | Fear of God | ESSENTIALS | ATHLETICS",
+        "h1": "New Releases General",
+        "bodyTextSample": "SKIP TO CONTENT FEATURED COLLECTIONS MENS WOMENS KIDS SEARCH ACCOUNT BAG New Releases General SKIP TO RESULTS LIST 232 ITEMS FILTER & SORT Double Weave Cotton Wool Shawl Overcoat FEAR OF GOD Double Weave Cotton Wool Shawl Overcoat $ 2,987 Merino Double Knit Mockneck Sweater FEAR OF GOD Merino Double Knit Mockneck Sweater $ 711 Double Weave Cotton Wool Overshirt FEAR OF GOD Double Weave Cotton Wool Overshirt $ 1,638 Double Weave Cotton Wool Casual Flat Front Trousers FEAR OF GOD Double Weave Cotton Wool Casual Flat Front Trousers $ 1,535 Cotton Rayon Mockneck Long Sleeve Tee FEAR OF GOD Cotton "
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": true,
+        "bgAfterScroll": "rgba(0, 0, 0, 0)",
+        "backdropAfterScroll": "none",
+        "transform": "none"
+      },
+      "mobile": {
+        "nav_burger": true,
+        "bottomBar": false
+      }
+    },
+    "product": {
+      "url": "https://fearofgod.com/en-gh/products/mainline-shawl-overcoat-rw00905-midnight",
+      "status": 200,
+      "finalUrl": "https://fearofgod.com/en-gh/products/mainline-shawl-overcoat-rw00905-midnight",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/fearofgod__product__1440.jpg",
+        "screenshots/fearofgod__product__390.jpg"
+      ],
+      "data": {
+        "header": {
+          "tag": "HEADER",
+          "position": "sticky",
+          "top": "-1px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "backdrop": "none",
+          "height": 46,
+          "zIndex": "8",
+          "sticky": true,
+          "transparent": true,
+          "glass": false
+        },
+        "nav": [
+          "FEATURED",
+          "COLLECTIONS",
+          "MENS",
+          "WOMENS",
+          "KIDS",
+          "SEARCH",
+          "ACCOUNT",
+          "BAG"
+        ],
+        "hero": {
+          "video": false,
+          "images": 20,
+          "height": 2972,
+          "vh": 330,
+          "text": "SKIP TO PRODUCT INFORMATION FEAR OF GOD Double Weave Cotton ",
+          "carousel": false
+        },
+        "productCard": {
+          "classes": "card-gallery card-gallery-Aa3dEeERPc2cvc2Z2a__product_card_gallery_67njjV spacing-style border-style",
+          "imageRatio": 0.75,
+          "imagesInCard": 2,
+          "hoverSwapLikely": true,
+          "quickAdd": false,
+          "swatches": false,
+          "badges": [],
+          "text": ""
+        },
+        "productLinkCount": 10,
+        "filterSort": {
+          "filterEls": 0,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [
+            "SEARCH",
+            "BAG",
+            "",
+            "XS",
+            "",
+            "S",
+            "",
+            "M",
+            "",
+            "L",
+            "",
+            "XL"
+          ],
+          "sizeGuide": true,
+          "accordions": [
+            "FEATURED",
+            "COLLECTIONS",
+            "MENS",
+            "WOMENS",
+            "KIDS",
+            "Size SELECT SIZE",
+            "DETAILS",
+            "SHIPPING POLICY",
+            "SHARE",
+            "GHANA (USD $) REGION AND LANGUAGE SELECTOR",
+            "Footer"
+          ],
+          "deliveryCopy": [
+            "SHIPPING POLICY"
+          ],
+          "crossSell": [
+            "SIMILAR STYLES"
+          ],
+          "addToCart": [
+            "ADD TO CART ADDED TO CART"
+          ],
+          "stickyColumn": true
+        },
+        "footer": {
+          "headings": [
+            "Join the Conversation",
+            "Footer"
+          ],
+          "linkCount": 6,
+          "newsletter": true
+        },
+        "fonts": [
+          {
+            "value": "HelveticaNeueLTPro-Cn",
+            "count": 431
+          },
+          {
+            "value": "Optima",
+            "count": 20
+          },
+          {
+            "value": "HelveticaNeueLTPro-LtCn",
+            "count": 1
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 435
+          },
+          {
+            "value": "rgba(0, 0, 0, 0.7)",
+            "count": 7
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 7
+          },
+          {
+            "value": "rgb(117, 117, 117)",
+            "count": 3
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 20
+          },
+          {
+            "value": "rgb(0, 0, 0)",
+            "count": 3
+          },
+          {
+            "value": "rgba(20, 20, 20, 0.6)",
+            "count": 1
+          }
+        ],
+        "headingSample": [
+          {
+            "text": "Double Weave Cotton Wool Shawl Overcoat",
+            "font": "Optima, \"Optima Nova LT\", \"Gill Sans\", sans-serif",
+            "size": "24px",
+            "weight": "400",
+            "tracking": "normal",
+            "transform": "none"
+          },
+          {
+            "text": "SIMILAR STYLES",
+            "font": "HelveticaNeueLTPro-Cn, Helvetica, Arial, sans-serif",
+            "size": "12px",
+            "weight": "400",
+            "tracking": "1.8px",
+            "transform": "uppercase"
+          }
+        ],
+        "bodyFont": {
+          "family": "HelveticaNeueLTPro-Cn, Helvetica, Arial, sans-serif",
+          "size": "14px"
+        },
+        "libraries": [
+          "Shopify",
+          "Klaviyo"
+        ],
+        "scriptHosts": [
+          "beacon.riskified.com",
+          "",
+          "crossborder-integration.global-e.com",
+          "shopify-widget.route.com",
+          "www.googletagmanager.com",
+          "a64b2710149d.cdn4.forter.com",
+          "connect.facebook.net",
+          "cdn.cookielaw.org",
+          "fearofgod.com",
+          "shop.app",
+          "cdn.shopify.com",
+          "static.klaviyo.com",
+          "static-tracking.klaviyo.com",
+          "a.klaviyo.com",
+          "assets.tvscipixel.com",
+          "shopify-gtm-suite.getelevar.com"
+        ],
+        "motion": {
+          "runningAnimations": 1,
+          "marquee": false,
+          "videoCount": 0,
+          "transitionsOnLinks": 131,
+          "cssScrollSnap": true,
+          "reducedMotionQuery": true
+        },
+        "headings": [
+          "Double Weave Cotton Wool Shawl Overcoat",
+          "SIMILAR STYLES",
+          "RECENTLY VIEWED"
+        ],
+        "title": "Double Weave Cotton Wool Shawl Overcoat – Fear of God",
+        "h1": "Double Weave Cotton Wool Shawl Overcoat",
+        "bodyTextSample": "SKIP TO CONTENT FEATURED COLLECTIONS MENS WOMENS KIDS SEARCH ACCOUNT BAG SKIP TO PRODUCT INFORMATION FEAR OF GOD Double Weave Cotton Wool Shawl Overcoat $ 2,987 Color MIDNIGHT Size SELECT SIZE SIZE CHART ADD TO CART ADDED TO CART The Shawl Overcoat is crafted in Italy from cotton/wool double weave to provide elegant structure to relaxed, elongated fit. The double-breasted shawl collar overcoat is half-lined with a low, one-button fastening. Additional details include pockets in the side seam, inside jet pocket, and belt. A Fear of God label is on the sleeve. DETAILS SHIPPING POLICY SHARE SIMIL"
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": true,
+        "bgAfterScroll": "rgba(0, 0, 0, 0)",
+        "backdropAfterScroll": "none",
+        "transform": "none"
+      },
+      "cart": {
+        "type": "not found"
+      },
+      "mobile": {
+        "nav_burger": true,
+        "bottomBar": false
+      }
+    }
+  }
+}

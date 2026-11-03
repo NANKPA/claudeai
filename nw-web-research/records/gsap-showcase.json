@@ -1,0 +1,199 @@
+{
+  "key": "gsap-showcase",
+  "group": "design",
+  "pages": {
+    "home": {
+      "url": "https://gsap.com/showcase/",
+      "status": 200,
+      "finalUrl": "https://gsap.com/showcase/",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/gsap-showcase__home__1440.jpg",
+        "screenshots/gsap-showcase__home__390.jpg"
+      ],
+      "data": {
+        "header": {
+          "tag": "HEADER",
+          "position": "relative",
+          "top": "0px",
+          "bg": "rgb(14, 16, 15)",
+          "backdrop": "none",
+          "height": 77,
+          "zIndex": "400",
+          "sticky": false,
+          "transparent": false,
+          "glass": false
+        },
+        "nav": [
+          "Tools",
+          "Showcase",
+          "Community",
+          "Learn GSAP",
+          "Docs",
+          "Demos",
+          "Login/Create Account",
+          "My Account",
+          "Get GSAP"
+        ],
+        "hero": {
+          "video": false,
+          "images": 0,
+          "height": 248,
+          "vh": 28,
+          "text": "",
+          "carousel": false
+        },
+        "productLinkCount": 0,
+        "filterSort": {
+          "filterEls": 6,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [
+            "Email *"
+          ],
+          "sizeGuide": false,
+          "accordions": [
+            "Tools",
+            "Login/Create Account",
+            "My Account"
+          ],
+          "deliveryCopy": [],
+          "crossSell": [],
+          "addToCart": [],
+          "stickyColumn": false
+        },
+        "footer": {
+          "headings": [
+            "GSAP",
+            "Scroll",
+            "SVG",
+            "UI",
+            "Text",
+            "Other",
+            "Connect"
+          ],
+          "linkCount": 41,
+          "newsletter": true
+        },
+        "fonts": [
+          {
+            "value": "Mori",
+            "count": 444
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(124, 124, 111)",
+            "count": 139
+          },
+          {
+            "value": "rgb(14, 16, 15)",
+            "count": 133
+          },
+          {
+            "value": "rgb(255, 252, 225)",
+            "count": 126
+          },
+          {
+            "value": "rgb(187, 186, 166)",
+            "count": 32
+          },
+          {
+            "value": "rgb(10, 228, 72)",
+            "count": 3
+          },
+          {
+            "value": "rgb(254, 197, 251)",
+            "count": 2
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgb(14, 16, 15)",
+            "count": 24
+          },
+          {
+            "value": "rgb(255, 252, 225)",
+            "count": 10
+          }
+        ],
+        "headingSample": [
+          {
+            "text": "GSAP",
+            "font": "Mori, Arial, Helvetica, \"Segoe UI\", Roboto, \"Open Sans\", san",
+            "size": "16px",
+            "weight": "600",
+            "tracking": "normal",
+            "transform": "none"
+          },
+          {
+            "text": "Scroll",
+            "font": "Mori, Arial, Helvetica, \"Segoe UI\", Roboto, \"Open Sans\", san",
+            "size": "16px",
+            "weight": "600",
+            "tracking": "normal",
+            "transform": "none"
+          },
+          {
+            "text": "SVG",
+            "font": "Mori, Arial, Helvetica, \"Segoe UI\", Roboto, \"Open Sans\", san",
+            "size": "16px",
+            "weight": "600",
+            "tracking": "normal",
+            "transform": "none"
+          }
+        ],
+        "bodyFont": {
+          "family": "Mori, Arial, Helvetica, \"Segoe UI\", Roboto, \"Open Sans\", sans-serif",
+          "size": "16px"
+        },
+        "libraries": [
+          "GSAP"
+        ],
+        "scriptHosts": [
+          "www.googletagmanager.com",
+          "gsap.com",
+          "static.cloudflareinsights.com"
+        ],
+        "motion": {
+          "runningAnimations": 0,
+          "marquee": true,
+          "videoCount": 6,
+          "transitionsOnLinks": 96,
+          "cssScrollSnap": true,
+          "reducedMotionQuery": true
+        },
+        "headings": [
+          "GSAP",
+          "Scroll",
+          "SVG",
+          "UI",
+          "Text",
+          "Other",
+          "GSAP",
+          "Connect"
+        ],
+        "title": "GSAP Showcase",
+        "h1": "Tools Showcase Community Learn GSAP Docs Demos Login/Create ",
+        "bodyTextSample": "Tools Showcase Community Learn GSAP Docs Demos Login/Create Account My Account Get GSAP The Whoopsies GSAP Showreel 2025 Nocturnal Dream Mike Fernandez Portfolio Guillaume Colombel — Portfolio 2026 See What Eye See Portfolio View all Showreels Liubomyr Ulytskyi Mike Fernandez Guillaume Colombel David Lubofsky , Jesper Langberg , Built Kindly , Tom Miller SUBMIT YOUR SITE TO THE SHOWCASE ✦ SUBMIT YOUR SITE TO THE SHOWCASE ✦ SUBMIT YOUR SITE TO THE SHOWCASE ✦ SUBMIT YOUR SITE TO THE SHOWCASE ✦ SUBMIT YOUR SITE TO THE SHOWCASE ✦ SUBMIT YOUR SITE TO THE SHOWCASE ✦ SUBMIT YOUR SITE TO THE SHOWCASE "
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": false,
+        "bgAfterScroll": "rgba(0, 0, 0, 0)",
+        "backdropAfterScroll": "none",
+        "transform": "none"
+      },
+      "cart": {
+        "type": "none",
+        "text": "UT::--:--\nFPS::--\nPRESENCE::ON\nBooking::Q1’27\nC\nO\nAbout\nLab\nWriting\nStudio\nContact\n⌘K\nCarter Ogunsola, Creative Developer & Brand Engineer\nSelected work\nClay\nW/CLAY\n2026\nHelion\nW/OFF+BRAND\n2026\nScott Snyder\nW/WILLIE\n2025\nHeva 2025\nW/BALKY STUDIO\n2025\nABCAU\nW/BALKY STUDIO\n2026\nPNY\nW/J.BERRY\n2025\nHamilton AI\nW/BALKY STUDIO\n2025\nVesyl\nW/BONDIR\n2023\nVana 2024\nW/BALKY STUDIO\n2024\nVana X Team\nW/BALKY ST",
+        "opened_via": "a[href*='/cart']:visible",
+        "navigated": true
+      },
+      "mobile": {
+        "nav_burger": false,
+        "bottomBar": false
+      }
+    }
+  }
+}

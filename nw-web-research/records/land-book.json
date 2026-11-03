@@ -1,0 +1,187 @@
+{
+  "key": "land-book",
+  "group": "design",
+  "pages": {
+    "home": {
+      "url": "https://land-book.com/",
+      "status": 200,
+      "finalUrl": "https://land-book.com/",
+      "blocked": false,
+      "screenshots": [
+        "screenshots/land-book__home__1440.jpg",
+        "screenshots/land-book__home__390.jpg"
+      ],
+      "data": {
+        "header": {
+          "tag": "HEADER",
+          "position": "sticky",
+          "top": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "backdrop": "none",
+          "height": 61,
+          "zIndex": "1039",
+          "sticky": true,
+          "transparent": true,
+          "glass": false
+        },
+        "nav": [
+          "Landbook Home",
+          "Websites",
+          "Experts",
+          "Templates",
+          "Sign in",
+          "Get Pro",
+          "Sign up"
+        ],
+        "hero": {
+          "video": false,
+          "images": 83,
+          "height": 7516,
+          "vh": 835,
+          "text": "Websites Sections Mobile Motion OG Images Headlines Landbook",
+          "carousel": false
+        },
+        "productLinkCount": 0,
+        "filterSort": {
+          "filterEls": 4,
+          "sortEls": []
+        },
+        "pdp": {
+          "sizeButtons": [],
+          "sizeGuide": false,
+          "accordions": [
+            "Search",
+            "Most Recent"
+          ],
+          "deliveryCopy": [],
+          "crossSell": [],
+          "addToCart": [],
+          "stickyColumn": false
+        },
+        "footer": {
+          "headings": [],
+          "linkCount": 12,
+          "newsletter": false
+        },
+        "fonts": [
+          {
+            "value": "Inter",
+            "count": 1829
+          },
+          {
+            "value": "system-ui",
+            "count": 14
+          }
+        ],
+        "textColours": [
+          {
+            "value": "rgb(43, 42, 42)",
+            "count": 1422
+          },
+          {
+            "value": "rgb(1, 124, 110)",
+            "count": 151
+          },
+          {
+            "value": "rgb(98, 97, 95)",
+            "count": 111
+          },
+          {
+            "value": "rgb(255, 255, 255)",
+            "count": 101
+          },
+          {
+            "value": "rgb(29, 28, 28)",
+            "count": 28
+          },
+          {
+            "value": "rgb(51, 51, 51)",
+            "count": 8
+          }
+        ],
+        "bgColours": [
+          {
+            "value": "rgb(208, 207, 182)",
+            "count": 99
+          },
+          {
+            "value": "rgb(150, 224, 220)",
+            "count": 99
+          },
+          {
+            "value": "rgb(153, 151, 202)",
+            "count": 99
+          },
+          {
+            "value": "rgb(212, 211, 189)",
+            "count": 99
+          },
+          {
+            "value": "rgb(185, 147, 229)",
+            "count": 99
+          },
+          {
+            "value": "rgb(157, 108, 213)",
+            "count": 99
+          }
+        ],
+        "headingSample": [
+          {
+            "text": "Landbook - website design inspiration gallery",
+            "font": "Inter, system-ui, -apple-system, \"Helvetica Neue\", \"Segoe UI",
+            "size": "24.5px",
+            "weight": "600",
+            "tracking": "normal",
+            "transform": "none"
+          },
+          {
+            "text": "",
+            "font": "Inter, system-ui, -apple-system, \"Helvetica Neue\", \"Segoe UI",
+            "size": "17.5px",
+            "weight": "500",
+            "tracking": "normal",
+            "transform": "none"
+          }
+        ],
+        "bodyFont": {
+          "family": "Inter, system-ui, -apple-system, \"Helvetica Neue\", \"Segoe UI\", Roboto, Arial, \"N",
+          "size": "14px"
+        },
+        "libraries": [],
+        "scriptHosts": [
+          "www.googletagmanager.com",
+          "land-book.com",
+          "cdn.carbonads.com",
+          "static.cloudflareinsights.com"
+        ],
+        "motion": {
+          "runningAnimations": 42,
+          "marquee": false,
+          "videoCount": 0,
+          "transitionsOnLinks": 104,
+          "cssScrollSnap": false,
+          "reducedMotionQuery": true
+        },
+        "headings": [
+          "Landbook - website design inspiration gallery"
+        ],
+        "title": "Landbook - website design inspiration gallery",
+        "h1": "Landbook - website design inspiration gallery",
+        "bodyTextSample": "Websites Experts Templates Try SaaS dashboard Try Gradient in background Try Outline Illustration Try Big blue button / Sign in Get Pro Sign up Websites Sections Mobile Motion OG Images Headlines Landbook - website design inspiration gallery Find the best hand-picked website design inspiration. We're a curated website design gallery for Creatives, updated daily. Landing Portfolio Blog Ecommerce Other About Us Career Sign Up Pricing Case Study Blog Post Product listing Product page Filters Most Recent 20 7 Intercom | A complete system for human and AI customer service Landing Page 3 Fragment St"
+      },
+      "headerOnScroll": {
+        "visibleAfterScroll": true,
+        "bgAfterScroll": "rgba(0, 0, 0, 0)",
+        "backdropAfterScroll": "none",
+        "transform": "none"
+      },
+      "cart": {
+        "type": "not found"
+      },
+      "mobile": {
+        "nav_burger": true,
+        "bottomBar": false
+      }
+    }
+  }
+}
